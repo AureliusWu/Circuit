@@ -7,7 +7,7 @@ const node = (
   extra: Partial<StoryNode> = {}
 ): StoryNode => ({
   kind, progress, text, actions, location: '城西 · 长安里三号楼', time: '凌晨', visual: 'lamp',
-  scene: { background: '/art/stairwell.svg' }, ...extra
+  scene: { background: '/art/stairwell.webp' }, ...extra
 });
 
 export const everlight: Chapter = {
@@ -23,8 +23,8 @@ export const everlight: Chapter = {
     'lamp-route': { title: 'L03照明移交页', detail: '旧应急照明移交页记录“长安里三号楼，等候点L03，巡查00:17”。交接人许守成的名字被涂去，备注只剩“待回所”。' }
   },
   nodes: {
-    dispatch: node('dialogue', 3, '林岚把两张工单放在一起。第一张是“楼道常明灯，疑似私接电源”，第二张只有一行字：“灯修好以后，全楼睡不着。”修好是昨天下午。报修电话从傍晚打到了现在，十二户人家没有争吵，只轮流问值班室：今夜还会有人上楼吗？', [next('accept', '接下两张工单', 'consult')], { speaker: '林岚', portrait: 'lin', location: '供电所 · 值班室', time: '23:38', visual: 'dispatch', scene: { background: '/art/dispatch.svg', document: { title: '并单报修 L03', lines: ['长安里三号楼 · 十二户', '常明灯已拆除，住宅供电正常', '追加报修：全楼无法入睡'] } } }),
-    consult: node('dialogue', 6, '“昨天下午只是把旧灯罩卸下来，没动住宅线路。”林岚复述维修人的记录，“验电显示无外来电源，灯却又自己亮了。他不敢继续，装回去了。”老周听见楼名，手里的茶停了一下。他说这栋楼的台阶有裂缝，别只顾着抬头看灯。', [next('depart', '带上图纸与维修记录', 'arrival')], { speaker: '老周', portrait: 'zhou', visual: 'dispatch', scene: { background: '/art/dispatch.svg' } }),
+    dispatch: node('dialogue', 3, '林岚把两张工单放在一起。第一张是“楼道常明灯，疑似私接电源”，第二张只有一行字：“灯修好以后，全楼睡不着。”修好是昨天下午。报修电话从傍晚打到了现在，十二户人家没有争吵，只轮流问值班室：今夜还会有人上楼吗？', [next('accept', '接下两张工单', 'consult')], { speaker: '林岚', portrait: 'lin', location: '供电所 · 值班室', time: '23:38', visual: 'dispatch', scene: { background: '/art/dispatch.webp', document: { title: '并单报修 L03', lines: ['长安里三号楼 · 十二户', '常明灯已拆除，住宅供电正常', '追加报修：全楼无法入睡'] } } }),
+    consult: node('dialogue', 6, '“昨天下午只是把旧灯罩卸下来，没动住宅线路。”林岚复述维修人的记录，“验电显示无外来电源，灯却又自己亮了。他不敢继续，装回去了。”老周听见楼名，手里的茶停了一下。他说这栋楼的台阶有裂缝，别只顾着抬头看灯。', [next('depart', '带上图纸与维修记录', 'arrival')], { speaker: '老周', portrait: 'zhou', visual: 'dispatch', scene: { background: '/art/dispatch.webp' } }),
     arrival: node('dialogue', 9, '三号楼夹在两栋新楼之间，像一册忘了装订的旧纸。每家门缝里都透着电视光，节目已经播完，屏幕仍没人关。三楼拐角那盏灯特别旧，光落在一只搪瓷盆里。雨水滴进去，盆底的影子一直朝着同一个方向。', [next('gate', '先核对现场与作业边界', 'gate')], { time: '00:04' }),
     gate: node('dialogue', 12, '你向物业确认昨天下午的操作范围，围好检修位置，把常规住宅供电与来历不明的旧灯分别标在草图上。门口坐着一个年轻人，眼睛红得厉害。他说母亲一直在等楼梯响，自己陪着她等了两夜，后来才发现所有邻居都在等。', [next('meet', '询问最早报修的住户', 'meetMei')]),
     meetMei: node('dialogue', 15, '开门的是在槐荫巷见过的杨婶，登记名杨桂梅。她白天回槐荫照看旧宅，夜里住女儿在三号楼的家。门后仍有两把椅子。“昨晚不是怕黑，卧室的灯都亮着。”她扶着自己的手，“是楼道太安静。灯一灭，就像有人还站在外头，我们把门锁早了。”', [next('rules', '请她说明留灯的习惯', 'houseRules')], { speaker: '杨桂梅', portrait: 'mei' }),
@@ -36,11 +36,11 @@ export const everlight: Chapter = {
       { id: 'load', label: '核对住户负荷与失眠记录', next: 'load', hidesWhenCollected: 'occupied-load' },
       { id: 'promise', label: '询问杨婶的第二把椅子', next: 'promise', hidesWhenCollected: 'waiting-promise' },
       { id: 'review', label: '带四份记录回到楼门口', next: 'meeting', requiresEvidence: requiredEvidence.slice(0, 4) }
-    ], { objective: { title: '分清供电与等待', detail: '取得四条现场证据；每条记录都关系到后面的时间与负荷判断。' }, scene: { background: '/art/stairwell.svg', hotspots: [{ id: 'feed', actionId: 'feed', label: '线路图', x: 26, y: 66 }, { id: 'relay', actionId: 'relay', label: '继电器箱', x: 61, y: 33 }, { id: 'load', actionId: 'load', label: '住宅门牌', x: 81, y: 54 }, { id: 'promise', actionId: 'promise', label: '第二把椅子', x: 40, y: 81 }] } }),
+    ], { objective: { title: '分清供电与等待', detail: '取得四条现场证据；每条记录都关系到后面的时间与负荷判断。' }, scene: { background: '/art/stairwell.webp', hotspots: [{ id: 'feed', actionId: 'feed', label: '线路图', x: 26, y: 66 }, { id: 'relay', actionId: 'relay', label: '继电器箱', x: 61, y: 33 }, { id: 'load', actionId: 'load', label: '住宅门牌', x: 81, y: 54 }, { id: 'promise', actionId: 'promise', label: '第二把椅子', x: 40, y: 81 }] } }),
     feed: node('dialogue', 27, '常规电源按作业许可隔离后，住宅走廊的新灯全部熄灭，旧灯保持原来的亮度。你确认仪表状态，换一个测点复核，没有把那点暗黄误认成应急照明。图纸上这一层只有一处照明端点，而墙里的旧管线在改造页上被标成了“已拆”。', [next('feed-note', '对照改造页与现场痕迹', 'feedRecord')]),
     feedRecord: node('evidence', 29, '旧灯的安装日期早于现在的表箱。墙里那条金属管绕过住宅线路，进入已经封住的竖井；不能仅凭没有读数认定它安全，也不能假定合上新回路就能解释它。你在草图上给旧灯单独画框。框内写“来源未明，保持隔离”，框外仍是十二户的正常供电。', [{ id: 'collect-feed', label: '记录：图纸以外的灯', next: 'inspection', collect: 'unlisted-feed' }], { excludesEvidence: ['unlisted-feed'] }),
     relay: node('dialogue', 27, '物业留下的监听记录覆盖了昨天下午到今夜。楼道继电器每天00:17轻响一次，听起来像钥匙碰了一下铁栏杆。00:10住宅回路隔离时没有响；00:25恢复时也没有响。箱内的线圈端已经断开，物业仍把那声响记成“通电吸合”。', [next('relay-note', '把听见的响声与电源状态分开', 'relayRecord')]),
-    relayRecord: node('evidence', 29, '你修正记录：这是发生在旧继电器附近的机械响声，没有证据证明线圈通电。维修人的手表、楼道监控和林岚的值班时间彼此一致。再看箱盖上的纸条，“巡查00:17，回来敲栏杆”写了两遍，第二遍的笔尖划破了纸。下面的签名被人剪掉了。', [{ id: 'collect-relay', label: '记录：零点十七分的空继电器', next: 'inspection', collect: 'timed-relay' }], { excludesEvidence: ['timed-relay'], scene: { background: '/art/stairwell.svg', document: { title: '昨夜时序复核', lines: ['00:10 · 住宅线路隔离 · 旧灯无变化', '00:17 · 空继电器轻响 · 无线圈供电', '00:25 · 恢复住宅照明 · 旧灯无变化', '旧纸条：巡查00:17，回来敲栏杆'] } } }),
+    relayRecord: node('evidence', 29, '你修正记录：这是发生在旧继电器附近的机械响声，没有证据证明线圈通电。维修人的手表、楼道监控和林岚的值班时间彼此一致。再看箱盖上的纸条，“巡查00:17，回来敲栏杆”写了两遍，第二遍的笔尖划破了纸。下面的签名被人剪掉了。', [{ id: 'collect-relay', label: '记录：零点十七分的空继电器', next: 'inspection', collect: 'timed-relay' }], { excludesEvidence: ['timed-relay'], scene: { background: '/art/stairwell.webp', document: { title: '昨夜时序复核', lines: ['00:10 · 住宅线路隔离 · 旧灯无变化', '00:17 · 空继电器轻响 · 无线圈供电', '00:25 · 恢复住宅照明 · 旧灯无变化', '旧纸条：巡查00:17，回来敲栏杆'] } } }),
     load: node('dialogue', 27, '住户把近两天的时间写在便签上。有的人躺到凌晨，有的人起来给家人热饭。起夜时间并不相同，也没有集体用大功率电器。楼里的电量曲线与改造前相差不大。最年轻的住户前年才搬来，他甚至不知道旧灯存在了多久，却也在等一个上楼的声音。', [next('load-note', '核对电量、现住人数与口述', 'loadRecord')]),
     loadRecord: node('evidence', 29, '你得到的是十二户真实生活的记录：冰箱启停，手机充电，夜班回来的人煮了面。没有隐藏的大负载，也没有一户凭空增加。有人把“灯不灭就能睡”写在报修备注里，你划出问号。能睡的条件也许不是光，而是他们以为有人替整栋楼守着那一段台阶。', [{ id: 'collect-load', label: '记录：三层仍然有人住', next: 'inspection', collect: 'occupied-load' }], { excludesEvidence: ['occupied-load'] }),
     promise: node('dialogue', 27, '杨婶终于说出第二把椅子的来历。七年前改造停电，她摔过一次，夜巡的许守成背她上了三楼。后来他每次经过都问一句灯亮不亮。“我说，你忙你的，我给你留着。回来不必叫门，敲一下栏杆就知道是你。”她把那句话说得很慢，像在重新确认当天真的说过。', [next('promise-note', '询问这次巡查是否有人交接', 'promiseRecord')], { speaker: '杨桂梅', portrait: 'mei' }),
@@ -65,7 +65,7 @@ export const everlight: Chapter = {
     pause: node('dialogue', 88, '你在裂缝边补贴临时警示，把后续维修写进物业移交单。旧灯熄灭不是台阶变安全的证明，也不是居民不再需要照明的理由。老周在电话那头听完，说那段胶带原来是许守成贴的。他一直以为这些小事早被新楼吞掉了，没想到有人还记得。', [next('record', '保全L03与原始巡查记录', 'record')], { speaker: '老周', portrait: 'zhou' }),
     record: node('dialogue', 91, '你的工单保留“异常来源未明”，没有改写成灯具故障。附件注明旧支路继续隔离，原件进入事故档案核对，住宅照明与台阶维修分别有人负责。林岚把L03加入城市旧路线图。那是一个等候点，不能当作需要重新接通的电气节点。', [next('delivery', '向杨婶交付后续回访单', 'delivery')], { requiresEvidence: requiredEvidence }),
     delivery: node('dialogue', 94, '杨婶把回访单折进饼干盒，旧纸条仍放在里面。她没有把许守成的名字烧掉，也没扔掉第二把椅子，只把盒盖盖好。“我还会等你们的消息，”她说，“但不用让全楼陪我一夜一夜等了。”你答应的是核查与答复，终于不是某个人会回来的谎话。', [next('dawn', '走出三号楼', 'dawn')], { speaker: '杨桂梅', portrait: 'mei' }),
-    dawn: node('dialogue', 97, '天亮以前，楼道第一次安静得像普通住宅。你在车里看L03的扫描件，纸背还有一个被压住的“N”字。林岚来电：明天要核对一批金属外壳带电的报修，投诉人都在同一份旧名单上。名单标题是许守成的追悼会，出席人里面有老周。', [next('finish', '关闭现场工单，保留事故核查', 'end')], { location: '长安里 · 抢修车', visual: 'dispatch', scene: { background: '/art/dispatch.svg' } }),
-    end: node('ending', 100, '第三回路记录完成。住宅照明恢复，未知灯路隔离，L03原始移交页保全。杨桂梅第一次不必用整夜醒着证明自己没有忘记一个人。灯灭了，许守成的名字没有灭。\n\n你知道接下来该查的不是怎样让灯再亮，而是谁把一个未交班的人从记录里移走了。', [{ id: 'restart', label: '重新调查《长明》', next: 'dispatch', resetEvidence: true }], { outcome: 'complete', requiresEvidence: requiredEvidence, scene: { background: '/art/stairwell.svg', inscription: 'L03 · 留下名字，结束等待' } })
+    dawn: node('dialogue', 97, '天亮以前，楼道第一次安静得像普通住宅。你在车里看L03的扫描件，纸背还有一个被压住的“N”字。林岚来电：明天要核对一批金属外壳带电的报修，投诉人都在同一份旧名单上。名单标题是许守成的追悼会，出席人里面有老周。', [next('finish', '关闭现场工单，保留事故核查', 'end')], { location: '长安里 · 抢修车', visual: 'dispatch', scene: { background: '/art/dispatch.webp' } }),
+    end: node('ending', 100, '第三回路记录完成。住宅照明恢复，未知灯路隔离，L03原始移交页保全。杨桂梅第一次不必用整夜醒着证明自己没有忘记一个人。灯灭了，许守成的名字没有灭。\n\n你知道接下来该查的不是怎样让灯再亮，而是谁把一个未交班的人从记录里移走了。', [{ id: 'restart', label: '重新调查《长明》', next: 'dispatch', resetEvidence: true }], { outcome: 'complete', requiresEvidence: requiredEvidence, scene: { background: '/art/stairwell.webp', inscription: 'L03 · 留下名字，结束等待' } })
   }
 };

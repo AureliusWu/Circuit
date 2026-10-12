@@ -10,9 +10,9 @@ export default defineConfig(({ mode }) => {
       react(),
       VitePWA({
         registerType: 'autoUpdate',
-        includeAssets: ['icon.svg', 'icons/*.png'],
+        includeAssets: ['icon.png', 'icons/*.png'],
         workbox: {
-          globPatterns: ['**/*.{js,css,html,ico,png,svg}'],
+          globPatterns: ['**/*.{js,css,html,ico,png,webp}'],
           maximumFileSizeToCacheInBytes: 4 * 1024 * 1024
         },
         manifest: {
@@ -28,9 +28,9 @@ export default defineConfig(({ mode }) => {
             { src: `${base}icons/192x192.png`, sizes: '192x192', type: 'image/png', purpose: 'any' },
             { src: `${base}icons/512x512.png`, sizes: '512x512', type: 'image/png', purpose: 'any maskable' },
             {
-              src: `${base}icon.svg`,
-              sizes: 'any',
-              type: 'image/svg+xml',
+              src: `${base}icon.png`,
+              sizes: '512x512',
+              type: 'image/png',
               purpose: 'any maskable'
             }
           ]

@@ -11,7 +11,7 @@ const node = (
 ): StoryNode => ({
   kind, location: '梧城 · 清河里七号院', time: '第九夜 · 00:12', text,
   visual: 'alley', progress, actions,
-  scene: { background: '/art/stairwell.svg' }, ...extra
+  scene: { background: '/art/stairwell.webp' }, ...extra
 });
 
 export const seventhNight: Chapter = {
@@ -54,12 +54,12 @@ export const seventhNight: Chapter = {
       '林岚把一张反复退回的工单推过来。清河里七号院连续九夜报修，前七次都写“零点四十七分全院没电”。第八次提前一分钟，今天报修人说，下一次还会更早。桌边那只电子钟没有坏，它正稳稳地走。', 3,
       [act('查看重复报修记录', 'handover')],
       { location: '城北供电所 · 值班室', time: '23:38', speaker: '林岚', portrait: 'lin', visual: 'dispatch', excludesEvidence: allEvidence,
-        scene: { background: '/art/dispatch.svg', document: { title: '重复故障 Q07', lines: ['范围：清河里七号院 · 6 户', '既往：7 次同刻跳闸 / 1 次提前', '本次要求：不要再只复位'] } } }),
+        scene: { background: '/art/dispatch.webp', document: { title: '重复故障 Q07', lines: ['范围：清河里七号院 · 6 户', '既往：7 次同刻跳闸 / 1 次提前', '本次要求：不要再只复位'] } } }),
     handover: node('dialogue',
       '上两班只在白天做过检查，没找到持续漏电；复位后也能用。老周翻到天气栏：“同一时刻不代表同一种原因。先问负荷什么时候开，再问人的钟按什么走。”他提醒你带上事件记录器，别把住户的害怕写成故障原因。', 5,
       [act('带齐记录设备并联系报修人', 'depart')],
       { location: '城北供电所 · 车库', time: '23:44', speaker: '老周', portrait: 'zhou', visual: 'dispatch', excludesEvidence: allEvidence,
-        scene: { background: '/art/dispatch.svg' } }),
+        scene: { background: '/art/dispatch.webp' } }),
     depart: node('dialogue',
       '电话那头的沈棠没有问你多久能到。她问：“如果今天不合闸，还能知道是谁把它弄断的吗？”你说明会先确认停电范围、保护动作和现场条件。她听完，说院门不锁，但厨房那只碗请先别收。车灯扫过一段拆了一半的旧路牌。', 7,
       [act('到清河里七号院', 'lane')],
@@ -67,7 +67,7 @@ export const seventhNight: Chapter = {
     lane: node('dialogue',
       '院里六户的窗都亮着，雨棚下却摆了一张不靠墙的空椅子。椅背挂着干净的公交司机制服，袖口向外翻。沈棠先把衣服收进屋，才让你看表箱：“父亲走了九天。邻居不愿再等到那个点，所以今天都没睡。”', 9,
       [act('询问今晚的用电安排', 'welcome')],
-      { time: '00:04', scene: { background: '/art/alley.svg' } }),
+      { time: '00:04', scene: { background: '/art/alley.webp' } }),
     welcome: node('dialogue',
       '沈棠说父亲沈衡是退休夜班司机，晚饭总要留一份。丧事期间她照旧留，母亲把它叫作“头七给他认门”。前七晚电一断，屋里人便不敢动；昨晚饭碗撤了，停电却提前了。她觉得自己漏掉一步。你先记下她的话，没有替这件事取名字。', 11,
       [act('先建立安全边界', 'boundary')],
@@ -85,7 +85,7 @@ export const seventhNight: Chapter = {
         act('把三组证据放在同一条时间线上', 'compare', { requiresEvidence: firstEvidence })
       ],
       { objective: { title: '分开时间、设备与习惯', detail: '调查三处热点，记录客观事件与沈棠的守夜安排。' },
-        scene: { background: '/art/stairwell.svg', hotspots: [
+        scene: { background: '/art/stairwell.webp', hotspots: [
           { id: 'log', actionId: 'logbook', label: '报修本', x: 34, y: 30 },
           { id: 'load', actionId: 'breaker', label: '保护记录', x: 56, y: 43 },
           { id: 'meal', actionId: 'offering', label: '第七碗饭', x: 77, y: 32 }
@@ -98,7 +98,7 @@ export const seventhNight: Chapter = {
       '前七夜保护器的本地记录与六户口述相符，确有动作。第八夜表箱没动，手机却收到一条来自旧户号的停电通知。林岚检查新系统，找不到这条消息的有效工单；服务器时间正常。两列同样短的数字，原来指着两种完全不同的事件。', 18,
       [act('整理时间差异', 'recordTime')],
       { speaker: '林岚', portrait: 'lin', excludesEvidence: ['q07-times'], time: '00:15',
-        scene: { background: '/art/stairwell.svg', document: { title: '本地动作 / 旧户号通知', lines: ['第 1—7 夜：00:47 / 00:47', '第 8 夜：无动作 / 00:46', '第 9 夜：等待监测 / 预计 00:45'] } } }),
+        scene: { background: '/art/stairwell.webp', document: { title: '本地动作 / 旧户号通知', lines: ['第 1—7 夜：00:47 / 00:47', '第 8 夜：无动作 / 00:46', '第 9 夜：等待监测 / 预计 00:45'] } } }),
     recordTime: node('evidence',
       '你把第八夜的“停电”改为“旧户号告警”，保留原始说法作附件。沈棠看着那一行改动，声音低下来：“所以昨天不是他把灯弄灭的。”你说现在只能确认灯没灭；那个通知是谁发的，还需要找到来源。', 18,
       [act('记录：七次同刻，两次提前', 'firstHub', { id: 'record-times', collect: 'q07-times' })],
@@ -161,7 +161,7 @@ export const seventhNight: Chapter = {
     waiting: node('dialogue',
       '四十五分到了，院灯没灭，保护器没有动作，记录器也没出现对应负荷。先响的是沈棠的手机，然后才是林岚的终端。两台设备都显示“Q07，等待超时”；发送栏不是号码，而是一个早已撤销的调度席位。风把空椅子的脚轻轻拖过地面。', 52,
       [act('确认现场与通知的差异', 'earlyTrip')],
-      { requiresEvidence: firstEvidence, time: '00:45', scene: { background: '/art/stairwell.svg', inscription: 'Q07 · 等待超时' } }),
+      { requiresEvidence: firstEvidence, time: '00:45', scene: { background: '/art/stairwell.webp', inscription: 'Q07 · 等待超时' } }),
     earlyTrip: node('dialogue',
       '你在终端上写：现场无新故障，异常为历史队列事件。消息下方多出一行只有沈棠看得到的字：“最后一班，少一人。”她没有往院门跑，反而把手里的钥匙递给你：“这不是我父亲的口气。他从来先数人，再发车。”', 55,
       [act('查看父亲留下的记录', 'secondHub')],
@@ -174,7 +174,7 @@ export const seventhNight: Chapter = {
         act('将技术结论与未签收记录核对', 'reconcile', { requiresEvidence: allEvidence })
       ],
       { requiresEvidence: firstEvidence, objective: { title: '找到等待的对象', detail: '分别核验接送单与家庭留言，避免以家属记忆替代事故档案。' }, time: '00:49',
-        scene: { background: '/art/stairwell.svg', hotspots: [
+        scene: { background: '/art/stairwell.webp', hotspots: [
           { id: 'receipt', actionId: 'receipt', label: '旧接送单', x: 34, y: 30 },
           { id: 'message', actionId: 'conversation', label: '最后留言', x: 77, y: 32 }
         ] } }),
@@ -182,7 +182,7 @@ export const seventhNight: Chapter = {
       '纸单是七年前的，标题写“旧城临时接送”，第七格被反复擦过。司机栏是沈衡，站点是清河里，乘车人一栏只写“等抢修员”。纸背有个小小的 Q07。它不是丧事用品；七年前和九天前，两个日期之间隔着父亲始终没解释的七年。', 58,
       [act('请求核对原始事故接送附件', 'archiveRequest')],
       { requiresEvidence: firstEvidence, excludesEvidence: ['q07-receipt'], time: '00:51',
-        scene: { background: '/art/stairwell.svg', document: { title: '旧城临时接送 · 原件', lines: ['司机：沈衡', '等待点：清河里 / Q07', '返程人数：——', '备注：等抢修员'] } } }),
+        scene: { background: '/art/stairwell.webp', document: { title: '旧城临时接送 · 原件', lines: ['司机：沈衡', '等待点：清河里 / Q07', '返程人数：——', '备注：等抢修员'] } } }),
     archiveRequest: node('dialogue',
       '林岚用档案接口调出接送附件，不以旧纸单上的空格猜死者姓名。老周忽然认出调度席位，停了一会儿才说，那年有个人进了临时抢修点，其他人坐车走了，他没有出来。后来通报里只保留抢修结果，等人的接送单被当成重复件。', 58,
       [act('比对原件与汇总表', 'archiveReply')],
@@ -245,7 +245,7 @@ export const seventhNight: Chapter = {
     zeroMinute: node('dialogue',
       '林岚报告，Q07 的预计时刻已经停止提前。原来的“等待超时”消失，改成了“转交：未完接送”。没有人声，也没有屏幕上的感谢。记录器里留着正常的一分钟。偏偏在工单附件的预览图上，那个空白返程格像被雨水洇过，出现了半个“回”字。', 94,
       [act('保留附件并填写实际结论', 'recordClosure')],
-      { requiresEvidence: allEvidence, speaker: '林岚', portrait: 'lin', time: '01:53', scene: { background: '/art/stairwell.svg', inscription: 'Q07 · 转交：未完接送' } }),
+      { requiresEvidence: allEvidence, speaker: '林岚', portrait: 'lin', time: '01:53', scene: { background: '/art/stairwell.webp', inscription: 'Q07 · 转交：未完接送' } }),
     recordClosure: node('dialogue',
       '你写明设备缺陷、处置和复核编号，把不确定的旧事件单列，既没有写“驱除成功”，也没有写“住户误报”。沈棠在用户确认栏签下名字。签完以后她问许家这些年收到过完整说明吗，老周说会由正式渠道核查、联系，不能让她再替别人守一个没有消息的夜。', 96,
       [act('离开七号院', 'linger')],
@@ -253,11 +253,11 @@ export const seventhNight: Chapter = {
     linger: node('dialogue',
       '车开到路口时，院门口那件公交制服已经收回屋里。林岚把 Q07 加到槐荫巷十三号的调查旁，两点之间隔着一片拆迁区。她说下一张工单来自那里，没有住户，没有进线，却有功率往外走。老周看着窗上的雨，叫你把今晚的名单带上。', 98,
       [act('归档第一章', 'end')],
-      { requiresEvidence: allEvidence, location: '抢修车 · 清河路口', time: '02:11', scene: { background: '/art/alley.svg' } }),
+      { requiresEvidence: allEvidence, location: '抢修车 · 清河路口', time: '02:11', scene: { background: '/art/alley.webp' } }),
     end: node('ending',
       '【第一章完成】清河里的灯正常亮着，旧队列停止倒数。沈棠仍会给夜班留饭，但不再把每天过早的一分钟当作父亲的责备。调查板上留下 Q07：一张被判定“任务已结束”的接送单，和一个没有被算进返程的人。下一条线指向拆迁区。', 100,
       [act('重新调查《头七》', 'dispatch', { id: 'restart', resetEvidence: true })],
       { outcome: 'complete', requiresEvidence: allEvidence, location: '调查归档 · Q07', time: '第一章 · 已完成', visual: 'ending',
-        scene: { background: '/art/dispatch.svg', inscription: 'Q07 · 先把人算进去' } })
+        scene: { background: '/art/dispatch.webp', inscription: 'Q07 · 先把人算进去' } })
   }
 };

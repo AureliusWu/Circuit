@@ -1,6 +1,6 @@
 [package]
 name = "circuit"
-version = "1.0.0"
+version = "1.0.1"
 description = "回路 / Circuit - Chinese folk horror narrative game"
 authors = ["AureliusWu"]
 edition = "2021"

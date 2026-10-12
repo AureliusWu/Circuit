@@ -1,0 +1,221 @@
+{
+  "version": 1,
+  "date": "2026-10-12",
+  "generator": "built-in image_gen",
+  "baseline_commit": "5d0ab8e",
+  "model": "not exposed by the tool",
+  "assets": [
+    {
+      "id": "dispatch",
+      "type": "background",
+      "output": "public/art/dispatch.webp",
+      "prompt": "Use case: stylized-concept. Asset type: shipping 16:9 background for the Chinese folk-horror narrative game Circuit / 回路. Input image 1 is the previous flat SVG rendered to PNG: use it only for camera framing, object locations and room geometry. Input image 2 is the game's rain-alley painting: match its restrained semi-realistic cinematic digital painting, detailed worn surfaces, charcoal shadows, slate teal, dirty olive and small tungsten-yellow practical lights. REDRAW the scene fully into rich painterly production art, not vector shapes, not photography, no anime styling. Fixed eye-level camera, recognizable contemporary Chinese urban infrastructure. Dark atmosphere but readable midtones, natural materials and believable perspective. No characters, monsters, gore, watermark, logos, UI, caption or border. No legible writing; notes can have subtle indistinct marks. Keep lower 25% low-detail for the dialogue overlay and rightmost 22% quiet for transparent characters. Output one full-bleed wide 16:9 image, ideally 1920x1080. Scene: a late-night urban electricity-service dispatch office. Preserve the reference framing: worn desk across the foreground with wired landline on the left, clipboard and yellow repair forms near center, old laptop at right; large faded distribution circuit map on center-left wall; rain-streaked window with old city buildings on upper right; dim tube lamp overhead, metal archive cabinet left. Desk surfaces scratched, paper corners curled, damp glass, chipped green wall paint. The empty office looks recently occupied, professionally plausible, understated dread.",
+      "references": [
+        "previous SVG at 5d0ab8e: public/art/dispatch.svg",
+        "5d0ab8e: public/art/alley-rain.png"
+      ],
+      "source_sha256": "ddbba81a0344b0845803c749e37a723cf348f7085641f6f04fb52707a1cdc072",
+      "sha256": "2a1d05fd05610e370f25ba18cc4bee7150cb70e3a767ec6962df98738823ace3",
+      "width": 1600,
+      "height": 900,
+      "bytes": 195070,
+      "alpha": false
+    },
+    {
+      "id": "substation",
+      "type": "background",
+      "output": "public/art/substation.webp",
+      "prompt": "Use case: stylized-concept. Asset type: shipping 16:9 background for the Chinese folk-horror narrative game Circuit / 回路. Input image 1 is the previous flat SVG rendered to PNG: use it only for camera framing, object locations and room geometry. Input image 2 is the game's rain-alley painting: match its restrained semi-realistic cinematic digital painting, detailed worn surfaces, charcoal shadows, slate teal, dirty olive and small tungsten-yellow practical lights. REDRAW the scene fully into rich painterly production art, not vector shapes, not photography, no anime styling. Fixed eye-level camera, recognizable contemporary Chinese urban infrastructure. Dark atmosphere but readable midtones, natural materials and believable perspective. No characters, monsters, gore, watermark, logos, UI, caption or border. No legible writing; notes can have subtle indistinct marks. Keep lower 25% low-detail for the dialogue overlay and rightmost 22% quiet for transparent characters. Output one full-bleed wide 16:9 image, ideally 1920x1080. Scene: an old low-voltage distribution courtyard between grey apartment blocks at night. Preserve reference framing: four closed grey metal switchgear cabinets across center, actual analog gauges and small indicator lamps, overhead insulated cable runs, attached maintenance tag and covered clipboard at right, shallow raised concrete plinth, rain puddles and drain grille foreground. Small tungsten lamp above left. Doors closed and equipment intact, rust streaks, damp concrete, subdued danger triangle marks but no text or logos. Center-left gauges and cabinet seams must remain readable investigation targets.",
+      "references": [
+        "previous SVG at 5d0ab8e: public/art/substation.svg",
+        "5d0ab8e: public/art/alley-rain.png"
+      ],
+      "source_sha256": "413ce832d3d56fce54c0e770358537650f786abef300f01e9553d4bef9338ed5",
+      "sha256": "d06417bee5f44d4b3ffb2fcf533e51840ebfc8dc90c08357666f9ce4d048df8b",
+      "width": 1600,
+      "height": 900,
+      "bytes": 330678,
+      "alpha": false
+    },
+    {
+      "id": "demolition",
+      "type": "background",
+      "output": "public/art/demolition.webp",
+      "prompt": "Use case: stylized-concept. Asset type: shipping 16:9 background for the Chinese folk-horror narrative game Circuit / 回路. Input image 1 is the previous flat SVG rendered to PNG: use it only for camera framing, object locations and room geometry. Input image 2 is the game's rain-alley painting: match its restrained semi-realistic cinematic digital painting, detailed worn surfaces, charcoal shadows, slate teal, dirty olive and small tungsten-yellow practical lights. REDRAW the scene fully into rich painterly production art, not vector shapes, not photography, no anime styling. Fixed eye-level camera, recognizable contemporary Chinese urban infrastructure. Dark atmosphere but readable midtones, natural materials and believable perspective. No characters, monsters, gore, watermark, logos, UI, caption or border. No legible writing; notes can have subtle indistinct marks. Keep lower 25% low-detail for the dialogue overlay and rightmost 22% quiet for transparent characters. Output one full-bleed wide 16:9 image, ideally 1920x1080. Scene: abandoned Chinese urban demolition compound at night. Preserve framing: half-demolished brick house left with exposed concrete staircase rising diagonally to nowhere, torn plaster and old wires on remaining wall; corrugated grey-green construction barrier across midground, one warm streetlight on upper right, empty apartment silhouettes beyond, isolated capped cable ends hanging in upper center, rubble and puddles lower edge. Small weathered meter box on left wall and faded papers fixed to fence. Unsettling emptiness through realistic disconnection, no overt ghost symbolism.",
+      "references": [
+        "previous SVG at 5d0ab8e: public/art/demolition.svg",
+        "5d0ab8e: public/art/alley-rain.png"
+      ],
+      "source_sha256": "a91db0592042047e60d66c860856c1562710fb8a0a99f1e9302b2819c55f36ec",
+      "sha256": "de311a83cfb422a0ba9f761e4e3d826d53c708747365b943dd2a66f1544e3a6d",
+      "width": 1600,
+      "height": 900,
+      "bytes": 244802,
+      "alpha": false
+    },
+    {
+      "id": "stairwell",
+      "type": "background",
+      "output": "public/art/stairwell.webp",
+      "prompt": "Use case: stylized-concept. Asset type: shipping 16:9 background for the Chinese folk-horror narrative game Circuit / 回路. Input image 1 is the previous flat SVG rendered to PNG: preserve camera framing and key object arrangement while fully redrawing it. Input image 2 is the established rain-alley reference: match its restrained semi-realistic cinematic digital painting, rich worn textures, deep charcoal shadows, slate teal, dirty olive and small tungsten-yellow practical lights. Production art, detailed painterly environment, no vector shapes, no anime. Believable contemporary Chinese urban infrastructure. Dark but readable, stable eye-level camera. No characters, monsters, gore, watermarks, logos, UI, caption or border. Notes and meter details may have indistinct marks, no legible writing. Keep lower 25% low-detail for dialogue overlay and rightmost 22% relatively quiet for characters. One full-bleed wide 16:9 image, ideally 1920x1080. Scene: night inside a Chinese old residential stairwell. Preserve the reference: worn closed apartment door left, three old electricity meters on left-center wall, concrete staircase rising on right to a small landing, metal handrail cutting diagonally across frame, an old relay box in upper center, dim yellow covered bulb overhead. Chipped dirty pale-green wall paint, damp cracks, grey concrete, analog meter glass, soft practical shadows. Include two old mismatched wooden chairs tucked at left-side landing and one small plain ceramic rice bowl by a chair, unobtrusive story details. A return to familiar shared housing made slightly wrong by stillness. Keep lights subdued, no supernatural glow or gore.",
+      "references": [
+        "previous SVG at 5d0ab8e: public/art/stairwell.svg",
+        "5d0ab8e: public/art/alley-rain.png"
+      ],
+      "source_sha256": "8f73a48b54f7068f4ea05177624ccf4faeea7c6659e674334d3044343ccb808f",
+      "sha256": "cd832e76f4c0d25f27dca2faa6c24e1f7105a777598355da4e1724dfa9f25bb1",
+      "width": 1600,
+      "height": 900,
+      "bytes": 271438,
+      "alpha": false
+    },
+    {
+      "id": "control-room",
+      "type": "background",
+      "output": "public/art/control-room.webp",
+      "prompt": "Use case: stylized-concept. Asset type: shipping 16:9 background for the Chinese folk-horror narrative game Circuit / 回路. Input image 1 is the previous flat SVG rendered to PNG: preserve camera framing and key object arrangement while fully redrawing it. Input image 2 is the established rain-alley reference: match its restrained semi-realistic cinematic digital painting, rich worn textures, deep charcoal shadows, slate teal, dirty olive and small tungsten-yellow practical lights. Production art, detailed painterly environment, no vector shapes, no anime. Believable contemporary Chinese urban infrastructure. Dark but readable, stable eye-level camera. No characters, monsters, gore, watermarks, logos, UI, caption or border. Notes and meter details may have indistinct marks, no legible writing. Keep lower 25% low-detail for dialogue overlay and rightmost 22% relatively quiet for characters. One full-bleed wide 16:9 image, ideally 1920x1080. Scene: a disused Chinese old-city electricity control room. Preserve framing: large analog distribution mimic diagram mounted across upper-left and center wall, dark metal analog meter panel on right with one gauge and tiny green lamps, old laptop in lower-left foreground, yellowed archive folder in center and handheld multimeter with leads lower right. Detail: scratched painted steel, dusty glass, curling yellow archive papers, a faded drawn branch on the wall map, dim single worklight outside frame producing controlled tungsten highlights. It is an abandoned working room with a missing record, not a futuristic command center. No neon, no digital wall of screens.",
+      "references": [
+        "previous SVG at 5d0ab8e: public/art/control-room.svg",
+        "5d0ab8e: public/art/alley-rain.png"
+      ],
+      "source_sha256": "9356b06a68aab2b05084c59d6901b0ce4b43a0828f95937d5f1486004ec978b9",
+      "sha256": "1af771dfc8e3e917703fc45512db05a9597807be03fd095b082b90dc90405003",
+      "width": 1600,
+      "height": 900,
+      "bytes": 207456,
+      "alpha": false
+    },
+    {
+      "id": "alley",
+      "type": "background",
+      "output": "public/art/alley.webp",
+      "prompt": "Use case: stylized-concept. Asset type: shipping 16:9 background for the Chinese folk-horror narrative game Circuit / 回路. Input image 1 is the previous flat SVG rendered to PNG: preserve camera framing and key object arrangement while fully redrawing it. Input image 2 is the established rain-alley reference: match its restrained semi-realistic cinematic digital painting, rich worn textures, deep charcoal shadows, slate teal, dirty olive and small tungsten-yellow practical lights. Production art, detailed painterly environment, no vector shapes, no anime. Believable contemporary Chinese urban infrastructure. Dark but readable, stable eye-level camera. No characters, monsters, gore, watermarks, logos, UI, caption or border. Notes and meter details may have indistinct marks, no legible writing. Keep lower 25% low-detail for dialogue overlay and rightmost 22% relatively quiet for characters. One full-bleed wide 16:9 image, ideally 1920x1080. Scene: 槐荫巷, a narrow Chinese old-city residential lane at rainy midnight. Respect the reference's long perspective and coherent houses on both sides. Peeling grey-green plaster and exposed brick, barred windows, rain-darkened entrance doors, electrical meter boxes left foreground and right midground, overhead black insulated wires crossing high above, old potted plants and drain channels, wet asphalt with restrained reflections, one lonely tungsten streetlight slightly right of center in the distance. Most windows dark. Camera fixed at pedestrian height, distant vanishing point, no people, no vehicles or ghosts. Similar quality to the existing generated alley but unify composition with the other game backgrounds; leave left portion darker for title text, distant streetlight visible in the right half.",
+      "references": [
+        "previous SVG at 5d0ab8e: public/art/alley.svg",
+        "5d0ab8e: public/art/alley-rain.png"
+      ],
+      "source_sha256": "afe5c9f259f4d41a5a40ae9634bdda975e64e09f3bd5019800dd3d27c7927791",
+      "sha256": "f93f69f73e0fdb4c4a2daf352104695ac7f9b0de10d418cfd142a3ae289c1126",
+      "width": 1600,
+      "height": 900,
+      "bytes": 319352,
+      "alpha": false
+    },
+    {
+      "id": "zhou",
+      "type": "portrait",
+      "output": "public/art/portraits/zhou.webp",
+      "prompt": "Use case: stylized-concept. Asset type: transparent character sprite for Circuit / 回路, Chinese urban folk-horror narrative game. Input 1 is the OLD SVG silhouette: preserve character identity cues and half-body framing only; completely redraw his anatomy, face and clothing as polished production art. Input 2 is the game's new dispatch-office art: match muted charcoal, dirty green, slate teal and soft tungsten night-work lighting. Character: 老周, fictional Chinese man around 50, veteran distribution maintenance worker, short salt-and-pepper hair, slight stubble, understated eye wrinkles, broad practical adult build, worn dark olive work jacket with subtle faded reflective strips, pale khaki shirt collar, one pen and insulated tool handle in breast pocket. A tired but reliable, quietly serious expression, normal adult eyes, no smile. Hand-painted semi-realistic 2D game portrait with fine ink-and-brush contours, clear human facial planes, visible fabric texture, restrained painterly shading; neither cartoon nor photographic actor headshot. Upright half-body from head to just below waist, slight three-quarter turn towards viewer's left, eyes towards viewer, both shoulders and forearms within frame, arms resting naturally. Uniform diffuse lighting with small warm highlight and soft cool shadow, readable face. Single character centered in vertical 2:3 canvas, top and side transparent padding, body exits only bottom edge. Genuinely transparent background alpha. Absolutely no environment, floor, shadow outside body, vignette, glow halo, checkerboard pattern, caption, labels, logo, watermark, large anime eyes, horror mutations or extra people.",
+      "references": [
+        "previous SVG at 5d0ab8e: public/art/portraits/zhou.svg",
+        "generated background: dispatch"
+      ],
+      "source_sha256": "3db1e8edd8d6e892e986edc5cab1e37e51e952e50be37220b2e3bfda3891d7dd",
+      "sha256": "dc4d1a54ee9903087f85b207a1b7635a2a7ec648c583678befe7b683c2e57901",
+      "width": 640,
+      "height": 960,
+      "bytes": 153066,
+      "alpha": true
+    },
+    {
+      "id": "lin",
+      "type": "portrait",
+      "output": "public/art/portraits/lin.webp",
+      "prompt": "Use case: stylized-concept. Asset type: ONE transparent half-body character sprite for Circuit / 回路, Chinese urban folk-horror narrative game. Image 1 is the OLD flat SVG: retain character identity cues, not its primitive anatomy. Image 2 is the finished 老周 sprite: use the SAME polished semi-realistic hand-painted rendering, natural adult proportions, fine ink-and-brush contours, believable human face planes, detailed fabric and restrained warm-left/cool-right night-work lighting. Draw a DIFFERENT person, not the same face or gender as 老周. Image 3 is the dispatch background, palette and lighting reference only; do not include its environment. Entire character centered on vertical 2:3 transparent canvas, from hair to just below waist, slight three-quarter turn towards viewer's left, eyes towards viewer. Top padding 6%, transparent side margins 8%; ALL shoulders, elbows, hair and any held objects completely within frame, torso can leave only the bottom edge. Hands if visible must be anatomically plausible. Soft readable face, adult normal eyes, no glamour smoothing. Genuine alpha transparency outside character, no opaque backdrop or background color, no checkerboard painted into image, no halo, vignette, external cast shadow, text, labels, logos, watermark, anime eyes or exaggerated horror mutations. Character: 林岚, fictional Chinese woman age about 30, professional night-shift electricity dispatcher. Neat black hair in a low bun with a few loose strands, slim practical adult build, calm focused expression with faint tiredness around eyes. Worn dark slate-green utility jacket over light grey collared shirt, a simple lightweight black single-ear headset with slender microphone, one pen in pocket. No reflective worker costume required, no company logo. Arms relaxed, not gesturing. Distinctly female natural face, understated workplace appearance.",
+      "references": [
+        "previous SVG at 5d0ab8e: public/art/portraits/lin.svg",
+        "generated portrait: zhou",
+        "generated background: dispatch"
+      ],
+      "source_sha256": "de8160ebb60af012e23966f64b8a1def0577d11e66e4968a9edd631d5fbd2e1e",
+      "sha256": "b01bc5eab5b8c1880a3467bdd6040d72c5766c5201e3c339b2a3da815cdae915",
+      "width": 640,
+      "height": 960,
+      "bytes": 150662,
+      "alpha": true
+    },
+    {
+      "id": "mei",
+      "type": "portrait",
+      "output": "public/art/portraits/mei.webp",
+      "prompt": "Use case: stylized-concept. Asset type: ONE transparent half-body character sprite for Circuit / 回路, Chinese urban folk-horror narrative game. Image 1 is the OLD flat SVG: retain character identity cues, not its primitive anatomy. Image 2 is the finished 老周 sprite: use the SAME polished semi-realistic hand-painted rendering, natural adult proportions, fine ink-and-brush contours, believable human face planes, detailed fabric and restrained warm-left/cool-right night-work lighting. Draw a DIFFERENT person, not the same face or gender as 老周. Image 3 is the dispatch background, palette and lighting reference only; do not include its environment. Entire character centered on vertical 2:3 transparent canvas, from hair to just below waist, slight three-quarter turn towards viewer's left, eyes towards viewer. Top padding 6%, transparent side margins 8%; ALL shoulders, elbows, hair and any held objects completely within frame, torso can leave only the bottom edge. Hands if visible must be anatomically plausible. Soft readable face, adult normal eyes, no glamour smoothing. Genuine alpha transparency outside character, no opaque backdrop or background color, no checkerboard painted into image, no halo, vignette, external cast shadow, text, labels, logos, watermark, anime eyes or exaggerated horror mutations. Character: 杨婶 / 杨桂梅, fictional Chinese woman about 60, ordinary resident of an old urban apartment building. Short side-parted grey hair, gentle yet guarded expression, natural eye wrinkles and soft age lines, slightly rounded practical build. Old olive-grey wool cardigan over pale worn shirt and faded simple cloth scarf around neck, civilian clothing with no worker reflective strip, no headset, no tools. Hands quietly resting in front if included, no props. She looks exhausted from waiting but composed, without supernatural distortion.",
+      "references": [
+        "previous SVG at 5d0ab8e: public/art/portraits/mei.svg",
+        "generated portrait: zhou",
+        "generated background: dispatch"
+      ],
+      "source_sha256": "3741a74061f63a11d8c415d537efd6582553b0881ea0124eb3c180594d6b0f8e",
+      "sha256": "bf5c4cca84a45dd997c1f5d1c30a764943b6c96875676634fb1713b88dcbd265",
+      "width": 640,
+      "height": 960,
+      "bytes": 176528,
+      "alpha": true
+    },
+    {
+      "id": "xu",
+      "type": "portrait",
+      "output": "public/art/portraits/xu.webp",
+      "prompt": "Use case: stylized-concept. Asset type: ONE transparent half-body character sprite for Circuit / 回路, Chinese urban folk-horror narrative game. Image 1 is the OLD flat SVG: retain character identity cues, not its primitive anatomy. Image 2 is the finished 老周 sprite: use the SAME polished semi-realistic hand-painted rendering, natural adult proportions, fine ink-and-brush contours, believable human face planes, detailed fabric and restrained warm-left/cool-right night-work lighting. Draw a DIFFERENT person, not the same face or gender as 老周. Image 3 is the dispatch background, palette and lighting reference only; do not include its environment. Entire character centered on vertical 2:3 transparent canvas, from hair to just below waist, slight three-quarter turn towards viewer's left, eyes towards viewer. Top padding 6%, transparent side margins 8%; ALL shoulders, elbows, hair and any held objects completely within frame, torso can leave only the bottom edge. Hands if visible must be anatomically plausible. Soft readable face, adult normal eyes, no glamour smoothing. Genuine alpha transparency outside character, no opaque backdrop or background color, no checkerboard painted into image, no halo, vignette, external cast shadow, text, labels, logos, watermark, anime eyes or exaggerated horror mutations. Character: 许守成, fictional Chinese man about 35, a meticulous electricity-service worker remembered through old records. Short neatly side-parted black hair, slim ordinary adult build, rectangular dark-rim glasses with transparent lenses, clean-shaven, restrained thoughtful neutral expression. Faded dark grey-green work jacket over light collared shirt, one small pen in breast pocket. Absolutely no ghost effect, no translucent body, no pale corpse makeup; portray him as the ordinary living person from the archived memory. Distinct narrower face from 老周, no grey hair.",
+      "references": [
+        "previous SVG at 5d0ab8e: public/art/portraits/xu.svg",
+        "generated portrait: zhou",
+        "generated background: dispatch"
+      ],
+      "source_sha256": "45df50c46c368cedde8efddb1908b73131954c758272e511c83779e5daf16ad4",
+      "sha256": "8c3600c01e5df1673f0105af90bd59f9fb740a6a73c902d9833a47f93b7e39c0",
+      "width": 640,
+      "height": 960,
+      "bytes": 153330,
+      "alpha": true
+    },
+    {
+      "id": "chen",
+      "type": "portrait",
+      "output": "public/art/portraits/chen.webp",
+      "prompt": "Use case: stylized-concept. Asset type: ONE transparent half-body character sprite for Circuit / 回路, Chinese urban folk-horror narrative game. Image 1 is the OLD flat SVG: retain character identity cues, not its primitive anatomy. Image 2 is the finished 老周 sprite: use the SAME polished semi-realistic hand-painted rendering, natural adult proportions, fine ink-and-brush contours, believable human face planes, detailed fabric and restrained warm-left/cool-right night-work lighting. Draw a DIFFERENT person, not the same face or gender as 老周. Image 3 is the dispatch background, palette and lighting reference only; do not include its environment. Entire character centered on vertical 2:3 transparent canvas, from hair to just below waist, slight three-quarter turn towards viewer's left, eyes towards viewer. Top padding 6%, transparent side margins 8%; ALL shoulders, elbows, hair and any held objects completely within frame, torso can leave only the bottom edge. Hands if visible must be anatomically plausible. Soft readable face, adult normal eyes, no glamour smoothing. Genuine alpha transparency outside character, no opaque backdrop or background color, no checkerboard painted into image, no halo, vignette, external cast shadow, text, labels, logos, watermark, anime eyes or exaggerated horror mutations. Character: 陈伯, fictional Chinese man about 60, older caretaker. Faded dark green cloth work cap, grey hair visible around sides, weathered long face with understated crow's feet and sparse salt-and-pepper stubble, practical slightly stooped posture. Faded olive jacket over beige open shirt collar, small ring of old brass house keys clipped to chest pocket, no power-company logo. Quiet guarded expression, mouth relaxed, normal eyes; no exaggerated grin. Keys and cap fully inside frame.",
+      "references": [
+        "previous SVG at 5d0ab8e: public/art/portraits/chen.svg",
+        "generated portrait: zhou",
+        "generated background: dispatch"
+      ],
+      "source_sha256": "f39a9eca74e587861c81526197a4ed614ffdd4fe899060e2294dc83e3aa1c2e3",
+      "sha256": "38fc025885267d2720efc2ad8e092987083a139fadcf03be0f73e2cfd3954373",
+      "width": 640,
+      "height": 960,
+      "bytes": 155004,
+      "alpha": true
+    },
+    {
+      "id": "shen",
+      "type": "portrait",
+      "output": "public/art/portraits/shen.webp",
+      "prompt": "Use case: stylized-concept. Asset type: ONE transparent half-body character sprite for Circuit / 回路, Chinese urban folk-horror narrative game. Image 1 is the OLD flat SVG: retain character identity cues, not its primitive anatomy. Image 2 is the finished 老周 sprite: use the SAME polished semi-realistic hand-painted rendering, natural adult proportions, fine ink-and-brush contours, believable human face planes, detailed fabric and restrained warm-left/cool-right night-work lighting. Draw a DIFFERENT person, not the same face or gender as 老周. Image 3 is the dispatch background, palette and lighting reference only; do not include its environment. Entire character centered on vertical 2:3 transparent canvas, from hair to just below waist, slight three-quarter turn towards viewer's left, eyes towards viewer. Top padding 6%, transparent side margins 8%; ALL shoulders, elbows, hair and any held objects completely within frame, torso can leave only the bottom edge. Hands if visible must be anatomically plausible. Soft readable face, adult normal eyes, no glamour smoothing. Genuine alpha transparency outside character, no opaque backdrop or background color, no checkerboard painted into image, no halo, vignette, external cast shadow, text, labels, logos, watermark, anime eyes or exaggerated horror mutations. Character: 沈棠, fictional Chinese woman about 28, a bereaved family member waiting for the final repair visit. Shoulder-length straight black hair tucked loosely behind one ear, slim ordinary adult build, tired but resolved neutral expression, no tears. Plain civilian long charcoal coat over a muted grey-green scarf, simple dark top, no work uniform or headset. Holds ONE small folded yellowed paper in both hands around waist, hands and paper fully inside frame with natural fingers. Distinct younger face from 林岚 but still clearly adult; no glamour or fashionable embellishment.",
+      "references": [
+        "previous SVG at 5d0ab8e: public/art/portraits/shen.svg",
+        "generated portrait: zhou",
+        "generated background: dispatch"
+      ],
+      "source_sha256": "017ba2787bfba545fb09ae7e80c1661bf4d3420975e20b0bbdae5cc2ccb9afa3",
+      "sha256": "2cad3c1d51cd4e5164aad6825ad2b4b4d92882dcd57577bb273df7e9eae4e916",
+      "width": 640,
+      "height": 960,
+      "bytes": 140360,
+      "alpha": true
+    },
+    {
+      "id": "icon",
+      "type": "icon",
+      "output": "public/icon.png",
+      "prompt": "Use case: logo-brand. Asset type: production app icon for Chinese urban electricity folk-horror game Circuit / 回路. Redraw the supplied existing symbol as a refined icon while preserving its meaning: one clean interrupted pale-old-paper circular circuit ring around one simple muted dark oxide-red lightning bolt. A square full-bleed near-black charcoal/slate-green background, absolutely no outside transparent corners, no rounded tile border baked in. Keep symbol centered within the inner 70% safe area so a mobile mask can crop it. A restrained painted enamel finish, faint worn edges and delicate industrial material grain; silhouette remains crisp and readable at 32px. Ring and bolt are flat graphic shapes with subtle tactile shading, no photoreal room, no neon, no shiny 3D bevel, no bloom, no lettering, no text, no watermark, no additional symbols. One square 1024x1024 icon, front view.",
+      "references": [
+        "5d0ab8e: public/icon.svg"
+      ],
+      "source_sha256": "b91d1da5d148f636f49c015d85222a8794d6e239ced7cec9fd6a91af1a65cd26",
+      "sha256": "eee6b23b35577455c4e0e453e08f306ab8bbcb3560b5227dd92c80533d02d9dc",
+      "width": 512,
+      "height": 512,
+      "bytes": 407385,
+      "alpha": false
+    }
+  ]
+}

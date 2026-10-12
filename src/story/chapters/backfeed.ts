@@ -11,7 +11,7 @@ const node = (
 ): StoryNode => ({
   kind, location: '梧城 · 城南拆迁区', time: '第三夜 · 22:10', text,
   visual: 'meter', progress, actions,
-  scene: { background: '/art/demolition.svg' }, ...extra
+  scene: { background: '/art/demolition.webp' }, ...extra
 });
 
 export const backfeed: Chapter = {
@@ -54,7 +54,7 @@ export const backfeed: Chapter = {
       '林岚的终端上，城南拆迁区的负荷箭头朝外。她先排除了图标显示错误：上级计量点确有一小段反向功率。物业报修写“现场零户，进线已拆”。这一次没人说闹鬼，报修人只在最后加了一句：别让他们又从名单里走掉。', 3,
       [act('查看区域退出运行资料', 'route')],
       { location: '城北供电所 · 值班室', time: '21:32', speaker: '林岚', portrait: 'lin', visual: 'dispatch', excludesEvidence: allEvidence,
-        scene: { background: '/art/dispatch.svg', document: { title: '拆迁区异常计量 R02', lines: ['现登记住户：0', '正常进线：已拆除', '边界功率：反向，小幅持续', '物业申请：现场核验'] } } }),
+        scene: { background: '/art/dispatch.webp', document: { title: '拆迁区异常计量 R02', lines: ['现登记住户：0', '正常进线：已拆除', '边界功率：反向，小幅持续', '物业申请：现场核验'] } } }),
     route: node('dialogue',
       '退出资料只有最后一次停电确认，没有完整的地下线路移交。老周指出，图上划掉的一片灰色不等于现场没有导体。你先和调度确认在运边界，把未知支路列为可能有源；进场方案只做调查与隔离确认，不把“零户”当成安全证明。', 6,
       [act('前往物业封存区', 'gate')],
@@ -62,7 +62,7 @@ export const backfeed: Chapter = {
     gate: node('dialogue',
       '围挡后不是一片干净空地。半截楼梯停在半空，拆下的门牌装在塑料筐里，一条旧巷子的线还贴在残墙上。看守陈伯穿着旧物业雨衣来开门，钥匙串上仍有十二把住宅钥匙。他没有递给你，只把大门那一把单独拎出来。', 9,
       [act('向陈伯确认现场变化', 'chen')],
-      { time: '22:02', scene: { background: '/art/demolition.svg' } }),
+      { time: '22:02', scene: { background: '/art/demolition.webp' } }),
     chen: node('dialogue',
       '“表是空的，屋也空了，可它还往外走。”陈伯说自备电源早被清运，施工队停工后才发现边界计量没有归零。物业催他把剩下的门牌扔掉，他却说，要先知道哪块属于谁。你问这是不是今晚的问题，他答：“上回也是从零户开始的。”', 12,
       [act('建立现场边界与人员联络', 'boundary')],
@@ -80,7 +80,7 @@ export const backfeed: Chapter = {
         act('整理回送源端的初步判断', 'compare', { requiresEvidence: firstEvidence })
       ],
       { objective: { title: '不要把零户当成零风险', detail: '独立核验仪表、图纸与人员档案，完成三组证据。' },
-        scene: { background: '/art/demolition.svg', hotspots: [
+        scene: { background: '/art/demolition.webp', hotspots: [
           { id: 'meter', actionId: 'meter', label: '计量边界', x: 34, y: 30 },
           { id: 'map', actionId: 'drawing', label: '残墙线路', x: 56, y: 43 },
           { id: 'list', actionId: 'ledger', label: '迁出名册', x: 77, y: 32 }
@@ -101,7 +101,7 @@ export const backfeed: Chapter = {
       '现行图上的拆除区域是一块灰色矩形，没有任何用户支路。旧施工底图却有两条铅笔线：第一条有验收号，第二条只写“应急 02”。陈伯说那年雨把低处淹了，这条线临时给安置点用。后来拆房快，图纸也快，铅笔线比实体更先被擦掉。', 20,
       [act('沿批准调查范围核对现场标识', 'survey')],
       { excludesEvidence: ['r02-map'], time: '22:24',
-        scene: { background: '/art/demolition.svg', document: { title: '旧施工底图', lines: ['支路 01：验收登记完整', '应急 02：铅笔补注，无移交号', '现行图：整片地块退出'] } } }),
+        scene: { background: '/art/demolition.webp', document: { title: '旧施工底图', lines: ['支路 01：验收登记完整', '应急 02：铅笔补注，无移交号', '现行图：整片地块退出'] } } }),
     survey: node('dialogue',
       '残墙上的箭头写着 R02，下面有一行被刷漆盖住的字。你只对可见标识拍照定位，不扒开墙体去找线。底图的线经过一处已拆住宅，再通向旧物业间，恰好绕过正常进线拆除点。所谓“没有供电”，原来只在现行图的边界内成立。', 20,
       [act('记录未入图的应急支路', 'recordMap')],
@@ -148,7 +148,7 @@ export const backfeed: Chapter = {
     oldroom: node('dialogue',
       '旧间里的配电柜没有当作运行设备使用，盖板也不打开。你从门口拍下挂牌文字：源端未明，请勿闭合，待现场确认。落款是许守成。它和槐荫巷工单上的四个字一样，却先是一张很具体的工作交接提醒，不是一条向所有人发出的诅咒。', 51,
       [act('核对挂牌对应的资料缺口', 'marking')],
-      { requiresEvidence: firstEvidence, time: '23:12', scene: { background: '/art/substation.svg', inscription: '源端未明 · 请勿闭合' } }),
+      { requiresEvidence: firstEvidence, time: '23:12', scene: { background: '/art/substation.webp', inscription: '源端未明 · 请勿闭合' } }),
     marking: node('dialogue',
       '维护牌背面印着“接收人”，那里没有签字。陈伯的手伸到一半又停住：“我拿过他的工具袋，没拿过这份票。”他从来以为物业只能保管房子；供电资料以为设备随拆迁退出。两边各少一半责任，现场便留下一个完整的空格。', 54,
       [act('分开核验现场隔离与历史移交', 'secondHub')],
@@ -161,7 +161,7 @@ export const backfeed: Chapter = {
         act('还原 R02 的设立与退出过程', 'reconcile', { requiresEvidence: allEvidence })
       ],
       { requiresEvidence: firstEvidence, objective: { title: '补齐源端边界与责任交接', detail: '确认隔离状态，核验事故原始附件；不要把旧挂牌当成送电许可。' }, time: '23:18',
-        scene: { background: '/art/substation.svg', hotspots: [
+        scene: { background: '/art/substation.webp', hotspots: [
           { id: 'tag', actionId: 'relay', label: '维护牌', x: 34, y: 30 },
           { id: 'archive', actionId: 'fileRequest', label: '事故附件', x: 77, y: 32 }
         ] } }),
@@ -181,7 +181,7 @@ export const backfeed: Chapter = {
       '林岚调出 2019 年 10 月 11 日的事故附件。清河里那张 Q07 接送单旁边，夹着 R02 的临时安置点供电申请，签字有许守成，接收栏空白。工具袋收条上的时间晚了三小时，陈伯代收；收的是物品，不是设备，也不是事故结案。', 58,
       [act('查看救援过程与后续汇总', 'fileReply')],
       { requiresEvidence: firstEvidence, excludesEvidence: ['r02-bypass'], speaker: '林岚', portrait: 'lin', time: '23:38',
-        scene: { background: '/art/substation.svg', document: { title: '原始附件 · 2019-10-11', lines: ['R02：临时安置点应急旁路', '作业人：许守成', '接收 / 验收：空白', '工具袋：物业代管，不构成设备移交'] } } }),
+        scene: { background: '/art/substation.webp', document: { title: '原始附件 · 2019-10-11', lines: ['R02：临时安置点应急旁路', '作业人：许守成', '接收 / 验收：空白', '工具袋：物业代管，不构成设备移交'] } } }),
     fileReply: node('dialogue',
       '救援口述记着：停电后仍有居民困在低处，许守成进入未登记的旁路区域协助撤离，最后没能出来。后续汇总留下救援人数，却把临时安置点并回地块，旁路便失去服务对象。所谓“零户退出”，既没完成设备验收，也没完成事故复核。', 58,
       [act('请陈伯补充自己能负责的事实', 'chenMemory')],
@@ -217,7 +217,7 @@ export const backfeed: Chapter = {
     handwriting: node('dialogue',
       '借用单背面有一行细字：“人走后，线须另交。”它不是留住居民的要求，恰恰是提醒后来的人，结束安置不等于结束线路责任。陈伯把门牌筐搬到有顶棚的地方，老周在维护记录写下接收责任单位。两个人做的是不同的事，终于各有一句完整的话。', 83,
       [act('决定 R02 最终处置', 'closurePuzzle')],
-      { requiresEvidence: allEvidence, time: '00:28', scene: { background: '/art/substation.svg', inscription: '人走后，线须另交' } }),
+      { requiresEvidence: allEvidence, time: '00:28', scene: { background: '/art/substation.webp', inscription: '人走后，线须另交' } }),
     closurePuzzle: node('puzzle',
       '读数仍在旧端，源头没有完全查明；原始资料和名单已有明确去向。有人建议“接回去看看就知道了”，也有人建议把全部纸张当废物处理。你不能用一次恢复供电替代调查，更不能把人的姓名留在线路里，才算记得他们。', 85,
       [
@@ -248,19 +248,19 @@ export const backfeed: Chapter = {
     trend: node('dialogue',
       '独立观察端的反向读数逐渐减小，但你没有据此宣布墙内安全，也没有撤销隔离。最后一段变化停在十二与十三之间，像名单背面的半格。维护牌照片上原本模糊的箭头清楚起来，箭头不再朝正常进线，而是指向旧城东侧一片仍有人住的楼群。', 96,
       [act('离开封存区', 'emptySeat')],
-      { requiresEvidence: allEvidence, time: '01:18', scene: { background: '/art/demolition.svg', inscription: 'R02 · 已转交 / 未投入' } }),
+      { requiresEvidence: allEvidence, time: '01:18', scene: { background: '/art/demolition.webp', inscription: 'R02 · 已转交 / 未投入' } }),
     emptySeat: node('dialogue',
       '陈伯锁好门，十二把钥匙装进了签收袋。女儿把他的冷茶换成热水，让他先上车。他回头看了一眼，却没有再问你能不能让空屋亮起来。旧物业间的桌子上只留着作业边界提示，属于它的纸，终于比属于人的纸少。', 97,
       [act('查看下一处线索', 'linger')],
-      { requiresEvidence: allEvidence, location: '城南拆迁区 · 围挡外', time: '01:26', scene: { background: '/art/alley.svg' } }),
+      { requiresEvidence: allEvidence, location: '城南拆迁区 · 围挡外', time: '01:26', scene: { background: '/art/alley.webp' } }),
     linger: node('dialogue',
       '林岚把 R02 放到 Q07 旁边，线没有闭合，反而露出一个缺口。东侧楼群的一张老工单写着“楼道长明灯，无计量变化”，编号 L03。附件里有一条与许守成笔迹相近的提醒：“灯亮，不代表路还在。”你收好今晚的记录，旧城的下一盏灯已经在等。', 98,
       [act('归档第二章', 'end')],
-      { requiresEvidence: allEvidence, location: '抢修车 · 城南大道', time: '01:34', scene: { background: '/art/dispatch.svg' } }),
+      { requiresEvidence: allEvidence, location: '抢修车 · 城南大道', time: '01:34', scene: { background: '/art/dispatch.webp' } }),
     end: node('ending',
       '【第二章完成】未知回路保持隔离，正常居民供电未受牵连。拆迁区的“零户”后面重新挂上历史服务与维护记录，陈伯不必再用整夜看守代替交接。调查板留下 R02：一条为了救人临时建立，却没有被正式接收的旁路。它的箭头指向 L03。', 100,
       [act('重新调查《回送》', 'dispatch', { id: 'restart', resetEvidence: true })],
       { outcome: 'complete', requiresEvidence: allEvidence, location: '调查归档 · R02', time: '第二章 · 已完成', visual: 'ending',
-        scene: { background: '/art/dispatch.svg', inscription: 'R02 · 名字归档，未知回路保持隔离' } })
+        scene: { background: '/art/dispatch.webp', inscription: 'R02 · 名字归档，未知回路保持隔离' } })
   }
 };

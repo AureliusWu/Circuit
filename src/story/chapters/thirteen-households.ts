@@ -10,7 +10,7 @@ const workOrder = {
 function beat(location: string, time: string, progress: number, text: string, next: string, extra: Partial<StoryNode> = {}): StoryNode {
   return {
     kind: 'dialogue', location, time, progress, text, visual: 'alley',
-    scene: { background: '/art/alley.svg' },
+    scene: { background: '/art/alley.webp' },
     actions: [{ id: 'continue', label: '继续', next }],
     ...extra
   };
@@ -18,7 +18,7 @@ function beat(location: string, time: string, progress: number, text: string, ne
 
 const opening = { excludesEvidence: allEvidence };
 const afterGate = { requiresEvidence: requiredEvidence };
-const dispatchScene = { background: '/art/dispatch.svg', document: workOrder };
+const dispatchScene = { background: '/art/dispatch.webp', document: workOrder };
 
 export const thirteenHouseholds: Chapter = {
   id: 'thirteen-households',
@@ -44,7 +44,7 @@ export const thirteenHouseholds: Chapter = {
     title: {
       kind: 'title', location: '梧城', time: '00:47',
       text: '雨把城市的声音压得很低。远处一排路灯，像一条没有闭合的线。',
-      visual: 'blackout', progress: 0, ...opening, scene: { background: '/art/alley.svg' },
+      visual: 'blackout', progress: 0, ...opening, scene: { background: '/art/alley.webp' },
       actions: [{ id: 'begin', label: '开始抢修', next: 'dispatch' }]
     },
     dispatch: {
@@ -61,10 +61,10 @@ export const thirteenHouseholds: Chapter = {
     },
     safetyBrief: beat('城北供电所 · 出车登记', '00:56', 7,
       '林岚把工单转到我的终端：“用户说是整条巷子灭了。上级出线没有跳闸，先核对停电边界。现场遇到来路不明的电源，别把它当成普通残余电。”她在回访栏留了自己的分机。',
-      'vehicleKit', { ...opening, speaker: '林岚', portrait: 'lin', visual: 'dispatch', scene: { background: '/art/dispatch.svg' } }),
+      'vehicleKit', { ...opening, speaker: '林岚', portrait: 'lin', visual: 'dispatch', scene: { background: '/art/dispatch.webp' } }),
     vehicleKit: beat('抢修车', '01:00', 9,
       '我检查验电器的自检、绝缘工具与照明。钳形表、便携功率分析仪都能正常自检，相机时间也和终端对齐。车里另有一册纸质用户台账——老巷子的地址，有时纸上比系统里清楚。',
-      'zhouCall', { ...opening, visual: 'dispatch', scene: { background: '/art/dispatch.svg' } }),
+      'zhouCall', { ...opening, visual: 'dispatch', scene: { background: '/art/dispatch.webp' } }),
     zhouCall: beat('城西路口 · 车载通讯', '01:08', 12,
       '老周接起电话，听见“槐荫巷”后停了一下：“我住得近，过来配合你。那边拆迁时改过线，不能只照新图找开关。先等我到，别一个人往旧宅里钻。”',
       'bypassWarning', { ...opening, speaker: '老周', portrait: 'zhou' }),
@@ -74,7 +74,7 @@ export const thirteenHouseholds: Chapter = {
     alley: {
       kind: 'dialogue', location: '城西 · 槐荫巷', time: '01:21',
       text: '整条巷子都黑着，只有尽头一盏老式路灯亮着。雨水沿着架空线往下滴，像有什么东西正顺着线爬。',
-      visual: 'alley', progress: 18, ...opening, scene: { background: '/art/alley.svg' },
+      visual: 'alley', progress: 18, ...opening, scene: { background: '/art/alley.webp' },
       actions: [{ id: 'open-meterbox', label: '先查低压表箱', next: 'alleyResidents' }]
     },
     alleyResidents: beat('槐荫巷口', '01:22', 20,
@@ -103,7 +103,7 @@ export const thirteenHouseholds: Chapter = {
         { id: 'find-lamp', label: '去找唯一亮着的路灯', next: 'lamp', requiresEvidence: requiredEvidence, tone: 'danger' }
       ],
       scene: {
-        background: '/art/alley.svg',
+        background: '/art/alley.webp',
         hotspots: [
           { id: 'current', actionId: 'current', label: '测电流方向', x: 34, y: 30 },
           { id: 'ledger', actionId: 'ledger', label: '核对用户台账', x: 56, y: 43 },
@@ -116,7 +116,7 @@ export const thirteenHouseholds: Chapter = {
     inspectCurrent: {
       kind: 'evidence', location: '低压表箱', time: '01:29', speaker: '你',
       text: '总开关断开。验电确认。可钳形表仍有 0.41A，而且电流方向反了——它从巷子深处回来。',
-      visual: 'meter', progress: 35, excludesEvidence: ['live-after-cut'], scene: { background: '/art/alley.svg' },
+      visual: 'meter', progress: 35, excludesEvidence: ['live-after-cut'], scene: { background: '/art/alley.webp' },
       actions: [{ id: 'record-current', label: '记录：断开后仍有负荷', next: 'currentLimit', collect: 'live-after-cut' }]
     },
     currentLimit: beat('低压表箱 · 仪表复核', '01:30', 35,
@@ -131,22 +131,22 @@ export const thirteenHouseholds: Chapter = {
     inspectLedger: {
       kind: 'evidence', location: '抢修车内', time: '01:33', speaker: '你',
       text: '纸质台账只有1到12号。手机系统里多出一个13号户表，七年前建档，此后每个月只在同一天出现一小段用电。',
-      visual: 'meter', progress: 35, excludesEvidence: ['house-13'], scene: { background: '/art/dispatch.svg' },
+      visual: 'meter', progress: 35, excludesEvidence: ['house-13'], scene: { background: '/art/dispatch.webp' },
       actions: [{ id: 'record-ledger', label: '记录：不存在的13户', next: 'ledgerAddress', collect: 'house-13' }]
     },
     ledgerAddress: beat('抢修车 · 用户档案', '01:34', 35,
       '13号的地址栏是空白，户号却能通过校验。我先查迁出、合户和停用记录：十二户各有来处，唯独13号没有正常的销户凭证。它不像新装的表，更像被挪走了地址的一份旧档。',
-      'ledgerPattern', { visual: 'dispatch', scene: { background: '/art/dispatch.svg' }, requiresEvidence: ['house-13'] }),
+      'ledgerPattern', { visual: 'dispatch', scene: { background: '/art/dispatch.webp' }, requiresEvidence: ['house-13'] }),
     ledgerPattern: beat('抢修车 · 历史曲线', '01:35', 35,
       '那一小段用电从凌晨零点四十七分开始，只有几分钟。月份变了，日期和时刻一直没变。每次系统都会把它算进在线用户，后面的日累计却仍是零。我截下原始曲线，避免刷新后丢失。',
-      'ledgerContact', { visual: 'dispatch', scene: { background: '/art/dispatch.svg' }, requiresEvidence: ['house-13'] }),
+      'ledgerContact', { visual: 'dispatch', scene: { background: '/art/dispatch.webp' }, requiresEvidence: ['house-13'] }),
     ledgerContact: beat('槐荫巷 · 调度通讯', '01:36', 35,
       '林岚发来建档来源：2019年10月11日旧城改造资料导入。“原始附页不在电子卷里，只有一个 H13 编号。”老周听见这个编号，伸手去摸雨衣内袋，又把手放下了。他说，先把现场查完。',
       'meterbox', { speaker: '林岚', portrait: 'lin', requiresEvidence: ['house-13'], actions: [{ id: 'return-meterbox', label: '返回表箱继续排查', next: 'meterbox' }] }),
     inspectAsh: {
       kind: 'evidence', location: '低压表箱', time: '01:36',
       text: '封印螺丝后面塞着一点黄纸灰。雨下了一夜，它却是干的。残片上能辨出半个“回”字。',
-      visual: 'meter', progress: 35, excludesEvidence: ['paper-ash'], scene: { background: '/art/alley.svg' },
+      visual: 'meter', progress: 35, excludesEvidence: ['paper-ash'], scene: { background: '/art/alley.webp' },
       actions: [{ id: 'record-ash', label: '记录：表箱里的纸灰', next: 'ashSeal', collect: 'paper-ash' }]
     },
     ashSeal: beat('低压表箱 · 封印外侧', '01:37', 35,
@@ -175,20 +175,20 @@ export const thirteenHouseholds: Chapter = {
       'ticketGap', { speaker: '老周', portrait: 'zhou', excludesEvidence: ['bypass-ticket'] }),
     ticketGap: beat('抢修车 · 旧工作票', '01:36', 35,
       '工作票的正页写着“旧城改造临时停电”；附页记着救援照明和十三号临时旁路。正式电子卷只保留了正页，所以看起来那夜没有留下任何额外接线，也没有尚待清理的用户。',
-      'ticketSignature', { visual: 'dispatch', scene: { background: '/art/dispatch.svg' }, excludesEvidence: ['bypass-ticket'] }),
+      'ticketSignature', { visual: 'dispatch', scene: { background: '/art/dispatch.webp' }, excludesEvidence: ['bypass-ticket'] }),
     ticketSignature: beat('抢修车 · 签名栏', '01:37', 35,
       '附页的执行人是许守成，监护栏只写到一半。老周指着缺笔的地方：“我当时去另一头疏散住户。回来时已经出事。后来报告把这张当作废页，我没有把复印件交出去。”',
-      'ticketRoute', { speaker: '老周', portrait: 'zhou', visual: 'dispatch', scene: { background: '/art/dispatch.svg' }, excludesEvidence: ['bypass-ticket'] }),
+      'ticketRoute', { speaker: '老周', portrait: 'zhou', visual: 'dispatch', scene: { background: '/art/dispatch.webp' }, excludesEvidence: ['bypass-ticket'] }),
     ticketRoute: beat('抢修车 · 接线附图', '01:38', 35,
       '票上的 H13 不只是户号。它指向一条从旧宅外墙接到救援照明的支路，末端还标了城北转接点。图画到巷外就断了，没有注明旁路拆除人，也没有闭合验收日期。',
-      'ticketRecord', { visual: 'dispatch', scene: { background: '/art/dispatch.svg' }, excludesEvidence: ['bypass-ticket'] }),
+      'ticketRecord', { visual: 'dispatch', scene: { background: '/art/dispatch.webp' }, excludesEvidence: ['bypass-ticket'] }),
     ticketRecord: beat('抢修车 · 拍照留存', '01:39', 35,
       '老周同意把复印件作为线索附在今天的工单后，并接受后续原件核查。我把票号、签名与缺失的拆除记录分别录入。对他而言，这张纸终于离开内袋；对现场而言，未知接线仍然不能送电。',
       'meterbox', { kind: 'evidence', portrait: 'zhou', excludesEvidence: ['bypass-ticket'], actions: [{ id: 'record-ticket', label: '记录：未归档的旁路票', next: 'meterbox', collect: 'bypass-ticket' }] }),
     lamp: {
       kind: 'dialogue', location: '槐荫巷尽头', time: '01:42',
       text: '那盏路灯没有接在现有图纸的任何支路上。灯杆后是一栋封死的旧宅，门牌被拆了，只留下两颗钉子。',
-      visual: 'lamp', progress: 55, ...afterGate, scene: { background: '/art/alley.svg' },
+      visual: 'lamp', progress: 55, ...afterGate, scene: { background: '/art/alley.webp' },
       actions: [{ id: 'organize-evidence', label: '整理证据', next: 'lampCheck' }]
     },
     lampCheck: beat('旧路灯 · 安全距离外', '01:43', 57,
@@ -209,7 +209,7 @@ export const thirteenHouseholds: Chapter = {
     deduction: {
       kind: 'choice', location: '旧宅门前', time: '01:46', speaker: '你',
       text: '三个异常现在连在了一起：倒送电、13号户、干燥的纸灰。必须先判断它们是不是同一个“故障”。',
-      visual: 'lamp', progress: 68, ...afterGate, scene: { background: '/art/alley.svg' },
+      visual: 'lamp', progress: 68, ...afterGate, scene: { background: '/art/alley.webp' },
       actions: [
         { id: 'cut-line', label: '按窃电处理，直接切断异常回路', next: 'wrong' },
         { id: 'trace-source', label: '先追踪倒送电源，再核对“13号”的建档日期', next: 'isolationChoice', tone: 'danger' }
@@ -252,12 +252,12 @@ export const thirteenHouseholds: Chapter = {
     truth: {
       kind: 'dialogue', location: '槐荫巷 · 13号', time: '01:52',
       text: '你没有剪线。你先把13号户从系统里拉出来，又沿着倒送电流找到旧宅墙内的暗线。电线的尽头没有负载，只有一张七年前的讣告。',
-      visual: 'ending', progress: 80, ...afterGate, scene: { background: '/art/alley.svg', inscription: '请勿闭合' },
+      visual: 'ending', progress: 80, ...afterGate, scene: { background: '/art/alley.webp', inscription: '请勿闭合' },
       actions: [{ id: 'continue', label: '继续', next: 'noticeNames' }]
     },
     noticeNames: beat('旧宅 · 讣告', '01:53', 82,
       '讣告上是许守成的名字，落款却是“槐荫巷十三号及邻里”。后面列着当夜接受救助的人，和旧台账里的户名一一对应。十三号一家没有欠他电费，他们欠的是一句从未出现在正式记录里的证明。',
-      'noticeDebt', { ...afterGate, portrait: 'xu', visual: 'ending', scene: { background: '/art/alley.svg' } }),
+      'noticeDebt', { ...afterGate, portrait: 'xu', visual: 'ending', scene: { background: '/art/alley.webp' } }),
     noticeDebt: beat('旧宅门前', '01:54', 84,
       '杨婶认出那张纸：“我们想放进所里，不知道交给谁。后来只好留在他最后干活的地方。”烧纸的人不是要把许守成叫回来；她担心连这条巷子也没人再记得他来过。雨把她的尾音压得很低。',
       'linCompare', { ...afterGate, speaker: '杨婶', portrait: 'mei', visual: 'ending' }),
@@ -275,11 +275,11 @@ export const thirteenHouseholds: Chapter = {
       'busReveal', { ...afterGate, speaker: '老周', portrait: 'zhou' }),
     busReveal: beat('抢修车 · 待办工单', '02:06', 97,
       '终端上的 H13 变成可检索的历史编号。林岚发现旁路附图的城北转接点，和最近连续跳闸的“七号支线”有一项旧记录相连。她没有把两个故障合成一个答案，只把第二份工单排进了明晚的值班表。',
-      'end', { ...afterGate, portrait: 'lin', visual: 'ending', scene: { background: '/art/dispatch.svg' } }),
+      'end', { ...afterGate, portrait: 'lin', visual: 'ending', scene: { background: '/art/dispatch.webp' } }),
     end: {
       kind: 'ending', outcome: 'complete', location: '第一回路 · 未闭合', time: '02:07',
       text: '恢复供电后，十二户电表重新走字。系统上的第13块表消失了。你收起工具时，工单自动多了一行从未有人输入的备注：\n\n“请勿闭合。”',
-      visual: 'ending', progress: 100, ...afterGate, scene: { background: '/art/alley.svg', inscription: '请勿闭合' },
+      visual: 'ending', progress: 100, ...afterGate, scene: { background: '/art/alley.webp', inscription: '请勿闭合' },
       actions: [{ id: 'restart', label: '重新开始序章', next: 'dispatch', resetEvidence: true }]
     }
   }

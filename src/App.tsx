@@ -23,10 +23,7 @@ const BACKGROUNDS: Record<ChapterId, string> = {
 };
 const PORTRAIT_NAMES: Record<string, string> = { lin: '林岚', zhou: '老周', mei: '杨婶', xu: '许守成', chen: '陈伯', shen: '沈棠' };
 const SLOTS: CampaignSlot[] = ['auto', 1, 2, 3];
-const asset = (path: string) => {
-  const file = path === '/art/alley.svg' ? '/art/alley-rain.png' : path;
-  return `${import.meta.env.BASE_URL}${file.replace(/^\//, '')}`;
-};
+const asset = (path: string) => `${import.meta.env.BASE_URL}${path.replace(/^\//, '')}`;
 function storage(): SaveStorage | null {
   try { return window.localStorage; } catch { return null; }
 }
@@ -220,7 +217,7 @@ function App() {
         <div className="noise" />
         {!started ? (
           <>
-            <img className="title-background" src={asset("/art/alley.svg")} alt="雨夜旧城区，线路从住户窗前延伸至远处" />
+            <img className="title-background" src={asset("/art/alley.webp")} alt="雨夜旧城区，线路从住户窗前延伸至远处" />
             <div className="title-layout">
               <section className="title-brand">
                 <p className="eyebrow">城市配电 · 民俗悬疑</p><h1>回路</h1><p className="english-title">CIRCUIT</p>
@@ -251,9 +248,9 @@ function App() {
             </header>
             <div className="progress" role="progressbar" aria-label="章节进度" aria-valuemin={0} aria-valuemax={100} aria-valuenow={node.progress}><i style={{ width: `${node.progress}%` }} /></div>
             <section className="stage" aria-label={node.location}>
-              <div className="stage-background"><img src={asset(node.scene?.background ?? `/art/${node.visual === 'dispatch' ? 'dispatch' : BACKGROUNDS[state.chapterId]}.svg`)} alt="" /></div>
+              <div className="stage-background"><img src={asset(node.scene?.background ?? `/art/${node.visual === 'dispatch' ? 'dispatch' : BACKGROUNDS[state.chapterId]}.webp`)} alt="" /></div>
               <div className="rain" aria-hidden="true" />
-              {node.portrait && <figure className="character-portrait"><img src={asset(`/art/portraits/${node.portrait}.svg`)} alt={PORTRAIT_NAMES[node.portrait] ?? node.speaker ?? ''} /><figcaption className="portrait-caption">{PORTRAIT_NAMES[node.portrait]}</figcaption></figure>}
+              {node.portrait && <figure className="character-portrait"><img src={asset(`/art/portraits/${node.portrait}.webp`)} alt={PORTRAIT_NAMES[node.portrait] ?? node.speaker ?? ''} /><figcaption className="portrait-caption">{PORTRAIT_NAMES[node.portrait]}</figcaption></figure>}
               {node.scene?.document && <div className="scene-document">{[node.scene.document.title, ...node.scene.document.lines].join('\n')}</div>}
               {node.scene?.inscription && <div className="scene-inscription">{node.scene.inscription}</div>}
               {node.kind === 'investigation' && <>
@@ -306,7 +303,7 @@ function App() {
         {panel === 'chapters' && <><p>按归档顺序解锁。重玩已解锁章节会从本章开头出发，线路档案保留。</p><div className="chapter-grid">{CHAPTER_ORDER.map((id, index) => {
           const item = getChapter(id)!; const unlocked = index <= menuSession.completed.length;
           return <button className="chapter-card" key={id} disabled={!unlocked} data-chapter-id={id} onClick={() => selectChapter(id)}>
-            <img src={asset(`/art/${BACKGROUNDS[id]}.svg`)} alt="" /><span>{String(index + 1).padStart(2, '0')} / {item.title}</span><small>{unlocked ? menuSession.completed.includes(id) ? '已归档 · 可重玩' : '已解锁' : '完成前章后解锁'}</small><p>{item.synopsis}</p>
+            <img src={asset(`/art/${BACKGROUNDS[id]}.webp`)} alt="" /><span>{String(index + 1).padStart(2, '0')} / {item.title}</span><small>{unlocked ? menuSession.completed.includes(id) ? '已归档 · 可重玩' : '已解锁' : '完成前章后解锁'}</small><p>{item.synopsis}</p>
           </button>;
         })}</div></>}
         {panel === 'saves' && <><p>自动进度随操作更新。读取存档保留当前自动槽，下一次操作才会保存。</p><div className="save-grid">{SLOTS.map((slot) => {

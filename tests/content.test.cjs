@@ -76,13 +76,14 @@ for (const [index, chapterId] of ORDER.entries()) {
     for (const [nodeId, node] of playable) {
       assert.ok(node.text.trim(), `${chapterId}/${nodeId}: empty narrative`);
       if (node.scene?.background) backgroundCount++;
-      for (const asset of [node.scene?.background, node.portrait && `/art/portraits/${node.portrait}.svg`].filter(Boolean)) {
+      for (const asset of [node.scene?.background, node.portrait && `/art/portraits/${node.portrait}.webp`].filter(Boolean)) {
         assert.ok(asset.startsWith('/art/') && !asset.includes('..'), `Unsupported release asset path: ${asset}`);
         const file = path.resolve('public', asset.slice(1));
         assert.ok(existsSync(file), `${chapterId}/${nodeId}: missing asset ${asset}`);
         const contents = readFileSync(file);
         assert.ok(contents.length > 0, `${asset} is empty`);
-        if (asset.endsWith('.svg')) assert.ok(contents.toString('utf8').includes('<svg'), `${asset} is not SVG`);
+        assert.equal(contents.toString('ascii', 0, 4), 'RIFF', `${asset} is not WebP`);
+        assert.equal(contents.toString('ascii', 8, 12), 'WEBP', `${asset} is not WebP`);
       }
       if (node.kind === 'puzzle') {
         assert.ok(node.puzzle?.prompt && node.puzzle?.hint, `${chapterId}/${nodeId}: puzzle lacks player-facing guidance`);

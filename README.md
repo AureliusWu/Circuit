@@ -1,6 +1,6 @@
 # 回路 / Circuit
 
-> 城市配电抢修题材的中式民俗悬疑 AVG · v1.0.0 第一部 / 归档闭合
+> 城市配电抢修题材的中式民俗悬疑 AVG · v1.0.1 全量美术重绘
 
 你是梧城供电公司的基层配电运检员。一张七年前的工单，把一次深夜抢修引向被删去的住户、未登记的应急旁路，以及一场没有完整归档的救援。先查清电从何处来，再问谁还在等待。
 
@@ -10,7 +10,7 @@
 - 按章节完成顺序解锁，重玩保留城市线路档案。
 - 独立自动进度与三个手动槽，JSON 导入/导出；兼容 v0.1.0 / v0.1.1 本地存档。
 - 抢修日志、文字速度、自动阅读、音量、静音、高对比与减少动态效果。
-- 六幅场景（槐荫巷已升级为图像生成工具制作的半写实背景）、六名成年人物 SVG 立绘，以及实时合成的音乐、雨声、电流声和提示音。
+- 六幅半写实场景、六名手绘成年人物透明立绘与统一应用图标，全部由图像生成能力重绘；场景与立绘以 WebP 提供，合计约 2.38 MiB。音乐、雨声、电流声和提示音由程序实时合成。
 - PWA 离线运行、横竖屏布局和键盘操作；Tauri 2 Windows 桌面封装。
 
 ## 在线游玩
@@ -19,7 +19,7 @@ GitHub Pages 地址：[https://aureliuswu.github.io/Circuit/](https://aureliuswu
 
 ## 开发与构建
 
-需要 Node.js 20 或更新版本。云环境执行命令前，先 `source /workspace/.circuit-env/activate.sh`。
+需要 Node.js 20 或更新版本。
 
 ```bash
 npm ci
@@ -38,7 +38,7 @@ npm run preview
 npm run package:web
 ```
 
-输出 `artifacts/circuit-web-1.0.0.zip`。解压后使用 HTTP 服务运行，不能直接双击 `index.html`；安装 PWA 需要 HTTPS 或 localhost。首次联网加载并完成缓存后可离线继续游玩。
+输出 `artifacts/circuit-web-1.0.1.zip`。解压后使用 HTTP 服务运行，不能直接双击 `index.html`；安装 PWA 需要 HTTPS 或 localhost。首次联网加载并完成缓存后可离线继续游玩，全部场景与人物也包含在离线缓存中。
 
 Windows 原生构建需 Rust、Visual Studio C++ 工具和 WebView2：
 
@@ -71,8 +71,9 @@ python3 tests/reading-browser.py http://127.0.0.1:4173
 
 ## 文档
 
-- [发行说明与验证记录](docs/RELEASE_v1.0.0.md)
+- [当前发行说明与验证记录](docs/RELEASE_v1.0.1.md)、[第一部剧情发行记录](docs/RELEASE_v1.0.0.md)
 - [章节内容与存档规范](docs/CHAPTER_AUTHORING.md)
 - [原创素材说明](docs/ASSETS.md)
+- [全部美术预览](docs/art/redraw-contact-sheet.jpg)、[重绘提示词与素材校验清单](docs/art/redraw-manifest.json)
 - [开发路线](docs/ROADMAP.md)
 - [玩法规范](docs/GAME_DESIGN.md)、[世界观](docs/STORY_BIBLE.md)、[美术规范](docs/ART_BIBLE.md)

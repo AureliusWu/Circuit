@@ -263,6 +263,37 @@ def run(url, pwa):
                     click(page, '继续抢修')
                     assert raw(page) == before
                     assert saved['completed'] == order
+                    phase = 'offline-all-generated-art'
+                    artwork = sorted({node['scene']['background'] for chapter in authored
+                                      for node in chapter['nodes'].values()
+                                      if node.get('scene', {}).get('background')}
+                                     | {'/art/portraits/' + node['portrait'] + '.webp' for chapter in authored
+                                        for node in chapter['nodes'].values() if node.get('portrait')}
+                                     | {'/icon.png'})
+                    images = page.evaluate('''async paths => Promise.all(paths.map(async path => {
+                      const image = new Image(); image.src = path;
+                      await image.decode();
+                      const canvas = document.createElement('canvas');
+                      canvas.width = image.naturalWidth; canvas.height = image.naturalHeight;
+                      const ctx = canvas.getContext('2d'); ctx.drawImage(image, 0, 0);
+                      const pixels = ctx.getImageData(0, 0, canvas.width, canvas.height).data;
+                      let transparent = 0;
+                      for (let i = 3; i < pixels.length; i += 4) if (pixels[i] === 0) transparent++;
+                      return {path, width: image.naturalWidth, height: image.naturalHeight,
+                        transparent: transparent / (canvas.width * canvas.height)};
+                    }))''', [urljoin(url.rstrip('/') + '/', asset.lstrip('/')) for asset in artwork])
+                    assert len(images) == 13, images
+                    for image in images:
+                        if '/portraits/' in image['path']:
+                            assert (image['width'], image['height']) == (640, 960), image
+                            assert .15 < image['transparent'] < .8, image
+                        elif '/art/' in image['path']:
+                            assert (image['width'], image['height']) == (1600, 900), image
+                        else:
+                            assert (image['width'], image['height']) == (512, 512), image
+                    summary['offline_art'] = images
+                    completed.append(phase)
+                    phase = 'offline-campaign-resume-and-replay'
                     click(page, '线路')
                     expect(page.get_by_role('dialog', name='城市线路档案').locator('.map-complete')).to_have_count(6)
                     page.keyboard.press('Escape')

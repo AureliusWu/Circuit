@@ -12,7 +12,8 @@ export default defineConfig(({ mode }) => {
         registerType: 'autoUpdate',
         includeAssets: ['icon.svg', 'icons/*.png'],
         workbox: {
-          globPatterns: ['**/*.{js,css,html,ico,png,svg}']
+          globPatterns: ['**/*.{js,css,html,ico,png,svg}'],
+          maximumFileSizeToCacheInBytes: 4 * 1024 * 1024
         },
         manifest: {
           name: '回路 Circuit',

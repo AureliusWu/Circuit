@@ -23,7 +23,10 @@ const BACKGROUNDS: Record<ChapterId, string> = {
 };
 const PORTRAIT_NAMES: Record<string, string> = { lin: '林岚', zhou: '老周', mei: '杨婶', xu: '许守成', chen: '陈伯', shen: '沈棠' };
 const SLOTS: CampaignSlot[] = ['auto', 1, 2, 3];
-const asset = (path: string) => `${import.meta.env.BASE_URL}${path.replace(/^\//, '')}`;
+const asset = (path: string) => {
+  const file = path === '/art/alley.svg' ? '/art/alley-rain.png' : path;
+  return `${import.meta.env.BASE_URL}${file.replace(/^\//, '')}`;
+};
 function storage(): SaveStorage | null {
   try { return window.localStorage; } catch { return null; }
 }

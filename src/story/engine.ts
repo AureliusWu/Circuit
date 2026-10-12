@@ -4,6 +4,7 @@ import { backfeed } from './chapters/backfeed';
 import { everlight } from './chapters/everlight';
 import { neutral } from './chapters/neutral';
 import { closure } from './chapters/closure';
+import { getCharacter } from '../game/characters';
 import type { Chapter, ChapterId, EvidenceId, GameState, StoryAction, StoryNode } from './types';
 
 export const PROLOGUE: ChapterId = 'thirteen-households';
@@ -108,6 +109,10 @@ export function validateChapter(chapter: Chapter): string[] {
   }
 
   for (const [nodeId, node] of Object.entries(chapter.nodes)) {
+    const character = getCharacter(node.portrait);
+    if (node.portrait && !character) errors.push(`${nodeId}: unknown character ${node.portrait}`);
+    if (node.expression && (!character || !character.portraits[node.expression])) errors.push(`${nodeId}: expression is unavailable for this character`);
+    if (node.presence && (!character || !['scene', 'radio', 'archive'].includes(node.presence))) errors.push(`${nodeId}: invalid character presence`);
     if (!Number.isFinite(node.progress) || node.progress < 0 || node.progress > 100) {
       errors.push(`${nodeId}: progress must be between 0 and 100`);
     }

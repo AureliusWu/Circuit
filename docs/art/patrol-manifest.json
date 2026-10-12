@@ -1,0 +1,244 @@
+{
+  "version": 1,
+  "edition": "1.1.0 / 巡城师徒",
+  "date": "2026-10-12",
+  "generator": "built-in image_gen",
+  "model": "not exposed by the tool",
+  "baseline_commit": "1bbc3ba486a3ba5ed6f90700ae3d6de66be4b053",
+  "assets": [
+    {
+      "id": "cheng",
+      "type": "portrait",
+      "output": "public/art/portraits/cheng.webp",
+      "prompt": "Use case: stylized-concept. Asset type: transparent main-character sprite for the Chinese urban electrical-repair folk-horror AVG Circuit / 回路, v1.1.0. Input 1 is an older colleague: borrow ONLY the painterly rendering and nighttime light, create a completely DIFFERENT man. Input 2 supplies the restrained teal/charcoal/tungsten palette. Character: 程砚, fictional Chinese male age 32, Wucheng Grid city distribution emergency repair employee, experienced field technician and mentor. Short neat black hair, angular but approachable Chinese face, subtly stubbled jaw, normal adult eyes, calm observant serious expression, clearly early 30s rather than 50. Modern navy blue utility work jacket, zipped collar, muted orange high-visibility shoulder/chest panels with understated silver reflective piping; practical clean well-used fabric, no real company logo, no visible writing. Plain white safety helmet correctly worn with chin strap secured, a small unlit headlamp on helmet, slim radio at chest. Half-body portrait from entire helmet through waist; both shoulders and arms complete inside canvas, neutral upright three-quarter angle facing slightly viewer's left, arms relaxed. The person occupies about 80% of a vertical 2:3 canvas, at least 6% transparent top padding and 8% side padding. Same high-quality semi-realistic ink-and-brush hand-painted narrative game sprite style as reference, clear facial planes and fabric, not a photographic actor, not anime, not caricature. Soft warm left practical illumination and cool right shadow, face readable. Genuine alpha transparency, no environment, gradient backdrop, halo, shadow outside body, vignette, labels, watermark, exposed wires, sparks or active electrical work. One person only.",
+      "references": [
+        "1bbc3ba: public/art/portraits/zhou.webp",
+        "1bbc3ba: public/art/dispatch.webp"
+      ],
+      "source_sha256": "8e0edf09d9afecba0e96dd9195bb929119c846cef8219248834e24f510e7e4f2",
+      "sha256": "6c1fc3843590a7d7bc5326b1386046a0400528f4b453c87077665d3dc9406b1c",
+      "width": 640,
+      "height": 960,
+      "bytes": 126000,
+      "alpha": true,
+      "transparent_fraction": 0.37678873697916665
+    },
+    {
+      "id": "ji",
+      "type": "portrait",
+      "output": "public/art/portraits/ji.webp",
+      "prompt": "Use case: stylized-concept. Asset type: transparent apprentice character sprite for Circuit / 回路 v1.1.0. Input 1 supplies painterly quality and restrained lighting ONLY: create a DIFFERENT woman, not the same face. Input 2 supplies the night dispatch-office palette. Character: 季宁, fictional Chinese woman age 23, newly appointed Wucheng Grid distribution field employee, the protagonist's fixed apprentice/partner. Distinct short straight black bob tucked behind ears, natural adult proportions and normal-sized dark eyes, focused inquisitive neutral expression with quiet confidence, practical ordinary appearance. Modern navy blue zipped utility jacket with muted orange high-visibility shoulder and chest panels and narrow silver reflective piping; matching long sleeves and closed collar, no real company logo, no visible text. Plain yellow safety helmet correctly worn with secured chin strap, small unlit helmet lamp. Holds a rugged dark tablet clipped to a simple field notebook at waist, believable hands, tablet screen unlit. Half-body from complete helmet to just below waist, slight three-quarter turn towards viewer's left, ALL hair, helmet, shoulders, elbows, hands and tablet contained inside the frame. Occupy about 78% of a vertical 2:3 canvas, transparent margins 6% top and 8% sides. Polished semi-realistic hand-painted 2D narrative-game art, soft ink and brush contours, clear realistic face planes and textured fabric, consistent warm left/cool right night-work lighting with reference; not a photographed model, not glamorous, not anime. Genuine transparent alpha background with no scene, halo, vignette, cast shadow outside body, checkerboard pattern, labels or watermark. No exposed wires or active live work. Single character.",
+      "references": [
+        "1bbc3ba: public/art/portraits/lin.webp",
+        "1bbc3ba: public/art/dispatch.webp"
+      ],
+      "source_sha256": "caa4986a948203f810540d1a898444d42730f8c500669aca26f6d2c401424a08",
+      "sha256": "3fd6e33df04db5108c6cb89c2832939dc78ed684d0e2da93a60602058912e1dd",
+      "width": 640,
+      "height": 960,
+      "bytes": 116954,
+      "alpha": true,
+      "transparent_fraction": 0.4192529296875
+    },
+    {
+      "id": "cheng-focused",
+      "type": "portrait",
+      "output": "public/art/portraits/cheng-focused.webp",
+      "prompt": "Edit this exact transparent character portrait of Cheng Yan. Preserve his identity, age 32 Chinese male, short black hair, white utility safety helmet with fastened chinstrap, headlamp off, navy and muted orange distribution-grid repair uniform, silver reflective strips, radio, composition, hands, body, garment and painterly Chinese folk-horror visual-novel style. Only make his facial expression more intent and cautious: slightly furrowed eyebrows, concentrated eyes and closed mouth as he checks an ambiguous work-order record. No anger, injury or horror facial distortion. Exact same pose and proportions for an expression swap. Waist-up portrait on a truly transparent background, preserve alpha, no scenery, no aura, no ground, no lettering or logos.",
+      "references": [
+        "v1.1.0: cheng"
+      ],
+      "source_sha256": "20d8b036488a93ffd1487632de55e7a566d6d7521e11df4720972fa835cb9e25",
+      "sha256": "d77567a3a672b2f42ad4c616bb4c5263f364d97eb839e87f55bfec8ef19a1515",
+      "width": 640,
+      "height": 960,
+      "bytes": 98942,
+      "alpha": true,
+      "transparent_fraction": 0.37729329427083336
+    },
+    {
+      "id": "ji-concerned",
+      "type": "portrait",
+      "output": "public/art/portraits/ji-concerned.webp",
+      "prompt": "Edit this exact transparent portrait of Ji Ning. Preserve her identity, age 23 Chinese woman, short black bob, yellow utility safety helmet with fastened chinstrap, navy and muted orange modern grid repair uniform with silver reflective strips, tablet in hands, body and pose, muted semi-realistic painted Chinese folk-horror visual-novel style. Only change facial expression to a subtle alert and questioning concern, slightly knit brows, attentive gaze, lips just parted as she spots a timestamp discrepancy. Competent adult worker, not a frightened child. Same proportions, framing and lighting suitable for an expression swap. Truly transparent background, preserve alpha, no scene, no halo, no ground, no text or logos.",
+      "references": [
+        "v1.1.0: ji"
+      ],
+      "source_sha256": "ab1e5f7cf19ce2bb8baf67bbe4c48a15536236c3936ebc277b191f81cf3c6ace",
+      "sha256": "30e1c2b4a147e9c6c7862ca6e80b6fb40e5ccb65e4f5bba7851455f8107679b2",
+      "width": 640,
+      "height": 960,
+      "bytes": 100022,
+      "alpha": true,
+      "transparent_fraction": 0.4193196614583333
+    },
+    {
+      "id": "repair-van",
+      "type": "background",
+      "output": "public/art/repair-van.webp",
+      "prompt": "Use case: stylized-concept. Asset type: 16:9 narrative background for Chinese folk-horror electrical emergency repair game Circuit / 回路. Reference image is the established painterly dispatch office: match its semi-realistic ink-and-paint material rendering, low-saturation slate teal/charcoal, dirty olive and tungsten warmth, but depict a NEW credible modern repair scene. Fixed camera looking diagonally forward from the rear working compartment of a parked small Chinese urban electricity-repair van at rainy midnight. Through windshield: a dim wet old-city street and single distant amber lamp. Inside: two EMPTY front seats, dashboard and small docked dispatch terminal with unreadable subdued interface; stowed closed insulated-tool cases, portable emergency lamp, reflective raincoats neatly hanging, hard-hat hooks and a clipboard with indistinct marks, a thermos in a secure holder. Clean well-used practical workspace, modest contemporary fleet vehicle, restrained rain glass and soft interior light. No people, no logos, no legible words, no unsafe loose cables or clutter, no ghost, gore, watermark or UI overlay. Keep foreground lower 25% calm/darker for dialogue and right quarter quiet for character overlay. Rich production-quality atmospheric painting rather than vector shapes or photo. One full-bleed horizontal 16:9 background, ideally 1920x1080.",
+      "references": [
+        "1bbc3ba: public/art/dispatch.webp"
+      ],
+      "source_sha256": "04c627a5c3a006507a232fd135e044de3a09c7e0b08419c6c9bfc024d70d8fef",
+      "sha256": "a78231f2b67710f002da3f25d66d6b0bfb74b2c54df7e33bb151f0254fcf7b8c",
+      "width": 1600,
+      "height": 900,
+      "bytes": 187500,
+      "alpha": false,
+      "transparent_fraction": 0
+    },
+    {
+      "id": "chibi-cheng",
+      "type": "chibi",
+      "output": "public/art/chibi/cheng.webp",
+      "prompt": "Create one full-body Q-version chibi character design based faithfully on this Chinese male city distribution-grid emergency repair worker Cheng Yan. Retain recognizable short black hair, light stubble, plain white safety helmet with chinstrap and small switched-off headlamp, navy uniform with muted orange shoulder and waist panels, two silver reflective strips, belt radio, sturdy dark work boots. He is an adult 32, capable and approachable: 3-head-tall proportions, a large head, compact adult body, small warm but not babyish eyes, slight restrained smile. Holds a closed compact orange tool case at his side with other hand resting on radio strap. Use precise clean painted outlines, subdued navy/coral/ivory color palette, soft cel shading, very subtle paper-grain paint texture. This will be the style master for a matching cast of eight character-directory avatars in a Chinese folk-horror game. Full figure including helmet and boots, centered in square canvas with generous 10 percent clear margin, no cropped objects. Truly transparent background. No shadow plane, halo, scenery, labels, watermark or any text. No real company logos, no weapons, no exposed live wires.",
+      "references": [
+        "v1.1.0: cheng"
+      ],
+      "source_sha256": "2b93f2925ce9e797876c38dd7c4d8955215198ee36c8f79ef242a97cdd31568e",
+      "sha256": "ef3127fca2cd98c879bd4ee7a0be77588bfb282bc4d806bb4c27ac241dd72306",
+      "width": 640,
+      "height": 640,
+      "bytes": 53398,
+      "alpha": true,
+      "transparent_fraction": 0.728369140625
+    },
+    {
+      "id": "chibi-ji",
+      "type": "chibi",
+      "output": "public/art/chibi/ji.webp",
+      "prompt": "Create ONE new full-body Q-version character avatar. Image 1 is the exact style and proportion master: match its large head, compact approximately 3-head-tall adult body, clean painted outlines, soft cel shading and subtle paper grain, muted colors, consistent eye style and natural three-quarter standing pose. Image 2 is this person's adult identity and clothing reference: keep recognizable face, hair, clothes and signature prop while translating to the style of image 1. DO NOT include the style-master male character in the result. Character to draw: Ji Ning, age 23 Chinese woman, short black bob, plain yellow safety helmet with fastened chinstrap and unlit headlamp, same navy-and-muted-orange reflective repair uniform as the style master, dark boots, rugged black tablet held at waist and waterproof notebook tucked under arm. Bright attentive expression, capable adult apprentice. Single figure centered on a square canvas. Full helmet/head and both feet entirely inside canvas, with clear generous margin all around; no cropping. Truly transparent background with clean alpha. No ground or shadow plane, aura, frame, scenery, labels, writing, watermark, real company logos or other characters. Comparable scale and detail to image 1. This is a friendly character-directory avatar for the Chinese folk-horror game Circuit, not a new horror scene. Preserve human age cues and restrained personality.",
+      "references": [
+        "v1.1.0: chibi-cheng",
+        "v1.1.0: ji"
+      ],
+      "source_sha256": "9fd10567688d3bd31c35386a1aaa4f3dab3a46b7ce93a5a6cc7e9daa23831b63",
+      "sha256": "ec71b5fa88aabc5230bc7edd33d2c0e9880d34a686f081b871386dcbe359ad4b",
+      "width": 640,
+      "height": 640,
+      "bytes": 52250,
+      "alpha": true,
+      "transparent_fraction": 0.735390625
+    },
+    {
+      "id": "chibi-lin",
+      "type": "chibi",
+      "output": "public/art/chibi/lin.webp",
+      "prompt": "Create ONE new full-body Q-version character avatar. Image 1 is the exact style and proportion master: match its large head, compact approximately 3-head-tall adult body, clean painted outlines, soft cel shading and subtle paper grain, muted colors, consistent eye style and natural three-quarter standing pose. Image 2 is this person's adult identity and clothing reference: keep recognizable face, hair, clothes and signature prop while translating to the style of image 1. DO NOT include the style-master male character in the result. Character to draw: Lin Lan, age 30 Chinese woman, black hair neatly tied back with a few wisps, discreet black telephone headset microphone, dark olive-grey indoor work jacket over beige shirt, dark trousers and simple black shoes. Holds a closed clipboard and a pen. Calm, observant duty liaison; no helmet. Single figure centered on a square canvas. Full helmet/head and both feet entirely inside canvas, with clear generous margin all around; no cropping. Truly transparent background with clean alpha. No ground or shadow plane, aura, frame, scenery, labels, writing, watermark, real company logos or other characters. Comparable scale and detail to image 1. This is a friendly character-directory avatar for the Chinese folk-horror game Circuit, not a new horror scene. Preserve human age cues and restrained personality.",
+      "references": [
+        "v1.1.0: chibi-cheng",
+        "1bbc3ba: public/art/portraits/lin.webp"
+      ],
+      "source_sha256": "7a9ed22c037a8e89e8a70d008c7e327283b8fc57a12744c3514ddca840334f24",
+      "sha256": "fb101bcba87fc75f0659b3a8ef1542a55c7882f623e864000eb3b948b93a6dfc",
+      "width": 640,
+      "height": 640,
+      "bytes": 53142,
+      "alpha": true,
+      "transparent_fraction": 0.74782470703125
+    },
+    {
+      "id": "chibi-zhou",
+      "type": "chibi",
+      "output": "public/art/chibi/zhou.webp",
+      "prompt": "Create ONE new full-body Q-version character avatar. Image 1 is the exact style and proportion master: match its large head, compact approximately 3-head-tall adult body, clean painted outlines, soft cel shading and subtle paper grain, muted colors, consistent eye style and natural three-quarter standing pose. Image 2 is this person's adult identity and clothing reference: keep recognizable face, hair, clothes and signature prop while translating to the style of image 1. DO NOT include the style-master male character in the result. Character to draw: Old Zhou, age 50 Chinese man, short salt-and-pepper hair, light stubble and lined but recognizable face, worn dark olive-grey raincoat/work jacket with one dull reflective chest strip over workwear, dark trousers and sturdy boots. Holds a folded old paper attachment in one hand and a small closed brown document bag in the other. Reserved, thoughtful expression; no helmet. Single figure centered on a square canvas. Full helmet/head and both feet entirely inside canvas, with clear generous margin all around; no cropping. Truly transparent background with clean alpha. No ground or shadow plane, aura, frame, scenery, labels, writing, watermark, real company logos or other characters. Comparable scale and detail to image 1. This is a friendly character-directory avatar for the Chinese folk-horror game Circuit, not a new horror scene. Preserve human age cues and restrained personality.",
+      "references": [
+        "v1.1.0: chibi-cheng",
+        "1bbc3ba: public/art/portraits/zhou.webp"
+      ],
+      "source_sha256": "1fe391d84613701b95091b808b867492753af7f256da11c6a5e10f96ebc7486c",
+      "sha256": "e68936b26e046c0a1b31724bd908f82c3c65efa05195c9d592ef8ab7aa0bcc13",
+      "width": 640,
+      "height": 640,
+      "bytes": 58178,
+      "alpha": true,
+      "transparent_fraction": 0.71901611328125
+    },
+    {
+      "id": "chibi-mei",
+      "type": "chibi",
+      "output": "public/art/chibi/mei.webp",
+      "prompt": "Create ONE new full-body Q-version character avatar. Image 1 is the exact style and proportion master: match its large head, compact approximately 3-head-tall adult body, clean painted outlines, soft cel shading and subtle paper grain, muted colors, consistent eye style and natural three-quarter standing pose. Image 2 is this person's adult identity and clothing reference: keep recognizable face, hair, clothes and signature prop while translating to the style of image 1. DO NOT include the style-master male character in the result. Character to draw: Aunt Yang Guimei, age 60 Chinese woman with short wavy grey hair, warm grey-brown knitted cardigan, pale blouse, faded mauve patterned scarf, plain dark trousers and comfortable brown shoes. Holds a small closed tin box of receipts in both hands. Gentle patient expression, elderly adult, no utility uniform. Single figure centered on a square canvas. Full helmet/head and both feet entirely inside canvas, with clear generous margin all around; no cropping. Truly transparent background with clean alpha. No ground or shadow plane, aura, frame, scenery, labels, writing, watermark, real company logos or other characters. Comparable scale and detail to image 1. This is a friendly character-directory avatar for the Chinese folk-horror game Circuit, not a new horror scene. Preserve human age cues and restrained personality.",
+      "references": [
+        "v1.1.0: chibi-cheng",
+        "1bbc3ba: public/art/portraits/mei.webp"
+      ],
+      "source_sha256": "a3aed74bfec10d7910ac80e97fb24ae873e28fa7d08354452848b69b68032ea8",
+      "sha256": "9e634e73592ecbb1756450f6ca3854fe912f032786fbcf44acffed15c395791f",
+      "width": 640,
+      "height": 640,
+      "bytes": 59068,
+      "alpha": true,
+      "transparent_fraction": 0.73784423828125
+    },
+    {
+      "id": "chibi-xu",
+      "type": "chibi",
+      "output": "public/art/chibi/xu.webp",
+      "prompt": "Create ONE new full-body Q-version character avatar. Image 1 is the exact style and proportion master: match its large head, compact approximately 3-head-tall adult body, clean painted outlines, soft cel shading and subtle paper grain, muted colors, consistent eye style and natural three-quarter standing pose. Image 2 is this person's adult identity and clothing reference: keep recognizable face, hair, clothes and signature prop while translating to the style of image 1. DO NOT include the style-master male character in the result. Character to draw: Xu Shoucheng, age 35 Chinese man as seen in a 2019 archival photo, short black hair, square glasses, worn dark olive-grey repair jacket with dull silver reflective chest strip and pen in pocket, plain dark trousers and sturdy shoes. Holds a folded notebook. Warm serious worker, normal human appearance, no ghost effects and no helmet. Treat this as a character-directory design of the historical person. Single figure centered on a square canvas. Full helmet/head and both feet entirely inside canvas, with clear generous margin all around; no cropping. Truly transparent background with clean alpha. No ground or shadow plane, aura, frame, scenery, labels, writing, watermark, real company logos or other characters. Comparable scale and detail to image 1. This is a friendly character-directory avatar for the Chinese folk-horror game Circuit, not a new horror scene. Preserve human age cues and restrained personality.",
+      "references": [
+        "v1.1.0: chibi-cheng",
+        "1bbc3ba: public/art/portraits/xu.webp"
+      ],
+      "source_sha256": "317a5eb406a1ded8820c2f0dd7bd81c60db1d5d9b1530c87a608b489f5bb87db",
+      "sha256": "664c44615fece3bef4704d443ba2ba051fbb346638ea02cd3acb88bb2e0e4641",
+      "width": 640,
+      "height": 640,
+      "bytes": 50620,
+      "alpha": true,
+      "transparent_fraction": 0.743671875
+    },
+    {
+      "id": "chibi-chen",
+      "type": "chibi",
+      "output": "public/art/chibi/chen.webp",
+      "prompt": "Create ONE new full-body Q-version character avatar. Image 1 is the exact style and proportion master: match its large head, compact approximately 3-head-tall adult body, clean painted outlines, soft cel shading and subtle paper grain, muted colors, consistent eye style and natural three-quarter standing pose. Image 2 is this person's adult identity and clothing reference: keep recognizable face, hair, clothes and signature prop while translating to the style of image 1. DO NOT include the style-master male character in the result. Character to draw: Uncle Chen, age 60 Chinese man with salt-and-pepper stubble, faded dark olive flat cap, weathered olive-brown caretaker coat over beige shirt, plain charcoal trousers, sturdy brown shoes, a small ring of old keys at belt. Holds a rolled old site map. Watchful but kind expression; not an electrician, no hardhat. Single figure centered on a square canvas. Full helmet/head and both feet entirely inside canvas, with clear generous margin all around; no cropping. Truly transparent background with clean alpha. No ground or shadow plane, aura, frame, scenery, labels, writing, watermark, real company logos or other characters. Comparable scale and detail to image 1. This is a friendly character-directory avatar for the Chinese folk-horror game Circuit, not a new horror scene. Preserve human age cues and restrained personality.",
+      "references": [
+        "v1.1.0: chibi-cheng",
+        "1bbc3ba: public/art/portraits/chen.webp"
+      ],
+      "source_sha256": "fa74411cbbd9b6fadf8c490f75e5dce7c6f4c841e2913a31f7d8524a5512aac6",
+      "sha256": "4a43f49efc9845ad57e2c03a3236e2fde48712a71cd2845455a7b4f0432d40da",
+      "width": 640,
+      "height": 640,
+      "bytes": 59518,
+      "alpha": true,
+      "transparent_fraction": 0.71820556640625
+    },
+    {
+      "id": "chibi-shen",
+      "type": "chibi",
+      "output": "public/art/chibi/shen.webp",
+      "prompt": "Create ONE new full-body Q-version character avatar. Image 1 is the exact style and proportion master: match its large head, compact approximately 3-head-tall adult body, clean painted outlines, soft cel shading and subtle paper grain, muted colors, consistent eye style and natural three-quarter standing pose. Image 2 is this person's adult identity and clothing reference: keep recognizable face, hair, clothes and signature prop while translating to the style of image 1. DO NOT include the style-master male character in the result. Character to draw: Shen Tang, age 28 Chinese woman with dark loosely tied hair and some wisps, charcoal wool coat, muted olive-green scarf, simple dark trousers and black ankle boots. Holds a folded old letter delicately in both hands. Quiet thoughtful expression, grieving but composed, no smiling exaggeration, no utility uniform. Single figure centered on a square canvas. Full helmet/head and both feet entirely inside canvas, with clear generous margin all around; no cropping. Truly transparent background with clean alpha. No ground or shadow plane, aura, frame, scenery, labels, writing, watermark, real company logos or other characters. Comparable scale and detail to image 1. This is a friendly character-directory avatar for the Chinese folk-horror game Circuit, not a new horror scene. Preserve human age cues and restrained personality.",
+      "references": [
+        "v1.1.0: chibi-cheng",
+        "1bbc3ba: public/art/portraits/shen.webp"
+      ],
+      "source_sha256": "40ab8e057de0afa7cb4ced8f251e5a53b57f1e8e6fc7f78637019f60746a07a4",
+      "sha256": "5ba1d356d13b067a22d6e24a06ca0215967f68a0dd78d8f19c0364f5e51d0ca3",
+      "width": 640,
+      "height": 640,
+      "bytes": 54124,
+      "alpha": true,
+      "transparent_fraction": 0.73536376953125
+    },
+    {
+      "id": "zhou-field",
+      "type": "portrait",
+      "output": "public/art/portraits/zhou-field.webp",
+      "prompt": "Edit the exact older colleague in image 1 into his current field-work portrait for Circuit / 回路. Keep the same identifiable Chinese male face age 50, salt-and-pepper short hair visible at sides, light stubble, mature wrinkles, serious reserved expression, half-body composition and painterly rendering. Image 2 supplies the new crew's practical safety equipment and navy/muted-orange palette, not its younger man's face. Add a correctly worn plain white safety helmet with secured chinstrap, small switched-off helmet headlamp. His characteristic weathered dark olive-grey rain jacket stays visible but is properly closed, long sleeves cover wrists, and understated silver reflective strips remain. A navy utility collar with a small muted orange accent is visible beneath the rain jacket. No rolled sleeves, no company logos or text. Add a compact clipped radio. Focused but normal expression, looking slightly left like the original. Include whole helmet, both shoulders, elbows and waist within a vertical 2:3 portrait with clear top and side margins. Preserve age and identity, believable human proportions. Truly transparent background with clean alpha, no scenery, gradient background, halo, shadow outside body, ground plane, labels or watermark. Match warm left light and cool shadows to the existing sprites. One person only.",
+      "references": [
+        "1bbc3ba: public/art/portraits/zhou.webp",
+        "v1.1.0: cheng"
+      ],
+      "source_sha256": "678861cc07095699d476b730af6f63502f65f033dc1ac95788f06b07d4faee3d",
+      "sha256": "bccb4dbe50c0663f40e0d6345c40623843a732f5f47419385c90661829fe13e1",
+      "width": 640,
+      "height": 960,
+      "bytes": 125294,
+      "alpha": true,
+      "transparent_fraction": 0.40381998697916666
+    }
+  ]
+}

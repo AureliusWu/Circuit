@@ -6,6 +6,7 @@ const { test } = require('node:test');
 if (!process.env.CIRCUIT_TEST_BUILD) throw new Error('Run npm test to compile the release content first.');
 const engine = require(path.join(process.env.CIRCUIT_TEST_BUILD, 'story/engine.js'));
 const campaign = require(path.join(process.env.CIRCUIT_TEST_BUILD, 'game/campaign.js'));
+const characterCatalog = require(path.join(process.env.CIRCUIT_TEST_BUILD, 'game/characters.js'));
 const ORDER = ['thirteen-households', 'seventh-night', 'backfeed', 'everlight', 'neutral', 'closure'];
 const graphs = new Map();
 
@@ -76,7 +77,7 @@ for (const [index, chapterId] of ORDER.entries()) {
     for (const [nodeId, node] of playable) {
       assert.ok(node.text.trim(), `${chapterId}/${nodeId}: empty narrative`);
       if (node.scene?.background) backgroundCount++;
-      for (const asset of [node.scene?.background, node.portrait && `/art/portraits/${node.portrait}.webp`].filter(Boolean)) {
+      for (const asset of [node.scene?.background, characterCatalog.getPortraitPath(node.portrait, node.expression)].filter(Boolean)) {
         assert.ok(asset.startsWith('/art/') && !asset.includes('..'), `Unsupported release asset path: ${asset}`);
         const file = path.resolve('public', asset.slice(1));
         assert.ok(existsSync(file), `${chapterId}/${nodeId}: missing asset ${asset}`);

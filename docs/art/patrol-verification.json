@@ -1,0 +1,462 @@
+{
+  "edition": "1.1.0 / 巡城师徒",
+  "date": "2026-10-12",
+  "unit_tests": {
+    "command": "npm test",
+    "passed": 58
+  },
+  "reading": {
+    "url": "http://127.0.0.1:4181/Circuit/",
+    "passed": 19,
+    "checks": [
+      "typewriter starts gradually; WebAudio starts only after a user gesture",
+      "opening a notebook pauses and closing resumes text reveal",
+      "Space reveals text and Enter advances once with atomic visit history",
+      "slow/fast settings change live reveal timing; Enter on a focused action does not double advance",
+      "text speed, delay, audio levels, mute, contrast and reduced motion persist across reload",
+      "reduced motion forces immediate full text despite slow text preference",
+      "instant preference applies immediately to the next narrative node",
+      "auto reading and audio pause for notebook, controlled hidden-page event and title",
+      "auto reading advances single dialogues but stops at investigation without collecting evidence",
+      "auto reading never confirms evidence, makes deductions or restarts failure endings",
+      "save dialog focus wraps around visible controls and excludes the hidden file input",
+      "three manual slots remain independent and JSON export never mutates stored records",
+      "syntax-invalid, impossible-state and oversized imports preserve every prior slot",
+      "reading an older manual slot preserves the newer automatic record exactly",
+      "valid exported JSON restores active progress and replaces only automatic storage",
+      "v010 manual and completed v011 auto migrate read-only; the next action writes only new storage",
+      "denied localStorage still allows play and keeps in-memory history consistent",
+      "import with unavailable storage preserves the persistence warning",
+      "no uncaught JavaScript exceptions"
+    ],
+    "page_errors": [],
+    "visibility_note": "headless hidden-page event is controlled; timers/audio execute in real Chromium"
+  },
+  "browser": {
+    "root": {
+      "base_url": "http://127.0.0.1:4180",
+      "pwa_requested": true,
+      "routes": {
+        "thirteen-households": 44,
+        "seventh-night": 45,
+        "backfeed": 46,
+        "everlight": 39,
+        "neutral": 37,
+        "closure": 45
+      },
+      "service_worker": "http://127.0.0.1:4180/sw.js",
+      "offline_art": [
+        {
+          "path": "http://127.0.0.1:4180/art/alley.webp",
+          "width": 1600,
+          "height": 900,
+          "transparent": 0
+        },
+        {
+          "path": "http://127.0.0.1:4180/art/chibi/chen.webp",
+          "width": 640,
+          "height": 640,
+          "transparent": 0.71820556640625
+        },
+        {
+          "path": "http://127.0.0.1:4180/art/chibi/cheng.webp",
+          "width": 640,
+          "height": 640,
+          "transparent": 0.728369140625
+        },
+        {
+          "path": "http://127.0.0.1:4180/art/chibi/ji.webp",
+          "width": 640,
+          "height": 640,
+          "transparent": 0.735390625
+        },
+        {
+          "path": "http://127.0.0.1:4180/art/chibi/lin.webp",
+          "width": 640,
+          "height": 640,
+          "transparent": 0.74782470703125
+        },
+        {
+          "path": "http://127.0.0.1:4180/art/chibi/mei.webp",
+          "width": 640,
+          "height": 640,
+          "transparent": 0.73784423828125
+        },
+        {
+          "path": "http://127.0.0.1:4180/art/chibi/shen.webp",
+          "width": 640,
+          "height": 640,
+          "transparent": 0.73536376953125
+        },
+        {
+          "path": "http://127.0.0.1:4180/art/chibi/xu.webp",
+          "width": 640,
+          "height": 640,
+          "transparent": 0.743671875
+        },
+        {
+          "path": "http://127.0.0.1:4180/art/chibi/zhou.webp",
+          "width": 640,
+          "height": 640,
+          "transparent": 0.71901611328125
+        },
+        {
+          "path": "http://127.0.0.1:4180/art/control-room.webp",
+          "width": 1600,
+          "height": 900,
+          "transparent": 0
+        },
+        {
+          "path": "http://127.0.0.1:4180/art/demolition.webp",
+          "width": 1600,
+          "height": 900,
+          "transparent": 0
+        },
+        {
+          "path": "http://127.0.0.1:4180/art/dispatch.webp",
+          "width": 1600,
+          "height": 900,
+          "transparent": 0
+        },
+        {
+          "path": "http://127.0.0.1:4180/art/portraits/chen.webp",
+          "width": 640,
+          "height": 960,
+          "transparent": 0.36341959635416665
+        },
+        {
+          "path": "http://127.0.0.1:4180/art/portraits/cheng-focused.webp",
+          "width": 640,
+          "height": 960,
+          "transparent": 0.37729329427083336
+        },
+        {
+          "path": "http://127.0.0.1:4180/art/portraits/cheng.webp",
+          "width": 640,
+          "height": 960,
+          "transparent": 0.37678873697916665
+        },
+        {
+          "path": "http://127.0.0.1:4180/art/portraits/ji-concerned.webp",
+          "width": 640,
+          "height": 960,
+          "transparent": 0.4193196614583333
+        },
+        {
+          "path": "http://127.0.0.1:4180/art/portraits/ji.webp",
+          "width": 640,
+          "height": 960,
+          "transparent": 0.4192529296875
+        },
+        {
+          "path": "http://127.0.0.1:4180/art/portraits/lin.webp",
+          "width": 640,
+          "height": 960,
+          "transparent": 0.395595703125
+        },
+        {
+          "path": "http://127.0.0.1:4180/art/portraits/mei.webp",
+          "width": 640,
+          "height": 960,
+          "transparent": 0.39544921875
+        },
+        {
+          "path": "http://127.0.0.1:4180/art/portraits/shen.webp",
+          "width": 640,
+          "height": 960,
+          "transparent": 0.408056640625
+        },
+        {
+          "path": "http://127.0.0.1:4180/art/portraits/xu.webp",
+          "width": 640,
+          "height": 960,
+          "transparent": 0.37489420572916665
+        },
+        {
+          "path": "http://127.0.0.1:4180/art/portraits/zhou-field.webp",
+          "width": 640,
+          "height": 960,
+          "transparent": 0.40381998697916666
+        },
+        {
+          "path": "http://127.0.0.1:4180/art/portraits/zhou.webp",
+          "width": 640,
+          "height": 960,
+          "transparent": 0.34807779947916667
+        },
+        {
+          "path": "http://127.0.0.1:4180/art/repair-van.webp",
+          "width": 1600,
+          "height": 900,
+          "transparent": 0
+        },
+        {
+          "path": "http://127.0.0.1:4180/art/stairwell.webp",
+          "width": 1600,
+          "height": 900,
+          "transparent": 0
+        },
+        {
+          "path": "http://127.0.0.1:4180/art/substation.webp",
+          "width": 1600,
+          "height": 900,
+          "transparent": 0
+        },
+        {
+          "path": "http://127.0.0.1:4180/icon.png",
+          "width": 512,
+          "height": 512,
+          "transparent": 0
+        }
+      ],
+      "status": "passed",
+      "completed_checks": [
+        "initial-chapter-locks",
+        "complete-chapter:thirteen-households",
+        "complete-chapter:seventh-night",
+        "complete-chapter:backfeed",
+        "complete-chapter:everlight",
+        "complete-chapter:neutral",
+        "complete-chapter:closure",
+        "responsive-hotspots:1280x720",
+        "responsive-hotspots:960x540",
+        "responsive-hotspots:760x430",
+        "responsive-hotspots:390x844",
+        "denied-storage-remains-playable",
+        "pwa-manifest-service-worker",
+        "offline-all-generated-art",
+        "offline-campaign-resume-and-replay",
+        "browser-runtime-errors"
+      ],
+      "completed_count": 16,
+      "page_errors": [],
+      "console_errors": [],
+      "http_errors": [],
+      "duration_seconds": 33.28
+    },
+    "pages": {
+      "base_url": "http://127.0.0.1:4181/Circuit/",
+      "pwa_requested": true,
+      "routes": {
+        "thirteen-households": 44,
+        "seventh-night": 45,
+        "backfeed": 46,
+        "everlight": 39,
+        "neutral": 37,
+        "closure": 45
+      },
+      "service_worker": "http://127.0.0.1:4181/Circuit/sw.js",
+      "offline_art": [
+        {
+          "path": "http://127.0.0.1:4181/Circuit/art/alley.webp",
+          "width": 1600,
+          "height": 900,
+          "transparent": 0
+        },
+        {
+          "path": "http://127.0.0.1:4181/Circuit/art/chibi/chen.webp",
+          "width": 640,
+          "height": 640,
+          "transparent": 0.71820556640625
+        },
+        {
+          "path": "http://127.0.0.1:4181/Circuit/art/chibi/cheng.webp",
+          "width": 640,
+          "height": 640,
+          "transparent": 0.728369140625
+        },
+        {
+          "path": "http://127.0.0.1:4181/Circuit/art/chibi/ji.webp",
+          "width": 640,
+          "height": 640,
+          "transparent": 0.735390625
+        },
+        {
+          "path": "http://127.0.0.1:4181/Circuit/art/chibi/lin.webp",
+          "width": 640,
+          "height": 640,
+          "transparent": 0.74782470703125
+        },
+        {
+          "path": "http://127.0.0.1:4181/Circuit/art/chibi/mei.webp",
+          "width": 640,
+          "height": 640,
+          "transparent": 0.73784423828125
+        },
+        {
+          "path": "http://127.0.0.1:4181/Circuit/art/chibi/shen.webp",
+          "width": 640,
+          "height": 640,
+          "transparent": 0.73536376953125
+        },
+        {
+          "path": "http://127.0.0.1:4181/Circuit/art/chibi/xu.webp",
+          "width": 640,
+          "height": 640,
+          "transparent": 0.743671875
+        },
+        {
+          "path": "http://127.0.0.1:4181/Circuit/art/chibi/zhou.webp",
+          "width": 640,
+          "height": 640,
+          "transparent": 0.71901611328125
+        },
+        {
+          "path": "http://127.0.0.1:4181/Circuit/art/control-room.webp",
+          "width": 1600,
+          "height": 900,
+          "transparent": 0
+        },
+        {
+          "path": "http://127.0.0.1:4181/Circuit/art/demolition.webp",
+          "width": 1600,
+          "height": 900,
+          "transparent": 0
+        },
+        {
+          "path": "http://127.0.0.1:4181/Circuit/art/dispatch.webp",
+          "width": 1600,
+          "height": 900,
+          "transparent": 0
+        },
+        {
+          "path": "http://127.0.0.1:4181/Circuit/art/portraits/chen.webp",
+          "width": 640,
+          "height": 960,
+          "transparent": 0.36341959635416665
+        },
+        {
+          "path": "http://127.0.0.1:4181/Circuit/art/portraits/cheng-focused.webp",
+          "width": 640,
+          "height": 960,
+          "transparent": 0.37729329427083336
+        },
+        {
+          "path": "http://127.0.0.1:4181/Circuit/art/portraits/cheng.webp",
+          "width": 640,
+          "height": 960,
+          "transparent": 0.37678873697916665
+        },
+        {
+          "path": "http://127.0.0.1:4181/Circuit/art/portraits/ji-concerned.webp",
+          "width": 640,
+          "height": 960,
+          "transparent": 0.4193196614583333
+        },
+        {
+          "path": "http://127.0.0.1:4181/Circuit/art/portraits/ji.webp",
+          "width": 640,
+          "height": 960,
+          "transparent": 0.4192529296875
+        },
+        {
+          "path": "http://127.0.0.1:4181/Circuit/art/portraits/lin.webp",
+          "width": 640,
+          "height": 960,
+          "transparent": 0.395595703125
+        },
+        {
+          "path": "http://127.0.0.1:4181/Circuit/art/portraits/mei.webp",
+          "width": 640,
+          "height": 960,
+          "transparent": 0.39544921875
+        },
+        {
+          "path": "http://127.0.0.1:4181/Circuit/art/portraits/shen.webp",
+          "width": 640,
+          "height": 960,
+          "transparent": 0.408056640625
+        },
+        {
+          "path": "http://127.0.0.1:4181/Circuit/art/portraits/xu.webp",
+          "width": 640,
+          "height": 960,
+          "transparent": 0.37489420572916665
+        },
+        {
+          "path": "http://127.0.0.1:4181/Circuit/art/portraits/zhou-field.webp",
+          "width": 640,
+          "height": 960,
+          "transparent": 0.40381998697916666
+        },
+        {
+          "path": "http://127.0.0.1:4181/Circuit/art/portraits/zhou.webp",
+          "width": 640,
+          "height": 960,
+          "transparent": 0.34807779947916667
+        },
+        {
+          "path": "http://127.0.0.1:4181/Circuit/art/repair-van.webp",
+          "width": 1600,
+          "height": 900,
+          "transparent": 0
+        },
+        {
+          "path": "http://127.0.0.1:4181/Circuit/art/stairwell.webp",
+          "width": 1600,
+          "height": 900,
+          "transparent": 0
+        },
+        {
+          "path": "http://127.0.0.1:4181/Circuit/art/substation.webp",
+          "width": 1600,
+          "height": 900,
+          "transparent": 0
+        },
+        {
+          "path": "http://127.0.0.1:4181/Circuit/icon.png",
+          "width": 512,
+          "height": 512,
+          "transparent": 0
+        }
+      ],
+      "status": "passed",
+      "completed_checks": [
+        "initial-chapter-locks",
+        "complete-chapter:thirteen-households",
+        "complete-chapter:seventh-night",
+        "complete-chapter:backfeed",
+        "complete-chapter:everlight",
+        "complete-chapter:neutral",
+        "complete-chapter:closure",
+        "responsive-hotspots:1280x720",
+        "responsive-hotspots:960x540",
+        "responsive-hotspots:760x430",
+        "responsive-hotspots:390x844",
+        "denied-storage-remains-playable",
+        "pwa-manifest-service-worker",
+        "offline-all-generated-art",
+        "offline-campaign-resume-and-replay",
+        "browser-runtime-errors"
+      ],
+      "completed_count": 16,
+      "page_errors": [],
+      "console_errors": [],
+      "http_errors": [],
+      "duration_seconds": 38.46
+    }
+  },
+  "art": {
+    "new_generated_assets": 14,
+    "webp_assets": 26,
+    "webp_bytes": 3692756,
+    "offline_decoded_assets": 27
+  },
+  "save_compatibility": {
+    "baseline": "1bbc3ba486a3ba5ed6f90700ae3d6de66be4b053",
+    "all_268_node_ids_preserved": true,
+    "all_action_and_inventory_contracts_preserved": true
+  },
+  "visual_qa": {
+    "font_note": "Local Noto Serif SC font injected for screenshots only, not shipped",
+    "screenshots": [
+      "docs/art/characters-portrait-preview.jpg",
+      "docs/art/characters-chibi-preview.jpg",
+      "docs/art/characters-mobile-preview.jpg",
+      "docs/art/patrol-title-preview.jpg",
+      "docs/art/patrol-van-preview.jpg",
+      "docs/art/patrol-radio-preview.jpg"
+    ]
+  },
+  "desktop_compile": "Validated by Windows CI on the published commit; see repository Actions"
+}

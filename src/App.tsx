@@ -1,5 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { Notebook } from './components/Notebook';
+import { CharacterGallery } from './components/CharacterGallery';
+import { getCharacter, getPortraitPath } from './game/characters';
 import { CHAPTER_ORDER, getAvailableActions, getChapter, transition } from './story/engine';
 import type { ChapterId } from './story/types';
 import {
@@ -12,16 +14,15 @@ import { CircuitAudio } from './game/audio';
 import { useReading } from './game/reading';
 import { version } from '../package.json';
 
-type Panel = 'evidence' | 'history' | 'chapters' | 'saves' | 'settings' | 'archive' | 'help';
+type Panel = 'evidence' | 'history' | 'chapters' | 'saves' | 'settings' | 'archive' | 'help' | 'characters';
 const PANEL_TITLES: Record<Panel, string> = {
   evidence: '现场记录', history: '抢修日志', chapters: '章节选择', saves: '存档与读取',
-  settings: '阅读与声音', archive: '城市线路档案', help: '操作与制作记录'
+  settings: '阅读与声音', archive: '城市线路档案', help: '操作与制作记录', characters: '人物与抢修队'
 };
 const BACKGROUNDS: Record<ChapterId, string> = {
   'thirteen-households': 'alley', 'seventh-night': 'stairwell', backfeed: 'demolition',
   everlight: 'stairwell', neutral: 'substation', closure: 'control-room'
 };
-const PORTRAIT_NAMES: Record<string, string> = { lin: '林岚', zhou: '老周', mei: '杨婶', xu: '许守成', chen: '陈伯', shen: '沈棠' };
 const SLOTS: CampaignSlot[] = ['auto', 1, 2, 3];
 const asset = (path: string) => `${import.meta.env.BASE_URL}${path.replace(/^\//, '')}`;
 function storage(): SaveStorage | null {
@@ -60,6 +61,8 @@ function App() {
   const { state, history } = session;
   const chapter = getChapter(state.chapterId)!;
   const node = chapter.nodes[state.nodeId];
+  const character = getCharacter(node.portrait);
+  const portraitPath = getPortraitPath(node.portrait, node.expression);
   const actions = useMemo(() => getAvailableActions(state), [state]);
   const reading = useReading(node.text, `${state.chapterId}/${state.nodeId}/${history.length}`, preferences, !started || !!panel || !pageVisible);
   const menuSession = !started && stored.auto.status === 'valid' ? toSession(stored.auto.snapshot) : session;
@@ -222,13 +225,14 @@ function App() {
               <section className="title-brand">
                 <p className="eyebrow">城市配电 · 民俗悬疑</p><h1>回路</h1><p className="english-title">CIRCUIT</p>
                 <p className="tagline">有些线路，断开以后仍然有电。</p>
-                <p className="title-synopsis">一次深夜抢修，让你接到一张七年前的工单。六段线路，一场被抹去的救援；先查清电从何处来，再问谁还在等待。</p>
-                <p className="version">v{version} · 第一部 / 归档闭合</p>
+                <p className="title-synopsis">你是梧城电网城区抢修员程砚，与徒弟季宁一起值夜班。一张七年前的工单，把六段线路和一场被抹去的救援接在一起。先核对电从何处来，再听谁还在等待。</p>
+                <p className="title-crew">程砚 / 季宁 · 城区抢修班</p>
+                <p className="version">v{version} · 巡城师徒 / 第一部</p>
               </section>
               <nav className="title-menu" aria-label="主菜单">
                 {stored.auto.status === 'valid' && <button className="primary" onClick={() => resume('auto')}>继续抢修</button>}
                 <button className={stored.auto.status === 'valid' ? '' : 'primary'} onClick={launch}>开始抢修</button>
-                {(['chapters', 'saves', 'archive', 'settings', 'help'] as const).map((kind) => (
+                {(['characters', 'chapters', 'saves', 'archive', 'settings', 'help'] as const).map((kind) => (
                   <button key={kind} onClick={(event) => openPanel(kind, event.currentTarget)} aria-haspopup="dialog">{PANEL_TITLES[kind]}</button>
                 ))}
                 {stored.auto.status === 'valid' && <p className="continue-summary">{summary(stored.auto)}</p>}
@@ -250,7 +254,10 @@ function App() {
             <section className="stage" aria-label={node.location}>
               <div className="stage-background"><img src={asset(node.scene?.background ?? `/art/${node.visual === 'dispatch' ? 'dispatch' : BACKGROUNDS[state.chapterId]}.webp`)} alt="" /></div>
               <div className="rain" aria-hidden="true" />
-              {node.portrait && <figure className="character-portrait"><img src={asset(`/art/portraits/${node.portrait}.webp`)} alt={PORTRAIT_NAMES[node.portrait] ?? node.speaker ?? ''} /><figcaption className="portrait-caption">{PORTRAIT_NAMES[node.portrait]}</figcaption></figure>}
+              {character && portraitPath && <figure className={'character-portrait presence-' + (node.presence ?? 'scene')} data-presence={node.presence ?? 'scene'}>
+                <img src={asset(portraitPath)} alt={character.name + (node.presence === 'radio' ? '通讯头像' : node.presence === 'archive' ? '旧档照片' : '立绘')} />
+                <figcaption className="portrait-caption">{node.presence === 'radio' ? '电台联络 · ' : node.presence === 'archive' ? '2019 旧档 · ' : ''}{character.name}</figcaption>
+              </figure>}
               {node.scene?.document && <div className="scene-document">{[node.scene.document.title, ...node.scene.document.lines].join('\n')}</div>}
               {node.scene?.inscription && <div className="scene-inscription">{node.scene.inscription}</div>}
               {node.kind === 'investigation' && <>
@@ -278,6 +285,7 @@ function App() {
                 {!reading.finished && <button onClick={reading.reveal}>显示全文</button>}
                 <button aria-pressed={automatic} onClick={() => setAutomatic(!automatic)}>{automatic ? '暂停自动' : '自动阅读'}</button>
                 <button aria-pressed={preferences.muted} onClick={() => { enableAudio(); changePreference('muted', !preferences.muted); }}>{preferences.muted ? '开启声音' : '静音'}</button>
+                <button onClick={(event) => openPanel('characters', event.currentTarget)} aria-haspopup="dialog">人物</button>
               </div></div>
               {node.speaker && <div className="speaker">{node.speaker}</div>}
               <p className="dialogue-text" aria-label={node.text}><span aria-hidden="true">{reading.text}</span></p>
@@ -292,6 +300,7 @@ function App() {
       </div>
       <p className={`${started ? 'save-notice' : 'title-notice'}${panel ? ' panel-notice' : ''}`} role="status" aria-live="polite">{notice}</p>
       {panel && <Notebook kind={panel} title={PANEL_TITLES[panel]} returnFocusTo={panelOpener.current} onClose={closePanel}>
+        {panel === 'characters' && <CharacterGallery />}
         {panel === 'evidence' && <>
           {!state.evidence.length ? <p className="empty">尚未记录异常。先按标准故障流程排查。</p> : state.evidence.map((id, index) => <article key={id}><span>{String(index + 1).padStart(2, '0')}</span><div><h3>{chapter.evidence[id].title}</h3><p>{chapter.evidence[id].detail}</p></div></article>)}
           <footer>原则：先排除电气故障，再解释剩下的东西。</footer>
@@ -323,7 +332,7 @@ function App() {
           <label className="setting-toggle"><input type="checkbox" checked={preferences.reducedMotion} onChange={(event) => changePreference('reducedMotion', event.target.checked)} />减少动态效果 / 即时全文</label>
           <button onClick={() => void fullscreen()}>切换全屏</button><p>自动阅读只推进单一对话；调查和推理等待你的判断。打开面板、返回标题或切换到其他标签页时暂停。</p>
         </div>}
-        {panel === 'archive' && <><p>已归档 {menuSession.completed.length}/6 段线路。每完成一章，旧城档案便补上一处缺失。</p><svg className="city-map" viewBox="0 0 100 100" role="img" aria-label={`城市线路图，已归档 ${menuSession.completed.length} 段`}>
+        {panel === 'archive' && <><p>已归档 {menuSession.completed.length}/6 段线路。每完成一章，旧城档案便补上一处缺失。图上的连线表示救援与交接路线，跨越不同供电分区。</p><svg className="city-map" viewBox="0 0 100 100" role="img" aria-label={`城市线路图，已归档 ${menuSession.completed.length} 段`}>
           <path className="city-map-grid" d="M0 25H100M0 50H100M0 75H100M25 0V100M50 0V100M75 0V100" />
           <polyline points={mapPoints.join(' ')} fill="none" className="city-map-route" />
           {CHAPTER_ORDER.map((id) => { const clue = getChapter(id)!.clue; const done = menuSession.completed.includes(id); return <g key={id} className={done ? 'map-complete' : 'map-locked'}><circle cx={clue.x} cy={clue.y} r="2" /><text x={clue.x + 3} y={clue.y + 1}>{done ? clue.code : '· · ·'}</text></g>; })}
@@ -331,7 +340,7 @@ function App() {
           const item = getChapter(id)!; const done = menuSession.completed.includes(id);
           return <article key={id}><span>{done ? item.clue.code : '—'}</span><div><h3>{done ? item.clue.title : `${item.title} · 待归档`}</h3><p>{done ? item.clue.detail : '完成本章后补入线路记录。'}</p>{done && <details><summary>查阅本章现场记录</summary>{(menuSession.archive[id] ?? []).map((evidence) => <p key={evidence}><strong>{item.evidence[evidence].title}</strong><br />{item.evidence[evidence].detail}</p>)}</details>}</div></article>;
         })}</div></>}
-        {panel === 'help' && <div className="help-content"><h3>抢修手册</h3><p>点击调查标记搜集现场记录，用证据判断回路。选择错误会进入复核结局，可重新排查本章。</p><p>空格或 Enter 显示全文；全文显示后，可推进单一对话。Tab 在按钮间移动，Enter 确认，Esc 关闭面板。</p><p>六章按顺序解锁。完成后可从标题的章节选择重玩；三槽存档和 JSON 导出可保存不同进度。</p><h3>制作记录</h3><p>原创城市民俗悬疑故事、六幅场景与六名人物绘图；音乐、雨声、电流声和记录提示均由程序实时合成。</p><p>本作人物、单位与事件均为虚构。线路判断服务于剧情，现场电气作业须由具备资质的人员依照规程实施。</p><p>回路 / CIRCUIT · v{version}<br />第一部：十三户、头七、回送、长明、零线、闭合。</p></div>}
+        {panel === 'help' && <div className="help-content"><h3>抢修手册</h3><p>点击调查标记搜集现场记录，用证据判断回路。选择错误会进入复核结局，可重新排查本章。</p><p>空格或 Enter 显示全文；全文显示后，可推进单一对话。Tab 在按钮间移动，Enter 确认，Esc 关闭面板。</p><p>六章按顺序解锁。完成后可从标题的章节选择重玩；三槽存档和 JSON 导出可保存不同进度。标题和阅读工具栏均可打开人物档案，切换立绘与 Q 版形象。</p><h3>制作记录</h3><p>原创城市民俗悬疑故事、七幅场景、八名人物的立绘与 Q 版形象，师徒另有专注和警觉表情，老周另有现场防护立绘。远程联络使用通讯卡，历史人物使用旧档照片。音乐、雨声、电流声和记录提示由程序实时合成。</p><p>本作人物、单位与事件均为虚构。线路判断服务于剧情，现场电气作业须由具备资质的人员依照规程实施。</p><p>回路 / CIRCUIT · v{version}<br />巡城师徒：十三户、头七、回送、长明、零线、闭合。</p></div>}
       </Notebook>}
     </main>
   );

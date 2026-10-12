@@ -102,6 +102,31 @@ def run(url, pwa):
         expect(opener).to_be_focused()
         assert raw(page) == before, 'Reading a notebook wrote progress'
 
+    def character_directory(page, label):
+        before = raw(page)
+        opener = page.get_by_role('button', name=label, exact=True)
+        opener.click()
+        dialog = page.get_by_role('dialog', name='人物与抢修队', exact=True)
+        expect(dialog).to_be_visible()
+        expect(dialog.locator('[data-character-id]')).to_have_count(8)
+        for person in dialog.locator('[data-character-id]').all():
+            identifier = person.get_attribute('data-character-id')
+            person.click()
+            profile = dialog.locator('[data-character-profile]')
+            expect(profile).to_have_attribute('data-character-profile', identifier)
+            for view, directory in [('立绘', 'portraits'), ('Q版形象', 'chibi')]:
+                control = dialog.get_by_role('button', name=view, exact=True)
+                control.scroll_into_view_if_needed()
+                hit_test(control)
+                control.click()
+                image = profile.locator('.profile-art > img')
+                expect(image).to_have_attribute('src', urljoin(url.rstrip('/') + '/', f'art/{directory}/{identifier}.webp').replace(urlsplit(url).scheme + '://' + urlsplit(url).netloc, ''))
+                image.evaluate('async img => { await img.decode(); }')
+        page.keyboard.press('Escape')
+        expect(dialog).to_have_count(0)
+        expect(opener).to_be_focused()
+        assert raw(page) == before, 'Character gallery changed automatic progress'
+
     try:
         authored = fixtures()
         order = [chapter['id'] for chapter in authored]
@@ -152,6 +177,7 @@ def run(url, pwa):
             try:
                 phase = 'initial-chapter-locks'
                 page = new_page()
+                character_directory(page, '人物与抢修队')
                 click(page, '章节选择')
                 for index, chapter in enumerate(authored):
                     button = page.locator(f'[data-chapter-id="{chapter["id"]}"]')
@@ -170,6 +196,15 @@ def run(url, pwa):
                         assert saved['chapterId'] == chapter['id'] and saved['nodeId'] == step['nodeId'], saved
                         assert saved['evidence'] == step['evidence'], saved
                         assert saved['history'][-1] == step['nodeId'], saved
+                        authored_node = chapter['nodes'][step['nodeId']]
+                        if authored_node.get('portrait'):
+                            figure = page.locator('.character-portrait')
+                            expect(figure).to_have_attribute('data-presence', authored_node.get('presence', 'scene'))
+                            figure.locator('img').evaluate('async img => { await img.decode(); }')
+                            if authored_node.get('presence') in ['radio', 'archive']:
+                                caption = figure.locator('figcaption').bounding_box()
+                                dialogue = page.locator('.dialogue').bounding_box()
+                                assert caption and dialogue and caption['y'] + caption['height'] <= dialogue['y'] + 1, (caption, dialogue)
                         # Resume once in each chapter while a clue has been observed but not recorded.
                         if chapter['nodes'][step['nodeId']]['kind'] == 'evidence' and not saved['evidence']:
                             before = raw(page)
@@ -215,6 +250,7 @@ def run(url, pwa):
                         hit_test(control)
                     assert small.locator('.scene-hotspot').count() >= 3
                     notebook(small, '历史', '抢修日志')
+                    character_directory(small, '人物')
                     first = small.locator('.scene-hotspot').first
                     first.focus()
                     small.keyboard.press('Enter')
@@ -222,6 +258,24 @@ def run(url, pwa):
                     completed.append(phase)
                     small.context.close()
                     contexts.remove(small.context)
+
+                    for node_id, evidence, presence in [
+                        ('currentContact', ['live-after-cut'], 'radio'),
+                        ('truth', authored[0]['requiredEvidence'], 'archive')
+                    ]:
+                        portrait_save = dict(version=2, chapterId=order[0], nodeId=node_id, evidence=evidence,
+                                             history=[node_id], completed=[], archive={}, savedAt=payload['savedAt'])
+                        portrait_page = new_page({AUTO: json.dumps(portrait_save)}, viewport)
+                        click(portrait_page, '继续抢修')
+                        figure = portrait_page.locator('.character-portrait')
+                        expect(figure).to_have_attribute('data-presence', presence)
+                        figure.locator('img').evaluate('async img => { await img.decode(); }')
+                        caption = figure.locator('figcaption').bounding_box()
+                        dialogue = portrait_page.locator('.dialogue').bounding_box()
+                        assert caption and dialogue and 0 <= caption['y'] < dialogue['y'], (viewport, caption, dialogue)
+                        assert caption['y'] + caption['height'] <= dialogue['y'] + 1, (viewport, caption, dialogue)
+                        portrait_page.context.close()
+                        contexts.remove(portrait_page.context)
 
                 phase = 'denied-storage-remains-playable'
                 for read, write in [(True, False), (False, True)]:
@@ -264,12 +318,8 @@ def run(url, pwa):
                     assert raw(page) == before
                     assert saved['completed'] == order
                     phase = 'offline-all-generated-art'
-                    artwork = sorted({node['scene']['background'] for chapter in authored
-                                      for node in chapter['nodes'].values()
-                                      if node.get('scene', {}).get('background')}
-                                     | {'/art/portraits/' + node['portrait'] + '.webp' for chapter in authored
-                                        for node in chapter['nodes'].values() if node.get('portrait')}
-                                     | {'/icon.png'})
+                    artwork = sorted({'/' + str(path.relative_to('public')).replace(os.sep, '/')
+                                      for path in Path('public/art').rglob('*.webp')} | {'/icon.png'})
                     images = page.evaluate('''async paths => Promise.all(paths.map(async path => {
                       const image = new Image(); image.src = path;
                       await image.decode();
@@ -282,16 +332,20 @@ def run(url, pwa):
                       return {path, width: image.naturalWidth, height: image.naturalHeight,
                         transparent: transparent / (canvas.width * canvas.height)};
                     }))''', [urljoin(url.rstrip('/') + '/', asset.lstrip('/')) for asset in artwork])
-                    assert len(images) == 13, images
+                    assert len(images) == len(artwork), images
                     for image in images:
                         if '/portraits/' in image['path']:
                             assert (image['width'], image['height']) == (640, 960), image
                             assert .15 < image['transparent'] < .8, image
+                        elif '/chibi/' in image['path']:
+                            assert (image['width'], image['height']) == (640, 640), image
+                            assert .15 < image['transparent'] < .9, image
                         elif '/art/' in image['path']:
                             assert (image['width'], image['height']) == (1600, 900), image
                         else:
                             assert (image['width'], image['height']) == (512, 512), image
                     summary['offline_art'] = images
+                    character_directory(page, '人物')
                     completed.append(phase)
                     phase = 'offline-campaign-resume-and-replay'
                     click(page, '线路')

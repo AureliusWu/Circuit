@@ -227,3 +227,55 @@
 @media (max-width: 600px) {
   .title-background, .stage-background img[src$="alley.webp"] { object-position: 70% center; }
 }
+
+/* Character directory and distinct scene, radio and archive presentations. */
+.title-crew { margin: 14px 0 0; color: #b6b899; font-size: 11px; letter-spacing: .08em; }
+.notebook-dialog.characters-notebook { width: min(860px, 94vw); }
+.character-directory { display: grid; grid-template-columns: 190px minmax(0, 1fr); gap: 16px; }
+.character-directory .crew-intro { grid-column: 1 / -1; margin: 4px 0 0; line-height: 1.9; }
+.character-directory > footer { grid-column: 1 / -1; }
+.character-roster { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; align-self: start; }
+.character-roster button { min-width: 0; padding: 8px 5px; border: 1px solid #40523b; color: #b9c4a7; background: #142219; cursor: pointer; }
+.character-roster button[aria-pressed="true"] { border-color: #b1a875; background: #2d3826; }
+.character-roster img { display: block; width: 100%; height: 60px; object-fit: contain; }
+.character-roster span { display: block; font-size: 13px; }
+.character-roster small { display: block; margin-top: 4px; color: #96a28a; font-size: 10px; }
+.character-profile { display: grid; grid-template-columns: minmax(150px, .8fr) minmax(0, 1.2fr); gap: 18px; padding: 18px; border: 1px solid #42543b; background: #0e1b13; }
+.profile-art { display: flex; flex-direction: column; min-width: 0; align-self: start; }
+.profile-art > img { display: block; width: 100%; height: 300px; object-fit: contain; object-position: bottom; }
+.profile-art > img.profile-chibi { padding: 0; object-fit: cover; object-position: center; }
+.profile-view { display: flex; order: -1; justify-content: center; gap: 6px; margin: 0 0 12px; }
+.profile-view button { padding: 8px 14px; color: #b9c4a7; border: 1px solid #4d6243; background: #18291c; cursor: pointer; }
+.profile-view button[aria-pressed="true"] { color: #e2dec0; border-color: #b1a875; background: #36412b; }
+.profile-copy > small { color: #b9ad77; font-size: 10px; letter-spacing: .1em; }
+.profile-copy h3 { margin: 8px 0; color: #d3d5b9; font-size: 25px; }
+.profile-copy h3 span { display: block; margin-top: 8px; color: #8f9e83; font-size: 11px; font-weight: normal; }
+.profile-copy .profile-role { color: #babd99; font-size: 12px; }
+.profile-copy h4 { margin: 18px 0 8px; padding-top: 14px; border-top: 1px solid #364833; color: #b9c4a7; font-size: 12px; }
+.profile-copy p { color: #aab59f; line-height: 1.9; }
+.character-portrait.presence-radio { bottom: calc(48vh + 24px); width: 150px; height: 150px; max-height: 150px; padding: 6px; border: 1px solid #697456; background: #0d1b13ec; box-shadow: 0 8px 26px #0008; }
+.character-portrait.presence-radio img { height: 110px; object-fit: cover; object-position: 50% 15%; opacity: .85; }
+.character-portrait.presence-radio .portrait-caption { bottom: 7px; background: transparent; letter-spacing: .03em; font-size: 10px; }
+.character-portrait.presence-archive { bottom: calc(48vh + 24px); width: 185px; height: 255px; max-height: min(255px, calc(52vh - 100px)); padding: 7px 7px 24px; border: 1px solid #92856a; background: #c0b69a; transform: rotate(1.5deg); }
+.character-portrait.presence-archive img { object-fit: cover; object-position: 50% 5%; filter: sepia(.6) saturate(.55); background: #605e48; }
+.character-portrait.presence-archive .portrait-caption { bottom: 4px; color: #252e20; background: transparent; font-size: 10px; }
+@media (max-height: 580px) and (min-width: 701px) {
+  .character-portrait.presence-radio { width: 122px; height: 122px; }
+  .character-portrait.presence-radio img { height: 82px; }
+  .character-portrait.presence-archive { width: 140px; height: 185px; }
+  .title-crew { margin-top: 7px; font-size: 10px; }
+}
+@media (max-width: 700px) {
+  .character-directory { display: block; }
+  .character-roster { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 5px; margin: 18px 0; }
+  .character-roster img { height: 64px; }
+  .character-roster span { font-size: 11px; }
+  .character-roster small { font-size: 8px; }
+  .character-profile { grid-template-columns: 1fr; gap: 18px; padding: 13px; }
+  .profile-art > img { height: 270px; }
+  .profile-art > img.profile-chibi { object-fit: contain; }
+  .profile-copy h3 { font-size: 23px; }
+  .character-portrait.presence-radio { width: 122px; height: 122px; }
+  .character-portrait.presence-radio img { height: 82px; }
+  .character-portrait.presence-archive { width: 132px; height: 178px; }
+}

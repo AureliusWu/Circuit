@@ -1,3 +1,5 @@
+import type { CharacterExpression, CharacterId, CharacterPresence } from '../game/characters';
+
 export type ChapterId = 'thirteen-households' | 'seventh-night' | 'backfeed' | 'everlight' | 'neutral' | 'closure';
 
 /** Node and evidence identifiers belong to their chapter, not to the whole campaign. */
@@ -46,7 +48,10 @@ export type StoryNode = {
   actions: readonly StoryAction[];
   outcome?: 'failure' | 'complete';
   puzzle?: { prompt: string; hint: string };
-  portrait?: string;
+  portrait?: CharacterId;
+  expression?: CharacterExpression;
+  /** Remote calls and historical photographs have their own presentation. */
+  presence?: CharacterPresence;
   /** Inventory constraints also protect restores from skipping investigation. */
   requiresEvidence?: readonly EvidenceId[];
   excludesEvidence?: readonly EvidenceId[];

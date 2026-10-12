@@ -1,41 +1,67 @@
-# 美术资源目录 · v1.0.1
+# 美术资源目录 · v1.1.0「巡城师徒」
 
-2026-10-12 使用内置图像生成能力逐项重绘 6 幅场景、6 名人物及应用图标。旧 SVG 作为机位、物件与角色特征参考，上一版生成的雨巷作为环境光影基准；人物使用新老周立绘统一笔触与光影。所有人物、单位与事件均为虚构，不以真人照片为来源，不指定工具未暴露的模型型号。
+本轮使用内置图像生成能力新增14项美术：程砚、季宁的基础立绘与表情各一套、老周现场防护立绘、八名角色的 Q 版形象及抢修车场景。v1.0.1重绘的其余场景、人物和应用图标继续使用。
 
-场景交付为 1600 × 900 的 WebP，人物为 640 × 960 的透明 WebP。12 幅游戏插画合计 **2,497,746 字节（约 2.38 MiB）**；背景采用 quality 88，人物 quality 90、alpha quality 100 的 WebP 压缩。尺寸转换与压缩没有替代图像生成重绘，也没有人为补画角色。
+当前26幅游戏插画合计 **3,692,756字节，约3.52 MiB**。背景1600×900，成年立绘640×960，Q版640×640，均以WebP交付。新资源quality 86、alpha quality 100；人物保留真实透明通道，Q版保留全身与完整脚部。
+
+## 场景
 
 | 文件 | 内容与用途 |
 | --- | --- |
-| `public/art/dispatch.webp` | 夜间值班室：雨窗、配电图、电话、工单、旧电脑。 |
-| `public/art/alley.webp` | 槐荫巷雨夜：旧住宅、表箱、架空线、湿路面与孤灯；标题与序章共用。 |
-| `public/art/substation.webp` | 南桥配电院：四组关闭的电柜、仪表、维护牌与潮湿庭院。 |
-| `public/art/demolition.webp` | 拆迁围院：残墙、裸露楼梯、断开的旧线、围挡与空住宅。 |
-| `public/art/stairwell.webp` | 老住宅楼道：旧门、电表、继电器、金属扶手、两把椅子与饭碗。 |
-| `public/art/control-room.webp` | 旧城控制室：模拟回路图、旧仪表、电脑、档案与便携测量工具。 |
-| `public/art/portraits/zhou.webp` | 老周，约 50 岁：灰发、胡茬、旧工装、反光条与口袋工具。 |
-| `public/art/portraits/lin.webp` | 林岚，约 30 岁：值班耳麦、低发髻与职业夹克。 |
-| `public/art/portraits/mei.webp` | 杨婶，约 60 岁：灰发、布围巾、针织旧衣与等待中的神情。 |
-| `public/art/portraits/xu.webp` | 许守成，约 35 岁：眼镜、衬衫领与工作夹克，作为档案中的普通人呈现。 |
-| `public/art/portraits/chen.webp` | 陈伯，约 60 岁：旧帽、胡茬、褪色夹克与钥匙。 |
-| `public/art/portraits/shen.webp` | 沈棠，约 28 岁：长外套、灰绿围巾与手中的折纸。 |
-| `public/icon.png` | 图像生成重绘的断环与暗红闪电，512 × 512。 |
-| `public/icons/192x192.png`、`public/icons/512x512.png` | 从同一图标源缩放，供 PWA 安装与设备主屏幕显示。 |
-| `src-tauri/icons/128x128.png`、`src-tauri/icons/icon.ico` | 同源 Windows 图标；ICO 含 16 / 24 / 32 / 48 / 64 / 128 / 256 尺寸。 |
+| public/art/dispatch.webp | 雨夜值班室，接单、人员安排与出车登记 |
+| public/art/alley.webp | 槐荫巷雨夜，标题与十三户调查 |
+| public/art/substation.webp | 配电院与关闭的电柜，零线调查 |
+| public/art/demolition.webp | 城南拆迁围院，旧支路与门牌调查 |
+| public/art/stairwell.webp | 老楼道、灯、椅子与继电器，清河里与长安里 |
+| public/art/control-room.webp | 旧城技术核对与档案空间 |
+| public/art/repair-van.webp | 师徒共同出车、对时、整理资料和回程，新增 |
 
-## 提示词与来源
+## 成年人物与变化
 
-[全量预览](art/redraw-contact-sheet.jpg)按场景、人物与图标展示本批美术。[生成清单](art/redraw-manifest.json)逐项保存实际提示词、参考来源、生成源 SHA-256、发布文件 SHA-256、尺寸、大小与 alpha 信息。当前发布文件直接位于仓库内，不依赖生成工作区或外部图片地址。旧美术可从基准提交 `5d0ab8e` 的 Git 历史恢复。
+| 文件 | 角色与用途 |
+| --- | --- |
+| public/art/portraits/cheng.webp | 程砚32岁，白盔、系紧下颏带、深蓝与暗橙工服、胸前电台 |
+| public/art/portraits/cheng-focused.webp | 程砚专注复核表情，保持同一人物与姿态 |
+| public/art/portraits/ji.webp | 季宁23岁，短发、黄盔、平板与现场记录册 |
+| public/art/portraits/ji-concerned.webp | 季宁警觉提问表情，保持同一人物、装备和姿态 |
+| public/art/portraits/zhou.webp | 老周50岁，灰发、旧工装，档案目录与室内场合 |
+| public/art/portraits/zhou-field.webp | 老周现场版，白盔、下颏带、长袖反光雨衣与电台 |
+| public/art/portraits/lin.webp | 林岚30岁，值班耳麦与职业夹克，远程或室内联络 |
+| public/art/portraits/mei.webp | 杨桂梅60岁，灰发、布围巾与针织衣 |
+| public/art/portraits/xu.webp | 许守成2019年35岁，眼镜与旧工服，明确标为旧档照片 |
+| public/art/portraits/chen.webp | 陈伯60岁，旧帽、看守夹克与钥匙 |
+| public/art/portraits/shen.webp | 沈棠28岁，长外套、灰绿围巾与折纸 |
 
-素材由本项目开发过程中的图像生成制作，不引用第三方素材包、企业标识或外部字体。本文件不额外指定项目或素材许可证。保留提示词可以延续美术方向，重新生成不能保证逐像素复现既有图片。
+## Q版人物目录
 
-## 接入与维护
+| 文件 | 人物特征与道具 |
+| --- | --- |
+| public/art/chibi/cheng.webp | 程砚，白盔、电台与闭合工具箱，统一画风母版 |
+| public/art/chibi/ji.webp | 季宁，黄盔、平板和记录册 |
+| public/art/chibi/lin.webp | 林岚，耳麦、夹板和笔 |
+| public/art/chibi/zhou.webp | 老周，灰发、折叠附页与文件包 |
+| public/art/chibi/mei.webp | 杨婶，针织衣、围巾与票据铁盒 |
+| public/art/chibi/xu.webp | 许守成，方框眼镜、旧工服与笔记本 |
+| public/art/chibi/chen.webp | 陈伯，旧帽、钥匙与卷起的地图 |
+| public/art/chibi/shen.webp | 沈棠，长外套、绿灰围巾与旧信 |
 
-剧情背景、标题、章节缩略图和人物立绘直接引用新 WebP；`asset()` 统一补上 Vite 基路径，兼容本地根路径、桌面端和 GitHub Pages 的 `/Circuit/` 路径。旧 SVG 与早期大尺寸雨巷 PNG 不进入发布包。
+Q版沿用程砚母版的比例、眼部处理、纸感笔触和低饱和配色。立绘负责正剧，Q版用于“人物与抢修队”目录；人物选择与视图切换不改变游玩进度。
 
-PWA 缓存规则明确包含 WebP、PNG、HTML、CSS 与脚本。首次联网完成服务工作线程缓存后，全部 13 项生成美术均可离线解码。人物保留透明通道，背景中的标签属于装饰；证据文字、仪表读数、工单、解谜信息和可点击热点由应用层提供。
+## 图标
 
-响应式检查覆盖桌面 1280 × 720、960 × 540、手机横屏 760 × 430 与竖屏 390 × 844。雨巷在窄屏偏向右侧远处街灯；底部叙事框、弹窗和调查控件遵循已有布局。动态城市线路图依据归档进度实时绘制。
+public/icon.png及public/icons/192x192.png、512x512.png延续上一轮断环与暗红闪电；src-tauri/icons/128x128.png和icon.ico使用同源图标。Windows PNG为RGBA，ICO保留多尺寸。无需在人物迭代中重复替换已完成的品牌图形。
 
-## 验证方式
+## 来源与校验
 
-`npm test`检查全部章节背景与立绘引用，确认资产非空且具有 WebP 文件签名。`tests/release-browser.py --pwa`在实际断网状态下逐项解码 6 幅背景、6 名立绘和应用图标，检查尺寸与每名人物的透明像素比例，同时回归六章推进、存档、布局和离线重玩。素材校验清单还可用于核对发布文件是否被意外替换。
+- [本轮预览](art/patrol-contact-sheet.jpg)与[生成清单](art/patrol-manifest.json)：14项实际提示词、参考来源、生成源SHA-256、发布文件SHA-256、尺寸、大小与透明信息。
+- [上一轮全量预览](art/redraw-contact-sheet.jpg)与[上一轮清单](art/redraw-manifest.json)：原六场景、六人及图标的来源。
+- [本轮验证记录](art/patrol-verification.json)：单位测试、浏览器回归、存档结构与离线素材检查。
+- [立绘档案界面](art/characters-portrait-preview.jpg)、[Q版档案界面](art/characters-chibi-preview.jpg)。
+
+所有角色、单位和事件均为虚构，没有以真人照片、真实企业标识或第三方素材包为来源，不指定工具未暴露的模型型号。生成清单支持延续设计方向，重新生成不保证逐像素复现。本文件不额外指定素材许可证。
+
+## 接入与离线
+
+角色定义集中在src/game/characters.ts，剧情用角色标识、表情和在场方式选择素材。现场立绘、远程通讯卡和2019旧档照片分别呈现；所有图片由Vite基路径统一解析，兼容根路径、桌面与/Circuit/。
+
+PWA首次联网完成缓存后，26幅插画和应用图标全部可离线解码。精确证据文字、工单、读数、按钮和热点由应用层提供，城市路线图按归档进度由程序绘制。旧SVG与大尺寸生成源不进入发行包。

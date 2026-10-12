@@ -63,6 +63,11 @@ def run(url, pwa):
     pages, contexts = [], []
     current_page = None
     summary = dict(base_url=url, pwa_requested=pwa)
+    qa_fonts = Path(os.environ['CIRCUIT_QA_FONT_DIR']) if os.environ.get('CIRCUIT_QA_FONT_DIR') else None
+    if qa_fonts:
+        qa_css = (qa_fonts / 'index.css').read_text().replace('./files/', '/_qa-fonts/')
+        qa_css += "\n*{font-family:'Noto Serif SC Variable',serif !important;}"
+        summary['font_qa'] = 'Local CJK font injected for layout testing only'
 
     def raw(page):
         return page.evaluate('localStorage.getItem(' + json.dumps(AUTO) + ')')
@@ -141,6 +146,10 @@ def run(url, pwa):
                 nonlocal current_page
                 context = browser.new_context(viewport=dict(width=viewport[0], height=viewport[1]))
                 contexts.append(context)
+                if qa_fonts:
+                    context.route('**/_qa-fonts/*', lambda route: route.fulfill(
+                        path=str(qa_fonts / 'files' / Path(urlsplit(route.request.url).path).name), content_type='font/woff2'))
+                    context.add_init_script('document.addEventListener("DOMContentLoaded",()=>{const style=document.createElement("style");style.textContent=' + json.dumps(qa_css) + ';document.head.appendChild(style);},{once:true});')
                 initial = {SETTINGS: json.dumps(PREFERENCES), **(seed or {})}
                 script = 'if (!sessionStorage.getItem("release-smoke-seeded")) {'
                 script += 'for(const [key,value] of Object.entries(' + json.dumps(initial) + '))localStorage.setItem(key,value);'
@@ -172,6 +181,8 @@ def run(url, pwa):
                     time.sleep(.25)
                 page.goto(url, wait_until='domcontentloaded')
                 expect(page.get_by_role('heading', name='回路', exact=True)).to_be_visible()
+                if qa_fonts:
+                    page.evaluate('document.fonts.ready')
                 return page
 
             try:

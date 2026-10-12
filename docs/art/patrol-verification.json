@@ -458,5 +458,208 @@
       "docs/art/patrol-radio-preview.jpg"
     ]
   },
-  "desktop_compile": "Validated by Windows CI on the published commit; see repository Actions"
+  "desktop_compile": "Validated by Windows CI on the published commit; see repository Actions",
+  "cjk_font_browser": {
+    "base_url": "http://127.0.0.1:4182",
+    "pwa_requested": true,
+    "font_qa": "Local CJK font injected for layout testing only",
+    "routes": {
+      "thirteen-households": 44,
+      "seventh-night": 45,
+      "backfeed": 46,
+      "everlight": 39,
+      "neutral": 37,
+      "closure": 45
+    },
+    "service_worker": "http://127.0.0.1:4182/sw.js",
+    "offline_art": [
+      {
+        "path": "http://127.0.0.1:4182/art/alley.webp",
+        "width": 1600,
+        "height": 900,
+        "transparent": 0
+      },
+      {
+        "path": "http://127.0.0.1:4182/art/chibi/chen.webp",
+        "width": 640,
+        "height": 640,
+        "transparent": 0.71820556640625
+      },
+      {
+        "path": "http://127.0.0.1:4182/art/chibi/cheng.webp",
+        "width": 640,
+        "height": 640,
+        "transparent": 0.728369140625
+      },
+      {
+        "path": "http://127.0.0.1:4182/art/chibi/ji.webp",
+        "width": 640,
+        "height": 640,
+        "transparent": 0.735390625
+      },
+      {
+        "path": "http://127.0.0.1:4182/art/chibi/lin.webp",
+        "width": 640,
+        "height": 640,
+        "transparent": 0.74782470703125
+      },
+      {
+        "path": "http://127.0.0.1:4182/art/chibi/mei.webp",
+        "width": 640,
+        "height": 640,
+        "transparent": 0.73784423828125
+      },
+      {
+        "path": "http://127.0.0.1:4182/art/chibi/shen.webp",
+        "width": 640,
+        "height": 640,
+        "transparent": 0.73536376953125
+      },
+      {
+        "path": "http://127.0.0.1:4182/art/chibi/xu.webp",
+        "width": 640,
+        "height": 640,
+        "transparent": 0.743671875
+      },
+      {
+        "path": "http://127.0.0.1:4182/art/chibi/zhou.webp",
+        "width": 640,
+        "height": 640,
+        "transparent": 0.71901611328125
+      },
+      {
+        "path": "http://127.0.0.1:4182/art/control-room.webp",
+        "width": 1600,
+        "height": 900,
+        "transparent": 0
+      },
+      {
+        "path": "http://127.0.0.1:4182/art/demolition.webp",
+        "width": 1600,
+        "height": 900,
+        "transparent": 0
+      },
+      {
+        "path": "http://127.0.0.1:4182/art/dispatch.webp",
+        "width": 1600,
+        "height": 900,
+        "transparent": 0
+      },
+      {
+        "path": "http://127.0.0.1:4182/art/portraits/chen.webp",
+        "width": 640,
+        "height": 960,
+        "transparent": 0.36341959635416665
+      },
+      {
+        "path": "http://127.0.0.1:4182/art/portraits/cheng-focused.webp",
+        "width": 640,
+        "height": 960,
+        "transparent": 0.37729329427083336
+      },
+      {
+        "path": "http://127.0.0.1:4182/art/portraits/cheng.webp",
+        "width": 640,
+        "height": 960,
+        "transparent": 0.37678873697916665
+      },
+      {
+        "path": "http://127.0.0.1:4182/art/portraits/ji-concerned.webp",
+        "width": 640,
+        "height": 960,
+        "transparent": 0.4193196614583333
+      },
+      {
+        "path": "http://127.0.0.1:4182/art/portraits/ji.webp",
+        "width": 640,
+        "height": 960,
+        "transparent": 0.4192529296875
+      },
+      {
+        "path": "http://127.0.0.1:4182/art/portraits/lin.webp",
+        "width": 640,
+        "height": 960,
+        "transparent": 0.395595703125
+      },
+      {
+        "path": "http://127.0.0.1:4182/art/portraits/mei.webp",
+        "width": 640,
+        "height": 960,
+        "transparent": 0.39544921875
+      },
+      {
+        "path": "http://127.0.0.1:4182/art/portraits/shen.webp",
+        "width": 640,
+        "height": 960,
+        "transparent": 0.408056640625
+      },
+      {
+        "path": "http://127.0.0.1:4182/art/portraits/xu.webp",
+        "width": 640,
+        "height": 960,
+        "transparent": 0.37489420572916665
+      },
+      {
+        "path": "http://127.0.0.1:4182/art/portraits/zhou-field.webp",
+        "width": 640,
+        "height": 960,
+        "transparent": 0.40381998697916666
+      },
+      {
+        "path": "http://127.0.0.1:4182/art/portraits/zhou.webp",
+        "width": 640,
+        "height": 960,
+        "transparent": 0.34807779947916667
+      },
+      {
+        "path": "http://127.0.0.1:4182/art/repair-van.webp",
+        "width": 1600,
+        "height": 900,
+        "transparent": 0
+      },
+      {
+        "path": "http://127.0.0.1:4182/art/stairwell.webp",
+        "width": 1600,
+        "height": 900,
+        "transparent": 0
+      },
+      {
+        "path": "http://127.0.0.1:4182/art/substation.webp",
+        "width": 1600,
+        "height": 900,
+        "transparent": 0
+      },
+      {
+        "path": "http://127.0.0.1:4182/icon.png",
+        "width": 512,
+        "height": 512,
+        "transparent": 0
+      }
+    ],
+    "status": "passed",
+    "completed_checks": [
+      "initial-chapter-locks",
+      "complete-chapter:thirteen-households",
+      "complete-chapter:seventh-night",
+      "complete-chapter:backfeed",
+      "complete-chapter:everlight",
+      "complete-chapter:neutral",
+      "complete-chapter:closure",
+      "responsive-hotspots:1280x720",
+      "responsive-hotspots:960x540",
+      "responsive-hotspots:760x430",
+      "responsive-hotspots:390x844",
+      "denied-storage-remains-playable",
+      "pwa-manifest-service-worker",
+      "offline-all-generated-art",
+      "offline-campaign-resume-and-replay",
+      "browser-runtime-errors"
+    ],
+    "completed_count": 16,
+    "page_errors": [],
+    "console_errors": [],
+    "http_errors": [],
+    "duration_seconds": 38.31
+  },
+  "layout_fix": "CJK font CI exposed short-screen gallery scroll obscuring view buttons; desktop cast list now scrolls independently. Strict pointer hit tests retained."
 }

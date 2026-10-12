@@ -39,7 +39,8 @@
 - 根路径和/Circuit/各16组真实浏览器检查通过，包括六章完整通关、八人物双视图、四种屏幕、卡片遮挡、旧进度恢复和断网重玩。
 - 断网后逐项解码27项生成美术：26幅WebP与应用图标，检查尺寸和透明像素。
 - Web/PWA生产构建与ZIP完整性验证通过。Windows编译由[同一提交的CI](https://github.com/AureliusWu/Circuit/actions)验证。
-- 预览中的中文字体仅在截图检查时临时提供，没有加入发行包。
+- CI中文字体环境的短屏人物面板问题已修复：桌面人物列表独立滚动，形象切换保持可点击；完整16组中文字体回归通过。
+- 可用CIRCUIT_QA_FONT_DIR提供临时中文字体复现布局，字体仅用于检查，没有加入发行包。
 
 [完整本地验证记录](art/patrol-verification.json)与[实际生成提示词及SHA-256](art/patrol-manifest.json)随仓库保存。Web包输出artifacts/circuit-web-1.1.0.zip，附SHA-256文件；不宣称真人通关时长或Windows安装器人工验收。
 

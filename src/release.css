@@ -234,7 +234,7 @@
 .character-directory { display: grid; grid-template-columns: 190px minmax(0, 1fr); gap: 16px; }
 .character-directory .crew-intro { grid-column: 1 / -1; margin: 4px 0 0; line-height: 1.9; }
 .character-directory > footer { grid-column: 1 / -1; }
-.character-roster { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; align-self: start; }
+.character-roster { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; align-self: start; max-height: calc(100svh - 220px); overflow-y: auto; overscroll-behavior: contain; scrollbar-width: thin; scrollbar-color: #4c6541 #101b12; }
 .character-roster button { min-width: 0; padding: 8px 5px; border: 1px solid #40523b; color: #b9c4a7; background: #142219; cursor: pointer; }
 .character-roster button[aria-pressed="true"] { border-color: #b1a875; background: #2d3826; }
 .character-roster img { display: block; width: 100%; height: 60px; object-fit: contain; }
@@ -267,7 +267,7 @@
 }
 @media (max-width: 700px) {
   .character-directory { display: block; }
-  .character-roster { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 5px; margin: 18px 0; }
+  .character-roster { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 5px; margin: 18px 0; max-height: none; overflow: visible; }
   .character-roster img { height: 64px; }
   .character-roster span { font-size: 11px; }
   .character-roster small { font-size: 8px; }

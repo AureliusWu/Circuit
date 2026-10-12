@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="640" viewBox="0 0 420 640" role="img" aria-labelledby="title"><title id="title">沈棠 · 28岁女性角色立绘</title><desc>为《回路》原创绘制的成年角色墨线半身像。</desc><defs><linearGradient id="coat" x2=".8" y2="1"><stop stop-color="#424e49"/><stop offset="1" stop-color="#13251f"/></linearGradient><linearGradient id="skin" x2=".85" y2=".3"><stop stop-color="#b4aa98"/><stop offset=".65" stop-color="#b4aa98"/><stop offset="1" stop-color="#7f8371"/></linearGradient><linearGradient id="neck" x2="0" y2="1"><stop stop-color="#7f8371"/><stop offset="1" stop-color="#b4aa98"/></linearGradient><radialGradient id="edge"><stop stop-color="#b7b991" stop-opacity=".12"/><stop offset="1" stop-color="#b7b991" stop-opacity="0"/></radialGradient></defs>
+    <ellipse cx="211" cy="334" rx="207" ry="302" fill="url(#edge)"/>
+    <path d="M22 640l15-188q4-32 39-51l81-28h102l81 30q40 14 44 51l19 186Z" fill="url(#coat)" stroke="#0b211c" stroke-width="4"/>
+    <path d="M166 315l-9 58 49 56 58-58-13-64Z" fill="url(#neck)" stroke="#534d3e" stroke-width="2"/>
+    <path d="M162 341q45 38 92-5l-4-20h-86Z" fill="#7f8371" opacity=".47"/>
+    <path d="M177 373l32 57 31-56 8 91-72 1Z" fill="#929486" stroke="#586658" stroke-width="2"/>
+    <path d="M162 369l-37 20 26 78 56-41Z" fill="#424e49" stroke="#677669" stroke-width="2"/>
+    <path d="M260 369l39 23-29 77-61-43Z" fill="#424e49" stroke="#647364" stroke-width="2"/>
+    <path d="M209 430v210" stroke="#a6ac91" stroke-opacity=".45" stroke-width="3"/>
+    <path d="M73 453l-11 159m278-158 12 168M91 500l61 5m117 0 61-7" stroke="#7c8c75" stroke-opacity=".37" stroke-width="3" fill="none"/>
+    <path d="M65 506l18-8m-19 58 15-5M343 548l12 11m-14 22 15 8" stroke="#111e17" stroke-width="4" stroke-linecap="round"/>
+    <path d="M94 520l67 1v72H97Z" fill="#424e49" stroke="#667765" stroke-width="2"/>
+    <path d="M93 520h70v15H94Z" fill="#364f3e" stroke="#6d7c67" stroke-width="2"/>
+    <path d="M264 520l63-4v73l-61 5Z" fill="#424e49" stroke="#60745f" stroke-width="2"/>
+    <path d="M263 520l66-4v15l-66 4Z" fill="#344c3b" stroke="#6b7e65" stroke-width="2"/>
+    <circle cx="211" cy="497" r="3" fill="#8e987f"/><circle cx="211" cy="559" r="3" fill="#8e987f"/><circle cx="211" cy="620" r="3" fill="#8e987f"/>
+    <path d="M127 214q-19-18-20 12t21 29M288 211q17-19 20 10t-18 32" fill="#b4aa98" stroke="#625745" stroke-width="3"/>
+    <path d="M117 221l8 17m175-18-7 17" stroke="#7f8371" stroke-width="3" fill="none"/>
+    <path d="M140 165q17-49 75-49 59 4 66 53l-1 105-25 43-43 22-43-24-28-42Z" fill="url(#skin)" stroke="#504d3d" stroke-width="3"/>
+    <path d="M212 209l-10 55 12 10 18-7" fill="none" stroke="#7f8371" stroke-width="3" stroke-linecap="round"/>
+    <path d="M184 294q28 12 57-2" fill="none" stroke="#6c5148" stroke-width="3" stroke-linecap="round"/>
+    <path d="M194 303q17 5 35-2" fill="none" stroke="#7f8371" stroke-width="2"/>
+    <path d="M148 207q20-9 41-1M239 204q21-7 42 1" fill="none" stroke="#25372f" stroke-width="6" stroke-linecap="round"/>
+    <path d="M148 225q20-12 42 0M240 223q22-12 42 0" fill="#9c9781" stroke="#4f5545" stroke-width="3"/>
+    <ellipse cx="171" cy="224" rx="5" ry="6" fill="#243329"/><ellipse cx="260" cy="222" rx="5" ry="6" fill="#243329"/>
+    <path d="M150 240q20 6 37 0m55-2q19 6 35-1" fill="none" stroke="#7f8371" stroke-width="2"/>
+    <path d="M148 250l-7 22m137-23 7 20M179 270l-8 18m72-18 10 17" fill="none" stroke="#7f8371" stroke-width="2" opacity=".7"/>
+    <path d="M118 260q-14-78 4-116 15-59 84-65 79-6 101 71l-4 173-24-31-10-119q-35-11-51-31-23 31-62 39l-8 113-28 18Z" fill="#25372f" stroke="#182920" stroke-width="3"/>
+    <path d="M137 163q20-50 59-57m45 0q40 24 48 76m-158 73-7 58m178-62-2 62" fill="none" stroke="#51614f" stroke-width="3"/><path d="M165 241q10 7 22 3m57-2 17 2" fill="none" stroke="#777e6c" stroke-width="2"/><path d="M167 375l-26 16 24 55 41-21 52 18 19-48-27-22-40 29Z" fill="#69756a" stroke="#899180" stroke-width="2"/><path d="M186 405l8 83 23 25 25-27-13-86" fill="#6f7e71" stroke="#8d9684" stroke-width="2"/><path d="M194 436l36 3m-31 19 32 4m-28 18 21 1" stroke="#4c6552" stroke-width="2"/><path d="M255 392q12 4 15 16" fill="none" stroke="#b7b29a" stroke-width="3"/><path d="M275 568l46-13 15 42-48 8Z" fill="#91977d" stroke="#3b513b" stroke-width="2"/><path d="M284 579l24-6m-21 15 21-6" stroke="#5d6d52" stroke-width="2"/>
+    </svg>

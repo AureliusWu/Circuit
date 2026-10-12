@@ -1,5 +1,8 @@
 node_modules/
 dist/
+artifacts/
+*.tsbuildinfo
+__pycache__/
 .DS_Store
 *.log
 .vscode/

@@ -1,276 +1,338 @@
-import { useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { Notebook } from './components/Notebook';
+import { CHAPTER_ORDER, getAvailableActions, getChapter, transition } from './story/engine';
+import type { ChapterId } from './story/types';
+import {
+  completeChapter, createCampaignSession, loadCampaign, saveCampaign, startChapter,
+  validateCampaignPayload, type CampaignLoadResult, type CampaignSession, type CampaignSlot
+} from './game/campaign';
+import { MAX_HISTORY_ENTRIES, type SaveStorage } from './game/saves';
+import { loadPreferences, savePreferences, type Preferences } from './game/preferences';
+import { CircuitAudio } from './game/audio';
+import { useReading } from './game/reading';
+import { version } from '../package.json';
 
-type EvidenceId = 'live-after-cut' | 'house-13' | 'paper-ash';
-
-type StoryNode = {
-  location: string;
-  time: string;
-  speaker?: string;
-  text: string;
-  visual: 'dispatch' | 'alley' | 'meter' | 'lamp' | 'blackout' | 'ending';
+type Panel = 'evidence' | 'history' | 'chapters' | 'saves' | 'settings' | 'archive' | 'help';
+const PANEL_TITLES: Record<Panel, string> = {
+  evidence: '现场记录', history: '抢修日志', chapters: '章节选择', saves: '存档与读取',
+  settings: '阅读与声音', archive: '城市线路档案', help: '操作与制作记录'
 };
-
-type SaveData = {
-  node: string;
-  evidence: EvidenceId[];
+const BACKGROUNDS: Record<ChapterId, string> = {
+  'thirteen-households': 'alley', 'seventh-night': 'stairwell', backfeed: 'demolition',
+  everlight: 'stairwell', neutral: 'substation', closure: 'control-room'
 };
-
-const SAVE_KEY = 'circuit-save-v010';
-
-const evidenceInfo: Record<EvidenceId, { title: string; detail: string }> = {
-  'live-after-cut': {
-    title: '断开后仍有负荷',
-    detail: '表前开关已经拉开，但钳形表仍读到稳定电流。电流方向像是从用户侧倒送回来。'
-  },
-  'house-13': {
-    title: '不存在的13户',
-    detail: '旧台账只有12户，新系统却长期记录着“13号”用电。地址栏为空，户号真实存在。'
-  },
-  'paper-ash': {
-    title: '表箱里的纸灰',
-    detail: '烧焦的黄纸卡在封印螺丝后面，灰烬没有受潮。纸上只剩半个手写的“回”字。'
-  }
-};
-
-const nodes: Record<string, StoryNode> = {
-  title: {
-    location: '梧城',
-    time: '00:47',
-    text: '雨把城市的声音压得很低。远处一排路灯，像一条没有闭合的线。',
-    visual: 'blackout'
-  },
-  dispatch: {
-    location: '梧城供电公司 · 城北供电所',
-    time: '00:52',
-    speaker: '值班员',
-    text: '“城西槐荫巷，低压故障。十二户全停，系统却还有一户在走电。你过去看看。”',
-    visual: 'dispatch'
-  },
-  call: {
-    location: '值班室',
-    time: '00:53',
-    speaker: '你',
-    text: '我盯着工单看了两遍。停电范围：12户。在线电表：13块。备注里没有新增用户。',
-    visual: 'dispatch'
-  },
-  alley: {
-    location: '城西 · 槐荫巷',
-    time: '01:21',
-    text: '整条巷子都黑着，只有尽头一盏老式路灯亮着。雨水沿着架空线往下滴，像有什么东西正顺着线爬。',
-    visual: 'alley'
-  },
-  meterbox: {
-    location: '槐荫巷 · 低压表箱',
-    time: '01:27',
-    text: '表箱锈得厉害。十二块机械表都停了，最下方却留着一段新换过的导线。现在要把“正常故障”排干净。',
-    visual: 'meter'
-  },
-  inspectCurrent: {
-    location: '低压表箱',
-    time: '01:29',
-    speaker: '你',
-    text: '总开关断开。验电确认。可钳形表仍有 0.41A，而且电流方向反了——它从巷子深处回来。',
-    visual: 'meter'
-  },
-  inspectLedger: {
-    location: '抢修车内',
-    time: '01:33',
-    speaker: '你',
-    text: '纸质台账只有1到12号。手机系统里多出一个13号户表，七年前建档，此后每个月只在同一天出现一小段用电。',
-    visual: 'meter'
-  },
-  inspectAsh: {
-    location: '低压表箱',
-    time: '01:36',
-    text: '封印螺丝后面塞着一点黄纸灰。雨下了一夜，它却是干的。残片上能辨出半个“回”字。',
-    visual: 'meter'
-  },
-  lamp: {
-    location: '槐荫巷尽头',
-    time: '01:42',
-    text: '那盏路灯没有接在现有图纸的任何支路上。灯杆后是一栋封死的旧宅，门牌被拆了，只留下两颗钉子。',
-    visual: 'lamp'
-  },
-  deduction: {
-    location: '旧宅门前',
-    time: '01:46',
-    speaker: '你',
-    text: '三个异常现在连在了一起：倒送电、13号户、干燥的纸灰。必须先判断它们是不是同一个“故障”。',
-    visual: 'lamp'
-  },
-  wrong: {
-    location: '槐荫巷',
-    time: '01:51',
-    text: '你按普通窃电故障处理，剪断了那根回送线。整条巷子瞬间亮了一次。十二块停着的电表同时向后转了一格。',
-    visual: 'blackout'
-  },
-  truth: {
-    location: '槐荫巷 · 13号',
-    time: '01:52',
-    text: '你没有剪线。你先把13号户从系统里拉出来，又沿着倒送电流找到旧宅墙内的暗线。电线的尽头没有负载，只有一张七年前的讣告。',
-    visual: 'ending'
-  },
-  end: {
-    location: '第一回路 · 未闭合',
-    time: '02:07',
-    text: '恢复供电后，十二户电表重新走字。系统上的第13块表消失了。你收起工具时，工单自动多了一行从未有人输入的备注：\n\n“请勿闭合。”',
-    visual: 'ending'
-  }
-};
+const PORTRAIT_NAMES: Record<string, string> = { lin: '林岚', zhou: '老周', mei: '杨婶', xu: '许守成', chen: '陈伯', shen: '沈棠' };
+const SLOTS: CampaignSlot[] = ['auto', 1, 2, 3];
+const asset = (path: string) => `${import.meta.env.BASE_URL}${path.replace(/^\//, '')}`;
+function storage(): SaveStorage | null {
+  try { return window.localStorage; } catch { return null; }
+}
+function readSlots() {
+  return Object.fromEntries(SLOTS.map((slot) => [slot, loadCampaign(storage(), slot)])) as Record<CampaignSlot, CampaignLoadResult>;
+}
+function toSession(snapshot: CampaignSession): CampaignSession {
+  return { state: snapshot.state, history: snapshot.history, completed: snapshot.completed, archive: snapshot.archive };
+}
+function summary(save: CampaignLoadResult) {
+  if (save.status !== 'valid') return save.status === 'empty' ? '空槽位' : save.reason;
+  const chapter = getChapter(save.snapshot.state.chapterId)!;
+  return `${chapter.title} · ${chapter.nodes[save.snapshot.state.nodeId].location} · 已归档 ${save.snapshot.completed.length}/6 章`;
+}
 
 function App() {
   const [started, setStarted] = useState(false);
-  const [nodeId, setNodeId] = useState('title');
-  const [evidence, setEvidence] = useState<EvidenceId[]>([]);
-  const [panelOpen, setPanelOpen] = useState(false);
+  const [session, setSession] = useState(createCampaignSession);
+  const sessionRef = useRef(session);
+  const [stored, setStored] = useState(readSlots);
+  const [initialPreferences] = useState(() => loadPreferences(storage()));
+  const [preferences, setPreferences] = useState(initialPreferences.preferences);
+  const [panel, setPanel] = useState<Panel | null>(null);
+  const panelOpener = useRef<HTMLElement | null>(null);
+  const [notice, setNotice] = useState(() => {
+    const damaged = SLOTS.map((slot) => stored[slot]).find((save) => save.status === 'invalid' || save.status === 'unavailable');
+    return damaged && 'reason' in damaged ? damaged.reason : 'reason' in initialPreferences ? initialPreferences.reason : '';
+  });
+  const [automatic, setAutomatic] = useState(false);
+  const [pageVisible, setPageVisible] = useState(() => !document.hidden);
+  const audio = useRef<CircuitAudio | null>(null);
+  const importFile = useRef<HTMLInputElement>(null);
+  const closePanel = useCallback(() => setPanel(null), []);
+  const { state, history } = session;
+  const chapter = getChapter(state.chapterId)!;
+  const node = chapter.nodes[state.nodeId];
+  const actions = useMemo(() => getAvailableActions(state), [state]);
+  const reading = useReading(node.text, `${state.chapterId}/${state.nodeId}/${history.length}`, preferences, !started || !!panel || !pageVisible);
+  const menuSession = !started && stored.auto.status === 'valid' ? toSession(stored.auto.snapshot) : session;
+  const mapPoints = menuSession.completed.map((id) => {
+    const clue = getChapter(id)!.clue;
+    return `${clue.x},${clue.y}`;
+  });
+  if (menuSession.completed.length === CHAPTER_ORDER.length) mapPoints.push(mapPoints[0]);
+  const availableHotspots = (node.scene?.hotspots ?? []).flatMap((hotspot) => {
+    const action = actions.find((candidate) => candidate.id === hotspot.actionId);
+    return action ? [{ hotspot, action }] : [];
+  });
+  const hotspotActions = new Set(availableHotspots.map(({ action }) => action.id));
+  const dialogueActions = actions.filter((action) => !hotspotActions.has(action.id));
+  const requiredCount = chapter.requiredEvidence.filter((id) => state.evidence.includes(id)).length;
+  const nextChapter = CHAPTER_ORDER[chapter.order + 1];
 
-  const node = nodes[nodeId];
-  const canContinueInvestigation = evidence.length === 3;
+  useEffect(() => {
+    const onVisibility = () => setPageVisible(!document.hidden);
+    document.addEventListener('visibilitychange', onVisibility);
+    return () => document.removeEventListener('visibilitychange', onVisibility);
+  }, []);
+  useEffect(() => {
+    void audio.current?.configure(preferences, started && pageVisible && !panel);
+  }, [preferences, started, pageVisible, panel]);
+  useEffect(() => () => audio.current?.dispose(), []);
+  useEffect(() => {
+    if (!notice) return;
+    const timer = window.setTimeout(() => setNotice(''), 5500);
+    return () => window.clearTimeout(timer);
+  }, [notice]);
 
-  const progress = useMemo(() => {
-    const order = ['title', 'dispatch', 'call', 'alley', 'meterbox', 'lamp', 'deduction', 'truth', 'end'];
-    const index = Math.max(0, order.indexOf(nodeId));
-    return Math.min(100, Math.round((index / (order.length - 1)) * 100));
-  }, [nodeId]);
-
-  const go = (next: string) => setNodeId(next);
-
-  const collect = (id: EvidenceId, next: string) => {
-    setEvidence((current) => (current.includes(id) ? current : [...current, id]));
-    go(next);
-  };
-
-  const save = () => {
-    const data: SaveData = { node: nodeId, evidence };
-    localStorage.setItem(SAVE_KEY, JSON.stringify(data));
-  };
-
-  const load = () => {
-    const raw = localStorage.getItem(SAVE_KEY);
-    if (!raw) return;
-    try {
-      const data = JSON.parse(raw) as SaveData;
-      if (!nodes[data.node]) return;
-      setNodeId(data.node);
-      setEvidence(data.evidence ?? []);
-      setStarted(true);
-    } catch {
-      localStorage.removeItem(SAVE_KEY);
+  const enableAudio = () => {
+    if (!audio.current) {
+      try { audio.current = new CircuitAudio(); } catch { return; }
     }
+    void audio.current.configure(preferences, true);
   };
-
-  const restart = () => {
-    setNodeId('dispatch');
-    setEvidence([]);
+  const commit = useCallback((next: CampaignSession) => {
+    const completed = completeChapter(next);
+    sessionRef.current = completed;
+    setSession(completed);
     setStarted(true);
+    const result = saveCampaign(storage(), 'auto', completed);
+    if (result.status === 'saved') {
+      setStored((previous) => ({ ...previous, auto: { status: 'valid', snapshot: result.snapshot, source: 'v100' } }));
+      setNotice('进度已自动保存');
+    } else setNotice(result.reason);
+    return result;
+  }, []);
+  const act = useCallback((actionId: string) => {
+    const current = sessionRef.current;
+    const action = getAvailableActions(current.state).find((candidate) => candidate.id === actionId);
+    const next = transition(current.state, actionId);
+    if (!action || !next) return;
+    const nextHistory = action.resetEvidence ? [next.nodeId] : [...current.history, next.nodeId].slice(-MAX_HISTORY_ENTRIES);
+    const destination = getChapter(next.chapterId)!.nodes[next.nodeId];
+    if (action.collect) audio.current?.cue('record');
+    if (destination.outcome) audio.current?.cue(destination.outcome);
+    commit({ ...current, state: next, history: nextHistory });
+  }, [commit]);
+
+  useEffect(() => {
+    // Auto reading never makes a deduction, collects evidence or restarts a chapter.
+    if (!automatic || !started || panel || !pageVisible || !reading.finished || node.kind !== 'dialogue'
+      || actions.length !== 1 || actions[0].collect || actions[0].resetEvidence) return;
+    const timer = window.setTimeout(() => act(actions[0].id), preferences.autoDelay * 1000);
+    return () => window.clearTimeout(timer);
+  }, [automatic, started, panel, pageVisible, reading.finished, node, actions, preferences.autoDelay, act]);
+  useEffect(() => {
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (!started || panel || event.repeat || ![' ', 'Enter'].includes(event.key)) return;
+      const target = event.target;
+      if (target instanceof HTMLElement && target.closest('button,input,select,textarea,a,[contenteditable="true"]')) return;
+      event.preventDefault();
+      if (!reading.finished) reading.reveal();
+      else if (node.kind === 'dialogue' && actions.length === 1) act(actions[0].id);
+    };
+    document.addEventListener('keydown', onKeyDown);
+    return () => document.removeEventListener('keydown', onKeyDown);
+  }, [started, panel, reading, node.kind, actions, act]);
+
+  const openPanel = (kind: Panel, opener: HTMLElement) => {
+    panelOpener.current = opener;
+    if (kind === 'saves') setStored(readSlots());
+    setPanel(kind);
   };
-
-  const renderActions = () => {
-    if (nodeId === 'dispatch') return <button onClick={() => go('call')}>接下工单</button>;
-    if (nodeId === 'call') return <button onClick={() => go('alley')}>出发抢修</button>;
-    if (nodeId === 'alley') return <button onClick={() => go('meterbox')}>先查低压表箱</button>;
-
-    if (nodeId === 'meterbox') {
-      return (
-        <div className="choice-grid">
-          {!evidence.includes('live-after-cut') && <button onClick={() => go('inspectCurrent')}>测电流方向</button>}
-          {!evidence.includes('house-13') && <button onClick={() => go('inspectLedger')}>核对用户台账</button>}
-          {!evidence.includes('paper-ash') && <button onClick={() => go('inspectAsh')}>检查封印与接线</button>}
-          {canContinueInvestigation && <button className="danger" onClick={() => go('lamp')}>去找唯一亮着的路灯</button>}
-        </div>
-      );
-    }
-
-    if (nodeId === 'inspectCurrent') return <button onClick={() => collect('live-after-cut', 'meterbox')}>记录：断开后仍有负荷</button>;
-    if (nodeId === 'inspectLedger') return <button onClick={() => collect('house-13', 'meterbox')}>记录：不存在的13户</button>;
-    if (nodeId === 'inspectAsh') return <button onClick={() => collect('paper-ash', 'meterbox')}>记录：表箱里的纸灰</button>;
-    if (nodeId === 'lamp') return <button onClick={() => go('deduction')}>整理证据</button>;
-
-    if (nodeId === 'deduction') {
-      return (
-        <div className="choice-grid deduction">
-          <button onClick={() => go('wrong')}>按窃电处理，直接切断异常回路</button>
-          <button className="danger" onClick={() => go('truth')}>先追踪倒送电源，再核对“13号”的建档日期</button>
-        </div>
-      );
-    }
-
-    if (nodeId === 'wrong') return <button onClick={() => go('deduction')}>回到判断前</button>;
-    if (nodeId === 'truth') return <button onClick={() => go('end')}>继续</button>;
-    if (nodeId === 'end') return <button onClick={restart}>重新开始序章</button>;
-    return null;
+  const launch = () => { enableAudio(); closePanel(); setAutomatic(false); commit(createCampaignSession()); };
+  const resume = (slot: CampaignSlot) => {
+    const result = loadCampaign(storage(), slot);
+    setStored((previous) => ({ ...previous, [slot]: result }));
+    if (result.status !== 'valid') { setNotice(result.status === 'empty' ? '此槽位尚无存档。' : result.reason); return; }
+    const restored = toSession(result.snapshot);
+    sessionRef.current = restored;
+    setSession(restored);
+    setStarted(true);
+    setAutomatic(false);
+    closePanel();
+    enableAudio();
+    setNotice(result.source === 'v100' ? '进度已恢复' : '旧版进度已读取，下一次操作将保存为新版');
   };
-
-  if (!started) {
-    return (
-      <main className="title-screen scene-blackout">
-        <div className="noise" />
-        <div className="powerline" aria-hidden="true"><span /><span /><span /></div>
-        <section className="title-card">
-          <p className="eyebrow">A CHINESE FOLK HORROR STORY</p>
-          <h1>回路</h1>
-          <div className="english-title">CIRCUIT</div>
-          <p className="tagline">有些线路，断开以后仍然有电。</p>
-          <div className="title-actions">
-            <button className="primary" onClick={() => { setStarted(true); setNodeId('dispatch'); }}>开始抢修</button>
-            <button onClick={load}>读取存档</button>
-          </div>
-          <p className="version">v0.1.0 · 闭合前</p>
-        </section>
-      </main>
-    );
-  }
+  const selectChapter = (id: ChapterId) => {
+    const next = startChapter(menuSession, id);
+    if (!next) return;
+    enableAudio(); closePanel(); setAutomatic(false); commit(next);
+  };
+  const saveSlot = (slot: CampaignSlot) => {
+    const result = saveCampaign(storage(), slot, sessionRef.current);
+    if (result.status === 'saved') {
+      setStored((previous) => ({ ...previous, [slot]: { status: 'valid', snapshot: result.snapshot, source: 'v100' } }));
+      setNotice(`已保存到槽 ${slot}`);
+    } else setNotice(result.reason);
+  };
+  const changePreference = <K extends keyof Preferences>(key: K, value: Preferences[K]) => {
+    const next = { ...preferences, [key]: value };
+    setPreferences(next);
+    const result = savePreferences(storage(), next);
+    if (result.status !== 'saved') setNotice(result.reason);
+  };
+  const exportSave = () => {
+    const current = sessionRef.current;
+    const payload = { version: 2, ...current.state, history: current.history, completed: current.completed, archive: current.archive, savedAt: new Date().toISOString() };
+    if (validateCampaignPayload(payload).status !== 'valid') { setNotice('当前进度尚不能导出。'); return; }
+    const url = URL.createObjectURL(new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' }));
+    const link = document.createElement('a');
+    link.href = url; link.download = `circuit-v${version}-save.json`; link.click();
+    window.setTimeout(() => URL.revokeObjectURL(url), 1000);
+    setNotice('进度已导出，请妥善保存 JSON 文件');
+  };
+  const importSave = async (file: File | undefined) => {
+    if (!file) return;
+    if (file.size > 512 * 1024) { setNotice('存档文件过大，请选择回路导出的 JSON 文件。'); return; }
+    try {
+      const result = validateCampaignPayload(JSON.parse(await file.text()));
+      if (result.status !== 'valid') { setNotice(result.reason); return; }
+      const saved = commit(toSession(result.snapshot));
+      closePanel(); setAutomatic(false); enableAudio();
+      setNotice(saved.status === 'saved' ? '存档已导入，三个手动槽位保留' : `存档已读取到本次游玩。${saved.reason}`);
+    } catch { setNotice('无法读取这个存档文件，原进度已保留。'); }
+  };
+  const fullscreen = async () => {
+    try {
+      if (document.fullscreenElement) await document.exitFullscreen();
+      else if (document.documentElement.requestFullscreen) await document.documentElement.requestFullscreen();
+      else setNotice('当前窗口不支持全屏。');
+    } catch { setNotice('当前窗口暂时无法进入全屏。'); }
+  };
+  const panelButton = (kind: Panel, label: string) => (
+    <button className="hud-button" onClick={(event) => openPanel(kind, event.currentTarget)} aria-haspopup="dialog">{label}</button>
+  );
 
   return (
-    <main className={`game scene-${node.visual}`}>
-      <div className="noise" />
-      <header className="hud">
-        <div>
-          <strong>回路 / CIRCUIT</strong>
-          <span>{node.location}</span>
-        </div>
-        <div className="hud-right">
-          <span>{node.time}</span>
-          <button className="hud-button" onClick={() => setPanelOpen(!panelOpen)}>证据 {evidence.length}/3</button>
-          <button className="hud-button" onClick={save}>存档</button>
-        </div>
-      </header>
-
-      <div className="progress"><i style={{ width: `${progress}%` }} /></div>
-
-      <section className="stage" aria-label={node.location}>
-        <div className="rain" />
-        <div className="stage-object meter-box" />
-        <div className="stage-object street-lamp"><i /></div>
-        <div className="stage-object old-house"><i /><i /></div>
-        <div className="scene-caption">{node.location}</div>
-      </section>
-
-      <section className="dialogue-wrap">
-        <div className="dialogue">
-          {node.speaker && <div className="speaker">{node.speaker}</div>}
-          <p>{node.text}</p>
-          <div className="actions">{renderActions()}</div>
-        </div>
-      </section>
-
-      <aside className={`evidence-panel ${panelOpen ? 'open' : ''}`}>
-        <div className="panel-head">
-          <div><small>FIELD RECORD</small><h2>现场记录</h2></div>
-          <button onClick={() => setPanelOpen(false)}>×</button>
-        </div>
-        {evidence.length === 0 ? (
-          <p className="empty">尚未记录异常。先按标准故障流程排查。</p>
+    <main className={`game ${started ? `scene-${node.visual}` : 'release-title'}${preferences.highContrast ? ' high-contrast' : ''}${preferences.reducedMotion ? ' reduced-motion' : ''}`}>
+      <div className="game-surface" aria-hidden={panel ? true : undefined} {...(panel ? { inert: '' } : {})}>
+        <div className="noise" />
+        {!started ? (
+          <>
+            <img className="title-background" src={asset("/art/alley.svg")} alt="雨夜旧城区，线路从住户窗前延伸至远处" />
+            <div className="title-layout">
+              <section className="title-brand">
+                <p className="eyebrow">城市配电 · 民俗悬疑</p><h1>回路</h1><p className="english-title">CIRCUIT</p>
+                <p className="tagline">有些线路，断开以后仍然有电。</p>
+                <p className="title-synopsis">一次深夜抢修，让你接到一张七年前的工单。六段线路，一场被抹去的救援；先查清电从何处来，再问谁还在等待。</p>
+                <p className="version">v{version} · 第一部 / 归档闭合</p>
+              </section>
+              <nav className="title-menu" aria-label="主菜单">
+                {stored.auto.status === 'valid' && <button className="primary" onClick={() => resume('auto')}>继续抢修</button>}
+                <button className={stored.auto.status === 'valid' ? '' : 'primary'} onClick={launch}>开始抢修</button>
+                {(['chapters', 'saves', 'archive', 'settings', 'help'] as const).map((kind) => (
+                  <button key={kind} onClick={(event) => openPanel(kind, event.currentTarget)} aria-haspopup="dialog">{PANEL_TITLES[kind]}</button>
+                ))}
+                {stored.auto.status === 'valid' && <p className="continue-summary">{summary(stored.auto)}</p>}
+                <p className="menu-footnote">新开抢修会替换自动进度，手动槽位保留。</p>
+              </nav>
+            </div>
+          </>
         ) : (
-          evidence.map((id, index) => (
-            <article key={id}>
-              <span>0{index + 1}</span>
-              <div><h3>{evidenceInfo[id].title}</h3><p>{evidenceInfo[id].detail}</p></div>
-            </article>
-          ))
+          <>
+            <header className="hud">
+              <div><strong>回路 / CIRCUIT</strong><span>{node.location}</span></div>
+              <div className="hud-right"><span>{node.time}</span>
+                {panelButton('history', '历史')}{panelButton('evidence', `证据 ${state.evidence.length}/${Object.keys(chapter.evidence).length}`)}
+                {panelButton('archive', '线路')}{panelButton('saves', '存档')}{panelButton('settings', '设置')}
+                <button className="hud-button" onClick={() => { setStarted(false); setAutomatic(false); }}>标题</button>
+              </div>
+            </header>
+            <div className="progress" role="progressbar" aria-label="章节进度" aria-valuemin={0} aria-valuemax={100} aria-valuenow={node.progress}><i style={{ width: `${node.progress}%` }} /></div>
+            <section className="stage" aria-label={node.location}>
+              <div className="stage-background"><img src={asset(node.scene?.background ?? `/art/${node.visual === 'dispatch' ? 'dispatch' : BACKGROUNDS[state.chapterId]}.svg`)} alt="" /></div>
+              <div className="rain" aria-hidden="true" />
+              {node.portrait && <figure className="character-portrait"><img src={asset(`/art/portraits/${node.portrait}.svg`)} alt={PORTRAIT_NAMES[node.portrait] ?? node.speaker ?? ''} /><figcaption className="portrait-caption">{PORTRAIT_NAMES[node.portrait]}</figcaption></figure>}
+              {node.scene?.document && <div className="scene-document">{[node.scene.document.title, ...node.scene.document.lines].join('\n')}</div>}
+              {node.scene?.inscription && <div className="scene-inscription">{node.scene.inscription}</div>}
+              {node.kind === 'investigation' && <>
+                <section className="objective-card" aria-label="当前调查目标"><small>FIELD TASK / 现场排查</small>
+                  <h2>{node.objective?.title ?? '核对现场异常'}</h2><p>{node.objective?.detail ?? '逐一核对现场标记，将记录留在工单里。'}</p>
+                  <span className="objective-progress">必要记录 {requiredCount}/{chapter.requiredEvidence.length} · 已发现 {state.evidence.length} 条</span>
+                </section>
+                <div className="investigation-hotspots" role="group" aria-label="场景调查">{availableHotspots.map(({ hotspot, action }) => (
+                  <button key={hotspot.id} className="scene-hotspot" style={{ left: `${hotspot.x}%`, top: `${hotspot.y}%` }} data-hotspot-slot={node.scene?.hotspots?.indexOf(hotspot)} data-action-id={action.id} data-evidence={action.hidesWhenCollected} aria-label={action.label} onClick={() => act(action.id)}>
+                    <span className="hotspot-marker" aria-hidden="true">＋</span><span className="hotspot-label" aria-hidden="true">{hotspot.label}</span><span className="hotspot-hint" aria-hidden="true">{action.label}</span>
+                  </button>
+                ))}</div>
+                {!!availableHotspots.length && <p className="investigation-help">选择调查标记，核对后记入现场记录。</p>}
+              </>}
+              {node.puzzle && <section className="puzzle-card" aria-label="推理问题"><small>线路判断</small><h2>{node.puzzle.prompt}</h2><details><summary>查看核对提示</summary><p>{node.puzzle.hint}</p></details></section>}
+              {node.outcome && <section className="ending-summary" aria-label="章节结果">
+                <small>{node.outcome === 'complete' ? 'WORK ORDER / 已归档' : 'WORK ORDER / 需复核'}</small>
+                <h2>{node.outcome === 'complete' ? (nextChapter ? `${chapter.title} · 记录完成` : '第一部完 · 归档闭合') : '这条回路仍需重新核对'}</h2>
+                <p>{node.outcome === 'complete' ? `${chapter.clue.code} · ${chapter.clue.title}` : '回看现场记录，或从本章重新排查。'}</p>
+              </section>}
+              <div className="scene-caption">{node.location}</div>
+            </section>
+            <section className="dialogue-wrap" aria-label="当前叙事"><div className="dialogue">
+              <div className="dialogue-head"><span>{chapter.title} · {node.time}</span><div className="playback-controls">
+                {!reading.finished && <button onClick={reading.reveal}>显示全文</button>}
+                <button aria-pressed={automatic} onClick={() => setAutomatic(!automatic)}>{automatic ? '暂停自动' : '自动阅读'}</button>
+                <button aria-pressed={preferences.muted} onClick={() => { enableAudio(); changePreference('muted', !preferences.muted); }}>{preferences.muted ? '开启声音' : '静音'}</button>
+              </div></div>
+              {node.speaker && <div className="speaker">{node.speaker}</div>}
+              <p className="dialogue-text" aria-label={node.text}><span aria-hidden="true">{reading.text}</span></p>
+              <div className="actions"><div className={['choice', 'puzzle'].includes(node.kind) ? 'choice-grid deduction' : 'choice-grid'}>
+                {dialogueActions.map((action) => <button key={action.id} data-action-id={action.id} className={action.tone === 'danger' ? 'danger' : ''} onClick={() => act(action.id)}>{action.label}</button>)}
+                {node.outcome === 'complete' && nextChapter && <button className="next-chapter primary" onClick={() => selectChapter(nextChapter)}>继续下一章 · {getChapter(nextChapter)!.title}</button>}
+                {node.outcome === 'complete' && !nextChapter && <button onClick={(event) => openPanel('archive', event.currentTarget)}>查看完整线路档案</button>}
+              </div></div>
+            </div></section>
+          </>
         )}
-        <footer>原则：先排除电气故障，再解释剩下的东西。</footer>
-      </aside>
+      </div>
+      <p className={`${started ? 'save-notice' : 'title-notice'}${panel ? ' panel-notice' : ''}`} role="status" aria-live="polite">{notice}</p>
+      {panel && <Notebook kind={panel} title={PANEL_TITLES[panel]} returnFocusTo={panelOpener.current} onClose={closePanel}>
+        {panel === 'evidence' && <>
+          {!state.evidence.length ? <p className="empty">尚未记录异常。先按标准故障流程排查。</p> : state.evidence.map((id, index) => <article key={id}><span>{String(index + 1).padStart(2, '0')}</span><div><h3>{chapter.evidence[id].title}</h3><p>{chapter.evidence[id].detail}</p></div></article>)}
+          <footer>原则：先排除电气故障，再解释剩下的东西。</footer>
+        </>}
+        {panel === 'history' && <><p className="history-intro">按实际经过保留本章最近 {history.length} 条叙事。</p><ol className="history-list">{history.map((id, index) => {
+          const entry = chapter.nodes[id];
+          return <li className="history-entry" key={`${index}-${id}`}><div className="history-meta"><span>{entry.time}</span><span>{entry.location}</span></div>{entry.speaker && <strong className="history-speaker">{entry.speaker}</strong>}<p>{entry.text}</p></li>;
+        })}</ol></>}
+        {panel === 'chapters' && <><p>按归档顺序解锁。重玩已解锁章节会从本章开头出发，线路档案保留。</p><div className="chapter-grid">{CHAPTER_ORDER.map((id, index) => {
+          const item = getChapter(id)!; const unlocked = index <= menuSession.completed.length;
+          return <button className="chapter-card" key={id} disabled={!unlocked} data-chapter-id={id} onClick={() => selectChapter(id)}>
+            <img src={asset(`/art/${BACKGROUNDS[id]}.svg`)} alt="" /><span>{String(index + 1).padStart(2, '0')} / {item.title}</span><small>{unlocked ? menuSession.completed.includes(id) ? '已归档 · 可重玩' : '已解锁' : '完成前章后解锁'}</small><p>{item.synopsis}</p>
+          </button>;
+        })}</div></>}
+        {panel === 'saves' && <><p>自动进度随操作更新。读取存档保留当前自动槽，下一次操作才会保存。</p><div className="save-grid">{SLOTS.map((slot) => {
+          const save = stored[slot];
+          return <section className="save-card" key={slot} data-save-slot={slot}><h3>{slot === 'auto' ? '自动进度' : `槽 ${slot}`}</h3><p>{summary(save)}</p>
+            {save.status === 'valid' && <time dateTime={save.snapshot.savedAt}>{new Date(save.snapshot.savedAt).toLocaleString('zh-CN')}</time>}
+            <div>{slot !== 'auto' && <button disabled={!started} onClick={() => saveSlot(slot)}>保存到槽 {slot}</button>}<button disabled={save.status !== 'valid'} onClick={() => resume(slot)}>读取{slot === 'auto' ? '自动进度' : `槽 ${slot}`}</button></div>
+          </section>;
+        })}</div><div className="save-transfer"><button disabled={!started} onClick={exportSave}>导出当前进度</button><button onClick={() => importFile.current?.click()}>导入存档文件</button><input ref={importFile} type="file" accept=".json,application/json" hidden aria-label="选择存档文件" onChange={(event) => { void importSave(event.target.files?.[0]); event.target.value = ''; }} /></div><footer>导入会替换自动进度。建议先将重要进度保存到手动槽位。</footer></>}
+        {panel === 'settings' && <div className="settings-grid">
+          <label>文字显示<select value={preferences.textSpeed} onChange={(event) => changePreference('textSpeed', event.target.value as Preferences['textSpeed'])}><option value="instant">即时全文</option><option value="slow">缓慢</option><option value="normal">标准</option><option value="fast">快速</option></select></label>
+          <label>自动阅读停留 {preferences.autoDelay} 秒<input type="range" min="2" max="8" step="1" value={preferences.autoDelay} onChange={(event) => changePreference('autoDelay', Number(event.target.value))} /></label>
+          <label>音乐音量 {Math.round(preferences.musicVolume * 100)}%<input type="range" min="0" max="1" step=".05" value={preferences.musicVolume} onChange={(event) => changePreference('musicVolume', Number(event.target.value))} /></label>
+          <label>环境与提示音 {Math.round(preferences.ambienceVolume * 100)}%<input type="range" min="0" max="1" step=".05" value={preferences.ambienceVolume} onChange={(event) => changePreference('ambienceVolume', Number(event.target.value))} /></label>
+          <label className="setting-toggle"><input type="checkbox" checked={preferences.muted} onChange={(event) => changePreference('muted', event.target.checked)} />静音</label>
+          <label className="setting-toggle"><input type="checkbox" checked={preferences.highContrast} onChange={(event) => changePreference('highContrast', event.target.checked)} />高对比文字</label>
+          <label className="setting-toggle"><input type="checkbox" checked={preferences.reducedMotion} onChange={(event) => changePreference('reducedMotion', event.target.checked)} />减少动态效果 / 即时全文</label>
+          <button onClick={() => void fullscreen()}>切换全屏</button><p>自动阅读只推进单一对话；调查和推理等待你的判断。打开面板、返回标题或切换到其他标签页时暂停。</p>
+        </div>}
+        {panel === 'archive' && <><p>已归档 {menuSession.completed.length}/6 段线路。每完成一章，旧城档案便补上一处缺失。</p><svg className="city-map" viewBox="0 0 100 100" role="img" aria-label={`城市线路图，已归档 ${menuSession.completed.length} 段`}>
+          <path className="city-map-grid" d="M0 25H100M0 50H100M0 75H100M25 0V100M50 0V100M75 0V100" />
+          <polyline points={mapPoints.join(' ')} fill="none" className="city-map-route" />
+          {CHAPTER_ORDER.map((id) => { const clue = getChapter(id)!.clue; const done = menuSession.completed.includes(id); return <g key={id} className={done ? 'map-complete' : 'map-locked'}><circle cx={clue.x} cy={clue.y} r="2" /><text x={clue.x + 3} y={clue.y + 1}>{done ? clue.code : '· · ·'}</text></g>; })}
+        </svg><div className="archive-list">{CHAPTER_ORDER.map((id) => {
+          const item = getChapter(id)!; const done = menuSession.completed.includes(id);
+          return <article key={id}><span>{done ? item.clue.code : '—'}</span><div><h3>{done ? item.clue.title : `${item.title} · 待归档`}</h3><p>{done ? item.clue.detail : '完成本章后补入线路记录。'}</p>{done && <details><summary>查阅本章现场记录</summary>{(menuSession.archive[id] ?? []).map((evidence) => <p key={evidence}><strong>{item.evidence[evidence].title}</strong><br />{item.evidence[evidence].detail}</p>)}</details>}</div></article>;
+        })}</div></>}
+        {panel === 'help' && <div className="help-content"><h3>抢修手册</h3><p>点击调查标记搜集现场记录，用证据判断回路。选择错误会进入复核结局，可重新排查本章。</p><p>空格或 Enter 显示全文；全文显示后，可推进单一对话。Tab 在按钮间移动，Enter 确认，Esc 关闭面板。</p><p>六章按顺序解锁。完成后可从标题的章节选择重玩；三槽存档和 JSON 导出可保存不同进度。</p><h3>制作记录</h3><p>原创城市民俗悬疑故事、六幅场景与六名人物绘图；音乐、雨声、电流声和记录提示均由程序实时合成。</p><p>本作人物、单位与事件均为虚构。线路判断服务于剧情，现场电气作业须由具备资质的人员依照规程实施。</p><p>回路 / CIRCUIT · v{version}<br />第一部：十三户、头七、回送、长明、零线、闭合。</p></div>}
+      </Notebook>}
     </main>
   );
 }

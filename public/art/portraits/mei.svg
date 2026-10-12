@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="640" viewBox="0 0 420 640" role="img" aria-labelledby="title"><title id="title">杨婶 · 60岁女性角色立绘</title><desc>为《回路》原创绘制的成年角色墨线半身像。</desc><defs><linearGradient id="coat" x2=".8" y2="1"><stop stop-color="#505647"/><stop offset="1" stop-color="#13251f"/></linearGradient><linearGradient id="skin" x2=".85" y2=".3"><stop stop-color="#b4a68e"/><stop offset=".65" stop-color="#b4a68e"/><stop offset="1" stop-color="#7c7b66"/></linearGradient><linearGradient id="neck" x2="0" y2="1"><stop stop-color="#7c7b66"/><stop offset="1" stop-color="#b4a68e"/></linearGradient><radialGradient id="edge"><stop stop-color="#b7b991" stop-opacity=".12"/><stop offset="1" stop-color="#b7b991" stop-opacity="0"/></radialGradient></defs>
+    <ellipse cx="211" cy="334" rx="207" ry="302" fill="url(#edge)"/>
+    <path d="M22 640l15-188q4-32 39-51l81-28h102l81 30q40 14 44 51l19 186Z" fill="url(#coat)" stroke="#0b211c" stroke-width="4"/>
+    <path d="M166 315l-9 58 49 56 58-58-13-64Z" fill="url(#neck)" stroke="#534d3e" stroke-width="2"/>
+    <path d="M162 341q45 38 92-5l-4-20h-86Z" fill="#7c7b66" opacity=".47"/>
+    <path d="M177 373l32 57 31-56 8 91-72 1Z" fill="#929486" stroke="#586658" stroke-width="2"/>
+    <path d="M162 369l-37 20 26 78 56-41Z" fill="#505647" stroke="#677669" stroke-width="2"/>
+    <path d="M260 369l39 23-29 77-61-43Z" fill="#505647" stroke="#647364" stroke-width="2"/>
+    <path d="M209 430v210" stroke="#a6ac91" stroke-opacity=".45" stroke-width="3"/>
+    <path d="M73 453l-11 159m278-158 12 168M91 500l61 5m117 0 61-7" stroke="#7c8c75" stroke-opacity=".37" stroke-width="3" fill="none"/>
+    <path d="M65 506l18-8m-19 58 15-5M343 548l12 11m-14 22 15 8" stroke="#111e17" stroke-width="4" stroke-linecap="round"/>
+    <path d="M94 520l67 1v72H97Z" fill="#505647" stroke="#667765" stroke-width="2"/>
+    <path d="M93 520h70v15H94Z" fill="#364f3e" stroke="#6d7c67" stroke-width="2"/>
+    <path d="M264 520l63-4v73l-61 5Z" fill="#505647" stroke="#60745f" stroke-width="2"/>
+    <path d="M263 520l66-4v15l-66 4Z" fill="#344c3b" stroke="#6b7e65" stroke-width="2"/>
+    <circle cx="211" cy="497" r="3" fill="#8e987f"/><circle cx="211" cy="559" r="3" fill="#8e987f"/><circle cx="211" cy="620" r="3" fill="#8e987f"/>
+    <path d="M127 214q-19-18-20 12t21 29M288 211q17-19 20 10t-18 32" fill="#b4a68e" stroke="#625745" stroke-width="3"/>
+    <path d="M117 221l8 17m175-18-7 17" stroke="#7c7b66" stroke-width="3" fill="none"/>
+    <path d="M135 160q14-42 76-43 68 2 76 58l-6 105-26 43-43 18-44-18-30-43Z" fill="url(#skin)" stroke="#504d3d" stroke-width="3"/>
+    <path d="M212 209l-10 55 12 10 18-7" fill="none" stroke="#7c7b66" stroke-width="3" stroke-linecap="round"/>
+    <path d="M184 294q28 12 57-2" fill="none" stroke="#6c5148" stroke-width="3" stroke-linecap="round"/>
+    <path d="M194 303q17 5 35-2" fill="none" stroke="#7c7b66" stroke-width="2"/>
+    <path d="M148 207q20-9 41-1M239 204q21-7 42 1" fill="none" stroke="#6f7568" stroke-width="6" stroke-linecap="round"/>
+    <path d="M148 225q20-12 42 0M240 223q22-12 42 0" fill="#9c9781" stroke="#4f5545" stroke-width="3"/>
+    <ellipse cx="171" cy="224" rx="5" ry="6" fill="#243329"/><ellipse cx="260" cy="222" rx="5" ry="6" fill="#243329"/>
+    <path d="M150 240q20 6 37 0m55-2q19 6 35-1" fill="none" stroke="#7c7b66" stroke-width="2"/>
+    <path d="M148 250l-7 22m137-23 7 20M179 270l-8 18m72-18 10 17" fill="none" stroke="#7c7b66" stroke-width="2" opacity=".7"/>
+    <path d="M121 226q-17-61 6-99 20-51 87-52 76 1 88 61l-4 91-22-42-27-20-37-27-25 26-41 23-11 43Z" fill="#6f7568" stroke="#182920" stroke-width="3"/>
+    <path d="M129 150q14-46 47-47m15-11q35-9 69 15m16 15 14 30M158 172l28-25m31-15 41 37" stroke="#a4a99a" stroke-width="4" fill="none"/><path d="M153 192q29-6 40-1m35-3 34 2M161 250l19 1m66-3 15 3M153 278l16 8m77-11 19 8M177 325l11 7m46-8-12 10" fill="none" stroke="#85816b" stroke-width="2"/><path d="M155 374l-32 31 38 67 48-40 50 37 30-66-34-31-44 35Z" fill="#747868" stroke="#929482" stroke-width="3"/><path d="M153 415l90 6m-85 12 84 4m-53 7 7 44" stroke="#515f4c" stroke-width="3"/><path d="M56 592q33-8 70 4m189-12 37 6" fill="none" stroke="#718164" stroke-width="3"/>
+    </svg>

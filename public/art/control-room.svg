@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title"><title id="title">梧城旧城区 · 城市回路控制室</title><desc>为《回路》原创绘制的城市夜间环境。</desc><defs>
+    <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#253b3b"/><stop offset="1" stop-color="#0b1418"/></linearGradient>
+    <linearGradient id="wall" x2="0.7" y2="1"><stop stop-color="#526158"/><stop offset=".6" stop-color="#303e37"/><stop offset="1" stop-color="#1b2824"/></linearGradient>
+    <linearGradient id="darkwall" x2=".2" y2="1"><stop stop-color="#2e3c37"/><stop offset="1" stop-color="#131f1e"/></linearGradient>
+    <linearGradient id="floor" x2="0" y2="1"><stop stop-color="#3e514c"/><stop offset="1" stop-color="#101d1d"/></linearGradient>
+    <linearGradient id="paper" x2=".2" y2="1"><stop stop-color="#c5c2a7"/><stop offset="1" stop-color="#888d75"/></linearGradient>
+    <radialGradient id="glow"><stop stop-color="#d5c88d" stop-opacity=".44"/><stop offset=".35" stop-color="#b8b881" stop-opacity=".15"/><stop offset="1" stop-color="#bdc18f" stop-opacity="0"/></radialGradient>
+    <radialGradient id="vignette"><stop offset=".3" stop-color="#021017" stop-opacity="0"/><stop offset="1" stop-color="#020a0f" stop-opacity=".72"/></radialGradient>
+    <pattern id="plaster" width="127" height="87" patternUnits="userSpaceOnUse"><path d="M5 26h38M87 61h24M24 76l18-2M76 13h12" stroke="#d4d5bb" stroke-opacity=".075"/><path d="M42 3l-3 21 8 4-2 13M119 39l-11 8 3 13" fill="none" stroke="#091b16" stroke-opacity=".18"/></pattern>
+    <pattern id="brick" width="94" height="42" patternUnits="userSpaceOnUse"><path d="M0 0h94M0 21h94M0 42h94M47 0v21M0 21v21M94 21v21" stroke="#111f1b" stroke-opacity=".45" stroke-width="2"/><path d="M1 2h90M4 23h38M50 23h41" stroke="#82917c" stroke-opacity=".08"/></pattern>
+    <pattern id="rain" width="97" height="140" patternUnits="userSpaceOnUse"><path d="M18 0l-12 45M76 37l-9 34M47 95l-13 45" stroke="#a5b8ae" stroke-width="1" stroke-opacity=".12"/></pattern>
+    <pattern id="glass" width="56" height="111" patternUnits="userSpaceOnUse"><path d="M11 0l-7 77M42 23l-7 88" stroke="#adb6a0" stroke-opacity=".14"/><circle cx="11" cy="77" r="2" fill="#b9c2b1" opacity=".12"/></pattern>
+    </defs><rect width="1600" height="900" fill="#0d1a19"/>
+<path d="M0 0h1600v661L0 601Z" fill="url(#wall)"/>
+<path d="M0 0h1600v661L0 601Z" fill="url(#plaster)"/>
+<path d="M0 60h1600M0 85h1600" stroke="#192e24" stroke-width="4"/>
+<path d="M0 94h1600" stroke="#8c9278" stroke-opacity=".16" stroke-width="2"/>
+<ellipse cx="711" cy="326" rx="794" ry="590" fill="url(#glow)"/>
+<path d="M184 112h1030v462H184Z" fill="#142a22" stroke="#17241e" stroke-width="14"/>
+<path d="M208 135h982v415H208Z" fill="#334f3e" stroke="#60715a" stroke-width="3"/>
+<path d="M208 135h982v415H208Z" fill="url(#plaster)"/>
+<g stroke="#7b8f6b" stroke-opacity=".14"><path d="M233 135v415"/><path d="M265 135v415"/><path d="M297 135v415"/><path d="M329 135v415"/><path d="M361 135v415"/><path d="M393 135v415"/><path d="M425 135v415"/><path d="M457 135v415"/><path d="M489 135v415"/><path d="M521 135v415"/><path d="M553 135v415"/><path d="M585 135v415"/><path d="M617 135v415"/><path d="M649 135v415"/><path d="M681 135v415"/><path d="M713 135v415"/><path d="M745 135v415"/><path d="M777 135v415"/><path d="M809 135v415"/><path d="M841 135v415"/><path d="M873 135v415"/><path d="M905 135v415"/><path d="M937 135v415"/><path d="M969 135v415"/><path d="M1001 135v415"/><path d="M1033 135v415"/><path d="M1065 135v415"/><path d="M1097 135v415"/><path d="M1129 135v415"/><path d="M1161 135v415"/><path d="M208 155h982"/><path d="M208 185h982"/><path d="M208 215h982"/><path d="M208 245h982"/><path d="M208 275h982"/><path d="M208 305h982"/><path d="M208 335h982"/><path d="M208 365h982"/><path d="M208 395h982"/><path d="M208 425h982"/><path d="M208 455h982"/><path d="M208 485h982"/><path d="M208 515h982"/><path d="M208 545h982"/></g><text x="248" y="178" fill="#adb592" font-size="24" letter-spacing="8">梧城旧城区 · 城市回路图</text>
+<g fill="none" stroke="#91a080" stroke-width="4"><path d="M272 269h246l70 110h231l81-108h194"/><path d="M311 212v244h208l49 43h280l75-73h221"/><path d="M465 212v57M588 379v120M819 379v-91h-86l-48-70M923 426V271M1041 426V216M732 499v-74"/></g>
+<path d="M518 269l70 110h231l81-108h143" stroke="#bcad7e" stroke-width="5" fill="none"/>
+<path d="M732 425l-47-50 48-87" stroke="#a56b5a" stroke-width="3" stroke-dasharray="7 5" fill="none"/>
+<g fill="#263e2d" stroke="#b4ba96" stroke-width="3"><circle cx="311" cy="269" r="9"/><circle cx="465" cy="269" r="9"/><circle cx="588" cy="379" r="10"/><circle cx="819" cy="379" r="10"/><circle cx="923" cy="426" r="9"/><circle cx="1041" cy="271" r="10"/></g>
+<text x="334" y="257" fill="#afb497" font-size="16">槐荫巷</text><text x="608" y="404" fill="#c8bd92" font-size="16">南桥配电房</text><text x="811" y="262" fill="#a2b08b" font-size="16">拆迁北区</text><text x="939" y="455" fill="#9fad85" font-size="16">旧宅支路</text>
+<path d="M685 375l12-21 12 21Z" fill="#b8946e"/><text x="711" y="372" fill="#b89574" font-size="12">线路未闭合</text>
+<path d="M245 519h134m-134 10h92M983 492h158m-158 12h113" stroke="#8b9b78" stroke-width="2" opacity=".6"/>
+<rect x="1258" y="129" width="239" height="459" fill="#1e342a" stroke="#10221b" stroke-width="10"/>
+<path d="M1275 145h204v135h-204Z" fill="#4d6250" stroke="#7b866e" stroke-width="2"/>
+<path d="M1319 254a60 60 0 1 1 111 0Z" fill="#c0bd96" stroke="#233e2c" stroke-width="3"/>
+<path d="M1334 241q40-67 81 0" fill="none" stroke="#6d7760" stroke-width="2"/>
+<path d="M1374 242l-17-41" stroke="#7d594b" stroke-width="3"/><circle cx="1374" cy="242" r="6" fill="#4b5a43"/>
+<text x="1353" y="264" fill="#526047" font-size="14">电流</text>
+<path d="M1277 302h199v124h-199Z" fill="#263f30" stroke="#546f4e" stroke-width="2"/>
+<path d="M1296 322h103m-103 18h127m-127 18h89" stroke="#8a9d76" stroke-width="4" opacity=".6"/>
+<circle cx="1318" cy="397" r="8" fill="#8ba271"/><circle cx="1367" cy="397" r="8" fill="#818b69"/><circle cx="1416" cy="397" r="8" fill="#835448"/>
+<path d="M1277 446h199v122h-199Z" fill="#283d2e" stroke="#66775b" stroke-width="2"/>
+<g stroke="#131f16" stroke-width="4"><path d="M1294 465h163"/><path d="M1294 478h163"/><path d="M1294 491h163"/><path d="M1294 504h163"/><path d="M1294 517h163"/><path d="M1294 530h163"/><path d="M1294 543h163"/><path d="M1294 556h163"/></g><path d="M0 598l1600 63v239H0Z" fill="url(#floor)"/>
+<path d="M0 682l548-53 865 131 187 137H0Z" fill="#495640" stroke="#13281d" stroke-width="8"/>
+<path d="M0 700l550-53 859 131" stroke="#9ca181" stroke-opacity=".2" stroke-width="3"/>
+<path d="M138 510l332-10 8 210-351 5Z" fill="#13271e" stroke="#668062" stroke-width="8"/>
+<path d="M155 528l294-8 9 166-308 8Z" fill="#2d4634"/>
+<path d="M179 555l184-4m-183 22 143-3m-143 18 229-4m-229 24 76-1m-76 21 202-3" stroke="#99ad84" stroke-width="3"/>
+<text x="181" y="669" fill="#91aa78" font-size="15">系统记录：13号支路 / 离线</text>
+<path d="M120 715l369-6 141 97-416 16Z" fill="#21362a" stroke="#12281c" stroke-width="4"/>
+<path d="M177 734l272-4 68 44-298 13Z" fill="#344b35"/>
+<g stroke="#637751" stroke-width="2"><path d="M203 735l40 43"/><path d="M230 735l40 43"/><path d="M257 735l40 43"/><path d="M284 735l40 43"/><path d="M311 735l40 43"/><path d="M338 735l40 43"/><path d="M365 735l40 43"/><path d="M392 735l40 43"/><path d="M419 735l40 43"/><path d="M188 744l275-2m-265 13 282-2m-270 12 290-3"/></g>
+<path d="M777 680l256 35-56 146-287-39Z" fill="url(#paper)" stroke="#293b29" stroke-width="3"/>
+<path d="M783 703l75 5 22 35 68 8m-151 15 114 17 17 29m-87-81-20 67" fill="none" stroke="#677251" stroke-width="3"/>
+<text x="815" y="735" fill="#606b4c" font-size="16" transform="rotate(8 815 735)">七年前 · 支路台账</text>
+<path d="M1030 741l152-16 26 92-160 14Z" fill="#202e25" stroke="#6b765c" stroke-width="3"/>
+<path d="M1064 748l103-11 10 33-106 12Z" fill="#314936"/><path d="M1078 759l75-8" stroke="#97a57a" stroke-width="4"/>
+<path d="M1046 795l111-15m-107 27 117-15" stroke="#718063" stroke-width="3"/>
+<path d="M1184 799q49 46 127-1t96 79" fill="none" stroke="#0f271b" stroke-width="6"/>
+<path d="M536 742l38-8 41 47-40 18Z" fill="#8f9b7a" stroke="#40543a" stroke-width="3"/>
+<path d="M550 744l18-6 9 27-18 6Z" fill="#374e36"/>
+<path d="M45 97v460M80 97v447" stroke="#243a2b" stroke-width="8"/>
+<path d="M31 543h61v70H31Z" fill="#43563c" stroke="#152c1b" stroke-width="4"/>
+<text x="43" y="574" fill="#b1b493" font-size="11">备用</text>
+<path d="M111 89h182v17H111m974-17h155v17h-155" fill="#8f9c78" opacity=".42"/><rect width="1600" height="900" fill="url(#vignette)" pointer-events="none"/></svg>

@@ -17,7 +17,7 @@ export class RecordedAudio {
   private preferences?: Preferences;
   private running = false;
   private visible = true;
-  private historyPanel = false;
+  private replayPanel = false;
   private manual = false;
   private disposed = false;
   private listeners = new Set<(state: VoiceState) => void>();
@@ -37,7 +37,7 @@ export class RecordedAudio {
   }
 
   private allowed() {
-    return !this.disposed && this.visible && (this.running || (this.manual && this.historyPanel))
+    return !this.disposed && this.visible && (this.running || (this.manual && this.replayPanel))
       && !!this.preferences?.voiceEnabled && !this.preferences.muted;
   }
 
@@ -52,11 +52,11 @@ export class RecordedAudio {
     this.voice = null;
   }
 
-  configure(preferences: Preferences, running: boolean, visible = true, historyPanel = false) {
+  configure(preferences: Preferences, running: boolean, visible = true, replayPanel = false) {
     this.preferences = preferences;
     this.running = running;
     this.visible = visible;
-    this.historyPanel = historyPanel;
+    this.replayPanel = replayPanel;
     if (this.voice) this.voice.volume = preferences.voiceVolume;
     if (this.effect) {
       this.effect.volume = preferences.sfxVolume;

@@ -1,6 +1,6 @@
 import type { CharacterExpression, CharacterId, CharacterPresence } from '../game/characters';
 
-export type ChapterId = 'thirteen-households' | 'seventh-night' | 'backfeed' | 'everlight' | 'neutral' | 'closure' | 'return-visit';
+export type ChapterId = 'thirteen-households' | 'seventh-night' | 'backfeed' | 'everlight' | 'neutral' | 'closure' | 'return-visit' | 'answering';
 
 /** Node and evidence identifiers belong to their chapter, not to the whole campaign. */
 export type StoryNodeId = string;
@@ -15,6 +15,8 @@ export type GameState = {
 export type Evidence = {
   title: string;
   detail: string;
+  /** Available only after this evidence has been collected. */
+  recordings?: readonly { clipId: string; label: string }[];
 };
 
 export type StoryAction = {

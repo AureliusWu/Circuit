@@ -12,7 +12,7 @@ import { MAX_HISTORY_ENTRIES, type SaveStorage } from './game/saves';
 import { loadPreferences, savePreferences, type Preferences } from './game/preferences';
 import { CircuitAudio } from './game/audio';
 import { RecordedAudio, voiceBlocksAuto, type VoiceState } from './game/recordedAudio';
-import { SCENE_EFFECTS, voicesFor } from './game/mediaCatalog';
+import { getVoiceClip, SCENE_EFFECTS, voicesFor } from './game/mediaCatalog';
 import { useReading } from './game/reading';
 import { version } from '../package.json';
 
@@ -23,7 +23,7 @@ const PANEL_TITLES: Record<Panel, string> = {
 };
 const BACKGROUNDS: Record<ChapterId, string> = {
   'thirteen-households': 'alley', 'seventh-night': 'stairwell', backfeed: 'demolition',
-  everlight: 'stairwell', neutral: 'substation', closure: 'control-room', 'return-visit': 'resettlement-lobby'
+  everlight: 'stairwell', neutral: 'substation', closure: 'control-room', 'return-visit': 'resettlement-lobby', answering: 'communications-room'
 };
 const SLOTS: CampaignSlot[] = ['auto', 1, 2, 3];
 const asset = (path: string) => `${import.meta.env.BASE_URL}${path.replace(/^\//, '')}`;
@@ -71,7 +71,7 @@ function App() {
   const actions = useMemo(() => getAvailableActions(state), [state]);
   const reading = useReading(node.text, `${state.chapterId}/${state.nodeId}/${history.length}`, preferences, !started || !!panel || !pageVisible);
   const menuSession = !started && stored.auto.status === 'valid' ? toSession(stored.auto.snapshot) : session;
-  const mapPoints = menuSession.completed.filter((id) => id !== 'return-visit').map((id) => {
+  const mapPoints = menuSession.completed.filter((id) => getChapter(id)!.order < 6).map((id) => {
     const clue = getChapter(id)!.clue;
     return `${clue.x},${clue.y}`;
   });
@@ -93,7 +93,7 @@ function App() {
   }, []);
   useEffect(() => {
     void audio.current?.configure(preferences, started && pageVisible && !panel, voiceState.status === 'playing');
-    recorded.current?.configure(preferences, started && !panel, started && pageVisible, panel === 'history');
+    recorded.current?.configure(preferences, started && !panel, started && pageVisible, panel === 'history' || panel === 'evidence');
   }, [preferences, started, pageVisible, panel, voiceState.status]);
   useEffect(() => {
     if (!started) { recorded.current?.stop(); return; }
@@ -111,7 +111,7 @@ function App() {
       recorded.current = new RecordedAudio(import.meta.env.BASE_URL);
       recorded.current.subscribe(setVoiceState);
     }
-    recorded.current.configure(preferences, true, pageVisible, panel === 'history');
+    recorded.current.configure(preferences, true, pageVisible, panel === 'history' || panel === 'evidence');
     if (!audio.current) {
       try { audio.current = new CircuitAudio(); } catch { return; }
     }
@@ -245,7 +245,7 @@ function App() {
                 <p className="tagline">有些线路，断开以后仍然有电。</p>
                 <p className="title-synopsis">你是梧城电网城区抢修员程砚，与徒弟季宁一起值夜班。旧工单连着一场少了半页的救援。六章归档之后，回迁楼的门禁叫出你的名字——你昨晚没去，它却说已经到场。</p>
                 <p className="title-crew">程砚 / 季宁 · 城区抢修班</p>
-                <p className="version">v{version} · 第一部六章 / 第二部《回访》</p>
+                <p className="version">v{version} · 第一部六章 / 第二部《回访》《应声》</p>
               </section>
               <nav className="title-menu" aria-label="主菜单">
                 {stored.auto.status === 'valid' && <button className="primary" onClick={() => resume('auto')}>继续抢修</button>}
@@ -321,9 +321,17 @@ function App() {
       </div>
       <p className={`${started ? 'save-notice' : 'title-notice'}${panel ? ' panel-notice' : ''}`} role="status" aria-live="polite">{notice}</p>
       {panel && <Notebook kind={panel} title={PANEL_TITLES[panel]} returnFocusTo={panelOpener.current} onClose={closePanel}>
+        {(panel === 'evidence' || panel === 'history') && voiceState.clip && voiceState.status !== 'idle' && <div className="recording-controls" aria-label="录音重听控制">
+          <p role="status" aria-live="polite">{voiceState.status === 'failed' ? '录音暂时无法播放，可继续查阅。' : voiceState.status === 'loading' ? '正在加载录音…' : voiceState.status === 'paused' ? '录音已暂停' : '正在播放录音'} · {voiceState.clip.text}</p>
+          {voiceBlocksAuto(voiceState) && <button onClick={() => voiceState.status === 'paused' ? recorded.current?.resume() : recorded.current?.pause()}>{voiceState.status === 'paused' ? '继续录音' : '暂停录音'}</button>}
+          <button onClick={() => recorded.current?.stop()}>停止重听</button>
+        </div>}
         {panel === 'characters' && <CharacterGallery />}
         {panel === 'evidence' && <>
-          {!state.evidence.length ? <p className="empty">尚未记录异常。先按标准故障流程排查。</p> : state.evidence.map((id, index) => <article key={id}><span>{String(index + 1).padStart(2, '0')}</span><div><h3>{chapter.evidence[id].title}</h3><p>{chapter.evidence[id].detail}</p></div></article>)}
+          {!state.evidence.length ? <p className="empty">尚未记录异常。先按标准故障流程排查。</p> : state.evidence.map((id, index) => <article key={id}><span>{String(index + 1).padStart(2, '0')}</span><div><h3>{chapter.evidence[id].title}</h3><p>{chapter.evidence[id].detail}</p>{chapter.evidence[id].recordings?.map(sample => {
+            const clip = getVoiceClip(sample.clipId);
+            return clip && <button key={sample.clipId} disabled={!preferences.voiceEnabled || preferences.muted} onClick={() => { enableAudio(); recorded.current?.replay([clip], true); }}>重听：{sample.label}</button>;
+          })}</div></article>)}
           <footer>原则：先排除电气故障，再解释剩下的东西。</footer>
         </>}
         {panel === 'history' && <><p className="history-intro">按实际经过保留本章最近 {history.length} 条叙事。</p><ol className="history-list">{history.map((id, index) => {
@@ -357,16 +365,17 @@ function App() {
           <label className="setting-toggle"><input type="checkbox" checked={preferences.reducedMotion} onChange={(event) => changePreference('reducedMotion', event.target.checked)} />减少动态效果 / 即时全文</label>
           <button onClick={() => void fullscreen()}>切换全屏</button><p>自动阅读等本条语音播完，再停留所设秒数。调查和推理等待你的判断。打开面板或切换标签页时暂停；返回标题会停止录音。历史里可重听已经经过的语音。</p>
         </div>}
-        {panel === 'archive' && <><p>已归档 {menuSession.completed.length}/{CHAPTER_ORDER.length} 章。第一部连线表示人员与资料核对路径；V01记录新苑回访，另列支线。</p><svg className="city-map" viewBox="0 0 100 100" role="img" aria-label={`城市线路图，已归档 ${menuSession.completed.length} 段`}>
+        {panel === 'archive' && <><p>已归档 {menuSession.completed.length}/{CHAPTER_ORDER.length} 章。第一部连线表示人员与资料核对路径；V01、V02分别记录新苑回访与旧回拨名单，另列支线。</p><svg className="city-map" viewBox="0 0 100 100" role="img" aria-label={`城市线路图，已归档 ${menuSession.completed.length} 段`}>
           <path className="city-map-grid" d="M0 25H100M0 50H100M0 75H100M25 0V100M50 0V100M75 0V100" />
           <polyline points={mapPoints.join(' ')} fill="none" className="city-map-route" />
           {menuSession.completed.includes('return-visit') && <polyline points={`${getChapter('closure')!.clue.x},${getChapter('closure')!.clue.y} ${getChapter('return-visit')!.clue.x},${getChapter('return-visit')!.clue.y}`} fill="none" className="city-map-route map-followup" />}
+          {menuSession.completed.includes('answering') && <polyline points={`${getChapter('return-visit')!.clue.x},${getChapter('return-visit')!.clue.y} ${getChapter('answering')!.clue.x},${getChapter('answering')!.clue.y}`} fill="none" className="city-map-route map-followup" />}
           {CHAPTER_ORDER.map((id) => { const clue = getChapter(id)!.clue; const done = menuSession.completed.includes(id); return <g key={id} className={done ? 'map-complete' : 'map-locked'}><circle cx={clue.x} cy={clue.y} r="2" /><text x={clue.x + 3} y={clue.y + 1}>{done ? clue.code : '· · ·'}</text></g>; })}
         </svg><div className="archive-list">{CHAPTER_ORDER.map((id) => {
           const item = getChapter(id)!; const done = menuSession.completed.includes(id);
           return <article key={id}><span>{done ? item.clue.code : '—'}</span><div><h3>{done ? item.clue.title : `${item.title} · 待归档`}</h3><p>{done ? item.clue.detail : '完成本章后补入线路记录。'}</p>{done && <details><summary>查阅本章现场记录</summary>{(menuSession.archive[id] ?? []).map((evidence) => <p key={evidence}><strong>{item.evidence[evidence].title}</strong><br />{item.evidence[evidence].detail}</p>)}</details>}</div></article>;
         })}</div></>}
-        {panel === 'help' && <div className="help-content"><h3>抢修手册</h3><p>点击调查标记搜集现场记录，用证据判断回路。选择错误会进入复核结局，可重新排查本章。</p><p>空格或 Enter 显示全文；全文显示后，可推进单一对话。Tab 在按钮间移动，Enter 确认，Esc 关闭面板。</p><p>七章按顺序解锁。完成第一部即可继续《回访》，旧存档可沿用。三槽存档和 JSON 导出保留不同进度；人物档案可切换立绘与 Q 版。</p><h3>制作记录</h3><p>九幅场景、九名人物的立绘与 Q 版形象，师徒有专注、警觉表情。远程联络使用通讯卡，历史人物使用旧档照片。关键对白采用离线生成的人物录音；门禁、钥匙、继电器等场景音效随包提供。音乐、雨声和电流声实时合成。</p><p>语音系统参考《雨停之前》的离线制作与重听流程，角色与素材为《回路》单独制作。AI 生成美术与人物语音均在项目制作记录中标注。</p><p>本作人物、单位与事件均为虚构。线路判断服务于剧情，现场电气作业须由具备资质的人员依照规程实施。</p><p>回路 / CIRCUIT · v{version}<br />十三户、头七、回送、长明、零线、闭合；第二部开篇：回访。</p></div>}
+        {panel === 'help' && <div className="help-content"><h3>抢修手册</h3><p>点击调查标记搜集现场记录，用证据判断回路。选择错误会进入复核结局，可重新排查本章。</p><p>空格或 Enter 显示全文；全文显示后，可推进单一对话。Tab 在按钮间移动，Enter 确认，Esc 关闭面板。</p><p>八章按顺序解锁。完成第一部可继续《回访》，归档后解锁《应声》，旧存档可沿用。三槽存档和 JSON 导出保留不同进度；人物档案可切换立绘与 Q 版。</p><h3>制作记录</h3><p>十幅场景、九名人物的立绘与 Q 版形象，师徒有专注、警觉表情。远程联络使用通讯卡，历史人物使用旧档照片。关键对白采用离线生成的人物录音；门禁、钥匙、继电器等场景音效随包提供。音乐、雨声和电流声实时合成。</p><p>语音系统参考《雨停之前》的离线制作与重听流程，角色与素材为《回路》单独制作。AI 生成美术与人物语音均在项目制作记录中标注。</p><p>本作人物、单位与事件均为虚构。线路判断服务于剧情，现场电气作业须由具备资质的人员依照规程实施。</p><p>回路 / CIRCUIT · v{version}<br />十三户、头七、回送、长明、零线、闭合；第二部：回访、应声。</p></div>}
       </Notebook>}
     </main>
   );

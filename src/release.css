@@ -13,6 +13,7 @@
 .title-notice { position: fixed; z-index: 28; right: 24px; bottom: 16px; max-width: min(380px, calc(100vw - 32px)); margin: 0; padding: 9px 12px; border: 1px solid #64764d; background: #102011f2; color: #c3c7a3; font-size: 12px; line-height: 1.7; }
 .title-notice:empty { display: none; }
 .panel-notice { position: fixed; z-index: 40; top: auto; bottom: 16px; right: 24px; }
+.game .save-notice.panel-notice { top: auto; height: auto; }
 .release-title .powerline { display: none; }
 .title-layout { position: relative; z-index: 2; display: grid; grid-template-columns: minmax(0, 1fr) minmax(290px, 380px); gap: 8vw; align-items: center; width: min(1120px, 100%); }
 .title-brand { padding: 20px 0; text-align: left; }
@@ -106,6 +107,14 @@
 .city-map .route { stroke: #b7ae79; fill: none; }
 .city-map-grid { fill: none; stroke: #516c45; stroke-width: .25; opacity: .65; }
 .city-map-route { stroke: #c2b57f; stroke-width: .7; stroke-linejoin: round; stroke-linecap: round; }
+.recording-controls { border: 1px solid #697658; background: #1a221be6; padding: 12px; margin-bottom: 14px; }
+.recording-controls p { margin: 0 0 8px; overflow-wrap: anywhere; }
+.recording-controls button { margin: 4px 8px 4px 0; }
+.evidence-notebook article button { margin: 5px 8px 5px 0; }
+.recording-controls button, .evidence-notebook article button { min-height: 36px; padding: 8px 10px; border: 1px solid #697658; background: #15241a; color: #d5ddbd; font-size: 12px; line-height: 1.5; text-align: left; cursor: pointer; }
+.recording-controls button:hover, .evidence-notebook article button:hover { background: #293a26; border-color: #a3b184; }
+.recording-controls button:focus-visible, .evidence-notebook article button:focus-visible { outline: 2px solid #d5c68c; outline-offset: 3px; }
+.evidence-notebook article button:disabled { opacity: .55; cursor: default; }
 .map-complete circle { fill: #dbcb91; stroke: #dae1b3; stroke-width: .3; }
 .map-locked circle { fill: #334d34; stroke: #69815c; stroke-width: .3; }
 .map-locked text { fill: #7c956c; }

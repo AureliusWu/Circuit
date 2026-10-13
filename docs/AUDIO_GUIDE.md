@@ -1,16 +1,16 @@
-# 人物语音与场景音效 · v1.2.0
+# 人物语音与场景音效 · v1.3.0
 
-游戏随包提供32段关键对白、11项场景音效。程砚、季宁、林岚、老周、杨婶、许守成、陈伯、沈棠和罗禾均有录音。正文仍按原节点显示，未配音部分照常阅读。
+游戏随包提供32段关键对白、13项场景音效。程砚、季宁、林岚、老周、杨婶、许守成、陈伯、沈棠和罗禾均有录音。正文仍按原节点显示，未配音部分照常阅读。
 
 ## 阅读时的控制
 
 人物语音与场景音效各有音量；可单独关闭配音，也可全静音。当前节点支持重听、暂停和继续，历史中只显示实际经过节点的录音。自动阅读等当前录音队列结束，再按设置停留；调查、推理与结局仍由玩家操作。
 
-打开面板会暂停当前录音；历史重听可在面板中播放，页面隐藏时也暂停。换节点或返回标题停止旧录音并使迟到回调失效。文件不可用或浏览器拒绝播放时提示重听，正文、判断和存档继续可用。语音播放期间自动压低背景音乐与环境声。
+打开面板会暂停当前录音；历史和已取得的声音证据可在面板中重听、暂停、继续与停止，页面隐藏时也暂停。换节点或返回标题停止旧录音并使迟到回调失效。文件不可用或浏览器拒绝播放时提示重听，正文、判断和存档继续可用。语音播放期间自动压低背景音乐与环境声。
 
 ## 制作来源
 
-本轮参考 [Rain离线语音实现](https://github.com/AureliusWu/Rain/tree/36504476c7cde3fcc0a8052db3c8fa67962d5a39/tools/audio_process)。配方来源MIT署名保留在third_party/Rain-MIT-LICENSE.txt。使用Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice，固定revision `0c0e3051f131929182e2c023b9537f8b1c68adfe`，qwen-tts0.1.1、torch2.9.1+cpu、CPU4线程、bfloat16、eager attention；每段记录speaker、角色、指令和seed。模型按其Apache-2.0许可使用，玩家包不含权重或Python。
+v1.2.0制作参考 [Rain离线语音实现](https://github.com/AureliusWu/Rain/tree/36504476c7cde3fcc0a8052db3c8fa67962d5a39/tools/audio_process)。配方来源MIT署名保留在third_party/Rain-MIT-LICENSE.txt。使用Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice，固定revision `0c0e3051f131929182e2c023b9537f8b1c68adfe`，qwen-tts0.1.1、torch2.9.1+cpu、CPU4线程、bfloat16、eager attention；每段记录speaker、角色、指令和seed。模型按其Apache-2.0许可使用，玩家包不含权重或Python。
 
 | 人物 | 预设 | 演出方向 |
 | --- | --- | --- |
@@ -22,7 +22,7 @@
 | 许守成 | Dylan | 历史录音的短句询问 |
 | 罗禾 | Vivian | 物业夜班，谨慎、偏低的声调 |
 
-9名角色使用4个预设，通过各自指令、文本与seed区分，录音来自本轮离线合成。年龄与人物身份仍由剧情、立绘和档案明确呈现，演技与名称读音待真人试听。
+9名角色使用4个预设，通过各自指令、文本与seed区分，录音来自v1.2.0离线合成。年龄与人物身份仍由剧情、立绘和档案明确呈现，演技与名称读音待真人试听。
 
 ## 可复现的文件链
 
@@ -37,14 +37,14 @@
 
 ## 原创音效
 
-11项为程序原创拟音：敲门、钥匙两轻一重、铁门、继电器断开、开关、门禁开麦、电台开麦、翻纸、落笔、来电和杯子落桌。固定seed与配方在tools/audio/generate_sfx.py，源WAV与游戏MP3分别保存；sfx-manifest.json记录出处和哈希，sfx-bindings.json对应实际剧情节点。音乐、雨声、电流声及原记录提示继续实时合成。
+13项为程序原创拟音：敲门、钥匙两轻一重、铁门、继电器断开、开关、门禁开麦、电台开麦、翻纸、落笔、来电、杯子落桌、三声旧电话铃与锁芯转动。固定seed与配方在tools/audio/generate_sfx.py，源WAV与游戏MP3分别保存；sfx-manifest.json记录出处和哈希，sfx-bindings.json对应实际剧情节点。音乐、雨声、电流声及原记录提示继续实时合成。
 
 ## 作者运行
 
 ```bash
 # 作者环境；模型目录先下载固定revision，玩家无需执行。
 python tools/audio/generate_voice.py --model-dir /absolute/path/to/qwen-custom
-python tools/audio/generate_sfx.py
+python tools/audio/generate_sfx.py --only telephone-ring,latch-turn --version 1.3.0
 python tools/audio/validate_media.py
 python tools/audio/check_asr.py --model-dir /absolute/path/to/faster-whisper-large-v3
 npm test
@@ -52,6 +52,14 @@ npm test
 
 依赖版本见tools/audio/requirements.txt；torch/torchaudio CPU构建从官方CPU索引安装。FFmpeg必需；ASR使用独立large-v3、CPU int8，不提供正文提示或hotwords。中阿拉伯数字先统一写法，原转写、字符误差和否定词计数逐条保留；标记review的片段需要进一步复听，自动结果不能判定演技或代替真人批准。
 
-118份当前源/成品音频与24份校准前存档完整解码；PWA断网后逐个解码43份MP3。浏览器回归检查真实play/ended、暂停、重听、切页、音量、缺文件和自动阅读等待。实际记录见docs/audio各验证JSON；普通扬声器、手机设备与真人读音评审分别保留待校准。
+122份当前源/成品音频与24份校准前存档完整解码；PWA断网后逐个解码45份MP3。浏览器回归检查真实play/ended、暂停、重听、切页、音量、缺文件和自动阅读等待。实际记录见docs/audio各验证JSON；普通扬声器、手机设备与真人读音评审分别保留待校准。
 
 本轮独立转写：32段中28段通过，4段标记review，分别为门禁程砚报到、罗禾说明红纸、季宁答到嘱咐及门禁季宁收到。转写存在姓名与同音字差异，原字句与音频均保留；不将自动转写标记视作演员表演已获批准。
+
+## v1.3.0 重复片段与证据查阅
+
+本轮新增两项程序音效，源WAV在assets_source/audio/v1.3.0；旧32段配音及其请求、模型清单、处理源和MP3保持原字节。`VOICE_REPLAYS`把五个既有片段接到《应声》：柜边程砚声音、罗禾旧问题、电话第一声与第二声、离场前季宁播放的答到嘱咐。新章节里的重放引用原成品，未宣称生成新演员录音。
+
+《回访》两条、《应声》两条声音证据有重听按钮，《应声》的回拨导入证据包含两个样本。只有完成对应调查并确认收集才显示；原录音先在正文出现，听觉受限时可用已给出的字幕与时标解题。声音判断不要求音高辨识或耳机定位。暂停与停止控制同时出现在证据与历史面板，静音和关闭配音时按钮禁用。
+
+本轮未重做ASR；原32段的读音校准结果仍见原报告。两项新程序拟音验证完整解码和哈希，重听的实际MP3通过浏览器及PWA断网检查。

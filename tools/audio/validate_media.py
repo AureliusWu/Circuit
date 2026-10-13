@@ -20,7 +20,7 @@ def main():
     archive = json.loads((ROOT / 'docs/audio/voice-first-pass.json').read_text())
     provider_sha = digest(json.dumps(provider, sort_keys=True).encode())
     assert provider_sha == voices['providerSha256']
-    assert len(plan['lines']) == len(voices['clips']) == 32 and len(effects['clips']) == 11
+    assert len(plan['lines']) == len(voices['clips']) == 32 and len(effects['clips']) == 13
     requests = {row['id']: row for row in plan['lines']}
     decoded = []
     for row, current in [(row, True) for row in voices['clips'] + effects['clips']] + [(row, False) for row in archive['clips']]:
@@ -46,7 +46,7 @@ def main():
                 assert abs(duration - row['duration']) < .2, (row['id'], duration)
                 if current:
                     decoded.append({'id': row['id'], 'path': file['path'], 'duration': duration, 'sha256': file['sha256']})
-    report = {'schemaVersion': 1, 'version': '1.2.0', 'status': 'passed', 'voiceCount': len(voices['clips']), 'sfxCount': len(effects['clips']),
+    report = {'schemaVersion': 1, 'version': json.loads((ROOT / 'package.json').read_text())['version'], 'status': 'passed', 'voiceCount': len(voices['clips']), 'sfxCount': len(effects['clips']),
               'decodedFiles': sum(len(r['files']) for r in voices['clips'] + effects['clips'] + archive['clips']),
               'currentFiles': sum(len(r['files']) for r in voices['clips'] + effects['clips']), 'archivedFiles': sum(len(r['files']) for r in archive['clips']),
               'voiceSeconds': round(sum(r['duration'] for r in voices['clips']), 3),

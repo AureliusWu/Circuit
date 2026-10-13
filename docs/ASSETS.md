@@ -80,3 +80,9 @@ PWA首次联网完成缓存后，26幅插画和应用图标全部可离线解码
 原始PNG存入assets_source/art/v1.2.0；完整提示词、身份参考、原图与成品SHA-256、尺寸、透明比例和转换配方见[本轮清单](art/return-visit-manifest.json)。背景1600×900、立绘640×960、Q版640×640。当前32幅游戏WebP约4.26 MiB；此前26幅素材保留。
 
 人物语音与原创音效另见[AUDIO_GUIDE](AUDIO_GUIDE.md)，共43个MP3随PWA缓存。
+
+## v1.3.0《应声》新增
+
+新增public/art/communications-room.webp：旧通信间固定门口机位，旧电话、通信柜与搬迁档案盒。内置图像生成以物业夜班室仅作画风参考；原PNG保存在assets_source/art/v1.3.0，1600×900成品及原图校验见[制作清单](art/answering-manifest.json)。目前共33幅WebP、4,666,944字节，约4.45 MiB；新场景201,400字节。
+
+新增三声电话铃与锁芯转动两项程序原创音效，源WAV保存在assets_source/audio/v1.3.0。32段人物配音原文件沿用，5处新节点明确播放同一旧文件；原录音请求与成品哈希不变。当前45个MP3全部进入离线缓存，人物语音和音效详情见[AUDIO_GUIDE](AUDIO_GUIDE.md)。

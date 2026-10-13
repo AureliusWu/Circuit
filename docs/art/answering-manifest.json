@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "version": "1.3.0",
+  "tool": "built-in image generation",
+  "assets": [
+    {
+      "id": "communications-room",
+      "source": "assets_source/art/v1.3.0/communications-room.png",
+      "output": "public/art/communications-room.webp",
+      "prompt": "Use case: illustration-story. Asset type: original 16:9 1600x900 background for the Chinese urban folk-horror visual novel Circuit. Generate a new scene, not an edit of the reference. The supplied property-office image is ONLY a style, painterly material, lighting and palette reference. Subject: an empty disused low-voltage communications room in the ground floor of a modern Chinese resettlement apartment complex at 01:30 on a rainy night. Fixed camera at the doorway, eye-level wide shot. An old cream wall telephone with coiled cable and handset resting on hook is clearly visible on the left wall around x=23%, y=37%; a metal patch-panel cabinet with closed cover at the right around x=77%,y=39%; a shallow cardboard document archive box and paper ledger on a worn desk around x=48%,y=52%. Only inert telecom equipment, no exposed electrical hazards. A narrow dark inner doorway in center background, rain-streaked small high window and rusted pipes. The room is empty and believable; unsettling quiet, no visible monster, no silhouette shaped like a person. Semirealistic hand-painted 2D/2.5D illustrated Chinese horror adventure game art, detailed tactile worn surfaces, subtle restrained brush texture, damp charcoal, gray teal, dirty green, muted old-paper warm light. A weak warm work lamp at desk and cold corridor fluorescent spill leave objects readable. Leave lower 27% simple and dark for the dialogue overlay. No readable labels, no puzzle text, no UI, no logos, no watermark, no Japanese shrine imagery, no gore. Landscape wide composition, cohesive with the reference.",
+      "references": [
+        "public/art/property-office.webp"
+      ],
+      "referenceRole": "style, lighting and materials only; a new scene",
+      "width": 1600,
+      "height": 900,
+      "sourceSha256": "4520522bece080de1324db9078e00838e9b9e9971b8566e0b9962b0d5e406e0f",
+      "sourceBytes": 2213313,
+      "sha256": "a5834b0424329ec447f62319f1080fc3235f3772d78f8ef5edf5f99bab75f998",
+      "bytes": 201400,
+      "referenceHashes": {
+        "public/art/property-office.webp": "c061bed5dd6998348350f48ddfa98c4fc532aeff902c34737596ab184d483319"
+      }
+    }
+  ]
+}

@@ -419,7 +419,32 @@ export const SCENE_EFFECTS: Readonly<Record<string, string>> = {
   "return-visit/cabinet": "/audio/sfx/relay-drop.mp3",
   "return-visit/recordReceipt": "/audio/sfx/paper-turn.mp3",
   "return-visit/approved": "/audio/sfx/pen-sign.mp3",
-  "return-visit/end": "/audio/sfx/intercom-click.mp3"
+  "return-visit/end": "/audio/sfx/intercom-click.mp3",
+  "answering/dispatch": "/audio/sfx/phone-alert.mp3",
+  "answering/firstHub": "/audio/sfx/telephone-ring.mp3",
+  "answering/lineCheck": "/audio/sfx/telephone-ring.mp3",
+  "answering/ring": "/audio/sfx/telephone-ring.mp3",
+  "answering/listBack": "/audio/sfx/paper-turn.mp3",
+  "answering/recordBatch": "/audio/sfx/intercom-click.mp3",
+  "answering/handoff": "/audio/sfx/pen-sign.mp3",
+  "answering/doorway": "/audio/sfx/latch-turn.mp3",
+  "answering/end": "/audio/sfx/phone-alert.mp3"
 };
 
-export const voicesFor = (chapter: string, node: string) => VOICE_CLIPS.filter(clip => clip.bindings.some(binding => binding.chapter === chapter && binding.node === node));
+/** Replay the identical mastered file; the original generation request stays immutable. */
+export const VOICE_REPLAYS: readonly { clipId: string; chapter: string; node: string }[] = [
+  { clipId: 'v01-confirm', chapter: 'answering', node: 'sealedVoice' },
+  { clipId: 'v01-question', chapter: 'answering', node: 'luo' },
+  { clipId: 'v01-arrived', chapter: 'answering', node: 'incomingName' },
+  { clipId: 'v01-received', chapter: 'answering', node: 'emptyReply' },
+  { clipId: 'v01-wait', chapter: 'answering', node: 'doorway' }
+];
+
+export const getVoiceClip = (id: string) => VOICE_CLIPS.find(clip => clip.id === id);
+
+export const voicesFor = (chapter: string, node: string) => {
+  const original = VOICE_CLIPS.filter(clip => clip.bindings.some(binding => binding.chapter === chapter && binding.node === node));
+  const replays = VOICE_REPLAYS.filter(binding => binding.chapter === chapter && binding.node === node)
+    .flatMap(binding => { const clip = getVoiceClip(binding.clipId); return clip ? [clip] : []; });
+  return [...original, ...replays];
+};

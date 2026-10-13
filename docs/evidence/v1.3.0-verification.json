@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "version": "1.3.0",
+  "baseline": "cd884f2ac27ed675513cece71b41ab510dcd6a11",
+  "status": "passed",
+  "unitTests": 74,
+  "content": {
+    "chapters": [
+      {
+        "id": "thirteen-households",
+        "title": "十三户",
+        "nodes": 59,
+        "evidence": 5,
+        "characters": 6415,
+        "failures": 2
+      },
+      {
+        "id": "seventh-night",
+        "title": "头七",
+        "nodes": 45,
+        "evidence": 5,
+        "characters": 4969,
+        "failures": 2
+      },
+      {
+        "id": "backfeed",
+        "title": "回送",
+        "nodes": 46,
+        "evidence": 5,
+        "characters": 5067,
+        "failures": 2
+      },
+      {
+        "id": "everlight",
+        "title": "长明",
+        "nodes": 38,
+        "evidence": 5,
+        "characters": 4191,
+        "failures": 2
+      },
+      {
+        "id": "neutral",
+        "title": "零线",
+        "nodes": 36,
+        "evidence": 5,
+        "characters": 4021,
+        "failures": 2
+      },
+      {
+        "id": "closure",
+        "title": "闭合",
+        "nodes": 44,
+        "evidence": 5,
+        "characters": 5002,
+        "failures": 2
+      },
+      {
+        "id": "return-visit",
+        "title": "回访",
+        "nodes": 39,
+        "evidence": 5,
+        "characters": 4122,
+        "failures": 2
+      },
+      {
+        "id": "answering",
+        "title": "应声",
+        "nodes": 40,
+        "evidence": 5,
+        "characters": 4547,
+        "failures": 2
+      }
+    ],
+    "totalNodes": 347,
+    "totalEvidence": 40,
+    "totalCharacters": 38334,
+    "artBytes": 4666944
+  },
+  "media": {
+    "fullDecodes": 146,
+    "voices": 32,
+    "effects": 13,
+    "shippingMP3": 45
+  },
+  "browsers": {
+    "root": {
+      "file": "docs/evidence/v1.3.0-root-browser.json",
+      "status": "passed",
+      "checks": 19,
+      "baseUrl": "http://127.0.0.1:4173",
+      "offlineIllustrations": 33,
+      "offlineApplicationIcons": 1,
+      "offlineAudio": 45
+    },
+    "pages": {
+      "file": "docs/evidence/v1.3.0-pages-browser.json",
+      "status": "passed",
+      "checks": 19,
+      "baseUrl": "http://127.0.0.1:4173/Circuit/",
+      "offlineIllustrations": 33,
+      "offlineApplicationIcons": 1,
+      "offlineAudio": 45
+    },
+    "reading": {
+      "file": "docs/evidence/v1.3.0-reading-browser.json",
+      "status": "passed",
+      "checks": 19,
+      "baseUrl": "http://127.0.0.1:4173"
+    },
+    "answering": {
+      "file": "docs/evidence/v1.3.0-answering-browser.json",
+      "status": "passed",
+      "checks": 13,
+      "baseUrl": "http://127.0.0.1:4173/Circuit/"
+    }
+  },
+  "webPackage": {
+    "file": "artifacts/circuit-web-1.3.0.zip",
+    "bytes": 7122626,
+    "sha256": "5d425d45e34ab13b8208d6d2bd05e21952f6b5bbd6f631437daa7acbf8f28607"
+  },
+  "remoteChecks": "GitHub CI and Pages results are checked after the commit; not part of this local report.",
+  "limitations": [
+    "Human acting and pronunciation review remains pending for the previous recordings.",
+    "Windows installation and physical-device tests were not performed locally."
+  ]
+}

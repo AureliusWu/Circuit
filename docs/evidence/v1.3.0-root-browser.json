@@ -1,0 +1,476 @@
+{
+  "base_url": "http://127.0.0.1:4173",
+  "pwa_requested": true,
+  "font_qa": "Local CJK font injected for layout testing only",
+  "routes": {
+    "thirteen-households": 44,
+    "seventh-night": 45,
+    "backfeed": 46,
+    "everlight": 39,
+    "neutral": 37,
+    "closure": 45,
+    "return-visit": 39,
+    "answering": 40
+  },
+  "service_worker": "http://127.0.0.1:4173/sw.js",
+  "offline_art": [
+    {
+      "path": "http://127.0.0.1:4173/art/alley.webp",
+      "width": 1600,
+      "height": 900,
+      "transparent": 0
+    },
+    {
+      "path": "http://127.0.0.1:4173/art/chibi/chen.webp",
+      "width": 640,
+      "height": 640,
+      "transparent": 0.71820556640625
+    },
+    {
+      "path": "http://127.0.0.1:4173/art/chibi/cheng.webp",
+      "width": 640,
+      "height": 640,
+      "transparent": 0.728369140625
+    },
+    {
+      "path": "http://127.0.0.1:4173/art/chibi/ji.webp",
+      "width": 640,
+      "height": 640,
+      "transparent": 0.735390625
+    },
+    {
+      "path": "http://127.0.0.1:4173/art/chibi/lin.webp",
+      "width": 640,
+      "height": 640,
+      "transparent": 0.74782470703125
+    },
+    {
+      "path": "http://127.0.0.1:4173/art/chibi/luo.webp",
+      "width": 640,
+      "height": 640,
+      "transparent": 0.7218310546875
+    },
+    {
+      "path": "http://127.0.0.1:4173/art/chibi/mei.webp",
+      "width": 640,
+      "height": 640,
+      "transparent": 0.73784423828125
+    },
+    {
+      "path": "http://127.0.0.1:4173/art/chibi/shen.webp",
+      "width": 640,
+      "height": 640,
+      "transparent": 0.73536376953125
+    },
+    {
+      "path": "http://127.0.0.1:4173/art/chibi/xu.webp",
+      "width": 640,
+      "height": 640,
+      "transparent": 0.743671875
+    },
+    {
+      "path": "http://127.0.0.1:4173/art/chibi/zhou.webp",
+      "width": 640,
+      "height": 640,
+      "transparent": 0.71901611328125
+    },
+    {
+      "path": "http://127.0.0.1:4173/art/communications-room.webp",
+      "width": 1600,
+      "height": 900,
+      "transparent": 0
+    },
+    {
+      "path": "http://127.0.0.1:4173/art/control-room.webp",
+      "width": 1600,
+      "height": 900,
+      "transparent": 0
+    },
+    {
+      "path": "http://127.0.0.1:4173/art/demolition.webp",
+      "width": 1600,
+      "height": 900,
+      "transparent": 0
+    },
+    {
+      "path": "http://127.0.0.1:4173/art/dispatch.webp",
+      "width": 1600,
+      "height": 900,
+      "transparent": 0
+    },
+    {
+      "path": "http://127.0.0.1:4173/art/portraits/chen.webp",
+      "width": 640,
+      "height": 960,
+      "transparent": 0.36341959635416665
+    },
+    {
+      "path": "http://127.0.0.1:4173/art/portraits/cheng-focused.webp",
+      "width": 640,
+      "height": 960,
+      "transparent": 0.37729329427083336
+    },
+    {
+      "path": "http://127.0.0.1:4173/art/portraits/cheng-wary.webp",
+      "width": 640,
+      "height": 960,
+      "transparent": 0.37434244791666665
+    },
+    {
+      "path": "http://127.0.0.1:4173/art/portraits/cheng.webp",
+      "width": 640,
+      "height": 960,
+      "transparent": 0.37678873697916665
+    },
+    {
+      "path": "http://127.0.0.1:4173/art/portraits/ji-concerned.webp",
+      "width": 640,
+      "height": 960,
+      "transparent": 0.4193196614583333
+    },
+    {
+      "path": "http://127.0.0.1:4173/art/portraits/ji-focused.webp",
+      "width": 640,
+      "height": 960,
+      "transparent": 0.4132568359375
+    },
+    {
+      "path": "http://127.0.0.1:4173/art/portraits/ji.webp",
+      "width": 640,
+      "height": 960,
+      "transparent": 0.4192529296875
+    },
+    {
+      "path": "http://127.0.0.1:4173/art/portraits/lin.webp",
+      "width": 640,
+      "height": 960,
+      "transparent": 0.395595703125
+    },
+    {
+      "path": "http://127.0.0.1:4173/art/portraits/luo.webp",
+      "width": 640,
+      "height": 960,
+      "transparent": 0.41083658854166666
+    },
+    {
+      "path": "http://127.0.0.1:4173/art/portraits/mei.webp",
+      "width": 640,
+      "height": 960,
+      "transparent": 0.39544921875
+    },
+    {
+      "path": "http://127.0.0.1:4173/art/portraits/shen.webp",
+      "width": 640,
+      "height": 960,
+      "transparent": 0.408056640625
+    },
+    {
+      "path": "http://127.0.0.1:4173/art/portraits/xu.webp",
+      "width": 640,
+      "height": 960,
+      "transparent": 0.37489420572916665
+    },
+    {
+      "path": "http://127.0.0.1:4173/art/portraits/zhou-field.webp",
+      "width": 640,
+      "height": 960,
+      "transparent": 0.40381998697916666
+    },
+    {
+      "path": "http://127.0.0.1:4173/art/portraits/zhou.webp",
+      "width": 640,
+      "height": 960,
+      "transparent": 0.34807779947916667
+    },
+    {
+      "path": "http://127.0.0.1:4173/art/property-office.webp",
+      "width": 1600,
+      "height": 900,
+      "transparent": 0
+    },
+    {
+      "path": "http://127.0.0.1:4173/art/repair-van.webp",
+      "width": 1600,
+      "height": 900,
+      "transparent": 0
+    },
+    {
+      "path": "http://127.0.0.1:4173/art/resettlement-lobby.webp",
+      "width": 1600,
+      "height": 900,
+      "transparent": 0
+    },
+    {
+      "path": "http://127.0.0.1:4173/art/stairwell.webp",
+      "width": 1600,
+      "height": 900,
+      "transparent": 0
+    },
+    {
+      "path": "http://127.0.0.1:4173/art/substation.webp",
+      "width": 1600,
+      "height": 900,
+      "transparent": 0
+    },
+    {
+      "path": "http://127.0.0.1:4173/icon.png",
+      "width": 512,
+      "height": 512,
+      "transparent": 0
+    }
+  ],
+  "offline_audio": [
+    {
+      "path": "http://127.0.0.1:4173/audio/sfx/cup-set.mp3",
+      "duration": 0.5,
+      "channels": 1
+    },
+    {
+      "path": "http://127.0.0.1:4173/audio/sfx/door-knock.mp3",
+      "duration": 1.3,
+      "channels": 1
+    },
+    {
+      "path": "http://127.0.0.1:4173/audio/sfx/intercom-click.mp3",
+      "duration": 0.35,
+      "channels": 1
+    },
+    {
+      "path": "http://127.0.0.1:4173/audio/sfx/iron-gate.mp3",
+      "duration": 1.1,
+      "channels": 1
+    },
+    {
+      "path": "http://127.0.0.1:4173/audio/sfx/keys-two-one.mp3",
+      "duration": 1.9,
+      "channels": 1
+    },
+    {
+      "path": "http://127.0.0.1:4173/audio/sfx/latch-turn.mp3",
+      "duration": 1.1,
+      "channels": 1
+    },
+    {
+      "path": "http://127.0.0.1:4173/audio/sfx/paper-turn.mp3",
+      "duration": 0.7,
+      "channels": 1
+    },
+    {
+      "path": "http://127.0.0.1:4173/audio/sfx/pen-sign.mp3",
+      "duration": 0.55,
+      "channels": 1
+    },
+    {
+      "path": "http://127.0.0.1:4173/audio/sfx/phone-alert.mp3",
+      "duration": 1.3,
+      "channels": 1
+    },
+    {
+      "path": "http://127.0.0.1:4173/audio/sfx/radio-open.mp3",
+      "duration": 0.7,
+      "channels": 1
+    },
+    {
+      "path": "http://127.0.0.1:4173/audio/sfx/relay-drop.mp3",
+      "duration": 0.6,
+      "channels": 1
+    },
+    {
+      "path": "http://127.0.0.1:4173/audio/sfx/switch-off.mp3",
+      "duration": 0.18,
+      "channels": 1
+    },
+    {
+      "path": "http://127.0.0.1:4173/audio/sfx/telephone-ring.mp3",
+      "duration": 2.65,
+      "channels": 1
+    },
+    {
+      "path": "http://127.0.0.1:4173/audio/voice/c00-cheng.mp3",
+      "duration": 0.8,
+      "channels": 1
+    },
+    {
+      "path": "http://127.0.0.1:4173/audio/voice/c00-ji.mp3",
+      "duration": 3.36,
+      "channels": 1
+    },
+    {
+      "path": "http://127.0.0.1:4173/audio/voice/c00-mei.mp3",
+      "duration": 3.04,
+      "channels": 1
+    },
+    {
+      "path": "http://127.0.0.1:4173/audio/voice/h13-call.mp3",
+      "duration": 3.44,
+      "channels": 1
+    },
+    {
+      "path": "http://127.0.0.1:4173/audio/voice/h13-dispatch.mp3",
+      "duration": 4.4,
+      "channels": 1
+    },
+    {
+      "path": "http://127.0.0.1:4173/audio/voice/h13-kit.mp3",
+      "duration": 3.12,
+      "channels": 1
+    },
+    {
+      "path": "http://127.0.0.1:4173/audio/voice/h13-mei.mp3",
+      "duration": 2.64,
+      "channels": 1
+    },
+    {
+      "path": "http://127.0.0.1:4173/audio/voice/h13-ticket.mp3",
+      "duration": 7.52,
+      "channels": 1
+    },
+    {
+      "path": "http://127.0.0.1:4173/audio/voice/h13-zhou.mp3",
+      "duration": 4.72,
+      "channels": 1
+    },
+    {
+      "path": "http://127.0.0.1:4173/audio/voice/l03-ji.mp3",
+      "duration": 3.84,
+      "channels": 1
+    },
+    {
+      "path": "http://127.0.0.1:4173/audio/voice/l03-keys.mp3",
+      "duration": 6.24,
+      "channels": 1
+    },
+    {
+      "path": "http://127.0.0.1:4173/audio/voice/l03-mei.mp3",
+      "duration": 2.88,
+      "channels": 1
+    },
+    {
+      "path": "http://127.0.0.1:4173/audio/voice/n04-shen.mp3",
+      "duration": 2.4,
+      "channels": 1
+    },
+    {
+      "path": "http://127.0.0.1:4173/audio/voice/n04-zhou.mp3",
+      "duration": 4.8,
+      "channels": 1
+    },
+    {
+      "path": "http://127.0.0.1:4173/audio/voice/q07-dispatch.mp3",
+      "duration": 2,
+      "channels": 1
+    },
+    {
+      "path": "http://127.0.0.1:4173/audio/voice/q07-ji.mp3",
+      "duration": 4.24,
+      "channels": 1
+    },
+    {
+      "path": "http://127.0.0.1:4173/audio/voice/q07-shen.mp3",
+      "duration": 3.28,
+      "channels": 1
+    },
+    {
+      "path": "http://127.0.0.1:4173/audio/voice/q07-xu.mp3",
+      "duration": 1.12,
+      "channels": 1
+    },
+    {
+      "path": "http://127.0.0.1:4173/audio/voice/r02-chen.mp3",
+      "duration": 1.52,
+      "channels": 1
+    },
+    {
+      "path": "http://127.0.0.1:4173/audio/voice/r02-door.mp3",
+      "duration": 5.76,
+      "channels": 1
+    },
+    {
+      "path": "http://127.0.0.1:4173/audio/voice/r02-ji.mp3",
+      "duration": 2.4,
+      "channels": 1
+    },
+    {
+      "path": "http://127.0.0.1:4173/audio/voice/v01-arrived.mp3",
+      "duration": 1.76,
+      "channels": 1
+    },
+    {
+      "path": "http://127.0.0.1:4173/audio/voice/v01-confirm.mp3",
+      "duration": 1.28,
+      "channels": 1
+    },
+    {
+      "path": "http://127.0.0.1:4173/audio/voice/v01-ji-address.mp3",
+      "duration": 2.8,
+      "channels": 1
+    },
+    {
+      "path": "http://127.0.0.1:4173/audio/voice/v01-lin.mp3",
+      "duration": 1.68,
+      "channels": 1
+    },
+    {
+      "path": "http://127.0.0.1:4173/audio/voice/v01-luo.mp3",
+      "duration": 7.52,
+      "channels": 1
+    },
+    {
+      "path": "http://127.0.0.1:4173/audio/voice/v01-question.mp3",
+      "duration": 1.52,
+      "channels": 1
+    },
+    {
+      "path": "http://127.0.0.1:4173/audio/voice/v01-receipt.mp3",
+      "duration": 2.96,
+      "channels": 1
+    },
+    {
+      "path": "http://127.0.0.1:4173/audio/voice/v01-received.mp3",
+      "duration": 2.16,
+      "channels": 1
+    },
+    {
+      "path": "http://127.0.0.1:4173/audio/voice/v01-record.mp3",
+      "duration": 2.48,
+      "channels": 1
+    },
+    {
+      "path": "http://127.0.0.1:4173/audio/voice/v01-redpaper.mp3",
+      "duration": 8.16,
+      "channels": 1
+    },
+    {
+      "path": "http://127.0.0.1:4173/audio/voice/v01-wait.mp3",
+      "duration": 1.76,
+      "channels": 1
+    }
+  ],
+  "status": "passed",
+  "completed_checks": [
+    "initial-chapter-locks",
+    "complete-chapter:thirteen-households",
+    "complete-chapter:seventh-night",
+    "complete-chapter:backfeed",
+    "complete-chapter:everlight",
+    "complete-chapter:neutral",
+    "complete-chapter:closure",
+    "complete-chapter:return-visit",
+    "complete-chapter:answering",
+    "responsive-hotspots:1280x720",
+    "responsive-hotspots:960x540",
+    "responsive-hotspots:760x430",
+    "responsive-hotspots:390x844",
+    "denied-storage-remains-playable",
+    "pwa-manifest-service-worker",
+    "offline-all-generated-art",
+    "offline-all-voice-and-scene-audio",
+    "offline-campaign-resume-and-replay",
+    "browser-runtime-errors"
+  ],
+  "completed_count": 19,
+  "page_errors": [],
+  "console_errors": [],
+  "http_errors": [],
+  "duration_seconds": 41.88
+}

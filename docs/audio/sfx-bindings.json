@@ -19,5 +19,14 @@
   "return-visit/cabinet": "relay-drop",
   "return-visit/recordReceipt": "paper-turn",
   "return-visit/approved": "pen-sign",
-  "return-visit/end": "intercom-click"
+  "return-visit/end": "intercom-click",
+  "answering/dispatch": "phone-alert",
+  "answering/firstHub": "telephone-ring",
+  "answering/lineCheck": "telephone-ring",
+  "answering/ring": "telephone-ring",
+  "answering/listBack": "paper-turn",
+  "answering/recordBatch": "intercom-click",
+  "answering/handoff": "pen-sign",
+  "answering/doorway": "latch-turn",
+  "answering/end": "phone-alert"
 }

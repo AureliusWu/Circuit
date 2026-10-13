@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": "1.2.0",
+  "version": "1.3.0",
   "clips": [
     {
       "id": "door-knock",
@@ -197,6 +197,42 @@
           "path": "public/audio/sfx/cup-set.mp3",
           "bytes": 6957,
           "sha256": "445a22bfeb770eeb9ca628840341562be46c1650b90f13c99d5540b40f9e484b"
+        }
+      ]
+    },
+    {
+      "id": "telephone-ring",
+      "duration": 2.65,
+      "seed": 120012,
+      "creator": "original procedural foley",
+      "files": [
+        {
+          "path": "assets_source/audio/v1.3.0/sfx-telephone-ring.wav",
+          "bytes": 127244,
+          "sha256": "da207cb533077de2f72ee58ccd0b2c670fcf6870e0c28eb454a29b9eea011b12"
+        },
+        {
+          "path": "public/audio/sfx/telephone-ring.mp3",
+          "bytes": 32877,
+          "sha256": "30da956d7fe6bcd5d72ac4967e8a1b3a5da3101d97aefe8ff5a42c7080092811"
+        }
+      ]
+    },
+    {
+      "id": "latch-turn",
+      "duration": 1.1,
+      "seed": 130013,
+      "creator": "original procedural foley",
+      "files": [
+        {
+          "path": "assets_source/audio/v1.3.0/sfx-latch-turn.wav",
+          "bytes": 52844,
+          "sha256": "951667c0f763ac27f7c7ff5213634fd74f13af5ed428ad1f8049951e02871f93"
+        },
+        {
+          "path": "public/audio/sfx/latch-turn.mp3",
+          "bytes": 14157,
+          "sha256": "a25657597ec2b35917333b80bf89f832abaf260f1bd849271cc2ee2837c9b407"
         }
       ]
     }

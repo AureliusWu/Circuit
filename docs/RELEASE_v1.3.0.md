@@ -20,4 +20,6 @@
 
 实际JSON在docs/evidence/v1.3.0各检查文件；[场景预览](art/answering-preview.jpg)、[手机证据面板](art/answering-evidence-390x844.jpg)、[短屏证据面板](art/answering-evidence-760x430.jpg)与[AUDIO_GUIDE](AUDIO_GUIDE.md)可交叉查看。新增规则沉淀在[章节创作规范](CHAPTER_AUTHORING.md)。
 
+《应声》专项浏览器回归已接入GitHub CI，每次main推送与PR都检查旧档续章、录音证据的查阅条件、两条错误结局、实际媒体控制与断网重听。CI也继续执行原有全章、阅读、存档和人物语音回归。
+
 自动转写的上一轮4段review继续保留，本轮不宣称真人演技或实体扬声器验收。Windows编译由GitHub CI另行检查，本地没有Windows安装、升级与卸载的人工验收；本轮不创建公开发行标签。

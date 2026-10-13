@@ -8,6 +8,9 @@ export type Preferences = {
   autoDelay: number;
   musicVolume: number;
   ambienceVolume: number;
+  voiceVolume: number;
+  sfxVolume: number;
+  voiceEnabled: boolean;
   muted: boolean;
   highContrast: boolean;
   reducedMotion: boolean;
@@ -18,6 +21,9 @@ export const DEFAULT_PREFERENCES: Readonly<Preferences> = Object.freeze({
   autoDelay: 4,
   musicVolume: 0.35,
   ambienceVolume: 0.55,
+  voiceVolume: 0.8,
+  sfxVolume: 0.6,
+  voiceEnabled: true,
   muted: false,
   highContrast: false,
   reducedMotion: false
@@ -43,11 +49,11 @@ export function isPreferences(value: unknown): value is Preferences {
   if (!Object.keys(DEFAULT_PREFERENCES).every((key) => own(candidate, key))) return false;
   if (typeof candidate.textSpeed !== 'string' || !TEXT_SPEEDS.some((speed) => speed === candidate.textSpeed)) return false;
   if (typeof candidate.autoDelay !== 'number' || !Number.isFinite(candidate.autoDelay) || candidate.autoDelay < 2 || candidate.autoDelay > 8) return false;
-  for (const key of ['musicVolume', 'ambienceVolume']) {
+  for (const key of ['musicVolume', 'ambienceVolume', 'voiceVolume', 'sfxVolume']) {
     const volume = candidate[key];
     if (typeof volume !== 'number' || !Number.isFinite(volume) || volume < 0 || volume > 1) return false;
   }
-  return ['muted', 'highContrast', 'reducedMotion'].every((key) => typeof candidate[key] === 'boolean');
+  return ['muted', 'highContrast', 'reducedMotion', 'voiceEnabled'].every((key) => typeof candidate[key] === 'boolean');
 }
 
 function copyPreferences(preferences: Readonly<Preferences>): Preferences {
@@ -56,6 +62,9 @@ function copyPreferences(preferences: Readonly<Preferences>): Preferences {
     autoDelay: preferences.autoDelay,
     musicVolume: preferences.musicVolume,
     ambienceVolume: preferences.ambienceVolume,
+    voiceVolume: preferences.voiceVolume,
+    sfxVolume: preferences.sfxVolume,
+    voiceEnabled: preferences.voiceEnabled,
     muted: preferences.muted,
     highContrast: preferences.highContrast,
     reducedMotion: preferences.reducedMotion
@@ -74,7 +83,15 @@ export function loadPreferences(storage: SaveStorage | null | undefined): Prefer
   }
   if (raw === null) return { status: 'empty', preferences: defaults };
   try {
-    const parsed: unknown = JSON.parse(raw);
+    let parsed: unknown = JSON.parse(raw);
+    // v1.0/v1.1 settings acquire new sound controls in memory; reads never write.
+    if (typeof parsed === 'object' && parsed !== null && !Array.isArray(parsed)) {
+      const candidate = parsed as Record<string, unknown>;
+      parsed = { ...candidate };
+      for (const key of ['voiceVolume', 'sfxVolume', 'voiceEnabled'] as const) {
+        if (!own(candidate, key)) (parsed as Record<string, unknown>)[key] = DEFAULT_PREFERENCES[key];
+      }
+    }
     return isPreferences(parsed)
       ? { status: 'valid', preferences: copyPreferences(parsed) }
       : { status: 'invalid', preferences: defaults, reason: INVALID_REASON };

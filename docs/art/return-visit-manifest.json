@@ -1,0 +1,120 @@
+{
+  "version": "1.2.0",
+  "assets": [
+    {
+      "id": "cheng-wary",
+      "prompt": "Use case: identity-preserve. Asset type: transparent narrative-game portrait, 2:3 vertical. Edit target is the supplied existing portrait of Cheng Yan, a 32-year-old Chinese electrical repair worker. Change ONLY his facial expression to subtle wary alertness: brows drawn a little closer, gaze turned slightly toward an off-screen sound, lips closed. Keep exactly the same face identity, age, black hair, white safety helmet, headlamp, fully fastened chin strap, dark navy and muted orange long-sleeve repair uniform, reflective bands, chest radio, body pose, crop, realistic adult proportions and hand-painted semi-realistic texture. Preserve the warm upper-left light and cool shadow palette. Single character, isolated with genuine transparent alpha background, no checkerboard baked into pixels, no scenery, no text, no logos. This is an additional expression sprite for the Chinese folklore suspense game Circuit, not a new character.",
+      "references": [
+        "public/art/portraits/cheng.webp"
+      ],
+      "generator": "built-in image_gen",
+      "source": "assets_source/art/v1.2.0/cheng-wary.png",
+      "sourceSha256": "c1029f50e2df0a2c2471f6226ef862d866e8f5db85f67969e371b318e5d5d58e",
+      "sourceBytes": 2221856,
+      "output": "public/art/portraits/cheng-wary.webp",
+      "sha256": "a2a9f931ea0f02800bc6b9fcbfa2457cb4c2c82f64881a19218574181a974379",
+      "bytes": 92828,
+      "width": 640,
+      "height": 960,
+      "mode": "RGBA",
+      "transparentFraction": 0.37434244791666665,
+      "processing": "ffmpeg libwebp quality86; aspect-preserving resize/crop; alpha retained"
+    },
+    {
+      "id": "ji-focused",
+      "prompt": "Use case: identity-preserve. Asset type: transparent narrative-game portrait, 2:3 vertical. Edit target is the supplied portrait of Ji Ning, 23-year-old Chinese woman electrical repair trainee. Change ONLY her facial expression into attentive concentration: eyes slightly lowered toward her tablet, brow gently furrowed, composed lips, serious and observant. Keep identical face identity and age, short black bob, yellow safety helmet with headlamp and fastened chin strap, navy and muted orange workwear, reflective strips, tablet and notebook, hands and body pose, framing, adult realistic proportions, textured hand-painted semi-realistic rendering. Keep original warm left light and cool shadows. Single isolated character, genuine transparent alpha, no scenery, no text, no logos, no baked checkerboard. A new expression sprite consistent with the existing Circuit cast.",
+      "references": [
+        "public/art/portraits/ji.webp"
+      ],
+      "generator": "built-in image_gen",
+      "source": "assets_source/art/v1.2.0/ji-focused.png",
+      "sourceSha256": "d8cc7b56593f04f45cdfb3c55c33415b62c2ba1c83fcedf1251a84e962062881",
+      "sourceBytes": 2312891,
+      "output": "public/art/portraits/ji-focused.webp",
+      "sha256": "37cca96060dc3203673e89ac22a1b4930406a92e4a62880ff12c757c094c8c23",
+      "bytes": 97526,
+      "width": 640,
+      "height": 960,
+      "mode": "RGBA",
+      "transparentFraction": 0.4132568359375,
+      "processing": "ffmpeg libwebp quality86; aspect-preserving resize/crop; alpha retained"
+    },
+    {
+      "id": "luo-portrait",
+      "prompt": "Use case: illustration-story. Asset type: transparent 2:3 vertical narrative-game character portrait. The supplied image is a STYLE reference only, not the target identity. Create Luo He, a new 29-year-old Chinese woman who works the night desk for a resettlement apartment property's management office in fictional Wucheng. She has a clearly different face from the reference: narrower oval face, single-lid dark eyes, shoulder-length dark hair tied in a low ponytail, a few loose strands near her ears; tired but attentive, expression reserved, no glamour makeup. Outfit: practical desaturated olive-grey zip jacket over a slate blue collared shirt, simple blank staff badge, no safety helmet, no company logo. In both natural hands she holds a creased paper ledger and a small brass key ring. Waist-to-upper-thigh portrait, realistic adult anatomy, entire head and shoulders fit with margin, grounded professional appearance. Match the reference's detailed hand-painted semi-realistic brush texture, low saturation, warm light from upper-left and cool grey shadows, muted Chinese urban horror palette. Single character isolated on genuine transparent alpha background. No scenery, no letters, no watermark, no cartoon proportions, no blood or monstrous features.",
+      "references": [
+        "public/art/portraits/ji.webp"
+      ],
+      "generator": "built-in image_gen",
+      "source": "assets_source/art/v1.2.0/luo.png",
+      "sourceSha256": "22f66fd8177ce562d99f024f3ae3dfc6021175e84bcd2a56e1a3b32a00faf848",
+      "sourceBytes": 2318619,
+      "output": "public/art/portraits/luo.webp",
+      "sha256": "bd9509efa87fbf53ac9e5a7b05390f0f4702f27e4e4569247e2124ffaee11651",
+      "bytes": 102350,
+      "width": 640,
+      "height": 960,
+      "mode": "RGBA",
+      "transparentFraction": 0.41083658854166666,
+      "processing": "ffmpeg libwebp quality86; aspect-preserving resize/crop; alpha retained"
+    },
+    {
+      "id": "resettlement-lobby",
+      "prompt": "Use case: illustration-story. Asset type: 16:9 wide 2D visual novel environment for Circuit, fictional Chinese city Wucheng. The supplied rain-alley painting is STYLE and lighting reference only. Create the entrance hall of a modest early-2010s Chinese resettlement apartment block at midnight after rain. Fixed eye-level camera from just inside the entry, floor tiles and scuffed concrete walls, double glass entry doors in the left half, damp footprints crossing the threshold, a simple dark metal intercom beside the doors, a notice board containing blank faded papers, mailboxes, an empty elevator lobby farther right, a staircase recess with a very dim warm ceiling lamp. In the upper-right edge, a small old red paper rectangle is pasted INSIDE a doorframe, blank and slightly curled. Ordinary lived-in building, no abandoned fantasy ruin. Painterly semi-realistic brushwork with detailed worn textures, charcoal grey, dirty green, cold blue shadows and subdued tungsten yellow. Compose stable readable architecture: intercom in left third, mailboxes near center, blank notice-board at right third, lower 22 percent relatively uncluttered for dialogue overlay; nothing intentionally illegible carries puzzle information. Empty of people, no visible ghosts, no blood, no UI, no readable text, no brand logos, no watermark. Low-key believable light but enough midtones to inspect the lobby. Unsettling through perspective and an empty doorway, not through gore. Wide landscape canvas, 16:9.",
+      "references": [
+        "public/art/alley.webp"
+      ],
+      "generator": "built-in image_gen",
+      "source": "assets_source/art/v1.2.0/resettlement-lobby.png",
+      "sourceSha256": "ea043cf2f4b662a6fe14fed02f85106e035d653c263ab8b181a013a5e69409d6",
+      "sourceBytes": 2621014,
+      "output": "public/art/resettlement-lobby.webp",
+      "sha256": "2707c8002605bee906c3911cb8c375608632e6491dab3700f9b78b16032ab92b",
+      "bytes": 258790,
+      "width": 1600,
+      "height": 900,
+      "mode": "RGB",
+      "transparentFraction": 0,
+      "processing": "ffmpeg libwebp quality86; aspect-preserving resize/crop; alpha retained"
+    },
+    {
+      "id": "property-office",
+      "prompt": "Use case: illustration-story. Asset type: wide 16:9 narrative-game background for the Chinese folklore suspense game Circuit. Reference image sets the existing painterly semi-realistic texture, muted palette and grounded Chinese urban atmosphere only. Create a small property-management night office in a resettlement apartment complex in fictional Wucheng. Fixed eye-level wide shot from the open doorway. An old laminate desk with a closed thick paper ledger and blank cream pages, a small intercom speaker, a cheap landline phone, thermos and key hooks; an office computer showing only dim abstract rectangles, an empty office chair, file shelves with plain folders, a grey storage cabinet, rain-marked glass window. One restrained greenish fluorescent ceiling light plus a small warm desk lamp; cold grey-blue corners. The entry doorway at the left contains a small faded red paper pasted inward, no writing. Detailed hand-painted wear, humidity stains, rubbed paint, mundane inexpensive equipment. Nobody in frame, no monsters, no gore. Readable fixed layout: ledger in center-left, speaker center, cabinet right, rear window; keep bottom 22 percent dark and relatively clear for dialogue text. Never draw UI, precise text, logos or watermarks. No film grain excess, no fisheye or impossibly twisted architecture. Widescreen 16:9 composition.",
+      "references": [
+        "public/art/alley.webp"
+      ],
+      "generator": "built-in image_gen",
+      "source": "assets_source/art/v1.2.0/property-office.png",
+      "sourceSha256": "e3c9fef4181458e1bcb0e246ccc035e179021f1ccd213b3ebedad86a82e6ea20",
+      "sourceBytes": 2111635,
+      "output": "public/art/property-office.webp",
+      "sha256": "c061bed5dd6998348350f48ddfa98c4fc532aeff902c34737596ab184d483319",
+      "bytes": 165052,
+      "width": 1600,
+      "height": 900,
+      "mode": "RGB",
+      "transparentFraction": 0,
+      "processing": "ffmpeg libwebp quality86; aspect-preserving resize/crop; alpha retained"
+    },
+    {
+      "id": "luo-chibi",
+      "prompt": "Use case: identity-preserve. Asset type: square transparent character-directory chibi sprite. Image 1 is the identity and clothing reference: Luo He, 29-year-old Chinese woman, low dark ponytail, oval face, olive-grey practical jacket over slate-blue collared shirt, blank badge, a creased ledger and brass keys. Image 2 is the exact chibi proportion, texture and rendering reference, not an identity or costume to copy. Create a single full-body Q-version of Luo He, approximately 2.5 heads tall, with the matching restrained painterly style, friendly but tired attentive expression, low-saturation colors. Keep her own ponytail, jacket, shirt and blank badge; NO helmet, NO repair uniform. Hold the paper ledger close with keys hanging from a natural hand. Both shoes fully visible with generous transparent margin around entire silhouette. Warm upper-left light and cool shadow texture, match the existing Circuit directory cast. Genuine clean transparent alpha background, no glow halo, no scenery or ground, no baked checkerboard, no text, no watermark. Do not turn her into a different person or a child.",
+      "references": [
+        "assets_source/art/v1.2.0/luo.png",
+        "public/art/chibi/ji.webp"
+      ],
+      "generator": "built-in image_gen",
+      "source": "assets_source/art/v1.2.0/luo-chibi.png",
+      "sourceSha256": "88e40e237106b6cd4aeafd28dbbc564007da6b951902e7814a57bdf3dd502a05",
+      "sourceBytes": 1127866,
+      "output": "public/art/chibi/luo.webp",
+      "sha256": "22653ce43e4adb6327ee46407063b7bf9de4be78234a3932c8d7ef749fb37495",
+      "bytes": 56242,
+      "width": 640,
+      "height": 640,
+      "mode": "RGBA",
+      "transparentFraction": 0.7218310546875,
+      "processing": "ffmpeg libwebp quality86; aspect-preserving resize/crop; alpha retained"
+    }
+  ]
+}

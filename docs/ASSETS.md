@@ -1,4 +1,4 @@
-# 美术资源目录 · v1.1.0「巡城师徒」
+# 美术资源目录 · v1.2.0「回访」
 
 本轮使用内置图像生成能力新增14项美术：程砚、季宁的基础立绘与表情各一套、老周现场防护立绘、八名角色的 Q 版形象及抢修车场景。v1.0.1重绘的其余场景、人物和应用图标继续使用。
 
@@ -65,3 +65,18 @@ public/icon.png及public/icons/192x192.png、512x512.png延续上一轮断环与
 角色定义集中在src/game/characters.ts，剧情用角色标识、表情和在场方式选择素材。现场立绘、远程通讯卡和2019旧档照片分别呈现；所有图片由Vite基路径统一解析，兼容根路径、桌面与/Circuit/。
 
 PWA首次联网完成缓存后，26幅插画和应用图标全部可离线解码。精确证据文字、工单、读数、按钮和热点由应用层提供，城市路线图按归档进度由程序绘制。旧SVG与大尺寸生成源不进入发行包。
+
+## v1.2.0 新增6项
+
+| 游戏文件 | 内容 |
+| --- | --- |
+| public/art/resettlement-lobby.webp | 槐荫新苑门厅，门禁/信箱/门槛调查 |
+| public/art/property-office.webp | 物业夜班室，设备来源与原接收页核对 |
+| public/art/portraits/cheng-wary.webp | 程砚警觉，保持原装备与身份 |
+| public/art/portraits/ji-focused.webp | 季宁专注比较，保持原装备与身份 |
+| public/art/portraits/luo.webp | 罗禾29岁，低马尾、值班本与三把钥匙 |
+| public/art/chibi/luo.webp | 罗禾Q版，全身透明，延续人物目录画风 |
+
+原始PNG存入assets_source/art/v1.2.0；完整提示词、身份参考、原图与成品SHA-256、尺寸、透明比例和转换配方见[本轮清单](art/return-visit-manifest.json)。背景1600×900、立绘640×960、Q版640×640。当前32幅游戏WebP约4.26 MiB；此前26幅素材保留。
+
+人物语音与原创音效另见[AUDIO_GUIDE](AUDIO_GUIDE.md)，共43个MP3随PWA缓存。

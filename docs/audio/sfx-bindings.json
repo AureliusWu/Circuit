@@ -1,0 +1,23 @@
+{
+  "thirteen-households/houseKnock": "door-knock",
+  "thirteen-households/archivedTicket": "paper-turn",
+  "seventh-night/fatherMessage": "radio-open",
+  "seventh-night/recorder": "intercom-click",
+  "backfeed/gate": "iron-gate",
+  "backfeed/relayTest": "relay-drop",
+  "everlight/gate": "keys-two-one",
+  "everlight/promise": "keys-two-one",
+  "everlight/turnOff": "switch-off",
+  "neutral/ticket": "paper-turn",
+  "neutral/signed": "pen-sign",
+  "closure/meal": "cup-set",
+  "closure/end": "phone-alert",
+  "return-visit/dispatch": "radio-open",
+  "return-visit/arrival": "intercom-click",
+  "return-visit/intercom": "intercom-click",
+  "return-visit/echo": "intercom-click",
+  "return-visit/cabinet": "relay-drop",
+  "return-visit/recordReceipt": "paper-turn",
+  "return-visit/approved": "pen-sign",
+  "return-visit/end": "intercom-click"
+}

@@ -1,0 +1,47 @@
+{
+  "version": "1.2.0",
+  "date": "2026-10-13",
+  "status": "passed",
+  "story": {
+    "chapters": 7,
+    "nodes": 307,
+    "newChapterNodes": 39,
+    "newChapterCharacters": 4122,
+    "allBranchCharacters": 33787,
+    "evidence": 35,
+    "cast": 9
+  },
+  "art": {
+    "newAssets": 6,
+    "shippingIllustrations": 32,
+    "shippingBytes": 4465544
+  },
+  "audio": {
+    "voices": 32,
+    "effects": 11,
+    "voiceSeconds": 107.6,
+    "decodedSourceAndShippingFiles": 142,
+    "asrPassed": 28,
+    "asrReview": 4
+  },
+  "checks": {
+    "unitTests": 70,
+    "rootReleaseStages": 18,
+    "readingChecks": 19,
+    "pagesPathReleaseStages": 18,
+    "voiceChecks": 14,
+    "rainPythonTests": 140,
+    "rainSharedFiles": 9
+  },
+  "webPackage": {
+    "archive": "/workspace/scratch/3724ce180a6f/Circuit/artifacts/circuit-web-1.2.0.zip",
+    "sha256": "c8927556364aab6be7c9a9c56c9f8dd479cd39398af41b1aab3a20be5a35d712",
+    "files": 86,
+    "bytes": 6883525
+  },
+  "limits": [
+    "Four ASR name/homophone results remain for human listening; acting not approved.",
+    "No local Windows installation, physical mobile or speaker acceptance performed.",
+    "GitHub CI and Pages deployment are read back separately after pushing; no formal release tag created."
+  ]
+}

@@ -1,0 +1,1487 @@
+{
+  "schemaVersion": 1,
+  "version": "1.2.0",
+  "providerSha256": "9d2e5e10dd510c73ba918cb5d6230873528e8b7f22bdcb02ee5e9092fc1317a0",
+  "clips": [
+    {
+      "id": "h13-dispatch",
+      "character": "lin",
+      "speaker": "Serena",
+      "instruct": "成年女性，普通话，声音干脆平稳，值班调度员在电台里说话，清楚利落，不要播音腔。 调度通话，语速稍慢，逐句吐字清楚。槐荫巷读huái yīn xiàng，在线读zài xiàn。",
+      "text": "槐荫巷，十二户停电，终端显示十三个在线户号。",
+      "seed": 220010,
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "dispatch"
+        }
+      ],
+      "requestSha256": "19600cd872f380060511cb88fed6f66e0c3767b53f5ecf5af7f4e535d5d997a3",
+      "duration": 4.4,
+      "generationSeconds": 23.708,
+      "loudnessInput": {
+        "input_i": "-25.55",
+        "input_tp": "-10.35",
+        "input_lra": "1.80",
+        "input_thresh": "-35.80",
+        "output_i": "-19.74",
+        "output_tp": "-5.01",
+        "output_lra": "0.50",
+        "output_thresh": "-29.96",
+        "normalization_type": "dynamic",
+        "target_offset": "-0.26"
+      },
+      "files": [
+        {
+          "path": "assets_source/audio/v1.2.0/h13-dispatch-raw.wav",
+          "bytes": 211244,
+          "sha256": "78b59168a8e0e68bf961dc70ed053180dac119f26eab440e244030c23cbbf721"
+        },
+        {
+          "path": "assets_source/audio/v1.2.0/h13-dispatch.wav",
+          "bytes": 211278,
+          "sha256": "18f872ab8050a7322dffc24eacd08c0a5e5bcad829727993299c3474ea3ad357"
+        },
+        {
+          "path": "public/audio/voice/h13-dispatch.mp3",
+          "bytes": 53901,
+          "sha256": "a81b39dd10f448adba3818df60445b72d138aee5601dbca7850f698a3580e069"
+        }
+      ]
+    },
+    {
+      "id": "h13-call",
+      "character": "cheng",
+      "speaker": "Dylan",
+      "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。",
+      "text": "在线是通讯状态。有电没电，到了再看。",
+      "seed": 120011,
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "call"
+        }
+      ],
+      "requestSha256": "14f6e408bd4a74ebf21fd13cfca50725f09b4b772cb97aa808b06576d7a9de38",
+      "duration": 3.44,
+      "generationSeconds": 17.468,
+      "loudnessInput": {
+        "input_i": "-25.96",
+        "input_tp": "-7.14",
+        "input_lra": "1.30",
+        "input_thresh": "-36.25",
+        "output_i": "-20.22",
+        "output_tp": "-2.00",
+        "output_lra": "0.00",
+        "output_thresh": "-30.50",
+        "normalization_type": "dynamic",
+        "target_offset": "0.22"
+      },
+      "files": [
+        {
+          "path": "assets_source/audio/v1.2.0/h13-call-raw.wav",
+          "bytes": 165164,
+          "sha256": "68ee58797dbe3bc8ed0aaeebf6aa1d0b4ef24e250116007834fc553ca55cb1cf"
+        },
+        {
+          "path": "assets_source/audio/v1.2.0/h13-call.wav",
+          "bytes": 165198,
+          "sha256": "3d0a9087d168a140dbea4d3340217cfb30d65f9b20d0238ecf1313d28df90e44"
+        },
+        {
+          "path": "public/audio/voice/h13-call.mp3",
+          "bytes": 42381,
+          "sha256": "c931c099cd860cf1920bf0d6ff2e16b7fa67fd9a092f2aef2e8b267f4943b34a"
+        }
+      ]
+    },
+    {
+      "id": "h13-kit",
+      "character": "ji",
+      "speaker": "Vivian",
+      "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。",
+      "text": "师傅，照片按户号存，还是按时间？",
+      "seed": 120012,
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "vehicleKit"
+        }
+      ],
+      "requestSha256": "2429ef6f6321e702f61b87a9975446034cc2cd35d2de9ed7ceb1b70daea9ed60",
+      "duration": 3.12,
+      "generationSeconds": 17.105,
+      "loudnessInput": {
+        "input_i": "-20.77",
+        "input_tp": "-2.69",
+        "input_lra": "0.40",
+        "input_thresh": "-31.07",
+        "output_i": "-19.63",
+        "output_tp": "-2.00",
+        "output_lra": "0.00",
+        "output_thresh": "-29.94",
+        "normalization_type": "dynamic",
+        "target_offset": "-0.37"
+      },
+      "files": [
+        {
+          "path": "assets_source/audio/v1.2.0/h13-kit-raw.wav",
+          "bytes": 149804,
+          "sha256": "c249a93176412ed23fcbc0ff649a4c36618bde1849699a9e353b8878ca264123"
+        },
+        {
+          "path": "assets_source/audio/v1.2.0/h13-kit.wav",
+          "bytes": 149838,
+          "sha256": "5e63a50c9a12fe0322628ff299af2938f211167dc24f5d119f89603e0f7ac3ff"
+        },
+        {
+          "path": "public/audio/voice/h13-kit.mp3",
+          "bytes": 38349,
+          "sha256": "7903f2ef27c89f0591193bf9ea513a7c5d427371ca7a0414db4a40c3ff0601a1"
+        }
+      ]
+    },
+    {
+      "id": "h13-zhou",
+      "character": "zhou",
+      "speaker": "Uncle_Fu",
+      "instruct": "五十岁男性，普通话，声音低沉略沙哑，克制缓慢，像夜班老工人，语气自然，不要表演悲伤。 语速稍慢，逐字说清楚，季宁读jì níng。句尾完整，不要吞字。",
+      "text": "季宁跟着你，别让她一个人往旧宅里钻。",
+      "seed": 220013,
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "zhouCall"
+        }
+      ],
+      "requestSha256": "a6b4698d663c7ee1ae7d1dd64a2dc7ad2e48b0a9405dd03901443c317a988e5b",
+      "duration": 4.72,
+      "generationSeconds": 24.776,
+      "loudnessInput": {
+        "input_i": "-28.73",
+        "input_tp": "-9.73",
+        "input_lra": "1.00",
+        "input_thresh": "-39.29",
+        "output_i": "-19.90",
+        "output_tp": "-2.00",
+        "output_lra": "0.90",
+        "output_thresh": "-30.75",
+        "normalization_type": "dynamic",
+        "target_offset": "-0.10"
+      },
+      "files": [
+        {
+          "path": "assets_source/audio/v1.2.0/h13-zhou-raw.wav",
+          "bytes": 226604,
+          "sha256": "7e654cd4a314ae425c58d083b8cca2f55b45ce6694cdf86dc63dbed1976efafe"
+        },
+        {
+          "path": "assets_source/audio/v1.2.0/h13-zhou.wav",
+          "bytes": 226638,
+          "sha256": "ce0035e116aa18a8ba6d22b948750f79bf27a4fcdea6ea81e095f2fcb4f098be"
+        },
+        {
+          "path": "public/audio/voice/h13-zhou.mp3",
+          "bytes": 57645,
+          "sha256": "43961e3875d03e261a8264b55aa708eca2c1be14d7010fff8bb9d1e571705623"
+        }
+      ]
+    },
+    {
+      "id": "h13-mei",
+      "character": "mei",
+      "speaker": "Serena",
+      "instruct": "六十岁女性，普通话，声音偏低，平实缓慢，像老邻居小声嘱咐，句尾稍停，不要年轻撒娇。",
+      "text": "门留着，别替他把路画死。",
+      "seed": 120014,
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "ashMeaning"
+        }
+      ],
+      "requestSha256": "fc3e5d6a3eec3dc6f5b856d38f450709ae9bd04a81a9aa1f956c75137f41d615",
+      "duration": 2.64,
+      "generationSeconds": 15.363,
+      "loudnessInput": {
+        "input_i": "-22.51",
+        "input_tp": "-4.50",
+        "input_lra": "0.00",
+        "input_thresh": "-33.11",
+        "output_i": "-20.01",
+        "output_tp": "-2.00",
+        "output_lra": "0.00",
+        "output_thresh": "-30.60",
+        "normalization_type": "linear",
+        "target_offset": "0.01"
+      },
+      "files": [
+        {
+          "path": "assets_source/audio/v1.2.0/h13-mei-raw.wav",
+          "bytes": 126764,
+          "sha256": "8aa94bee166789b93b074c1028a045246c77f01b956cababd520b2e3d740a464"
+        },
+        {
+          "path": "assets_source/audio/v1.2.0/h13-mei.wav",
+          "bytes": 126798,
+          "sha256": "369efa80dab0da9c5f64a271cd2cba08c8b49a6d0a18674752da045c16bc860a"
+        },
+        {
+          "path": "public/audio/voice/h13-mei.mp3",
+          "bytes": 32589,
+          "sha256": "53eab11265e07c5d1dd1b01a3e651c6fcc4d6f6354db673567ebec247e8f418f"
+        }
+      ]
+    },
+    {
+      "id": "h13-ticket",
+      "character": "zhou",
+      "speaker": "Uncle_Fu",
+      "instruct": "五十岁男性，普通话，声音低沉略沙哑，克制缓慢，像夜班老工人，语气自然，不要表演悲伤。",
+      "text": "没安排替代，也没让他停下来。后来有人催关单，我就写完成。没核完。",
+      "seed": 120015,
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "ticketSignature"
+        }
+      ],
+      "requestSha256": "d634ad833849c8fa67cb8c9e9a844002cf6708f3c455c6d7ddcd17e553372f91",
+      "duration": 7.52,
+      "generationSeconds": 41.756,
+      "loudnessInput": {
+        "input_i": "-23.60",
+        "input_tp": "-5.39",
+        "input_lra": "1.40",
+        "input_thresh": "-33.95",
+        "output_i": "-20.14",
+        "output_tp": "-2.00",
+        "output_lra": "1.80",
+        "output_thresh": "-30.51",
+        "normalization_type": "dynamic",
+        "target_offset": "0.14"
+      },
+      "files": [
+        {
+          "path": "assets_source/audio/v1.2.0/h13-ticket-raw.wav",
+          "bytes": 361004,
+          "sha256": "3c61f28ee10d1efc758e9b3f79d3ba1f413d09c2c82a007c89ac5838d3a7bd8a"
+        },
+        {
+          "path": "assets_source/audio/v1.2.0/h13-ticket.wav",
+          "bytes": 361038,
+          "sha256": "d3215a81329622c76310ee685ec60c954e1bbcb1792aacb71a8d04f402937279"
+        },
+        {
+          "path": "public/audio/voice/h13-ticket.mp3",
+          "bytes": 91341,
+          "sha256": "8b88a16d7ab20396fba68bdd2871948e934ac5b66289328762145df4f387a7b6"
+        }
+      ]
+    },
+    {
+      "id": "q07-dispatch",
+      "character": "lin",
+      "speaker": "Serena",
+      "instruct": "成年女性，普通话，声音干脆平稳，值班调度员在电台里说话，清楚利落，不要播音腔。",
+      "text": "清河里七号院，报了九夜。",
+      "seed": 120016,
+      "bindings": [
+        {
+          "chapter": "seventh-night",
+          "node": "dispatch"
+        }
+      ],
+      "requestSha256": "f48d50cfdcc36352a95d2fb6544d7d6a3fe1661fd74e6445871efea69012e6b0",
+      "duration": 2.0,
+      "generationSeconds": 11.586,
+      "loudnessInput": {
+        "input_i": "-24.63",
+        "input_tp": "-9.11",
+        "input_lra": "0.00",
+        "input_thresh": "-34.63",
+        "output_i": "-19.99",
+        "output_tp": "-4.47",
+        "output_lra": "0.00",
+        "output_thresh": "-29.99",
+        "normalization_type": "linear",
+        "target_offset": "-0.01"
+      },
+      "files": [
+        {
+          "path": "assets_source/audio/v1.2.0/q07-dispatch-raw.wav",
+          "bytes": 96044,
+          "sha256": "d19f0f274ff66dd0834645eced07934fd49fe8406a24ae72b677bba68eb7ff82"
+        },
+        {
+          "path": "assets_source/audio/v1.2.0/q07-dispatch.wav",
+          "bytes": 96078,
+          "sha256": "647892da2d23e642287e602b25a85cb1793f5fc0410d9f1ec46e7f0f6ff286f8"
+        },
+        {
+          "path": "public/audio/voice/q07-dispatch.mp3",
+          "bytes": 25101,
+          "sha256": "cba211c791b5359a0f388e9044fb4befe15c5227fe120b3255b7be6a543acc47"
+        }
+      ]
+    },
+    {
+      "id": "q07-shen",
+      "character": "shen",
+      "speaker": "Serena",
+      "instruct": "二十八岁女性，普通话，声音轻而疲惫，口语自然，像一晚上没睡好的人，不要哭腔。",
+      "text": "那年我爸回家了，后来还开了好多年车。",
+      "seed": 120017,
+      "bindings": [
+        {
+          "chapter": "seventh-night",
+          "node": "welcome"
+        }
+      ],
+      "requestSha256": "6c6f7ed68fad9aedc2dd862b8930dd1f05700d2a53b68359d398ff8ebd1e2785",
+      "duration": 3.28,
+      "generationSeconds": 17.321,
+      "loudnessInput": {
+        "input_i": "-25.41",
+        "input_tp": "-7.75",
+        "input_lra": "1.00",
+        "input_thresh": "-35.88",
+        "output_i": "-19.62",
+        "output_tp": "-2.30",
+        "output_lra": "0.00",
+        "output_thresh": "-30.09",
+        "normalization_type": "dynamic",
+        "target_offset": "-0.38"
+      },
+      "files": [
+        {
+          "path": "assets_source/audio/v1.2.0/q07-shen-raw.wav",
+          "bytes": 157484,
+          "sha256": "c323e0648a4cfb1a2751b9622bbe16d7b2408edb8f27cf5c59230fd5beb07d71"
+        },
+        {
+          "path": "assets_source/audio/v1.2.0/q07-shen.wav",
+          "bytes": 157518,
+          "sha256": "56efee6d460fe4d5e000730fb29d1856e30b8d3f4774c5b0014670a29b3c3079"
+        },
+        {
+          "path": "public/audio/voice/q07-shen.mp3",
+          "bytes": 40365,
+          "sha256": "92024a80b4a66c9b709c6fcb1cb90499d70a610eb46fdb2680122dde6e41bf07"
+        }
+      ]
+    },
+    {
+      "id": "q07-ji",
+      "character": "ji",
+      "speaker": "Vivian",
+      "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。",
+      "text": "沈师傅回家，许师傅没上车。这两行分开。",
+      "seed": 120018,
+      "bindings": [
+        {
+          "chapter": "seventh-night",
+          "node": "recordReceipt"
+        }
+      ],
+      "requestSha256": "1b30a1cb98ed2d791968df1bc67eb3fd768cd084e9eb4e79780cd1c47ca8a88f",
+      "duration": 4.24,
+      "generationSeconds": 23.107,
+      "loudnessInput": {
+        "input_i": "-18.99",
+        "input_tp": "-3.71",
+        "input_lra": "0.40",
+        "input_thresh": "-29.31",
+        "output_i": "-19.71",
+        "output_tp": "-4.34",
+        "output_lra": "0.40",
+        "output_thresh": "-30.05",
+        "normalization_type": "dynamic",
+        "target_offset": "-0.29"
+      },
+      "files": [
+        {
+          "path": "assets_source/audio/v1.2.0/q07-ji-raw.wav",
+          "bytes": 203564,
+          "sha256": "49c961815d33aa7828c920c6ed09a652cc00aba62bbd74709e6534fd03eae1dc"
+        },
+        {
+          "path": "assets_source/audio/v1.2.0/q07-ji.wav",
+          "bytes": 203598,
+          "sha256": "cd520bc25a6c465dd40702879d27d13d6a4b290bf338010c9e169b5e504f723e"
+        },
+        {
+          "path": "public/audio/voice/q07-ji.mp3",
+          "bytes": 51885,
+          "sha256": "743ee3b330de9bb07248669f7f6a991c0321e8541fe1286c3be3312c067d0239"
+        }
+      ]
+    },
+    {
+      "id": "q07-xu",
+      "character": "xu",
+      "speaker": "Dylan",
+      "instruct": "四十岁男性，普通话，声音比平常低一些，短句利落，是工地电台里平常的询问，不要朗诵。",
+      "text": "车还等吗？",
+      "seed": 120019,
+      "bindings": [
+        {
+          "chapter": "seventh-night",
+          "node": "fatherMessage"
+        }
+      ],
+      "requestSha256": "53c0685a1ac7c843b3a6e3019a9edff1f0e3e6e882a8497578dfad23c6d8846f",
+      "duration": 1.12,
+      "generationSeconds": 7.171,
+      "loudnessInput": {
+        "input_i": "-21.12",
+        "input_tp": "-5.35",
+        "input_lra": "0.00",
+        "input_thresh": "-31.12",
+        "output_i": "-19.98",
+        "output_tp": "-4.23",
+        "output_lra": "0.00",
+        "output_thresh": "-29.98",
+        "normalization_type": "linear",
+        "target_offset": "-0.02"
+      },
+      "files": [
+        {
+          "path": "assets_source/audio/v1.2.0/q07-xu-raw.wav",
+          "bytes": 53804,
+          "sha256": "b5c03892e099b509dc108e168763688e8518d5ac3885f0825b0c57214e796758"
+        },
+        {
+          "path": "assets_source/audio/v1.2.0/q07-xu.wav",
+          "bytes": 53838,
+          "sha256": "37bdf70dd5477f18142d78d323e1faf493f65c9e015a3a1e16927b79d9ad525e"
+        },
+        {
+          "path": "public/audio/voice/q07-xu.mp3",
+          "bytes": 14445,
+          "sha256": "3a05ccc10250ff83eb442057ed32cd68fea3a39b9689c06aabc45d9054f41fd8"
+        }
+      ]
+    },
+    {
+      "id": "r02-chen",
+      "character": "chen",
+      "speaker": "Uncle_Fu",
+      "instruct": "六十岁男性，普通话，语速慢，声音低哑，像看门的老人轻声说话，口语平实。",
+      "text": "晚上别这么响。",
+      "seed": 120020,
+      "bindings": [
+        {
+          "chapter": "backfeed",
+          "node": "gate"
+        }
+      ],
+      "requestSha256": "0eb30a8e28b6b28e9b73af82b838c5cd68242bb43915eced62324592cf1d5a60",
+      "duration": 1.52,
+      "generationSeconds": 8.17,
+      "loudnessInput": {
+        "input_i": "-22.61",
+        "input_tp": "-6.08",
+        "input_lra": "0.00",
+        "input_thresh": "-32.61",
+        "output_i": "-19.99",
+        "output_tp": "-3.47",
+        "output_lra": "0.00",
+        "output_thresh": "-29.99",
+        "normalization_type": "linear",
+        "target_offset": "-0.01"
+      },
+      "files": [
+        {
+          "path": "assets_source/audio/v1.2.0/r02-chen-raw.wav",
+          "bytes": 73004,
+          "sha256": "ed40dbb207f2eeb51220733992eca051a63841c46c9f249ca2fc290eec9361d4"
+        },
+        {
+          "path": "assets_source/audio/v1.2.0/r02-chen.wav",
+          "bytes": 73038,
+          "sha256": "e0259f1d274379c2c1a158db14c6df146eba24a2fa0f48b17f3032d819a5eaf4"
+        },
+        {
+          "path": "public/audio/voice/r02-chen.mp3",
+          "bytes": 19341,
+          "sha256": "16f9041ba8e56f4d9dd0be58a365030c3f14851f9f64d1147bfbe95291e281a2"
+        }
+      ]
+    },
+    {
+      "id": "r02-door",
+      "character": "chen",
+      "speaker": "Uncle_Fu",
+      "instruct": "六十岁男性，普通话，语速慢，声音低哑，像看门的老人轻声说话，口语平实。",
+      "text": "我母亲搬家都带旧门牌，说怕认错门。",
+      "seed": 120021,
+      "bindings": [
+        {
+          "chapter": "backfeed",
+          "node": "chen"
+        }
+      ],
+      "requestSha256": "88f2e6d34cf061245f1c37b2670f3eae337ce43e4a229953d6d7e2840bc6ef15",
+      "duration": 5.76,
+      "generationSeconds": 31.485,
+      "loudnessInput": {
+        "input_i": "-21.42",
+        "input_tp": "-5.87",
+        "input_lra": "1.10",
+        "input_thresh": "-32.07",
+        "output_i": "-19.84",
+        "output_tp": "-4.25",
+        "output_lra": "1.90",
+        "output_thresh": "-30.34",
+        "normalization_type": "dynamic",
+        "target_offset": "-0.16"
+      },
+      "files": [
+        {
+          "path": "assets_source/audio/v1.2.0/r02-door-raw.wav",
+          "bytes": 276524,
+          "sha256": "dabde77f314143945661412c26bc0a3f0f0d0298d0c5af1c5c86b2e2b9070bff"
+        },
+        {
+          "path": "assets_source/audio/v1.2.0/r02-door.wav",
+          "bytes": 276558,
+          "sha256": "4db617bc31d3185f28f59eb91be4531ffd92594540a58f452bf602a0155ca39e"
+        },
+        {
+          "path": "public/audio/voice/r02-door.mp3",
+          "bytes": 70029,
+          "sha256": "a7b92d7c134dffd03c146bf1924504b62f965533176d92324ee2423c11a5b9eb"
+        }
+      ]
+    },
+    {
+      "id": "r02-ji",
+      "character": "ji",
+      "speaker": "Vivian",
+      "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。",
+      "text": "外面零了，里面还有。",
+      "seed": 120022,
+      "bindings": [
+        {
+          "chapter": "backfeed",
+          "node": "relayTest"
+        }
+      ],
+      "requestSha256": "8704042f71fa6fad63a341b8930dcd3db46c165cd73ac5d5c3a7847fc6333879",
+      "duration": 2.4,
+      "generationSeconds": 14.202,
+      "loudnessInput": {
+        "input_i": "-18.10",
+        "input_tp": "-3.37",
+        "input_lra": "0.00",
+        "input_thresh": "-28.10",
+        "output_i": "-20.00",
+        "output_tp": "-5.27",
+        "output_lra": "0.00",
+        "output_thresh": "-30.00",
+        "normalization_type": "linear",
+        "target_offset": "-0.00"
+      },
+      "files": [
+        {
+          "path": "assets_source/audio/v1.2.0/r02-ji-raw.wav",
+          "bytes": 115244,
+          "sha256": "d65f84b93cb14186cfe7ee5215cee48cedbbc28771514ada5e8a5e99fd2a12cd"
+        },
+        {
+          "path": "assets_source/audio/v1.2.0/r02-ji.wav",
+          "bytes": 115278,
+          "sha256": "508cc2f3e9f6b5d923eadf9512406982735d3ae3f6041b650f6302b3c2b41510"
+        },
+        {
+          "path": "public/audio/voice/r02-ji.mp3",
+          "bytes": 29709,
+          "sha256": "d7158c4cb64df6e048d49df123c54b5a720840c1b0b97106edbe616d3c080b64"
+        }
+      ]
+    },
+    {
+      "id": "l03-mei",
+      "character": "mei",
+      "speaker": "Serena",
+      "instruct": "六十岁女性，普通话，声音偏低，平实缓慢，像老邻居小声嘱咐，句尾稍停，不要年轻撒娇。",
+      "text": "半夜钥匙碰栏杆，别往楼道里叫。",
+      "seed": 120023,
+      "bindings": [
+        {
+          "chapter": "everlight",
+          "node": "houseRules"
+        }
+      ],
+      "requestSha256": "481808b78f58b5f62e5996d0d5c90095c343ebfdbc920e1d58f1cec86a599da1",
+      "duration": 2.88,
+      "generationSeconds": 16.682,
+      "loudnessInput": {
+        "input_i": "-24.90",
+        "input_tp": "-7.85",
+        "input_lra": "0.00",
+        "input_thresh": "-35.08",
+        "output_i": "-20.00",
+        "output_tp": "-2.95",
+        "output_lra": "0.00",
+        "output_thresh": "-30.18",
+        "normalization_type": "linear",
+        "target_offset": "-0.00"
+      },
+      "files": [
+        {
+          "path": "assets_source/audio/v1.2.0/l03-mei-raw.wav",
+          "bytes": 138284,
+          "sha256": "ad2e2a5c5780d5dd409bcab0616f8f3a431b29dd6185cab7925d1ba3f40b17c5"
+        },
+        {
+          "path": "assets_source/audio/v1.2.0/l03-mei.wav",
+          "bytes": 138318,
+          "sha256": "ff94b4cacc6ce53aa5d97d27d5ed0107b46ef721edb4120b24e410118142580c"
+        },
+        {
+          "path": "public/audio/voice/l03-mei.mp3",
+          "bytes": 35469,
+          "sha256": "898e9221c20a20c7b546314fdba7ced1d435a3408bb7c4a1e6e53f03d5a00e3c"
+        }
+      ]
+    },
+    {
+      "id": "l03-keys",
+      "character": "mei",
+      "speaker": "Serena",
+      "instruct": "六十岁女性，普通话，声音偏低，平实缓慢，像老邻居小声嘱咐，句尾稍停，不要年轻撒娇。",
+      "text": "轻两下，最后重一下。他钥匙串就那样碰。",
+      "seed": 120024,
+      "bindings": [
+        {
+          "chapter": "everlight",
+          "node": "promise"
+        }
+      ],
+      "requestSha256": "343d14fdea790cb085c5f0b158af4c12753f69181b7057d59ff2424ea7dd82ff",
+      "duration": 6.24,
+      "generationSeconds": 34.607,
+      "loudnessInput": {
+        "input_i": "-25.45",
+        "input_tp": "-7.21",
+        "input_lra": "3.20",
+        "input_thresh": "-36.59",
+        "output_i": "-18.56",
+        "output_tp": "-2.00",
+        "output_lra": "5.70",
+        "output_thresh": "-29.92",
+        "normalization_type": "dynamic",
+        "target_offset": "-1.44"
+      },
+      "files": [
+        {
+          "path": "assets_source/audio/v1.2.0/l03-keys-raw.wav",
+          "bytes": 299564,
+          "sha256": "604e24501cce277969522305f9ef628e1900526d3fcc3c6674f7a8e500fe1d26"
+        },
+        {
+          "path": "assets_source/audio/v1.2.0/l03-keys.wav",
+          "bytes": 299598,
+          "sha256": "18b4463b792adebfaada43465cc5d148d14b2686206197094bc593e8ab9e79fa"
+        },
+        {
+          "path": "public/audio/voice/l03-keys.mp3",
+          "bytes": 75789,
+          "sha256": "332cbccb81d64a5f88334e0ed886088340a74acc437de96b72053e8cddf20dee"
+        }
+      ]
+    },
+    {
+      "id": "l03-ji",
+      "character": "ji",
+      "speaker": "Vivian",
+      "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 说清整句疑问，语速稍慢。钥匙读yào shi，响读xiǎng。句尾问完再停。",
+      "text": "师傅，刚才你下楼的时候，钥匙响没响？",
+      "seed": 220025,
+      "bindings": [
+        {
+          "chapter": "everlight",
+          "node": "dawn"
+        }
+      ],
+      "requestSha256": "fccde0367e289f8611975c254072a8b7e920386b055f1c445fe0e180f64ffafc",
+      "duration": 3.84,
+      "generationSeconds": 19.544,
+      "loudnessInput": {
+        "input_i": "-22.95",
+        "input_tp": "-6.22",
+        "input_lra": "1.00",
+        "input_thresh": "-33.15",
+        "output_i": "-19.84",
+        "output_tp": "-3.52",
+        "output_lra": "0.00",
+        "output_thresh": "-30.09",
+        "normalization_type": "dynamic",
+        "target_offset": "-0.16"
+      },
+      "files": [
+        {
+          "path": "assets_source/audio/v1.2.0/l03-ji-raw.wav",
+          "bytes": 184364,
+          "sha256": "044a12a3a274cc4b1663a38a93885737eeb9700497e5b06d3bd62c12580ae11e"
+        },
+        {
+          "path": "assets_source/audio/v1.2.0/l03-ji.wav",
+          "bytes": 184398,
+          "sha256": "bbc0fa181429991de6d2cc7f5cc00fa002d3bb360cf997e6cb2d1fa3071adaaf"
+        },
+        {
+          "path": "public/audio/voice/l03-ji.mp3",
+          "bytes": 46989,
+          "sha256": "179cc40b21514b485bb669bd8591f2093337f10981746149227b1aac5c0d7923"
+        }
+      ]
+    },
+    {
+      "id": "n04-zhou",
+      "character": "zhou",
+      "speaker": "Uncle_Fu",
+      "instruct": "五十岁男性，普通话，声音低沉略沙哑，克制缓慢，像夜班老工人，语气自然，不要表演悲伤。",
+      "text": "没查齐旁路，也没等到交班，我就写了完成。",
+      "seed": 120026,
+      "bindings": [
+        {
+          "chapter": "neutral",
+          "node": "witness"
+        }
+      ],
+      "requestSha256": "e187ccb12ef9a33931f395aa0f67c28847b9eb5c263f64b7b1de3c2a7f4420a9",
+      "duration": 4.8,
+      "generationSeconds": 28.701,
+      "loudnessInput": {
+        "input_i": "-22.61",
+        "input_tp": "-5.77",
+        "input_lra": "1.70",
+        "input_thresh": "-32.86",
+        "output_i": "-18.93",
+        "output_tp": "-2.00",
+        "output_lra": "0.20",
+        "output_thresh": "-29.33",
+        "normalization_type": "dynamic",
+        "target_offset": "-1.07"
+      },
+      "files": [
+        {
+          "path": "assets_source/audio/v1.2.0/n04-zhou-raw.wav",
+          "bytes": 230444,
+          "sha256": "027da433601f4082f91d059e3e60afe0189ad02aa52e36677e237430fe24d7cc"
+        },
+        {
+          "path": "assets_source/audio/v1.2.0/n04-zhou.wav",
+          "bytes": 230478,
+          "sha256": "9bd0b3ffed062c9c73ff91671b2f290844099766b2fa21b1f03753bc5f5b4a9b"
+        },
+        {
+          "path": "public/audio/voice/n04-zhou.mp3",
+          "bytes": 58509,
+          "sha256": "b4f467cd767e39b84aa0abf842e8c032841b5455cfe66bf4028a54068f4272f4"
+        }
+      ]
+    },
+    {
+      "id": "n04-shen",
+      "character": "shen",
+      "speaker": "Serena",
+      "instruct": "二十八岁女性，普通话，声音轻而疲惫，口语自然，像一晚上没睡好的人，不要哭腔。",
+      "text": "你把原话留着，后面他们还会问。",
+      "seed": 120027,
+      "bindings": [
+        {
+          "chapter": "neutral",
+          "node": "debt"
+        }
+      ],
+      "requestSha256": "7b7bf690ddc757522a08e005ce99cec57aa29ff74fcd1121d3902fb409dba9d5",
+      "duration": 2.4,
+      "generationSeconds": 13.888,
+      "loudnessInput": {
+        "input_i": "-25.01",
+        "input_tp": "-10.42",
+        "input_lra": "0.00",
+        "input_thresh": "-35.21",
+        "output_i": "-20.00",
+        "output_tp": "-5.41",
+        "output_lra": "0.00",
+        "output_thresh": "-30.20",
+        "normalization_type": "linear",
+        "target_offset": "-0.00"
+      },
+      "files": [
+        {
+          "path": "assets_source/audio/v1.2.0/n04-shen-raw.wav",
+          "bytes": 115244,
+          "sha256": "d73cb3fb96825cc487f2f424140172b7826c285e333240ecc9a11ac8080b1197"
+        },
+        {
+          "path": "assets_source/audio/v1.2.0/n04-shen.wav",
+          "bytes": 115278,
+          "sha256": "00c20bc8993afd127d97671fe89fc36c635903338b5854395c92aa36fe87618a"
+        },
+        {
+          "path": "public/audio/voice/n04-shen.mp3",
+          "bytes": 29709,
+          "sha256": "30254c941153e285b7c5bbe8aa934bcc547250961bd8680457b1419236c659d8"
+        }
+      ]
+    },
+    {
+      "id": "c00-ji",
+      "character": "ji",
+      "speaker": "Vivian",
+      "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。",
+      "text": "也不能照这圈顺序说哪件事先发生。",
+      "seed": 120028,
+      "bindings": [
+        {
+          "chapter": "closure",
+          "node": "mapRecord"
+        }
+      ],
+      "requestSha256": "0b1b2b51b4240b10df933bc7c91760bbd4b056b6044be0814f27cc5b69a2fb49",
+      "duration": 3.36,
+      "generationSeconds": 17.831,
+      "loudnessInput": {
+        "input_i": "-16.51",
+        "input_tp": "-2.70",
+        "input_lra": "0.40",
+        "input_thresh": "-26.51",
+        "output_i": "-19.89",
+        "output_tp": "-6.09",
+        "output_lra": "0.00",
+        "output_thresh": "-29.89",
+        "normalization_type": "dynamic",
+        "target_offset": "-0.11"
+      },
+      "files": [
+        {
+          "path": "assets_source/audio/v1.2.0/c00-ji-raw.wav",
+          "bytes": 161324,
+          "sha256": "7d6164a4ed5dde994864de39465b41fa1ee2e7a456949d775eae95fac378811e"
+        },
+        {
+          "path": "assets_source/audio/v1.2.0/c00-ji.wav",
+          "bytes": 161358,
+          "sha256": "ab7e4290e699a88c9cac08f1ebcb087e59ba1ad98cb81422f0332ad3f8e0829e"
+        },
+        {
+          "path": "public/audio/voice/c00-ji.mp3",
+          "bytes": 41229,
+          "sha256": "0d9142944ef95bafe063a3136c89c2857823c1301f3310e493ed6b37182ed0a5"
+        }
+      ]
+    },
+    {
+      "id": "c00-cheng",
+      "character": "cheng",
+      "speaker": "Dylan",
+      "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。",
+      "text": "按页来。",
+      "seed": 120029,
+      "bindings": [
+        {
+          "chapter": "closure",
+          "node": "summon"
+        }
+      ],
+      "requestSha256": "12af291b043db81eeec8ff75f2ced94ce4865fd1e96cca19793181022d794ffe",
+      "duration": 0.8,
+      "generationSeconds": 4.77,
+      "loudnessInput": {
+        "input_i": "-21.89",
+        "input_tp": "-6.37",
+        "input_lra": "0.00",
+        "input_thresh": "-31.89",
+        "output_i": "-19.99",
+        "output_tp": "-4.48",
+        "output_lra": "0.00",
+        "output_thresh": "-29.99",
+        "normalization_type": "linear",
+        "target_offset": "-0.01"
+      },
+      "files": [
+        {
+          "path": "assets_source/audio/v1.2.0/c00-cheng-raw.wav",
+          "bytes": 38444,
+          "sha256": "9e7dff59f2df3b07c82b4fc3b20b12695913004208661a860b4236b3f1feedae"
+        },
+        {
+          "path": "assets_source/audio/v1.2.0/c00-cheng.wav",
+          "bytes": 38478,
+          "sha256": "dc9366ef08f5925d96b67a75454163223e7966cc3ee48af9f65c6745298a2f7e"
+        },
+        {
+          "path": "public/audio/voice/c00-cheng.mp3",
+          "bytes": 10701,
+          "sha256": "9a919dd8062ed783612383dbbcdcdaf88c0282357f1399e8e508cdcc5205bee0"
+        }
+      ]
+    },
+    {
+      "id": "c00-mei",
+      "character": "mei",
+      "speaker": "Serena",
+      "instruct": "六十岁女性，普通话，声音偏低，平实缓慢，像老邻居小声嘱咐，句尾稍停，不要年轻撒娇。",
+      "text": "灯没再亮，后门也没再响。",
+      "seed": 120030,
+      "bindings": [
+        {
+          "chapter": "closure",
+          "node": "mei"
+        }
+      ],
+      "requestSha256": "1c76b0a714675a8834c5f70c6ad07009592af1ad94f9f2f2ec5947faaa9ae976",
+      "duration": 3.04,
+      "generationSeconds": 15.661,
+      "loudnessInput": {
+        "input_i": "-27.04",
+        "input_tp": "-9.32",
+        "input_lra": "0.10",
+        "input_thresh": "-37.19",
+        "output_i": "-19.55",
+        "output_tp": "-2.00",
+        "output_lra": "0.00",
+        "output_thresh": "-29.70",
+        "normalization_type": "dynamic",
+        "target_offset": "-0.45"
+      },
+      "files": [
+        {
+          "path": "assets_source/audio/v1.2.0/c00-mei-raw.wav",
+          "bytes": 145964,
+          "sha256": "bc9fa7195c44a4bfe3696e694100f676c74778127a327fb244581beaba11be33"
+        },
+        {
+          "path": "assets_source/audio/v1.2.0/c00-mei.wav",
+          "bytes": 145998,
+          "sha256": "6f45f131004164ed7698a5cf3ceafb0e337dfebeaf88498730f10b31d4ce3195"
+        },
+        {
+          "path": "public/audio/voice/c00-mei.mp3",
+          "bytes": 37485,
+          "sha256": "3cd09cad3a9b3d6da681eb8ff06e48e4046e599283a48b1b81c67fb3ba099999"
+        }
+      ]
+    },
+    {
+      "id": "v01-lin",
+      "character": "lin",
+      "speaker": "Serena",
+      "instruct": "成年女性，普通话，声音干脆平稳，值班调度员在电台里说话，清楚利落，不要播音腔。",
+      "text": "物业说他们听见你了。",
+      "seed": 120031,
+      "bindings": [
+        {
+          "chapter": "return-visit",
+          "node": "dispatch"
+        }
+      ],
+      "requestSha256": "69b6bccdf1489916168e671fc6dc3b45f51b85fc1792e7f30ae616eb73653448",
+      "duration": 1.68,
+      "generationSeconds": 9.328,
+      "loudnessInput": {
+        "input_i": "-25.41",
+        "input_tp": "-10.14",
+        "input_lra": "0.00",
+        "input_thresh": "-35.41",
+        "output_i": "-19.99",
+        "output_tp": "-4.74",
+        "output_lra": "0.00",
+        "output_thresh": "-29.99",
+        "normalization_type": "linear",
+        "target_offset": "-0.01"
+      },
+      "files": [
+        {
+          "path": "assets_source/audio/v1.2.0/v01-lin-raw.wav",
+          "bytes": 80684,
+          "sha256": "9def026c65e87b175193c83c168df711d75fa0cb8d3c6e4f41ffafb4f23c11b7"
+        },
+        {
+          "path": "assets_source/audio/v1.2.0/v01-lin.wav",
+          "bytes": 80718,
+          "sha256": "9b68336a365182485d57a634af06b32c27efc44785d6f8e18592969922fc0679"
+        },
+        {
+          "path": "public/audio/voice/v01-lin.mp3",
+          "bytes": 21069,
+          "sha256": "428e8037942411d263d5f9e4aa760b9a32a91780103468f42e3fce970324f4d1"
+        }
+      ]
+    },
+    {
+      "id": "v01-ji-address",
+      "character": "ji",
+      "speaker": "Vivian",
+      "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。",
+      "text": "十三号搬来以后还是十三号？",
+      "seed": 120032,
+      "bindings": [
+        {
+          "chapter": "return-visit",
+          "node": "drive"
+        }
+      ],
+      "requestSha256": "fa509bd899156f2baeadadc23f96765aca1103fcb8462ae97dcb44823d1f3fea",
+      "duration": 2.8,
+      "generationSeconds": 15.729,
+      "loudnessInput": {
+        "input_i": "-17.47",
+        "input_tp": "-2.24",
+        "input_lra": "0.00",
+        "input_thresh": "-27.47",
+        "output_i": "-19.99",
+        "output_tp": "-4.77",
+        "output_lra": "0.00",
+        "output_thresh": "-29.99",
+        "normalization_type": "linear",
+        "target_offset": "-0.01"
+      },
+      "files": [
+        {
+          "path": "assets_source/audio/v1.2.0/v01-ji-address-raw.wav",
+          "bytes": 134444,
+          "sha256": "ef52358ace25e41fbb346c36aff492b09cfa9b0e1b5ad375e554b8b768995e28"
+        },
+        {
+          "path": "assets_source/audio/v1.2.0/v01-ji-address.wav",
+          "bytes": 134478,
+          "sha256": "dc2a213aec2073062f3be8dc2088b30bacee7fc4bb8560a277b855beadbbb9fb"
+        },
+        {
+          "path": "public/audio/voice/v01-ji-address.mp3",
+          "bytes": 34605,
+          "sha256": "bcc67305f281a4b3b2bfd5e924600a3dd9e429c3bc734d63d8a21745ed3510e2"
+        }
+      ]
+    },
+    {
+      "id": "v01-arrived",
+      "character": "cheng",
+      "speaker": "Dylan",
+      "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。 普通话，语速稍慢，清晰念出完整到场通知。程砚读chéng yàn。",
+      "text": "程砚，已经到场。",
+      "seed": 220033,
+      "bindings": [
+        {
+          "chapter": "return-visit",
+          "node": "arrival"
+        },
+        {
+          "chapter": "return-visit",
+          "node": "echo"
+        }
+      ],
+      "requestSha256": "5a3b31d2563c2b0fdcb4d6153982486201e4b00267f9822a085ca53e3788aa52",
+      "duration": 1.76,
+      "generationSeconds": 9.322,
+      "loudnessInput": {
+        "input_i": "-25.54",
+        "input_tp": "-6.38",
+        "input_lra": "0.00",
+        "input_thresh": "-35.84",
+        "output_i": "-21.16",
+        "output_tp": "-2.00",
+        "output_lra": "0.00",
+        "output_thresh": "-31.45",
+        "normalization_type": "linear",
+        "target_offset": "1.16"
+      },
+      "files": [
+        {
+          "path": "assets_source/audio/v1.2.0/v01-arrived-raw.wav",
+          "bytes": 84524,
+          "sha256": "030c614aedc9947a7bfdf1e1464838905e67ae499fbd7f4b511ef378a1f85d1c"
+        },
+        {
+          "path": "assets_source/audio/v1.2.0/v01-arrived.wav",
+          "bytes": 84558,
+          "sha256": "38b2f5f1045d740675e839d1f62a11238f1133c1b7a2f009917d7177af80f37b"
+        },
+        {
+          "path": "public/audio/voice/v01-arrived.mp3",
+          "bytes": 22221,
+          "sha256": "ea629889fc040564453b1cc92bf9cf4b7318554bfea99c0aedc8581d39f76083"
+        }
+      ]
+    },
+    {
+      "id": "v01-luo",
+      "character": "luo",
+      "speaker": "Vivian",
+      "instruct": "二十九岁女性，普通话，声音偏低，夜班值班员谨慎地问话，平静自然，略有迟疑，不要朗诵。",
+      "text": "我也觉得不对。前两次都说到场，门口一个人没有。",
+      "seed": 120034,
+      "bindings": [
+        {
+          "chapter": "return-visit",
+          "node": "luo"
+        }
+      ],
+      "requestSha256": "47d0aead8fb6e79fb59c229cc95b97bf848d2b58038831552bd8e3cb5ce893e0",
+      "duration": 7.52,
+      "generationSeconds": 40.632,
+      "loudnessInput": {
+        "input_i": "-20.83",
+        "input_tp": "-7.07",
+        "input_lra": "1.50",
+        "input_thresh": "-31.70",
+        "output_i": "-19.43",
+        "output_tp": "-4.10",
+        "output_lra": "2.20",
+        "output_thresh": "-30.38",
+        "normalization_type": "dynamic",
+        "target_offset": "-0.57"
+      },
+      "files": [
+        {
+          "path": "assets_source/audio/v1.2.0/v01-luo-raw.wav",
+          "bytes": 361004,
+          "sha256": "21a2761b37eb31d78616535a29bc36f268f69e1eecf38e5f49d74f662c68a4c9"
+        },
+        {
+          "path": "assets_source/audio/v1.2.0/v01-luo.wav",
+          "bytes": 361038,
+          "sha256": "5b3eb509754dd4b7a1f7554e996f81b18d2f7d0311181c220367d4ba4af6c060"
+        },
+        {
+          "path": "public/audio/voice/v01-luo.mp3",
+          "bytes": 91341,
+          "sha256": "0a49571c4533c70c8b93f1dd327a01959d6f4767929300afe789ce5b33e100c8"
+        }
+      ]
+    },
+    {
+      "id": "v01-redpaper",
+      "character": "luo",
+      "speaker": "Vivian",
+      "instruct": "二十九岁女性，普通话，声音偏低，夜班值班员谨慎地问话，平静自然，略有迟疑，不要朗诵。 普通话，语速稍慢，完整说完三句话，贴和揭都读清楚。",
+      "text": "朝里贴，说让跟着搬家的认得门。白天就揭，物业总忘。",
+      "seed": 220035,
+      "bindings": [
+        {
+          "chapter": "return-visit",
+          "node": "doorRule"
+        }
+      ],
+      "requestSha256": "064f0eb97afedd8c6ec225cd0351ddd967e4778d4c63c3b8835667a34c1161d5",
+      "duration": 8.16,
+      "generationSeconds": 44.201,
+      "loudnessInput": {
+        "input_i": "-19.80",
+        "input_tp": "-3.83",
+        "input_lra": "2.10",
+        "input_thresh": "-30.12",
+        "output_i": "-19.62",
+        "output_tp": "-3.87",
+        "output_lra": "0.60",
+        "output_thresh": "-29.94",
+        "normalization_type": "dynamic",
+        "target_offset": "-0.38"
+      },
+      "files": [
+        {
+          "path": "assets_source/audio/v1.2.0/v01-redpaper-raw.wav",
+          "bytes": 391724,
+          "sha256": "fdfdbccc98fdba3712e9eff35567abb0eadce067bf461aca4ab607a53ba2d0af"
+        },
+        {
+          "path": "assets_source/audio/v1.2.0/v01-redpaper.wav",
+          "bytes": 391758,
+          "sha256": "3bd8f6e058ed56c4ca0ef9d97d6ed6af4295324b80c7908e1c5d74666d95fd41"
+        },
+        {
+          "path": "public/audio/voice/v01-redpaper.mp3",
+          "bytes": 98829,
+          "sha256": "bb7aa5b24bb4638ba1f592ee235346e5bdfb463a783a6acdb08b36acb57d0403"
+        }
+      ]
+    },
+    {
+      "id": "v01-wait",
+      "character": "ji",
+      "speaker": "Vivian",
+      "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 语速稍慢，字句清楚地嘱咐。答到读dá dào，不要吞掉句尾。",
+      "text": "先别替它答到。",
+      "seed": 220036,
+      "bindings": [
+        {
+          "chapter": "return-visit",
+          "node": "firstHub"
+        }
+      ],
+      "requestSha256": "b345391e0323c57b065033eb33bac9635cffe38a60bc87ecd7816fe6d60bde22",
+      "duration": 1.76,
+      "generationSeconds": 10.98,
+      "loudnessInput": {
+        "input_i": "-19.04",
+        "input_tp": "-6.42",
+        "input_lra": "0.00",
+        "input_thresh": "-29.04",
+        "output_i": "-19.98",
+        "output_tp": "-7.38",
+        "output_lra": "0.00",
+        "output_thresh": "-29.98",
+        "normalization_type": "linear",
+        "target_offset": "-0.02"
+      },
+      "files": [
+        {
+          "path": "assets_source/audio/v1.2.0/v01-wait-raw.wav",
+          "bytes": 84524,
+          "sha256": "1ecd735124ad26ad515c21e92d8ded0fec5deaf43a80699949c83b07f8891e6a"
+        },
+        {
+          "path": "assets_source/audio/v1.2.0/v01-wait.wav",
+          "bytes": 84558,
+          "sha256": "a7086007af4f4ecc0ba9596fe170730870b523175e49144d72b1653333c36cf6"
+        },
+        {
+          "path": "public/audio/voice/v01-wait.mp3",
+          "bytes": 22221,
+          "sha256": "c1abd1dcbfbc3907e11d4211794844bec09d425f0d6b61e95c02328df1cb0dc3"
+        }
+      ]
+    },
+    {
+      "id": "v01-received",
+      "character": "ji",
+      "speaker": "Vivian",
+      "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 普通话，语速稍慢，明确说出完整姓名。季宁读jì níng，收到读shōu dào。",
+      "text": "季宁，收到。",
+      "seed": 220037,
+      "bindings": [
+        {
+          "chapter": "return-visit",
+          "node": "echo"
+        }
+      ],
+      "requestSha256": "f68417423e1d97658a9507204eca1768a6df5fb990066ebb8084f8d12b395812",
+      "duration": 2.16,
+      "generationSeconds": 12.163,
+      "loudnessInput": {
+        "input_i": "-18.36",
+        "input_tp": "-4.41",
+        "input_lra": "0.00",
+        "input_thresh": "-28.87",
+        "output_i": "-20.02",
+        "output_tp": "-6.06",
+        "output_lra": "0.00",
+        "output_thresh": "-30.53",
+        "normalization_type": "linear",
+        "target_offset": "0.02"
+      },
+      "files": [
+        {
+          "path": "assets_source/audio/v1.2.0/v01-received-raw.wav",
+          "bytes": 103724,
+          "sha256": "653ea8312d15e545db5716de6b001dad1d887f782507b84fc25d042259295d9d"
+        },
+        {
+          "path": "assets_source/audio/v1.2.0/v01-received.wav",
+          "bytes": 103758,
+          "sha256": "5ed9ab870894ef39ca7cce1ebe21179456fa0b4d9319c1d4aa96cfd3d7a5ddc7"
+        },
+        {
+          "path": "public/audio/voice/v01-received.mp3",
+          "bytes": 26829,
+          "sha256": "70e351fe025376d9e60753a2bdc765334063c4a2f6a3051ad9d42152e88d56ea"
+        }
+      ]
+    },
+    {
+      "id": "v01-receipt",
+      "character": "luo",
+      "speaker": "Vivian",
+      "instruct": "二十九岁女性，普通话，声音偏低，夜班值班员谨慎地问话，平静自然，略有迟疑，不要朗诵。",
+      "text": "语音说收到了，我就往后翻。",
+      "seed": 120038,
+      "bindings": [
+        {
+          "chapter": "return-visit",
+          "node": "receipt"
+        }
+      ],
+      "requestSha256": "fc6cdad6a912f4affc821b8d9873a0eea404ec8899e9ae256b6fb20710eb9db6",
+      "duration": 2.96,
+      "generationSeconds": 15.48,
+      "loudnessInput": {
+        "input_i": "-16.10",
+        "input_tp": "-2.56",
+        "input_lra": "0.00",
+        "input_thresh": "-27.15",
+        "output_i": "-20.00",
+        "output_tp": "-6.46",
+        "output_lra": "0.00",
+        "output_thresh": "-31.05",
+        "normalization_type": "linear",
+        "target_offset": "-0.00"
+      },
+      "files": [
+        {
+          "path": "assets_source/audio/v1.2.0/v01-receipt-raw.wav",
+          "bytes": 142124,
+          "sha256": "ecc7a032e36461b96e11b1dac021645cdc1adc3bbaa1b2e2118ffa85085bed25"
+        },
+        {
+          "path": "assets_source/audio/v1.2.0/v01-receipt.wav",
+          "bytes": 142158,
+          "sha256": "c0b02315bd9449a2dc18310684c5beff27c8a39d26f73df51549094426cc1068"
+        },
+        {
+          "path": "public/audio/voice/v01-receipt.mp3",
+          "bytes": 36621,
+          "sha256": "ce67907a103bef270b8d9262a6036ff3651ad3e27bbe0ef0d93e2ea8ae53eded"
+        }
+      ]
+    },
+    {
+      "id": "v01-record",
+      "character": "ji",
+      "speaker": "Vivian",
+      "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。",
+      "text": "季宁，现场记录已交。",
+      "seed": 120039,
+      "bindings": [
+        {
+          "chapter": "return-visit",
+          "node": "approved"
+        }
+      ],
+      "requestSha256": "cbb3039f1ad3364f11de904aa965285f287470a997bd2001c826515cb0de7522",
+      "duration": 2.48,
+      "generationSeconds": 13.85,
+      "loudnessInput": {
+        "input_i": "-19.41",
+        "input_tp": "-2.17",
+        "input_lra": "0.00",
+        "input_thresh": "-29.61",
+        "output_i": "-20.01",
+        "output_tp": "-2.76",
+        "output_lra": "0.00",
+        "output_thresh": "-30.21",
+        "normalization_type": "linear",
+        "target_offset": "0.01"
+      },
+      "files": [
+        {
+          "path": "assets_source/audio/v1.2.0/v01-record-raw.wav",
+          "bytes": 119084,
+          "sha256": "21f850279cd7f3ed28b25054f45298bec2dadbbd770b4f1c9ca0ba8fcd6866b3"
+        },
+        {
+          "path": "assets_source/audio/v1.2.0/v01-record.wav",
+          "bytes": 119118,
+          "sha256": "4fb3e42a1e2dd58f19919d031ce6a306b93dbef7b7c7d5f43c834d6b214d7d0c"
+        },
+        {
+          "path": "public/audio/voice/v01-record.mp3",
+          "bytes": 30861,
+          "sha256": "8a84eeb8a0c258c5c2efda850520352f6e96ab962f736793033931bb3cb0b000"
+        }
+      ]
+    },
+    {
+      "id": "v01-question",
+      "character": "luo",
+      "speaker": "Vivian",
+      "instruct": "二十九岁女性，普通话，声音偏低，夜班值班员谨慎地问话，平静自然，略有迟疑，不要朗诵。 语速稍慢，完整说清问句，句尾应我两个字读yìng wǒ，不要省字。",
+      "text": "到底谁在后面应我？",
+      "seed": 220040,
+      "bindings": [
+        {
+          "chapter": "return-visit",
+          "node": "quiet"
+        }
+      ],
+      "requestSha256": "5d9bba947313c4bd81715dc13cb7def645472b2b4f8a54fce690def5cb9604c2",
+      "duration": 1.52,
+      "generationSeconds": 8.863,
+      "loudnessInput": {
+        "input_i": "-21.77",
+        "input_tp": "-9.39",
+        "input_lra": "0.00",
+        "input_thresh": "-31.77",
+        "output_i": "-20.02",
+        "output_tp": "-7.62",
+        "output_lra": "0.00",
+        "output_thresh": "-30.02",
+        "normalization_type": "linear",
+        "target_offset": "0.02"
+      },
+      "files": [
+        {
+          "path": "assets_source/audio/v1.2.0/v01-question-raw.wav",
+          "bytes": 73004,
+          "sha256": "43074e9daeeed06b3432379ba87ec06d5c1cc1320bf0d8a2790d4ad1411fa9a6"
+        },
+        {
+          "path": "assets_source/audio/v1.2.0/v01-question.wav",
+          "bytes": 73038,
+          "sha256": "02234efedb51a6f3af7a632aafb6e91771e52aa8a376fd7673d76be1d8519e2a"
+        },
+        {
+          "path": "public/audio/voice/v01-question.mp3",
+          "bytes": 19341,
+          "sha256": "db4b49f5b2f2a253d7e1f7f0469f7dc9894c064878539c47de921555cece40aa"
+        }
+      ]
+    },
+    {
+      "id": "v01-confirm",
+      "character": "cheng",
+      "speaker": "Dylan",
+      "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。",
+      "text": "先别替它确认。",
+      "seed": 120041,
+      "bindings": [
+        {
+          "chapter": "return-visit",
+          "node": "onward"
+        },
+        {
+          "chapter": "return-visit",
+          "node": "end"
+        }
+      ],
+      "requestSha256": "cbbf1dbbdb203f4d06472c1a09066343071e08b1d693d9808cdf2124423b61c5",
+      "duration": 1.28,
+      "generationSeconds": 7.141,
+      "loudnessInput": {
+        "input_i": "-24.65",
+        "input_tp": "-8.42",
+        "input_lra": "0.00",
+        "input_thresh": "-34.65",
+        "output_i": "-19.99",
+        "output_tp": "-3.77",
+        "output_lra": "0.00",
+        "output_thresh": "-29.99",
+        "normalization_type": "linear",
+        "target_offset": "-0.01"
+      },
+      "files": [
+        {
+          "path": "assets_source/audio/v1.2.0/v01-confirm-raw.wav",
+          "bytes": 61484,
+          "sha256": "2519a8035fa7024df3c48c63605da803bd9f892f45237710894dce85a3aaf7f9"
+        },
+        {
+          "path": "assets_source/audio/v1.2.0/v01-confirm.wav",
+          "bytes": 61518,
+          "sha256": "ad5f85cc865c670df68eaf175270d3cc4a61513b241f3046d0dfef62c100fdfd"
+        },
+        {
+          "path": "public/audio/voice/v01-confirm.mp3",
+          "bytes": 16461,
+          "sha256": "32e4a93ffbdecc05c00cf73a6d6bd0ade906d4ae89b6438e3bba3f0ba0572b76"
+        }
+      ]
+    }
+  ]
+}

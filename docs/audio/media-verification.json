@@ -1,0 +1,275 @@
+{
+  "schemaVersion": 1,
+  "version": "1.2.0",
+  "status": "passed",
+  "voiceCount": 32,
+  "sfxCount": 11,
+  "decodedFiles": 142,
+  "currentFiles": 118,
+  "archivedFiles": 24,
+  "voiceSeconds": 107.6,
+  "voiceGenerationSeconds": 592.591,
+  "shippingFiles": [
+    {
+      "id": "h13-dispatch",
+      "path": "public/audio/voice/h13-dispatch.mp3",
+      "duration": 4.464,
+      "sha256": "a81b39dd10f448adba3818df60445b72d138aee5601dbca7850f698a3580e069"
+    },
+    {
+      "id": "h13-call",
+      "path": "public/audio/voice/h13-call.mp3",
+      "duration": 3.504,
+      "sha256": "c931c099cd860cf1920bf0d6ff2e16b7fa67fd9a092f2aef2e8b267f4943b34a"
+    },
+    {
+      "id": "h13-kit",
+      "path": "public/audio/voice/h13-kit.mp3",
+      "duration": 3.168,
+      "sha256": "7903f2ef27c89f0591193bf9ea513a7c5d427371ca7a0414db4a40c3ff0601a1"
+    },
+    {
+      "id": "h13-zhou",
+      "path": "public/audio/voice/h13-zhou.mp3",
+      "duration": 4.776,
+      "sha256": "43961e3875d03e261a8264b55aa708eca2c1be14d7010fff8bb9d1e571705623"
+    },
+    {
+      "id": "h13-mei",
+      "path": "public/audio/voice/h13-mei.mp3",
+      "duration": 2.688,
+      "sha256": "53eab11265e07c5d1dd1b01a3e651c6fcc4d6f6354db673567ebec247e8f418f"
+    },
+    {
+      "id": "h13-ticket",
+      "path": "public/audio/voice/h13-ticket.mp3",
+      "duration": 7.584,
+      "sha256": "8b88a16d7ab20396fba68bdd2871948e934ac5b66289328762145df4f387a7b6"
+    },
+    {
+      "id": "q07-dispatch",
+      "path": "public/audio/voice/q07-dispatch.mp3",
+      "duration": 2.064,
+      "sha256": "cba211c791b5359a0f388e9044fb4befe15c5227fe120b3255b7be6a543acc47"
+    },
+    {
+      "id": "q07-shen",
+      "path": "public/audio/voice/q07-shen.mp3",
+      "duration": 3.336,
+      "sha256": "92024a80b4a66c9b709c6fcb1cb90499d70a610eb46fdb2680122dde6e41bf07"
+    },
+    {
+      "id": "q07-ji",
+      "path": "public/audio/voice/q07-ji.mp3",
+      "duration": 4.296,
+      "sha256": "743ee3b330de9bb07248669f7f6a991c0321e8541fe1286c3be3312c067d0239"
+    },
+    {
+      "id": "q07-xu",
+      "path": "public/audio/voice/q07-xu.mp3",
+      "duration": 1.176,
+      "sha256": "3a05ccc10250ff83eb442057ed32cd68fea3a39b9689c06aabc45d9054f41fd8"
+    },
+    {
+      "id": "r02-chen",
+      "path": "public/audio/voice/r02-chen.mp3",
+      "duration": 1.584,
+      "sha256": "16f9041ba8e56f4d9dd0be58a365030c3f14851f9f64d1147bfbe95291e281a2"
+    },
+    {
+      "id": "r02-door",
+      "path": "public/audio/voice/r02-door.mp3",
+      "duration": 5.808,
+      "sha256": "a7b92d7c134dffd03c146bf1924504b62f965533176d92324ee2423c11a5b9eb"
+    },
+    {
+      "id": "r02-ji",
+      "path": "public/audio/voice/r02-ji.mp3",
+      "duration": 2.448,
+      "sha256": "d7158c4cb64df6e048d49df123c54b5a720840c1b0b97106edbe616d3c080b64"
+    },
+    {
+      "id": "l03-mei",
+      "path": "public/audio/voice/l03-mei.mp3",
+      "duration": 2.928,
+      "sha256": "898e9221c20a20c7b546314fdba7ced1d435a3408bb7c4a1e6e53f03d5a00e3c"
+    },
+    {
+      "id": "l03-keys",
+      "path": "public/audio/voice/l03-keys.mp3",
+      "duration": 6.288,
+      "sha256": "332cbccb81d64a5f88334e0ed886088340a74acc437de96b72053e8cddf20dee"
+    },
+    {
+      "id": "l03-ji",
+      "path": "public/audio/voice/l03-ji.mp3",
+      "duration": 3.888,
+      "sha256": "179cc40b21514b485bb669bd8591f2093337f10981746149227b1aac5c0d7923"
+    },
+    {
+      "id": "n04-zhou",
+      "path": "public/audio/voice/n04-zhou.mp3",
+      "duration": 4.848,
+      "sha256": "b4f467cd767e39b84aa0abf842e8c032841b5455cfe66bf4028a54068f4272f4"
+    },
+    {
+      "id": "n04-shen",
+      "path": "public/audio/voice/n04-shen.mp3",
+      "duration": 2.448,
+      "sha256": "30254c941153e285b7c5bbe8aa934bcc547250961bd8680457b1419236c659d8"
+    },
+    {
+      "id": "c00-ji",
+      "path": "public/audio/voice/c00-ji.mp3",
+      "duration": 3.408,
+      "sha256": "0d9142944ef95bafe063a3136c89c2857823c1301f3310e493ed6b37182ed0a5"
+    },
+    {
+      "id": "c00-cheng",
+      "path": "public/audio/voice/c00-cheng.mp3",
+      "duration": 0.864,
+      "sha256": "9a919dd8062ed783612383dbbcdcdaf88c0282357f1399e8e508cdcc5205bee0"
+    },
+    {
+      "id": "c00-mei",
+      "path": "public/audio/voice/c00-mei.mp3",
+      "duration": 3.096,
+      "sha256": "3cd09cad3a9b3d6da681eb8ff06e48e4046e599283a48b1b81c67fb3ba099999"
+    },
+    {
+      "id": "v01-lin",
+      "path": "public/audio/voice/v01-lin.mp3",
+      "duration": 1.728,
+      "sha256": "428e8037942411d263d5f9e4aa760b9a32a91780103468f42e3fce970324f4d1"
+    },
+    {
+      "id": "v01-ji-address",
+      "path": "public/audio/voice/v01-ji-address.mp3",
+      "duration": 2.856,
+      "sha256": "bcc67305f281a4b3b2bfd5e924600a3dd9e429c3bc734d63d8a21745ed3510e2"
+    },
+    {
+      "id": "v01-arrived",
+      "path": "public/audio/voice/v01-arrived.mp3",
+      "duration": 1.824,
+      "sha256": "ea629889fc040564453b1cc92bf9cf4b7318554bfea99c0aedc8581d39f76083"
+    },
+    {
+      "id": "v01-luo",
+      "path": "public/audio/voice/v01-luo.mp3",
+      "duration": 7.584,
+      "sha256": "0a49571c4533c70c8b93f1dd327a01959d6f4767929300afe789ce5b33e100c8"
+    },
+    {
+      "id": "v01-redpaper",
+      "path": "public/audio/voice/v01-redpaper.mp3",
+      "duration": 8.208,
+      "sha256": "bb7aa5b24bb4638ba1f592ee235346e5bdfb463a783a6acdb08b36acb57d0403"
+    },
+    {
+      "id": "v01-wait",
+      "path": "public/audio/voice/v01-wait.mp3",
+      "duration": 1.824,
+      "sha256": "c1abd1dcbfbc3907e11d4211794844bec09d425f0d6b61e95c02328df1cb0dc3"
+    },
+    {
+      "id": "v01-received",
+      "path": "public/audio/voice/v01-received.mp3",
+      "duration": 2.208,
+      "sha256": "70e351fe025376d9e60753a2bdc765334063c4a2f6a3051ad9d42152e88d56ea"
+    },
+    {
+      "id": "v01-receipt",
+      "path": "public/audio/voice/v01-receipt.mp3",
+      "duration": 3.024,
+      "sha256": "ce67907a103bef270b8d9262a6036ff3651ad3e27bbe0ef0d93e2ea8ae53eded"
+    },
+    {
+      "id": "v01-record",
+      "path": "public/audio/voice/v01-record.mp3",
+      "duration": 2.544,
+      "sha256": "8a84eeb8a0c258c5c2efda850520352f6e96ab962f736793033931bb3cb0b000"
+    },
+    {
+      "id": "v01-question",
+      "path": "public/audio/voice/v01-question.mp3",
+      "duration": 1.584,
+      "sha256": "db4b49f5b2f2a253d7e1f7f0469f7dc9894c064878539c47de921555cece40aa"
+    },
+    {
+      "id": "v01-confirm",
+      "path": "public/audio/voice/v01-confirm.mp3",
+      "duration": 1.344,
+      "sha256": "32e4a93ffbdecc05c00cf73a6d6bd0ade906d4ae89b6438e3bba3f0ba0572b76"
+    },
+    {
+      "id": "door-knock",
+      "path": "public/audio/sfx/door-knock.mp3",
+      "duration": 1.368,
+      "sha256": "5a0d6186e586600860320726a0bdd2806d4cebd58946cac23ce26b9392789914"
+    },
+    {
+      "id": "keys-two-one",
+      "path": "public/audio/sfx/keys-two-one.mp3",
+      "duration": 1.968,
+      "sha256": "2b378a494203f8c8bb4dd59b11c5756c02a2b4277c384f5859a47359998e44f4"
+    },
+    {
+      "id": "iron-gate",
+      "path": "public/audio/sfx/iron-gate.mp3",
+      "duration": 1.152,
+      "sha256": "6c2d1cff33ef940e48803e71edce8ccf3a5f9cc0e2857401f9b5db605a267b43"
+    },
+    {
+      "id": "relay-drop",
+      "path": "public/audio/sfx/relay-drop.mp3",
+      "duration": 0.648,
+      "sha256": "e62df1a89edadf54373530ab1babc6f94c4ca5ddaaff5e6c93e7380c195448d2"
+    },
+    {
+      "id": "switch-off",
+      "path": "public/audio/sfx/switch-off.mp3",
+      "duration": 0.24,
+      "sha256": "3c00c1dd2ecc6c7de2dd3e0fec04fb1fcc57f8d8fdf6640b99314b2913715876"
+    },
+    {
+      "id": "intercom-click",
+      "path": "public/audio/sfx/intercom-click.mp3",
+      "duration": 0.408,
+      "sha256": "d8e2fc1f454220c8bc079a935bf6e547bbf248a03ea84d975c079c9f3791d129"
+    },
+    {
+      "id": "radio-open",
+      "path": "public/audio/sfx/radio-open.mp3",
+      "duration": 0.768,
+      "sha256": "84c193c4bd5a236454273f644c9706ee3bb47505147abc84773f1864c250ebb5"
+    },
+    {
+      "id": "paper-turn",
+      "path": "public/audio/sfx/paper-turn.mp3",
+      "duration": 0.768,
+      "sha256": "c3f03043657d02e33e402ae25397d028395922df45105bdfd7b8cc25195d4229"
+    },
+    {
+      "id": "pen-sign",
+      "path": "public/audio/sfx/pen-sign.mp3",
+      "duration": 0.6,
+      "sha256": "fc228fb71a87fcbd77febaa58cfb3f070056b896707a78ad060eddf7d0764bb1"
+    },
+    {
+      "id": "phone-alert",
+      "path": "public/audio/sfx/phone-alert.mp3",
+      "duration": 1.368,
+      "sha256": "51aeab623864af5f937eb3947319e45c06233266c0c5b69509ca8b125c286736"
+    },
+    {
+      "id": "cup-set",
+      "path": "public/audio/sfx/cup-set.mp3",
+      "duration": 0.552,
+      "sha256": "445a22bfeb770eeb9ca628840341562be46c1650b90f13c99d5540b40f9e484b"
+    }
+  ],
+  "limitations": [
+    "Signal and request checks do not certify acting or pronunciation; human listening remains pending."
+  ]
+}

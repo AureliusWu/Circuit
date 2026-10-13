@@ -1,0 +1,313 @@
+{
+  "schemaVersion": 1,
+  "model": "Systran/faster-whisper-large-v3",
+  "modelSha256": "69f74147e3334731bc3a76048724833325d2ec74642fb52620eda87352e3d4f1",
+  "computeType": "int8",
+  "initialPrompt": null,
+  "hotwords": null,
+  "elapsedSeconds": 56.341,
+  "recheckedIds": [
+    "h13-dispatch",
+    "h13-zhou",
+    "l03-ji",
+    "v01-arrived",
+    "v01-question",
+    "v01-received",
+    "v01-redpaper",
+    "v01-wait"
+  ],
+  "comparisonNormalization": "Simplified Chinese, alphanumeric, Chinese and Arabic numeral equivalence",
+  "passed": 28,
+  "review": 4,
+  "clips": [
+    {
+      "id": "h13-dispatch",
+      "mp3Sha256": "a81b39dd10f448adba3818df60445b72d138aee5601dbca7850f698a3580e069",
+      "expected": "槐荫巷，十二户停电，终端显示十三个在线户号。",
+      "transcript": "怀音像12户停电,终端显示13个在线户号。",
+      "cer": 0.157895,
+      "polarityCountsMatch": true,
+      "status": "passed"
+    },
+    {
+      "id": "h13-call",
+      "mp3Sha256": "c931c099cd860cf1920bf0d6ff2e16b7fa67fd9a092f2aef2e8b267f4943b34a",
+      "expected": "在线是通讯状态。有电没电，到了再看。",
+      "transcript": "在线是通讯状态有电没电到了再看",
+      "cer": 0.0,
+      "polarityCountsMatch": true,
+      "status": "passed"
+    },
+    {
+      "id": "h13-kit",
+      "mp3Sha256": "7903f2ef27c89f0591193bf9ea513a7c5d427371ca7a0414db4a40c3ff0601a1",
+      "expected": "师傅，照片按户号存，还是按时间？",
+      "transcript": "师父,照片按户号存,还是按时间?",
+      "cer": 0.076923,
+      "polarityCountsMatch": true,
+      "status": "passed"
+    },
+    {
+      "id": "h13-zhou",
+      "mp3Sha256": "43961e3875d03e261a8264b55aa708eca2c1be14d7010fff8bb9d1e571705623",
+      "expected": "季宁跟着你，别让她一个人往旧宅里钻。",
+      "transcript": "锦宁跟着你,别让他一个人往旧宅里钻。",
+      "cer": 0.125,
+      "polarityCountsMatch": true,
+      "status": "passed"
+    },
+    {
+      "id": "h13-mei",
+      "mp3Sha256": "53eab11265e07c5d1dd1b01a3e651c6fcc4d6f6354db673567ebec247e8f418f",
+      "expected": "门留着，别替他把路画死。",
+      "transcript": "门留着,别替他把路划死。",
+      "cer": 0.1,
+      "polarityCountsMatch": true,
+      "status": "passed"
+    },
+    {
+      "id": "h13-ticket",
+      "mp3Sha256": "8b88a16d7ab20396fba68bdd2871948e934ac5b66289328762145df4f387a7b6",
+      "expected": "没安排替代，也没让他停下来。后来有人催关单，我就写完成。没核完。",
+      "transcript": "没安排替代,也没让他停下来,后来有人催关单,我就写完成,没喝完。",
+      "cer": 0.037037,
+      "polarityCountsMatch": true,
+      "status": "passed"
+    },
+    {
+      "id": "q07-dispatch",
+      "mp3Sha256": "cba211c791b5359a0f388e9044fb4befe15c5227fe120b3255b7be6a543acc47",
+      "expected": "清河里七号院，报了九夜。",
+      "transcript": "清河里七号院报了九页",
+      "cer": 0.1,
+      "polarityCountsMatch": true,
+      "status": "passed"
+    },
+    {
+      "id": "q07-shen",
+      "mp3Sha256": "92024a80b4a66c9b709c6fcb1cb90499d70a610eb46fdb2680122dde6e41bf07",
+      "expected": "那年我爸回家了，后来还开了好多年车。",
+      "transcript": "那年我爸回家了后来还开了好多年车",
+      "cer": 0.0,
+      "polarityCountsMatch": true,
+      "status": "passed"
+    },
+    {
+      "id": "q07-ji",
+      "mp3Sha256": "743ee3b330de9bb07248669f7f6a991c0321e8541fe1286c3be3312c067d0239",
+      "expected": "沈师傅回家，许师傅没上车。这两行分开。",
+      "transcript": "沈师傅回家,许师傅没上车,这两行分开。",
+      "cer": 0.0,
+      "polarityCountsMatch": true,
+      "status": "passed"
+    },
+    {
+      "id": "q07-xu",
+      "mp3Sha256": "3a05ccc10250ff83eb442057ed32cd68fea3a39b9689c06aabc45d9054f41fd8",
+      "expected": "车还等吗？",
+      "transcript": "车还等吗?",
+      "cer": 0.0,
+      "polarityCountsMatch": true,
+      "status": "passed"
+    },
+    {
+      "id": "r02-chen",
+      "mp3Sha256": "16f9041ba8e56f4d9dd0be58a365030c3f14851f9f64d1147bfbe95291e281a2",
+      "expected": "晚上别这么响。",
+      "transcript": "晚上别这么想",
+      "cer": 0.166667,
+      "polarityCountsMatch": true,
+      "status": "passed"
+    },
+    {
+      "id": "r02-door",
+      "mp3Sha256": "a7b92d7c134dffd03c146bf1924504b62f965533176d92324ee2423c11a5b9eb",
+      "expected": "我母亲搬家都带旧门牌，说怕认错门。",
+      "transcript": "我母亲搬家都带旧门牌,说怕认错门。",
+      "cer": 0.0,
+      "polarityCountsMatch": true,
+      "status": "passed"
+    },
+    {
+      "id": "r02-ji",
+      "mp3Sha256": "d7158c4cb64df6e048d49df123c54b5a720840c1b0b97106edbe616d3c080b64",
+      "expected": "外面零了，里面还有。",
+      "transcript": "外面零了,里面还有……",
+      "cer": 0.0,
+      "polarityCountsMatch": true,
+      "status": "passed"
+    },
+    {
+      "id": "l03-mei",
+      "mp3Sha256": "898e9221c20a20c7b546314fdba7ced1d435a3408bb7c4a1e6e53f03d5a00e3c",
+      "expected": "半夜钥匙碰栏杆，别往楼道里叫。",
+      "transcript": "半夜要是碰栏杆,别往楼道里叫。",
+      "cer": 0.153846,
+      "polarityCountsMatch": true,
+      "status": "passed"
+    },
+    {
+      "id": "l03-keys",
+      "mp3Sha256": "332cbccb81d64a5f88334e0ed886088340a74acc437de96b72053e8cddf20dee",
+      "expected": "轻两下，最后重一下。他钥匙串就那样碰。",
+      "transcript": "轻两下,最后重一下,他要是串就那样碰。",
+      "cer": 0.125,
+      "polarityCountsMatch": true,
+      "status": "passed"
+    },
+    {
+      "id": "l03-ji",
+      "mp3Sha256": "179cc40b21514b485bb669bd8591f2093337f10981746149227b1aac5c0d7923",
+      "expected": "师傅，刚才你下楼的时候，钥匙响没响？",
+      "transcript": "师父,刚才你下楼的时候,钥匙响没响?",
+      "cer": 0.066667,
+      "polarityCountsMatch": true,
+      "status": "passed"
+    },
+    {
+      "id": "n04-zhou",
+      "mp3Sha256": "b4f467cd767e39b84aa0abf842e8c032841b5455cfe66bf4028a54068f4272f4",
+      "expected": "没查齐旁路，也没等到交班，我就写了完成。",
+      "transcript": "没查其旁路,也没等到交班,我就写了完成。",
+      "cer": 0.058824,
+      "polarityCountsMatch": true,
+      "status": "passed"
+    },
+    {
+      "id": "n04-shen",
+      "mp3Sha256": "30254c941153e285b7c5bbe8aa934bcc547250961bd8680457b1419236c659d8",
+      "expected": "你把原话留着，后面他们还会问。",
+      "transcript": "你把原话留着,后面他们还会问。",
+      "cer": 0.0,
+      "polarityCountsMatch": true,
+      "status": "passed"
+    },
+    {
+      "id": "c00-ji",
+      "mp3Sha256": "0d9142944ef95bafe063a3136c89c2857823c1301f3310e493ed6b37182ed0a5",
+      "expected": "也不能照这圈顺序说哪件事先发生。",
+      "transcript": "也不能照这圈顺序说哪件事先发生",
+      "cer": 0.0,
+      "polarityCountsMatch": true,
+      "status": "passed"
+    },
+    {
+      "id": "c00-cheng",
+      "mp3Sha256": "9a919dd8062ed783612383dbbcdcdaf88c0282357f1399e8e508cdcc5205bee0",
+      "expected": "按页来。",
+      "transcript": "按頁來",
+      "cer": 0.0,
+      "polarityCountsMatch": true,
+      "status": "passed"
+    },
+    {
+      "id": "c00-mei",
+      "mp3Sha256": "3cd09cad3a9b3d6da681eb8ff06e48e4046e599283a48b1b81c67fb3ba099999",
+      "expected": "灯没再亮，后门也没再响。",
+      "transcript": "灯没再亮,后门也没再响。",
+      "cer": 0.0,
+      "polarityCountsMatch": true,
+      "status": "passed"
+    },
+    {
+      "id": "v01-lin",
+      "mp3Sha256": "428e8037942411d263d5f9e4aa760b9a32a91780103468f42e3fce970324f4d1",
+      "expected": "物业说他们听见你了。",
+      "transcript": "物业说他们听见你了。",
+      "cer": 0.0,
+      "polarityCountsMatch": true,
+      "status": "passed"
+    },
+    {
+      "id": "v01-ji-address",
+      "mp3Sha256": "bcc67305f281a4b3b2bfd5e924600a3dd9e429c3bc734d63d8a21745ed3510e2",
+      "expected": "十三号搬来以后还是十三号？",
+      "transcript": "13号搬来以后还是13号",
+      "cer": 0.0,
+      "polarityCountsMatch": true,
+      "status": "passed"
+    },
+    {
+      "id": "v01-arrived",
+      "mp3Sha256": "ea629889fc040564453b1cc92bf9cf4b7318554bfea99c0aedc8581d39f76083",
+      "expected": "程砚，已经到场。",
+      "transcript": "晨艳已经到场",
+      "cer": 0.333333,
+      "polarityCountsMatch": true,
+      "status": "review"
+    },
+    {
+      "id": "v01-luo",
+      "mp3Sha256": "0a49571c4533c70c8b93f1dd327a01959d6f4767929300afe789ce5b33e100c8",
+      "expected": "我也觉得不对。前两次都说到场，门口一个人没有。",
+      "transcript": "我也觉得不对,前两次都说到场,门口一个人没有。",
+      "cer": 0.0,
+      "polarityCountsMatch": true,
+      "status": "passed"
+    },
+    {
+      "id": "v01-redpaper",
+      "mp3Sha256": "bb7aa5b24bb4638ba1f592ee235346e5bdfb463a783a6acdb08b36acb57d0403",
+      "expected": "朝里贴，说让跟着搬家的认得门。白天就揭，物业总忘。",
+      "transcript": "朝礼贴说让跟着搬家的人的门白天就接午夜总忘",
+      "cer": 0.285714,
+      "polarityCountsMatch": true,
+      "status": "review"
+    },
+    {
+      "id": "v01-wait",
+      "mp3Sha256": "c1abd1dcbfbc3907e11d4211794844bec09d425f0d6b61e95c02328df1cb0dc3",
+      "expected": "先别替它答到。",
+      "transcript": "先别替他达到",
+      "cer": 0.333333,
+      "polarityCountsMatch": true,
+      "status": "review"
+    },
+    {
+      "id": "v01-received",
+      "mp3Sha256": "70e351fe025376d9e60753a2bdc765334063c4a2f6a3051ad9d42152e88d56ea",
+      "expected": "季宁，收到。",
+      "transcript": "寄宁收到",
+      "cer": 0.25,
+      "polarityCountsMatch": true,
+      "status": "review"
+    },
+    {
+      "id": "v01-receipt",
+      "mp3Sha256": "ce67907a103bef270b8d9262a6036ff3651ad3e27bbe0ef0d93e2ea8ae53eded",
+      "expected": "语音说收到了，我就往后翻。",
+      "transcript": "语音说收到了,我就往后翻。",
+      "cer": 0.0,
+      "polarityCountsMatch": true,
+      "status": "passed"
+    },
+    {
+      "id": "v01-record",
+      "mp3Sha256": "8a84eeb8a0c258c5c2efda850520352f6e96ab962f736793033931bb3cb0b000",
+      "expected": "季宁，现场记录已交。",
+      "transcript": "纪宁,现场记录已交",
+      "cer": 0.125,
+      "polarityCountsMatch": true,
+      "status": "passed"
+    },
+    {
+      "id": "v01-question",
+      "mp3Sha256": "db4b49f5b2f2a253d7e1f7f0469f7dc9894c064878539c47de921555cece40aa",
+      "expected": "到底谁在后面应我？",
+      "transcript": "到底谁在后面应我",
+      "cer": 0.0,
+      "polarityCountsMatch": true,
+      "status": "passed"
+    },
+    {
+      "id": "v01-confirm",
+      "mp3Sha256": "32e4a93ffbdecc05c00cf73a6d6bd0ade906d4ae89b6438e3bba3f0ba0572b76",
+      "expected": "先别替它确认。",
+      "transcript": "先别替他确认",
+      "cer": 0.166667,
+      "polarityCountsMatch": true,
+      "status": "passed"
+    }
+  ],
+  "limitations": "ASR errors, names and acting require human listening; this is a diagnostic, not creative approval."
+}

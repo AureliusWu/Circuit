@@ -1,0 +1,377 @@
+{
+  "reason": "Preserved first pass before slower diction and proper-name instruction calibration.",
+  "clips": [
+    {
+      "id": "h13-dispatch",
+      "character": "lin",
+      "speaker": "Serena",
+      "instruct": "成年女性，普通话，声音干脆平稳，值班调度员在电台里说话，清楚利落，不要播音腔。",
+      "text": "槐荫巷，十二户停电，终端显示十三个在线户号。",
+      "seed": 120010,
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "dispatch"
+        }
+      ],
+      "requestSha256": "b9ea1e989358f906422afba1d848d05c9c40157409b26a71d27f521c8582d86b",
+      "duration": 4.32,
+      "generationSeconds": 23.258,
+      "loudnessInput": {
+        "input_i": "-25.64",
+        "input_tp": "-10.27",
+        "input_lra": "0.90",
+        "input_thresh": "-36.03",
+        "output_i": "-19.40",
+        "output_tp": "-4.20",
+        "output_lra": "0.60",
+        "output_thresh": "-29.74",
+        "normalization_type": "dynamic",
+        "target_offset": "-0.60"
+      },
+      "files": [
+        {
+          "path": "assets_source/audio/v1.2.0/review-candidates/h13-dispatch-raw.wav",
+          "bytes": 207404,
+          "sha256": "2c8ca2f671ab87530bc78d601456fa7721ccdbf5b848c2e589a904ff81411801"
+        },
+        {
+          "path": "assets_source/audio/v1.2.0/review-candidates/h13-dispatch.wav",
+          "bytes": 207438,
+          "sha256": "1f071227d02cf6faf0e13e4034fbbae9817de6af19759baf3420e0ca4f35ff5a"
+        },
+        {
+          "path": "assets_source/audio/v1.2.0/review-candidates/h13-dispatch.mp3",
+          "bytes": 52749,
+          "sha256": "601c0bcfd860e13e18c757143041f0727eea70234369a72fbf64c4147366a727"
+        }
+      ]
+    },
+    {
+      "id": "h13-zhou",
+      "character": "zhou",
+      "speaker": "Uncle_Fu",
+      "instruct": "五十岁男性，普通话，声音低沉略沙哑，克制缓慢，像夜班老工人，语气自然，不要表演悲伤。",
+      "text": "季宁跟着你，别让她一个人往旧宅里钻。",
+      "seed": 120013,
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "zhouCall"
+        }
+      ],
+      "requestSha256": "ee416e63b59849489291a8d5fd2936c78a69b20c2ea72c6d470ef046bc5def85",
+      "duration": 4.56,
+      "generationSeconds": 25.866,
+      "loudnessInput": {
+        "input_i": "-20.90",
+        "input_tp": "-4.75",
+        "input_lra": "0.90",
+        "input_thresh": "-31.33",
+        "output_i": "-20.33",
+        "output_tp": "-4.33",
+        "output_lra": "0.80",
+        "output_thresh": "-30.85",
+        "normalization_type": "dynamic",
+        "target_offset": "0.33"
+      },
+      "files": [
+        {
+          "path": "assets_source/audio/v1.2.0/review-candidates/h13-zhou-raw.wav",
+          "bytes": 218924,
+          "sha256": "7b8af18a8c4da2f4c5b11dd322956ea12cac450d2323dfe3a7896c29cd54771b"
+        },
+        {
+          "path": "assets_source/audio/v1.2.0/review-candidates/h13-zhou.wav",
+          "bytes": 218958,
+          "sha256": "4b1f7e095c3ba95e23e544551fedeacb87744636227526496bb6322177343852"
+        },
+        {
+          "path": "assets_source/audio/v1.2.0/review-candidates/h13-zhou.mp3",
+          "bytes": 55629,
+          "sha256": "37a320cffbbe14f597d093d259dba2c19d52bc63dbce62746d21cc6579164bf3"
+        }
+      ]
+    },
+    {
+      "id": "l03-ji",
+      "character": "ji",
+      "speaker": "Vivian",
+      "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。",
+      "text": "师傅，刚才你下楼的时候，钥匙响没响？",
+      "seed": 120025,
+      "bindings": [
+        {
+          "chapter": "everlight",
+          "node": "dawn"
+        }
+      ],
+      "requestSha256": "b04254d0b49bdfbbb9e49db9c54d3c09214497c919f21428032147594bf59a1a",
+      "duration": 4.24,
+      "generationSeconds": 26.128,
+      "loudnessInput": {
+        "input_i": "-19.44",
+        "input_tp": "-5.11",
+        "input_lra": "0.90",
+        "input_thresh": "-29.77",
+        "output_i": "-19.17",
+        "output_tp": "-4.69",
+        "output_lra": "0.80",
+        "output_thresh": "-29.53",
+        "normalization_type": "dynamic",
+        "target_offset": "-0.83"
+      },
+      "files": [
+        {
+          "path": "assets_source/audio/v1.2.0/review-candidates/l03-ji-raw.wav",
+          "bytes": 203564,
+          "sha256": "dd19c48706b9944ec446cc7354cf54e1629ff1509e64375ca92a1fb3cc8a161d"
+        },
+        {
+          "path": "assets_source/audio/v1.2.0/review-candidates/l03-ji.wav",
+          "bytes": 203598,
+          "sha256": "b197e6f60da4ca0d099d0e7edfa9d956acf67e1ee0638d990ec68529f209fc6a"
+        },
+        {
+          "path": "assets_source/audio/v1.2.0/review-candidates/l03-ji.mp3",
+          "bytes": 51885,
+          "sha256": "0faea875b2e1c420424051cbac3453ad6fbc021ad924c19dc5a485ea722c8ea3"
+        }
+      ]
+    },
+    {
+      "id": "v01-arrived",
+      "character": "cheng",
+      "speaker": "Dylan",
+      "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。",
+      "text": "程砚，已经到场。",
+      "seed": 120033,
+      "bindings": [
+        {
+          "chapter": "return-visit",
+          "node": "arrival"
+        },
+        {
+          "chapter": "return-visit",
+          "node": "echo"
+        }
+      ],
+      "requestSha256": "11b56ef99d2b5e58e0d9c86369cb58ba1609325999095311502ea36657c8d898",
+      "duration": 2.0,
+      "generationSeconds": 10.879,
+      "loudnessInput": {
+        "input_i": "-25.45",
+        "input_tp": "-7.21",
+        "input_lra": "0.00",
+        "input_thresh": "-35.97",
+        "output_i": "-20.23",
+        "output_tp": "-2.00",
+        "output_lra": "0.00",
+        "output_thresh": "-30.75",
+        "normalization_type": "linear",
+        "target_offset": "0.23"
+      },
+      "files": [
+        {
+          "path": "assets_source/audio/v1.2.0/review-candidates/v01-arrived-raw.wav",
+          "bytes": 96044,
+          "sha256": "23ae5c60b86b43f851256bc731aa0555f2f6f459be722a378f2eace26ea3ec49"
+        },
+        {
+          "path": "assets_source/audio/v1.2.0/review-candidates/v01-arrived.wav",
+          "bytes": 96078,
+          "sha256": "9597e84b6a1d24fcccb74725849aee13e48d8ed1fff31f006d7c4e8e7b24db30"
+        },
+        {
+          "path": "assets_source/audio/v1.2.0/review-candidates/v01-arrived.mp3",
+          "bytes": 25101,
+          "sha256": "d863b788a98c890beb1f30754b2e03368e5961efdef2a72edb2325cbf3beeb31"
+        }
+      ]
+    },
+    {
+      "id": "v01-redpaper",
+      "character": "luo",
+      "speaker": "Vivian",
+      "instruct": "二十九岁女性，普通话，声音偏低，夜班值班员谨慎地问话，平静自然，略有迟疑，不要朗诵。",
+      "text": "朝里贴，说让跟着搬家的认得门。白天就揭，物业总忘。",
+      "seed": 120035,
+      "bindings": [
+        {
+          "chapter": "return-visit",
+          "node": "doorRule"
+        }
+      ],
+      "requestSha256": "0fd1b618867da53efaf4dbd82ce3b8a1ca7768a11c6a7e8891fa5760591dfa5e",
+      "duration": 7.44,
+      "generationSeconds": 41.559,
+      "loudnessInput": {
+        "input_i": "-20.04",
+        "input_tp": "-5.29",
+        "input_lra": "1.20",
+        "input_thresh": "-30.60",
+        "output_i": "-19.83",
+        "output_tp": "-4.68",
+        "output_lra": "2.00",
+        "output_thresh": "-30.42",
+        "normalization_type": "dynamic",
+        "target_offset": "-0.17"
+      },
+      "files": [
+        {
+          "path": "assets_source/audio/v1.2.0/review-candidates/v01-redpaper-raw.wav",
+          "bytes": 357164,
+          "sha256": "ca737c9adb877793fc9e47082ad17428f63f9bda6bf51e83ffa3755328160698"
+        },
+        {
+          "path": "assets_source/audio/v1.2.0/review-candidates/v01-redpaper.wav",
+          "bytes": 357198,
+          "sha256": "34514e6f958e1b2008a7761f8ddd36f89a7b5cf5b37dd8d8fb2f175e19777dec"
+        },
+        {
+          "path": "assets_source/audio/v1.2.0/review-candidates/v01-redpaper.mp3",
+          "bytes": 90189,
+          "sha256": "0d92cb81ffe15004e0cad8b63fb5e856671f4e74133621e96e2082bb197ec1da"
+        }
+      ]
+    },
+    {
+      "id": "v01-wait",
+      "character": "ji",
+      "speaker": "Vivian",
+      "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。",
+      "text": "先别替它答到。",
+      "seed": 120036,
+      "bindings": [
+        {
+          "chapter": "return-visit",
+          "node": "firstHub"
+        }
+      ],
+      "requestSha256": "35f0931f409e2706d4552a29bb4c221557c639d33c0f50425e951fad410ad72f",
+      "duration": 1.36,
+      "generationSeconds": 7.657,
+      "loudnessInput": {
+        "input_i": "-17.72",
+        "input_tp": "-3.35",
+        "input_lra": "0.00",
+        "input_thresh": "-27.72",
+        "output_i": "-20.00",
+        "output_tp": "-5.63",
+        "output_lra": "0.00",
+        "output_thresh": "-30.00",
+        "normalization_type": "linear",
+        "target_offset": "0.00"
+      },
+      "files": [
+        {
+          "path": "assets_source/audio/v1.2.0/review-candidates/v01-wait-raw.wav",
+          "bytes": 65324,
+          "sha256": "bd45645e5c6d4faee9248e8cd329affe29195a9011fa6ed56a896327bd0601ae"
+        },
+        {
+          "path": "assets_source/audio/v1.2.0/review-candidates/v01-wait.wav",
+          "bytes": 65358,
+          "sha256": "f88ed4d50026af349e1f284e09f655f4208856c749e60e70b64f1ed9178dd52e"
+        },
+        {
+          "path": "assets_source/audio/v1.2.0/review-candidates/v01-wait.mp3",
+          "bytes": 17325,
+          "sha256": "9af207eb76de07a4c8338735da7f050f7ca67efccb673a91f03207ceda7b0e4d"
+        }
+      ]
+    },
+    {
+      "id": "v01-received",
+      "character": "ji",
+      "speaker": "Vivian",
+      "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。",
+      "text": "季宁，收到。",
+      "seed": 120037,
+      "bindings": [
+        {
+          "chapter": "return-visit",
+          "node": "echo"
+        }
+      ],
+      "requestSha256": "25bc64188bf4fda4f7f17765635b91d299d29b50378ad7f02bbf3b0cbf13b56c",
+      "duration": 1.84,
+      "generationSeconds": 9.679,
+      "loudnessInput": {
+        "input_i": "-16.47",
+        "input_tp": "-3.11",
+        "input_lra": "0.00",
+        "input_thresh": "-27.09",
+        "output_i": "-19.99",
+        "output_tp": "-6.63",
+        "output_lra": "0.00",
+        "output_thresh": "-30.61",
+        "normalization_type": "linear",
+        "target_offset": "-0.01"
+      },
+      "files": [
+        {
+          "path": "assets_source/audio/v1.2.0/review-candidates/v01-received-raw.wav",
+          "bytes": 88364,
+          "sha256": "b698b78c24a0f6d6a9f41ac1fde106bef0490b44c84e9973b9369e65ce0df622"
+        },
+        {
+          "path": "assets_source/audio/v1.2.0/review-candidates/v01-received.wav",
+          "bytes": 88398,
+          "sha256": "64c403d3de494d1fadd081bb55254175ece924639f23f13419b3e4d2d3630d9f"
+        },
+        {
+          "path": "assets_source/audio/v1.2.0/review-candidates/v01-received.mp3",
+          "bytes": 23085,
+          "sha256": "fa72b59410e09b521877b7161262c87fa55ff907649835d52f5cff38d81b6ae5"
+        }
+      ]
+    },
+    {
+      "id": "v01-question",
+      "character": "luo",
+      "speaker": "Vivian",
+      "instruct": "二十九岁女性，普通话，声音偏低，夜班值班员谨慎地问话，平静自然，略有迟疑，不要朗诵。",
+      "text": "到底谁在后面应我？",
+      "seed": 120040,
+      "bindings": [
+        {
+          "chapter": "return-visit",
+          "node": "quiet"
+        }
+      ],
+      "requestSha256": "00c38fb58a10be8db23f182929a1244505acba312f323c7ba29634821c44af5c",
+      "duration": 1.6,
+      "generationSeconds": 8.901,
+      "loudnessInput": {
+        "input_i": "-23.74",
+        "input_tp": "-9.73",
+        "input_lra": "0.00",
+        "input_thresh": "-33.74",
+        "output_i": "-20.01",
+        "output_tp": "-5.99",
+        "output_lra": "0.00",
+        "output_thresh": "-30.01",
+        "normalization_type": "linear",
+        "target_offset": "0.01"
+      },
+      "files": [
+        {
+          "path": "assets_source/audio/v1.2.0/review-candidates/v01-question-raw.wav",
+          "bytes": 76844,
+          "sha256": "783979f34c44bfafb6f75a39a3a3db88bba5dfce85bfb54441c7654784d143ab"
+        },
+        {
+          "path": "assets_source/audio/v1.2.0/review-candidates/v01-question.wav",
+          "bytes": 76878,
+          "sha256": "1dcb806339b08020c143d6f1699c709369afbe494197eb99477f487ad0bff188"
+        },
+        {
+          "path": "assets_source/audio/v1.2.0/review-candidates/v01-question.mp3",
+          "bytes": 20205,
+          "sha256": "99ec9dbe00bbf99a0a8a3c773a4165f57e1120ca17fd4e12f7bed202a9ec6d64"
+        }
+      ]
+    }
+  ]
+}

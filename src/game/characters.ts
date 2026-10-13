@@ -1,5 +1,5 @@
-export type CharacterId = 'cheng' | 'ji' | 'lin' | 'zhou' | 'mei' | 'xu' | 'chen' | 'shen';
-export type CharacterExpression = 'neutral' | 'focused' | 'concerned';
+export type CharacterId = 'cheng' | 'ji' | 'lin' | 'zhou' | 'mei' | 'xu' | 'chen' | 'shen' | 'luo';
+export type CharacterExpression = 'neutral' | 'focused' | 'concerned' | 'wary';
 export type CharacterPresence = 'scene' | 'radio' | 'archive';
 
 export type CharacterProfile = {
@@ -22,13 +22,13 @@ export const CHARACTERS: readonly CharacterProfile[] = [
     id: 'cheng', name: '程砚', age: '32 岁', role: '梧城电网 · 城区抢修员', tag: '主角 / 师傅',
     bio: '在梧城电网干了九年，调来城区抢修班两年。熟悉旧城线路，话不多，也会随口吐槽。夜班饭点经常接到工单，习惯看原始记录再下结论。今夜那碗泡面刚加好水，槐荫巷的电话就来了。',
     duty: '承担获准范围内的现场排查，向工作负责人报告边界和风险；带季宁核对记录、练习判断。未知来源的线路交由专责人员复核。',
-    portraits: { neutral: portrait('cheng'), focused: '/art/portraits/cheng-focused.webp' }, chibi: chibi('cheng')
+    portraits: { neutral: portrait('cheng'), focused: '/art/portraits/cheng-focused.webp', wary: '/art/portraits/cheng-wary.webp' }, chibi: chibi('cheng')
   },
   {
     id: 'ji', name: '季宁', age: '23 岁', role: '梧城电网 · 跟班抢修员', tag: '固定队友 / 徒弟',
     bio: '入班八个月，完成岗位培训后跟程砚出车。随身带平板和防水记录册，记时刻、对图纸，也惦记夜班什么时候能吃饭。遇到说不通的地方会继续追问，师傅写错了，她也会拦下来。',
     duty: '负责获准的现场记录、终端核对、照片索引和住户联络。在师傅及工作负责人指导下参与排查，不独立操作未知开关，也不单独承担专责监护。',
-    portraits: { neutral: portrait('ji'), concerned: '/art/portraits/ji-concerned.webp' }, chibi: chibi('ji')
+    portraits: { neutral: portrait('ji'), concerned: '/art/portraits/ji-concerned.webp', focused: '/art/portraits/ji-focused.webp' }, chibi: chibi('ji')
   },
   {
     id: 'lin', name: '林岚', age: '30 岁', role: '配电运检中心 · 值班联络', tag: '工单 / 通讯',
@@ -65,6 +65,12 @@ export const CHARACTERS: readonly CharacterProfile[] = [
     bio: '父亲沈衡开过公交，2019年接送获救住户后平安回家，今年因病去世。她整理遗物时翻出旧接送单和一段只听过六秒的语音。头七过后，灯没再灭，手机里的通知却开始每天早一分钟。',
     duty: '代表家属提供获准使用的私人材料。丧事、遗愿与电网抢修分开处理，接收副本不等于认可旧工单的完成状态。',
     portraits: { neutral: portrait('shen') }, chibi: chibi('shen')
+  },
+  {
+    id: 'luo', name: '罗禾', age: '29 岁', role: '槐荫新苑 · 物业夜班值班员', tag: '回访 / 旧门禁',
+    bio: '守新苑物业夜班，登记本用到纸边卷起，钥匙只留当天需要的三把。记得住户搬来时带的旧灯，也记得哪一夜门禁第一次报抢修员到场。她开始怀疑自己抄进本子的收到，究竟是谁说的。',
+    duty: '按物业职责提供报修回拨、迁入登记和设备移交来源，与电工协同保全旧模块；当夜接收以实际岗位和记录核实。',
+    portraits: { neutral: portrait('luo') }, chibi: chibi('luo')
   }
 ];
 

@@ -11,6 +11,8 @@ import {
 import { MAX_HISTORY_ENTRIES, type SaveStorage } from './game/saves';
 import { loadPreferences, savePreferences, type Preferences } from './game/preferences';
 import { CircuitAudio } from './game/audio';
+import { RecordedAudio, voiceBlocksAuto, type VoiceState } from './game/recordedAudio';
+import { SCENE_EFFECTS, voicesFor } from './game/mediaCatalog';
 import { useReading } from './game/reading';
 import { version } from '../package.json';
 
@@ -21,7 +23,7 @@ const PANEL_TITLES: Record<Panel, string> = {
 };
 const BACKGROUNDS: Record<ChapterId, string> = {
   'thirteen-households': 'alley', 'seventh-night': 'stairwell', backfeed: 'demolition',
-  everlight: 'stairwell', neutral: 'substation', closure: 'control-room'
+  everlight: 'stairwell', neutral: 'substation', closure: 'control-room', 'return-visit': 'resettlement-lobby'
 };
 const SLOTS: CampaignSlot[] = ['auto', 1, 2, 3];
 const asset = (path: string) => `${import.meta.env.BASE_URL}${path.replace(/^\//, '')}`;
@@ -37,7 +39,7 @@ function toSession(snapshot: CampaignSession): CampaignSession {
 function summary(save: CampaignLoadResult) {
   if (save.status !== 'valid') return save.status === 'empty' ? '空槽位' : save.reason;
   const chapter = getChapter(save.snapshot.state.chapterId)!;
-  return `${chapter.title} · ${chapter.nodes[save.snapshot.state.nodeId].location} · 已归档 ${save.snapshot.completed.length}/6 章`;
+  return `${chapter.title} · ${chapter.nodes[save.snapshot.state.nodeId].location} · 已归档 ${save.snapshot.completed.length}/${CHAPTER_ORDER.length} 章`;
 }
 
 function App() {
@@ -56,6 +58,9 @@ function App() {
   const [automatic, setAutomatic] = useState(false);
   const [pageVisible, setPageVisible] = useState(() => !document.hidden);
   const audio = useRef<CircuitAudio | null>(null);
+  const recorded = useRef<RecordedAudio | null>(null);
+  const [voiceState, setVoiceState] = useState<VoiceState>({ status: 'idle', userPaused: false });
+  const [sceneVisit, setSceneVisit] = useState(0);
   const importFile = useRef<HTMLInputElement>(null);
   const closePanel = useCallback(() => setPanel(null), []);
   const { state, history } = session;
@@ -66,11 +71,12 @@ function App() {
   const actions = useMemo(() => getAvailableActions(state), [state]);
   const reading = useReading(node.text, `${state.chapterId}/${state.nodeId}/${history.length}`, preferences, !started || !!panel || !pageVisible);
   const menuSession = !started && stored.auto.status === 'valid' ? toSession(stored.auto.snapshot) : session;
-  const mapPoints = menuSession.completed.map((id) => {
+  const mapPoints = menuSession.completed.filter((id) => id !== 'return-visit').map((id) => {
     const clue = getChapter(id)!.clue;
     return `${clue.x},${clue.y}`;
   });
-  if (menuSession.completed.length === CHAPTER_ORDER.length) mapPoints.push(mapPoints[0]);
+  if (CHAPTER_ORDER.slice(0, 6).every((id) => menuSession.completed.includes(id))) mapPoints.push(mapPoints[0]);
+  const currentVoices = voicesFor(state.chapterId, state.nodeId);
   const availableHotspots = (node.scene?.hotspots ?? []).flatMap((hotspot) => {
     const action = actions.find((candidate) => candidate.id === hotspot.actionId);
     return action ? [{ hotspot, action }] : [];
@@ -86,9 +92,14 @@ function App() {
     return () => document.removeEventListener('visibilitychange', onVisibility);
   }, []);
   useEffect(() => {
-    void audio.current?.configure(preferences, started && pageVisible && !panel);
-  }, [preferences, started, pageVisible, panel]);
-  useEffect(() => () => audio.current?.dispose(), []);
+    void audio.current?.configure(preferences, started && pageVisible && !panel, voiceState.status === 'playing');
+    recorded.current?.configure(preferences, started && !panel, started && pageVisible, panel === 'history');
+  }, [preferences, started, pageVisible, panel, voiceState.status]);
+  useEffect(() => {
+    if (!started) { recorded.current?.stop(); return; }
+    recorded.current?.enter(voicesFor(state.chapterId, state.nodeId), SCENE_EFFECTS[`${state.chapterId}/${state.nodeId}`]);
+  }, [started, state.chapterId, state.nodeId, sceneVisit]);
+  useEffect(() => () => { audio.current?.dispose(); recorded.current?.dispose(); }, []);
   useEffect(() => {
     if (!notice) return;
     const timer = window.setTimeout(() => setNotice(''), 5500);
@@ -96,6 +107,11 @@ function App() {
   }, [notice]);
 
   const enableAudio = () => {
+    if (!recorded.current) {
+      recorded.current = new RecordedAudio(import.meta.env.BASE_URL);
+      recorded.current.subscribe(setVoiceState);
+    }
+    recorded.current.configure(preferences, true, pageVisible, panel === 'history');
     if (!audio.current) {
       try { audio.current = new CircuitAudio(); } catch { return; }
     }
@@ -105,6 +121,7 @@ function App() {
     const completed = completeChapter(next);
     sessionRef.current = completed;
     setSession(completed);
+    setSceneVisit((visit) => visit + 1);
     setStarted(true);
     const result = saveCampaign(storage(), 'auto', completed);
     if (result.status === 'saved') {
@@ -127,11 +144,11 @@ function App() {
 
   useEffect(() => {
     // Auto reading never makes a deduction, collects evidence or restarts a chapter.
-    if (!automatic || !started || panel || !pageVisible || !reading.finished || node.kind !== 'dialogue'
+    if (!automatic || !started || panel || !pageVisible || !reading.finished || voiceBlocksAuto(voiceState) || node.kind !== 'dialogue'
       || actions.length !== 1 || actions[0].collect || actions[0].resetEvidence) return;
     const timer = window.setTimeout(() => act(actions[0].id), preferences.autoDelay * 1000);
     return () => window.clearTimeout(timer);
-  }, [automatic, started, panel, pageVisible, reading.finished, node, actions, preferences.autoDelay, act]);
+  }, [automatic, started, panel, pageVisible, reading.finished, voiceState, node, actions, preferences.autoDelay, act]);
   useEffect(() => {
     const onKeyDown = (event: KeyboardEvent) => {
       if (!started || panel || event.repeat || ![' ', 'Enter'].includes(event.key)) return;
@@ -158,6 +175,7 @@ function App() {
     const restored = toSession(result.snapshot);
     sessionRef.current = restored;
     setSession(restored);
+    setSceneVisit((visit) => visit + 1);
     setStarted(true);
     setAutomatic(false);
     closePanel();
@@ -225,9 +243,9 @@ function App() {
               <section className="title-brand">
                 <p className="eyebrow">城市配电 · 民俗悬疑</p><h1>回路</h1><p className="english-title">CIRCUIT</p>
                 <p className="tagline">有些线路，断开以后仍然有电。</p>
-                <p className="title-synopsis">你是梧城电网城区抢修员程砚，与徒弟季宁一起值夜班。一张七年前的工单，把六段线路和一场被抹去的救援接在一起。先核对电从何处来，再听谁还在等待。</p>
+                <p className="title-synopsis">你是梧城电网城区抢修员程砚，与徒弟季宁一起值夜班。旧工单连着一场少了半页的救援。六章归档之后，回迁楼的门禁叫出你的名字——你昨晚没去，它却说已经到场。</p>
                 <p className="title-crew">程砚 / 季宁 · 城区抢修班</p>
-                <p className="version">v{version} · 巡城师徒 / 第一部</p>
+                <p className="version">v{version} · 第一部六章 / 第二部《回访》</p>
               </section>
               <nav className="title-menu" aria-label="主菜单">
                 {stored.auto.status === 'valid' && <button className="primary" onClick={() => resume('auto')}>继续抢修</button>}
@@ -275,7 +293,7 @@ function App() {
               {node.puzzle && <section className="puzzle-card" aria-label="推理问题"><small>线路判断</small><h2>{node.puzzle.prompt}</h2><details><summary>查看核对提示</summary><p>{node.puzzle.hint}</p></details></section>}
               {node.outcome && <section className="ending-summary" aria-label="章节结果">
                 <small>{node.outcome === 'complete' ? 'WORK ORDER / 已归档' : 'WORK ORDER / 需复核'}</small>
-                <h2>{node.outcome === 'complete' ? (nextChapter ? `${chapter.title} · 记录完成` : '第一部完 · 归档闭合') : '这条回路仍需重新核对'}</h2>
+                <h2>{node.outcome === 'complete' ? (state.chapterId === 'closure' ? '第一部完 · 归档闭合' : `${chapter.title} · 记录完成`) : '这条回路仍需重新核对'}</h2>
                 <p>{node.outcome === 'complete' ? `${chapter.clue.code} · ${chapter.clue.title}` : '回看现场记录，或从本章重新排查。'}</p>
               </section>}
               <div className="scene-caption">{node.location}</div>
@@ -285,9 +303,12 @@ function App() {
                 {!reading.finished && <button onClick={reading.reveal}>显示全文</button>}
                 <button aria-pressed={automatic} onClick={() => setAutomatic(!automatic)}>{automatic ? '暂停自动' : '自动阅读'}</button>
                 <button aria-pressed={preferences.muted} onClick={() => { enableAudio(); changePreference('muted', !preferences.muted); }}>{preferences.muted ? '开启声音' : '静音'}</button>
+                {!!currentVoices.length && <button disabled={!preferences.voiceEnabled || preferences.muted} onClick={() => { enableAudio(); recorded.current?.replay(currentVoices); }}>重听语音</button>}
+                {voiceBlocksAuto(voiceState) && <button onClick={() => voiceState.status === 'paused' ? recorded.current?.resume() : recorded.current?.pause()}>{voiceState.status === 'paused' ? '继续语音' : '暂停语音'}</button>}
                 <button onClick={(event) => openPanel('characters', event.currentTarget)} aria-haspopup="dialog">人物</button>
               </div></div>
               {node.speaker && <div className="speaker">{node.speaker}</div>}
+              {voiceState.clip && <p className="voice-caption" role="status">{getCharacter(voiceState.clip.character)?.name} · {voiceState.status === 'failed' ? '录音暂不可用，可继续阅读或重听' : voiceState.status === 'paused' ? '语音已暂停' : voiceState.status === 'loading' ? '准备语音' : '语音播放中'}{!currentVoices.some((clip) => clip.id === voiceState.clip?.id) && `：${voiceState.clip.text}`}</p>}
               <p className="dialogue-text" aria-label={node.text}><span aria-hidden="true">{reading.text}</span></p>
               <div className="actions"><div className={['choice', 'puzzle'].includes(node.kind) ? 'choice-grid deduction' : 'choice-grid'}>
                 {dialogueActions.map((action) => <button key={action.id} data-action-id={action.id} className={action.tone === 'danger' ? 'danger' : ''} onClick={() => act(action.id)}>{action.label}</button>)}
@@ -307,7 +328,8 @@ function App() {
         </>}
         {panel === 'history' && <><p className="history-intro">按实际经过保留本章最近 {history.length} 条叙事。</p><ol className="history-list">{history.map((id, index) => {
           const entry = chapter.nodes[id];
-          return <li className="history-entry" key={`${index}-${id}`}><div className="history-meta"><span>{entry.time}</span><span>{entry.location}</span></div>{entry.speaker && <strong className="history-speaker">{entry.speaker}</strong>}<p>{entry.text}</p></li>;
+          const clips = voicesFor(state.chapterId, id);
+          return <li className="history-entry" key={`${index}-${id}`}><div className="history-meta"><span>{entry.time}</span><span>{entry.location}</span></div>{entry.speaker && <strong className="history-speaker">{entry.speaker}</strong>}<p>{entry.text}</p>{!!clips.length && <button disabled={!preferences.voiceEnabled || preferences.muted} onClick={() => { enableAudio(); recorded.current?.replay(clips, true); }}>重听这条语音</button>}</li>;
         })}</ol></>}
         {panel === 'chapters' && <><p>按归档顺序解锁。重玩已解锁章节会从本章开头出发，线路档案保留。</p><div className="chapter-grid">{CHAPTER_ORDER.map((id, index) => {
           const item = getChapter(id)!; const unlocked = index <= menuSession.completed.length;
@@ -327,20 +349,24 @@ function App() {
           <label>自动阅读停留 {preferences.autoDelay} 秒<input type="range" min="2" max="8" step="1" value={preferences.autoDelay} onChange={(event) => changePreference('autoDelay', Number(event.target.value))} /></label>
           <label>音乐音量 {Math.round(preferences.musicVolume * 100)}%<input type="range" min="0" max="1" step=".05" value={preferences.musicVolume} onChange={(event) => changePreference('musicVolume', Number(event.target.value))} /></label>
           <label>环境与提示音 {Math.round(preferences.ambienceVolume * 100)}%<input type="range" min="0" max="1" step=".05" value={preferences.ambienceVolume} onChange={(event) => changePreference('ambienceVolume', Number(event.target.value))} /></label>
+          <label>人物语音音量 {Math.round(preferences.voiceVolume * 100)}%<input type="range" min="0" max="1" step=".05" value={preferences.voiceVolume} onChange={(event) => changePreference('voiceVolume', Number(event.target.value))} /></label>
+          <label>场景音效音量 {Math.round(preferences.sfxVolume * 100)}%<input type="range" min="0" max="1" step=".05" value={preferences.sfxVolume} onChange={(event) => changePreference('sfxVolume', Number(event.target.value))} /></label>
+          <label className="setting-toggle"><input type="checkbox" checked={preferences.voiceEnabled} onChange={(event) => changePreference('voiceEnabled', event.target.checked)} />播放人物语音</label>
           <label className="setting-toggle"><input type="checkbox" checked={preferences.muted} onChange={(event) => changePreference('muted', event.target.checked)} />静音</label>
           <label className="setting-toggle"><input type="checkbox" checked={preferences.highContrast} onChange={(event) => changePreference('highContrast', event.target.checked)} />高对比文字</label>
           <label className="setting-toggle"><input type="checkbox" checked={preferences.reducedMotion} onChange={(event) => changePreference('reducedMotion', event.target.checked)} />减少动态效果 / 即时全文</label>
-          <button onClick={() => void fullscreen()}>切换全屏</button><p>自动阅读只推进单一对话；调查和推理等待你的判断。打开面板、返回标题或切换到其他标签页时暂停。</p>
+          <button onClick={() => void fullscreen()}>切换全屏</button><p>自动阅读等本条语音播完，再停留所设秒数。调查和推理等待你的判断。打开面板或切换标签页时暂停；返回标题会停止录音。历史里可重听已经经过的语音。</p>
         </div>}
-        {panel === 'archive' && <><p>已归档 {menuSession.completed.length}/6 段线路。每完成一章，旧城档案便补上一处缺失。图上的连线表示救援与交接路线，跨越不同供电分区。</p><svg className="city-map" viewBox="0 0 100 100" role="img" aria-label={`城市线路图，已归档 ${menuSession.completed.length} 段`}>
+        {panel === 'archive' && <><p>已归档 {menuSession.completed.length}/{CHAPTER_ORDER.length} 章。第一部连线表示人员与资料核对路径；V01记录新苑回访，另列支线。</p><svg className="city-map" viewBox="0 0 100 100" role="img" aria-label={`城市线路图，已归档 ${menuSession.completed.length} 段`}>
           <path className="city-map-grid" d="M0 25H100M0 50H100M0 75H100M25 0V100M50 0V100M75 0V100" />
           <polyline points={mapPoints.join(' ')} fill="none" className="city-map-route" />
+          {menuSession.completed.includes('return-visit') && <polyline points={`${getChapter('closure')!.clue.x},${getChapter('closure')!.clue.y} ${getChapter('return-visit')!.clue.x},${getChapter('return-visit')!.clue.y}`} fill="none" className="city-map-route map-followup" />}
           {CHAPTER_ORDER.map((id) => { const clue = getChapter(id)!.clue; const done = menuSession.completed.includes(id); return <g key={id} className={done ? 'map-complete' : 'map-locked'}><circle cx={clue.x} cy={clue.y} r="2" /><text x={clue.x + 3} y={clue.y + 1}>{done ? clue.code : '· · ·'}</text></g>; })}
         </svg><div className="archive-list">{CHAPTER_ORDER.map((id) => {
           const item = getChapter(id)!; const done = menuSession.completed.includes(id);
           return <article key={id}><span>{done ? item.clue.code : '—'}</span><div><h3>{done ? item.clue.title : `${item.title} · 待归档`}</h3><p>{done ? item.clue.detail : '完成本章后补入线路记录。'}</p>{done && <details><summary>查阅本章现场记录</summary>{(menuSession.archive[id] ?? []).map((evidence) => <p key={evidence}><strong>{item.evidence[evidence].title}</strong><br />{item.evidence[evidence].detail}</p>)}</details>}</div></article>;
         })}</div></>}
-        {panel === 'help' && <div className="help-content"><h3>抢修手册</h3><p>点击调查标记搜集现场记录，用证据判断回路。选择错误会进入复核结局，可重新排查本章。</p><p>空格或 Enter 显示全文；全文显示后，可推进单一对话。Tab 在按钮间移动，Enter 确认，Esc 关闭面板。</p><p>六章按顺序解锁。完成后可从标题的章节选择重玩；三槽存档和 JSON 导出可保存不同进度。标题和阅读工具栏均可打开人物档案，切换立绘与 Q 版形象。</p><h3>制作记录</h3><p>原创城市民俗悬疑故事、七幅场景、八名人物的立绘与 Q 版形象，师徒另有专注和警觉表情，老周另有现场防护立绘。远程联络使用通讯卡，历史人物使用旧档照片。音乐、雨声、电流声和记录提示由程序实时合成。</p><p>本作人物、单位与事件均为虚构。线路判断服务于剧情，现场电气作业须由具备资质的人员依照规程实施。</p><p>回路 / CIRCUIT · v{version}<br />巡城师徒：十三户、头七、回送、长明、零线、闭合。</p></div>}
+        {panel === 'help' && <div className="help-content"><h3>抢修手册</h3><p>点击调查标记搜集现场记录，用证据判断回路。选择错误会进入复核结局，可重新排查本章。</p><p>空格或 Enter 显示全文；全文显示后，可推进单一对话。Tab 在按钮间移动，Enter 确认，Esc 关闭面板。</p><p>七章按顺序解锁。完成第一部即可继续《回访》，旧存档可沿用。三槽存档和 JSON 导出保留不同进度；人物档案可切换立绘与 Q 版。</p><h3>制作记录</h3><p>九幅场景、九名人物的立绘与 Q 版形象，师徒有专注、警觉表情。远程联络使用通讯卡，历史人物使用旧档照片。关键对白采用离线生成的人物录音；门禁、钥匙、继电器等场景音效随包提供。音乐、雨声和电流声实时合成。</p><p>语音系统参考《雨停之前》的离线制作与重听流程，角色与素材为《回路》单独制作。AI 生成美术与人物语音均在项目制作记录中标注。</p><p>本作人物、单位与事件均为虚构。线路判断服务于剧情，现场电气作业须由具备资质的人员依照规程实施。</p><p>回路 / CIRCUIT · v{version}<br />十三户、头七、回送、长明、零线、闭合；第二部开篇：回访。</p></div>}
       </Notebook>}
     </main>
   );

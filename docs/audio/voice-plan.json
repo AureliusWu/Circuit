@@ -1,0 +1,469 @@
+{
+  "schemaVersion": 1,
+  "version": "1.2.0",
+  "model": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+  "revision": "0c0e3051f131929182e2c023b9537f8b1c68adfe",
+  "language": "Chinese",
+  "dtype": "bfloat16",
+  "threads": 4,
+  "sampleRate": 24000,
+  "processing": "ebu_r128_-20_lufs_-2_dbtp_lra6_pcm16_mp3_96k_v1",
+  "lines": [
+    {
+      "id": "h13-dispatch",
+      "character": "lin",
+      "speaker": "Serena",
+      "instruct": "成年女性，普通话，声音干脆平稳，值班调度员在电台里说话，清楚利落，不要播音腔。 调度通话，语速稍慢，逐句吐字清楚。槐荫巷读huái yīn xiàng，在线读zài xiàn。",
+      "text": "槐荫巷，十二户停电，终端显示十三个在线户号。",
+      "seed": 220010,
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "dispatch"
+        }
+      ]
+    },
+    {
+      "id": "h13-call",
+      "character": "cheng",
+      "speaker": "Dylan",
+      "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。",
+      "text": "在线是通讯状态。有电没电，到了再看。",
+      "seed": 120011,
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "call"
+        }
+      ]
+    },
+    {
+      "id": "h13-kit",
+      "character": "ji",
+      "speaker": "Vivian",
+      "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。",
+      "text": "师傅，照片按户号存，还是按时间？",
+      "seed": 120012,
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "vehicleKit"
+        }
+      ]
+    },
+    {
+      "id": "h13-zhou",
+      "character": "zhou",
+      "speaker": "Uncle_Fu",
+      "instruct": "五十岁男性，普通话，声音低沉略沙哑，克制缓慢，像夜班老工人，语气自然，不要表演悲伤。 语速稍慢，逐字说清楚，季宁读jì níng。句尾完整，不要吞字。",
+      "text": "季宁跟着你，别让她一个人往旧宅里钻。",
+      "seed": 220013,
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "zhouCall"
+        }
+      ]
+    },
+    {
+      "id": "h13-mei",
+      "character": "mei",
+      "speaker": "Serena",
+      "instruct": "六十岁女性，普通话，声音偏低，平实缓慢，像老邻居小声嘱咐，句尾稍停，不要年轻撒娇。",
+      "text": "门留着，别替他把路画死。",
+      "seed": 120014,
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "ashMeaning"
+        }
+      ]
+    },
+    {
+      "id": "h13-ticket",
+      "character": "zhou",
+      "speaker": "Uncle_Fu",
+      "instruct": "五十岁男性，普通话，声音低沉略沙哑，克制缓慢，像夜班老工人，语气自然，不要表演悲伤。",
+      "text": "没安排替代，也没让他停下来。后来有人催关单，我就写完成。没核完。",
+      "seed": 120015,
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "ticketSignature"
+        }
+      ]
+    },
+    {
+      "id": "q07-dispatch",
+      "character": "lin",
+      "speaker": "Serena",
+      "instruct": "成年女性，普通话，声音干脆平稳，值班调度员在电台里说话，清楚利落，不要播音腔。",
+      "text": "清河里七号院，报了九夜。",
+      "seed": 120016,
+      "bindings": [
+        {
+          "chapter": "seventh-night",
+          "node": "dispatch"
+        }
+      ]
+    },
+    {
+      "id": "q07-shen",
+      "character": "shen",
+      "speaker": "Serena",
+      "instruct": "二十八岁女性，普通话，声音轻而疲惫，口语自然，像一晚上没睡好的人，不要哭腔。",
+      "text": "那年我爸回家了，后来还开了好多年车。",
+      "seed": 120017,
+      "bindings": [
+        {
+          "chapter": "seventh-night",
+          "node": "welcome"
+        }
+      ]
+    },
+    {
+      "id": "q07-ji",
+      "character": "ji",
+      "speaker": "Vivian",
+      "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。",
+      "text": "沈师傅回家，许师傅没上车。这两行分开。",
+      "seed": 120018,
+      "bindings": [
+        {
+          "chapter": "seventh-night",
+          "node": "recordReceipt"
+        }
+      ]
+    },
+    {
+      "id": "q07-xu",
+      "character": "xu",
+      "speaker": "Dylan",
+      "instruct": "四十岁男性，普通话，声音比平常低一些，短句利落，是工地电台里平常的询问，不要朗诵。",
+      "text": "车还等吗？",
+      "seed": 120019,
+      "bindings": [
+        {
+          "chapter": "seventh-night",
+          "node": "fatherMessage"
+        }
+      ]
+    },
+    {
+      "id": "r02-chen",
+      "character": "chen",
+      "speaker": "Uncle_Fu",
+      "instruct": "六十岁男性，普通话，语速慢，声音低哑，像看门的老人轻声说话，口语平实。",
+      "text": "晚上别这么响。",
+      "seed": 120020,
+      "bindings": [
+        {
+          "chapter": "backfeed",
+          "node": "gate"
+        }
+      ]
+    },
+    {
+      "id": "r02-door",
+      "character": "chen",
+      "speaker": "Uncle_Fu",
+      "instruct": "六十岁男性，普通话，语速慢，声音低哑，像看门的老人轻声说话，口语平实。",
+      "text": "我母亲搬家都带旧门牌，说怕认错门。",
+      "seed": 120021,
+      "bindings": [
+        {
+          "chapter": "backfeed",
+          "node": "chen"
+        }
+      ]
+    },
+    {
+      "id": "r02-ji",
+      "character": "ji",
+      "speaker": "Vivian",
+      "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。",
+      "text": "外面零了，里面还有。",
+      "seed": 120022,
+      "bindings": [
+        {
+          "chapter": "backfeed",
+          "node": "relayTest"
+        }
+      ]
+    },
+    {
+      "id": "l03-mei",
+      "character": "mei",
+      "speaker": "Serena",
+      "instruct": "六十岁女性，普通话，声音偏低，平实缓慢，像老邻居小声嘱咐，句尾稍停，不要年轻撒娇。",
+      "text": "半夜钥匙碰栏杆，别往楼道里叫。",
+      "seed": 120023,
+      "bindings": [
+        {
+          "chapter": "everlight",
+          "node": "houseRules"
+        }
+      ]
+    },
+    {
+      "id": "l03-keys",
+      "character": "mei",
+      "speaker": "Serena",
+      "instruct": "六十岁女性，普通话，声音偏低，平实缓慢，像老邻居小声嘱咐，句尾稍停，不要年轻撒娇。",
+      "text": "轻两下，最后重一下。他钥匙串就那样碰。",
+      "seed": 120024,
+      "bindings": [
+        {
+          "chapter": "everlight",
+          "node": "promise"
+        }
+      ]
+    },
+    {
+      "id": "l03-ji",
+      "character": "ji",
+      "speaker": "Vivian",
+      "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 说清整句疑问，语速稍慢。钥匙读yào shi，响读xiǎng。句尾问完再停。",
+      "text": "师傅，刚才你下楼的时候，钥匙响没响？",
+      "seed": 220025,
+      "bindings": [
+        {
+          "chapter": "everlight",
+          "node": "dawn"
+        }
+      ]
+    },
+    {
+      "id": "n04-zhou",
+      "character": "zhou",
+      "speaker": "Uncle_Fu",
+      "instruct": "五十岁男性，普通话，声音低沉略沙哑，克制缓慢，像夜班老工人，语气自然，不要表演悲伤。",
+      "text": "没查齐旁路，也没等到交班，我就写了完成。",
+      "seed": 120026,
+      "bindings": [
+        {
+          "chapter": "neutral",
+          "node": "witness"
+        }
+      ]
+    },
+    {
+      "id": "n04-shen",
+      "character": "shen",
+      "speaker": "Serena",
+      "instruct": "二十八岁女性，普通话，声音轻而疲惫，口语自然，像一晚上没睡好的人，不要哭腔。",
+      "text": "你把原话留着，后面他们还会问。",
+      "seed": 120027,
+      "bindings": [
+        {
+          "chapter": "neutral",
+          "node": "debt"
+        }
+      ]
+    },
+    {
+      "id": "c00-ji",
+      "character": "ji",
+      "speaker": "Vivian",
+      "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。",
+      "text": "也不能照这圈顺序说哪件事先发生。",
+      "seed": 120028,
+      "bindings": [
+        {
+          "chapter": "closure",
+          "node": "mapRecord"
+        }
+      ]
+    },
+    {
+      "id": "c00-cheng",
+      "character": "cheng",
+      "speaker": "Dylan",
+      "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。",
+      "text": "按页来。",
+      "seed": 120029,
+      "bindings": [
+        {
+          "chapter": "closure",
+          "node": "summon"
+        }
+      ]
+    },
+    {
+      "id": "c00-mei",
+      "character": "mei",
+      "speaker": "Serena",
+      "instruct": "六十岁女性，普通话，声音偏低，平实缓慢，像老邻居小声嘱咐，句尾稍停，不要年轻撒娇。",
+      "text": "灯没再亮，后门也没再响。",
+      "seed": 120030,
+      "bindings": [
+        {
+          "chapter": "closure",
+          "node": "mei"
+        }
+      ]
+    },
+    {
+      "id": "v01-lin",
+      "character": "lin",
+      "speaker": "Serena",
+      "instruct": "成年女性，普通话，声音干脆平稳，值班调度员在电台里说话，清楚利落，不要播音腔。",
+      "text": "物业说他们听见你了。",
+      "seed": 120031,
+      "bindings": [
+        {
+          "chapter": "return-visit",
+          "node": "dispatch"
+        }
+      ]
+    },
+    {
+      "id": "v01-ji-address",
+      "character": "ji",
+      "speaker": "Vivian",
+      "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。",
+      "text": "十三号搬来以后还是十三号？",
+      "seed": 120032,
+      "bindings": [
+        {
+          "chapter": "return-visit",
+          "node": "drive"
+        }
+      ]
+    },
+    {
+      "id": "v01-arrived",
+      "character": "cheng",
+      "speaker": "Dylan",
+      "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。 普通话，语速稍慢，清晰念出完整到场通知。程砚读chéng yàn。",
+      "text": "程砚，已经到场。",
+      "seed": 220033,
+      "bindings": [
+        {
+          "chapter": "return-visit",
+          "node": "arrival"
+        },
+        {
+          "chapter": "return-visit",
+          "node": "echo"
+        }
+      ]
+    },
+    {
+      "id": "v01-luo",
+      "character": "luo",
+      "speaker": "Vivian",
+      "instruct": "二十九岁女性，普通话，声音偏低，夜班值班员谨慎地问话，平静自然，略有迟疑，不要朗诵。",
+      "text": "我也觉得不对。前两次都说到场，门口一个人没有。",
+      "seed": 120034,
+      "bindings": [
+        {
+          "chapter": "return-visit",
+          "node": "luo"
+        }
+      ]
+    },
+    {
+      "id": "v01-redpaper",
+      "character": "luo",
+      "speaker": "Vivian",
+      "instruct": "二十九岁女性，普通话，声音偏低，夜班值班员谨慎地问话，平静自然，略有迟疑，不要朗诵。 普通话，语速稍慢，完整说完三句话，贴和揭都读清楚。",
+      "text": "朝里贴，说让跟着搬家的认得门。白天就揭，物业总忘。",
+      "seed": 220035,
+      "bindings": [
+        {
+          "chapter": "return-visit",
+          "node": "doorRule"
+        }
+      ]
+    },
+    {
+      "id": "v01-wait",
+      "character": "ji",
+      "speaker": "Vivian",
+      "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 语速稍慢，字句清楚地嘱咐。答到读dá dào，不要吞掉句尾。",
+      "text": "先别替它答到。",
+      "seed": 220036,
+      "bindings": [
+        {
+          "chapter": "return-visit",
+          "node": "firstHub"
+        }
+      ]
+    },
+    {
+      "id": "v01-received",
+      "character": "ji",
+      "speaker": "Vivian",
+      "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 普通话，语速稍慢，明确说出完整姓名。季宁读jì níng，收到读shōu dào。",
+      "text": "季宁，收到。",
+      "seed": 220037,
+      "bindings": [
+        {
+          "chapter": "return-visit",
+          "node": "echo"
+        }
+      ]
+    },
+    {
+      "id": "v01-receipt",
+      "character": "luo",
+      "speaker": "Vivian",
+      "instruct": "二十九岁女性，普通话，声音偏低，夜班值班员谨慎地问话，平静自然，略有迟疑，不要朗诵。",
+      "text": "语音说收到了，我就往后翻。",
+      "seed": 120038,
+      "bindings": [
+        {
+          "chapter": "return-visit",
+          "node": "receipt"
+        }
+      ]
+    },
+    {
+      "id": "v01-record",
+      "character": "ji",
+      "speaker": "Vivian",
+      "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。",
+      "text": "季宁，现场记录已交。",
+      "seed": 120039,
+      "bindings": [
+        {
+          "chapter": "return-visit",
+          "node": "approved"
+        }
+      ]
+    },
+    {
+      "id": "v01-question",
+      "character": "luo",
+      "speaker": "Vivian",
+      "instruct": "二十九岁女性，普通话，声音偏低，夜班值班员谨慎地问话，平静自然，略有迟疑，不要朗诵。 语速稍慢，完整说清问句，句尾应我两个字读yìng wǒ，不要省字。",
+      "text": "到底谁在后面应我？",
+      "seed": 220040,
+      "bindings": [
+        {
+          "chapter": "return-visit",
+          "node": "quiet"
+        }
+      ]
+    },
+    {
+      "id": "v01-confirm",
+      "character": "cheng",
+      "speaker": "Dylan",
+      "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。",
+      "text": "先别替它确认。",
+      "seed": 120041,
+      "bindings": [
+        {
+          "chapter": "return-visit",
+          "node": "onward"
+        },
+        {
+          "chapter": "return-visit",
+          "node": "end"
+        }
+      ]
+    }
+  ]
+}

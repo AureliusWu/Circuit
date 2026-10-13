@@ -21,7 +21,7 @@ PREFS = "circuit-settings-v100"
 CORE = ["live-after-cut", "house-13", "paper-ash"]
 DEFAULTS = {
     "textSpeed": "instant", "autoDelay": 2, "musicVolume": 0.35,
-    "ambienceVolume": 0.55, "muted": False, "highContrast": False, "reducedMotion": False,
+    "ambienceVolume": 0.55, "voiceVolume": 0.8, "sfxVolume": 0.6, "voiceEnabled": False, "muted": False, "highContrast": False, "reducedMotion": False,
 }
 checks = []
 errors = []
@@ -296,7 +296,7 @@ def save_transfer(browser):
         (b" " * (512 * 1024 + 1), "文件过大"),
     ]:
         upload(page, content)
-        expect(page.get_by_role("status")).to_contain_text(expected)
+        expect(page.locator(".save-notice, .title-notice")).to_contain_text(expected)
         assert raw_storage(page) == records
     checked("syntax-invalid, impossible-state and oversized imports preserve every prior slot")
     page.get_by_role("button", name="读取槽 1", exact=True).click()
@@ -346,7 +346,7 @@ def legacy_readonly(browser):
 def unavailable_storage(browser, exported):
     context, page = new_page(browser, denied=True)
     page.get_by_role("button", name="开始抢修", exact=True).click()
-    expect(page.get_by_role("status")).to_contain_text("浏览器存储暂不可用")
+    expect(page.locator(".save-notice, .title-notice")).to_contain_text("浏览器存储暂不可用")
     page.get_by_role("button", name="接下工单", exact=True).click()
     page.get_by_role("button", name="历史", exact=True).click()
     expect(page.locator(".history-entry")).to_have_count(2)
@@ -355,7 +355,7 @@ def unavailable_storage(browser, exported):
     open_saves(page)
     upload(page, exported)
     expect(page.get_by_role("dialog")).to_have_count(0)
-    expect(page.get_by_role("status")).to_contain_text("存储")
+    expect(page.locator(".save-notice, .title-notice")).to_contain_text("存储")
     checked("import with unavailable storage preserves the persistence warning")
     context.close()
 

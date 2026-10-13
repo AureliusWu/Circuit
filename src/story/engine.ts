@@ -4,12 +4,13 @@ import { backfeed } from './chapters/backfeed';
 import { everlight } from './chapters/everlight';
 import { neutral } from './chapters/neutral';
 import { closure } from './chapters/closure';
+import { returnVisit } from './chapters/return-visit';
 import { getCharacter } from '../game/characters';
 import type { Chapter, ChapterId, EvidenceId, GameState, StoryAction, StoryNode } from './types';
 
 export const PROLOGUE: ChapterId = 'thirteen-households';
 export const CHAPTER_ORDER: readonly ChapterId[] = Object.freeze([
-  PROLOGUE, 'seventh-night', 'backfeed', 'everlight', 'neutral', 'closure'
+  PROLOGUE, 'seventh-night', 'backfeed', 'everlight', 'neutral', 'closure', 'return-visit'
 ]);
 
 /** Finish the next chapter in sequence; replays remain available. */
@@ -26,7 +27,8 @@ export const CHAPTERS: Readonly<Record<ChapterId, Chapter>> = Object.freeze({
   backfeed,
   everlight,
   neutral,
-  closure
+  closure,
+  'return-visit': returnVisit
 });
 
 const owns = (record: object, key: string): boolean => Object.prototype.hasOwnProperty.call(record, key);

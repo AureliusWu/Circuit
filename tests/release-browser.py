@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Complete Circuit's six chapters in Chromium and check responsive/offline play."""
+"""Complete Circuit's seven chapters in Chromium and check responsive/offline play."""
 import argparse
 import json
 import os
@@ -113,7 +113,7 @@ def run(url, pwa):
         opener.click()
         dialog = page.get_by_role('dialog', name='人物与抢修队', exact=True)
         expect(dialog).to_be_visible()
-        expect(dialog.locator('[data-character-id]')).to_have_count(8)
+        expect(dialog.locator('[data-character-id]')).to_have_count(9)
         for person in dialog.locator('[data-character-id]').all():
             identifier = person.get_attribute('data-character-id')
             person.click()
@@ -232,7 +232,7 @@ def run(url, pwa):
                     dialog = page.get_by_role('dialog', name='城市线路档案')
                     expect(dialog.locator('.map-complete')).to_have_count(index + 1)
                     if index == len(authored) - 1:
-                        points = dialog.locator('.city-map-route').get_attribute('points').split()
+                        points = dialog.locator('.city-map-route:not(.map-followup)').get_attribute('points').split()
                         assert len(points) == 7 and points[0] == points[-1], 'Completed city route does not close its circuit'
                     page.keyboard.press('Escape')
                     click(page, '标题')
@@ -358,9 +358,27 @@ def run(url, pwa):
                     summary['offline_art'] = images
                     character_directory(page, '人物')
                     completed.append(phase)
+                    phase = 'offline-all-voice-and-scene-audio'
+                    audio_paths = sorted('/' + str(path.relative_to('public')).replace(os.sep, '/') for path in Path('public/audio').rglob('*.mp3'))
+                    decoded = page.evaluate('''async paths => {
+                      const context = new OfflineAudioContext(1, 24000, 24000);
+                      const results = [];
+                      for (const path of paths) {
+                        const response = await fetch(path);
+                        if (!response.ok) throw new Error('Offline audio missing: ' + path);
+                        const buffer = await context.decodeAudioData(await response.arrayBuffer());
+                        if (!buffer.length || !Number.isFinite(buffer.duration)) throw new Error('Invalid audio: ' + path);
+                        results.push({path, duration: buffer.duration, channels: buffer.numberOfChannels});
+                      }
+                      return results;
+                    }''', [urljoin(url.rstrip('/') + '/', path.lstrip('/')) for path in audio_paths])
+                    assert len(decoded) == 43, decoded
+                    assert all(row['duration'] > .05 and row['channels'] == 1 for row in decoded), decoded
+                    summary['offline_audio'] = decoded
+                    completed.append(phase)
                     phase = 'offline-campaign-resume-and-replay'
                     click(page, '线路')
-                    expect(page.get_by_role('dialog', name='城市线路档案').locator('.map-complete')).to_have_count(6)
+                    expect(page.get_by_role('dialog', name='城市线路档案').locator('.map-complete')).to_have_count(len(order))
                     page.keyboard.press('Escape')
                     click(page, '标题')
                     click(page, '章节选择')

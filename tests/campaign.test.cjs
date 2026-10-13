@@ -45,15 +45,29 @@ test('new campaigns start at the first chapter without completion or archive wri
   assert.equal(validateCampaignPayload(payload(session)).status, 'valid');
 });
 
-test('all six campaign positions accept an ordered completion prefix with evidence proof', () => {
-  assert.equal(CHAPTER_ORDER.length, 6);
+test('all seven campaign positions accept an ordered completion prefix with evidence proof', () => {
+  assert.equal(CHAPTER_ORDER.length, 7);
   for (let index = 0; index < CHAPTER_ORDER.length; index += 1) {
     assert.equal(validateCampaignPayload(payload(sessionAt(index))).status, 'valid');
   }
-  const allComplete = completeChapter(sessionAt(5, 'complete'));
+  const allComplete = completeChapter(sessionAt(CHAPTER_ORDER.length - 1, 'complete'));
   const result = validateCampaignPayload(payload(allComplete));
   assert.equal(result.status, 'valid');
   assert.deepEqual(result.snapshot.completed, CHAPTER_ORDER);
+});
+
+test('a v1.1 six-chapter completion preserves its evidence and unlocks Return Visit', () => {
+  const old = completeChapter(sessionAt(5,'complete'));
+  const stored = payload(old);
+  const restored = validateCampaignPayload(stored);
+  assert.equal(restored.status,'valid');
+  assert.deepEqual(restored.snapshot.completed,CHAPTER_ORDER.slice(0,6));
+  assert.deepEqual(restored.snapshot.archive,old.archive);
+  assert.ok(canStartChapter(restored.snapshot,'return-visit'));
+  const next = startChapter(restored.snapshot,'return-visit');
+  assert.equal(next.state.nodeId,'dispatch');
+  assert.deepEqual(next.state.evidence,[]);
+  assert.deepEqual(next.archive,old.archive);
 });
 
 test('unknown chapters, corrupt state and malformed campaign payloads are rejected', () => {

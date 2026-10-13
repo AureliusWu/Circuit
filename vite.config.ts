@@ -6,13 +6,14 @@ export default defineConfig(({ mode }) => {
   const base = loadEnv(mode, '.', 'CIRCUIT_').CIRCUIT_BASE_PATH ?? '/';
   return {
     base,
+    build: { emptyOutDir: true },
     plugins: [
       react(),
       VitePWA({
         registerType: 'autoUpdate',
         includeAssets: ['icon.png', 'icons/*.png'],
         workbox: {
-          globPatterns: ['**/*.{js,css,html,ico,png,webp}'],
+          globPatterns: ['**/*.{js,css,html,ico,png,webp,mp3}'],
           maximumFileSizeToCacheInBytes: 4 * 1024 * 1024
         },
         manifest: {

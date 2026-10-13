@@ -52,11 +52,11 @@ export class CircuitAudio {
     this.sources.push(rain);
   }
 
-  async configure(preferences: Preferences, running: boolean) {
+  async configure(preferences: Preferences, running: boolean, speaking = false) {
     if (this.context.state === 'closed') return;
     const now = this.context.currentTime;
-    this.music.gain.setTargetAtTime(preferences.musicVolume, now, .12);
-    this.ambience.gain.setTargetAtTime(preferences.ambienceVolume, now, .12);
+    this.music.gain.setTargetAtTime(preferences.musicVolume * (speaking ? .35 : 1), now, .12);
+    this.ambience.gain.setTargetAtTime(preferences.ambienceVolume * (speaking ? .6 : 1), now, .12);
     this.output.gain.setTargetAtTime(preferences.muted ? 0 : 1, now, .12);
     try {
       if (running && !preferences.muted) await this.context.resume();

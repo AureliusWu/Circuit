@@ -38,13 +38,31 @@ test('invalid settings types and out of range values are rejected', () => {
     { ...DEFAULT_PREFERENCES, textSpeed: 'extreme' },
     ...[1, 9, NaN, Infinity, '4', null].map((autoDelay) => ({ ...DEFAULT_PREFERENCES, autoDelay })),
     ...[-0.1, 1.1, NaN, Infinity, '0.5'].flatMap((volume) => [
-      { ...DEFAULT_PREFERENCES, musicVolume: volume }, { ...DEFAULT_PREFERENCES, ambienceVolume: volume }
+      { ...DEFAULT_PREFERENCES, musicVolume: volume }, { ...DEFAULT_PREFERENCES, ambienceVolume: volume },
+      { ...DEFAULT_PREFERENCES, voiceVolume: volume }, { ...DEFAULT_PREFERENCES, sfxVolume: volume }
     ]),
-    ...['muted', 'highContrast', 'reducedMotion'].flatMap((key) => [
+    ...['muted', 'highContrast', 'reducedMotion', 'voiceEnabled'].flatMap((key) => [
       { ...DEFAULT_PREFERENCES, [key]: 'true' }, { ...DEFAULT_PREFERENCES, [key]: 0 }
     ])
   ];
   for (const value of cases) assert.equal(isPreferences(value), false);
+});
+
+test('old settings gain independent voice controls without rewriting the stored record', () => {
+  const old = {...DEFAULT_PREFERENCES, musicVolume:.2};
+  delete old.voiceVolume; delete old.sfxVolume; delete old.voiceEnabled;
+  const raw = JSON.stringify(old);
+  const storage = new MemoryStorage({[PREFERENCES_KEY]:raw});
+  const loaded = loadPreferences(storage);
+  assert.equal(loaded.status,'valid');
+  assert.equal(loaded.preferences.voiceVolume,.8);
+  assert.equal(loaded.preferences.sfxVolume,.6);
+  assert.equal(loaded.preferences.voiceEnabled,true);
+  assert.equal(loaded.preferences.musicVolume,.2);
+  assert.equal(storage.getItem(PREFERENCES_KEY),raw);
+  assert.deepEqual(storage.writes,[]);
+  storage.records.set(PREFERENCES_KEY,JSON.stringify({...old,voiceVolume:null}));
+  assert.equal(loadPreferences(storage).status,'invalid');
 });
 
 test('corrupt settings are preserved while defaults remain playable', () => {

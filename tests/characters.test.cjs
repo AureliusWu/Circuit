@@ -6,9 +6,9 @@ const { test } = require('node:test');
 const { CHARACTERS, getCharacter, getPortraitPath } = require(path.join(process.env.CIRCUIT_TEST_BUILD, 'game/characters.js'));
 const { getChapter, validateChapter } = require(path.join(process.env.CIRCUIT_TEST_BUILD, 'story/engine.js'));
 
-test('every cast member and expression resolves to a shipping WebP, including eight Q avatars', () => {
-  assert.equal(CHARACTERS.length, 8);
-  assert.equal(new Set(CHARACTERS.map(person => person.id)).size, 8);
+test('every cast member and expression resolves to a shipping WebP, including nine Q avatars', () => {
+  assert.equal(CHARACTERS.length, 9);
+  assert.equal(new Set(CHARACTERS.map(person => person.id)).size, 9);
   for (const person of CHARACTERS) {
     for (const asset of [person.chibi, ...Object.values(person.portraits)]) {
       assert.ok(asset.startsWith('/art/') && !asset.includes('..'));
@@ -47,5 +47,19 @@ test('patrol art bytes match the reviewed image-generation manifest', () => {
     assert.equal(bytes.length, asset.bytes, asset.id);
     assert.equal(createHash('sha256').update(bytes).digest('hex'), asset.sha256, asset.id);
     assert.ok(asset.prompt && asset.source_sha256 && asset.references.length, asset.id);
+  }
+});
+
+test('Return Visit sources, portraits and scene outputs match their generation manifest', () => {
+  const manifest = JSON.parse(readFileSync('docs/art/return-visit-manifest.json','utf8'));
+  assert.equal(manifest.assets.length,6);
+  for (const asset of manifest.assets) {
+    for (const [file,sha,bytes] of [[asset.source,asset.sourceSha256,asset.sourceBytes],[asset.output,asset.sha256,asset.bytes]]) {
+      const data=readFileSync(file);
+      assert.equal(data.length,bytes,asset.id);
+      assert.equal(createHash('sha256').update(data).digest('hex'),sha,asset.id);
+    }
+    assert.ok(asset.prompt && asset.references.length,asset.id);
+    if (asset.output.includes('/portraits/') || asset.output.includes('/chibi/')) assert.ok(asset.transparentFraction>.15,asset.id);
   }
 });

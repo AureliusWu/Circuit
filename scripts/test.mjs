@@ -10,7 +10,7 @@ try {
     '--module', 'commonjs', '--moduleResolution', 'node',
     '--target', 'ES2020', '--lib', 'ES2020,DOM', '--strict', '--skipLibCheck',
     '--rootDir', 'src', '--outDir', build,
-    'src/story/engine.ts', 'src/game/saves.ts', 'src/game/campaign.ts', 'src/game/preferences.ts'
+    'src/story/engine.ts', 'src/game/saves.ts', 'src/game/campaign.ts', 'src/game/preferences.ts', 'src/game/recordedAudio.ts'
   ], { stdio: 'inherit' });
   if (compile.error) throw compile.error;
   if (compile.status !== 0) {

@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "checks": [
+    "1440x900: read-log filtering, original voice, pause and unchanged save",
+    "1440x900: acquired-only evidence search and original recording controls",
+    "1440x900: offline reload retains searchable read route",
+    "412x915: read-log filtering, original voice, pause and unchanged save",
+    "412x915: acquired-only evidence search and original recording controls",
+    "412x915: offline reload retains searchable read route",
+    "568x320: read-log filtering, original voice, pause and unchanged save",
+    "568x320: acquired-only evidence search and original recording controls",
+    "568x320: offline reload retains searchable read route"
+  ],
+  "errors": [],
+  "real_windows_execution": false
+}

@@ -40,6 +40,7 @@ jobs:
           python tests/reading-browser.py http://127.0.0.1:4173
           python tests/voice-browser.py http://127.0.0.1:4173
           python tests/answering-browser.py http://127.0.0.1:4173
+          python tests/history-search-browser.py http://127.0.0.1:4173
 
   desktop:
     name: Windows desktop compile

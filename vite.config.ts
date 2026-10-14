@@ -13,7 +13,7 @@ export default defineConfig(({ mode }) => {
         registerType: 'autoUpdate',
         includeAssets: ['icon.png', 'icons/*.png'],
         workbox: {
-          globPatterns: ['**/*.{js,css,html,ico,png,webp,mp3}'],
+          globPatterns: ['**/*.{js,css,html,ico,png,webp,mp3,woff2,txt}'],
           maximumFileSizeToCacheInBytes: 4 * 1024 * 1024
         },
         manifest: {

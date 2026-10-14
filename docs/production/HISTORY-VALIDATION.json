@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-14",
+  "project": "Circuit",
+  "baseCommit": "a6e30763d10f2841cfdf13b899a928b8c0ac0036",
+  "scope": "read-history search; native story/save identities and existing art/voices preserved",
+  "platforms": {
+    "local": "verified; see HISTORY-REVIEW.md",
+    "githubCI": "pending",
+    "publicPWA": "pending",
+    "humanListening": "not performed"
+  },
+  "version": "1.3.1",
+  "localChecks": {
+    "unit": 75,
+    "newBrowserChecks": 9,
+    "chapters": 8,
+    "fullCampaignBrowserStages": 19,
+    "selfHostedFontOffline": "passed"
+  },
+  "browser": "Chromium 140.0.7339.186; production build"
+}

@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { Notebook } from './components/Notebook';
+import { RecordSearch } from './components/RecordSearch';
 import { CharacterGallery } from './components/CharacterGallery';
 import { getCharacter, getPortraitPath } from './game/characters';
 import { CHAPTER_ORDER, getAvailableActions, getChapter, transition } from './story/engine';
@@ -85,6 +86,8 @@ function App() {
   const dialogueActions = actions.filter((action) => !hotspotActions.has(action.id));
   const requiredCount = chapter.requiredEvidence.filter((id) => state.evidence.includes(id)).length;
   const nextChapter = CHAPTER_ORDER[chapter.order + 1];
+  const historyEntries = history.map(id => ({ ...chapter.nodes[id], id, context: `${chapter.nodes[id].location} ${chapter.nodes[id].time}` }));
+  const evidenceEntries = state.evidence.map((id, index) => ({ id, index, text: chapter.evidence[id].detail, context: chapter.evidence[id].title }));
 
   useEffect(() => {
     const onVisibility = () => setPageVisible(!document.hidden);
@@ -328,17 +331,16 @@ function App() {
         </div>}
         {panel === 'characters' && <CharacterGallery />}
         {panel === 'evidence' && <>
-          {!state.evidence.length ? <p className="empty">尚未记录异常。先按标准故障流程排查。</p> : state.evidence.map((id, index) => <article key={id}><span>{String(index + 1).padStart(2, '0')}</span><div><h3>{chapter.evidence[id].title}</h3><p>{chapter.evidence[id].detail}</p>{chapter.evidence[id].recordings?.map(sample => {
+          <RecordSearch entries={evidenceEntries} queryLabel="搜索现场记录" showSpeakers={false} listClassName="evidence-records" emptyText="尚未记录异常。先按标准故障流程排查。" renderEntry={({ id, index }) => <article><span>{String(index + 1).padStart(2, '0')}</span><div><h3>{chapter.evidence[id].title}</h3><p>{chapter.evidence[id].detail}</p>{chapter.evidence[id].recordings?.map(sample => {
             const clip = getVoiceClip(sample.clipId);
             return clip && <button key={sample.clipId} disabled={!preferences.voiceEnabled || preferences.muted} onClick={() => { enableAudio(); recorded.current?.replay([clip], true); }}>重听：{sample.label}</button>;
-          })}</div></article>)}
+          })}</div></article>} />
           <footer>原则：先排除电气故障，再解释剩下的东西。</footer>
         </>}
-        {panel === 'history' && <><p className="history-intro">按实际经过保留本章最近 {history.length} 条叙事。</p><ol className="history-list">{history.map((id, index) => {
-          const entry = chapter.nodes[id];
-          const clips = voicesFor(state.chapterId, id);
-          return <li className="history-entry" key={`${index}-${id}`}><div className="history-meta"><span>{entry.time}</span><span>{entry.location}</span></div>{entry.speaker && <strong className="history-speaker">{entry.speaker}</strong>}<p>{entry.text}</p>{!!clips.length && <button disabled={!preferences.voiceEnabled || preferences.muted} onClick={() => { enableAudio(); recorded.current?.replay(clips, true); }}>重听这条语音</button>}</li>;
-        })}</ol></>}
+        {panel === 'history' && <><p className="history-intro">按实际经过保留本章最近 {history.length} 条叙事。</p><RecordSearch entries={historyEntries} ordered renderEntry={entry => {
+          const clips = voicesFor(state.chapterId, entry.id);
+          return <li className="history-entry"><div className="history-meta"><span>{entry.time}</span><span>{entry.location}</span></div>{entry.speaker && <strong className="history-speaker">{entry.speaker}</strong>}<p>{entry.text}</p>{!!clips.length && <button disabled={!preferences.voiceEnabled || preferences.muted} onClick={() => { enableAudio(); recorded.current?.replay(clips, true); }}>重听这条语音</button>}</li>;
+        }} /></>}
         {panel === 'chapters' && <><p>按归档顺序解锁。重玩已解锁章节会从本章开头出发，线路档案保留。</p><div className="chapter-grid">{CHAPTER_ORDER.map((id, index) => {
           const item = getChapter(id)!; const unlocked = index <= menuSession.completed.length;
           return <button className="chapter-card" key={id} disabled={!unlocked} data-chapter-id={id} onClick={() => selectChapter(id)}>

@@ -25,12 +25,13 @@ def fixtures():
         command = [shutil.which('node') or 'node', 'node_modules/typescript/bin/tsc',
                    '--module', 'commonjs', '--moduleResolution', 'node', '--target', 'ES2020',
                    '--strict', '--skipLibCheck', '--rootDir', 'src', '--outDir', temporary,
-                   'src/story/engine.ts']
+                   'src/story/engine.ts','src/game/mediaCatalog.ts']
         compiled = subprocess.run(command, capture_output=True, text=True)
         if compiled.returncode:
             raise RuntimeError(compiled.stdout + compiled.stderr)
         script = r'''
 const e=require(process.argv[1]);
+const media=require(require("node:path").join(require("node:path").dirname(process.argv[1]), "../game/mediaCatalog.js"));
 const results=e.CHAPTER_ORDER.map(id=>{
  const chapter=e.getChapter(id), initial=e.createInitialState(id);
  const queue=[{state:initial,path:[]}], seen=new Set(); let complete=null, investigation=null;
@@ -47,7 +48,7 @@ const results=e.CHAPTER_ORDER.map(id=>{
  }
  if(!complete || !investigation) throw new Error('Missing playable route: '+id);
  return {id,title:chapter.title,initial,path:complete.path,investigation,
-  requiredEvidence:chapter.requiredEvidence,nodes:chapter.nodes};
+  requiredEvidence:chapter.requiredEvidence,nodes:chapter.nodes,evidence:chapter.evidence,voices:Object.fromEntries(Object.keys(chapter.nodes).map(node=>[node,media.voicesFor(id,node)]))};
 });
 process.stdout.write(JSON.stringify(results));
 '''

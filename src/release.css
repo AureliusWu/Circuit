@@ -240,6 +240,7 @@
 /* Character directory and distinct scene, radio and archive presentations. */
 .title-crew { margin: 14px 0 0; color: #b6b899; font-size: 11px; letter-spacing: .08em; }
 .notebook-dialog.characters-notebook { width: min(860px, 94vw); }
+.notebook-dialog .record-search { color-scheme: dark; --history-search-bg: #15241a; }
 .character-directory { display: grid; grid-template-columns: 190px minmax(0, 1fr); gap: 16px; }
 .character-directory .crew-intro { grid-column: 1 / -1; margin: 4px 0 0; line-height: 1.9; }
 .character-directory > footer { grid-column: 1 / -1; }

@@ -10,4 +10,4 @@
 
 当前树已重新执行 77 项逻辑测试、TypeScript/Vite 生产构建、152 份音频源/成品全量解码。旧字体遗漏《来访》20个汉字，本批次以原 URL 和相同 SHA-256 的 Noto Sans SC 源字重建；[字体记录](VISITORS-FONT.json)保留新字节哈希，原 HISTORY-FONT.json 保持不变。CI 新增只读 `python scripts/subset-font.py --check`，随正文扩写检查字库覆盖。
 
-浏览器与离线回归正在当前集成产物上重新执行，结果将单独记录。`docs/evidence/v1.4.0-*` 原报告来自2026-10-13检查点，保留为历史制作证据；不作为本批次通过证明。Windows 编译、公开 PWA、真人计时与试听均以各自实际执行结果为准。
+当前横屏面板修复及85项浏览器执行范围见 [PANEL-REVIEW.md](PANEL-REVIEW.md)，中断前验证与恢复后检查分别记录。`docs/evidence/v1.4.0-*` 原报告来自2026-10-13检查点，保留为历史制作证据；不作为本批次通过证明。Windows 编译、公开 PWA、真人计时与试听均以各自实际执行结果为准。

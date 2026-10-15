@@ -1,5 +1,11 @@
 :root { --paper: #c5c2a1; --line: #53614e; --ink: #101b15; }
 
+/* Headings also use the bundled CJK font when no system Chinese font exists. */
+.game .title-brand h1, .game .ending-summary h2, .notebook-dialog .panel-head h2,
+.game .scene-inscription, .game .scene-document, .game .objective-progress, .notebook-dialog .history-meta {
+  font-family: "Circuit Sans", "Microsoft YaHei", "Noto Sans SC", serif;
+}
+
 .release-title {
   min-height: 100vh;
   min-height: 100svh;

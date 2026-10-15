@@ -65,7 +65,7 @@ export function Notebook({ kind, title, onClose, returnFocusTo, children }: Note
           <div><small>CIRCUIT / {kind.toUpperCase()}</small><h2 id="notebook-title">{title}</h2></div>
           <button ref={closeButton} onClick={onClose} aria-label={`关闭${title}`}>×</button>
         </div>
-        {children}
+        <div className="notebook-body">{children}</div>
       </aside>
     </>
   );

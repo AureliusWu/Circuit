@@ -50,9 +50,14 @@ def hit_test(control):
     control.scroll_into_view_if_needed()
     result = control.evaluate('''el => {
       const r=el.getBoundingClientRect(),hit=document.elementFromPoint(r.x+r.width/2,r.y+r.height/2);
-      return r.x>=0&&r.y>=0&&r.right<=innerWidth+1&&r.bottom<=innerHeight+1&&(hit===el||el.contains(hit));
+      return {contained:r.x>=0&&r.y>=0&&r.right<=innerWidth+1&&r.bottom<=innerHeight+1,
+        reachable:hit===el||el.contains(hit),rect:{x:r.x,y:r.y,width:r.width,height:r.height},
+        covering:hit?.outerHTML.slice(0,300)};
     }''')
-    assert result, control.inner_text()
+    if not result['contained'] or not result['reachable']:
+        output = Path('artifacts/answering'); output.mkdir(parents=True, exist_ok=True)
+        control.page.screenshot(path=str(output / 'unreachable-control.png'))
+    assert result['contained'] and result['reachable'], (control.inner_text(), result)
 
 
 with sync_playwright() as playwright:
@@ -212,6 +217,14 @@ with sync_playwright() as playwright:
             for identifier in ['seal', 'sealPosition', 'recordSource', 'record-source']:
                 action(small, identifier)
             dialog = evidence(small)
+            # Inspect actual CJK glyph rendering instead of a declared family.
+            cdp = small.context.new_cdp_session(small)
+            cdp.send('DOM.enable'); cdp.send('CSS.enable')
+            document = cdp.send('DOM.getDocument')['root']['nodeId']
+            title = cdp.send('DOM.querySelector', {'nodeId': document, 'selector': '#notebook-title'})['nodeId']
+            fonts = cdp.send('CSS.getPlatformFontsForNode', {'nodeId': title})['fonts']
+            assert any(font['isCustomFont'] and font['glyphCount'] >= 4 for font in fonts), fonts
+            cdp.detach()
             replay = dialog.get_by_role('button', name='重听：柜边录下的程砚声音', exact=True)
             hit_test(replay)
             assert replay.evaluate('el=>getComputedStyle(el).backgroundColor') == 'rgb(21, 36, 26)'

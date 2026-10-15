@@ -1,0 +1,15 @@
+{
+  "source": "https://github.com/google/fonts/blob/main/ofl/notosanssc/NotoSansSC%5Bwght%5D.ttf",
+  "sourceSha256": "a3041811a78c361b1de50f953c805e0244951c21c5bd412f7232ef0d899af0da",
+  "output": "public/fonts/circuit-sans.woff2",
+  "outputSha256": "4b7616cc3e6325c5dc8992d37eb919dea3e1ae2d586791b795f94377b4c3fe6e",
+  "bytes": 183048,
+  "license": "public/licenses/NotoSansSC-OFL.txt",
+  "scope": "400 weight; complete integrated v1.4.0 src CJK coverage; woff2 and license precached",
+  "requiredCjkGlyphs": 1242,
+  "missingCjkGlyphs": [],
+  "previousFont": "docs/production/HISTORY-FONT.json",
+  "restoredGlyphs": "买介冒凉吊吱咯咽土太妈您拇拧掰派笼蒸蹭锅",
+  "readOnlyCheck": "python scripts/subset-font.py --check",
+  "integrationBaseCommit": "2c5ef615977141f40064b292706a4bbc10d0d35e"
+}

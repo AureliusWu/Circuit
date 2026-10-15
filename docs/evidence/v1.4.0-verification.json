@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "version": "1.4.0",
+  "status": "passed",
+  "baseCommit": "a6e30763d10f2841cfdf13b899a928b8c0ac0036",
+  "chapterCount": 9,
+  "nodeCount": 386,
+  "evidenceCount": 45,
+  "narrativeCharacters": 42833,
+  "narrativeScope": "All dialogue branches excluding title and whitespace",
+  "chapterMetrics": [
+    {
+      "id": "thirteen-households",
+      "nodes": 59,
+      "narrativeCharacters": 6415,
+      "evidence": 3
+    },
+    {
+      "id": "seventh-night",
+      "nodes": 45,
+      "narrativeCharacters": 4969,
+      "evidence": 5
+    },
+    {
+      "id": "backfeed",
+      "nodes": 46,
+      "narrativeCharacters": 5067,
+      "evidence": 5
+    },
+    {
+      "id": "everlight",
+      "nodes": 38,
+      "narrativeCharacters": 4191,
+      "evidence": 5
+    },
+    {
+      "id": "neutral",
+      "nodes": 36,
+      "narrativeCharacters": 4021,
+      "evidence": 5
+    },
+    {
+      "id": "closure",
+      "nodes": 44,
+      "narrativeCharacters": 5002,
+      "evidence": 5
+    },
+    {
+      "id": "return-visit",
+      "nodes": 39,
+      "narrativeCharacters": 4122,
+      "evidence": 5
+    },
+    {
+      "id": "answering",
+      "nodes": 40,
+      "narrativeCharacters": 4547,
+      "evidence": 5
+    },
+    {
+      "id": "visitors",
+      "nodes": 39,
+      "narrativeCharacters": 4499,
+      "evidence": 5
+    }
+  ],
+  "unitTests": 76,
+  "audioDecodes": 152,
+  "shippingAudio": 48,
+  "artworkCount": 35,
+  "artworkBytes": 5045206,
+  "rootChecks": 20,
+  "pagesChecks": 20,
+  "browserReports": [
+    {
+      "path": "docs/evidence/v1.4.0-root-reading-browser.json",
+      "checks": 19,
+      "base": "http://127.0.0.1:4173"
+    },
+    {
+      "path": "docs/evidence/v1.4.0-root-voice-browser.json",
+      "checks": 14,
+      "base": "http://127.0.0.1:4173"
+    },
+    {
+      "path": "docs/evidence/v1.4.0-root-answering-browser.json",
+      "checks": 13,
+      "base": "http://127.0.0.1:4173"
+    },
+    {
+      "path": "docs/evidence/v1.4.0-visitors-root-browser.json",
+      "checks": 10,
+      "base": "http://127.0.0.1:4173"
+    },
+    {
+      "path": "docs/evidence/v1.4.0-pages-reading-browser.json",
+      "checks": 19,
+      "base": "http://127.0.0.1:4173/Circuit/"
+    },
+    {
+      "path": "docs/evidence/v1.4.0-pages-voice-browser.json",
+      "checks": 14,
+      "base": "http://127.0.0.1:4173/Circuit/"
+    },
+    {
+      "path": "docs/evidence/v1.4.0-pages-answering-browser.json",
+      "checks": 13,
+      "base": "http://127.0.0.1:4173/Circuit/"
+    },
+    {
+      "path": "docs/evidence/v1.4.0-visitors-pages-browser.json",
+      "checks": 10,
+      "base": "http://127.0.0.1:4173/Circuit/"
+    }
+  ],
+  "webArchive": {
+    "path": "artifacts/circuit-web-1.4.0.zip",
+    "bytes": 7694534,
+    "sha256": "9f0729bb49043512ba58d90feb19427826a20d2e2649d873e8103ebc49916851",
+    "basePath": "/"
+  },
+  "limitations": [
+    "Human reading duration and acting review pending.",
+    "Windows installer installation, upgrade and uninstall not certified; CI compiles native target."
+  ]
+}

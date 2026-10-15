@@ -50,7 +50,7 @@ test('patrol art bytes match the reviewed image-generation manifest', () => {
   }
 });
 
-test('Return Visit sources, portraits and scene outputs match their generation manifest', () => {
+test('Return Visit and Visitors sources, portraits and scene outputs match their generation manifests', () => {
   const manifest = JSON.parse(readFileSync('docs/art/return-visit-manifest.json','utf8'));
   assert.equal(manifest.assets.length,6);
   for (const asset of manifest.assets) {
@@ -62,4 +62,17 @@ test('Return Visit sources, portraits and scene outputs match their generation m
     assert.ok(asset.prompt && asset.references.length,asset.id);
     if (asset.output.includes('/portraits/') || asset.output.includes('/chibi/')) assert.ok(asset.transparentFraction>.15,asset.id);
   }
+  const visitors = JSON.parse(readFileSync('docs/art/visitors-manifest.json', 'utf8'));
+  assert.equal(visitors.assets.length, 2);
+  for (const asset of visitors.assets) {
+    for (const [file, sha, bytes] of [[asset.source, asset.sourceSha256, asset.sourceBytes], [asset.output, asset.sha256, asset.bytes]]) {
+      const data = readFileSync(file);
+      assert.equal(data.length, bytes, asset.id);
+      assert.equal(createHash('sha256').update(data).digest('hex'), sha, asset.id);
+    }
+    assert.ok(asset.prompt && asset.references.length, asset.id);
+    for (const reference of asset.references) assert.equal(createHash('sha256').update(readFileSync(reference)).digest('hex'), asset.referenceHashes[reference]);
+  }
+  assert.equal(getPortraitPath('luo', 'wary'), '/art/portraits/luo-wary.webp');
+  assert.ok(visitors.assets.find(asset => asset.id === 'luo-wary').transparentFraction > .15);
 });

@@ -63,6 +63,20 @@ def main():
     latch = latch_rng.normal(0, .08, len(latch_t)) + np.sin(2 * np.pi * (320 * latch_t + 95 * latch_t ** 2)) * .25
     latch *= np.sin(np.linspace(0, np.pi, len(latch))) ** 2
     clips['latch-turn'] = pattern(1.1, [(0, latch, .6), (.52, latch, .35)])
+    # v1.4 effects have a separate stream, leaving every previous master unchanged.
+    visitor_rng = np.random.default_rng(140014)
+    glass_t = np.arange(round(.32 * RATE)) / RATE
+    glass = sum(np.sin(2 * np.pi * f * glass_t) * gain for f, gain in [(780, 1), (2120, .35), (3610, .2)])
+    glass *= np.exp(-22 * glass_t) * np.minimum(glass_t * 1200, 1)
+    clips['glass-tap'] = pattern(1.7, [(at, glass, .6) for at in (0, .42, .87)])
+    tear = visitor_rng.normal(0, .15, round(.7 * RATE))
+    tear = np.convolve(tear, [1, -.85], 'same') * np.sin(np.linspace(0, np.pi, len(tear))) ** 2
+    tear *= .5 + .5 * np.sin(np.linspace(0, 18 * np.pi, len(tear))) ** 2
+    clips['ticket-tear'] = pattern(1.05, [(.1, tear, .8)])
+    step_t = np.arange(round(.65 * RATE)) / RATE
+    step = (visitor_rng.normal(0, .1, len(step_t)) + np.sin(2 * np.pi * 85 * step_t) * .45)
+    step *= np.exp(-9 * step_t) * np.minimum(step_t * 200, 1)
+    clips['wet-step'] = pattern(1.2, [(0, step, .7)])
     if wanted and wanted - clips.keys():
         parser.error('Unknown effect names: ' + ', '.join(sorted(wanted - clips.keys())))
     manifest_path = ROOT / 'docs/audio/sfx-manifest.json'
@@ -82,7 +96,8 @@ def main():
             output.writeframes(pcm.tobytes())
         subprocess.run(['ffmpeg', '-nostdin', '-v', 'error', '-y', '-i', str(raw), '-af', 'loudnorm=I=-22:TP=-2:LRA=6',
                         '-ar', str(RATE), '-ac', '1', '-c:a', 'libmp3lame', '-b:a', '96k', str(out)], check=True)
-        records[name] = {'id': name, 'duration': len(samples) / RATE, 'seed': 130013 if name == 'latch-turn' else 120012, 'creator': 'original procedural foley',
+        seed = 140014 if name in ('glass-tap', 'ticket-tear', 'wet-step') else 130013 if name == 'latch-turn' else 120012
+        records[name] = {'id': name, 'duration': len(samples) / RATE, 'seed': seed, 'creator': 'original procedural foley',
                         'files': [{'path': p.relative_to(ROOT).as_posix(), 'bytes': p.stat().st_size,
                                    'sha256': hashlib.sha256(p.read_bytes()).hexdigest()} for p in (raw, out)]}
     manifest_path.write_text(json.dumps({'schemaVersion': 1, 'version': args.version, 'clips': list(records.values())}, indent=2) + '\n')

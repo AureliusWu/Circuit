@@ -13,6 +13,7 @@ from playwright.sync_api import expect, sync_playwright
 
 BASE = sys.argv[1] if len(sys.argv) > 1 else 'http://127.0.0.1:4173'
 AUTO, PREFS = 'circuit-auto-v100', 'circuit-settings-v100'
+VERSION = json.loads(Path('package.json').read_text())['version']
 spec = importlib.util.spec_from_file_location('release_browser', Path(__file__).with_name('release-browser.py'))
 release = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(release)
@@ -220,14 +221,14 @@ with sync_playwright() as playwright:
             control = dialog.get_by_role('button', name='暂停录音', exact=True)
             hit_test(control)
             control.click()
-            small.screenshot(path=f'docs/art/answering-evidence-{width}x{height}.jpg', type='jpeg', quality=85, full_page=True)
+            small.screenshot(path=f'docs/art/answering-evidence-v{VERSION}-{width}x{height}.jpg', type='jpeg', quality=85, full_page=True)
             hit_test(dialog.get_by_role('button', name='关闭现场记录', exact=True))
             checked(f'chinese-font-evidence-and-hotspots-{width}x{height}')
         assert not errors, errors
-        report = dict(status='passed', version='1.3.0', base_url=BASE, checks=checks, page_errors=errors,
+        report = dict(status='passed', version=VERSION, base_url=BASE, checks=checks, page_errors=errors,
                       seconds=round(time.monotonic() - began, 2), actual_audio=True,
                       limitations=['Native media decoding and UI checks do not certify acting or physical speaker playback.'])
-        Path('docs/evidence/v1.3.0-answering-browser.json').write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n')
+        Path(f'docs/evidence/v{VERSION}-answering-browser.json').write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n')
     finally:
         for context in contexts:
             context.close()

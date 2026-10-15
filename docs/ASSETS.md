@@ -86,3 +86,9 @@ PWA首次联网完成缓存后，26幅插画和应用图标全部可离线解码
 新增public/art/communications-room.webp：旧通信间固定门口机位，旧电话、通信柜与搬迁档案盒。内置图像生成以物业夜班室仅作画风参考；原PNG保存在assets_source/art/v1.3.0，1600×900成品及原图校验见[制作清单](art/answering-manifest.json)。目前共33幅WebP、4,666,944字节，约4.45 MiB；新场景201,400字节。
 
 新增三声电话铃与锁芯转动两项程序原创音效，源WAV保存在assets_source/audio/v1.3.0。32段人物配音原文件沿用，5处新节点明确播放同一旧文件；原录音请求与成品哈希不变。当前45个MP3全部进入离线缓存，人物语音和音效详情见[AUDIO_GUIDE](AUDIO_GUIDE.md)。
+
+## v1.4.0《来访》新增
+
+新增旧回迁接待站1600×900背景和罗禾警觉640×960透明立绘，内置图像生成分别参考旧通信间画风和罗禾身份。原PNG保存在assets_source/art/v1.4.0，完整提示词、引用来源、真实alpha比例和哈希见[清单](art/visitors-manifest.json)。目前35幅WebP共5,045,206字节，约4.81 MiB；[新章现场](art/visitors-preview.jpg)与[手机调查](art/visitors-mobile-preview.jpg)来自真实浏览器。
+
+玻璃敲击、取号纸撕裂、湿脚步为三项程序原创拟音，源WAV在assets_source/audio/v1.4.0，配方seed140014。人物录音原字节保持，两处明确重放旧文件；32段语音与16项音效共48个MP3全部进入PWA离线缓存。

@@ -1,0 +1,27 @@
+{
+  "url": "http://127.0.0.1:4173",
+  "passed": 19,
+  "checks": [
+    "typewriter starts gradually; WebAudio starts only after a user gesture",
+    "opening a notebook pauses and closing resumes text reveal",
+    "Space reveals text and Enter advances once with atomic visit history",
+    "slow/fast settings change live reveal timing; Enter on a focused action does not double advance",
+    "text speed, delay, audio levels, mute, contrast and reduced motion persist across reload",
+    "reduced motion forces immediate full text despite slow text preference",
+    "instant preference applies immediately to the next narrative node",
+    "auto reading and audio pause for notebook, controlled hidden-page event and title",
+    "auto reading advances single dialogues but stops at investigation without collecting evidence",
+    "auto reading never confirms evidence, makes deductions or restarts failure endings",
+    "save dialog focus wraps around visible controls and excludes the hidden file input",
+    "three manual slots remain independent and JSON export never mutates stored records",
+    "syntax-invalid, impossible-state and oversized imports preserve every prior slot",
+    "reading an older manual slot preserves the newer automatic record exactly",
+    "valid exported JSON restores active progress and replaces only automatic storage",
+    "v010 manual and completed v011 auto migrate read-only; the next action writes only new storage",
+    "denied localStorage still allows play and keeps in-memory history consistent",
+    "import with unavailable storage preserves the persistence warning",
+    "no uncaught JavaScript exceptions"
+  ],
+  "page_errors": [],
+  "visibility_note": "headless hidden-page event is controlled; timers/audio execute in real Chromium"
+}

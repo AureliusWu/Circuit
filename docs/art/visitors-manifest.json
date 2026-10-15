@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "version": "1.4.0",
+  "tool": "built-in image generation",
+  "assets": [
+    {
+      "id": "reception-station",
+      "source": "assets_source/art/v1.4.0/reception-station.png",
+      "output": "public/art/reception-station.webp",
+      "prompt": "Create ONE new 1600x900 landscape game background for the Chinese urban folk-horror visual novel 《回路》. Use the referenced communication-room painting ONLY as the palette, painterly realism, subtle grain and lighting style reference. This is a DIFFERENT LOCATION: an obsolete relocation reception station hall at 02:00 after rain, in a small Chinese city. No people, no creatures, no text, no readable letters or numbers, no overt magical symbols. Eye-level view from the visitor side toward a divided glass service window on left-center. Behind glass are a worn wooden counter, ledger, small cream audio playback unit with removable card slot and coiled microphone cable, warm small desk lamp, and an empty wooden receiving chair. In front of counter stands a low stool and a discarded ticket dispenser with paper roll, a blue carbon-copy slip lies on a narrow ledge. At left edge a weathered old wooden doorplate hangs edge-on on the window frame, front facing INTO the inner room so no written face is visible. At right an ajar aluminum side door with rain-darkened tiled threshold, empty waiting benches and dim corridor. Muted old pale-green walls, oxidized metal, concrete/tile floor with a few wet shoe marks, utilitarian institutional space repurposed from a shopfront. Frame legible with quiet investigative hotspots: window left, ticket ledge center, doorplate on left, old playback equipment behind glass. Atmospheric teal-green shadows and warm ochre light, oppressive ordinary reality, painterly semirealistic 2D visual novel art. Compose wider scene with bottom quarter mostly clean dark floor for dialogue UI overlay. Do not copy the original room layout. Accurate perspective and small realistic equipment, no flashy glowing technology.",
+      "references": [
+        "public/art/communications-room.webp"
+      ],
+      "referenceRole": "style only; different room",
+      "transparentBackground": false,
+      "width": 1600,
+      "height": 900,
+      "sourceSha256": "d4baf763fad1babf46900c2a312deabfa4d736ca751dc9c1255c2b0c23f661a4",
+      "sourceBytes": 2572619,
+      "sha256": "2ad2761d0167ba0bb14fd20b5a43284bb2a21b2f89ed53a509a40e89de80d0be",
+      "bytes": 267938,
+      "referenceHashes": {
+        "public/art/communications-room.webp": "a5834b0424329ec447f62319f1080fc3235f3772d78f8ef5edf5f99bab75f998"
+      }
+    },
+    {
+      "id": "luo-wary",
+      "source": "assets_source/art/v1.4.0/luo-wary.png",
+      "output": "public/art/portraits/luo-wary.webp",
+      "prompt": "Create ONE new transparent-background character expression sprite for the Chinese folk-horror visual novel 《回路》. EDIT the referenced adult woman 罗禾, age29, preserving EXACT same identifiable face, face proportions, ethnicity, black hair tied low with loose strands, costume dark indigo-blue shirt and worn olive green work jacket, chest lanyard with plain blank badge, rectangular pale paper ledger hugged with BOTH hands, and three small brass keys held in her right hand as in reference. Preserve same framing, body position, realistic body anatomy, silhouette and portrait scale. Only change face expression to restrained wary alertness: gaze slightly turned toward an unseen sound on viewer left, slightly drawn eyebrows, tightened lips, subtle pale tension around eyes, shoulders a little tense. Do NOT make her scream, cry, cartoonish, younger, glamorized, or supernatural. Semirealistic hand-painted Chinese urban game character sprite, cohesive with reference's textured olive cloth, cool shadow and warm left-side edge lighting, realistic restrained eyes, clean antialiased cutout edge. Full visible half-to-three-quarter body from head to lower jacket / upper thighs, all head, hair, hands, ledger, keys and lanyard included with margin. Single woman only, no scene, no floor, no shadow cast on background, no white/black/colored background, no text or logos. Real RGBA transparency outside silhouette. Output one vertical image suitable for resizing to 640x960.",
+      "references": [
+        "public/art/portraits/luo.webp"
+      ],
+      "referenceRole": "identity, costume, pose and rendering; new expression",
+      "transparentBackground": true,
+      "width": 640,
+      "height": 960,
+      "sourceSha256": "dd07e549afe7ac69f39c1f52c0c6b2fbdedf788f570a561b4a4a3ec1339f8238",
+      "sourceBytes": 2232055,
+      "sha256": "dd2e224c9b2791fa56d858a20766ebac2960d09682f07b6e9278e271c41a51e2",
+      "bytes": 110324,
+      "referenceHashes": {
+        "public/art/portraits/luo.webp": "bd9509efa87fbf53ac9e5a7b05390f0f4702f27e4e4569247e2124ffaee11651"
+      },
+      "transparentFraction": 0.4198274739583333
+    }
+  ]
+}

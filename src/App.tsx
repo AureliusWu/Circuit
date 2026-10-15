@@ -2,6 +2,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { Notebook } from './components/Notebook';
 import { RecordSearch } from './components/RecordSearch';
 import { CharacterGallery } from './components/CharacterGallery';
+import { EvidenceNotebook } from './components/EvidenceNotebook';
 import { getCharacter, getPortraitPath } from './game/characters';
 import { CHAPTER_ORDER, getAvailableActions, getChapter, transition } from './story/engine';
 import type { ChapterId } from './story/types';
@@ -13,7 +14,7 @@ import { MAX_HISTORY_ENTRIES, type SaveStorage } from './game/saves';
 import { loadPreferences, savePreferences, type Preferences } from './game/preferences';
 import { CircuitAudio } from './game/audio';
 import { RecordedAudio, voiceBlocksAuto, type VoiceState } from './game/recordedAudio';
-import { getVoiceClip, SCENE_EFFECTS, voicesFor } from './game/mediaCatalog';
+import { SCENE_EFFECTS, voicesFor } from './game/mediaCatalog';
 import { useReading } from './game/reading';
 import { version } from '../package.json';
 
@@ -24,7 +25,7 @@ const PANEL_TITLES: Record<Panel, string> = {
 };
 const BACKGROUNDS: Record<ChapterId, string> = {
   'thirteen-households': 'alley', 'seventh-night': 'stairwell', backfeed: 'demolition',
-  everlight: 'stairwell', neutral: 'substation', closure: 'control-room', 'return-visit': 'resettlement-lobby', answering: 'communications-room'
+  everlight: 'stairwell', neutral: 'substation', closure: 'control-room', 'return-visit': 'resettlement-lobby', answering: 'communications-room', visitors: 'reception-station'
 };
 const SLOTS: CampaignSlot[] = ['auto', 1, 2, 3];
 const asset = (path: string) => `${import.meta.env.BASE_URL}${path.replace(/^\//, '')}`;
@@ -87,7 +88,6 @@ function App() {
   const requiredCount = chapter.requiredEvidence.filter((id) => state.evidence.includes(id)).length;
   const nextChapter = CHAPTER_ORDER[chapter.order + 1];
   const historyEntries = history.map(id => ({ ...chapter.nodes[id], id, context: `${chapter.nodes[id].location} ${chapter.nodes[id].time}` }));
-  const evidenceEntries = state.evidence.map((id, index) => ({ id, index, text: chapter.evidence[id].detail, context: chapter.evidence[id].title }));
 
   useEffect(() => {
     const onVisibility = () => setPageVisible(!document.hidden);
@@ -248,7 +248,7 @@ function App() {
                 <p className="tagline">有些线路，断开以后仍然有电。</p>
                 <p className="title-synopsis">你是梧城电网城区抢修员程砚，与徒弟季宁一起值夜班。旧工单连着一场少了半页的救援。六章归档之后，回迁楼的门禁叫出你的名字——你昨晚没去，它却说已经到场。</p>
                 <p className="title-crew">程砚 / 季宁 · 城区抢修班</p>
-                <p className="version">v{version} · 第一部六章 / 第二部《回访》《应声》</p>
+                <p className="version">v{version} · 第一部六章 / 第二部《回访》《应声》《来访》</p>
               </section>
               <nav className="title-menu" aria-label="主菜单">
                 {stored.auto.status === 'valid' && <button className="primary" onClick={() => resume('auto')}>继续抢修</button>}
@@ -330,13 +330,8 @@ function App() {
           <button onClick={() => recorded.current?.stop()}>停止重听</button>
         </div>}
         {panel === 'characters' && <CharacterGallery />}
-        {panel === 'evidence' && <>
-          <RecordSearch entries={evidenceEntries} queryLabel="搜索现场记录" showSpeakers={false} listClassName="evidence-records" emptyText="尚未记录异常。先按标准故障流程排查。" renderEntry={({ id, index }) => <article><span>{String(index + 1).padStart(2, '0')}</span><div><h3>{chapter.evidence[id].title}</h3><p>{chapter.evidence[id].detail}</p>{chapter.evidence[id].recordings?.map(sample => {
-            const clip = getVoiceClip(sample.clipId);
-            return clip && <button key={sample.clipId} disabled={!preferences.voiceEnabled || preferences.muted} onClick={() => { enableAudio(); recorded.current?.replay([clip], true); }}>重听：{sample.label}</button>;
-          })}</div></article>} />
-          <footer>原则：先排除电气故障，再解释剩下的东西。</footer>
-        </>}
+        {panel === 'evidence' && <EvidenceNotebook key={state.chapterId} evidence={chapter.evidence} collected={state.evidence}
+          replayEnabled={preferences.voiceEnabled && !preferences.muted} onReplay={clip => { enableAudio(); recorded.current?.replay([clip], true); }} />}
         {panel === 'history' && <><p className="history-intro">按实际经过保留本章最近 {history.length} 条叙事。</p><RecordSearch entries={historyEntries} ordered renderEntry={entry => {
           const clips = voicesFor(state.chapterId, entry.id);
           return <li className="history-entry"><div className="history-meta"><span>{entry.time}</span><span>{entry.location}</span></div>{entry.speaker && <strong className="history-speaker">{entry.speaker}</strong>}<p>{entry.text}</p>{!!clips.length && <button disabled={!preferences.voiceEnabled || preferences.muted} onClick={() => { enableAudio(); recorded.current?.replay(clips, true); }}>重听这条语音</button>}</li>;
@@ -367,17 +362,18 @@ function App() {
           <label className="setting-toggle"><input type="checkbox" checked={preferences.reducedMotion} onChange={(event) => changePreference('reducedMotion', event.target.checked)} />减少动态效果 / 即时全文</label>
           <button onClick={() => void fullscreen()}>切换全屏</button><p>自动阅读等本条语音播完，再停留所设秒数。调查和推理等待你的判断。打开面板或切换标签页时暂停；返回标题会停止录音。历史里可重听已经经过的语音。</p>
         </div>}
-        {panel === 'archive' && <><p>已归档 {menuSession.completed.length}/{CHAPTER_ORDER.length} 章。第一部连线表示人员与资料核对路径；V01、V02分别记录新苑回访与旧回拨名单，另列支线。</p><svg className="city-map" viewBox="0 0 100 100" role="img" aria-label={`城市线路图，已归档 ${menuSession.completed.length} 段`}>
+        {panel === 'archive' && <><p>已归档 {menuSession.completed.length}/{CHAPTER_ORDER.length} 章。第一部连线表示人员与资料核对路径；V01、V02、V03记录新苑回访、旧回拨名单与接待站输入源，另列支线。</p><svg className="city-map" viewBox="0 0 100 100" role="img" aria-label={`城市线路图，已归档 ${menuSession.completed.length} 段`}>
           <path className="city-map-grid" d="M0 25H100M0 50H100M0 75H100M25 0V100M50 0V100M75 0V100" />
           <polyline points={mapPoints.join(' ')} fill="none" className="city-map-route" />
           {menuSession.completed.includes('return-visit') && <polyline points={`${getChapter('closure')!.clue.x},${getChapter('closure')!.clue.y} ${getChapter('return-visit')!.clue.x},${getChapter('return-visit')!.clue.y}`} fill="none" className="city-map-route map-followup" />}
           {menuSession.completed.includes('answering') && <polyline points={`${getChapter('return-visit')!.clue.x},${getChapter('return-visit')!.clue.y} ${getChapter('answering')!.clue.x},${getChapter('answering')!.clue.y}`} fill="none" className="city-map-route map-followup" />}
+          {menuSession.completed.includes('visitors') && <polyline points={`${getChapter('answering')!.clue.x},${getChapter('answering')!.clue.y} ${getChapter('visitors')!.clue.x},${getChapter('visitors')!.clue.y}`} fill="none" className="city-map-route map-followup" />}
           {CHAPTER_ORDER.map((id) => { const clue = getChapter(id)!.clue; const done = menuSession.completed.includes(id); return <g key={id} className={done ? 'map-complete' : 'map-locked'}><circle cx={clue.x} cy={clue.y} r="2" /><text x={clue.x + 3} y={clue.y + 1}>{done ? clue.code : '· · ·'}</text></g>; })}
         </svg><div className="archive-list">{CHAPTER_ORDER.map((id) => {
           const item = getChapter(id)!; const done = menuSession.completed.includes(id);
           return <article key={id}><span>{done ? item.clue.code : '—'}</span><div><h3>{done ? item.clue.title : `${item.title} · 待归档`}</h3><p>{done ? item.clue.detail : '完成本章后补入线路记录。'}</p>{done && <details><summary>查阅本章现场记录</summary>{(menuSession.archive[id] ?? []).map((evidence) => <p key={evidence}><strong>{item.evidence[evidence].title}</strong><br />{item.evidence[evidence].detail}</p>)}</details>}</div></article>;
         })}</div></>}
-        {panel === 'help' && <div className="help-content"><h3>抢修手册</h3><p>点击调查标记搜集现场记录，用证据判断回路。选择错误会进入复核结局，可重新排查本章。</p><p>空格或 Enter 显示全文；全文显示后，可推进单一对话。Tab 在按钮间移动，Enter 确认，Esc 关闭面板。</p><p>八章按顺序解锁。完成第一部可继续《回访》，归档后解锁《应声》，旧存档可沿用。三槽存档和 JSON 导出保留不同进度；人物档案可切换立绘与 Q 版。</p><h3>制作记录</h3><p>十幅场景、九名人物的立绘与 Q 版形象，师徒有专注、警觉表情。远程联络使用通讯卡，历史人物使用旧档照片。关键对白采用离线生成的人物录音；门禁、钥匙、继电器等场景音效随包提供。音乐、雨声和电流声实时合成。</p><p>语音系统参考《雨停之前》的离线制作与重听流程，角色与素材为《回路》单独制作。AI 生成美术与人物语音均在项目制作记录中标注。</p><p>本作人物、单位与事件均为虚构。线路判断服务于剧情，现场电气作业须由具备资质的人员依照规程实施。</p><p>回路 / CIRCUIT · v{version}<br />十三户、头七、回送、长明、零线、闭合；第二部：回访、应声。</p></div>}
+        {panel === 'help' && <div className="help-content"><h3>抢修手册</h3><p>点击调查标记搜集现场记录，取得两条证据后可并排核对，再用证据判断回路。选择错误会进入复核结局，可重新排查本章。</p><p>空格或 Enter 显示全文；全文显示后，可推进单一对话。Tab 在按钮间移动，Enter 确认，Esc 关闭面板。</p><p>九章按顺序解锁。完成第一部可继续《回访》，随后解锁《应声》和《来访》，旧存档可沿用。三槽存档和 JSON 导出保留不同进度；人物档案可切换立绘与 Q 版。</p><h3>制作记录</h3><p>十一幅场景、九名人物的立绘与 Q 版形象，师徒有专注、警觉表情，罗禾有警觉表情。远程联络使用通讯卡，历史人物使用旧档照片。关键对白采用离线生成的人物录音；门禁、钥匙、继电器等场景音效随包提供。音乐、雨声和电流声实时合成。</p><p>语音系统参考《雨停之前》的离线制作与重听流程，角色与素材为《回路》单独制作。AI 生成美术与人物语音均在项目制作记录中标注。</p><p>本作人物、单位与事件均为虚构。线路判断服务于剧情，现场电气作业须由具备资质的人员依照规程实施。</p><p>回路 / CIRCUIT · v{version}<br />十三户、头七、回送、长明、零线、闭合；第二部：回访、应声、来访。</p></div>}
       </Notebook>}
     </main>
   );

@@ -70,7 +70,7 @@ export const CHARACTERS: readonly CharacterProfile[] = [
     id: 'luo', name: '罗禾', age: '29 岁', role: '槐荫新苑 · 物业夜班值班员', tag: '回访 / 旧门禁',
     bio: '守新苑物业夜班，登记本用到纸边卷起，钥匙只留当天需要的三把。记得住户搬来时带的旧灯，也记得哪一夜门禁第一次报抢修员到场。她开始怀疑自己抄进本子的收到，究竟是谁说的。',
     duty: '按物业职责提供报修回拨、迁入登记和设备移交来源，与电工协同保全旧模块；当夜接收以实际岗位和记录核实。',
-    portraits: { neutral: portrait('luo') }, chibi: chibi('luo')
+    portraits: { neutral: portrait('luo'), wary: '/art/portraits/luo-wary.webp' }, chibi: chibi('luo')
   }
 ];
 

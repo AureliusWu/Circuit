@@ -373,7 +373,7 @@ def run(url, pwa):
                       }
                       return results;
                     }''', [urljoin(url.rstrip('/') + '/', path.lstrip('/')) for path in audio_paths])
-                    assert len(decoded) == 45, decoded
+                    assert len(decoded) == 48, decoded
                     assert all(row['duration'] > .05 and row['channels'] == 1 for row in decoded), decoded
                     summary['offline_audio'] = decoded
                     completed.append(phase)

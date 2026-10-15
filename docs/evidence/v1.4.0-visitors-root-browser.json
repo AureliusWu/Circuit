@@ -1,0 +1,21 @@
+{
+  "version": "1.4.0",
+  "status": "passed",
+  "base_url": "http://127.0.0.1:4173",
+  "checks": [
+    "v130-save-unlocks-visitors-without-reading-write",
+    "one-collected-record-cannot-open-comparison",
+    "comparison-collected-only-distinct-swaps-no-save-write",
+    "full-visitors-route-archives-five-records-and-nine-chapters",
+    "both-wrong-deductions-retry-without-completion",
+    "comparison-readable-and-operable-1280x720",
+    "comparison-readable-and-operable-760x430",
+    "comparison-readable-and-operable-390x844",
+    "offline-comparison-replays-original-2019-master-without-save-write",
+    "no-javascript-errors"
+  ],
+  "elapsed_seconds": 15.94,
+  "limitations": [
+    "Automated browser checks; physical-device play and human acting review not certified."
+  ]
+}

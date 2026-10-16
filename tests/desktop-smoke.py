@@ -99,6 +99,12 @@ def elevated_webview_policy(executable, profile, browser_arguments):
 
 def collect_diagnostics(process, port, log_directory, attempt, diagnostic):
     diagnostic.update(pid=process.pid, returncode=process.poll(), windows=windows_for_process(process.pid))
+    try:
+        opener = urllib.request.build_opener(urllib.request.ProxyHandler({}))
+        with opener.open(f'http://127.0.0.1:{port}/json/list', timeout=2) as response:
+            diagnostic['cdp_targets'] = json.load(response)
+    except (OSError, ValueError) as error:
+        diagnostic['cdp_targets_error'] = str(error)
     # Capture process command lines, runtime versions and the desktop even if CDP
     # never starts, without adding a test-only hook to the production executable.
     screenshot = (log_directory / f'{attempt}-desktop.png').resolve()
@@ -166,16 +172,15 @@ def launch(playwright, executable, profile, log_directory, attempt):
             else:
                 raise AssertionError(f'Installed WebView2 debugging endpoint did not start: {last_error}')
             browser = playwright.chromium.connect_over_cdp(endpoint)
-            deadline = time.monotonic() + 30
-            page = None
-            while time.monotonic() < deadline:
-                pages = [page for context in browser.contexts for page in context.pages
-                         if page.url != 'about:blank']
-                if pages:
-                    page = pages[0]
-                    break
-                time.sleep(0.2)
-            assert page is not None, 'Installed game did not load a document'
+            context = browser.contexts[0]
+            diagnostic['initial_page_urls'] = [page.url for page in context.pages]
+            # A WebView target can appear after the browser endpoint. Sync API
+            # properties are cached; time.sleep prevents its page/navigation
+            # events from being dispatched. Wait through Playwright instead.
+            # https://playwright.dev/python/docs/library#timesleep-leads-to-outdated-state
+            page = context.pages[0] if context.pages else context.wait_for_event('page', timeout=30000)
+            page.wait_for_url(lambda url: url != 'about:blank', wait_until='domcontentloaded', timeout=30000)
+            diagnostic['document_url'] = page.url
             page.set_default_timeout(15000)
             visible_windows = [window for window in windows_for_process(process.pid) if window['visible']]
             diagnostic['windows'] = visible_windows

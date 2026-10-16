@@ -148,6 +148,55 @@ try {
     diagnostic['debug_port'] = port
 
 
+def profile_processes(profile, observed, timeout=5):
+    """Track this UDF's browser and descendants even after their parent exits."""
+    script = r"""
+$ErrorActionPreference = 'Stop'
+@(Get-CimInstance Win32_Process | Select-Object ProcessId, ParentProcessId, Name, CommandLine) |
+    ConvertTo-Json -Compress -Depth 3
+"""
+    completed = subprocess.run(['powershell', '-NoProfile', '-NonInteractive', '-Command', script],
+                               capture_output=True, text=True, errors='replace', check=True, timeout=timeout)
+    processes = json.loads(completed.stdout)
+    if isinstance(processes, dict):
+        processes = [processes]
+    profile_path = str(profile.resolve()).replace('/', '\\').casefold()
+    tracked = set(observed)
+    tracked.update(int(item['ProcessId']) for item in processes
+                   if item['Name'].casefold() == 'msedgewebview2.exe'
+                   and profile_path in (item['CommandLine'] or '').replace('/', '\\').casefold())
+    # Renderer/utility subprocesses do not all repeat --user-data-dir. Preserve
+    # every observed PID and expand parent links while those processes exist.
+    while True:
+        descendants = {int(item['ProcessId']) for item in processes
+                       if int(item['ParentProcessId']) in tracked}
+        if descendants <= tracked:
+            break
+        tracked.update(descendants)
+    remaining = [item for item in processes if int(item['ProcessId']) in tracked]
+    observed.update((int(item['ProcessId']), item) for item in remaining)
+    return remaining
+
+
+def wait_for_profile_shutdown(profile, observed, diagnostic):
+    # Closing the host does not mean WebView2 has released its UDF. Wait for the
+    # complete process collection before reusing/removing this temporary profile.
+    # https://learn.microsoft.com/microsoft-edge/webview2/concepts/user-data-folder
+    started = time.monotonic()
+    deadline = started + 30
+    shutdown = diagnostic['webview_shutdown'] = dict(observed_pids=sorted(observed), remaining_pids=[])
+    while True:
+        remaining_time = deadline - time.monotonic()
+        assert remaining_time > 0, f'WebView2 did not release the temporary profile: {shutdown}'
+        remaining = profile_processes(profile, observed, timeout=min(5, remaining_time))
+        shutdown.update(observed_pids=sorted(observed),
+                        remaining_pids=sorted(int(item['ProcessId']) for item in remaining),
+                        elapsed_seconds=round(time.monotonic() - started, 3))
+        if not remaining:
+            return
+        time.sleep(min(0.2, max(0, deadline - time.monotonic())))
+
+
 @contextmanager
 def launch(playwright, executable, profile, log_directory, attempt):
     with socket.socket() as listener:
@@ -160,6 +209,7 @@ def launch(playwright, executable, profile, log_directory, attempt):
                        WEBVIEW2_USER_DATA_FOLDER=str(profile))
     browser, page, failure = None, None, None
     diagnostic = dict(attempt=attempt)
+    observed_webview_processes = {}
     with elevated_webview_policy(executable, profile, browser_arguments) as override, \
             (log_directory / f'{attempt}-stdout.txt').open('wb') as stdout, \
             (log_directory / f'{attempt}-stderr.txt').open('wb') as stderr:
@@ -183,6 +233,8 @@ def launch(playwright, executable, profile, log_directory, attempt):
             else:
                 raise AssertionError(f'Installed WebView2 debugging endpoint did not start: {last_error}')
             browser = playwright.chromium.connect_over_cdp(endpoint)
+            profile_processes(profile, observed_webview_processes)
+            assert observed_webview_processes, 'No WebView2 process belongs to the temporary profile'
             context = browser.contexts[0]
             diagnostic['initial_page_urls'] = [page.url for page in context.pages]
             # A WebView target can appear after the browser endpoint. Sync API
@@ -206,6 +258,7 @@ def launch(playwright, executable, profile, log_directory, attempt):
             raise
         finally:
             try:
+                profile_processes(profile, observed_webview_processes)
                 diagnostic['closed_native_windows'] = close_window(process, page, lambda: collect_diagnostics(
                     process, port, log_directory, attempt + '-shutdown', diagnostic))
             except Exception as error:
@@ -213,11 +266,14 @@ def launch(playwright, executable, profile, log_directory, attempt):
                 if failure is None:
                     raise
             finally:
-                diagnostic['exit_code'] = process.poll()
-                (log_directory / f'{attempt}-diagnostic.json').write_text(
-                    json.dumps(diagnostic, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
-                if browser:
-                    browser.close()
+                try:
+                    if browser:
+                        browser.close()
+                    wait_for_profile_shutdown(profile, observed_webview_processes, diagnostic)
+                finally:
+                    diagnostic['exit_code'] = process.poll()
+                    (log_directory / f'{attempt}-diagnostic.json').write_text(
+                        json.dumps(diagnostic, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
 
 
 def main():
@@ -268,6 +324,13 @@ def main():
                 result['checks'].append('close, relaunch and restore the same native save')
             assert not errors, errors
             result['checks'].append('no JavaScript page errors and normal application shutdown')
+            result['webview_shutdown'] = {
+                attempt: json.loads((arguments.output.parent / f'{attempt}-diagnostic.json').read_text(
+                    encoding='utf-8'))['webview_shutdown'] for attempt in ('first', 'reopen')}
+            result['checks'].append('both WebView2 process collections exit before profile cleanup')
+        assert not Path(temporary).exists(), 'Temporary WebView2 profile was not removed'
+        result['temporary_profile_removed'] = True
+        result['checks'].append('temporary WebView2 profile is completely removed')
         result['status'] = 'passed'
     except Exception as error:
         result['status'] = 'failed'

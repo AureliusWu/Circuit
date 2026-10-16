@@ -1,10 +1,10 @@
 # v1.4.0《来访》
 
-本版整合九章内容、已读检索与并排核对，并修复横屏录音按钮被标题遮挡及部分标题中文字形缺失。2026-10-15 的 [当前源码 CI](https://github.com/AureliusWu/Circuit/actions/runs/38743343797) 已通过 77 项逻辑、85 项真实浏览器检查、152 份音频完整解码、字库覆盖、生产构建与 Windows 原生编译。
+本版整合九章内容、已读检索与并排核对，并修复横屏录音按钮被标题遮挡及部分标题中文字形缺失。发布验证覆盖 77 项逻辑、85 项真实浏览器检查、152 份音频完整解码、字库覆盖、生产构建与 Windows 原生编译。
 
-发布流程新增真实 NSIS 安装、已安装 Tauri/WebView2 窗口交互、同 profile 关闭重开存档与卸载检查；这些检查须在正式发布构建中通过，版本才能创建。版本附源码提交、原生运行记录和 SHA-256，上传后重新下载核对。当前制作记录不冒充尚未发生的正式发布验收，最终状态以对应 main 发布工作流为准。
+正式版本仅在 Web/PWA 战役与离线回归、真实 NSIS 安装、已安装 Tauri/WebView2 可见窗口交互、同 profile 正常关闭重开存档、WebView2 进程自然退出及临时目录清理、卸载检查全部通过后发布。随包 [windows-runtime.json](https://github.com/AureliusWu/Circuit/releases/download/v1.4.0/windows-runtime.json) 记录源码提交、安装后程序哈希及实际窗口/存档/关闭检查；[release.json](https://github.com/AureliusWu/Circuit/releases/download/v1.4.0/release.json) 标明版本、提交和正式构建编号。Web 包、Windows 安装器与记录文件附 [SHA256SUMS.txt](https://github.com/AureliusWu/Circuit/releases/download/v1.4.0/SHA256SUMS.txt)，上传后重新下载校验。完整工作流与公开站点验收见 [Actions](https://github.com/AureliusWu/Circuit/actions)，最终发布回执见 [PUBLISHED-v1.4.0.json](https://github.com/AureliusWu/Circuit/blob/main/docs/production/PUBLISHED-v1.4.0.json)。
 
-下文保留 2026-10-13 的内容制作与原始验收记录；2026-10-15 的检索/面板集成另见 [集成记录](production/VISITORS-INTEGRATION.md)。
+下文保留 2026-10-13 的内容制作与原始验收记录；2026-10-15 的检索/面板集成另见 [集成记录](https://github.com/AureliusWu/Circuit/blob/v1.4.0/docs/production/VISITORS-INTEGRATION.md)。
 
 《应声》归档后，D3把调查带到城南旧回迁接待站。程砚与季宁先按正式报修处理站外低压接入点缺陷，再依产权方授权核窗口两联、输入卡与旧采集任务。陈伯开管理侧门，罗禾提供新苑移交原册；两人的实际职责、2019旧档与今晚到场记录分别核实。
 
@@ -14,7 +14,7 @@
 
 ## 美术与声音
 
-- 新增1600×900旧回迁接待站场景与640×960罗禾警觉透明立绘。内置图像生成使用既有场景作画风参考、罗禾原立绘作身份参考，原PNG、完整提示词、参考哈希与WebP哈希见[素材清单](art/visitors-manifest.json)。现35幅WebP，共5,045,206字节，约4.81 MiB。
+- 新增1600×900旧回迁接待站场景与640×960罗禾警觉透明立绘。内置图像生成使用既有场景作画风参考、罗禾原立绘作身份参考，原PNG、完整提示词、参考哈希与WebP哈希见[素材清单](https://github.com/AureliusWu/Circuit/blob/v1.4.0/docs/art/visitors-manifest.json)。现35幅WebP，共5,045,206字节，约4.81 MiB。
 - 新增玻璃敲击、取号纸撕裂、湿脚步三项程序原创拟音，源WAV保存在assets_source/audio/v1.4.0。32段人物录音未重新生成，原请求与字节保持；《来访》两处重用已有MP3，许守成片段明确标为2019旧档。
 - 输入卡证据收集后可重听两个片段，字幕与时标已给出全部解谜信息。当前32段语音、16项音效共48个MP3全部随PWA缓存。
 
@@ -24,6 +24,6 @@
 
 自动验证包括76项逻辑/内容/资产测试、152份音频源与成品完整解码；根路径与/Circuit/各20组战役/PWA回归、19项阅读存档回归、14项声音回归、13项《应声》回归及10项《来访》专项检查。专项涵盖v1.3旧档解锁、完整新章、两种错误判断复核、仅收集后比较、交换两栏、无存档写入、焦点恢复、1280×720/760×430/390×844中文字体布局与断网原录音重听。
 
-[根路径记录](evidence/v1.4.0-root-browser.json) · [Pages路径记录](evidence/v1.4.0-pages-browser.json) · [《来访》专项](evidence/v1.4.0-visitors-root-browser.json) · [汇总](evidence/v1.4.0-verification.json)。这些是自动化验收；真实手机游玩时长、读音与演技、Windows安装和卸载保留人工验收，不据编译通过宣称安装器已验收。
+[根路径记录](https://github.com/AureliusWu/Circuit/blob/v1.4.0/docs/evidence/v1.4.0-root-browser.json) · [Pages路径记录](https://github.com/AureliusWu/Circuit/blob/v1.4.0/docs/evidence/v1.4.0-pages-browser.json) · [《来访》专项](https://github.com/AureliusWu/Circuit/blob/v1.4.0/docs/evidence/v1.4.0-visitors-root-browser.json) · [汇总](https://github.com/AureliusWu/Circuit/blob/v1.4.0/docs/evidence/v1.4.0-verification.json)。这些是原制作检查点的自动化证据；当前正式版本以随包记录和发布回执为准。真实手机体验、真人计时、读音与演技试听，以及历史 Windows 版本原生安装升级仍未验收，不由浏览器自动化或本版安装/卸载检查替代。
 
 发行版本同步Web、Tauri与两个锁文件，CI纳入《来访》专项。Web包由npm run package:web生成；main自动构建GitHub Pages。正式版本由 release.yml 在双端验收后发布，已公开版本不会覆盖。

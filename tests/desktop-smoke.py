@@ -160,11 +160,14 @@ $ErrorActionPreference = 'Stop'
     processes = json.loads(completed.stdout)
     if isinstance(processes, dict):
         processes = [processes]
-    profile_path = str(profile.resolve()).replace('/', '\\').casefold()
+    # tempfile may return RUNNER~1 while Path.resolve expands it to runneradmin.
+    # WebView2's command line preserves the spelling passed to UserDataFolder.
+    profile_paths = {str(path).replace('/', '\\').casefold() for path in (profile, profile.resolve())}
     tracked = set(observed)
     tracked.update(int(item['ProcessId']) for item in processes
                    if item['Name'].casefold() == 'msedgewebview2.exe'
-                   and profile_path in (item['CommandLine'] or '').replace('/', '\\').casefold())
+                   and any(path in (item['CommandLine'] or '').replace('/', '\\').casefold()
+                           for path in profile_paths))
     # Renderer/utility subprocesses do not all repeat --user-data-dir. Preserve
     # every observed PID and expand parent links while those processes exist.
     while True:
@@ -184,7 +187,9 @@ def wait_for_profile_shutdown(profile, observed, diagnostic):
     # https://learn.microsoft.com/microsoft-edge/webview2/concepts/user-data-folder
     started = time.monotonic()
     deadline = started + 30
-    shutdown = diagnostic['webview_shutdown'] = dict(observed_pids=sorted(observed), remaining_pids=[])
+    shutdown = diagnostic['webview_shutdown'] = dict(
+        profile_aliases=sorted({str(path).replace('/', '\\').casefold() for path in (profile, profile.resolve())}),
+        observed_pids=sorted(observed), remaining_pids=[])
     while True:
         remaining_time = deadline - time.monotonic()
         assert remaining_time > 0, f'WebView2 did not release the temporary profile: {shutdown}'

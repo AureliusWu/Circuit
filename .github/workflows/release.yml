@@ -73,7 +73,7 @@ jobs:
           if ($installed.ExitCode -ne 0) { throw "Installer failed: $($installed.ExitCode)" }
           $application = @(Get-ChildItem $installRoot -Filter circuit.exe -Recurse)
           if ($application.Count -ne 1) { throw 'Installed executable missing or ambiguous' }
-          python tests/desktop-smoke.py --exe $application[0].FullName --output artifacts/windows-runtime.json
+          python tests/desktop-smoke.py --exe $application[0].FullName --output artifacts/windows-runtime/windows-runtime.json
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
           $uninstaller = @(Get-ChildItem $installRoot -Filter '*uninstall*.exe')
           if ($uninstaller.Count -ne 1) { throw 'Uninstaller missing or ambiguous' }
@@ -86,7 +86,8 @@ jobs:
         if: always()
         with:
           name: circuit-windows-runtime
-          path: artifacts/windows-*
+          path: artifacts/windows-runtime/
+          if-no-files-found: error
       - name: Installer checksums
         shell: pwsh
         run: |

@@ -3,6 +3,7 @@
 import argparse
 from contextlib import contextmanager
 import ctypes
+from ctypes import wintypes
 import hashlib
 import json
 import os
@@ -12,25 +13,48 @@ import subprocess
 import tempfile
 import time
 import urllib.request
+import winreg
 
 from playwright.sync_api import expect, sync_playwright
 
 
-def close_window(process):
-    if process.poll() is not None:
-        return
+def windows_for_process(process_id):
     user32 = ctypes.WinDLL('user32', use_last_error=True)
-    callback_type = ctypes.WINFUNCTYPE(ctypes.c_bool, ctypes.c_void_p, ctypes.c_void_p)
+    callback_type = ctypes.WINFUNCTYPE(wintypes.BOOL, wintypes.HWND, wintypes.LPARAM)
+    user32.GetWindowThreadProcessId.argtypes = [wintypes.HWND, ctypes.POINTER(wintypes.DWORD)]
+    user32.GetWindowTextW.argtypes = [wintypes.HWND, wintypes.LPWSTR, ctypes.c_int]
+    user32.GetClassNameW.argtypes = [wintypes.HWND, wintypes.LPWSTR, ctypes.c_int]
+    user32.IsWindowVisible.argtypes = [wintypes.HWND]
+    user32.GetWindowRect.argtypes = [wintypes.HWND, ctypes.POINTER(wintypes.RECT)]
+    windows = []
 
     @callback_type
-    def close(handle, _):
-        pid = ctypes.c_ulong()
-        user32.GetWindowThreadProcessId(ctypes.c_void_p(handle), ctypes.byref(pid))
-        if pid.value == process.pid:
-            user32.PostMessageW(ctypes.c_void_p(handle), 0x0010, 0, 0)
+    def inspect(handle, _):
+        pid = wintypes.DWORD()
+        user32.GetWindowThreadProcessId(handle, ctypes.byref(pid))
+        if pid.value == process_id:
+            title, classname, rectangle = ctypes.create_unicode_buffer(512), ctypes.create_unicode_buffer(256), wintypes.RECT()
+            user32.GetWindowTextW(handle, title, len(title))
+            user32.GetClassNameW(handle, classname, len(classname))
+            user32.GetWindowRect(handle, ctypes.byref(rectangle))
+            windows.append(dict(handle=int(handle), title=title.value, classname=classname.value,
+                                visible=bool(user32.IsWindowVisible(handle)),
+                                rectangle=[rectangle.left, rectangle.top, rectangle.right, rectangle.bottom]))
         return True
 
-    user32.EnumWindows(close, 0)
+    user32.EnumWindows.argtypes = [callback_type, wintypes.LPARAM]
+    assert user32.EnumWindows(inspect, 0), 'Could not enumerate native windows'
+    return windows
+
+
+def close_window(process):
+    if process.poll() is not None:
+        assert process.returncode == 0, f'Application exit code: {process.returncode}'
+        return
+    user32 = ctypes.WinDLL('user32', use_last_error=True)
+    user32.PostMessageW.argtypes = [wintypes.HWND, wintypes.UINT, wintypes.WPARAM, wintypes.LPARAM]
+    for window in windows_for_process(process.pid):
+        user32.PostMessageW(window['handle'], 0x0010, 0, 0)
     try:
         process.wait(timeout=20)
     except subprocess.TimeoutExpired:
@@ -41,29 +65,106 @@ def close_window(process):
 
 
 @contextmanager
+def elevated_webview_policy(executable, profile, browser_arguments):
+    # WebView2 150+ ignores WEBVIEW2_* environment overrides in elevated hosts.
+    # This affects GitHub Windows runners, not the shipped game. HKLM overrides
+    # are documented for this case; scope them to this executable and restore.
+    # https://learn.microsoft.com/microsoft-edge/webview2/concepts/security
+    elevated = bool(ctypes.windll.shell32.IsUserAnAdmin())
+    original_values = []
+    try:
+        if elevated:
+            for setting, value in [('AdditionalBrowserArguments', browser_arguments),
+                                   ('UserDataFolder', str(profile))]:
+                path = rf'SOFTWARE\Policies\Microsoft\Edge\WebView2\{setting}'
+                with winreg.CreateKeyEx(winreg.HKEY_LOCAL_MACHINE, path, 0,
+                                        winreg.KEY_READ | winreg.KEY_WRITE | winreg.KEY_WOW64_64KEY) as key:
+                    try:
+                        previous = winreg.QueryValueEx(key, executable.name)
+                    except FileNotFoundError:
+                        previous = None
+                    original_values.append((path, previous))
+                    winreg.SetValueEx(key, executable.name, 0, winreg.REG_SZ, value)
+        yield dict(elevated=elevated, override='per-executable HKLM policy' if elevated else 'environment',
+                   user_data_folder=str(profile), browser_arguments=browser_arguments)
+    finally:
+        for path, previous in reversed(original_values):
+            with winreg.OpenKey(winreg.HKEY_LOCAL_MACHINE, path, 0,
+                                winreg.KEY_SET_VALUE | winreg.KEY_WOW64_64KEY) as key:
+                if previous is None:
+                    winreg.DeleteValue(key, executable.name)
+                else:
+                    winreg.SetValueEx(key, executable.name, 0, previous[1], previous[0])
+
+
+def collect_diagnostics(process, port, log_directory, attempt, diagnostic):
+    diagnostic.update(pid=process.pid, returncode=process.poll(), windows=windows_for_process(process.pid))
+    # Capture process command lines, runtime versions and the desktop even if CDP
+    # never starts, without adding a test-only hook to the production executable.
+    screenshot = (log_directory / f'{attempt}-desktop.png').resolve()
+    script = r"""
+$ErrorActionPreference = 'Continue'
+Get-CimInstance Win32_Process | Where-Object { $_.Name -in @('circuit.exe','msedgewebview2.exe') } |
+    Select-Object ProcessId, ParentProcessId, SessionId, Name, ExecutablePath, CommandLine |
+    ConvertTo-Json -Depth 4
+Get-ChildItem 'C:\Program Files (x86)\Microsoft\EdgeWebView\Application' -ErrorAction SilentlyContinue |
+    Select-Object Name
+netstat -ano
+Add-Type -AssemblyName System.Windows.Forms
+Add-Type -AssemblyName System.Drawing
+$bounds = [System.Windows.Forms.Screen]::PrimaryScreen.Bounds
+$image = New-Object System.Drawing.Bitmap $bounds.Width, $bounds.Height
+$graphics = [System.Drawing.Graphics]::FromImage($image)
+try {
+    $graphics.CopyFromScreen($bounds.Location, [System.Drawing.Point]::Empty, $bounds.Size)
+    $image.Save($env:CIRCUIT_DESKTOP_SCREENSHOT)
+} finally { $graphics.Dispose(); $image.Dispose() }
+"""
+    try:
+        completed = subprocess.run(['powershell', '-NoProfile', '-NonInteractive', '-Command', script],
+                                   env=dict(os.environ, CIRCUIT_DESKTOP_SCREENSHOT=str(screenshot)),
+                                   capture_output=True, text=True, errors='replace', timeout=30)
+        (log_directory / f'{attempt}-processes.txt').write_text(completed.stdout + '\n' + completed.stderr,
+                                                               encoding='utf-8')
+    except Exception as error:
+        diagnostic['diagnostic_error'] = str(error)
+    diagnostic['debug_port'] = port
+
+
+@contextmanager
 def launch(playwright, executable, profile, log_directory, attempt):
     with socket.socket() as listener:
         listener.bind(('127.0.0.1', 0))
         port = listener.getsockname()[1]
+    profile.mkdir(parents=True, exist_ok=True)
+    browser_arguments = f'--remote-debugging-port={port}'
     environment = dict(os.environ,
-                       WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS=f'--remote-debugging-port={port}',
+                       WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS=browser_arguments,
                        WEBVIEW2_USER_DATA_FOLDER=str(profile))
-    browser = None
-    with (log_directory / f'{attempt}-stdout.txt').open('wb') as stdout, \
+    browser, failure = None, None
+    diagnostic = dict(attempt=attempt)
+    with elevated_webview_policy(executable, profile, browser_arguments) as override, \
+            (log_directory / f'{attempt}-stdout.txt').open('wb') as stdout, \
             (log_directory / f'{attempt}-stderr.txt').open('wb') as stderr:
-        process = subprocess.Popen([str(executable)], env=environment, stdout=stdout, stderr=stderr)
+        diagnostic.update(override)
+        process = subprocess.Popen([str(executable)], cwd=executable.parent, env=environment, stdout=stdout, stderr=stderr)
         try:
             deadline = time.monotonic() + 60
+            opener = urllib.request.build_opener(urllib.request.ProxyHandler({}))
+            last_error = None
             while time.monotonic() < deadline:
                 assert process.poll() is None, f'Application exited before WebView2 started: {process.returncode}'
                 try:
-                    with urllib.request.urlopen(f'http://127.0.0.1:{port}/json/version', timeout=1) as response:
-                        endpoint = json.load(response)['webSocketDebuggerUrl']
+                    with opener.open(f'http://127.0.0.1:{port}/json/version', timeout=1) as response:
+                        version = json.load(response)
+                        endpoint = version['webSocketDebuggerUrl']
+                    diagnostic['webview_version'] = version
                     break
-                except (OSError, KeyError, ValueError):
+                except (OSError, KeyError, ValueError) as error:
+                    last_error = str(error)
                     time.sleep(0.2)
             else:
-                raise AssertionError('Installed WebView2 debugging endpoint did not start')
+                raise AssertionError(f'Installed WebView2 debugging endpoint did not start: {last_error}')
             browser = playwright.chromium.connect_over_cdp(endpoint)
             deadline = time.monotonic() + 30
             page = None
@@ -76,11 +177,30 @@ def launch(playwright, executable, profile, log_directory, attempt):
                 time.sleep(0.2)
             assert page is not None, 'Installed game did not load a document'
             page.set_default_timeout(15000)
+            visible_windows = [window for window in windows_for_process(process.pid) if window['visible']]
+            diagnostic['windows'] = visible_windows
+            assert any('Circuit' in window['title'] and window['rectangle'][2] > window['rectangle'][0]
+                       for window in visible_windows), 'No visible installed Circuit native window'
             yield page
+            page.screenshot(path=str(log_directory / f'{attempt}-game.png'))
+        except BaseException as error:
+            failure = error
+            diagnostic['error'] = str(error)
+            collect_diagnostics(process, port, log_directory, attempt, diagnostic)
+            raise
         finally:
-            close_window(process)
-            if browser:
-                browser.close()
+            try:
+                close_window(process)
+            except Exception as error:
+                diagnostic['shutdown_error'] = str(error)
+                if failure is None:
+                    raise
+            finally:
+                diagnostic['exit_code'] = process.poll()
+                (log_directory / f'{attempt}-diagnostic.json').write_text(
+                    json.dumps(diagnostic, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+                if browser:
+                    browser.close()
 
 
 def main():

@@ -4,6 +4,8 @@
 
 正式版本仅在 Web/PWA 战役与离线回归、真实 NSIS 安装、已安装 Tauri/WebView2 可见窗口交互、同 profile 正常关闭重开存档、WebView2 进程自然退出及临时目录清理、卸载检查全部通过后发布。随包 [windows-runtime.json](https://github.com/AureliusWu/Circuit/releases/download/v1.4.0/windows-runtime.json) 记录源码提交、安装后程序哈希及实际窗口/存档/关闭检查；[release.json](https://github.com/AureliusWu/Circuit/releases/download/v1.4.0/release.json) 标明版本、提交和正式构建编号。Web 包、Windows 安装器与记录文件附 [SHA256SUMS.txt](https://github.com/AureliusWu/Circuit/releases/download/v1.4.0/SHA256SUMS.txt)，上传后重新下载校验。完整工作流与公开站点验收见 [Actions](https://github.com/AureliusWu/Circuit/actions)，最终发布回执见 [PUBLISHED-v1.4.0.json](https://github.com/AureliusWu/Circuit/blob/main/docs/production/PUBLISHED-v1.4.0.json)。
 
+公开下载请使用 [SHA256SUMS-public.txt](https://github.com/AureliusWu/Circuit/releases/download/v1.4.0/SHA256SUMS-public.txt)：下载全部八个附件到同一目录后，执行 `sha256sum --check SHA256SUMS-public.txt`，可直接核对其余七个公开文件。GitHub 将原安装器文件名“回路 Circuit_1.4.0_x64-setup.exe”规范化为 `Circuit_1.4.0_x64-setup.exe`；原 [SHA256SUMS.txt](https://github.com/AureliusWu/Circuit/releases/download/v1.4.0/SHA256SUMS.txt) 与 [安装器 sidecar](https://github.com/AureliusWu/Circuit/releases/download/v1.4.0/Circuit_1.4.0_x64-setup.exe.sha256) 保留正式构建原名和原字节，单独使用它们时需按上述对应关系重命名本地文件。新增公开名校验表只补充下载校验，不替换已发布程序、原记录或原校验文件。
+
 下文保留 2026-10-13 的内容制作与原始验收记录；2026-10-15 的检索/面板集成另见 [集成记录](https://github.com/AureliusWu/Circuit/blob/v1.4.0/docs/production/VISITORS-INTEGRATION.md)。
 
 《应声》归档后，D3把调查带到城南旧回迁接待站。程砚与季宁先按正式报修处理站外低压接入点缺陷，再依产权方授权核窗口两联、输入卡与旧采集任务。陈伯开管理侧门，罗禾提供新苑移交原册；两人的实际职责、2019旧档与今晚到场记录分别核实。

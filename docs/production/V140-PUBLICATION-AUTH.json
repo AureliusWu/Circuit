@@ -1,0 +1,144 @@
+{
+  "schema_version": 1,
+  "repository": "AureliusWu/Circuit",
+  "version": "1.4.0",
+  "tag": "v1.4.0",
+  "runtime_commit": "a95ed6de62389b8fdbb401e280d956bfdd1dfe58",
+  "release_id": 415035189,
+  "original_body_sha256": "50b01daf041b6ba2e9e38a9388f15412e765c4ee6adf2b70dfcfb00b19f4575b",
+  "source_run": 38912659768,
+  "source_attempt": 1,
+  "source_jobs": [
+    {
+      "id": 117012103710,
+      "name": "Windows NSIS installer"
+    },
+    {
+      "id": 117012103959,
+      "name": "Web / PWA archive"
+    }
+  ],
+  "required_source_steps": {
+    "Windows NSIS installer": [
+      "Build with locked Rust dependencies",
+      "Install and exercise the actual Windows application",
+      "Installer checksums"
+    ],
+    "Web / PWA archive": [
+      "Run npm test",
+      "Browser campaign and offline regression",
+      "Run node scripts/package-web.mjs"
+    ]
+  },
+  "other_runs": [
+    {
+      "id": 38912659414,
+      "jobs": {
+        "Windows desktop compile": 117012101783,
+        "Web / PWA build": 117012101812
+      }
+    },
+    {
+      "id": 38912659619,
+      "jobs": {
+        "build": 117012102905,
+        "deploy": 117012332792
+      }
+    }
+  ],
+  "allowed_metadata_paths": [
+    ".github/workflows/release.yml",
+    ".github/workflows/finalize-v140.yml",
+    "scripts/finalize-v140.py",
+    "tests/finalize-v140.test.py",
+    "docs/production/V140-PUBLICATION-AUTH.json",
+    "docs/RELEASE_v1.4.0.md"
+  ],
+  "canonical_checksum_name": "SHA256SUMS-public.txt",
+  "name_mapping": {
+    "回路 Circuit_1.4.0_x64-setup.exe": "Circuit_1.4.0_x64-setup.exe",
+    "回路 Circuit_1.4.0_x64-setup.exe.sha256": "Circuit_1.4.0_x64-setup.exe.sha256"
+  },
+  "assets": [
+    {
+      "id": 647534760,
+      "name": "circuit-web-1.4.0.zip",
+      "size": 7729343,
+      "digest": "sha256:64e598560b5e91cb163b04b1f5da872af62de92d73541c0da4705367ea584ecf"
+    },
+    {
+      "id": 647534759,
+      "name": "circuit-web-1.4.0.zip.sha256",
+      "size": 88,
+      "digest": "sha256:dbd664c40b25cf6682e0223d112b8b094891ca27f70fb27ed5b5a2ff6a45c508"
+    },
+    {
+      "id": 647534782,
+      "name": "Circuit_1.4.0_x64-setup.exe",
+      "size": 9371458,
+      "digest": "sha256:3bf9074adbbf2e5e0f9a4946bc0a6c4e44a8a90dc7b0e074b9a50202ae0b772f"
+    },
+    {
+      "id": 647534789,
+      "name": "Circuit_1.4.0_x64-setup.exe.sha256",
+      "size": 102,
+      "digest": "sha256:6656d0789f26c64a5483fa0c12796f262a6ef662eaab891b555fba985a5e2008"
+    },
+    {
+      "id": 647534761,
+      "name": "release.json",
+      "size": 503,
+      "digest": "sha256:69a8aef44aea7e7bc8a9e80e52f4b4c6f9e09e182534fd3b46ef31ee7e19ea06"
+    },
+    {
+      "id": 647534756,
+      "name": "SHA256SUMS.txt",
+      "size": 355,
+      "digest": "sha256:3d5aaa91786c5c95edf053ccb6e157f53cf0988c28252093cd8e93243d6a85ec"
+    },
+    {
+      "id": 647534758,
+      "name": "windows-runtime.json",
+      "size": 1732,
+      "digest": "sha256:e7cc902ff58cf90e9dcd5cdc99b245ec96795566fd1fe72fa24ac63df59ad428"
+    }
+  ],
+  "artifacts": [
+    {
+      "id": 12050734345,
+      "name": "circuit-windows-nsis",
+      "size_in_bytes": 9355448,
+      "digest": "sha256:4c2abe122e5b2906f6bb4c7546a59320d74f325866ae3455866f6d4dd5331f8e"
+    },
+    {
+      "id": 12050694273,
+      "name": "circuit-windows-runtime",
+      "size_in_bytes": 1387415,
+      "digest": "sha256:bd25a38461b9f897ab6640bbf674e602a8da1cb22b1fd0e919bbf37f25804479"
+    },
+    {
+      "id": 12050613469,
+      "name": "circuit-web",
+      "size_in_bytes": 7727536,
+      "digest": "sha256:911c96c7716e67344287f74e45e4199961bfb174f83a99745969b0a86cd8546d"
+    },
+    {
+      "id": 12050483927,
+      "name": "circuit-pages-live",
+      "size_in_bytes": 2830441,
+      "digest": "sha256:82b914e49072b20b2ea8b164fb5f1417f61924957c68e9978ffc6cf23f6a7f06"
+    }
+  ],
+  "native_checks": [
+    "installed executable renders current version and title",
+    "native start, automatic save, history and keyboard focus",
+    "close, relaunch and restore the same native save",
+    "no JavaScript page errors and normal application shutdown",
+    "both WebView2 process collections exit before profile cleanup",
+    "temporary WebView2 profile is completely removed"
+  ],
+  "installed_executable_sha256": "5db16e34df965d05078b741f77eac2d11b5e421e83bdbf444aa4243f93c9b9f0",
+  "authorization": "The owner explicitly requested completion of the four game release update loops; this completion adds only one new public-name checksum file and updates release notes, preserving the tag and all original asset IDs and bytes.",
+  "canonical_checksum_size": 625,
+  "canonical_checksum_sha256": "748cb6993e7bc9e6b367fe75bd65759786dad2e00a09a962b43f339c71565387"
+}

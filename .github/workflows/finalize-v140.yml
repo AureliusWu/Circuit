@@ -1,0 +1,40 @@
+name: Finalize v1.4.0 public checksums
+
+on:
+  workflow_run:
+    workflows: [Build release artifacts]
+    types: [completed]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: read
+
+concurrency:
+  group: finalize-circuit-v140
+  cancel-in-progress: false
+
+jobs:
+  finalize:
+    if: github.event_name == 'workflow_dispatch' || (github.event.workflow_run.id == 38912659768 && github.event.workflow_run.head_sha == 'a95ed6de62389b8fdbb401e280d956bfdd1dfe58')
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Revalidate immutable native and web bytes, add public-name checksum table
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python scripts/finalize-v140.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: circuit-v140-publication-finalization
+          path: artifacts/finalize-v140/
+          if-no-files-found: error
+          include-hidden-files: true

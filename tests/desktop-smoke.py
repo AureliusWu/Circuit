@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Exercise the installed Tauri executable through its real WebView2 control."""
 import argparse
-from contextlib import contextmanager
+from contextlib import contextmanager, nullcontext
 import ctypes
 from ctypes import wintypes
 import hashlib
@@ -15,7 +15,7 @@ import time
 import urllib.request
 import winreg
 
-from playwright.sync_api import expect, sync_playwright
+from playwright.sync_api import TimeoutError as PlaywrightTimeoutError, expect, sync_playwright
 
 
 def windows_for_process(process_id):
@@ -47,21 +47,32 @@ def windows_for_process(process_id):
     return windows
 
 
-def close_window(process):
+def close_window(process, page, on_timeout):
     if process.poll() is not None:
         assert process.returncode == 0, f'Application exit code: {process.returncode}'
         return
     user32 = ctypes.WinDLL('user32', use_last_error=True)
     user32.PostMessageW.argtypes = [wintypes.HWND, wintypes.UINT, wintypes.WPARAM, wintypes.LPARAM]
-    for window in windows_for_process(process.pid):
-        user32.PostMessageW(window['handle'], 0x0010, 0, 0)
+    user32.PostMessageW.restype = wintypes.BOOL
+    # EnumWindows also returns Tao's internal message target. WM_CLOSE destroys
+    # that target before it can dispatch the real window's CloseRequested event.
+    # Only send the user's close action to the visible application window.
+    targets = [window for window in windows_for_process(process.pid)
+               if window['visible'] and window['classname'] == 'Tauri Window' and 'Circuit' in window['title']]
+    assert targets, 'No Circuit application window to close'
     try:
+        # Keep the CDP event loop running while the native window closes.
+        with page.expect_event('close', timeout=20000) if page and not page.is_closed() else nullcontext():
+            for window in targets:
+                assert user32.PostMessageW(window['handle'], 0x0010, 0, 0), 'Native close message failed'
         process.wait(timeout=20)
-    except subprocess.TimeoutExpired:
+    except (subprocess.TimeoutExpired, PlaywrightTimeoutError) as error:
+        on_timeout()
         subprocess.run(['taskkill', '/PID', str(process.pid), '/T', '/F'], check=False)
         process.wait(timeout=10)
-        raise AssertionError('Installed application did not close normally')
+        raise AssertionError('Installed application did not close normally') from error
     assert process.returncode == 0, f'Application exit code: {process.returncode}'
+    return targets
 
 
 @contextmanager
@@ -147,7 +158,7 @@ def launch(playwright, executable, profile, log_directory, attempt):
     environment = dict(os.environ,
                        WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS=browser_arguments,
                        WEBVIEW2_USER_DATA_FOLDER=str(profile))
-    browser, failure = None, None
+    browser, page, failure = None, None, None
     diagnostic = dict(attempt=attempt)
     with elevated_webview_policy(executable, profile, browser_arguments) as override, \
             (log_directory / f'{attempt}-stdout.txt').open('wb') as stdout, \
@@ -195,7 +206,8 @@ def launch(playwright, executable, profile, log_directory, attempt):
             raise
         finally:
             try:
-                close_window(process)
+                diagnostic['closed_native_windows'] = close_window(process, page, lambda: collect_diagnostics(
+                    process, port, log_directory, attempt + '-shutdown', diagnostic))
             except Exception as error:
                 diagnostic['shutdown_error'] = str(error)
                 if failure is None:

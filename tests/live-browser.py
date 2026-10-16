@@ -152,6 +152,7 @@ def run(url, output, expected_build):
                         for control in page.locator('.hud button').all():
                             hit_test(control)
                         action = page.locator('button[data-action-id]').first
+                        action.scroll_into_view_if_needed()
                         hit_test(action)
                         action.click()
                         page.wait_for_function('args=>localStorage.getItem(args.key)!==args.previous',

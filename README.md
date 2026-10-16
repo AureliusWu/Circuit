@@ -52,7 +52,7 @@ npm run tauri dev
 npm run tauri build -- --bundles nsis -- --locked
 ```
 
-`package-lock.json` 与 `src-tauri/Cargo.lock` 固定依赖。CI 验证 Web 与 Windows 编译；`release.yml` 在手动触发或 `v*` 标签上生成 Web 包与 Windows NSIS 安装器，作为工作流附件供审阅。工作流不自动公开发布，也不配置代码签名。
+`package-lock.json` 与 `src-tauri/Cargo.lock` 固定依赖。CI 验证 Web 与 Windows 编译；`release.yml` 在 main 更新、手动触发或 `v*` 标签上生成 Web 包与 Windows NSIS 安装器。main 发布还要求浏览器战役/离线回归，以及真实 Windows 安装、原生窗口交互、关闭重开存档和卸载全部成功；随后创建不可覆盖的新版本，附源码提交、运行证据与 SHA-256，并重新下载核对。手动与标签构建只保留工作流附件，不自动创建版本。当前未配置代码签名。
 
 ## 操作与存档
 

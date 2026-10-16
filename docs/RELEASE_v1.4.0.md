@@ -1,6 +1,10 @@
 # v1.4.0《来访》
 
-2026-10-13 制作检查点记录。下列验收数字与链接保留该批次原始证据；2026-10-15 与 v1.3.1 检索的当前集成另见 [集成记录](production/VISITORS-INTEGRATION.md)，旧结果不证明本批次。
+本版整合九章内容、已读检索与并排核对，并修复横屏录音按钮被标题遮挡及部分标题中文字形缺失。2026-10-15 的 [当前源码 CI](https://github.com/AureliusWu/Circuit/actions/runs/38743343797) 已通过 77 项逻辑、85 项真实浏览器检查、152 份音频完整解码、字库覆盖、生产构建与 Windows 原生编译。
+
+发布流程新增真实 NSIS 安装、已安装 Tauri/WebView2 窗口交互、同 profile 关闭重开存档与卸载检查；这些检查须在正式发布构建中通过，版本才能创建。版本附源码提交、原生运行记录和 SHA-256，上传后重新下载核对。当前制作记录不冒充尚未发生的正式发布验收，最终状态以对应 main 发布工作流为准。
+
+下文保留 2026-10-13 的内容制作与原始验收记录；2026-10-15 的检索/面板集成另见 [集成记录](production/VISITORS-INTEGRATION.md)。
 
 《应声》归档后，D3把调查带到城南旧回迁接待站。程砚与季宁先按正式报修处理站外低压接入点缺陷，再依产权方授权核窗口两联、输入卡与旧采集任务。陈伯开管理侧门，罗禾提供新苑移交原册；两人的实际职责、2019旧档与今晚到场记录分别核实。
 
@@ -22,4 +26,4 @@
 
 [根路径记录](evidence/v1.4.0-root-browser.json) · [Pages路径记录](evidence/v1.4.0-pages-browser.json) · [《来访》专项](evidence/v1.4.0-visitors-root-browser.json) · [汇总](evidence/v1.4.0-verification.json)。这些是自动化验收；真实手机游玩时长、读音与演技、Windows安装和卸载保留人工验收，不据编译通过宣称安装器已验收。
 
-发行版本同步Web、Tauri与两个锁文件，CI纳入《来访》专项。Web包由npm run package:web生成；main自动构建GitHub Pages，Windows CI检查原生编译。
+发行版本同步Web、Tauri与两个锁文件，CI纳入《来访》专项。Web包由npm run package:web生成；main自动构建GitHub Pages。正式版本由 release.yml 在双端验收后发布，已公开版本不会覆盖。

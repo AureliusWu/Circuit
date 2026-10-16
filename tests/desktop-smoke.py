@@ -148,7 +148,7 @@ try {
     diagnostic['debug_port'] = port
 
 
-def profile_processes(profile, observed, timeout=5):
+def profile_processes(profile, observed, timeout=30):
     """Track this UDF's browser and descendants even after their parent exits."""
     script = r"""
 $ErrorActionPreference = 'Stop'
@@ -193,7 +193,7 @@ def wait_for_profile_shutdown(profile, observed, diagnostic):
     while True:
         remaining_time = deadline - time.monotonic()
         assert remaining_time > 0, f'WebView2 did not release the temporary profile: {shutdown}'
-        remaining = profile_processes(profile, observed, timeout=min(5, remaining_time))
+        remaining = profile_processes(profile, observed, timeout=remaining_time)
         shutdown.update(observed_pids=sorted(observed),
                         remaining_pids=sorted(int(item['ProcessId']) for item in remaining),
                         elapsed_seconds=round(time.monotonic() - started, 3))

@@ -1,0 +1,1235 @@
+{
+  "schema_version": 1,
+  "project": "Circuit / 回路",
+  "version": "1.4.0",
+  "status": "published",
+  "checked_at": "2026-10-16T14:22:41.209413+00:00",
+  "repository": "https://github.com/AureliusWu/Circuit",
+  "source_commit": "a95ed6de62389b8fdbb401e280d956bfdd1dfe58",
+  "tag": "v1.4.0",
+  "release": {
+    "id": 415035189,
+    "url": "https://github.com/AureliusWu/Circuit/releases/tag/v1.4.0",
+    "published_at": "2026-10-16T14:09:49Z",
+    "draft": false,
+    "prerelease": false
+  },
+  "workflows": {
+    "original_run": {
+      "id": 38912659768,
+      "html_url": "https://github.com/AureliusWu/Circuit/actions/runs/38912659768",
+      "head_sha": "a95ed6de62389b8fdbb401e280d956bfdd1dfe58",
+      "run_attempt": 1,
+      "status": "completed",
+      "conclusion": "failure"
+    },
+    "original_successful_jobs": [
+      {
+        "id": 117012103710,
+        "name": "Windows NSIS installer",
+        "conclusion": "success",
+        "started_at": "2026-10-16T14:03:15Z",
+        "completed_at": "2026-10-16T14:09:28Z",
+        "steps": [
+          {
+            "name": "Set up job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 1,
+            "started_at": "2026-10-16T14:03:16Z",
+            "completed_at": "2026-10-16T14:03:17Z"
+          },
+          {
+            "name": "Run actions/checkout@v4",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 2,
+            "started_at": "2026-10-16T14:03:17Z",
+            "completed_at": "2026-10-16T14:03:23Z"
+          },
+          {
+            "name": "Run actions/setup-node@v4",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 3,
+            "started_at": "2026-10-16T14:03:23Z",
+            "completed_at": "2026-10-16T14:03:40Z"
+          },
+          {
+            "name": "Run dtolnay/rust-toolchain@stable",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 4,
+            "started_at": "2026-10-16T14:03:40Z",
+            "completed_at": "2026-10-16T14:04:05Z"
+          },
+          {
+            "name": "Run actions/setup-python@v5",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 5,
+            "started_at": "2026-10-16T14:04:05Z",
+            "completed_at": "2026-10-16T14:04:05Z"
+          },
+          {
+            "name": "Run npm ci",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 6,
+            "started_at": "2026-10-16T14:04:05Z",
+            "completed_at": "2026-10-16T14:04:12Z"
+          },
+          {
+            "name": "Run npm test",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 7,
+            "started_at": "2026-10-16T14:04:12Z",
+            "completed_at": "2026-10-16T14:04:16Z"
+          },
+          {
+            "name": "Build with locked Rust dependencies",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 8,
+            "started_at": "2026-10-16T14:04:16Z",
+            "completed_at": "2026-10-16T14:08:58Z"
+          },
+          {
+            "name": "Install and exercise the actual Windows application",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 9,
+            "started_at": "2026-10-16T14:08:58Z",
+            "completed_at": "2026-10-16T14:09:21Z"
+          },
+          {
+            "name": "Run actions/upload-artifact@v4",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 10,
+            "started_at": "2026-10-16T14:09:21Z",
+            "completed_at": "2026-10-16T14:09:22Z"
+          },
+          {
+            "name": "Installer checksums",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 11,
+            "started_at": "2026-10-16T14:09:22Z",
+            "completed_at": "2026-10-16T14:09:22Z"
+          },
+          {
+            "name": "Run actions/upload-artifact@v4",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 12,
+            "started_at": "2026-10-16T14:09:22Z",
+            "completed_at": "2026-10-16T14:09:24Z"
+          },
+          {
+            "name": "Post Run actions/setup-python@v5",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 22,
+            "started_at": "2026-10-16T14:09:24Z",
+            "completed_at": "2026-10-16T14:09:24Z"
+          },
+          {
+            "name": "Post Run actions/setup-node@v4",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 23,
+            "started_at": "2026-10-16T14:09:24Z",
+            "completed_at": "2026-10-16T14:09:24Z"
+          },
+          {
+            "name": "Post Run actions/checkout@v4",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 24,
+            "started_at": "2026-10-16T14:09:24Z",
+            "completed_at": "2026-10-16T14:09:26Z"
+          },
+          {
+            "name": "Complete job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 25,
+            "started_at": "2026-10-16T14:09:26Z",
+            "completed_at": "2026-10-16T14:09:26Z"
+          }
+        ]
+      },
+      {
+        "id": 117012103959,
+        "name": "Web / PWA archive",
+        "conclusion": "success",
+        "started_at": "2026-10-16T14:03:15Z",
+        "completed_at": "2026-10-16T14:06:04Z",
+        "steps": [
+          {
+            "name": "Set up job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 1,
+            "started_at": "2026-10-16T14:03:16Z",
+            "completed_at": "2026-10-16T14:03:17Z"
+          },
+          {
+            "name": "Run actions/checkout@v4",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 2,
+            "started_at": "2026-10-16T14:03:17Z",
+            "completed_at": "2026-10-16T14:03:22Z"
+          },
+          {
+            "name": "Run actions/setup-node@v4",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 3,
+            "started_at": "2026-10-16T14:03:22Z",
+            "completed_at": "2026-10-16T14:03:27Z"
+          },
+          {
+            "name": "Run actions/setup-python@v5",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 4,
+            "started_at": "2026-10-16T14:03:27Z",
+            "completed_at": "2026-10-16T14:03:28Z"
+          },
+          {
+            "name": "Run npm ci",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 5,
+            "started_at": "2026-10-16T14:03:28Z",
+            "completed_at": "2026-10-16T14:03:31Z"
+          },
+          {
+            "name": "Run npm test",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 6,
+            "started_at": "2026-10-16T14:03:31Z",
+            "completed_at": "2026-10-16T14:03:33Z"
+          },
+          {
+            "name": "Run npm run build",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 7,
+            "started_at": "2026-10-16T14:03:33Z",
+            "completed_at": "2026-10-16T14:03:39Z"
+          },
+          {
+            "name": "Browser campaign and offline regression",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 8,
+            "started_at": "2026-10-16T14:03:39Z",
+            "completed_at": "2026-10-16T14:06:00Z"
+          },
+          {
+            "name": "Run node scripts/package-web.mjs",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 9,
+            "started_at": "2026-10-16T14:06:00Z",
+            "completed_at": "2026-10-16T14:06:00Z"
+          },
+          {
+            "name": "Run actions/upload-artifact@v4",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 10,
+            "started_at": "2026-10-16T14:06:00Z",
+            "completed_at": "2026-10-16T14:06:01Z"
+          },
+          {
+            "name": "Post Run actions/setup-python@v5",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 18,
+            "started_at": "2026-10-16T14:06:01Z",
+            "completed_at": "2026-10-16T14:06:02Z"
+          },
+          {
+            "name": "Post Run actions/setup-node@v4",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 19,
+            "started_at": "2026-10-16T14:06:02Z",
+            "completed_at": "2026-10-16T14:06:02Z"
+          },
+          {
+            "name": "Post Run actions/checkout@v4",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 20,
+            "started_at": "2026-10-16T14:06:02Z",
+            "completed_at": "2026-10-16T14:06:02Z"
+          },
+          {
+            "name": "Complete job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 21,
+            "started_at": "2026-10-16T14:06:02Z",
+            "completed_at": "2026-10-16T14:06:02Z"
+          }
+        ]
+      }
+    ],
+    "other_successful_runs": [
+      {
+        "id": 38912659414,
+        "conclusion": "success",
+        "jobs": [
+          {
+            "id": 117012101783,
+            "name": "Windows desktop compile",
+            "conclusion": "success",
+            "started_at": "2026-10-16T14:03:15Z",
+            "completed_at": "2026-10-16T14:08:52Z",
+            "steps": [
+              {
+                "name": "Set up job",
+                "status": "completed",
+                "conclusion": "success",
+                "number": 1,
+                "started_at": "2026-10-16T14:03:16Z",
+                "completed_at": "2026-10-16T14:03:17Z"
+              },
+              {
+                "name": "Run actions/checkout@v4",
+                "status": "completed",
+                "conclusion": "success",
+                "number": 2,
+                "started_at": "2026-10-16T14:03:17Z",
+                "completed_at": "2026-10-16T14:03:27Z"
+              },
+              {
+                "name": "Run actions/setup-node@v4",
+                "status": "completed",
+                "conclusion": "success",
+                "number": 3,
+                "started_at": "2026-10-16T14:03:27Z",
+                "completed_at": "2026-10-16T14:03:44Z"
+              },
+              {
+                "name": "Run dtolnay/rust-toolchain@stable",
+                "status": "completed",
+                "conclusion": "success",
+                "number": 4,
+                "started_at": "2026-10-16T14:03:44Z",
+                "completed_at": "2026-10-16T14:04:22Z"
+              },
+              {
+                "name": "Run npm ci",
+                "status": "completed",
+                "conclusion": "success",
+                "number": 5,
+                "started_at": "2026-10-16T14:04:22Z",
+                "completed_at": "2026-10-16T14:04:28Z"
+              },
+              {
+                "name": "Run npm run tauri build -- --no-bundle -- --locked",
+                "status": "completed",
+                "conclusion": "success",
+                "number": 6,
+                "started_at": "2026-10-16T14:04:28Z",
+                "completed_at": "2026-10-16T14:08:48Z"
+              },
+              {
+                "name": "Post Run actions/setup-node@v4",
+                "status": "completed",
+                "conclusion": "success",
+                "number": 11,
+                "started_at": "2026-10-16T14:08:48Z",
+                "completed_at": "2026-10-16T14:08:48Z"
+              },
+              {
+                "name": "Post Run actions/checkout@v4",
+                "status": "completed",
+                "conclusion": "success",
+                "number": 12,
+                "started_at": "2026-10-16T14:08:48Z",
+                "completed_at": "2026-10-16T14:08:51Z"
+              },
+              {
+                "name": "Complete job",
+                "status": "completed",
+                "conclusion": "success",
+                "number": 13,
+                "started_at": "2026-10-16T14:08:51Z",
+                "completed_at": "2026-10-16T14:08:51Z"
+              }
+            ]
+          },
+          {
+            "id": 117012101812,
+            "name": "Web / PWA build",
+            "conclusion": "success",
+            "started_at": "2026-10-16T14:03:15Z",
+            "completed_at": "2026-10-16T14:07:17Z",
+            "steps": [
+              {
+                "name": "Set up job",
+                "status": "completed",
+                "conclusion": "success",
+                "number": 1,
+                "started_at": "2026-10-16T14:03:16Z",
+                "completed_at": "2026-10-16T14:03:16Z"
+              },
+              {
+                "name": "Run actions/checkout@v4",
+                "status": "completed",
+                "conclusion": "success",
+                "number": 2,
+                "started_at": "2026-10-16T14:03:16Z",
+                "completed_at": "2026-10-16T14:03:22Z"
+              },
+              {
+                "name": "Run actions/setup-node@v4",
+                "status": "completed",
+                "conclusion": "success",
+                "number": 3,
+                "started_at": "2026-10-16T14:03:22Z",
+                "completed_at": "2026-10-16T14:03:28Z"
+              },
+              {
+                "name": "Run actions/setup-python@v5",
+                "status": "completed",
+                "conclusion": "success",
+                "number": 4,
+                "started_at": "2026-10-16T14:03:28Z",
+                "completed_at": "2026-10-16T14:03:29Z"
+              },
+              {
+                "name": "Run npm ci",
+                "status": "completed",
+                "conclusion": "success",
+                "number": 5,
+                "started_at": "2026-10-16T14:03:29Z",
+                "completed_at": "2026-10-16T14:03:32Z"
+              },
+              {
+                "name": "Run npm test",
+                "status": "completed",
+                "conclusion": "success",
+                "number": 6,
+                "started_at": "2026-10-16T14:03:32Z",
+                "completed_at": "2026-10-16T14:03:34Z"
+              },
+              {
+                "name": "Self-hosted Chinese font coverage",
+                "status": "completed",
+                "conclusion": "success",
+                "number": 7,
+                "started_at": "2026-10-16T14:03:34Z",
+                "completed_at": "2026-10-16T14:03:38Z"
+              },
+              {
+                "name": "Full source and bundled audio verification",
+                "status": "completed",
+                "conclusion": "success",
+                "number": 8,
+                "started_at": "2026-10-16T14:03:38Z",
+                "completed_at": "2026-10-16T14:04:07Z"
+              },
+              {
+                "name": "Run npm run build",
+                "status": "completed",
+                "conclusion": "success",
+                "number": 9,
+                "started_at": "2026-10-16T14:04:07Z",
+                "completed_at": "2026-10-16T14:04:13Z"
+              },
+              {
+                "name": "Campaign, reading, saves, voice and offline regression",
+                "status": "completed",
+                "conclusion": "success",
+                "number": 10,
+                "started_at": "2026-10-16T14:04:13Z",
+                "completed_at": "2026-10-16T14:07:14Z"
+              },
+              {
+                "name": "Post Run actions/setup-python@v5",
+                "status": "completed",
+                "conclusion": "success",
+                "number": 18,
+                "started_at": "2026-10-16T14:07:14Z",
+                "completed_at": "2026-10-16T14:07:14Z"
+              },
+              {
+                "name": "Post Run actions/setup-node@v4",
+                "status": "completed",
+                "conclusion": "success",
+                "number": 19,
+                "started_at": "2026-10-16T14:07:14Z",
+                "completed_at": "2026-10-16T14:07:14Z"
+              },
+              {
+                "name": "Post Run actions/checkout@v4",
+                "status": "completed",
+                "conclusion": "success",
+                "number": 20,
+                "started_at": "2026-10-16T14:07:14Z",
+                "completed_at": "2026-10-16T14:07:14Z"
+              },
+              {
+                "name": "Complete job",
+                "status": "completed",
+                "conclusion": "success",
+                "number": 21,
+                "started_at": "2026-10-16T14:07:14Z",
+                "completed_at": "2026-10-16T14:07:14Z"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 38912659619,
+        "conclusion": "success",
+        "jobs": [
+          {
+            "id": 117012102905,
+            "name": "build",
+            "conclusion": "success",
+            "started_at": "2026-10-16T14:03:15Z",
+            "completed_at": "2026-10-16T14:03:43Z",
+            "steps": [
+              {
+                "name": "Set up job",
+                "status": "completed",
+                "conclusion": "success",
+                "number": 1,
+                "started_at": "2026-10-16T14:03:16Z",
+                "completed_at": "2026-10-16T14:03:17Z"
+              },
+              {
+                "name": "Run actions/checkout@v4",
+                "status": "completed",
+                "conclusion": "success",
+                "number": 2,
+                "started_at": "2026-10-16T14:03:17Z",
+                "completed_at": "2026-10-16T14:03:23Z"
+              },
+              {
+                "name": "Run actions/setup-node@v4",
+                "status": "completed",
+                "conclusion": "success",
+                "number": 3,
+                "started_at": "2026-10-16T14:03:23Z",
+                "completed_at": "2026-10-16T14:03:28Z"
+              },
+              {
+                "name": "Run npm ci",
+                "status": "completed",
+                "conclusion": "success",
+                "number": 4,
+                "started_at": "2026-10-16T14:03:28Z",
+                "completed_at": "2026-10-16T14:03:31Z"
+              },
+              {
+                "name": "Run npm test",
+                "status": "completed",
+                "conclusion": "success",
+                "number": 5,
+                "started_at": "2026-10-16T14:03:31Z",
+                "completed_at": "2026-10-16T14:03:33Z"
+              },
+              {
+                "name": "Build for the repository URL",
+                "status": "completed",
+                "conclusion": "success",
+                "number": 6,
+                "started_at": "2026-10-16T14:03:33Z",
+                "completed_at": "2026-10-16T14:03:39Z"
+              },
+              {
+                "name": "Run actions/configure-pages@v5",
+                "status": "completed",
+                "conclusion": "success",
+                "number": 7,
+                "started_at": "2026-10-16T14:03:39Z",
+                "completed_at": "2026-10-16T14:03:39Z"
+              },
+              {
+                "name": "Run actions/upload-pages-artifact@v3",
+                "status": "completed",
+                "conclusion": "success",
+                "number": 8,
+                "started_at": "2026-10-16T14:03:39Z",
+                "completed_at": "2026-10-16T14:03:41Z"
+              },
+              {
+                "name": "Post Run actions/setup-node@v4",
+                "status": "completed",
+                "conclusion": "success",
+                "number": 15,
+                "started_at": "2026-10-16T14:03:41Z",
+                "completed_at": "2026-10-16T14:03:41Z"
+              },
+              {
+                "name": "Post Run actions/checkout@v4",
+                "status": "completed",
+                "conclusion": "success",
+                "number": 16,
+                "started_at": "2026-10-16T14:03:41Z",
+                "completed_at": "2026-10-16T14:03:41Z"
+              },
+              {
+                "name": "Complete job",
+                "status": "completed",
+                "conclusion": "success",
+                "number": 17,
+                "started_at": "2026-10-16T14:03:41Z",
+                "completed_at": "2026-10-16T14:03:41Z"
+              }
+            ]
+          },
+          {
+            "id": 117012332792,
+            "name": "deploy",
+            "conclusion": "success",
+            "started_at": "2026-10-16T14:03:47Z",
+            "completed_at": "2026-10-16T14:05:02Z",
+            "steps": [
+              {
+                "name": "Set up job",
+                "status": "completed",
+                "conclusion": "success",
+                "number": 1,
+                "started_at": "2026-10-16T14:03:48Z",
+                "completed_at": "2026-10-16T14:03:49Z"
+              },
+              {
+                "name": "Publish game",
+                "status": "completed",
+                "conclusion": "success",
+                "number": 2,
+                "started_at": "2026-10-16T14:03:49Z",
+                "completed_at": "2026-10-16T14:04:01Z"
+              },
+              {
+                "name": "Run actions/checkout@v4",
+                "status": "completed",
+                "conclusion": "success",
+                "number": 3,
+                "started_at": "2026-10-16T14:04:01Z",
+                "completed_at": "2026-10-16T14:04:07Z"
+              },
+              {
+                "name": "Run actions/setup-node@v4",
+                "status": "completed",
+                "conclusion": "success",
+                "number": 4,
+                "started_at": "2026-10-16T14:04:07Z",
+                "completed_at": "2026-10-16T14:04:14Z"
+              },
+              {
+                "name": "Run npm ci",
+                "status": "completed",
+                "conclusion": "success",
+                "number": 5,
+                "started_at": "2026-10-16T14:04:14Z",
+                "completed_at": "2026-10-16T14:04:16Z"
+              },
+              {
+                "name": "Rebuild expected published bytes",
+                "status": "completed",
+                "conclusion": "success",
+                "number": 6,
+                "started_at": "2026-10-16T14:04:16Z",
+                "completed_at": "2026-10-16T14:04:20Z"
+              },
+              {
+                "name": "Run actions/setup-python@v5",
+                "status": "completed",
+                "conclusion": "success",
+                "number": 7,
+                "started_at": "2026-10-16T14:04:20Z",
+                "completed_at": "2026-10-16T14:04:20Z"
+              },
+              {
+                "name": "Verify the public game at desktop, portrait and landscape sizes",
+                "status": "completed",
+                "conclusion": "success",
+                "number": 8,
+                "started_at": "2026-10-16T14:04:20Z",
+                "completed_at": "2026-10-16T14:04:56Z"
+              },
+              {
+                "name": "Run actions/upload-artifact@v4",
+                "status": "completed",
+                "conclusion": "success",
+                "number": 9,
+                "started_at": "2026-10-16T14:04:56Z",
+                "completed_at": "2026-10-16T14:04:58Z"
+              },
+              {
+                "name": "Post Run actions/setup-python@v5",
+                "status": "completed",
+                "conclusion": "success",
+                "number": 16,
+                "started_at": "2026-10-16T14:04:58Z",
+                "completed_at": "2026-10-16T14:04:58Z"
+              },
+              {
+                "name": "Post Run actions/setup-node@v4",
+                "status": "completed",
+                "conclusion": "success",
+                "number": 17,
+                "started_at": "2026-10-16T14:04:58Z",
+                "completed_at": "2026-10-16T14:04:58Z"
+              },
+              {
+                "name": "Post Run actions/checkout@v4",
+                "status": "completed",
+                "conclusion": "success",
+                "number": 18,
+                "started_at": "2026-10-16T14:04:58Z",
+                "completed_at": "2026-10-16T14:04:58Z"
+              },
+              {
+                "name": "Complete job",
+                "status": "completed",
+                "conclusion": "success",
+                "number": 19,
+                "started_at": "2026-10-16T14:04:58Z",
+                "completed_at": "2026-10-16T14:04:58Z"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "workflow_artifacts": [
+    {
+      "id": 12050734345,
+      "name": "circuit-windows-nsis",
+      "size_in_bytes": 9355448,
+      "url": "https://api.github.com/repos/AureliusWu/Circuit/actions/artifacts/12050734345",
+      "archive_download_url": "https://api.github.com/repos/AureliusWu/Circuit/actions/artifacts/12050734345/zip",
+      "expired": false,
+      "created_at": "2026-10-16T14:09:24Z",
+      "expires_at": "2027-01-14T14:03:13Z",
+      "updated_at": "2026-10-16T14:09:24Z",
+      "digest": "sha256:4c2abe122e5b2906f6bb4c7546a59320d74f325866ae3455866f6d4dd5331f8e",
+      "workflow_run": {
+        "id": 38912659768,
+        "repository_id": 1413944414,
+        "head_repository_id": 1413944414,
+        "head_branch": "main",
+        "head_sha": "a95ed6de62389b8fdbb401e280d956bfdd1dfe58"
+      }
+    },
+    {
+      "id": 12050694273,
+      "name": "circuit-windows-runtime",
+      "size_in_bytes": 1387415,
+      "url": "https://api.github.com/repos/AureliusWu/Circuit/actions/artifacts/12050694273",
+      "archive_download_url": "https://api.github.com/repos/AureliusWu/Circuit/actions/artifacts/12050694273/zip",
+      "expired": false,
+      "created_at": "2026-10-16T14:09:22Z",
+      "expires_at": "2027-01-14T14:03:13Z",
+      "updated_at": "2026-10-16T14:09:22Z",
+      "digest": "sha256:bd25a38461b9f897ab6640bbf674e602a8da1cb22b1fd0e919bbf37f25804479",
+      "workflow_run": {
+        "id": 38912659768,
+        "repository_id": 1413944414,
+        "head_repository_id": 1413944414,
+        "head_branch": "main",
+        "head_sha": "a95ed6de62389b8fdbb401e280d956bfdd1dfe58"
+      }
+    },
+    {
+      "id": 12050613469,
+      "name": "circuit-web",
+      "size_in_bytes": 7727536,
+      "url": "https://api.github.com/repos/AureliusWu/Circuit/actions/artifacts/12050613469",
+      "archive_download_url": "https://api.github.com/repos/AureliusWu/Circuit/actions/artifacts/12050613469/zip",
+      "expired": false,
+      "created_at": "2026-10-16T14:06:01Z",
+      "expires_at": "2027-01-14T14:03:13Z",
+      "updated_at": "2026-10-16T14:06:01Z",
+      "digest": "sha256:911c96c7716e67344287f74e45e4199961bfb174f83a99745969b0a86cd8546d",
+      "workflow_run": {
+        "id": 38912659768,
+        "repository_id": 1413944414,
+        "head_repository_id": 1413944414,
+        "head_branch": "main",
+        "head_sha": "a95ed6de62389b8fdbb401e280d956bfdd1dfe58"
+      }
+    },
+    {
+      "id": 12050533408,
+      "name": "github-pages",
+      "size_in_bytes": 7725164,
+      "url": "https://api.github.com/repos/AureliusWu/Circuit/actions/artifacts/12050533408",
+      "archive_download_url": "https://api.github.com/repos/AureliusWu/Circuit/actions/artifacts/12050533408/zip",
+      "expired": false,
+      "created_at": "2026-10-16T14:03:40Z",
+      "expires_at": "2026-10-17T14:03:39Z",
+      "updated_at": "2026-10-16T14:03:40Z",
+      "digest": "sha256:411c006a878f87e1ee0bd80399a31f88d75de8022108bf1959fe5996d2710ddb",
+      "workflow_run": {
+        "id": 38912659619,
+        "repository_id": 1413944414,
+        "head_repository_id": 1413944414,
+        "head_branch": "main",
+        "head_sha": "a95ed6de62389b8fdbb401e280d956bfdd1dfe58"
+      }
+    },
+    {
+      "id": 12050483927,
+      "name": "circuit-pages-live",
+      "size_in_bytes": 2830441,
+      "url": "https://api.github.com/repos/AureliusWu/Circuit/actions/artifacts/12050483927",
+      "archive_download_url": "https://api.github.com/repos/AureliusWu/Circuit/actions/artifacts/12050483927/zip",
+      "expired": false,
+      "created_at": "2026-10-16T14:04:58Z",
+      "expires_at": "2027-01-14T14:03:13Z",
+      "updated_at": "2026-10-16T14:04:58Z",
+      "digest": "sha256:82b914e49072b20b2ea8b164fb5f1417f61924957c68e9978ffc6cf23f6a7f06",
+      "workflow_run": {
+        "id": 38912659619,
+        "repository_id": 1413944414,
+        "head_repository_id": 1413944414,
+        "head_branch": "main",
+        "head_sha": "a95ed6de62389b8fdbb401e280d956bfdd1dfe58"
+      }
+    }
+  ],
+  "publication_finalization": {
+    "run_id": 38914869819,
+    "url": "https://github.com/AureliusWu/Circuit/actions/runs/38914869819",
+    "status": "success",
+    "completion_commit": "f0924d84f9a29a437ec11f1d7d63f93dc48c8374",
+    "report_artifact": {
+      "id": 12052345910,
+      "name": "circuit-v140-publication-finalization",
+      "size_in_bytes": 16536,
+      "url": "https://api.github.com/repos/AureliusWu/Circuit/actions/artifacts/12052345910",
+      "archive_download_url": "https://api.github.com/repos/AureliusWu/Circuit/actions/artifacts/12052345910/zip",
+      "expired": false,
+      "created_at": "2026-10-16T14:20:19Z",
+      "expires_at": "2027-01-14T14:19:47Z",
+      "updated_at": "2026-10-16T14:20:19Z",
+      "digest": "sha256:8da239ec90893544e495d1425923ed0ffae6faf8864d6cc3b998c53cef6cc329",
+      "workflow_run": {
+        "id": 38914869819,
+        "repository_id": 1413944414,
+        "head_repository_id": 1413944414,
+        "head_branch": "main",
+        "head_sha": "f0924d84f9a29a437ec11f1d7d63f93dc48c8374"
+      }
+    },
+    "original_assets_unchanged": true,
+    "tag_unchanged": true,
+    "canonical_seven_rows_direct_gnu_check": [
+      "Circuit_1.4.0_x64-setup.exe: OK",
+      "Circuit_1.4.0_x64-setup.exe.sha256: OK",
+      "SHA256SUMS.txt: OK",
+      "circuit-web-1.4.0.zip: OK",
+      "circuit-web-1.4.0.zip.sha256: OK",
+      "release.json: OK",
+      "windows-runtime.json: OK"
+    ]
+  },
+  "regression": {
+    "source_commit": "a95ed6de62389b8fdbb401e280d956bfdd1dfe58",
+    "ci_job_id": 117012101812,
+    "logic_tests": 77,
+    "browser_checks": 85,
+    "source_and_bundled_audio_decodes": 152,
+    "font_coverage": "FONT_SUBSET_OK public/fonts/circuit-sans.woff2: 183048 bytes, source CJK coverage complete",
+    "browser_suite_counts": {
+      "campaign_pwa": 20,
+      "reading_saves": 19,
+      "voice": 14,
+      "answering": 13,
+      "history_search": 9,
+      "visitors": 10
+    }
+  },
+  "native": {
+    "runtime": {
+      "version": "1.4.0",
+      "executable": "D:\\a\\_temp\\Circuit-release-install\\circuit.exe",
+      "executable_sha256": "5db16e34df965d05078b741f77eac2d11b5e421e83bdbf444aa4243f93c9b9f0",
+      "commit": "a95ed6de62389b8fdbb401e280d956bfdd1dfe58",
+      "checks": [
+        "installed executable renders current version and title",
+        "native start, automatic save, history and keyboard focus",
+        "close, relaunch and restore the same native save",
+        "no JavaScript page errors and normal application shutdown",
+        "both WebView2 process collections exit before profile cleanup",
+        "temporary WebView2 profile is completely removed"
+      ],
+      "status": "passed",
+      "document_url": "http://tauri.localhost/",
+      "webview_shutdown": {
+        "first": {
+          "profile_aliases": [
+            "c:\\users\\runneradmin\\appdata\\local\\temp\\circuit-installed-webview-54qi2_fo\\profile",
+            "c:\\users\\runner~1\\appdata\\local\\temp\\circuit-installed-webview-54qi2_fo\\profile"
+          ],
+          "observed_pids": [
+            3624,
+            3900,
+            5092,
+            5248,
+            6880,
+            7092,
+            9968
+          ],
+          "remaining_pids": [],
+          "elapsed_seconds": 0.359
+        },
+        "reopen": {
+          "profile_aliases": [
+            "c:\\users\\runneradmin\\appdata\\local\\temp\\circuit-installed-webview-54qi2_fo\\profile",
+            "c:\\users\\runner~1\\appdata\\local\\temp\\circuit-installed-webview-54qi2_fo\\profile"
+          ],
+          "observed_pids": [
+            1340,
+            1864,
+            3544,
+            7644,
+            7688,
+            8964,
+            10060
+          ],
+          "remaining_pids": [],
+          "elapsed_seconds": 0.36
+        }
+      },
+      "temporary_profile_removed": true,
+      "page_errors": []
+    },
+    "normal_close_diagnostics": {
+      "first": {
+        "exit_code": 0,
+        "windows": [
+          {
+            "handle": 328146,
+            "title": "回路 / Circuit",
+            "classname": "Tauri Window",
+            "visible": true,
+            "rectangle": [
+              0,
+              9,
+              1044,
+              768
+            ]
+          }
+        ],
+        "webview_shutdown": {
+          "profile_aliases": [
+            "c:\\users\\runneradmin\\appdata\\local\\temp\\circuit-installed-webview-54qi2_fo\\profile",
+            "c:\\users\\runner~1\\appdata\\local\\temp\\circuit-installed-webview-54qi2_fo\\profile"
+          ],
+          "observed_pids": [
+            3624,
+            3900,
+            5092,
+            5248,
+            6880,
+            7092,
+            9968
+          ],
+          "remaining_pids": [],
+          "elapsed_seconds": 0.359
+        }
+      },
+      "reopen": {
+        "exit_code": 0,
+        "windows": [
+          {
+            "handle": 196972,
+            "title": "回路 / Circuit",
+            "classname": "Tauri Window",
+            "visible": true,
+            "rectangle": [
+              0,
+              9,
+              1044,
+              768
+            ]
+          }
+        ],
+        "webview_shutdown": {
+          "profile_aliases": [
+            "c:\\users\\runneradmin\\appdata\\local\\temp\\circuit-installed-webview-54qi2_fo\\profile",
+            "c:\\users\\runner~1\\appdata\\local\\temp\\circuit-installed-webview-54qi2_fo\\profile"
+          ],
+          "observed_pids": [
+            1340,
+            1864,
+            3544,
+            7644,
+            7688,
+            8964,
+            10060
+          ],
+          "remaining_pids": [],
+          "elapsed_seconds": 0.36
+        }
+      }
+    },
+    "installation_and_uninstallation": {
+      "status": "passed",
+      "run_url": "https://github.com/AureliusWu/Circuit/actions/runs/38912659768",
+      "job_name": "Windows NSIS installer",
+      "step": "Install and exercise the actual Windows application",
+      "checks": [
+        "NSIS installs successfully",
+        "installed circuit.exe exists",
+        "installed application passes actual WebView2 smoke checks",
+        "uninstaller returns zero",
+        "installed circuit.exe is removed"
+      ]
+    }
+  },
+  "public_pwa": {
+    "base_url": "https://aureliuswu.github.io/Circuit/",
+    "version": "1.4.0",
+    "commit": "a95ed6de62389b8fdbb401e280d956bfdd1dfe58",
+    "checked_at": "2026-10-16T14:04:42.626869+00:00",
+    "published_files": [
+      {
+        "url": "https://aureliuswu.github.io/Circuit/index.html",
+        "sha256": "12fe853d473141b2d01633de1b463cb1de2bc7f6c22df7ca6d40313b761475c1",
+        "bytes": 930
+      },
+      {
+        "url": "https://aureliuswu.github.io/Circuit/sw.js",
+        "sha256": "2200a19a11e5cbf6cb8ef0c03c2923ba19dd1856ab05a407881c0fc4337fe841",
+        "bytes": 8006
+      }
+    ],
+    "viewports": [
+      {
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "document_url": "https://aureliuswu.github.io/Circuit/",
+        "service_worker": "https://aureliuswu.github.io/Circuit/sw.js",
+        "cached_audio_count": 48,
+        "save_sha256": "39520f5ccfa749861a6f72e812fdf93e7c34afa2184bd805b33cb3c0577adc4d",
+        "offline_audio": [
+          {
+            "path": "https://aureliuswu.github.io/Circuit/audio/voice/h13-dispatch.mp3",
+            "duration": 4.4,
+            "channels": 1
+          },
+          {
+            "path": "https://aureliuswu.github.io/Circuit/audio/sfx/glass-tap.mp3",
+            "duration": 1.7,
+            "channels": 1
+          }
+        ],
+        "status": "passed"
+      },
+      {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "document_url": "https://aureliuswu.github.io/Circuit/",
+        "service_worker": "https://aureliuswu.github.io/Circuit/sw.js",
+        "cached_audio_count": 48,
+        "save_sha256": "56073e27c16e27ff251fbc1b3161e7f2f9164e2e32650e4ed24603a9694dc8be",
+        "offline_audio": [
+          {
+            "path": "https://aureliuswu.github.io/Circuit/audio/voice/h13-dispatch.mp3",
+            "duration": 4.4,
+            "channels": 1
+          },
+          {
+            "path": "https://aureliuswu.github.io/Circuit/audio/sfx/glass-tap.mp3",
+            "duration": 1.7,
+            "channels": 1
+          }
+        ],
+        "status": "passed"
+      },
+      {
+        "viewport": {
+          "width": 760,
+          "height": 430
+        },
+        "document_url": "https://aureliuswu.github.io/Circuit/",
+        "service_worker": "https://aureliuswu.github.io/Circuit/sw.js",
+        "cached_audio_count": 48,
+        "save_sha256": "5f169841b418a6d3f704b57255f008c9ea2cbf173134cc86593de8692058dd39",
+        "offline_audio": [
+          {
+            "path": "https://aureliuswu.github.io/Circuit/audio/voice/h13-dispatch.mp3",
+            "duration": 4.4,
+            "channels": 1
+          },
+          {
+            "path": "https://aureliuswu.github.io/Circuit/audio/sfx/glass-tap.mp3",
+            "duration": 1.7,
+            "channels": 1
+          }
+        ],
+        "status": "passed"
+      }
+    ],
+    "page_errors": [],
+    "status": "passed",
+    "duration_seconds": 14.06
+  },
+  "public_assets": [
+    {
+      "name": "circuit-web-1.4.0.zip",
+      "id": 647534760,
+      "bytes": 7729343,
+      "sha256": "64e598560b5e91cb163b04b1f5da872af62de92d73541c0da4705367ea584ecf",
+      "anonymous_public_download": true,
+      "url": "https://github.com/AureliusWu/Circuit/releases/download/v1.4.0/circuit-web-1.4.0.zip"
+    },
+    {
+      "name": "circuit-web-1.4.0.zip.sha256",
+      "id": 647534759,
+      "bytes": 88,
+      "sha256": "dbd664c40b25cf6682e0223d112b8b094891ca27f70fb27ed5b5a2ff6a45c508",
+      "anonymous_public_download": true,
+      "url": "https://github.com/AureliusWu/Circuit/releases/download/v1.4.0/circuit-web-1.4.0.zip.sha256"
+    },
+    {
+      "name": "Circuit_1.4.0_x64-setup.exe",
+      "id": 647534782,
+      "bytes": 9371458,
+      "sha256": "3bf9074adbbf2e5e0f9a4946bc0a6c4e44a8a90dc7b0e074b9a50202ae0b772f",
+      "anonymous_public_download": true,
+      "url": "https://github.com/AureliusWu/Circuit/releases/download/v1.4.0/Circuit_1.4.0_x64-setup.exe"
+    },
+    {
+      "name": "Circuit_1.4.0_x64-setup.exe.sha256",
+      "id": 647534789,
+      "bytes": 102,
+      "sha256": "6656d0789f26c64a5483fa0c12796f262a6ef662eaab891b555fba985a5e2008",
+      "anonymous_public_download": true,
+      "url": "https://github.com/AureliusWu/Circuit/releases/download/v1.4.0/Circuit_1.4.0_x64-setup.exe.sha256"
+    },
+    {
+      "name": "release.json",
+      "id": 647534761,
+      "bytes": 503,
+      "sha256": "69a8aef44aea7e7bc8a9e80e52f4b4c6f9e09e182534fd3b46ef31ee7e19ea06",
+      "anonymous_public_download": true,
+      "url": "https://github.com/AureliusWu/Circuit/releases/download/v1.4.0/release.json"
+    },
+    {
+      "name": "SHA256SUMS-public.txt",
+      "id": 647562338,
+      "bytes": 625,
+      "sha256": "748cb6993e7bc9e6b367fe75bd65759786dad2e00a09a962b43f339c71565387",
+      "anonymous_public_download": true,
+      "url": "https://github.com/AureliusWu/Circuit/releases/download/v1.4.0/SHA256SUMS-public.txt"
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "id": 647534756,
+      "bytes": 355,
+      "sha256": "3d5aaa91786c5c95edf053ccb6e157f53cf0988c28252093cd8e93243d6a85ec",
+      "anonymous_public_download": true,
+      "url": "https://github.com/AureliusWu/Circuit/releases/download/v1.4.0/SHA256SUMS.txt"
+    },
+    {
+      "name": "windows-runtime.json",
+      "id": 647534758,
+      "bytes": 1732,
+      "sha256": "e7cc902ff58cf90e9dcd5cdc99b245ec96795566fd1fe72fa24ac63df59ad428",
+      "anonymous_public_download": true,
+      "url": "https://github.com/AureliusWu/Circuit/releases/download/v1.4.0/windows-runtime.json"
+    }
+  ],
+  "integrity": {
+    "all_eight_assets_downloaded_anonymously": true,
+    "all_api_digests_match": true,
+    "original_seven_asset_ids_and_bytes_unchanged": true,
+    "original_checksum_tables_verified_with_explicit_name_mapping": {
+      "回路 Circuit_1.4.0_x64-setup.exe": "Circuit_1.4.0_x64-setup.exe",
+      "回路 Circuit_1.4.0_x64-setup.exe.sha256": "Circuit_1.4.0_x64-setup.exe.sha256"
+    },
+    "public_name_checksum_table_verified_directly": true,
+    "canonical_checksum_sha256": "748cb6993e7bc9e6b367fe75bd65759786dad2e00a09a962b43f339c71565387",
+    "canonical_checksum_bytes": 625,
+    "original_checksums_match_with_name_mapping": true,
+    "formal_ci_original_files_verified": [
+      "Circuit_1.4.0_x64-setup.exe",
+      "Circuit_1.4.0_x64-setup.exe.sha256",
+      "circuit-web-1.4.0.zip",
+      "circuit-web-1.4.0.zip.sha256",
+      "windows-runtime.json"
+    ],
+    "web_zip": {
+      "crc_valid": true,
+      "files": 96,
+      "mp3_files": 48
+    },
+    "tag_and_metadata_bind_tested_source": true,
+    "release_body_matches_completion_commit_release_notes": true
+  },
+  "publication_recovery_history": [
+    {
+      "run_id": 38912659768,
+      "source_commit": "a95ed6de62389b8fdbb401e280d956bfdd1dfe58",
+      "failure": "GitHub normalized the installer asset filename; the original post-publication checksum readback used the CI filename",
+      "resolution": "Preserve the seven original assets; add SHA256SUMS-public.txt covering all seven real public names and verify eight anonymous downloads directly"
+    },
+    {
+      "run_id": 38861035527,
+      "source_commit": "8dec9a69c728ae16b1dae944002b0effc6f7b3c8",
+      "failure": "WebView2 still held the temporary profile after both normal application closes",
+      "resolution": "Track this profile browser/descendant PIDs and await natural process shutdown before strict cleanup"
+    },
+    {
+      "run_id": 38910765520,
+      "source_commit": "6f983e0e59786455023af1db29c743f43a2496d1",
+      "failure": "Windows temporary-path short/long spelling prevented automation PID matching",
+      "resolution": "Match both original and resolved profile aliases; preserve PID and cleanup assertions"
+    },
+    {
+      "run_id": 38911597037,
+      "source_commit": "a8950691a002c6c1b20ce34987716e8c70d79a87",
+      "failure": "Cold PowerShell/CIM startup exceeded the automation query budget of five seconds",
+      "resolution": "Give initial CIM queries thirty seconds; retain overall shutdown deadline of thirty seconds"
+    }
+  ],
+  "remaining_manual_checks": [
+    "Physical phone and tablet usability",
+    "Human play-time measurement",
+    "Human listening review of pronunciation and acting",
+    "Upgrade from a previously installed native Windows version"
+  ],
+  "code_signing": "not configured",
+  "publication_support_updates": {
+    "completion_commit": "f0924d84f9a29a437ec11f1d7d63f93dc48c8374",
+    "future_windows_artifact_name": "Circuit_${version}_x64-setup.exe",
+    "change": "Future release workflows rename the installer before hashing and write UTF-8 no-BOM/LF sidecars, so public download names match the checksum table.",
+    "validation": [
+      "YAML parsing",
+      "Rename precedes hashing and sidecar creation",
+      "Exact ASCII name matches the public naming convention",
+      "LF sidecar fixture passes GNU sha256sum --check"
+    ],
+    "new_windows_packaging_job_executed": false,
+    "published_native_evidence_remains": {
+      "commit": "a95ed6de62389b8fdbb401e280d956bfdd1dfe58",
+      "job_id": 117012103710
+    }
+  }
+}

@@ -1,4 +1,4 @@
-> 2026-10-15：恢复 v1.4.0《来访》制作检查点并整合 v1.3.1 日志/证据检索。当前集成与验收见 [本轮记录](docs/production/VISITORS-INTEGRATION.md)；旧检索批次保留于 [v1.3.1 记录](docs/production/HISTORY-REVIEW.md)。
+> 2026-10-16：v1.4.0《来访》已正式发布，Windows NSIS 安装器与完整 Web/PWA 包均可下载。真实安装、窗口交互、正常关闭重开同档、WebView2 清理与卸载，以及公开站点三屏离线验收已通过；8 个公开附件已匿名核对 SHA-256，安装器、PWA、原运行记录均与正式构建一致；公开名校验表可直接用于下载校验。见 [正式版本](https://github.com/AureliusWu/Circuit/releases/tag/v1.4.0) 与 [发布回执](docs/production/PUBLISHED-v1.4.0.json)。
 
 # 回路 / Circuit
 
@@ -52,7 +52,7 @@ npm run tauri dev
 npm run tauri build -- --bundles nsis -- --locked
 ```
 
-`package-lock.json` 与 `src-tauri/Cargo.lock` 固定依赖。CI 验证 Web 与 Windows 编译；`release.yml` 在 main 更新、手动触发或 `v*` 标签上生成 Web 包与 Windows NSIS 安装器。main 发布还要求浏览器战役/离线回归，以及真实 Windows 安装、原生窗口交互、关闭重开存档和卸载全部成功；随后创建不可覆盖的新版本，附源码提交、运行证据与 SHA-256，并重新下载核对。手动与标签构建只保留工作流附件，不自动创建版本。当前未配置代码签名。
+`package-lock.json` 与 `src-tauri/Cargo.lock` 固定依赖。CI 验证 Web 与 Windows 编译；`release.yml` 在 main 更新、手动触发或 `v*` 标签上生成 Web 包与 Windows NSIS 安装器。main 发布还要求浏览器战役/离线回归，以及真实 Windows 安装、原生窗口交互、关闭重开存档和卸载全部成功；随后创建不可覆盖的新版本，附源码提交、运行证据与 SHA-256，并重新下载核对。手动与标签构建只保留工作流附件，不自动创建版本。后续 Windows 工件上传前统一为 `Circuit_<版本>_x64-setup.exe`，再生成同名 LF 校验文件，公开下载名可直接对应校验表；这项流程修复通过 YAML 与命名/校验 fixture 验证，本版实际原生验收仍来自发布回执中的正式构建。当前未配置代码签名。
 
 ## 操作与存档
 

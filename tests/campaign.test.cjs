@@ -45,8 +45,8 @@ test('new campaigns start at the first chapter without completion or archive wri
   assert.equal(validateCampaignPayload(payload(session)).status, 'valid');
 });
 
-test('all eight campaign positions accept an ordered completion prefix with evidence proof', () => {
-  assert.equal(CHAPTER_ORDER.length, 8);
+test('all nine campaign positions accept an ordered completion prefix with evidence proof', () => {
+  assert.equal(CHAPTER_ORDER.length, 9);
   for (let index = 0; index < CHAPTER_ORDER.length; index += 1) {
     assert.equal(validateCampaignPayload(payload(sessionAt(index))).status, 'valid');
   }
@@ -80,6 +80,23 @@ test('a v1.2 Return Visit completion unlocks Answering without rewriting the old
   assert.ok(canStartChapter(restored.snapshot, 'answering'));
   assert.equal(canStartChapter(sessionAt(6, 'failure'), 'answering'), false);
   const next = startChapter(restored.snapshot, 'answering');
+  assert.equal(next.state.nodeId, 'dispatch');
+  assert.deepEqual(next.state.evidence, []);
+  assert.deepEqual(next.archive, old.archive);
+  assert.equal(storage.getItem(CAMPAIGN_KEYS.auto), raw);
+  assert.deepEqual(storage.writes, []);
+});
+
+test('a v1.3 Answering completion unlocks Visitors without rewriting the old save', () => {
+  const old = completeChapter(sessionAt(7, 'complete'));
+  const raw = JSON.stringify(payload(old));
+  const storage = new MemoryStorage({ [CAMPAIGN_KEYS.auto]: raw });
+  const restored = loadCampaign(storage, 'auto');
+  assert.equal(restored.status, 'valid');
+  assert.deepEqual(restored.snapshot.completed, CHAPTER_ORDER.slice(0, 8));
+  assert.ok(canStartChapter(restored.snapshot, 'visitors'));
+  assert.equal(canStartChapter(sessionAt(7, 'failure'), 'visitors'), false);
+  const next = startChapter(restored.snapshot, 'visitors');
   assert.equal(next.state.nodeId, 'dispatch');
   assert.deepEqual(next.state.evidence, []);
   assert.deepEqual(next.archive, old.archive);

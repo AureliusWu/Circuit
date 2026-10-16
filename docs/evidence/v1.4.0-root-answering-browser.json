@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "version": "1.4.0",
+  "base_url": "http://127.0.0.1:4173",
+  "checks": [
+    "v120-save-unlocks-answering-without-read-write",
+    "uncollected-evidence-has-no-replay-controls",
+    "collected-evidence-replays-identical-master-without-save-write",
+    "evidence-pause-and-resume",
+    "hidden-page-suspends-evidence-and-stop-preserves-progress",
+    "mute-and-voice-preference-disable-evidence-replay",
+    "retry-boxFailure-keeps-old-completion",
+    "retry-thirdFailure-keeps-old-completion",
+    "answering-completes-as-second-followup-with-original-city-loop",
+    "second-round-recordings-unlock-with-their-evidence",
+    "offline-restore-and-evidence-replay",
+    "chinese-font-evidence-and-hotspots-390x844",
+    "chinese-font-evidence-and-hotspots-760x430"
+  ],
+  "page_errors": [],
+  "seconds": 10.89,
+  "actual_audio": true,
+  "limitations": [
+    "Native media decoding and UI checks do not certify acting or physical speaker playback."
+  ]
+}

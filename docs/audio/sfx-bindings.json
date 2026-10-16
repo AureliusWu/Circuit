@@ -28,5 +28,15 @@
   "answering/recordBatch": "intercom-click",
   "answering/handoff": "pen-sign",
   "answering/doorway": "latch-turn",
-  "answering/end": "phone-alert"
+  "answering/end": "phone-alert",
+  "visitors/dispatch": "radio-open",
+  "visitors/knock": "glass-tap",
+  "visitors/ticket": "ticket-tear",
+  "visitors/takeNumber": "ticket-tear",
+  "visitors/sideDoor": "latch-turn",
+  "visitors/oldVoice": "radio-open",
+  "visitors/recordCard": "glass-tap",
+  "visitors/recordTest": "glass-tap",
+  "visitors/handoff": "pen-sign",
+  "visitors/wetStep": "wet-step"
 }

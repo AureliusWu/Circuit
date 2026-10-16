@@ -24,17 +24,17 @@ test('every voice is an exact authored excerpt, has a valid character and is bou
   assert.deepEqual(voicesFor('missing','missing'),[]);
 });
 
-test('Answering replays the original masters without altering their generation requests', () => {
+test('Second-part scenes replay the original masters without altering their generation requests', () => {
   const plan = JSON.parse(readFileSync('docs/audio/voice-plan.json', 'utf8'));
-  assert.equal(VOICE_REPLAYS.length, 5);
-  assert.equal(new Set(VOICE_REPLAYS.map(binding => `${binding.chapter}/${binding.node}`)).size, 5);
+  assert.equal(VOICE_REPLAYS.length, 7);
+  assert.equal(new Set(VOICE_REPLAYS.map(binding => `${binding.chapter}/${binding.node}`)).size, 7);
   for (const binding of VOICE_REPLAYS) {
     const clip = getVoiceClip(binding.clipId);
     assert.ok(clip, binding.clipId);
     assert.ok(getChapter(binding.chapter)?.nodes[binding.node]?.text.includes(clip.text));
     assert.strictEqual(voicesFor(binding.chapter, binding.node)[0], clip);
     assert.deepEqual(clip.bindings, plan.lines.find(row => row.id === clip.id).bindings);
-    assert.ok(clip.bindings.every(row => row.chapter !== 'answering'));
+    assert.ok(clip.bindings.every(row => !['answering', 'visitors'].includes(row.chapter)));
   }
   assert.equal(getVoiceClip('missing'), undefined);
 });
@@ -72,7 +72,7 @@ test('all shipping recordings, sources and scene effect bindings have verified h
   const voices=JSON.parse(readFileSync('docs/audio/voice-manifest.json','utf8'));
   const effects=JSON.parse(readFileSync('docs/audio/sfx-manifest.json','utf8'));
   const archived=JSON.parse(readFileSync('docs/audio/voice-first-pass.json','utf8'));
-  assert.equal(voices.clips.length,32); assert.equal(effects.clips.length,13);
+  assert.equal(voices.clips.length,32); assert.equal(effects.clips.length,16);
   assert.equal(archived.clips.length,8);
   for(const clip of [...voices.clips,...effects.clips,...archived.clips]) {
     assert.ok(clip.duration>.05);

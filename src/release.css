@@ -1,5 +1,11 @@
 :root { --paper: #c5c2a1; --line: #53614e; --ink: #101b15; }
 
+/* Headings also use the bundled CJK font when no system Chinese font exists. */
+.game .title-brand h1, .game .ending-summary h2, .notebook-dialog .panel-head h2,
+.game .scene-inscription, .game .scene-document, .game .objective-progress, .notebook-dialog .history-meta {
+  font-family: "Circuit Sans", "Microsoft YaHei", "Noto Sans SC", serif;
+}
+
 .release-title {
   min-height: 100vh;
   min-height: 100svh;
@@ -115,6 +121,22 @@
 .recording-controls button:hover, .evidence-notebook article button:hover { background: #293a26; border-color: #a3b184; }
 .recording-controls button:focus-visible, .evidence-notebook article button:focus-visible { outline: 2px solid #d5c68c; outline-offset: 3px; }
 .evidence-notebook article button:disabled { opacity: .55; cursor: default; }
+.evidence-view-controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 4px 0 18px; }
+.evidence-view-controls button { min-height: 40px; padding: 8px 12px; border: 1px solid #697658; background: #15241a; color: #d5ddbd; cursor: pointer; }
+.evidence-view-controls button[aria-pressed="true"] { background: #36412a; border-color: #c5b575; }
+.evidence-view-controls button:disabled { opacity: .55; cursor: default; }
+.evidence-view-controls button:focus-visible, .evidence-comparison select:focus-visible { outline: 2px solid #d5c68c; outline-offset: 3px; }
+.evidence-view-controls small { color: #9ba890; }
+.evidence-comparison { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 16px; }
+.evidence-panel.evidence-notebook:has(.evidence-comparison) { width: min(820px, 94vw); }
+.evidence-comparison section { min-width: 0; }
+.evidence-comparison label { display: block; color: #b7c3a2; font-size: 13px; }
+.evidence-comparison select { display: block; width: 100%; min-height: 44px; margin: 7px 0 12px; padding: 7px; border: 1px solid #697658; color: #e3e8d2; background: #15241a; font: inherit; }
+.evidence-comparison article { display: grid; grid-template-columns: 26px minmax(0, 1fr); gap: 8px; }
+.evidence-comparison article h3, .evidence-comparison article p { overflow-wrap: anywhere; }
+@media (max-width: 640px) {
+  .evidence-comparison { grid-template-columns: minmax(0, 1fr); gap: 10px; }
+}
 .map-complete circle { fill: #dbcb91; stroke: #dae1b3; stroke-width: .3; }
 .map-locked circle { fill: #334d34; stroke: #69815c; stroke-width: .3; }
 .map-locked text { fill: #7c956c; }
@@ -240,6 +262,7 @@
 /* Character directory and distinct scene, radio and archive presentations. */
 .title-crew { margin: 14px 0 0; color: #b6b899; font-size: 11px; letter-spacing: .08em; }
 .notebook-dialog.characters-notebook { width: min(860px, 94vw); }
+.notebook-dialog .record-search { color-scheme: dark; --history-search-bg: #15241a; }
 .character-directory { display: grid; grid-template-columns: 190px minmax(0, 1fr); gap: 16px; }
 .character-directory .crew-intro { grid-column: 1 / -1; margin: 4px 0 0; line-height: 1.9; }
 .character-directory > footer { grid-column: 1 / -1; }

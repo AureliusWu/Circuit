@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-15",
+  "version": "1.4.0",
+  "baseCommit": "9eb5533b9f307ddd4020dcdc06597370a6a337f4",
+  "originalVerifiedRuntimeCommit": "f77142f1d9fbae2467619516f17d21d3ffd9569a",
+  "restoration": "Exact source patch recovered after the execution environment reset; runtime bytes are preserved.",
+  "logicTests": 77,
+  "productionBuild": "passed again after restoration",
+  "runtimeSha256": {
+    "src/components/Notebook.tsx": "1b8dbc1ac78556e21024114b2546a1c457b7feb5656f9137300aac7acb0cd393",
+    "src/gameplay.css": "9392b946517b71ae8635248cbc5af2f6d3f2915612386e282864138e834d9289",
+    "src/release.css": "e795dff7a47ee1ded0bb81f4748528a437607a7c69f9f91e92e2f3aff9ba4a38",
+    "public/fonts/circuit-sans.woff2": "4b7616cc3e6325c5dc8992d37eb919dea3e1ae2d586791b795f94377b4c3fe6e"
+  },
+  "priorCompletedBrowserRun": {
+    "browser": "Chromium 153.0.8010.0",
+    "pythonPlaywright": "1.64.0",
+    "status": "passed before environment reset, on the same runtime source",
+    "checks": 85,
+    "suites": {
+      "answering": 13,
+      "historySearch": 9,
+      "visitors": 10,
+      "campaignPwa": 20,
+      "readingSaves": 19,
+      "recordedVoice": 14
+    },
+    "actualCjkTitleFontCheck": "CDP glyph provider checked at 390x844 and 760x430; custom font rendered four CJK title glyphs"
+  },
+  "previousMediaVerification": {
+    "decodedFiles": 152,
+    "voices": 32,
+    "effects": 16,
+    "status": "passed before reset; no audio bytes changed"
+  },
+  "platforms": {
+    "candidateGitHubCI": "not run; upload blocked by automatic approval",
+    "previousWindowsCompile": "9eb5533 / run 38663179115 succeeded; does not certify this candidate",
+    "physicalWindowsInstall": "not executed",
+    "publicPwa": "not deployed"
+  }
+}

@@ -428,7 +428,17 @@ export const SCENE_EFFECTS: Readonly<Record<string, string>> = {
   "answering/recordBatch": "/audio/sfx/intercom-click.mp3",
   "answering/handoff": "/audio/sfx/pen-sign.mp3",
   "answering/doorway": "/audio/sfx/latch-turn.mp3",
-  "answering/end": "/audio/sfx/phone-alert.mp3"
+  "answering/end": "/audio/sfx/phone-alert.mp3",
+  "visitors/dispatch": "/audio/sfx/radio-open.mp3",
+  "visitors/knock": "/audio/sfx/glass-tap.mp3",
+  "visitors/ticket": "/audio/sfx/ticket-tear.mp3",
+  "visitors/takeNumber": "/audio/sfx/ticket-tear.mp3",
+  "visitors/sideDoor": "/audio/sfx/latch-turn.mp3",
+  "visitors/oldVoice": "/audio/sfx/radio-open.mp3",
+  "visitors/recordCard": "/audio/sfx/glass-tap.mp3",
+  "visitors/recordTest": "/audio/sfx/glass-tap.mp3",
+  "visitors/handoff": "/audio/sfx/pen-sign.mp3",
+  "visitors/wetStep": "/audio/sfx/wet-step.mp3"
 };
 
 /** Replay the identical mastered file; the original generation request stays immutable. */
@@ -437,7 +447,9 @@ export const VOICE_REPLAYS: readonly { clipId: string; chapter: string; node: st
   { clipId: 'v01-question', chapter: 'answering', node: 'luo' },
   { clipId: 'v01-arrived', chapter: 'answering', node: 'incomingName' },
   { clipId: 'v01-received', chapter: 'answering', node: 'emptyReply' },
-  { clipId: 'v01-wait', chapter: 'answering', node: 'doorway' }
+  { clipId: 'v01-wait', chapter: 'answering', node: 'doorway' },
+  { clipId: 'q07-xu', chapter: 'visitors', node: 'oldVoice' },
+  { clipId: 'v01-confirm', chapter: 'visitors', node: 'newVoice' }
 ];
 
 export const getVoiceClip = (id: string) => VOICE_CLIPS.find(clip => clip.id === id);

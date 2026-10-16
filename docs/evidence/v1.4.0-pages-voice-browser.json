@@ -1,0 +1,25 @@
+{
+  "url": "http://127.0.0.1:4173/Circuit/",
+  "status": "passed",
+  "checks": [
+    "no-title-autoplay",
+    "bundled-mp3-real-playback",
+    "auto-waits-for-real-voice-end",
+    "manual-voice-pause-holds-auto",
+    "auto-resumes-after-voice-and-delay",
+    "visited-history-replay-preserves-progress",
+    "hidden-page-pauses-and-resumes-replay",
+    "scene-change-cancels-old-playback",
+    "independent-voice-and-sfx-settings",
+    "title-stops-all-recorded-media",
+    "missing-recording-does-not-block-reading",
+    "new-chapter-art-voices-and-mobile-controls",
+    "two-speaker-echo-plays-in-order-before-auto-advance",
+    "no-runtime-errors"
+  ],
+  "count": 14,
+  "elapsedSeconds": 27.646,
+  "limitations": [
+    "Headless browser media events and decoding checked; physical speakers and acting not approved."
+  ]
+}

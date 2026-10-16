@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "version": "1.3.0",
+  "version": "1.4.0",
   "status": "passed",
   "voiceCount": 32,
-  "sfxCount": 13,
-  "decodedFiles": 146,
-  "currentFiles": 122,
+  "sfxCount": 16,
+  "decodedFiles": 152,
+  "currentFiles": 128,
   "archivedFiles": 24,
   "voiceSeconds": 107.6,
   "voiceGenerationSeconds": 592.591,
@@ -279,6 +279,24 @@
       "path": "public/audio/sfx/latch-turn.mp3",
       "duration": 1.152,
       "sha256": "a25657597ec2b35917333b80bf89f832abaf260f1bd849271cc2ee2837c9b407"
+    },
+    {
+      "id": "glass-tap",
+      "path": "public/audio/sfx/glass-tap.mp3",
+      "duration": 1.752,
+      "sha256": "3b17cc527a2ab3403ab20e5106cc16162b9bc1142dc35e5021c0b288f733d1d7"
+    },
+    {
+      "id": "ticket-tear",
+      "path": "public/audio/sfx/ticket-tear.mp3",
+      "duration": 1.104,
+      "sha256": "195db0fa8607ac02552da5fad9602b263617fe6ac9ce091a4d17a37350f0fb76"
+    },
+    {
+      "id": "wet-step",
+      "path": "public/audio/sfx/wet-step.mp3",
+      "duration": 1.248,
+      "sha256": "3a202eb2c6ca7e9ee38ffd41246656fd12aac195b326022c999a76a9c40c9327"
     }
   ],
   "limitations": [

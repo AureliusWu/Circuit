@@ -38,6 +38,7 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -45,3 +46,27 @@ jobs:
       - name: Publish game
         id: deployment
         uses: actions/deploy-pages@v4
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - name: Rebuild expected published bytes
+        run: npm run build
+        env:
+          CIRCUIT_BASE_PATH: /Circuit/
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify the public game at desktop, portrait and landscape sizes
+        run: |
+          python -m pip install playwright
+          python -m playwright install --with-deps chromium
+          python tests/live-browser.py "${{ steps.deployment.outputs.page_url }}" --expected-build dist --output artifacts/pages-live/live-browser.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: circuit-pages-live
+          path: artifacts/pages-live/
+          if-no-files-found: error

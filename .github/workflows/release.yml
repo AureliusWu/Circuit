@@ -137,14 +137,11 @@ jobs:
           set -euo pipefail
           VERSION=$(node -p "require('./package.json').version")
           TAG="v$VERSION"
-          test "$(gh api "repos/$GITHUB_REPOSITORY/git/ref/heads/main" --jq '.object.sha')" = "$GITHUB_SHA"
-          for endpoint in "releases/tags/$TAG" "git/ref/tags/$TAG"; do
-            if gh api "repos/$GITHUB_REPOSITORY/$endpoint" > existing.json 2> absence.txt; then
-              echo "Existing $endpoint; versions remain immutable."
-              exit 1
-            fi
-            grep -q 'HTTP 404' absence.txt
-          done
+          decision=$(node scripts/release-preflight.mjs)
+          if [ "$decision" != publish ]; then
+            echo "No publication needed: $decision. Verified artifacts remain available."
+            exit 0
+          fi
           cp runtime-evidence/windows-runtime.json release-assets/windows-runtime.json
           node --input-type=module -e 'import fs from "node:fs"; const runtime=JSON.parse(fs.readFileSync("release-assets/windows-runtime.json")); if(runtime.status!=="passed"||runtime.commit!==process.env.GITHUB_SHA) throw Error("Native evidence mismatch"); fs.writeFileSync("release-assets/release.json",JSON.stringify({version:runtime.version,commit:process.env.GITHUB_SHA,runId:process.env.GITHUB_RUN_ID,nativeChecks:runtime.checks},null,2)+"\n");'
           (cd release-assets && sha256sum *.exe *.zip *.json > SHA256SUMS.txt)

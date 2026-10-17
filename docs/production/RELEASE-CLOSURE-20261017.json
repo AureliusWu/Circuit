@@ -1,0 +1,277 @@
+{
+  "date": "2026-10-17",
+  "project": "Circuit",
+  "version": "1.4.0",
+  "status": "release_update_closed",
+  "auditedMain": "796758d2117e3be5c28b371b564574c91f14bdcb",
+  "runtimeTag": "v1.4.0",
+  "runtimeCommit": "a95ed6de62389b8fdbb401e280d956bfdd1dfe58",
+  "release": {
+    "id": 415035189,
+    "tag": "v1.4.0",
+    "prerelease": false,
+    "draft": false,
+    "url": "https://github.com/AureliusWu/Circuit/releases/tag/v1.4.0",
+    "publishedAt": "2026-10-16T14:09:49Z"
+  },
+  "openPullRequests": 0,
+  "unpublishedPlayerChanges": false,
+  "postReleaseChangedPaths": [
+    ".github/workflows/finalize-v140.yml",
+    ".github/workflows/release.yml",
+    "README.md",
+    "docs/RELEASE_v1.4.0.md",
+    "docs/production/PUBLISHED-v1.4.0.json",
+    "docs/production/RELEASE-PREFLIGHT-20261017.json",
+    "docs/production/RELEASE-PREFLIGHT-20261017.md",
+    "docs/production/V140-PUBLICATION-AUTH.json",
+    "docs/production/VISITORS-INTEGRATION.md",
+    "scripts/finalize-v140.py",
+    "scripts/release-preflight.mjs",
+    "tests/finalize-v140.test.py",
+    "tests/release-preflight.test.cjs"
+  ],
+  "assets": [
+    {
+      "id": 647534760,
+      "name": "circuit-web-1.4.0.zip",
+      "url": "https://github.com/AureliusWu/Circuit/releases/download/v1.4.0/circuit-web-1.4.0.zip",
+      "bytes": 7729343,
+      "sha256": "64e598560b5e91cb163b04b1f5da872af62de92d73541c0da4705367ea584ecf",
+      "verified": true,
+      "method": "fresh anonymous download, size and SHA-256 verified"
+    },
+    {
+      "id": 647534759,
+      "name": "circuit-web-1.4.0.zip.sha256",
+      "url": "https://github.com/AureliusWu/Circuit/releases/download/v1.4.0/circuit-web-1.4.0.zip.sha256",
+      "bytes": 88,
+      "sha256": "dbd664c40b25cf6682e0223d112b8b094891ca27f70fb27ed5b5a2ff6a45c508",
+      "verified": true,
+      "method": "fresh anonymous download, size and SHA-256 verified"
+    },
+    {
+      "id": 647534782,
+      "name": "Circuit_1.4.0_x64-setup.exe",
+      "url": "https://github.com/AureliusWu/Circuit/releases/download/v1.4.0/Circuit_1.4.0_x64-setup.exe",
+      "bytes": 9371458,
+      "sha256": "3bf9074adbbf2e5e0f9a4946bc0a6c4e44a8a90dc7b0e074b9a50202ae0b772f",
+      "verified": true,
+      "method": "fresh anonymous download, size and SHA-256 verified"
+    },
+    {
+      "id": 647534789,
+      "name": "Circuit_1.4.0_x64-setup.exe.sha256",
+      "url": "https://github.com/AureliusWu/Circuit/releases/download/v1.4.0/Circuit_1.4.0_x64-setup.exe.sha256",
+      "bytes": 102,
+      "sha256": "6656d0789f26c64a5483fa0c12796f262a6ef662eaab891b555fba985a5e2008",
+      "verified": true,
+      "method": "fresh anonymous download, size and SHA-256 verified"
+    },
+    {
+      "id": 647534761,
+      "name": "release.json",
+      "url": "https://github.com/AureliusWu/Circuit/releases/download/v1.4.0/release.json",
+      "bytes": 503,
+      "sha256": "69a8aef44aea7e7bc8a9e80e52f4b4c6f9e09e182534fd3b46ef31ee7e19ea06",
+      "verified": true,
+      "method": "fresh anonymous download, size and SHA-256 verified"
+    },
+    {
+      "id": 647562338,
+      "name": "SHA256SUMS-public.txt",
+      "url": "https://github.com/AureliusWu/Circuit/releases/download/v1.4.0/SHA256SUMS-public.txt",
+      "bytes": 625,
+      "sha256": "748cb6993e7bc9e6b367fe75bd65759786dad2e00a09a962b43f339c71565387",
+      "verified": true,
+      "method": "fresh anonymous download, size and SHA-256 verified"
+    },
+    {
+      "id": 647534756,
+      "name": "SHA256SUMS.txt",
+      "url": "https://github.com/AureliusWu/Circuit/releases/download/v1.4.0/SHA256SUMS.txt",
+      "bytes": 355,
+      "sha256": "3d5aaa91786c5c95edf053ccb6e157f53cf0988c28252093cd8e93243d6a85ec",
+      "verified": true,
+      "method": "fresh anonymous download, size and SHA-256 verified"
+    },
+    {
+      "id": 647534758,
+      "name": "windows-runtime.json",
+      "url": "https://github.com/AureliusWu/Circuit/releases/download/v1.4.0/windows-runtime.json",
+      "bytes": 1732,
+      "sha256": "e7cc902ff58cf90e9dcd5cdc99b245ec96795566fd1fe72fa24ac63df59ad428",
+      "verified": true,
+      "method": "fresh anonymous download, size and SHA-256 verified"
+    }
+  ],
+  "checksumFiles": {
+    "circuit-web-1.4.0.zip.sha256": [
+      {
+        "name": "circuit-web-1.4.0.zip",
+        "publicName": "circuit-web-1.4.0.zip",
+        "sha256": "64e598560b5e91cb163b04b1f5da872af62de92d73541c0da4705367ea584ecf"
+      }
+    ],
+    "Circuit_1.4.0_x64-setup.exe.sha256": [
+      {
+        "name": "回路 Circuit_1.4.0_x64-setup.exe",
+        "publicName": "Circuit_1.4.0_x64-setup.exe",
+        "sha256": "3bf9074adbbf2e5e0f9a4946bc0a6c4e44a8a90dc7b0e074b9a50202ae0b772f"
+      }
+    ],
+    "SHA256SUMS-public.txt": [
+      {
+        "name": "Circuit_1.4.0_x64-setup.exe",
+        "publicName": "Circuit_1.4.0_x64-setup.exe",
+        "sha256": "3bf9074adbbf2e5e0f9a4946bc0a6c4e44a8a90dc7b0e074b9a50202ae0b772f"
+      },
+      {
+        "name": "Circuit_1.4.0_x64-setup.exe.sha256",
+        "publicName": "Circuit_1.4.0_x64-setup.exe.sha256",
+        "sha256": "6656d0789f26c64a5483fa0c12796f262a6ef662eaab891b555fba985a5e2008"
+      },
+      {
+        "name": "SHA256SUMS.txt",
+        "publicName": "SHA256SUMS.txt",
+        "sha256": "3d5aaa91786c5c95edf053ccb6e157f53cf0988c28252093cd8e93243d6a85ec"
+      },
+      {
+        "name": "circuit-web-1.4.0.zip",
+        "publicName": "circuit-web-1.4.0.zip",
+        "sha256": "64e598560b5e91cb163b04b1f5da872af62de92d73541c0da4705367ea584ecf"
+      },
+      {
+        "name": "circuit-web-1.4.0.zip.sha256",
+        "publicName": "circuit-web-1.4.0.zip.sha256",
+        "sha256": "dbd664c40b25cf6682e0223d112b8b094891ca27f70fb27ed5b5a2ff6a45c508"
+      },
+      {
+        "name": "release.json",
+        "publicName": "release.json",
+        "sha256": "69a8aef44aea7e7bc8a9e80e52f4b4c6f9e09e182534fd3b46ef31ee7e19ea06"
+      },
+      {
+        "name": "windows-runtime.json",
+        "publicName": "windows-runtime.json",
+        "sha256": "e7cc902ff58cf90e9dcd5cdc99b245ec96795566fd1fe72fa24ac63df59ad428"
+      }
+    ],
+    "SHA256SUMS.txt": [
+      {
+        "name": "回路 Circuit_1.4.0_x64-setup.exe",
+        "publicName": "Circuit_1.4.0_x64-setup.exe",
+        "sha256": "3bf9074adbbf2e5e0f9a4946bc0a6c4e44a8a90dc7b0e074b9a50202ae0b772f"
+      },
+      {
+        "name": "circuit-web-1.4.0.zip",
+        "publicName": "circuit-web-1.4.0.zip",
+        "sha256": "64e598560b5e91cb163b04b1f5da872af62de92d73541c0da4705367ea584ecf"
+      },
+      {
+        "name": "release.json",
+        "publicName": "release.json",
+        "sha256": "69a8aef44aea7e7bc8a9e80e52f4b4c6f9e09e182534fd3b46ef31ee7e19ea06"
+      },
+      {
+        "name": "windows-runtime.json",
+        "publicName": "windows-runtime.json",
+        "sha256": "e7cc902ff58cf90e9dcd5cdc99b245ec96795566fd1fe72fa24ac63df59ad428"
+      }
+    ]
+  },
+  "zipChecks": [
+    {
+      "name": "circuit-web-1.4.0.zip",
+      "crc": "passed",
+      "entries": 96,
+      "files": 96
+    }
+  ],
+  "publicPwa": {
+    "expectedBytesSource": "successful Pages-build receipt; release ZIP uses the local-root base",
+    "entryAndWorker": [
+      {
+        "url": "https://aureliuswu.github.io/Circuit/index.html",
+        "httpStatus": 200,
+        "bytes": 930,
+        "sha256": "12fe853d473141b2d01633de1b463cb1de2bc7f6c22df7ca6d40313b761475c1",
+        "matchesVerifiedBuild": true
+      },
+      {
+        "url": "https://aureliuswu.github.io/Circuit/sw.js",
+        "httpStatus": 200,
+        "bytes": 8006,
+        "sha256": "2200a19a11e5cbf6cb8ef0c03c2923ba19dd1856ab05a407881c0fc4337fe841",
+        "matchesVerifiedBuild": true
+      }
+    ]
+  },
+  "observedWorkflowRuns": [
+    {
+      "id": 39004251536,
+      "name": "Finalize v1.4.0 public checksums",
+      "sha": "d05b2a43f456e1ee7b15c829471364c6e8002c0d",
+      "status": "completed",
+      "conclusion": "skipped"
+    },
+    {
+      "id": 39003852587,
+      "name": "Build release artifacts",
+      "sha": "d05b2a43f456e1ee7b15c829471364c6e8002c0d",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 39003852573,
+      "name": "CI",
+      "sha": "d05b2a43f456e1ee7b15c829471364c6e8002c0d",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 39003852572,
+      "name": "Deploy playable game to GitHub Pages",
+      "sha": "d05b2a43f456e1ee7b15c829471364c6e8002c0d",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 38914869819,
+      "name": "Finalize v1.4.0 public checksums",
+      "sha": "f0924d84f9a29a437ec11f1d7d63f93dc48c8374",
+      "status": "completed",
+      "conclusion": "success"
+    }
+  ],
+  "scope": "Source push, release identity, published downloads and deployed PWA consistency. Existing native/offline interaction evidence is retained in the version-specific publication receipt; this audit does not relabel physical-device or human acceptance as completed.",
+  "existingPlatformReceipt": "PUBLISHED-v1.4.0.json",
+  "requiredSuccessfulWorkflows": [
+    {
+      "id": 39003852573,
+      "name": "CI",
+      "sha": "d05b2a43f456e1ee7b15c829471364c6e8002c0d",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 39003852587,
+      "name": "Build release artifacts",
+      "sha": "d05b2a43f456e1ee7b15c829471364c6e8002c0d",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 39003852572,
+      "name": "Deploy playable game to GitHub Pages",
+      "sha": "d05b2a43f456e1ee7b15c829471364c6e8002c0d",
+      "status": "completed",
+      "conclusion": "success"
+    }
+  ],
+  "receiptUpdate": {
+    "type": "documentation_only",
+    "preservesRuntimeTagAndReleaseAssets": true,
+    "auditedMainIsTheParentOfThisReceipt": true
+  }
+}

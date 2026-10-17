@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-17",
+  "project": "Circuit",
+  "version": "1.4.0",
+  "verifiedMaintenanceCommit": "d05b2a43f456e1ee7b15c829471364c6e8002c0d",
+  "local": {
+    "logicPassed": 83,
+    "newPublicationTests": 6,
+    "productionBuild": "passed"
+  },
+  "remote": {
+    "ci": {
+      "id": 39003852573,
+      "status": "success"
+    },
+    "release": {
+      "id": 39003852587,
+      "status": "success",
+      "publishJob": 117313311377,
+      "decision": "published",
+      "newVersionCreated": false
+    },
+    "pages": {
+      "id": 39003852572,
+      "status": "success"
+    },
+    "windowsNsisInstallationAndApplicationSmoke": "passed in run 39003852587"
+  },
+  "existingPublicRelease": {
+    "tag": "v1.4.0",
+    "id": 415035189,
+    "unchangedAssetsVerified": 8,
+    "idsNamesSizesDigestsUnchanged": true
+  },
+  "scope": "Release infrastructure maintenance only; the existing public runtime and all eight immutable assets were preserved."
+}

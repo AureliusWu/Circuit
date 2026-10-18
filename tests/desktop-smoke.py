@@ -14,6 +14,7 @@ import tempfile
 import time
 import urllib.request
 import winreg
+from webview_processes import track_profile_processes
 
 from playwright.sync_api import TimeoutError as PlaywrightTimeoutError, expect, sync_playwright
 
@@ -152,7 +153,7 @@ def profile_processes(profile, observed, timeout=30):
     """Track this UDF's browser and descendants even after their parent exits."""
     script = r"""
 $ErrorActionPreference = 'Stop'
-@(Get-CimInstance Win32_Process | Select-Object ProcessId, ParentProcessId, Name, CommandLine) |
+@(Get-CimInstance Win32_Process | Select-Object ProcessId, ParentProcessId, Name, CommandLine, CreationDate) |
     ConvertTo-Json -Compress -Depth 3
 """
     completed = subprocess.run(['powershell', '-NoProfile', '-NonInteractive', '-Command', script],
@@ -163,22 +164,9 @@ $ErrorActionPreference = 'Stop'
     # tempfile may return RUNNER~1 while Path.resolve expands it to runneradmin.
     # WebView2's command line preserves the spelling passed to UserDataFolder.
     profile_paths = {str(path).replace('/', '\\').casefold() for path in (profile, profile.resolve())}
-    tracked = set(observed)
-    tracked.update(int(item['ProcessId']) for item in processes
-                   if item['Name'].casefold() == 'msedgewebview2.exe'
-                   and any(path in (item['CommandLine'] or '').replace('/', '\\').casefold()
-                           for path in profile_paths))
-    # Renderer/utility subprocesses do not all repeat --user-data-dir. Preserve
-    # every observed PID and expand parent links while those processes exist.
-    while True:
-        descendants = {int(item['ProcessId']) for item in processes
-                       if int(item['ParentProcessId']) in tracked}
-        if descendants <= tracked:
-            break
-        tracked.update(descendants)
-    remaining = [item for item in processes if int(item['ProcessId']) in tracked]
-    observed.update((int(item['ProcessId']), item) for item in remaining)
-    return remaining
+    # Windows reuses PIDs. Bind orphan tracking to creation identity, and never
+    # adopt the PowerShell/CIM poller merely because it inherited a reused PID.
+    return track_profile_processes(processes, profile_paths, observed)
 
 
 def wait_for_profile_shutdown(profile, observed, diagnostic):
@@ -196,6 +184,8 @@ def wait_for_profile_shutdown(profile, observed, diagnostic):
         remaining = profile_processes(profile, observed, timeout=remaining_time)
         shutdown.update(observed_pids=sorted(observed),
                         remaining_pids=sorted(int(item['ProcessId']) for item in remaining),
+                        remaining_processes=[{key: item.get(key) for key in ('ProcessId', 'ParentProcessId', 'Name', 'CreationDate')}
+                                             for item in remaining],
                         elapsed_seconds=round(time.monotonic() - started, 3))
         if not remaining:
             return

@@ -135,7 +135,7 @@ with sync_playwright() as playwright:
                 compared = True
                 checked('search-to-comparison-collected-only-distinct-swaps-no-save-write')
         saved = json.loads(raw(page))
-        assert saved['nodeId'] == 'end' and saved['completed'] == [row['id'] for row in chapters]
+        assert saved['nodeId'] == 'end' and saved['completed'] == prefix + ['visitors']
         assert saved['archive']['visitors'] == chapter['requiredEvidence']
         checked('full-visitors-route-archives-five-records-and-nine-chapters')
         for puzzle, wrong, failure, retry in [('firstPuzzle', 'takeNumber', 'seatFailure', 'firstPuzzle'), ('finalPuzzle', 'nameVisitor', 'signatureFailure', 'finalPuzzle')]:

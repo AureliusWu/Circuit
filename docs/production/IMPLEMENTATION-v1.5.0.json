@@ -559,5 +559,33 @@
     "Remote Windows and public PWA checks still pending",
     "Recovered art lacks original generation request",
     "Human listening, physical device and creative acceptance pending"
-  ]
+  ],
+  "followup": {
+    "linuxFailure": "previous Visitors test assumed it completed every registered chapter; corrected expected nine-chapter prefix",
+    "nativeFailure": "start, save and same-profile reopen succeeded; shutdown tracking timed out at 30 seconds, final result remains failed",
+    "nativeTrackingFix": "bind observed WebView2 processes to PID plus CreationDate; exclude reused shell PIDs, retain genuine orphan descendants and strict shutdown gate",
+    "trackingRegressions": 4,
+    "revalidation": "new main Windows run required",
+    "visitorsBrowser": {
+      "version": "1.4.0",
+      "status": "passed",
+      "base_url": "http://127.0.0.1:4173/Circuit/",
+      "checks": [
+        "v130-save-unlocks-visitors-without-reading-write",
+        "one-collected-record-cannot-open-comparison",
+        "search-to-comparison-collected-only-distinct-swaps-no-save-write",
+        "full-visitors-route-archives-five-records-and-nine-chapters",
+        "both-wrong-deductions-retry-without-completion",
+        "comparison-readable-and-operable-1280x720",
+        "comparison-readable-and-operable-760x430",
+        "comparison-readable-and-operable-390x844",
+        "offline-comparison-replays-original-2019-master-without-save-write",
+        "no-javascript-errors"
+      ],
+      "elapsed_seconds": 12.24,
+      "limitations": [
+        "Automated browser checks; physical-device play and human acting review not certified."
+      ]
+    }
+  }
 }

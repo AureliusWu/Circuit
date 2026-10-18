@@ -1,0 +1,93 @@
+{
+  "repo": "Circuit",
+  "tag": "v1.4.1",
+  "target": "4804ef978e1932243c838cf296d77769f70d8d89",
+  "releaseId": 416277662,
+  "url": "https://github.com/AureliusWu/Circuit/releases/tag/v1.4.1",
+  "assets": [
+    {
+      "id": 652699129,
+      "name": "circuit-web-1.4.1.zip",
+      "bytes": 7731346,
+      "sha256": "7aade06e1c131ff076de3ad8dc0028097b61038854284f6f66afbcb46615b3af",
+      "zip_entries": 95,
+      "crc": "passed"
+    },
+    {
+      "id": 652699125,
+      "name": "circuit-web-1.4.1.zip.sha256",
+      "bytes": 88,
+      "sha256": "37333e05a23f7bd088a713367cf3f04908d1e008ed97fe769fb9a632e1d562b9"
+    },
+    {
+      "id": 652699124,
+      "name": "Circuit_1.4.1_x64-setup.exe",
+      "bytes": 9371609,
+      "sha256": "c4f4fbe7896a730c05b191f97c68341357cef0443d701b7f605ff3ba91b027c5"
+    },
+    {
+      "id": 652699126,
+      "name": "Circuit_1.4.1_x64-setup.exe.sha256",
+      "bytes": 94,
+      "sha256": "ce50fe06164de9ae381980b82124abe4b005d1874ef432e8229a59ca012c4f52"
+    },
+    {
+      "id": 652699137,
+      "name": "release.json",
+      "bytes": 503,
+      "sha256": "0877d18a26352a627cd3af2eb92f089ee047d0715390f0bf89c9abf218034500"
+    },
+    {
+      "id": 652699127,
+      "name": "SHA256SUMS.txt",
+      "bytes": 348,
+      "sha256": "94224dce932cb43c5c9f27c56cc0730f5991fd1676bc685d35c5b55a60b7919d"
+    },
+    {
+      "id": 652699149,
+      "name": "windows-runtime.json",
+      "bytes": 1733,
+      "sha256": "83188e18804d5bd44a07a9515da767dcfcbad1dbebe6fe9918877e33f3fa8c77"
+    }
+  ],
+  "checksum_table": "passed",
+  "public_pwa": {
+    "index.html": {
+      "sha256": "ee70e5d5924bc7502ffd6a11d9f5938ca9125e0967105b6f4801be824d2644fa",
+      "same_as_download": false
+    },
+    "sw.js": {
+      "sha256": "226a107ca2d219fc46036b2b87b064bbae238b81af9f614de44aa9a61db3ea58",
+      "same_as_download": false
+    }
+  },
+  "status": "anonymous_assets_verified",
+  "schema": 1,
+  "verifiedOn": "2026-10-18",
+  "runtimeCommit": "4804ef978e1932243c838cf296d77769f70d8d89",
+  "validationCommit": "73001eb7ae8fe0d4ef8f5b91b5647c03367eb95a",
+  "workflows": {
+    "build": {
+      "runId": 39104183135,
+      "url": "https://github.com/AureliusWu/Circuit/actions/runs/39104183135",
+      "conclusion": "success"
+    },
+    "ci": {
+      "runId": 39104837356,
+      "url": "https://github.com/AureliusWu/Circuit/actions/runs/39104837356",
+      "conclusion": "success"
+    },
+    "pages": {
+      "runId": 39104837207,
+      "url": "https://github.com/AureliusWu/Circuit/actions/runs/39104837207",
+      "conclusion": "success"
+    }
+  },
+  "checks": {
+    "logic": 88,
+    "browser": "PWA 6 groups plus full existing campaign/reading/voice regression",
+    "windows": "NSIS installed executable and native Tauri checks passed in release workflow"
+  },
+  "humanReview": "not claimed",
+  "public_pwa_note": "Download ZIP uses root-relative build; published Pages uses /Circuit/. Byte equality is checked against the separately rebuilt /Circuit/ build by Pages CI, not against the root ZIP. Runtime source matches the published tag; validation commit changes only tests/pwa-browser.py."
+}

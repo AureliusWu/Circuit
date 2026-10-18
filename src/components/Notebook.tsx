@@ -1,7 +1,7 @@
 import { useEffect, useRef, type ReactNode } from 'react';
 
 type NotebookProps = {
-  kind: 'evidence' | 'history' | 'chapters' | 'saves' | 'settings' | 'archive' | 'help' | 'characters';
+  kind: 'evidence' | 'history' | 'chapters' | 'saves' | 'settings' | 'archive' | 'help' | 'characters' | 'pwa';
   title: string;
   onClose: () => void;
   returnFocusTo: HTMLElement | null;

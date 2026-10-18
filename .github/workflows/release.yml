@@ -145,6 +145,6 @@ jobs:
           cp runtime-evidence/windows-runtime.json release-assets/windows-runtime.json
           node --input-type=module -e 'import fs from "node:fs"; const runtime=JSON.parse(fs.readFileSync("release-assets/windows-runtime.json")); if(runtime.status!=="passed"||runtime.commit!==process.env.GITHUB_SHA) throw Error("Native evidence mismatch"); fs.writeFileSync("release-assets/release.json",JSON.stringify({version:runtime.version,commit:process.env.GITHUB_SHA,runId:process.env.GITHUB_RUN_ID,nativeChecks:runtime.checks},null,2)+"\n");'
           (cd release-assets && sha256sum *.exe *.zip *.json > SHA256SUMS.txt)
-          gh release create "$TAG" release-assets/* --target "$GITHUB_SHA" --title "回路 $TAG · 来访" --notes-file "docs/RELEASE_v$VERSION.md"
+          gh release create "$TAG" release-assets/* --target "$GITHUB_SHA" --title "$(head -n 1 docs/RELEASE_v$VERSION.md | sed 's/^# *//')" --notes-file "docs/RELEASE_v$VERSION.md"
           gh release download "$TAG" --dir release-readback
           (cd release-readback && sha256sum --check SHA256SUMS.txt)

@@ -10,9 +10,12 @@ export default defineConfig(({ mode }) => {
     plugins: [
       react(),
       VitePWA({
-        registerType: 'autoUpdate',
+        registerType: 'prompt',
+        injectRegister: false,
         includeAssets: ['icon.png', 'icons/*.png'],
         workbox: {
+          skipWaiting: false,
+          clientsClaim: true,
           globPatterns: ['**/*.{js,css,html,ico,png,webp,mp3,woff2,txt}'],
           maximumFileSizeToCacheInBytes: 4 * 1024 * 1024
         },
@@ -21,6 +24,8 @@ export default defineConfig(({ mode }) => {
           short_name: '回路',
           description: '中式民俗恐怖叙事 AVG',
           lang: 'zh-CN',
+          start_url: base,
+          scope: base,
           display: 'standalone',
           orientation: 'any',
           background_color: '#080a09',

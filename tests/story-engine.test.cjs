@@ -62,8 +62,8 @@ test('registered chapter has valid references and scene hotspots share investiga
 });
 
 test('chapter unlocks follow completed sequence and reject out-of-order shortcut', () => {
-  assert.equal(CHAPTER_ORDER.length, 9);
-  assert.equal(new Set(CHAPTER_ORDER).size, 9);
+  assert.equal(CHAPTER_ORDER.length, 10);
+  assert.equal(new Set(CHAPTER_ORDER).size, 10);
   assert.deepEqual(getUnlockedChapters([]), [PROLOGUE]);
   assert.deepEqual(getUnlockedChapters(['closure']), [PROLOGUE]);
   assert.deepEqual(getUnlockedChapters([PROLOGUE, PROLOGUE]), CHAPTER_ORDER.slice(0, 2));

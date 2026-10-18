@@ -81,7 +81,7 @@ def run(url, output, expected_build):
                 for name in ['index.html', 'sw.js']}
     audio = sorted(urljoin(url, path.relative_to(root / 'public').as_posix())
                    for path in (root / 'public/audio').rglob('*.mp3'))
-    assert len(audio) == 48, f'Expected all 48 release MP3s, found {len(audio)}'
+    assert len(audio) == 51, f'Expected all 51 release MP3s, found {len(audio)}'
     samples = [urljoin(url, path) for path in ['audio/voice/h13-dispatch.mp3', 'audio/sfx/glass-tap.mp3']]
     assert all(path in audio for path in samples)
     output.parent.mkdir(parents=True, exist_ok=True)

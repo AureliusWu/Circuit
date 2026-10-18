@@ -45,8 +45,8 @@ test('new campaigns start at the first chapter without completion or archive wri
   assert.equal(validateCampaignPayload(payload(session)).status, 'valid');
 });
 
-test('all nine campaign positions accept an ordered completion prefix with evidence proof', () => {
-  assert.equal(CHAPTER_ORDER.length, 9);
+test('all ten campaign positions accept an ordered completion prefix with evidence proof', () => {
+  assert.equal(CHAPTER_ORDER.length, 10);
   for (let index = 0; index < CHAPTER_ORDER.length; index += 1) {
     assert.equal(validateCampaignPayload(payload(sessionAt(index))).status, 'valid');
   }
@@ -97,6 +97,23 @@ test('a v1.3 Answering completion unlocks Visitors without rewriting the old sav
   assert.ok(canStartChapter(restored.snapshot, 'visitors'));
   assert.equal(canStartChapter(sessionAt(7, 'failure'), 'visitors'), false);
   const next = startChapter(restored.snapshot, 'visitors');
+  assert.equal(next.state.nodeId, 'dispatch');
+  assert.deepEqual(next.state.evidence, []);
+  assert.deepEqual(next.archive, old.archive);
+  assert.equal(storage.getItem(CAMPAIGN_KEYS.auto), raw);
+  assert.deepEqual(storage.writes, []);
+});
+
+test('a v1.4 Visitors completion unlocks Tickets without rewriting any old slot', () => {
+  const old = completeChapter(sessionAt(8, 'complete'));
+  const raw = JSON.stringify(payload(old));
+  const storage = new MemoryStorage({ [CAMPAIGN_KEYS.auto]: raw, [CAMPAIGN_KEYS[1]]: raw });
+  const restored = loadCampaign(storage, 'auto');
+  assert.equal(restored.status, 'valid');
+  assert.deepEqual(restored.snapshot.completed, CHAPTER_ORDER.slice(0, 9));
+  assert.ok(canStartChapter(restored.snapshot, 'tickets'));
+  assert.equal(canStartChapter(sessionAt(8, 'failure'), 'tickets'), false);
+  const next = startChapter(restored.snapshot, 'tickets');
   assert.equal(next.state.nodeId, 'dispatch');
   assert.deepEqual(next.state.evidence, []);
   assert.deepEqual(next.archive, old.archive);

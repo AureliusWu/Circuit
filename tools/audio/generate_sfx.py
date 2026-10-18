@@ -77,6 +77,19 @@ def main():
     step = (visitor_rng.normal(0, .1, len(step_t)) + np.sin(2 * np.pi * 85 * step_t) * .45)
     step *= np.exp(-9 * step_t) * np.minimum(step_t * 200, 1)
     clips['wet-step'] = pattern(1.2, [(0, step, .7)])
+    # v1.5 uses deterministic tones/noise without changing previous masters.
+    ticket_rng = np.random.default_rng(150015)
+    bell_t = np.arange(round(.85 * RATE)) / RATE
+    bell = sum(np.sin(2 * np.pi * f * bell_t) * gain for f, gain in [(1360, 1), (2311, .36), (3720, .12)])
+    bell *= np.exp(-7 * bell_t) * np.minimum(bell_t * 800, 1)
+    clips['return-bell'] = pattern(1.8, [(0, bell, .5), (.85, bell, .28)])
+    slide = ticket_rng.normal(0, .14, round(.6 * RATE))
+    slide = np.convolve(slide, np.ones(5) / 5, 'same') * np.sin(np.linspace(0, np.pi, len(slide))) ** 2
+    clips['ticket-slide'] = pattern(.95, [(.1, slide, .8)])
+    lock_t = np.arange(round(.2 * RATE)) / RATE
+    lock = (ticket_rng.normal(0, .12, len(lock_t)) + np.sin(2 * np.pi * 290 * lock_t))
+    lock *= np.exp(-30 * lock_t) * np.minimum(lock_t * 1000, 1)
+    clips['rear-lock'] = pattern(1.2, [(0, lock, .65), (.48, lock, .5)])
     if wanted and wanted - clips.keys():
         parser.error('Unknown effect names: ' + ', '.join(sorted(wanted - clips.keys())))
     manifest_path = ROOT / 'docs/audio/sfx-manifest.json'
@@ -96,7 +109,7 @@ def main():
             output.writeframes(pcm.tobytes())
         subprocess.run(['ffmpeg', '-nostdin', '-v', 'error', '-y', '-i', str(raw), '-af', 'loudnorm=I=-22:TP=-2:LRA=6',
                         '-ar', str(RATE), '-ac', '1', '-c:a', 'libmp3lame', '-b:a', '96k', str(out)], check=True)
-        seed = 140014 if name in ('glass-tap', 'ticket-tear', 'wet-step') else 130013 if name == 'latch-turn' else 120012
+        seed = 150015 if name in ('return-bell', 'ticket-slide', 'rear-lock') else 140014 if name in ('glass-tap', 'ticket-tear', 'wet-step') else 130013 if name == 'latch-turn' else 120012
         records[name] = {'id': name, 'duration': len(samples) / RATE, 'seed': seed, 'creator': 'original procedural foley',
                         'files': [{'path': p.relative_to(ROOT).as_posix(), 'bytes': p.stat().st_size,
                                    'sha256': hashlib.sha256(p.read_bytes()).hexdigest()} for p in (raw, out)]}

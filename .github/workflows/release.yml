@@ -37,6 +37,7 @@ jobs:
           done
           python tests/release-browser.py http://127.0.0.1:4173 --pwa
           python tests/reading-browser.py http://127.0.0.1:4173
+          python tests/tickets-browser.py http://127.0.0.1:4173
       - run: node scripts/package-web.mjs
       - uses: actions/upload-artifact@v4
         with:

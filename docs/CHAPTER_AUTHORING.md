@@ -1,3 +1,7 @@
+## v1.5 章节接续
+
+第十章tickets/《取号》位于src/story/chapters/tickets.ts，注册于engine.ts/types.ts。44节点、5条必要记录、两轮推理与两个可重试错误结局；按v1.4完成证明解锁。tests/tickets-browser.py验证旧档只读解锁、两个错误分支、已取得证据原录音重听、正常完成和断网重开。
+
 # 章节内容、进度与存档规范
 
 八章内容分别位于 `src/story/chapters/`；`engine.ts` 统一读取章节、筛选动作、执行跳转并验证剧情图，React 不按剧情节点名分支。

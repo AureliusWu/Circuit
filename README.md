@@ -1,4 +1,6 @@
-> 2026-10-18：**v1.4.1 版本已发布，双端 CI 与公开 PWA 验证通过。** [本轮发布回读](docs/production/RELEASE-CLOSURE-20261018.md)。v1.5.0《取号》剧情、美术和音效仍待制作。
+> 2026-10-18：v1.5.0《取号》候选已接入，等待本版双端发行与公开PWA验收。新增44节点、5证据、两轮推理、两个复核结局、1幅接收间与3项音效。见 [版本说明](docs/RELEASE_v1.5.0.md)。
+
+> 2026-10-18：**v1.4.1 版本已发布，双端 CI 与公开 PWA 验证通过。** [本轮发布回读](docs/production/RELEASE-CLOSURE-20261018.md)。v1.5.0《取号》已进入本版验收。
 
 > 2026-10-16：v1.4.0《来访》已正式发布，Windows NSIS 安装器与完整 Web/PWA 包均可下载。真实安装、窗口交互、正常关闭重开同档、WebView2 清理与卸载，以及公开站点三屏离线验收已通过；8 个公开附件已匿名核对 SHA-256，安装器、PWA、原运行记录均与正式构建一致；公开名校验表可直接用于下载校验。见 [正式版本](https://github.com/AureliusWu/Circuit/releases/tag/v1.4.0) 与 [发布回执](docs/production/PUBLISHED-v1.4.0.json)。 本轮更新与推送的最终核验见 [闭环回执](docs/production/RELEASE-CLOSURE-20261017.md)。 下一版目标与四仓交流见 [更新规划](docs/production/FOUR-GAMES-NEXT-20261017.md)。
 

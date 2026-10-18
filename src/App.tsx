@@ -26,7 +26,7 @@ const PANEL_TITLES: Record<Panel, string> = {
 };
 const BACKGROUNDS: Record<ChapterId, string> = {
   'thirteen-households': 'alley', 'seventh-night': 'stairwell', backfeed: 'demolition',
-  everlight: 'stairwell', neutral: 'substation', closure: 'control-room', 'return-visit': 'resettlement-lobby', answering: 'communications-room', visitors: 'reception-station'
+  everlight: 'stairwell', neutral: 'substation', closure: 'control-room', 'return-visit': 'resettlement-lobby', answering: 'communications-room', visitors: 'reception-station', tickets: 'receiving-room'
 };
 const SLOTS: CampaignSlot[] = ['auto', 1, 2, 3];
 const asset = (path: string) => `${import.meta.env.BASE_URL}${path.replace(/^\//, '')}`;
@@ -375,7 +375,7 @@ function App() {
           const item = getChapter(id)!; const done = menuSession.completed.includes(id);
           return <article key={id}><span>{done ? item.clue.code : '—'}</span><div><h3>{done ? item.clue.title : `${item.title} · 待归档`}</h3><p>{done ? item.clue.detail : '完成本章后补入线路记录。'}</p>{done && <details><summary>查阅本章现场记录</summary>{(menuSession.archive[id] ?? []).map((evidence) => <p key={evidence}><strong>{item.evidence[evidence].title}</strong><br />{item.evidence[evidence].detail}</p>)}</details>}</div></article>;
         })}</div></>}
-        {panel === 'help' && <div className="help-content"><h3>抢修手册</h3><p>点击调查标记搜集现场记录，取得两条证据后可并排核对，再用证据判断回路。选择错误会进入复核结局，可重新排查本章。</p><p>空格或 Enter 显示全文；全文显示后，可推进单一对话。Tab 在按钮间移动，Enter 确认，Esc 关闭面板。</p><p>九章按顺序解锁。完成第一部可继续《回访》，随后解锁《应声》和《来访》，旧存档可沿用。三槽存档和 JSON 导出保留不同进度；人物档案可切换立绘与 Q 版。</p><h3>制作记录</h3><p>十一幅场景、九名人物的立绘与 Q 版形象，师徒有专注、警觉表情，罗禾有警觉表情。远程联络使用通讯卡，历史人物使用旧档照片。关键对白采用离线生成的人物录音；门禁、钥匙、继电器等场景音效随包提供。音乐、雨声和电流声实时合成。</p><p>语音系统参考《雨停之前》的离线制作与重听流程，角色与素材为《回路》单独制作。AI 生成美术与人物语音均在项目制作记录中标注。</p><p>本作人物、单位与事件均为虚构。线路判断服务于剧情，现场电气作业须由具备资质的人员依照规程实施。</p><p>回路 / CIRCUIT · v{version}<br />十三户、头七、回送、长明、零线、闭合；第二部：回访、应声、来访。</p></div>}
+        {panel === 'help' && <div className="help-content"><h3>抢修手册</h3><p>点击调查标记搜集现场记录，取得两条证据后可并排核对，再用证据判断回路。选择错误会进入复核结局，可重新排查本章。</p><p>空格或 Enter 显示全文；全文显示后，可推进单一对话。Tab 在按钮间移动，Enter 确认，Esc 关闭面板。</p><p>十章按顺序解锁。完成第一部可继续《回访》，随后解锁《应声》《来访》和《取号》，旧存档可沿用。三槽存档和 JSON 导出保留不同进度；人物档案可切换立绘与 Q 版。</p><h3>制作记录</h3><p>十二幅场景、九名人物的立绘与 Q 版形象，师徒有专注、警觉表情，罗禾有警觉表情。远程联络使用通讯卡，历史人物使用旧档照片。关键对白采用离线生成的人物录音；门禁、钥匙、继电器等场景音效随包提供。音乐、雨声和电流声实时合成。</p><p>语音系统参考《雨停之前》的离线制作与重听流程，角色与素材为《回路》单独制作。AI 生成美术与人物语音均在项目制作记录中标注。</p><p>本作人物、单位与事件均为虚构。线路判断服务于剧情，现场电气作业须由具备资质的人员依照规程实施。</p><p>回路 / CIRCUIT · v{version}<br />十三户、头七、回送、长明、零线、闭合；第二部：回访、应声、来访、取号。</p></div>}
       </Notebook>}
     </main>
   );

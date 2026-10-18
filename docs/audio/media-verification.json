@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "version": "1.4.0",
+  "version": "1.5.0",
   "status": "passed",
   "voiceCount": 32,
-  "sfxCount": 16,
-  "decodedFiles": 152,
-  "currentFiles": 128,
+  "sfxCount": 19,
+  "decodedFiles": 158,
+  "currentFiles": 134,
   "archivedFiles": 24,
   "voiceSeconds": 107.6,
   "voiceGenerationSeconds": 592.591,
@@ -297,6 +297,24 @@
       "path": "public/audio/sfx/wet-step.mp3",
       "duration": 1.248,
       "sha256": "3a202eb2c6ca7e9ee38ffd41246656fd12aac195b326022c999a76a9c40c9327"
+    },
+    {
+      "id": "return-bell",
+      "path": "public/audio/sfx/return-bell.mp3",
+      "duration": 1.848,
+      "sha256": "8a6a5ff105b77f1580334466969e181a2f558edcb3f47e6b80bab3ed8f8baee9"
+    },
+    {
+      "id": "ticket-slide",
+      "path": "public/audio/sfx/ticket-slide.mp3",
+      "duration": 1.008,
+      "sha256": "17103532ef1022ace2d5f79dc0af9b680818547892a7bb19700556d53971615d"
+    },
+    {
+      "id": "rear-lock",
+      "path": "public/audio/sfx/rear-lock.mp3",
+      "duration": 1.248,
+      "sha256": "b8872a10f4af39ac3723cfcf1e8ddbb131094a469d25cf2a4df4bc3c934cc3bd"
     }
   ],
   "limitations": [

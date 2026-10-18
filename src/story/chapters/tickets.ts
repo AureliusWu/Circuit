@@ -1,0 +1,65 @@
+import type { Chapter, StoryAction, StoryNode } from '../types';
+const first = ['v04-paper', 'v04-queue', 'v04-clock'] as const;
+const all = [...first, 'v04-source', 'v04-seal'] as const;
+const hall = { background: '/art/reception-station.webp' };
+const room = { background: '/art/receiving-room.webp' };
+const van = { background: '/art/repair-van.webp' };
+const act = (label: string, next: string, extra: Partial<StoryAction> = {}): StoryAction => ({ id: next, label, next, ...extra });
+const node = (text: string, progress: number, next: string, extra: Partial<StoryNode> = {}): StoryNode => ({ kind: 'dialogue', location: '城南 · 旧回迁接待站', time: '同夜稍后', text, progress, visual: 'alley', scene: hall, actions: [act('继续', next)], ...extra });
+export const tickets: Chapter = {
+  id: 'tickets', order: 9, title: '取号', subtitle: '第二部第四章 · 没有人排在零号',
+  synopsis: '四个人到过旧站，玻璃外却只留下三张有名的纸。退掉的号码，又在里面叫了一遍。',
+  entryNode: 'dispatch', requiredEvidence: all,
+  clue: { code: 'V04', title: '零号退号单与三十二号终端', x: 83, y: 69, detail: '零号是旧系统退号索引，不对应接收人；陈伯纸条的位置不能证明他当班。D3导入包的上游转送回执绑定资产32的临时导出，卡和采集器17只是后续载体。资产32原属城北退号台，借用人和新句子最初录制者未核明；原卡封存，旧任务仍停用。' },
+  evidence: {
+    'v04-paper': { title: '四张纸与两种裁边', detail: '今天到场的程砚、季宁、罗禾、陈伯各有一张有名纸，陈伯一张在玻璃内，另外还有无名零号纸。五张各拍原位置。内侧两张为平直裁边，当前取号机卷纸是锯齿裁边。这能排除它们直接从当前纸口撕下，不能证明放置者或印字时刻。' },
+    'v04-queue': { title: '零号规则与旧退号联', detail: '原操作页与2019留底对应：正常来访号从001起，000只索引撤回的取号记录，不进叫号队列，也不产生接收人。退号联另记原号与原因，不得拿无名零号补到场人数或替停用旧席填人。' },
+    'v04-clock': { title: '照片先后与纸面时钟', detail: '两张连续原照片相隔11秒：四张有名纸先出现，零号白边后出现；其间四人在门外见证。纸面时刻与采集器、照片均不一致，未取得独立校时记录。只能确认照片先后，不能据纸面时刻排来人顺序或认定最初录音时间。' },
+    'v04-source': { title: '资产32的上游转送回执', detail: '接收端原回执将程砚新句子的相同文件摘要关联至资产32的临时导出任务；资产17为后续采集端。独立原交接清单确认资产32原属城北退号台，撤站后曾外借。回执证明上游任务与文件对应，不证明实际操作者、最初录制者或取得方法。', recordings: [{ clipId: 'v01-confirm', label: '原文件：先别替它确认' }] },
+    'v04-seal': { title: '封存见证与未填接收席', detail: '原卡封签、只读目录、旧采集与新回拨停用由管理方和通信人员各自核验；师徒仅确认本次陪同与供电复测，不补签2019接收栏。封签完好、无新增传送时内侧仍响铃，声响另记，不因此恢复设备或指定来人。' }
+  },
+  nodes: {
+    dispatch: node('包子刚咬开，罗禾的电话就来了。\n“不是四张。刚才那张照片右边还压着半张，我没拍全。”\n季宁把塑料袋托住，免得油滴在移交单上。林岚让我们留在已经复测的接入点外，等管理方到场。故障单没有重开，旧站资料另走调阅。', 2, 'breakfast', { time: '03:07', location: '抢修车 · 早点店外', scene: van, portrait: 'lin', presence: 'radio', speaker: '林岚', excludesEvidence: all }),
+    breakfast: node('“您刚才说什么来着？”季宁问。\n“趁热。”\n她把剩下半个包子塞了，伸手要水。店老板从窗里递来一杯，说这里以前一早就有人排队，天没亮，窗口里面先响铃。\n“现在还响？”\n老板看了一眼隔壁：“问你们呢。”', 4, 'return', { scene: van, portrait: 'ji', speaker: '季宁', excludesEvidence: all }),
+    return: node('陈伯站在雨棚边，离门很远。罗禾把原照片放大：外侧台沿三个名字，内侧是陈伯；右边另有一张没有姓名的纸，只打了三个零。\n我们四个进过屋，算上空白纸，就是五张。\n我把嘴边那句“少一个”咽回去。上回看漏了，这回先数清。', 7, 'boundary', { portrait: 'chen', speaker: '陈伯', excludesEvidence: all }),
+    boundary: node('管理方拿登记本赶到，先核原封条，再开侧门。通信人员从接收端保全日志，旧采集继续停用。\n我和季宁核完接入点复测记录，没有新的供电异常。里面那只采集器不归我们拆。\n陈伯把钥匙交过去：“我这回跟你们走后面。”', 10, 'slips', { excludesEvidence: all }),
+    slips: node('五张纸的原位置先拍照，谁也没往一处摞。陈伯那张贴着内侧铁夹，背面朝我们；零号纸压在下面，露出一条白边。\n外面三张沿纸口撕得毛糙，里面两张却像用尺子比着裁的。\n季宁隔着玻璃指给我看：“先别碰，看边。”', 12, 'chen', { portrait: 'ji', speaker: '季宁', expression: 'focused', excludesEvidence: all }),
+    chen: node('陈伯说他母亲从来不拿空号。搬家那阵，办完一件事，旧号条要在家门里压一夜，第二天再扔。\n“说是别让后头跟来的，还以为你在等。”\n“所以您放进去的？”\n他摇头：“规矩我记得。今晚这张，我没拿过。”\n我记下原话，没把家里的讲究当成站里的操作页。', 15, 'hush', { portrait: 'chen', speaker: '陈伯', excludesEvidence: all }),
+    hush: node('里面轻轻响了一声铃，像自行车铃被手掌闷住。陈伯往后让，鞋跟撞上长凳。\n采集器电源线已经由产权方断开，喇叭没有动作。声音贴着木桌下面。\n罗禾朝椅子看了一眼：“这声我小时候听过。叫人退号，就是这个。”', 18, 'firstHub', { portrait: 'luo', speaker: '罗禾', expression: 'wary', excludesEvidence: all }),
+    firstHub: node('管理方把号册和操作页放到窗外折叠桌上。照片留在手机，纸条还在原处。\n季宁盖紧杯子，挪开一掌宽：“这次别泡成复写联了。”\n得先弄清零号做什么，再说玻璃两边谁在等谁。', 21, 'compare', { kind: 'investigation', objective: { title: '核对纸条、零号与先后', detail: '分别查裁边、原退号规则和离场照片。三份记录齐了，再判断内侧纸条能证明什么。' }, actions: [act('比对五张纸的裁边', 'paper', { hidesWhenCollected: 'v04-paper' }), act('查原号册的零号规则', 'queue', { hidesWhenCollected: 'v04-queue' }), act('核照片和纸面时间', 'clock', { hidesWhenCollected: 'v04-clock' }), act('并排核对取号记录', 'compare', { requiresEvidence: first })], scene: { ...hall, hotspots: [{ id: 'paper', actionId: 'paper', label: '纸条裁边', x: 56, y: 48 }, { id: 'queue', actionId: 'queue', label: '旧号册', x: 28, y: 44 }, { id: 'clock', actionId: 'clock', label: '离场照片', x: 72, y: 55 }] } }),
+    paper: node('获准取下的纸条各自装进透明袋。外侧三张背后沾着台沿黑灰，陈伯那张背面有一条铁夹锈印。\n零号纸干净得多，下面的角却是湿的。\n我把袋子平放，不拿手去蹭。季宁拍了比例尺，换到侧光，裁口一下就清楚了。', 24, 'paperEdge', { excludesEvidence: ['v04-paper'] }),
+    paperEdge: node('当前纸口有锯齿，剩余纸头能对上外面三张。里面两张的边平直，宽度也差一点。\n管理方说柜子里以前放过裁好的备用纸，但今天没清点，谁拿过还不清楚。\n“只能说不是从这个纸口撕的。”季宁写在照片下面。', 26, 'recordPaper', { portrait: 'ji', speaker: '季宁', expression: 'focused', excludesEvidence: ['v04-paper'] }),
+    recordPaper: node('五张纸，四个名字，外三内二；两种裁边。\n陈伯看着透明袋，忽然问：“那张有我名字的，纸正面朝哪边？”\n“朝椅子。”\n他不再往窗口凑，把手里的帽子折成了一条。', 28, 'firstHub', { kind: 'evidence', excludesEvidence: ['v04-paper'], actions: [act('记录：四张纸与两种裁边', 'firstHub', { id: 'record-paper', collect: 'v04-paper' })] }),
+    queue: node('旧号册从一号排起，一页几十条。翻到最后，夹着一张退号联，右上角三个零，下面另记原来访号。\n操作页分了两行：来访叫号从001起；000只留撤回索引，不进叫号队列。\n罗禾点点空白姓名栏：“所以不是给第零个人的。”', 24, 'voidRule', { excludesEvidence: ['v04-queue'], portrait: 'luo', speaker: '罗禾' }),
+    voidRule: node('退号联背面还有一句：原号撤回，接收栏不补。\n陈伯认得旧章，没认领签名。他说有人白天排号，临到窗口又不办，工作人员就拿这联收回原号纸。\n实际留底能和操作页对上。窗口里那张新纸只有000，没有原号，也没有撤回原因。', 26, 'recordQueue', { excludesEvidence: ['v04-queue'], scene: { ...hall, document: { title: '旧取号操作页与退号留底', lines: ['正常来访号：001起', '000：撤回索引，不进入叫号队列', '退号联另记原号与原因', '原号撤回，接收栏不补', '当前零号纸：原号、原因均空'] } } }),
+    recordQueue: node('我把操作页和留底并排拍下。无名零号纸另留一件实物，不给它编第五个人。\n罗禾说听见铃时差点答“在”。\n陈伯低着头：“家里喊你，你再答。这里隔着玻璃，先看清。”', 28, 'firstHub', { kind: 'evidence', excludesEvidence: ['v04-queue'], actions: [act('记录：零号规则与旧退号联', 'firstHub', { id: 'record-queue', collect: 'v04-queue' })] }),
+    clock: node('罗禾打开连续原图，不是群里的压缩照片。第一张看见四张有名字的纸；十一秒后，第二张右边多出零号白边。\n那十一秒，四个人都在门外。镜头里有陈伯半边肩，季宁拿卡的透明袋也在。\n玻璃太脏，桌下没有拍全。', 24, 'lastSheet', { excludesEvidence: ['v04-clock'] }),
+    lastSheet: node('纸面时刻比照片早两个多小时，又对不上采集器屏幕。通信人员没有找到当夜独立校时记录。\n“那就别按这个排谁先到。”我说。\n季宁留着照片顺序，另记两套没核准的钟。纸上早，不等于纸早；文件里早，也还得查它从哪儿进来。', 26, 'recordClock', { portrait: 'ji', speaker: '季宁', expression: 'focused', excludesEvidence: ['v04-clock'] }),
+    recordClock: node('能确认的是两张原照片的先后和十一秒间隔。零号纸在后图出现，门外四人都在；谁把它送到铁夹下，镜头没拍到。\n我把这句念给大家听。\n里面又响了一声铃。这次陈伯抿紧嘴，谁也没答。', 28, 'firstHub', { kind: 'evidence', excludesEvidence: ['v04-clock'], actions: [act('记录：照片先后与纸面时钟', 'firstHub', { id: 'record-clock', collect: 'v04-clock' })] }),
+    compare: node('纸的位置、号册用途、照片先后都对过。\n陈伯的名字确实在里面，可取号纸不是值班表；零号连正常队列都没进。\n管理方拿出今天的调阅登记，接收栏还空着，等真正负责接材料的人签。旧册也在旁边，两本不能叠着填。', 33, 'puzzle1', { requiresEvidence: first }),
+    puzzle1: node('铃声停了。窗缝那道白边往前挪了一点，像有人在桌下推。\n管理方问怎么记录陈伯那张纸。陈伯没伸手，站在门外两步远的地方等。\n这一步得按已经看过的材料判断。', 36, 'correctSide', { kind: 'puzzle', requiresEvidence: first, puzzle: { prompt: '陈伯的纸在内侧，能否把他填作旧站当班接收人？', hint: '取号纸与值班记录用途不同；000是退号索引，操作页不允许补接收栏。' }, actions: [act('不能。保留原位置，接收人按真实职责另核', 'correctSide'), act('名字在里面，就请陈伯补旧接收栏', 'wrongSeat', { tone: 'danger' })] }),
+    wrongSeat: node('我把旧册推向陈伯。他没拿笔，先问签哪一年。\n旧册停在2019，今天的登记压在下面。季宁按住纸角：“师傅，这两本又混了。”\n椅子在玻璃后擦了一声，退号铃紧跟着响。一个纸条的位置，补不出当年值班证明。\n【复核：错认接收席】记录保留，回到判断处重新核对。', 36, 'compare', { kind: 'ending', outcome: 'failure', requiresEvidence: first, actions: [act('保留三份记录，重新核对', 'compare')] }),
+    correctSide: node('今天谁接材料，谁签今天的登记。旧站哪年谁值班，留给原排班和经手记录。陈伯的纸连同位置照片单独收。\n他松开帽子，帽檐已经折白了。\n“我能给你们开门，不能给里面顶班。”\n“对。”我合上旧册，“门也是管理方开，您陪着看。”', 40, 'sideDoor', { requiresEvidence: first, portrait: 'chen', speaker: '陈伯' }),
+    sideDoor: node('按今天的登记从侧门进去。管理方先行，陈伯跟着；我和季宁最后，鞋底在门外擦干。\n玻璃里面冷一点，倒不是风。那把椅子坐面没水，椅背却湿了半截。\n季宁停在门口，先把外侧纸条的照片收好，才换手电。', 43, 'emptyChair', { requiresEvidence: first, scene: room }),
+    emptyChair: node('桌上封存卡的纸盒位置没动。铁夹下面两道亮痕，能对上刚取的纸。\n陈伯站到椅子旁，没坐：“以前退号的人，也从这道门出去。”\n我顺着他指的方向看，门外就是我们买包子的雨棚。灯亮着，蒸汽一阵一阵往上走。', 46, 'secondHub', { requiresEvidence: first, scene: room, portrait: 'chen', speaker: '陈伯' }),
+    secondHub: node('通信人员从接收端找到一条更早的转送回执。文件摘要能和原卡比，自报时间却还不能拿来认人。\n管理方把封存见证放桌角，留出两处：一处查上游，一处核封存。\n季宁把椅子往旁边让了让，没碰椅背。', 49, 'compareSource', { kind: 'investigation', requiresEvidence: first, scene: { ...room, hotspots: [{ id: 'job', actionId: 'job', label: '上游回执', x: 33, y: 43 }, { id: 'seal', actionId: 'seal', label: '封存见证', x: 58, y: 47 }] }, objective: { title: '找转送之前的一步', detail: '核接收端原回执、资产交接和本次封存。不用钥匙代替写卡证明。' }, actions: [act('核新句子的上游转送', 'job', { hidesWhenCollected: 'v04-source' }), act('核封签与两端停用', 'seal', { hidesWhenCollected: 'v04-seal' }), act('并排核来源与见证', 'compareSource', { requiresEvidence: all })] }),
+    job: node('原回执不是刚导出的表格。通信人员从保全副本打开，逐项比对附件摘要。\n卡上那句程砚，与这条临时导出任务关联的是同一文件。任务来源写资产32；桌上封存的那只，尾号17。\n“十七是后来取文件的。”季宁画了两格，中间留一条箭头。', 53, 'oldFile', { requiresEvidence: first, excludesEvidence: ['v04-source'], scene: room, portrait: 'ji', speaker: '季宁', expression: 'focused' }),
+    oldFile: node('获准重听的仍是同一份原文件，没有重录一句来比。\n“先别替它确认。”\n我的声音从核验电脑里出来。上回我在新苑说这句，季宁就站旁边；这回她看着任务来源，没有抬头。\n原卡、D3包、上游回执里的摘要都相同。相同到哪一步，就记到哪一步。', 56, 'origin', { requiresEvidence: first, excludesEvidence: ['v04-source'], scene: room }),
+    origin: node('原资产交接清单里，32号属于城北退号台，撤站前登记过一次外借。借用附件不在这批移交里，要向保管单位另调。\n这给了一个能查的上游，不是把“陈伯有钥匙”换成“32号有声音”。\n谁操作过导出、谁最先录下我说话，还得有各自的材料。', 59, 'recordJob', { requiresEvidence: first, excludesEvidence: ['v04-source'], scene: { ...room, document: { title: '原转送回执与资产交接', lines: ['相同摘要：程砚新句子', '上游：资产32 / 临时导出', '后续：资产17 / D3采集', '资产32原属：城北退号台', '外借附件：另行调阅', '设备、任务、操作者分别核查'] } } }),
+    recordJob: node('季宁圈住32，旁边写“退号台”，没有添人名。\n陈伯凑近看，用指关节轻碰桌沿。\n“我妈最后那次办手续，就是叫到号，又退了。东西没搬齐。”\n“哪一年？”\n他看着三个零，说要回家翻原联，不能凭记性填。', 62, 'secondHub', { kind: 'evidence', requiresEvidence: first, excludesEvidence: ['v04-source'], scene: room, portrait: 'chen', speaker: '陈伯', actions: [act('记录：资产32的上游转送回执', 'secondHub', { id: 'record-source', collect: 'v04-source' })] }),
+    seal: node('原卡封签完整。管理方按原照片核编号，再核只读副本；旧采集、新回拨各由负责的人确认停用，没有新传送。\n我把接入点复测结果给他们看，季宁补上到场时刻。\n三种记录放三处，今天的签名不往2019年那页挤。', 53, 'witnesses', { requiresEvidence: first, excludesEvidence: ['v04-seal'], scene: room }),
+    witnesses: node('见证照片拍完，透明袋排开，外三内二仍各有编号。谁接哪袋，写在今天的表上。陈伯只签陪同开门一项。\n季宁拿本子让我核字：“程砚的砚，别又写成石见两个字。”\n“上回那张是你写的。”\n“所以这回先请您看。”', 56, 'rearMark', { requiresEvidence: first, excludesEvidence: ['v04-seal'], scene: room, portrait: 'ji', speaker: '季宁' }),
+    rearMark: node('铃又响了。大家都在桌边，手没碰设备。\n管理方蹲下照桌底：旧呼铃的舌头锈在壳里，电线剪断很久。他没拨，只拍照片。\n接收端没有新任务。声响可以另记，不能为听第二遍就恢复采集。\n椅子的湿痕往上多了一寸。', 59, 'recordSeal', { requiresEvidence: first, excludesEvidence: ['v04-seal'], scene: room }),
+    recordSeal: node('封签、目录、停用和见证核完，管理方接下本次材料。桌底响铃和椅背湿痕也拍了，暂时没有对应的传送记录。\n罗禾站回门边，离椅子远一点。\n“现在可以走了吗？”\n“等接收单签完，一起走。”', 62, 'secondHub', { kind: 'evidence', requiresEvidence: first, excludesEvidence: ['v04-seal'], scene: room, portrait: 'luo', speaker: '罗禾', expression: 'wary', actions: [act('记录：封存见证与未填接收席', 'secondHub', { id: 'record-seal', collect: 'v04-seal' })] }),
+    compareSource: node('两端停用和封签核过；原回执把相同文件往上接到32号临时导出。\n卡不是链条起点。可有钥匙的人、资产所属窗口、操作任务的人，仍是三件事。\n季宁划掉刚写的“找到写卡人”，改成“找到上游任务”。', 68, 'puzzle2', { requiresEvidence: all, scene: room }),
+    puzzle2: node('管理方问：后续调阅写查谁，还是查哪一项？\n桌下铃声很轻地连了两下，像在催排队。陈伯的纸条已经进袋，椅子还对着窗口。\n不能让这个声音替材料作证。', 72, 'stopped', { kind: 'puzzle', requiresEvidence: all, scene: room, puzzle: { prompt: '现有材料能把新句子的最初录制者定为陈伯吗？', hint: '钥匙只证明陪同入口；新增的是资产32的上游任务，借用与操作人记录仍缺。' }, actions: [act('不能。调外借附件和原任务操作记录', 'stopped'), act('陈伯能开门，就记成最初写卡人', 'wrongWriter', { tone: 'danger' })] }),
+    wrongWriter: node('我指了陈伯。管理方没落笔，翻回回执：“哪项是他的操作记录？”\n纸上没有。钥匙登记只写开门时刻，连32号也没提。\n陈伯拿回帽子，站得更远。季宁划掉没写完的人名：“重查吧。”\n【复核：把钥匙当来源】五份记录保留，重新核对。', 72, 'compareSource', { kind: 'ending', outcome: 'failure', requiresEvidence: all, scene: room, actions: [act('保留记录，重新核对上游', 'compareSource')] }),
+    stopped: node('调阅单分两项：资产32外借附件，原导出任务操作记录。回执和摘要附后，不往缺的格里先写人。\n旧采集继续停，封存卡不插回去。产权方收设备，管理方签今天的表。\n旧册接收栏还空着，没人拿新表垫那一格。', 77, 'handoff', { requiresEvidence: all, scene: room }),
+    handoff: node('陈伯问五张纸怎么办。\n“按编号接走。”管理方把接收联给他看，“您家的原退号纸，找着了再联系，别自己回来塞窗口。”\n他点头，拿今天的陪同联。还没折，先朝空椅子看了一眼。\n“我不坐。你们都听见了啊。”', 82, 'doorway', { requiresEvidence: all, scene: room, portrait: 'chen', speaker: '陈伯' }),
+    doorway: node('最后一人出来，管理方当面锁门。陈伯没落后，罗禾在雨棚最亮处数人。\n“一、二、三、四……”\n数到管理方的人，她停了一下，从头再数。今天不是刚才那四个了。\n季宁把她拉开半步：“按今天登记，一个个看脸。”', 86, 'van', { requiresEvidence: all, portrait: 'ji', speaker: '季宁', expression: 'concerned' }),
+    van: node('回到车里，我把调阅编号发给林岚。接入点正常，资料有人接，陈伯由管理方送回，没让他再守门。\n季宁拧开水杯，包子早凉了。\n“您还吃吗？”\n“你不是吃完了？”\n她把袋子翻给我看，里面是我的那个。', 90, 'message', { requiresEvidence: all, scene: van, location: '抢修车 · 城南路口', portrait: 'ji', speaker: '季宁' }),
+    message: node('通信人员补来32号旧登记照片。去向栏写城北临时退号台，外借页码折进装订缝，得等保管单位开柜。\n季宁在旧图边缘添一点，没把第一部那圈连回来。\n“下次有正式单再去。”\n我点头。手机刚锁屏，又亮了，是陈伯。', 93, 'lastNumber', { requiresEvidence: all, scene: van }),
+    lastNumber: node('陈伯发来家里找到的原退号联，边角缺了一块，压在旧门牌留下的木印旁。\n原号不是零。他还没拍清，先发一句：这个字怎么像我妈后来搬去的门号。\n我让他保留原件，白天交管理方。消息发出，车窗外很近地响了一下铃。季宁放下凉包子，看了眼后座。', 97, 'end', { requiresEvidence: all, scene: van }),
+    end: node('【取号完成】零号用途、裁边和照片先后已核；上游转送指向资产32临时导出，最初录制者仍未确认。原卡封存，旧任务未恢复。\n陈伯补来一张清楚照片。接收栏空着，背面一行旧铅笔字：号已退，人从后门走。\n季宁伸手，把车里的后门锁又按一次。\n这回，锁响了两下。', 100, 'dispatch', { kind: 'ending', outcome: 'complete', requiresEvidence: all, scene: { ...van, inscription: 'V04 · 号已退，后门还开着' }, location: '调查归档 · V04', actions: [act('重新调查《取号》', 'dispatch', { id: 'restart', resetEvidence: true })] })
+  }
+};

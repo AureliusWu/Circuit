@@ -399,6 +399,11 @@ export const VOICE_CLIPS: readonly VoiceClip[] = [
 ];
 
 export const SCENE_EFFECTS: Readonly<Record<string, string>> = {
+  'tickets/hush': '/audio/sfx/return-bell.mp3',
+  'tickets/recordClock': '/audio/sfx/return-bell.mp3',
+  'tickets/puzzle1': '/audio/sfx/ticket-slide.mp3',
+  'tickets/rearMark': '/audio/sfx/return-bell.mp3',
+  'tickets/end': '/audio/sfx/rear-lock.mp3',
   "thirteen-households/houseKnock": "/audio/sfx/door-knock.mp3",
   "thirteen-households/archivedTicket": "/audio/sfx/paper-turn.mp3",
   "seventh-night/fatherMessage": "/audio/sfx/radio-open.mp3",
@@ -448,6 +453,7 @@ export const VOICE_REPLAYS: readonly { clipId: string; chapter: string; node: st
   { clipId: 'v01-arrived', chapter: 'answering', node: 'incomingName' },
   { clipId: 'v01-received', chapter: 'answering', node: 'emptyReply' },
   { clipId: 'v01-wait', chapter: 'answering', node: 'doorway' },
+  { clipId: 'v01-confirm', chapter: 'tickets', node: 'oldFile' },
   { clipId: 'q07-xu', chapter: 'visitors', node: 'oldVoice' },
   { clipId: 'v01-confirm', chapter: 'visitors', node: 'newVoice' }
 ];

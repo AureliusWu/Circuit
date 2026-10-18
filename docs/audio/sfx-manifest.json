@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": "1.4.0",
+  "version": "1.5.0",
   "clips": [
     {
       "id": "door-knock",
@@ -287,6 +287,60 @@
           "path": "public/audio/sfx/wet-step.mp3",
           "bytes": 15309,
           "sha256": "3a202eb2c6ca7e9ee38ffd41246656fd12aac195b326022c999a76a9c40c9327"
+        }
+      ]
+    },
+    {
+      "id": "return-bell",
+      "duration": 1.8,
+      "seed": 150015,
+      "creator": "original procedural foley",
+      "files": [
+        {
+          "path": "assets_source/audio/v1.5.0/sfx-return-bell.wav",
+          "bytes": 86444,
+          "sha256": "7bc4f7e8ada12529622218975291978b36b53c798f5ed0451abc2760d20aa60f"
+        },
+        {
+          "path": "public/audio/sfx/return-bell.mp3",
+          "bytes": 22509,
+          "sha256": "8a6a5ff105b77f1580334466969e181a2f558edcb3f47e6b80bab3ed8f8baee9"
+        }
+      ]
+    },
+    {
+      "id": "ticket-slide",
+      "duration": 0.95,
+      "seed": 150015,
+      "creator": "original procedural foley",
+      "files": [
+        {
+          "path": "assets_source/audio/v1.5.0/sfx-ticket-slide.wav",
+          "bytes": 45644,
+          "sha256": "9253bf62bfbf3c5fe1cb104a4fbc95c2ecb064554dd8a5e5285a01c821ed30cf"
+        },
+        {
+          "path": "public/audio/sfx/ticket-slide.mp3",
+          "bytes": 12429,
+          "sha256": "17103532ef1022ace2d5f79dc0af9b680818547892a7bb19700556d53971615d"
+        }
+      ]
+    },
+    {
+      "id": "rear-lock",
+      "duration": 1.2,
+      "seed": 150015,
+      "creator": "original procedural foley",
+      "files": [
+        {
+          "path": "assets_source/audio/v1.5.0/sfx-rear-lock.wav",
+          "bytes": 57644,
+          "sha256": "c6269140b6885ceb9d5d4e2351d43829eb9e2acdd2a6d4965c1b1137e5aea85b"
+        },
+        {
+          "path": "public/audio/sfx/rear-lock.mp3",
+          "bytes": 15309,
+          "sha256": "b8872a10f4af39ac3723cfcf1e8ddbb131094a469d25cf2a4df4bc3c934cc3bd"
         }
       ]
     }

@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "assets": [
+    {
+      "id": "receiving-room",
+      "source": "assets_source/art/v1.5.0/receiving-room.png",
+      "output": "public/art/receiving-room.webp",
+      "sourceLibraryId": "libfile_170dba3fcd488191a9a656197a172b87",
+      "sourceSha256": "46904bef6ba0ed7f9484120ee4f0bd7952f73cf9e00535cc6b7c64c8f72eb18c",
+      "sourceBytes": 2257097,
+      "sha256": "509dfd29395f930b8be0747f9e2a376e01dcec3b202b2bb5cf38bab3ed3d365e",
+      "bytes": 263614,
+      "sourceDimensions": [
+        1672,
+        941
+      ],
+      "dimensions": [
+        1600,
+        900
+      ],
+      "tool": "built-in image generation (recovered original)",
+      "promptStatus": "original generation request not present in recovered file; no reconstructed prompt presented as original",
+      "license": "AI-generated project-only artwork; platform output terms apply",
+      "humanApproval": "pending",
+      "processing": "RGB WebP encoding; Circuit resized to existing 1600x900 canvas"
+    }
+  ]
+}

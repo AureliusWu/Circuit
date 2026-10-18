@@ -20,7 +20,7 @@ def main():
     archive = json.loads((ROOT / 'docs/audio/voice-first-pass.json').read_text())
     provider_sha = digest(json.dumps(provider, sort_keys=True).encode())
     assert provider_sha == voices['providerSha256']
-    assert len(plan['lines']) == len(voices['clips']) == 32 and len(effects['clips']) == 16
+    assert len(plan['lines']) == len(voices['clips']) == 32 and len(effects['clips']) == 19
     requests = {row['id']: row for row in plan['lines']}
     decoded = []
     for row, current in [(row, True) for row in voices['clips'] + effects['clips']] + [(row, False) for row in archive['clips']]:

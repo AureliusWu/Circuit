@@ -65,6 +65,9 @@ def run():
             saved = first.evaluate("localStorage.getItem('circuit-auto-v100')")
             second = context.new_page(); second.goto(url)
             second.wait_for_function('navigator.serviceWorker.controller !== null')
+            second.get_by_role('button', name='安装与离线', exact=True).click()
+            expect(second.get_by_role('button', name='检查更新', exact=True)).to_be_enabled()
+            second.evaluate('window.initialCircuitController = navigator.serviceWorker.controller')
             observer = context.new_page(); observer.goto(origin + '/')
             original = (installed / 'index.html').read_text()
             changed = original.replace('</head>', '<meta name="circuit-revision" content="two"></head>')
@@ -77,8 +80,10 @@ def run():
             first.wait_for_function('navigator.serviceWorker.getRegistration().then(r => r.waiting?.state === "installed")', timeout=90000)
             assert first.locator('meta[name="circuit-revision"]').count() == 0
             assert first.evaluate("localStorage.getItem('circuit-auto-v100')") == saved
+            second.wait_for_function('navigator.serviceWorker.getRegistration().then(r => r.waiting?.state === "installed")', timeout=30000)
             first.close()
-            assert second.evaluate('navigator.serviceWorker.getRegistration().then(r => r.waiting?.state)') == 'installed'
+            second.wait_for_function('navigator.serviceWorker.getRegistration().then(r => r.waiting?.state === "installed")', timeout=30000)
+            assert second.evaluate('navigator.serviceWorker.controller === window.initialCircuitController')
             second.close()
             observer.wait_for_function('navigator.serviceWorker.getRegistration("/Circuit/").then(r => r.active?.state === "activated" && !r.waiting)', timeout=90000)
             reopened = context.new_page(); reopened.goto(url)

@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "version": "1.5.0",
-  "status": "local_validation_passed_remote_release_pending",
+  "status": "published_and_verified",
   "logicTests": 90,
   "browser": {
     "base_url": "http://127.0.0.1:4173",
@@ -556,16 +556,16 @@
   "fontCoverage": "passed",
   "audio": "32 voices + 19 effects; full decode and fingerprints passed",
   "limitations": [
-    "Remote Windows and public PWA checks still pending",
-    "Recovered art lacks original generation request",
-    "Human listening, physical device and creative acceptance pending"
+    "human listening and physical-device play",
+    "creative review",
+    "original recovered-art generation request unavailable"
   ],
   "followup": {
     "linuxFailure": "previous Visitors test assumed it completed every registered chapter; corrected expected nine-chapter prefix",
     "nativeFailure": "start, save and same-profile reopen succeeded; shutdown tracking timed out at 30 seconds, final result remains failed",
     "nativeTrackingFix": "bind observed WebView2 processes to PID plus CreationDate; exclude reused shell PIDs, retain genuine orphan descendants and strict shutdown gate",
     "trackingRegressions": 4,
-    "revalidation": "new main Windows run required",
+    "revalidation": "passed: CI 39137014309 / release 39137014323 / Pages 39137014502",
     "visitorsBrowser": {
       "version": "1.4.0",
       "status": "passed",
@@ -587,5 +587,73 @@
         "Automated browser checks; physical-device play and human acting review not certified."
       ]
     }
+  },
+  "publication": {
+    "schema": 1,
+    "version": "1.5.0",
+    "status": "published_and_verified",
+    "runtimeCommit": "4144ab6479c75628a64db2998a46901553778aeb",
+    "release": "https://github.com/AureliusWu/Circuit/releases/tag/v1.5.0",
+    "releaseId": 416505529,
+    "checks": {
+      "logic": 90,
+      "localWebViewProcessRegressions": 4,
+      "ci": 39137014309,
+      "release": 39137014323,
+      "pages": 39137014502,
+      "windows": "actual NSIS installation, native start, save, same-profile reopen, normal shutdown and uninstall passed",
+      "downloadVerification": "Publish and verify downloadable bytes step succeeded in job 117704764300",
+      "publicPwa": "three-screen online/offline and exact deployment verification passed"
+    },
+    "assets": [
+      {
+        "name": "circuit-web-1.5.0.zip",
+        "bytes": 8041687,
+        "digest": "sha256:6e277d7ed5916e5dbd458ff967d76e8b816eef59fb93500ef237ae945401002e",
+        "url": "https://github.com/AureliusWu/Circuit/releases/download/v1.5.0/circuit-web-1.5.0.zip"
+      },
+      {
+        "name": "circuit-web-1.5.0.zip.sha256",
+        "bytes": 88,
+        "digest": "sha256:c8b088a64a686a4d44aff550606d88b39f75fadea8740b5aba5ca20f97f7187b",
+        "url": "https://github.com/AureliusWu/Circuit/releases/download/v1.5.0/circuit-web-1.5.0.zip.sha256"
+      },
+      {
+        "name": "Circuit_1.5.0_x64-setup.exe",
+        "bytes": 9684329,
+        "digest": "sha256:76abcb274b1506dee19eb137ee6bf4c93688814441203e36c599dc3e1daa9a53",
+        "url": "https://github.com/AureliusWu/Circuit/releases/download/v1.5.0/Circuit_1.5.0_x64-setup.exe"
+      },
+      {
+        "name": "Circuit_1.5.0_x64-setup.exe.sha256",
+        "bytes": 94,
+        "digest": "sha256:3fb07a1cb09768a684c4c08b128fa06ecef9ae96c148282f2a453bcbe3ce7b7a",
+        "url": "https://github.com/AureliusWu/Circuit/releases/download/v1.5.0/Circuit_1.5.0_x64-setup.exe.sha256"
+      },
+      {
+        "name": "release.json",
+        "bytes": 503,
+        "digest": "sha256:d108378602df68650c213520cf5d9fdfa350a38922178bf5e433562ff8157f9a",
+        "url": "https://github.com/AureliusWu/Circuit/releases/download/v1.5.0/release.json"
+      },
+      {
+        "name": "SHA256SUMS.txt",
+        "bytes": 348,
+        "digest": "sha256:81f17427341fb0097394e2ee373ff30bec2e890713007fc586e71f340b44589e",
+        "url": "https://github.com/AureliusWu/Circuit/releases/download/v1.5.0/SHA256SUMS.txt"
+      },
+      {
+        "name": "windows-runtime.json",
+        "bytes": 1799,
+        "digest": "sha256:1f0c52c785797cdc68e371362ef2927ee7d5894582521dbc4206ef1b364c23e0",
+        "url": "https://github.com/AureliusWu/Circuit/releases/download/v1.5.0/windows-runtime.json"
+      }
+    ],
+    "humanAcceptanceClaimed": false,
+    "pending": [
+      "human listening and physical-device play",
+      "creative review",
+      "original recovered-art generation request unavailable"
+    ]
   }
 }

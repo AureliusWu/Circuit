@@ -1,3 +1,5 @@
+> 2026-10-19：**v1.5.1 已发布**。存档导入预览、先导出、取消与确认已完成；本次 Windows 实际运行、公开 PWA 三屏断网与字节核验通过。[发布凭据](docs/production/PUBLISHED-v1.5.1.json) · [下载](https://github.com/AureliusWu/Circuit/releases/tag/v1.5.1)。
+
 > 2026-10-18：**v1.5.0《取号》已正式发布，完整CI、Windows安装/存档重开/卸载、公开PWA和下载字节校验通过。** [本版发布回执](docs/production/PUBLISHED-v1.5.0.json) · [下载](https://github.com/AureliusWu/Circuit/releases/tag/v1.5.0)。
 
 > 2026-10-18：**v1.4.1 版本已发布，双端 CI 与公开 PWA 验证通过。** [本轮发布回读](docs/production/RELEASE-CLOSURE-20261018.md)。v1.5.0《取号》已进入本版验收。

@@ -1,0 +1,180 @@
+{
+  "schema": 1,
+  "checkedDate": "2026-10-19",
+  "version": "1.5.1",
+  "status": "published_native_and_public_pwa_verified",
+  "runtimeCommit": "a654bcc5a3dc35e932970489720afe54d5fb289b",
+  "release": {
+    "id": 416890645,
+    "url": "https://github.com/AureliusWu/Circuit/releases/tag/v1.5.1",
+    "publishedAt": "2026-10-19T04:05:31Z",
+    "draft": false,
+    "prerelease": false,
+    "assets": [
+      {
+        "name": "circuit-web-1.5.1.zip",
+        "bytes": 8042105,
+        "digest": "sha256:2130a0c3f2427dd65cb4b5ba942098b0dc4e2ec9873aed93a6b8acca6cdc82db",
+        "url": "https://github.com/AureliusWu/Circuit/releases/download/v1.5.1/circuit-web-1.5.1.zip"
+      },
+      {
+        "name": "circuit-web-1.5.1.zip.sha256",
+        "bytes": 88,
+        "digest": "sha256:6b5952fa05bebcb40328f696c8d5fe9f29bff912b7a4609df0c8ded0869fdbad",
+        "url": "https://github.com/AureliusWu/Circuit/releases/download/v1.5.1/circuit-web-1.5.1.zip.sha256"
+      },
+      {
+        "name": "Circuit_1.5.1_x64-setup.exe",
+        "bytes": 9684454,
+        "digest": "sha256:6d682b1ff39f7587ce7e21d594fac44c854084972026b7cfad364e317661ba71",
+        "url": "https://github.com/AureliusWu/Circuit/releases/download/v1.5.1/Circuit_1.5.1_x64-setup.exe"
+      },
+      {
+        "name": "Circuit_1.5.1_x64-setup.exe.sha256",
+        "bytes": 94,
+        "digest": "sha256:d95652e10bd85fb140f8bb508106630309a421b41ec14082f1025f8c74bc7376",
+        "url": "https://github.com/AureliusWu/Circuit/releases/download/v1.5.1/Circuit_1.5.1_x64-setup.exe.sha256"
+      },
+      {
+        "name": "release.json",
+        "bytes": 503,
+        "digest": "sha256:c833029d731830b371dcea9fef98d4e21b49e5c8c1d83c6c0c791fd049a6f19d",
+        "url": "https://github.com/AureliusWu/Circuit/releases/download/v1.5.1/release.json"
+      },
+      {
+        "name": "SHA256SUMS.txt",
+        "bytes": 348,
+        "digest": "sha256:ba353fe2e98f22bfb6aa674aacfc543acfb09690ab786c4be07fefc4b8477292",
+        "url": "https://github.com/AureliusWu/Circuit/releases/download/v1.5.1/SHA256SUMS.txt"
+      },
+      {
+        "name": "windows-runtime.json",
+        "bytes": 1800,
+        "digest": "sha256:d116e17440864a96929632a0e13bcd861ccc0cfb5cf82b67013d41d04ff9e79c",
+        "url": "https://github.com/AureliusWu/Circuit/releases/download/v1.5.1/windows-runtime.json"
+      }
+    ]
+  },
+  "build": {
+    "run": 39197221057,
+    "status": "success"
+  },
+  "pwa": {
+    "run": 39197221058,
+    "status": "success",
+    "files": [],
+    "screens": [],
+    "comparison": "Pages /Circuit/ build compared against live entry and worker by the successful Pages job; the distributable ZIP intentionally uses its own root base.",
+    "actualReport": {
+      "base_url": "https://aureliuswu.github.io/Circuit/",
+      "version": "1.5.1",
+      "commit": "a654bcc5a3dc35e932970489720afe54d5fb289b",
+      "checked_at": "2026-10-19T04:00:24.899341+00:00",
+      "published_files": [
+        {
+          "url": "https://aureliuswu.github.io/Circuit/index.html",
+          "sha256": "daec984384b0cefe75ad9ad425042cff1818801c9a38cdec14096c62949086d7",
+          "bytes": 851
+        },
+        {
+          "url": "https://aureliuswu.github.io/Circuit/sw.js",
+          "sha256": "d5b2137309a834f94f38fb4df005103312d092b192fae8fa0009e05ed38aa8af",
+          "bytes": 8325
+        }
+      ],
+      "viewports": [
+        {
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "document_url": "https://aureliuswu.github.io/Circuit/",
+          "service_worker": "https://aureliuswu.github.io/Circuit/sw.js",
+          "cached_audio_count": 51,
+          "save_sha256": "09a23f049dd3176ce75f73a1cd6568acf3f98921aa8baf9e0608b7fd7b083471",
+          "offline_audio": [
+            {
+              "path": "https://aureliuswu.github.io/Circuit/audio/voice/h13-dispatch.mp3",
+              "duration": 4.4,
+              "channels": 1
+            },
+            {
+              "path": "https://aureliuswu.github.io/Circuit/audio/sfx/glass-tap.mp3",
+              "duration": 1.7,
+              "channels": 1
+            }
+          ],
+          "status": "passed"
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "document_url": "https://aureliuswu.github.io/Circuit/",
+          "service_worker": "https://aureliuswu.github.io/Circuit/sw.js",
+          "cached_audio_count": 51,
+          "save_sha256": "863cd99fbafc55ebc7ef98d0fd2e8893858de72f6ccaf5e7cd41078778599be2",
+          "offline_audio": [
+            {
+              "path": "https://aureliuswu.github.io/Circuit/audio/voice/h13-dispatch.mp3",
+              "duration": 4.4,
+              "channels": 1
+            },
+            {
+              "path": "https://aureliuswu.github.io/Circuit/audio/sfx/glass-tap.mp3",
+              "duration": 1.7,
+              "channels": 1
+            }
+          ],
+          "status": "passed"
+        },
+        {
+          "viewport": {
+            "width": 760,
+            "height": 430
+          },
+          "document_url": "https://aureliuswu.github.io/Circuit/",
+          "service_worker": "https://aureliuswu.github.io/Circuit/sw.js",
+          "cached_audio_count": 51,
+          "save_sha256": "2efe392d8a98503e3da14718dec94fa5bfedfcb265548289ed782901896c2ff2",
+          "offline_audio": [
+            {
+              "path": "https://aureliuswu.github.io/Circuit/audio/voice/h13-dispatch.mp3",
+              "duration": 4.4,
+              "channels": 1
+            },
+            {
+              "path": "https://aureliuswu.github.io/Circuit/audio/sfx/glass-tap.mp3",
+              "duration": 1.7,
+              "channels": 1
+            }
+          ],
+          "status": "passed"
+        }
+      ],
+      "page_errors": [],
+      "status": "passed",
+      "duration_seconds": 30.2
+    }
+  },
+  "localValidation": {
+    "logic": 90,
+    "browser": 19,
+    "deviceSpecificSkipped": 0
+  },
+  "humanAcceptanceClaimed": false,
+  "pending": [
+    "human listening",
+    "physical devices and ordinary computer/DPI",
+    "creative review"
+  ],
+  "publicDownloads": {
+    "status": "seven assets downloaded and SHA-256 verified, all checksum manifests and ZIP CRC passed",
+    "assetCount": 7,
+    "job": 117883998968
+  },
+  "native": {
+    "status": "actual NSIS installation, start, same-profile save reopen, normal shutdown and uninstall passed"
+  }
+}

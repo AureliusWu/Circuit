@@ -1,3 +1,5 @@
+> 2026-10-19：**v1.5.2 已正式发布**。标题页补列《取号》，城市线路档案补 V04；Windows 实际安装/保存重开/卸载、公开 PWA 三屏与四作共存断网检查通过。7 份公开下载及校验表已回读。[发布凭据](docs/production/PUBLISHED-v1.5.2.json) · [下载](https://github.com/AureliusWu/Circuit/releases/tag/v1.5.2) · [四作闭环](docs/production/FOUR-GAMES-CLOSURE-20261019.md)。
+
 > 2026-10-19：**v1.5.1 已发布**。存档导入预览、先导出、取消与确认已完成；本次 Windows 实际运行、公开 PWA 三屏断网与字节核验通过。[发布凭据](docs/production/PUBLISHED-v1.5.1.json) · [下载](https://github.com/AureliusWu/Circuit/releases/tag/v1.5.1)。
 
 > 2026-10-18：**v1.5.0《取号》已正式发布，完整CI、Windows安装/存档重开/卸载、公开PWA和下载字节校验通过。** [本版发布回执](docs/production/PUBLISHED-v1.5.0.json) · [下载](https://github.com/AureliusWu/Circuit/releases/tag/v1.5.0)。
@@ -8,7 +10,7 @@
 
 # 回路 / Circuit
 
-> 城市配电抢修题材的中式民俗悬疑 AVG · v1.5.0 取号
+> 城市配电抢修题材的中式民俗悬疑 AVG · v1.5.2 / 十章
 
 你是梧城电网城区抢修员程砚，与固定队友、徒弟季宁一同值夜班。十二户停电，终端却多出一个十三号。头七过后，旧通知开始每天提前一分钟；图上拆掉的旧楼里，还有钥匙碰栏杆的声音。一张七年前的工单，将这些事接到同一场救援上。
 
@@ -49,7 +51,7 @@ npm run preview
 npm run package:web
 ```
 
-输出 `artifacts/circuit-web-1.5.0.zip`。解压后使用 HTTP 服务运行，不能直接双击 `index.html`；安装 PWA 需要 HTTPS 或 localhost。首次联网加载并完成缓存后可离线继续游玩，全部场景、人物、32段语音与19项场景音效均包含在离线缓存中。
+输出 `artifacts/circuit-web-<版本>.zip`。解压后使用 HTTP 服务运行，不能直接双击 `index.html`；安装 PWA 需要 HTTPS 或 localhost。首次联网加载并完成缓存后可离线继续游玩，全部场景、人物、32段语音与19项场景音效均包含在离线缓存中。
 
 Windows 原生构建需 Rust、Visual Studio C++ 工具和 WebView2：
 
@@ -86,7 +88,7 @@ python3 tests/visitors-browser.py http://127.0.0.1:4173
 
 ## 文档
 
-- [当前发行说明与验证记录](docs/RELEASE_v1.4.0.md)、[《回访》制作记录](docs/RELEASE_v1.2.0.md)
+- [当前发行说明与验证记录](docs/RELEASE_v1.5.2.md)、[《回访》制作记录](docs/RELEASE_v1.2.0.md)
 - [章节内容与存档规范](docs/CHAPTER_AUTHORING.md)
 - [原创素材说明](docs/ASSETS.md)
 - [师徒与 Q 版美术预览](docs/art/patrol-contact-sheet.jpg)、[本轮提示词与素材校验清单](docs/art/patrol-manifest.json)

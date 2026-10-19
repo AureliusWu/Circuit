@@ -1,0 +1,296 @@
+{
+  "schema": 1,
+  "version": "1.5.2",
+  "checkedAt": "2026-10-19T15:16:21.298708+00:00",
+  "status": "published_native_public_pwa_and_shared_offline_verified",
+  "runtimeCommit": "0a95488507b0a8d5aee4be2f05592607fbdca907",
+  "release": {
+    "id": 416922695,
+    "html_url": "https://github.com/AureliusWu/Circuit/releases/tag/v1.5.2",
+    "tag_name": "v1.5.2",
+    "draft": false,
+    "prerelease": false,
+    "published_at": "2026-10-19T05:11:54Z"
+  },
+  "assets": [
+    {
+      "id": 655303698,
+      "name": "circuit-web-1.5.2.zip",
+      "size": 8042167,
+      "digest": "sha256:273740de5f72ad2e8c5955c60d479a1285364317838dc6343064aa4fb55bfbfe",
+      "browser_download_url": "https://github.com/AureliusWu/Circuit/releases/download/v1.5.2/circuit-web-1.5.2.zip"
+    },
+    {
+      "id": 655303697,
+      "name": "circuit-web-1.5.2.zip.sha256",
+      "size": 88,
+      "digest": "sha256:140c7dd894ed9cc3d2cf3145fc60cfcb950fddc3299079023196b76fa2ca95bb",
+      "browser_download_url": "https://github.com/AureliusWu/Circuit/releases/download/v1.5.2/circuit-web-1.5.2.zip.sha256"
+    },
+    {
+      "id": 655303695,
+      "name": "Circuit_1.5.2_x64-setup.exe",
+      "size": 9685258,
+      "digest": "sha256:985a2db5c1aca068e0c3622106fc246331804a271e81058e739a80ca8c02c793",
+      "browser_download_url": "https://github.com/AureliusWu/Circuit/releases/download/v1.5.2/Circuit_1.5.2_x64-setup.exe"
+    },
+    {
+      "id": 655303696,
+      "name": "Circuit_1.5.2_x64-setup.exe.sha256",
+      "size": 94,
+      "digest": "sha256:373861596737ef8a97996bae278a62fa140efde004107c5230d151bd9e0b2edb",
+      "browser_download_url": "https://github.com/AureliusWu/Circuit/releases/download/v1.5.2/Circuit_1.5.2_x64-setup.exe.sha256"
+    },
+    {
+      "id": 655303717,
+      "name": "release.json",
+      "size": 503,
+      "digest": "sha256:892a7136efb3a9eaba791a3961345177e4280c66016950f2fe291277bf7d1c64",
+      "browser_download_url": "https://github.com/AureliusWu/Circuit/releases/download/v1.5.2/release.json"
+    },
+    {
+      "id": 655303699,
+      "name": "SHA256SUMS.txt",
+      "size": 348,
+      "digest": "sha256:6fb29754d773fbb61154b0a32cd565f6f59095ece6b8fc73b26c8cfe8b352376",
+      "browser_download_url": "https://github.com/AureliusWu/Circuit/releases/download/v1.5.2/SHA256SUMS.txt"
+    },
+    {
+      "id": 655303718,
+      "name": "windows-runtime.json",
+      "size": 1798,
+      "digest": "sha256:67a0185a7ed7de54c8f102d9d279095fbe50f06fc8b38afd2dc93d716718af24",
+      "browser_download_url": "https://github.com/AureliusWu/Circuit/releases/download/v1.5.2/windows-runtime.json"
+    }
+  ],
+  "runs": {
+    "ci": 39202759195,
+    "buildAndPublish": 39202759203,
+    "pages": 39202759209,
+    "fourGames": 39202908465
+  },
+  "nativeEvidence": {
+    "artifactId": 12164706216,
+    "artifactSha256": "32040cdc8a5d593b35671c3e6cf9e72e5c4f6bc9e023ddc83f7ccd3d9593701b",
+    "publicFileEqualsArtifact": true,
+    "result": {
+      "version": "1.5.2",
+      "executable": "D:\\a\\_temp\\Circuit-release-install\\circuit.exe",
+      "executable_sha256": "a1efc52860c020f817319c4a07c352a59a97b9283ea273f0682fbf4783e8e0c6",
+      "commit": "0a95488507b0a8d5aee4be2f05592607fbdca907",
+      "checks": [
+        "installed executable renders current version and title",
+        "native start, automatic save, history and keyboard focus",
+        "close, relaunch and restore the same native save",
+        "no JavaScript page errors and normal application shutdown",
+        "both WebView2 process collections exit before profile cleanup",
+        "temporary WebView2 profile is completely removed"
+      ],
+      "status": "passed",
+      "document_url": "http://tauri.localhost/",
+      "webview_shutdown": {
+        "first": {
+          "profile_aliases": [
+            "c:\\users\\runneradmin\\appdata\\local\\temp\\circuit-installed-webview-7c0vy1fb\\profile",
+            "c:\\users\\runner~1\\appdata\\local\\temp\\circuit-installed-webview-7c0vy1fb\\profile"
+          ],
+          "observed_pids": [
+            2148,
+            3096,
+            3316,
+            3432,
+            4400,
+            4780,
+            7248
+          ],
+          "remaining_pids": [],
+          "remaining_processes": [],
+          "elapsed_seconds": 0.907
+        },
+        "reopen": {
+          "profile_aliases": [
+            "c:\\users\\runneradmin\\appdata\\local\\temp\\circuit-installed-webview-7c0vy1fb\\profile",
+            "c:\\users\\runner~1\\appdata\\local\\temp\\circuit-installed-webview-7c0vy1fb\\profile"
+          ],
+          "observed_pids": [
+            212,
+            860,
+            2280,
+            3724,
+            4372,
+            5596,
+            6652
+          ],
+          "remaining_pids": [],
+          "remaining_processes": [],
+          "elapsed_seconds": 0.813
+        }
+      },
+      "temporary_profile_removed": true,
+      "page_errors": []
+    }
+  },
+  "publicPwa": {
+    "artifactId": 12164801139,
+    "artifactSha256": "547f924be4009ff8d7fede24ef3627dda13a02a2f659c707c454d12c8960c47a",
+    "result": {
+      "base_url": "https://aureliuswu.github.io/Circuit/",
+      "version": "1.5.2",
+      "commit": "0a95488507b0a8d5aee4be2f05592607fbdca907",
+      "checked_at": "2026-10-19T05:07:06.346275+00:00",
+      "published_files": [
+        {
+          "url": "https://aureliuswu.github.io/Circuit/index.html",
+          "sha256": "90eb511992ce9b015a1351a07dee9e173e8091e335978172fcc895e8035b04c9",
+          "bytes": 851
+        },
+        {
+          "url": "https://aureliuswu.github.io/Circuit/sw.js",
+          "sha256": "2ac2128582f96474066f96c61c0b8704d14318ee6280542013d83f7156340b40",
+          "bytes": 8325
+        }
+      ],
+      "viewports": [
+        {
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "document_url": "https://aureliuswu.github.io/Circuit/",
+          "service_worker": "https://aureliuswu.github.io/Circuit/sw.js",
+          "cached_audio_count": 51,
+          "save_sha256": "c5002b5a26f16064a830deef6d6db7f8d6e65648b8fe0be9b7dc7499a9a4cd16",
+          "offline_audio": [
+            {
+              "path": "https://aureliuswu.github.io/Circuit/audio/voice/h13-dispatch.mp3",
+              "duration": 4.4,
+              "channels": 1
+            },
+            {
+              "path": "https://aureliuswu.github.io/Circuit/audio/sfx/glass-tap.mp3",
+              "duration": 1.7,
+              "channels": 1
+            }
+          ],
+          "status": "passed"
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "document_url": "https://aureliuswu.github.io/Circuit/",
+          "service_worker": "https://aureliuswu.github.io/Circuit/sw.js",
+          "cached_audio_count": 51,
+          "save_sha256": "4b0da90273a0d59aaa08eac3a25686524be63422576c302baed0a7b712cec59b",
+          "offline_audio": [
+            {
+              "path": "https://aureliuswu.github.io/Circuit/audio/voice/h13-dispatch.mp3",
+              "duration": 4.4,
+              "channels": 1
+            },
+            {
+              "path": "https://aureliuswu.github.io/Circuit/audio/sfx/glass-tap.mp3",
+              "duration": 1.7,
+              "channels": 1
+            }
+          ],
+          "status": "passed"
+        },
+        {
+          "viewport": {
+            "width": 760,
+            "height": 430
+          },
+          "document_url": "https://aureliuswu.github.io/Circuit/",
+          "service_worker": "https://aureliuswu.github.io/Circuit/sw.js",
+          "cached_audio_count": 51,
+          "save_sha256": "541cccf38db8da42bbf4e7b3f7d717a190e8383f6aa5b69c57e88f01dbf61038",
+          "offline_audio": [
+            {
+              "path": "https://aureliuswu.github.io/Circuit/audio/voice/h13-dispatch.mp3",
+              "duration": 4.4,
+              "channels": 1
+            },
+            {
+              "path": "https://aureliuswu.github.io/Circuit/audio/sfx/glass-tap.mp3",
+              "duration": 1.7,
+              "channels": 1
+            }
+          ],
+          "status": "passed"
+        }
+      ],
+      "page_errors": [],
+      "status": "passed",
+      "duration_seconds": 16.98
+    },
+    "currentPublicFilesRechecked": true
+  },
+  "publicDownloads": {
+    "files": [
+      {
+        "name": "circuit-web-1.5.2.zip",
+        "bytes": 8042167,
+        "sha256": "273740de5f72ad2e8c5955c60d479a1285364317838dc6343064aa4fb55bfbfe",
+        "url": "https://github.com/AureliusWu/Circuit/releases/download/v1.5.2/circuit-web-1.5.2.zip"
+      },
+      {
+        "name": "circuit-web-1.5.2.zip.sha256",
+        "bytes": 88,
+        "sha256": "140c7dd894ed9cc3d2cf3145fc60cfcb950fddc3299079023196b76fa2ca95bb",
+        "url": "https://github.com/AureliusWu/Circuit/releases/download/v1.5.2/circuit-web-1.5.2.zip.sha256"
+      },
+      {
+        "name": "Circuit_1.5.2_x64-setup.exe",
+        "bytes": 9685258,
+        "sha256": "985a2db5c1aca068e0c3622106fc246331804a271e81058e739a80ca8c02c793",
+        "url": "https://github.com/AureliusWu/Circuit/releases/download/v1.5.2/Circuit_1.5.2_x64-setup.exe"
+      },
+      {
+        "name": "Circuit_1.5.2_x64-setup.exe.sha256",
+        "bytes": 94,
+        "sha256": "373861596737ef8a97996bae278a62fa140efde004107c5230d151bd9e0b2edb",
+        "url": "https://github.com/AureliusWu/Circuit/releases/download/v1.5.2/Circuit_1.5.2_x64-setup.exe.sha256"
+      },
+      {
+        "name": "release.json",
+        "bytes": 503,
+        "sha256": "892a7136efb3a9eaba791a3961345177e4280c66016950f2fe291277bf7d1c64",
+        "url": "https://github.com/AureliusWu/Circuit/releases/download/v1.5.2/release.json"
+      },
+      {
+        "name": "SHA256SUMS.txt",
+        "bytes": 348,
+        "sha256": "6fb29754d773fbb61154b0a32cd565f6f59095ece6b8fc73b26c8cfe8b352376",
+        "url": "https://github.com/AureliusWu/Circuit/releases/download/v1.5.2/SHA256SUMS.txt"
+      },
+      {
+        "name": "windows-runtime.json",
+        "bytes": 1798,
+        "sha256": "67a0185a7ed7de54c8f102d9d279095fbe50f06fc8b38afd2dc93d716718af24",
+        "url": "https://github.com/AureliusWu/Circuit/releases/download/v1.5.2/windows-runtime.json"
+      }
+    ],
+    "checksumEntries": 4,
+    "perPackageChecksumFiles": 2,
+    "webZipCrc": "passed",
+    "webZipFiles": 99,
+    "runtimeCommitAndRunMatch": true
+  },
+  "fourGames": {
+    "artifactId": 12164740814,
+    "artifactSha256": "9a23aeeecaa0899d61844c347ad66bf746bc148b7685b672685a75f31585f087",
+    "resultFileSha256": "dd756b10dca8ed2e26c220cd2135ef595cfb63f1f2c959b0a08eafeaa5716356",
+    "result": "FOUR-GAMES-COEXISTENCE-20261019.json",
+    "status": "passed",
+    "totalCacheEntries": 186
+  },
+  "humanAcceptanceClaimed": false,
+  "pending": [
+    "human listening",
+    "physical devices and ordinary computer/Chinese path/DPI",
+    "reading time and creative review"
+  ],
+  "previousReleasesPreserved": true
+}

@@ -35,21 +35,23 @@ def progress(page):
 
 def states(values):
     # React autosaves may refresh savedAt on an explicit Continue. Route state
-    # is the contract checked here; byte-preserving import is tested separately.
-    return {key: value.get('state', value) for key, value in values.items()}
+    # and archived proof must stay intact; byte-preserving import is separate.
+    return {key: {field: value for field, value in record.items() if field != 'savedAt'}
+            for key, record in values.items()}
 
 
 def boot(page, game, version):
     if game == 'Rain':
-        page.wait_for_function('window.rainOfflineReady === true && typeof window.renpy_get === "function"', timeout=120000)
-        page.wait_for_function('!document.getElementById("presplash")', timeout=120000)
-        assert page.evaluate('window.renpy_get("config.version")') == version
+        page.wait_for_function('() => window.rainOfflineReady === true && typeof window.renpy_get === "function"', timeout=120000)
+        page.wait_for_function('() => !document.getElementById("presplash")', timeout=120000)
+        assert page.evaluate('() => window.renpy_get("config.version")') == version
         page.wait_for_function('() => window.renpy_get(\'bool(renpy.get_screen("main_menu"))\')', timeout=60000)
         expect(page.locator('#canvas')).to_be_visible()
     else:
         expect(page.get_by_role('heading', level=1)).to_contain_text({'Circuit': '回路', 'NetLove': '网', 'Healing': '湿性愈合'}[game], timeout=30000)
         expect(page.locator('.version' if game == 'Circuit' else '.title-footer')).to_contain_text('v' + version)
-    page.wait_for_function('Boolean(navigator.serviceWorker.controller)', timeout=120000)
+    # Function predicates preserve the players' CSP; expression strings use eval.
+    page.wait_for_function('() => Boolean(navigator.serviceWorker.controller)', timeout=120000)
     expected = f'{ORIGIN}/{game}/'
     owner = page.evaluate('''async () => {
       const r = await navigator.serviceWorker.getRegistration(location.href);
@@ -143,15 +145,15 @@ def run(versions, output):
                         page.get_by_role('button', name='继续抢修' if game == 'Circuit' else '继续上次的故事', exact=True).click()
                         expect(page.locator('.hud' if game == 'Circuit' else '.game-screen')).to_be_visible()
                         assert states(progress(page)) == states(previous_progress), game + ': Continue changed saved route'
-                        page.wait_for_function('Array.from(document.images).every(image => image.complete && image.naturalWidth > 0)')
+                        page.wait_for_function('() => Array.from(document.images).every(image => image.complete && image.naturalWidth > 0)')
                     assert cache_inventory(page) == previous_caches, game + ': offline startup changed cache inventory'
-                    assert page.evaluate('navigator.onLine') is False
+                    assert page.evaluate('() => navigator.onLine') is False
                     page.screenshot(path=str(output.parent / f'{game}-offline.png'))
                     report['offline'].append(dict(game=game, version=versions[game], worker=owner, cache_inventory_preserved=True, react_save_states_preserved=True))
                 assert report['page_errors'] == [], report['page_errors']
                 inventory_bytes = json.dumps(previous_caches, sort_keys=True).encode()
                 report.update(status='passed', cache_inventory_sha256=hashlib.sha256(inventory_bytes).hexdigest(),
-                              registrations=sorted(page.evaluate('navigator.serviceWorker.getRegistrations().then(rs => rs.map(r => r.scope))')),
+                              registrations=sorted(page.evaluate('() => navigator.serviceWorker.getRegistrations().then(rs => rs.map(r => r.scope))')),
                               total_cached_files=sum(map(len, previous_caches.values())))
                 assert report['registrations'] == sorted(f'{ORIGIN}/{game}/' for game in GAMES)
                 context.close()

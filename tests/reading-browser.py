@@ -308,10 +308,25 @@ def save_transfer(browser):
     manual_before = {key: value for key, value in raw_storage(page).items() if key.startswith("circuit-slot-v100-")}
     open_saves(page)
     upload(page, exported)
+    expect(page.get_by_role("region", name="确认导入存档")).to_be_visible()
+    expect(page.get_by_role("button", name="取消导入", exact=True)).to_be_focused()
+    assert auto(page)["nodeId"] == "call"
+    before_import = raw_storage(page)
+    with page.expect_download() as pending:
+        page.get_by_role("button", name="导出当前进度", exact=True).click()
+    assert raw_storage(page) == before_import
+    page.get_by_role("button", name="取消导入", exact=True).click()
+    assert raw_storage(page) == before_import
+    upload(page, exported)
+    close_panel(page)
+    assert raw_storage(page) == before_import
+    open_saves(page)
+    upload(page, exported)
+    page.get_by_role("button", name="确认导入", exact=True).click()
     expect(page.get_by_role("dialog")).to_have_count(0)
     assert auto(page)["nodeId"] == "dispatch"
     assert {key: value for key, value in raw_storage(page).items() if key.startswith("circuit-slot-v100-")} == manual_before
-    checked("valid exported JSON restores active progress and replaces only automatic storage")
+    checked("import preview, export, cancel and Escape preserve progress; explicit confirmation replaces only automatic storage")
     context.close()
     return exported
 
@@ -354,6 +369,7 @@ def unavailable_storage(browser, exported):
     checked("denied localStorage still allows play and keeps in-memory history consistent")
     open_saves(page)
     upload(page, exported)
+    page.get_by_role("button", name="确认导入", exact=True).click()
     expect(page.get_by_role("dialog")).to_have_count(0)
     expect(page.locator(".save-notice, .title-notice")).to_contain_text("存储")
     checked("import with unavailable storage preserves the persistence warning")

@@ -9,7 +9,7 @@ import { CHAPTER_ORDER, getAvailableActions, getChapter, transition } from './st
 import type { ChapterId } from './story/types';
 import {
   completeChapter, createCampaignSession, loadCampaign, saveCampaign, startChapter,
-  validateCampaignPayload, type CampaignLoadResult, type CampaignSession, type CampaignSlot
+  validateCampaignPayload, type CampaignLoadResult, type CampaignSession, type CampaignSlot, type CampaignSnapshot
 } from './game/campaign';
 import { MAX_HISTORY_ENTRIES, type SaveStorage } from './game/saves';
 import { loadPreferences, savePreferences, type Preferences } from './game/preferences';
@@ -65,7 +65,11 @@ function App() {
   const [voiceState, setVoiceState] = useState<VoiceState>({ status: 'idle', userPaused: false });
   const [sceneVisit, setSceneVisit] = useState(0);
   const importFile = useRef<HTMLInputElement>(null);
-  const closePanel = useCallback(() => setPanel(null), []);
+  const [pendingImport, setPendingImport] = useState<CampaignSnapshot | null>(null);
+  const importRequest = useRef(0);
+  const cancelImport = useRef<HTMLButtonElement>(null);
+  const closePanel = useCallback(() => { importRequest.current += 1; setPendingImport(null); setPanel(null); }, []);
+  useEffect(() => { if (pendingImport) cancelImport.current?.focus(); }, [pendingImport]);
   const { state, history } = session;
   const chapter = getChapter(state.chapterId)!;
   const node = chapter.nodes[state.nodeId];
@@ -167,6 +171,8 @@ function App() {
   }, [started, panel, reading, node.kind, actions, act]);
 
   const openPanel = (kind: Panel, opener: HTMLElement) => {
+    importRequest.current += 1;
+    setPendingImport(null);
     panelOpener.current = opener;
     if (kind === 'saves') setStored(readSlots());
     setPanel(kind);
@@ -216,14 +222,20 @@ function App() {
   };
   const importSave = async (file: File | undefined) => {
     if (!file) return;
+    const request = ++importRequest.current;
     if (file.size > 512 * 1024) { setNotice('存档文件过大，请选择回路导出的 JSON 文件。'); return; }
     try {
       const result = validateCampaignPayload(JSON.parse(await file.text()));
+      if (request !== importRequest.current) return;
       if (result.status !== 'valid') { setNotice(result.reason); return; }
-      const saved = commit(toSession(result.snapshot));
-      closePanel(); setAutomatic(false); enableAudio();
-      setNotice(saved.status === 'saved' ? '存档已导入，三个手动槽位保留' : `存档已读取到本次游玩。${saved.reason}`);
-    } catch { setNotice('无法读取这个存档文件，原进度已保留。'); }
+      setPendingImport(result.snapshot);
+    } catch { if (request === importRequest.current) setNotice('无法读取这个存档文件，原进度已保留。'); }
+  };
+  const confirmImport = () => {
+    if (!pendingImport) return;
+    const saved = commit(toSession(pendingImport));
+    closePanel(); setAutomatic(false); enableAudio();
+    setNotice(saved.status === 'saved' ? '存档已导入，三个手动槽位保留' : `存档已读取到本次游玩。${saved.reason}`);
   };
   const fullscreen = async () => {
     try {
@@ -343,13 +355,19 @@ function App() {
             <img src={asset(`/art/${BACKGROUNDS[id]}.webp`)} alt="" /><span>{String(index + 1).padStart(2, '0')} / {item.title}</span><small>{unlocked ? menuSession.completed.includes(id) ? '已归档 · 可重玩' : '已解锁' : '完成前章后解锁'}</small><p>{item.synopsis}</p>
           </button>;
         })}</div></>}
-        {panel === 'saves' && <><p>自动进度随操作更新。读取存档保留当前自动槽，下一次操作才会保存。</p><div className="save-grid">{SLOTS.map((slot) => {
+        {panel === 'saves' && (pendingImport ? <section aria-label="确认导入存档">
+          <h3>确认导入这份进度？</h3>
+          <p>{getChapter(pendingImport.state.chapterId)!.title} · {getChapter(pendingImport.state.chapterId)!.nodes[pendingImport.state.nodeId].location} · 已归档 {pendingImport.completed.length}/{CHAPTER_ORDER.length} 章</p>
+          <p>保存时间：{new Date(pendingImport.savedAt).toLocaleString('zh-CN')}</p>
+          <p>确认后切换到这份进度并更新自动存档，三个手动槽位保留。可以先导出当前进度。</p>
+          <div className="save-transfer"><button ref={cancelImport} onClick={() => setPendingImport(null)}>取消导入</button><button disabled={!started} onClick={exportSave}>导出当前进度</button><button onClick={confirmImport}>确认导入</button></div>
+        </section> : <><p>自动进度随操作更新。读取存档保留当前自动槽，下一次操作才会保存。</p><div className="save-grid">{SLOTS.map((slot) => {
           const save = stored[slot];
           return <section className="save-card" key={slot} data-save-slot={slot}><h3>{slot === 'auto' ? '自动进度' : `槽 ${slot}`}</h3><p>{summary(save)}</p>
             {save.status === 'valid' && <time dateTime={save.snapshot.savedAt}>{new Date(save.snapshot.savedAt).toLocaleString('zh-CN')}</time>}
             <div>{slot !== 'auto' && <button disabled={!started} onClick={() => saveSlot(slot)}>保存到槽 {slot}</button>}<button disabled={save.status !== 'valid'} onClick={() => resume(slot)}>读取{slot === 'auto' ? '自动进度' : `槽 ${slot}`}</button></div>
           </section>;
-        })}</div><div className="save-transfer"><button disabled={!started} onClick={exportSave}>导出当前进度</button><button onClick={() => importFile.current?.click()}>导入存档文件</button><input ref={importFile} type="file" accept=".json,application/json" hidden aria-label="选择存档文件" onChange={(event) => { void importSave(event.target.files?.[0]); event.target.value = ''; }} /></div><footer>导入会替换自动进度。建议先将重要进度保存到手动槽位。</footer></>}
+        })}</div><div className="save-transfer"><button disabled={!started} onClick={exportSave}>导出当前进度</button><button onClick={() => importFile.current?.click()}>导入存档文件</button><input ref={importFile} type="file" accept=".json,application/json" hidden aria-label="选择存档文件" onChange={(event) => { void importSave(event.target.files?.[0]); event.target.value = ''; }} /></div><footer>导入前会显示进度摘要，确认后替换自动进度。建议先将重要进度保存到手动槽位。</footer></>)}
         {panel === 'pwa' && <PwaPanel />}
         {panel === 'settings' && <div className="settings-grid">
           <label>文字显示<select value={preferences.textSpeed} onChange={(event) => changePreference('textSpeed', event.target.value as Preferences['textSpeed'])}><option value="instant">即时全文</option><option value="slow">缓慢</option><option value="normal">标准</option><option value="fast">快速</option></select></label>

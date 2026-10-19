@@ -1,0 +1,55 @@
+name: Four games same-origin offline check
+on:
+  workflow_run:
+    workflows: ['Deploy playable game to GitHub Pages']
+    branches: [main]
+    types: [completed]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: four-games-live
+  cancel-in-progress: false
+jobs:
+  coexistence:
+    if: github.event_name == 'workflow_dispatch' || (github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.head_repository.full_name == github.repository)
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.workflow_run.head_sha || github.sha }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install browser test dependency
+        run: |
+          python -m pip install playwright
+          python -m playwright install --with-deps chromium
+      - name: Resolve current peer release versions
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python - <<'PY'
+          import json,os,re,subprocess
+          versions={'Circuit':json.load(open('package.json'))['version']}
+          for game in ('NetLove','Healing','Rain'):
+              releases=json.loads(subprocess.check_output(['gh','api',f'repos/AureliusWu/{game}/releases?per_page=100']))
+              published=[r for r in releases if not r['draft'] and (game=='NetLove' or not r['prerelease'])]
+              assert published, 'No public release for '+game
+              current=max(published,key=lambda r:r['published_at'])
+              version=current['tag_name'].removeprefix('v')
+              assert re.fullmatch(r'\d+\.\d+\.\d+',version), 'Unexpected version '+version
+              versions[game]=version
+          with open(os.environ['GITHUB_ENV'],'a') as env:
+              for game,version in versions.items():env.write(game.upper()+'_VERSION='+version+'\n')
+          print(json.dumps(versions))
+          PY
+      - name: Install all four games, preserve earlier caches and saves, reopen all offline
+        run: python tests/four-games-live.py --circuit-version "$CIRCUIT_VERSION" --netlove-version "$NETLOVE_VERSION" --healing-version "$HEALING_VERSION" --rain-version "$RAIN_VERSION"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: four-games-live-${{ github.run_id }}-${{ github.run_attempt }}
+          path: artifacts/four-games-live/
+          if-no-files-found: error

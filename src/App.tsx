@@ -29,6 +29,7 @@ const BACKGROUNDS: Record<ChapterId, string> = {
   everlight: 'stairwell', neutral: 'substation', closure: 'control-room', 'return-visit': 'resettlement-lobby', answering: 'communications-room', visitors: 'reception-station', tickets: 'receiving-room'
 };
 const SLOTS: CampaignSlot[] = ['auto', 1, 2, 3];
+const sequelTitles = CHAPTER_ORDER.slice(6).map(id => `《${getChapter(id)!.title}》`).join('');
 const asset = (path: string) => `${import.meta.env.BASE_URL}${path.replace(/^\//, '')}`;
 function storage(): SaveStorage | null {
   try { return window.localStorage; } catch { return null; }
@@ -261,7 +262,7 @@ function App() {
                 <p className="tagline">有些线路，断开以后仍然有电。</p>
                 <p className="title-synopsis">你是梧城电网城区抢修员程砚，与徒弟季宁一起值夜班。旧工单连着一场少了半页的救援。六章归档之后，回迁楼的门禁叫出你的名字——你昨晚没去，它却说已经到场。</p>
                 <p className="title-crew">程砚 / 季宁 · 城区抢修班</p>
-                <p className="version">v{version} · 第一部六章 / 第二部《回访》《应声》《来访》</p>
+                <p className="version">v{version} · 第一部六章 / 第二部{sequelTitles}</p>
               </section>
               <nav className="title-menu" aria-label="主菜单">
                 {stored.auto.status === 'valid' && <button className="primary" onClick={() => resume('auto')}>继续抢修</button>}
@@ -382,7 +383,7 @@ function App() {
           <label className="setting-toggle"><input type="checkbox" checked={preferences.reducedMotion} onChange={(event) => changePreference('reducedMotion', event.target.checked)} />减少动态效果 / 即时全文</label>
           <button onClick={(event) => openPanel('pwa', event.currentTarget)}>安装与离线</button><button onClick={() => void fullscreen()}>切换全屏</button><p>自动阅读等本条语音播完，再停留所设秒数。调查和推理等待你的判断。打开面板或切换标签页时暂停；返回标题会停止录音。历史里可重听已经经过的语音。</p>
         </div>}
-        {panel === 'archive' && <><p>已归档 {menuSession.completed.length}/{CHAPTER_ORDER.length} 章。第一部连线表示人员与资料核对路径；V01、V02、V03记录新苑回访、旧回拨名单与接待站输入源，另列支线。</p><svg className="city-map" viewBox="0 0 100 100" role="img" aria-label={`城市线路图，已归档 ${menuSession.completed.length} 段`}>
+        {panel === 'archive' && <><p>已归档 {menuSession.completed.length}/{CHAPTER_ORDER.length} 章。第一部连线表示人员与资料核对路径；V01 至 V04 分别记录新苑回访、旧回拨名单、接待站输入源与零号退号单，另列支线。</p><svg className="city-map" viewBox="0 0 100 100" role="img" aria-label={`城市线路图，已归档 ${menuSession.completed.length} 段`}>
           <path className="city-map-grid" d="M0 25H100M0 50H100M0 75H100M25 0V100M50 0V100M75 0V100" />
           <polyline points={mapPoints.join(' ')} fill="none" className="city-map-route" />
           {menuSession.completed.includes('return-visit') && <polyline points={`${getChapter('closure')!.clue.x},${getChapter('closure')!.clue.y} ${getChapter('return-visit')!.clue.x},${getChapter('return-visit')!.clue.y}`} fill="none" className="city-map-route map-followup" />}

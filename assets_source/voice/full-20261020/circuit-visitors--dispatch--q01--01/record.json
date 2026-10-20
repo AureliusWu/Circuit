@@ -1,0 +1,59 @@
+{
+  "id": "circuit-visitors--dispatch--q01--01",
+  "sceneId": "visitors",
+  "lineId": "visitors--dispatch--q01--01",
+  "lineIndex": 0,
+  "speaker": "lin",
+  "text": "监测也有异常，按现场流程核。D3资料走物业移交，别混进故障原因。",
+  "nodeId": "dispatch",
+  "start": 54,
+  "end": 86,
+  "quoteIndex": 0,
+  "actorId": "lin",
+  "voice": "Serena",
+  "instruct": "成年女性，普通话，声音干脆平稳，值班调度员在电台里说话，清楚利落，不要播音腔。 调度通话，语速稍慢，逐句吐字清楚。槐荫巷读huái yīn xiàng，在线读zài xiàn。 只朗读给定台词，不添加词语或音效。",
+  "seed": 221360543,
+  "textSha256": "98e7f9c41ebe875fe7f2d4e2f1aa8ea4890a4b70a2e134d2d116e7c889db29ef",
+  "medium": "spoken",
+  "requestSha256": "35362abd17da956ec0dc431e3120da48eb92bca94e6a6a0f09051e0f42b9f982",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "監測也有一场,按现场流程合,第三资料走物业移交,别混进故障原因。",
+    "cer": 0.178571,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 6.4,
+  "wallSeconds": 29.294,
+  "loudness": {
+    "input_i": "-26.27",
+    "input_tp": "-7.18",
+    "input_lra": "0.70",
+    "input_thresh": "-36.72",
+    "output_i": "-19.93",
+    "output_tp": "-2.00",
+    "output_lra": "0.90",
+    "output_thresh": "-30.46",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.07"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-visitors--dispatch--q01--01/raw.wav",
+      "bytes": 614480,
+      "sha256": "efd7cab7a22d7352f2ed625e06b00beb10299ae7184051ed982b151a31a7b28b"
+    },
+    "master": {
+      "path": "circuit-visitors--dispatch--q01--01/master.wav",
+      "bytes": 307278,
+      "sha256": "4f95746a299f7ad6429e07ce7df7f50f38879d6a146467536831c8878b7bf308"
+    },
+    "runtime": {
+      "path": "circuit-visitors--dispatch--q01--01/runtime.ogg",
+      "bytes": 48388,
+      "sha256": "5bd1c17384e471715bf89246dd05cda70672bb16c3efe3b2f370aee24d35c564"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

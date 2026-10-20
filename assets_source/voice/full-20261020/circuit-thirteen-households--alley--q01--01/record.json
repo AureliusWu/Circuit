@@ -1,0 +1,59 @@
+{
+  "id": "circuit-thirteen-households--alley--q01--01",
+  "sceneId": "thirteen-households",
+  "lineId": "thirteen-households--alley--q01--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "这盏归哪家？",
+  "nodeId": "alley",
+  "start": 75,
+  "end": 81,
+  "quoteIndex": 0,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1236047184,
+  "textSha256": "eae7385d1c19d7cfc5391976a69c768543f41d5ca26abb1e282a16f11d7fcbf2",
+  "medium": "spoken",
+  "requestSha256": "ffdf42e24ec209d3b8ae421345dda42dcb0a6e89864b3288feb87f66d7751516",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "这整 归哪家",
+    "cer": 0.2,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 2.0,
+  "wallSeconds": 70.647,
+  "loudness": {
+    "input_i": "-23.38",
+    "input_tp": "-8.34",
+    "input_lra": "0.00",
+    "input_thresh": "-33.91",
+    "output_i": "-19.98",
+    "output_tp": "-4.96",
+    "output_lra": "0.00",
+    "output_thresh": "-30.51",
+    "normalization_type": "linear",
+    "target_offset": "-0.02"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-thirteen-households--alley--q01--01/raw.wav",
+      "bytes": 192080,
+      "sha256": "bc3cfe7f4fe56582a1c6bedd2514af82bc80553b8d60a213700e760d9dcf0092"
+    },
+    "master": {
+      "path": "circuit-thirteen-households--alley--q01--01/master.wav",
+      "bytes": 96078,
+      "sha256": "a7ad5dda5e8e2ad2dd32337ed0b3b42d24dc19295894004abe8a253159ae1e22"
+    },
+    "runtime": {
+      "path": "circuit-thirteen-households--alley--q01--01/runtime.ogg",
+      "bytes": 17873,
+      "sha256": "4b7c614aac6dc36e94a5ff6bb86e10e264613bfb42a98969e6bc9ce9e3d587e6"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

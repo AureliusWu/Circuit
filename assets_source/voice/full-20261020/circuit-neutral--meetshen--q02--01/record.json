@@ -1,0 +1,59 @@
+{
+  "id": "circuit-neutral--meetshen--q02--01",
+  "sceneId": "neutral",
+  "lineId": "neutral--meetShen--q02--01",
+  "lineIndex": 0,
+  "speaker": "shen",
+  "text": "这几天谁说这句话，谁就去摸那几个旧箱。",
+  "nodeId": "meetShen",
+  "start": 91,
+  "end": 110,
+  "quoteIndex": 1,
+  "actorId": "shen",
+  "voice": "Serena",
+  "instruct": "二十八岁女性，普通话，声音轻而疲惫，口语自然，像一晚上没睡好的人，不要哭腔。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1609458932,
+  "textSha256": "96848e830a9dab3ea13384d494bb7d41507cdb777d861546de87ecee2aa7f29b",
+  "medium": "spoken",
+  "requestSha256": "1dacaed23a1823b621853a24b132fafe828aabe33d43750c97cec4305b10808e",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "这几天谁说这句话谁就去摸那几个旧香",
+    "cer": 0.058824,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 3.04,
+  "wallSeconds": 152.221,
+  "loudness": {
+    "input_i": "-25.35",
+    "input_tp": "-10.25",
+    "input_lra": "0.10",
+    "input_thresh": "-35.35",
+    "output_i": "-20.05",
+    "output_tp": "-4.90",
+    "output_lra": "0.00",
+    "output_thresh": "-30.05",
+    "normalization_type": "dynamic",
+    "target_offset": "0.05"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-neutral--meetshen--q02--01/raw.wav",
+      "bytes": 291920,
+      "sha256": "e79d8d445a52d47239bf1a386a726e1622d3ed1d8f0263756a1c7c66d7ad88fd"
+    },
+    "master": {
+      "path": "circuit-neutral--meetshen--q02--01/master.wav",
+      "bytes": 145998,
+      "sha256": "e4de150301b93d6e91d71169c0c08b991b0147543f6dd3459df94456bfeff3f3"
+    },
+    "runtime": {
+      "path": "circuit-neutral--meetshen--q02--01/runtime.ogg",
+      "bytes": 26065,
+      "sha256": "fc65bb4b3cf01af250fe034826c29f1a2acb8b6e3e34129cc34f13311500210d"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

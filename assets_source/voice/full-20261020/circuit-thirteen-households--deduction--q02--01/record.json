@@ -1,0 +1,59 @@
+{
+  "id": "circuit-thirteen-households--deduction--q02--01",
+  "sceneId": "thirteen-households",
+  "lineId": "thirteen-households--deduction--q02--01",
+  "lineIndex": 0,
+  "speaker": "cheng",
+  "text": "别急着替它起名字。",
+  "nodeId": "deduction",
+  "start": 97,
+  "end": 106,
+  "quoteIndex": 1,
+  "actorId": "cheng",
+  "voice": "Dylan",
+  "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1099481998,
+  "textSha256": "042a5c430d78e43712ee4e8636aa19f1416a10c5d93209db8af4e5d883f3c580",
+  "medium": "spoken",
+  "requestSha256": "78b335d2cd35260b7ff79ba2110ec13585fb55fd4631e13df75f3ee7e7ff5f90",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "别急着替他起名字",
+    "cer": 0.125,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 1.52,
+  "wallSeconds": 57.562,
+  "loudness": {
+    "input_i": "-29.34",
+    "input_tp": "-11.26",
+    "input_lra": "0.00",
+    "input_thresh": "-39.34",
+    "output_i": "-20.07",
+    "output_tp": "-2.00",
+    "output_lra": "0.00",
+    "output_thresh": "-30.07",
+    "normalization_type": "linear",
+    "target_offset": "0.07"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-thirteen-households--deduction--q02--01/raw.wav",
+      "bytes": 146000,
+      "sha256": "2963e16a5a2d7aa70ea1ac1863e9e9f40cac5f3c10cdeb53fef1c9f38a1fc20e"
+    },
+    "master": {
+      "path": "circuit-thirteen-households--deduction--q02--01/master.wav",
+      "bytes": 73038,
+      "sha256": "b563968ab41a39961be1ee2e22cc28e89d2853fe9127304edffd933f7bc1e4b2"
+    },
+    "runtime": {
+      "path": "circuit-thirteen-households--deduction--q02--01/runtime.ogg",
+      "bytes": 15370,
+      "sha256": "83bfaa4fa9adb063225a5cd30d5bde29d57ab797ced7b9af0908d0411bf17fdd"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

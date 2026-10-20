@@ -1,0 +1,59 @@
+{
+  "id": "circuit-thirteen-households--ashmeaning--q02--01",
+  "sceneId": "thirteen-households",
+  "lineId": "thirteen-households--ashMeaning--q02--01",
+  "lineIndex": 0,
+  "speaker": "mei",
+  "text": "我们家给没回来的人烧纸，写到这个字就停笔。",
+  "nodeId": "ashMeaning",
+  "start": 34,
+  "end": 55,
+  "quoteIndex": 1,
+  "actorId": "mei",
+  "voice": "Serena",
+  "instruct": "六十岁女性，普通话，声音偏低，平实缓慢，像老邻居小声嘱咐，句尾稍停，不要年轻撒娇。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1040710636,
+  "textSha256": "e49e1db897e895cae0e657e8990a0410ef35a3a5bb59f5c0ddb2805bd6266dfe",
+  "medium": "spoken",
+  "requestSha256": "e16d57b5ed78ca7a5f8834afab9f0ae5c69a072af1b8059e9d629c6df782eef2",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "我们假,给没回来的人烧纸,卸倒这个字就停笔。",
+    "cer": 0.157895,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 7.12,
+  "wallSeconds": 232.689,
+  "loudness": {
+    "input_i": "-33.93",
+    "input_tp": "-17.72",
+    "input_lra": "1.40",
+    "input_thresh": "-44.07",
+    "output_i": "-20.32",
+    "output_tp": "-4.24",
+    "output_lra": "1.90",
+    "output_thresh": "-30.86",
+    "normalization_type": "dynamic",
+    "target_offset": "0.32"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-thirteen-households--ashmeaning--q02--01/raw.wav",
+      "bytes": 683600,
+      "sha256": "7009b110d827c29c1df6f44ec29ef91c99533ce79a9c14c62595385a1d983446"
+    },
+    "master": {
+      "path": "circuit-thirteen-households--ashmeaning--q02--01/master.wav",
+      "bytes": 341838,
+      "sha256": "5d72370874adaebcde864dbe837bf2de29fdb9e7f71e427d859f9908c59a0fff"
+    },
+    "runtime": {
+      "path": "circuit-thirteen-households--ashmeaning--q02--01/runtime.ogg",
+      "bytes": 52568,
+      "sha256": "30a787a3a4975db428618e12ade13b3b6f1577a5ab3b2713eefa9a7871fd1a8a"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

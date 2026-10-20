@@ -1,0 +1,59 @@
+{
+  "id": "circuit-backfeed--route--q04--01",
+  "sceneId": "backfeed",
+  "lineId": "backfeed--route--q04--01",
+  "lineIndex": 0,
+  "speaker": "cheng",
+  "text": "开门的人。",
+  "nodeId": "route",
+  "start": 92,
+  "end": 97,
+  "quoteIndex": 3,
+  "actorId": "cheng",
+  "voice": "Dylan",
+  "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 33678900,
+  "textSha256": "87c3aad3c05a3cb35ddab50acf52626813ff678785a65a3964a720a058c66c55",
+  "medium": "spoken",
+  "requestSha256": "148cc79eaf3cd19113fb29958d8ddc881107985c80b337fef3b128c4bc3bd5b0",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "开门的人",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 1.04,
+  "wallSeconds": 12.855,
+  "loudness": {
+    "input_i": "-22.77",
+    "input_tp": "-5.95",
+    "input_lra": "0.00",
+    "input_thresh": "-32.77",
+    "output_i": "-20.01",
+    "output_tp": "-3.18",
+    "output_lra": "0.00",
+    "output_thresh": "-30.01",
+    "normalization_type": "linear",
+    "target_offset": "0.01"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-backfeed--route--q04--01/raw.wav",
+      "bytes": 99920,
+      "sha256": "02f13a7b2f7245f0092e605d5db2dae2d6b52fd08a0b279b30815a591ab4311c"
+    },
+    "master": {
+      "path": "circuit-backfeed--route--q04--01/master.wav",
+      "bytes": 49998,
+      "sha256": "eaa3cb50a75ed7914221736a2095dab4c519356486fa5d0ba35cba92fadb86b2"
+    },
+    "runtime": {
+      "path": "circuit-backfeed--route--q04--01/runtime.ogg",
+      "bytes": 11064,
+      "sha256": "599404c628922313710a1ee98499102ddbe80365ba0de274b611235a1bddace5"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

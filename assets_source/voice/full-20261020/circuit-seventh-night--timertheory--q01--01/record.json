@@ -1,0 +1,59 @@
+{
+  "id": "circuit-seventh-night--timertheory--q01--01",
+  "sceneId": "seventh-night",
+  "lineId": "seventh-night--timerTheory--q01--01",
+  "lineIndex": 0,
+  "speaker": "lin",
+  "text": "等待人员未到。",
+  "nodeId": "timerTheory",
+  "start": 47,
+  "end": 54,
+  "quoteIndex": 0,
+  "actorId": "lin",
+  "voice": "Serena",
+  "instruct": "成年女性，普通话，声音干脆平稳，值班调度员在电台里说话，清楚利落，不要播音腔。 调度通话，语速稍慢，逐句吐字清楚。槐荫巷读huái yīn xiàng，在线读zài xiàn。 只朗读给定台词，不添加词语或音效。",
+  "seed": 91927922,
+  "textSha256": "8e0d97aa8ac9d1a238184fd826dc58f997a305d6cff7bb4f3e8dd48a4b048dd6",
+  "medium": "spoken",
+  "requestSha256": "c68a82d2684e04abbb397c1eab7feb0400190b6b1339243764fdd0057acab764",
+  "attempt": 2,
+  "status": "accepted",
+  "asr": {
+    "transcript": "等待人員未到",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 1.04,
+  "wallSeconds": 47.622,
+  "loudness": {
+    "input_i": "-23.57",
+    "input_tp": "-8.51",
+    "input_lra": "0.00",
+    "input_thresh": "-33.57",
+    "output_i": "-20.01",
+    "output_tp": "-4.93",
+    "output_lra": "0.00",
+    "output_thresh": "-30.01",
+    "normalization_type": "linear",
+    "target_offset": "0.01"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-seventh-night--timertheory--q01--01/raw.wav",
+      "bytes": 99920,
+      "sha256": "ca287ea4269bb21991930af9c24e46cf31ae3ab26c0211622cc5665bb8ee488f"
+    },
+    "master": {
+      "path": "circuit-seventh-night--timertheory--q01--01/master.wav",
+      "bytes": 49998,
+      "sha256": "c7b57384e54f45d90ec0558f50348dbc7353f5ae195fd1a13916bd88013e51c5"
+    },
+    "runtime": {
+      "path": "circuit-seventh-night--timertheory--q01--01/runtime.ogg",
+      "bytes": 11212,
+      "sha256": "7e1fbee2c0ad3f28e7eb3677458a8c31f769603a5e642f013b08c3e8ddb51f2d"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

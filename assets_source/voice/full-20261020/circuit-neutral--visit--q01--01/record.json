@@ -1,0 +1,59 @@
+{
+  "id": "circuit-neutral--visit--q01--01",
+  "sceneId": "neutral",
+  "lineId": "neutral--visit--q01--01",
+  "lineIndex": 0,
+  "speaker": "zhou",
+  "text": "纸都交了？",
+  "nodeId": "visit",
+  "start": 51,
+  "end": 56,
+  "quoteIndex": 0,
+  "actorId": "zhou",
+  "voice": "Uncle_Fu",
+  "instruct": "五十岁男性，普通话，声音低沉略沙哑，克制缓慢，像夜班老工人，语气自然，不要表演悲伤。 语速稍慢，逐字说清楚，季宁读jì níng。句尾完整，不要吞字。 只朗读给定台词，不添加词语或音效。",
+  "seed": 34999406,
+  "textSha256": "58d7f79270c1864a3e75ebcdef1f5c0999d260ec45120977d06e1eaec0f57509",
+  "medium": "spoken",
+  "requestSha256": "1fa9bcba471e377e15e70c70e6b1108db2c8bc040b91cc9eae2912dbe79f6dae",
+  "attempt": 2,
+  "status": "needs_review",
+  "asr": {
+    "transcript": "纸都焦了",
+    "cer": 0.25,
+    "polarityCountsMatch": true,
+    "passed": false
+  },
+  "duration": 1.6,
+  "wallSeconds": 17.83,
+  "loudness": {
+    "input_i": "-23.62",
+    "input_tp": "-8.70",
+    "input_lra": "0.00",
+    "input_thresh": "-33.62",
+    "output_i": "-19.98",
+    "output_tp": "-5.08",
+    "output_lra": "0.00",
+    "output_thresh": "-29.98",
+    "normalization_type": "linear",
+    "target_offset": "-0.02"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-neutral--visit--q01--01/raw.wav",
+      "bytes": 153680,
+      "sha256": "f24c39019d0c390e209724a3f36d882b47bb82347a4a6a45fa3ecccde302670c"
+    },
+    "master": {
+      "path": "circuit-neutral--visit--q01--01/master.wav",
+      "bytes": 76878,
+      "sha256": "215c071cb4cb9d21145446fe38792c8d46664d83cbbd7de1b0013a4f1f2971ec"
+    },
+    "runtime": {
+      "path": "circuit-neutral--visit--q01--01/runtime.ogg",
+      "bytes": 15203,
+      "sha256": "d22b950f2b2060e4563b57c19acbbc1338881b6bfce120284eb6b97fde86c849"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

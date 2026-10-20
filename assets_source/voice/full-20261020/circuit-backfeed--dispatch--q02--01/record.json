@@ -1,0 +1,59 @@
+{
+  "id": "circuit-backfeed--dispatch--q02--01",
+  "sceneId": "backfeed",
+  "lineId": "backfeed--dispatch--q02--01",
+  "lineIndex": 0,
+  "speaker": "cheng",
+  "text": "零户不等于没线。",
+  "nodeId": "dispatch",
+  "start": 63,
+  "end": 71,
+  "quoteIndex": 1,
+  "actorId": "cheng",
+  "voice": "Dylan",
+  "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1612537810,
+  "textSha256": "6d759a15d7298dee2a278900683b1deb71367399fafc49cc819adc182a45cfe7",
+  "medium": "spoken",
+  "requestSha256": "ae72c033fe98e4196818e591dc2f80f1d8c9fbfce575082059c897e8e1c3eb05",
+  "attempt": 1,
+  "status": "accepted",
+  "asr": {
+    "transcript": "零戶不等於沒限",
+    "cer": 0.142857,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 1.84,
+  "wallSeconds": 18.301,
+  "loudness": {
+    "input_i": "-26.37",
+    "input_tp": "-9.42",
+    "input_lra": "0.00",
+    "input_thresh": "-36.37",
+    "output_i": "-20.00",
+    "output_tp": "-3.05",
+    "output_lra": "0.00",
+    "output_thresh": "-30.00",
+    "normalization_type": "linear",
+    "target_offset": "-0.00"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-backfeed--dispatch--q02--01/raw.wav",
+      "bytes": 176720,
+      "sha256": "3fcfce34566180b702e9b90f2e1256fe9d6793c69125114b155d93b93f26b2f7"
+    },
+    "master": {
+      "path": "circuit-backfeed--dispatch--q02--01/master.wav",
+      "bytes": 88398,
+      "sha256": "e2c80f32cdc8bc77dd8f7778a8270be20357d8f200fbe3c412cecf8bbc900ebc"
+    },
+    "runtime": {
+      "path": "circuit-backfeed--dispatch--q02--01/runtime.ogg",
+      "bytes": 18079,
+      "sha256": "135076bb105e1aa6b8e5d4f13558a9efd43af38c7fbbba2bba5d663d1a22b7da"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

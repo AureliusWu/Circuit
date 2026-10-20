@@ -1,0 +1,59 @@
+{
+  "id": "circuit-seventh-night--reconcile--q01--01",
+  "sceneId": "seventh-night",
+  "lineId": "seventh-night--reconcile--q01--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "收碗后开始催，但收碗是不是原因，还不知道。",
+  "nodeId": "reconcile",
+  "start": 68,
+  "end": 89,
+  "quoteIndex": 0,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1825816626,
+  "textSha256": "205f95446073c684adc9d69459855ec3ca07dc665f30b0a916649f0d560a444b",
+  "medium": "spoken",
+  "requestSha256": "54cf3665d9700e3e41a16f2a48af903a03363df361c476c12b6e70927e019d67",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "收晚后开始催但收晚是不是原因还不知道",
+    "cer": 0.111111,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 4.8,
+  "wallSeconds": 244.907,
+  "loudness": {
+    "input_i": "-19.75",
+    "input_tp": "-2.30",
+    "input_lra": "1.50",
+    "input_thresh": "-29.87",
+    "output_i": "-20.19",
+    "output_tp": "-2.82",
+    "output_lra": "1.50",
+    "output_thresh": "-30.39",
+    "normalization_type": "dynamic",
+    "target_offset": "0.19"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-seventh-night--reconcile--q01--01/raw.wav",
+      "bytes": 460880,
+      "sha256": "1397788e9154a3972881b215bf9e70e5c7de236bef1d1c6cbf11de34a80e419a"
+    },
+    "master": {
+      "path": "circuit-seventh-night--reconcile--q01--01/master.wav",
+      "bytes": 230478,
+      "sha256": "5d2807d9dba7743bbd86d1ee7b80502ad5e645e1a08ec90e63aa0a156c6db80d"
+    },
+    "runtime": {
+      "path": "circuit-seventh-night--reconcile--q01--01/runtime.ogg",
+      "bytes": 38007,
+      "sha256": "d24df12b4823eaebee218aaae8940943bcd4cd613ef51abf34ffcbffda1b5223"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

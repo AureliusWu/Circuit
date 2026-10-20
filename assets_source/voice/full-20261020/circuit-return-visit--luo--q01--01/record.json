@@ -1,0 +1,59 @@
+{
+  "id": "circuit-return-visit--luo--q01--01",
+  "sceneId": "return-visit",
+  "lineId": "return-visit--luo--q01--01",
+  "lineIndex": 0,
+  "speaker": "luo",
+  "text": "刚才那句是你们说的？",
+  "nodeId": "luo",
+  "start": 32,
+  "end": 42,
+  "quoteIndex": 0,
+  "actorId": "luo",
+  "voice": "Vivian",
+  "instruct": "二十九岁女性，普通话，声音偏低，夜班值班员谨慎地问话，平静自然，略有迟疑，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 773890481,
+  "textSha256": "f9c0522911785741bc9904184a0e84b44d5eac259b5f618eaaf61cd3e82a9476",
+  "medium": "spoken",
+  "requestSha256": "d6e165ac33e7cb0135a402f27dc4d4c11bc002cb21f5da5df803e96ec6f19ad2",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "剛才那句是你們說的",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 2.48,
+  "wallSeconds": 85.078,
+  "loudness": {
+    "input_i": "-20.83",
+    "input_tp": "-7.67",
+    "input_lra": "0.00",
+    "input_thresh": "-31.03",
+    "output_i": "-19.99",
+    "output_tp": "-6.84",
+    "output_lra": "0.00",
+    "output_thresh": "-30.18",
+    "normalization_type": "linear",
+    "target_offset": "-0.01"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-return-visit--luo--q01--01/raw.wav",
+      "bytes": 238160,
+      "sha256": "fcebc165467d9ff607f5970d7855304af45c1d6262180558cb6afc3c45cc84ad"
+    },
+    "master": {
+      "path": "circuit-return-visit--luo--q01--01/master.wav",
+      "bytes": 119118,
+      "sha256": "491497ec9800daf193f398d94a85b70f9074e420f8e59a065a652ebb4b43eed9"
+    },
+    "runtime": {
+      "path": "circuit-return-visit--luo--q01--01/runtime.ogg",
+      "bytes": 21791,
+      "sha256": "18ebdf1826b69d4930af599ad82040a9d1002dfeeb56b972f4cfbc32caaf28af"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

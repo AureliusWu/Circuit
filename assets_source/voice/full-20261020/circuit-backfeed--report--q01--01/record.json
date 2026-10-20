@@ -1,0 +1,59 @@
+{
+  "id": "circuit-backfeed--report--q01--01",
+  "sceneId": "backfeed",
+  "lineId": "backfeed--report--q01--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "纸比目录多半页。",
+  "nodeId": "report",
+  "start": 55,
+  "end": 63,
+  "quoteIndex": 0,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 515273982,
+  "textSha256": "20e7acdc31c923c0414224425f87408059f4999e4176fc650396a669ab4f9e65",
+  "medium": "spoken",
+  "requestSha256": "31396d18e861b1b37b98158ea52e27bafda61e9a305d88c83085a54ce90f4efe",
+  "attempt": 2,
+  "status": "needs_review",
+  "asr": {
+    "transcript": "只比目录多半夜",
+    "cer": 0.285714,
+    "polarityCountsMatch": true,
+    "passed": false
+  },
+  "duration": 2.64,
+  "wallSeconds": 105.821,
+  "loudness": {
+    "input_i": "-23.34",
+    "input_tp": "-9.63",
+    "input_lra": "0.00",
+    "input_thresh": "-33.73",
+    "output_i": "-19.98",
+    "output_tp": "-6.28",
+    "output_lra": "0.00",
+    "output_thresh": "-30.37",
+    "normalization_type": "linear",
+    "target_offset": "-0.02"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-backfeed--report--q01--01/raw.wav",
+      "bytes": 253520,
+      "sha256": "7acbbbaa50cca1a015c4efc01ec3bc3c714dc918a023b985d34c3eba824557e0"
+    },
+    "master": {
+      "path": "circuit-backfeed--report--q01--01/master.wav",
+      "bytes": 126798,
+      "sha256": "549d33c6d23eea859332b6db0cf8c71f5c29e7d0c680e17c8638e67cf290e125"
+    },
+    "runtime": {
+      "path": "circuit-backfeed--report--q01--01/runtime.ogg",
+      "bytes": 21338,
+      "sha256": "114a871702a26bf1b49290634c85684419d1afa5069af53ad08af9d5608f2f10"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

@@ -1,0 +1,59 @@
+{
+  "id": "circuit-visitors--knock--q01--01",
+  "sceneId": "visitors",
+  "lineId": "visitors--knock--q01--01",
+  "lineIndex": 0,
+  "speaker": "luo",
+  "text": "这儿以前谁接待？",
+  "nodeId": "knock",
+  "start": 32,
+  "end": 40,
+  "quoteIndex": 0,
+  "actorId": "luo",
+  "voice": "Vivian",
+  "instruct": "二十九岁女性，普通话，声音偏低，夜班值班员谨慎地问话，平静自然，略有迟疑，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 21880555,
+  "textSha256": "2a55d3643b560498650145a4284184d6accf36e4b1ffc17972e02a9190b02574",
+  "medium": "spoken",
+  "requestSha256": "942ad832d028d5e8aec1816d8534899f77497cd6e69c84d2910b684e36ef30d2",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "这儿以前谁接待?",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 2.4,
+  "wallSeconds": 121.767,
+  "loudness": {
+    "input_i": "-19.53",
+    "input_tp": "-5.71",
+    "input_lra": "0.00",
+    "input_thresh": "-29.53",
+    "output_i": "-20.01",
+    "output_tp": "-6.17",
+    "output_lra": "0.00",
+    "output_thresh": "-30.01",
+    "normalization_type": "linear",
+    "target_offset": "0.01"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-visitors--knock--q01--01/raw.wav",
+      "bytes": 230480,
+      "sha256": "1150a7741abcee2784419c67a1ff97902f030e4fccdbd67ae4d6d7a2820d166a"
+    },
+    "master": {
+      "path": "circuit-visitors--knock--q01--01/master.wav",
+      "bytes": 115278,
+      "sha256": "9f62711faed1ed558aecdfccb396e471a734c4db1ab030ce74c50cb74a8f0284"
+    },
+    "runtime": {
+      "path": "circuit-visitors--knock--q01--01/runtime.ogg",
+      "bytes": 20850,
+      "sha256": "796fdcacfb68779e398282f88997c0fea7f4f25189a504bc4d692b6c8408bac1"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

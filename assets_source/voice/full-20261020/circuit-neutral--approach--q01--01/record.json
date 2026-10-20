@@ -1,0 +1,59 @@
+{
+  "id": "circuit-neutral--approach--q01--01",
+  "sceneId": "neutral",
+  "lineId": "neutral--approach--q01--01",
+  "lineIndex": 0,
+  "speaker": "resident-cabinet",
+  "text": "许师傅那件事。",
+  "nodeId": "approach",
+  "start": 88,
+  "end": 95,
+  "quoteIndex": 0,
+  "actorId": "resident-cabinet",
+  "voice": "Uncle_Fu",
+  "instruct": "年长男性住户，普通话，平实缓慢地交谈，字句清楚，自然克制，不夸张。",
+  "seed": 1269762690,
+  "textSha256": "da6a86281a373b15da00f424c9af0f417a219fb7150cca4d92c88ab9b3bf1c89",
+  "medium": "spoken",
+  "requestSha256": "86cefbac801c18783bf367f0874d0da755f98c36b3a4e8bc0458fc6809dcadca",
+  "attempt": 1,
+  "status": "accepted",
+  "asr": {
+    "transcript": "许师傅那件事",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 1.6,
+  "wallSeconds": 88.16,
+  "loudness": {
+    "input_i": "-20.14",
+    "input_tp": "-2.81",
+    "input_lra": "0.00",
+    "input_thresh": "-30.14",
+    "output_i": "-20.00",
+    "output_tp": "-2.67",
+    "output_lra": "0.00",
+    "output_thresh": "-30.00",
+    "normalization_type": "linear",
+    "target_offset": "-0.00"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-neutral--approach--q01--01/raw.wav",
+      "bytes": 153680,
+      "sha256": "ca4458decd942c18b15656daa0b6a4929a4c6985b8fdbe663885a9fa1c7c14ee"
+    },
+    "master": {
+      "path": "circuit-neutral--approach--q01--01/master.wav",
+      "bytes": 76878,
+      "sha256": "10518c83941627a67c9a579b20db596f79c06bfb1359597c0246ac5419c34927"
+    },
+    "runtime": {
+      "path": "circuit-neutral--approach--q01--01/runtime.ogg",
+      "bytes": 16065,
+      "sha256": "71f2ea88a4ddf195c49efac4cc209f82c8bac0fa77556da2583a5d6026b4ee34"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

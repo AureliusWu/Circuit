@@ -1,0 +1,59 @@
+{
+  "id": "circuit-seventh-night--recordtime--q01--01",
+  "sceneId": "seventh-night",
+  "lineId": "seventh-night--recordTime--q01--01",
+  "lineIndex": 0,
+  "speaker": "shen",
+  "text": "所以昨晚没人把灯关掉。",
+  "nodeId": "recordTime",
+  "start": 36,
+  "end": 47,
+  "quoteIndex": 0,
+  "actorId": "shen",
+  "voice": "Serena",
+  "instruct": "二十八岁女性，普通话，声音轻而疲惫，口语自然，像一晚上没睡好的人，不要哭腔。 只朗读给定台词，不添加词语或音效。",
+  "seed": 306644068,
+  "textSha256": "636ed88336f30f9123b0788fd2345945656dfe61f51cd34468bacc5cb8cfb65a",
+  "medium": "spoken",
+  "requestSha256": "0fd98d5b1c6ac091758f6a889721a3be324a862aef4e49526f34eb7ebd83b536",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "所以做完沒人把燈關掉",
+    "cer": 0.2,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 1.84,
+  "wallSeconds": 8.882,
+  "loudness": {
+    "input_i": "-24.90",
+    "input_tp": "-9.93",
+    "input_lra": "0.00",
+    "input_thresh": "-34.90",
+    "output_i": "-20.00",
+    "output_tp": "-5.02",
+    "output_lra": "0.00",
+    "output_thresh": "-30.00",
+    "normalization_type": "linear",
+    "target_offset": "0.00"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-seventh-night--recordtime--q01--01/raw.wav",
+      "bytes": 176720,
+      "sha256": "87a10250e42ac398cce66e1af69c80f616f6cf3ad13d6062b64c049f0665e464"
+    },
+    "master": {
+      "path": "circuit-seventh-night--recordtime--q01--01/master.wav",
+      "bytes": 88398,
+      "sha256": "55f24a1aa2ebe158fd4ebeb9ec8f52e78c7cccfadd4fd55f03e5526c8d2f9b27"
+    },
+    "runtime": {
+      "path": "circuit-seventh-night--recordtime--q01--01/runtime.ogg",
+      "bytes": 17179,
+      "sha256": "f7f47f419cf72fc563f1a0bd3d4a6dcaf9c66a99f54f257d27dcada9287d46fc"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

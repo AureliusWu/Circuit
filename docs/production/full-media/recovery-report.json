@@ -1,0 +1,504 @@
+{
+  "schema": 1,
+  "project": "Circuit",
+  "sourceRun": 39391771655,
+  "semanticSha256": "d2f80ed941e3b06e2fbf53e4cc5af38b123526c1795c73b5031fb2100be46316",
+  "target": 402,
+  "accepted": 358,
+  "pendingCount": 44,
+  "pending": [
+    {
+      "id": "circuit-thirteen-households--safetybrief--q03--01",
+      "text": "填多少？",
+      "status": "needs_review",
+      "asr": {
+        "transcript": "田督手",
+        "cer": 1.0,
+        "polarityCountsMatch": true,
+        "passed": false
+      },
+      "error": null
+    },
+    {
+      "id": "circuit-thirteen-households--meidoor--q01--01",
+      "text": "以前是做缝补的陈家。",
+      "status": "needs_review",
+      "asr": {
+        "transcript": "以前是做逢卜的臣家",
+        "cer": 0.333333,
+        "polarityCountsMatch": true,
+        "passed": false
+      },
+      "error": null
+    },
+    {
+      "id": "circuit-thirteen-households--perimeter--q02--01",
+      "text": "单列。",
+      "status": "needs_review",
+      "asr": {
+        "transcript": "丹脸",
+        "cer": 1.0,
+        "polarityCountsMatch": true,
+        "passed": false
+      },
+      "error": null
+    },
+    {
+      "id": "circuit-thirteen-households--archivedticket--q01--01",
+      "text": "没进档。",
+      "status": "needs_review",
+      "asr": {
+        "transcript": "沒進達",
+        "cer": 0.333333,
+        "polarityCountsMatch": true,
+        "passed": false
+      },
+      "error": null
+    },
+    {
+      "id": "circuit-thirteen-households--archivedticket--q03--01",
+      "text": "换雨衣也带着。",
+      "status": "needs_review",
+      "asr": {
+        "transcript": "幻语衣也带着",
+        "cer": 0.333333,
+        "polarityCountsMatch": true,
+        "passed": false
+      },
+      "error": null
+    },
+    {
+      "id": "circuit-thirteen-households--houseknock--q02--01",
+      "text": "我们一点二十一就报了。",
+      "status": "needs_review",
+      "asr": {
+        "transcript": "我们1.21就爆了",
+        "cer": 0.6,
+        "polarityCountsMatch": true,
+        "passed": false
+      },
+      "error": null
+    },
+    {
+      "id": "circuit-thirteen-households--bypassalarm--q01--01",
+      "text": "不能靠试送找电源。",
+      "status": "needs_review",
+      "asr": {
+        "transcript": "不能靠世宋找電源",
+        "cer": 0.25,
+        "polarityCountsMatch": true,
+        "passed": false
+      },
+      "error": null
+    },
+    {
+      "id": "circuit-thirteen-households--recordcrosscheck--q01--01",
+      "text": "原样交。",
+      "status": "needs_review",
+      "asr": {
+        "transcript": "原氧胶",
+        "cer": 0.666667,
+        "polarityCountsMatch": true,
+        "passed": false
+      },
+      "error": null
+    },
+    {
+      "id": "circuit-seventh-night--breaker--q01--01",
+      "text": "前七夜都用了？",
+      "status": "needs_review",
+      "asr": {
+        "transcript": "嫌棄也都用了",
+        "cer": 0.5,
+        "polarityCountsMatch": true,
+        "passed": false
+      },
+      "error": null
+    },
+    {
+      "id": "circuit-seventh-night--recordwake--q02--01",
+      "text": "先把发生过的留齐。",
+      "status": "needs_review",
+      "asr": {
+        "transcript": "先把发生过的流奇",
+        "cer": 0.25,
+        "polarityCountsMatch": true,
+        "passed": false
+      },
+      "error": null
+    },
+    {
+      "id": "circuit-seventh-night--archiverequest--q02--01",
+      "text": "我听到的，叫守成。",
+      "status": "needs_review",
+      "asr": {
+        "transcript": "我听到的",
+        "cer": 0.428571,
+        "polarityCountsMatch": true,
+        "passed": false
+      },
+      "error": null
+    },
+    {
+      "id": "circuit-seventh-night--zerominute--q03--01",
+      "text": "槐荫巷那个字也是这样。",
+      "status": "needs_review",
+      "asr": {
+        "transcript": "懷英向那個字也是這樣",
+        "cer": 0.3,
+        "polarityCountsMatch": true,
+        "passed": false
+      },
+      "error": null
+    },
+    {
+      "id": "circuit-backfeed--chen--q01--01",
+      "text": "进线早拆了，它还朝外走。",
+      "status": "needs_review",
+      "asr": {
+        "transcript": "静县早拆了他还朝外走",
+        "cer": 0.3,
+        "polarityCountsMatch": true,
+        "passed": false
+      },
+      "error": null
+    },
+    {
+      "id": "circuit-backfeed--boundary--q02--01",
+      "text": "对。",
+      "status": "production_error",
+      "asr": null,
+      "error": "ValueError: Unexpected speech duration"
+    },
+    {
+      "id": "circuit-backfeed--voices--q03--01",
+      "text": "谁加的？",
+      "status": "needs_review",
+      "asr": {
+        "transcript": "睡觉的",
+        "cer": 0.666667,
+        "polarityCountsMatch": true,
+        "passed": false
+      },
+      "error": null
+    },
+    {
+      "id": "circuit-backfeed--reconcile--q01--01",
+      "text": "旧册多半页，收条又晚了一段。得从原件查。",
+      "status": "needs_review",
+      "asr": {
+        "transcript": "就冊多半夜,收条又晚了一段,得从原建厂。",
+        "cer": 0.235294,
+        "polarityCountsMatch": true,
+        "passed": false
+      },
+      "error": null
+    },
+    {
+      "id": "circuit-backfeed--report--q01--01",
+      "text": "纸比目录多半页。",
+      "status": "needs_review",
+      "asr": {
+        "transcript": "只比目录多半夜",
+        "cer": 0.285714,
+        "polarityCountsMatch": true,
+        "passed": false
+      },
+      "error": null
+    },
+    {
+      "id": "circuit-backfeed--linger--q01--01",
+      "text": "墙砌好了，旧图还当那里能走。",
+      "status": "needs_review",
+      "asr": {
+        "transcript": "强气好了,舅徒还到那里能走。",
+        "cer": 0.416667,
+        "polarityCountsMatch": true,
+        "passed": false
+      },
+      "error": null
+    },
+    {
+      "id": "circuit-everlight--meetmei--q01--01",
+      "text": "卧室没停电。",
+      "status": "needs_review",
+      "asr": {
+        "transcript": "我是煤亭店",
+        "cer": 1.0,
+        "polarityCountsMatch": false,
+        "passed": false
+      },
+      "error": null
+    },
+    {
+      "id": "circuit-everlight--relayrecord--q01--01",
+      "text": "先改成机械轻响。",
+      "status": "needs_review",
+      "asr": {
+        "transcript": "先改成機械清祥。",
+        "cer": 0.285714,
+        "polarityCountsMatch": true,
+        "passed": false
+      },
+      "error": null
+    },
+    {
+      "id": "circuit-everlight--boundary--q01--01",
+      "text": "它今晚还响吗？",
+      "status": "needs_review",
+      "asr": {
+        "transcript": "他今晚还想吗",
+        "cer": 0.333333,
+        "polarityCountsMatch": true,
+        "passed": false
+      },
+      "error": null
+    },
+    {
+      "id": "circuit-neutral--copy--q01--01",
+      "text": "我才二十一，以为等几天就行。",
+      "status": "needs_review",
+      "asr": {
+        "transcript": "我猜21,以为等几天就行",
+        "cer": 0.333333,
+        "polarityCountsMatch": true,
+        "passed": false
+      },
+      "error": null
+    },
+    {
+      "id": "circuit-neutral--west--q03--01",
+      "text": "我。",
+      "status": "needs_review",
+      "asr": {
+        "transcript": "哇",
+        "cer": 1.0,
+        "polarityCountsMatch": true,
+        "passed": false
+      },
+      "error": null
+    },
+    {
+      "id": "circuit-neutral--visit--q01--01",
+      "text": "纸都交了？",
+      "status": "needs_review",
+      "asr": {
+        "transcript": "纸都焦了",
+        "cer": 0.25,
+        "polarityCountsMatch": true,
+        "passed": false
+      },
+      "error": null
+    },
+    {
+      "id": "circuit-return-visit--drive--q02--01",
+      "text": "现门牌另核。",
+      "status": "needs_review",
+      "asr": {
+        "transcript": "县门牌令和",
+        "cer": 0.6,
+        "polarityCountsMatch": true,
+        "passed": false
+      },
+      "error": null
+    },
+    {
+      "id": "circuit-return-visit--firsthub--q01--01",
+      "text": "先别替它答到。",
+      "status": "needs_review",
+      "asr": {
+        "transcript": "先别替他达到。",
+        "cer": 0.333333,
+        "polarityCountsMatch": true,
+        "passed": false
+      },
+      "error": null
+    },
+    {
+      "id": "circuit-return-visit--compare--q01--01",
+      "text": "00:03，林岚收到过。",
+      "status": "needs_review",
+      "asr": {
+        "transcript": "零零零三 林蘭收到國",
+        "cer": 0.666667,
+        "polarityCountsMatch": true,
+        "passed": false
+      },
+      "error": null
+    },
+    {
+      "id": "circuit-return-visit--echo--extra1--01",
+      "text": "程砚，已经到场。",
+      "status": "replay_reference",
+      "asr": null,
+      "error": null
+    },
+    {
+      "id": "circuit-return-visit--echo--extra2--01",
+      "text": "季宁，收到。",
+      "status": "needs_review",
+      "asr": {
+        "transcript": "记宁收到",
+        "cer": 0.25,
+        "polarityCountsMatch": true,
+        "passed": false
+      },
+      "error": null
+    },
+    {
+      "id": "circuit-return-visit--end--extra1--01",
+      "text": "先别替它确认。",
+      "status": "replay_reference",
+      "asr": null,
+      "error": null
+    },
+    {
+      "id": "circuit-answering--luo--q01--01",
+      "text": "到底谁在后面应我？",
+      "status": "replay_reference",
+      "asr": null,
+      "error": null
+    },
+    {
+      "id": "circuit-answering--houserule--q02--01",
+      "text": "你应了？",
+      "status": "needs_review",
+      "asr": {
+        "transcript": "你硬了",
+        "cer": 0.333333,
+        "polarityCountsMatch": true,
+        "passed": false
+      },
+      "error": null
+    },
+    {
+      "id": "circuit-answering--incomingname--extra1--01",
+      "text": "程砚，已经到场。",
+      "status": "replay_reference",
+      "asr": null,
+      "error": null
+    },
+    {
+      "id": "circuit-answering--emptyreply--extra1--01",
+      "text": "季宁，收到。",
+      "status": "replay_reference",
+      "asr": null,
+      "error": null
+    },
+    {
+      "id": "circuit-answering--emptyreply--extra2--01",
+      "text": "罗禾",
+      "status": "needs_review",
+      "asr": {
+        "transcript": "罗河",
+        "cer": 0.5,
+        "polarityCountsMatch": true,
+        "passed": false
+      },
+      "error": null
+    },
+    {
+      "id": "circuit-visitors--oldvoice--extra1--01",
+      "text": "车还等吗？",
+      "status": "replay_reference",
+      "asr": null,
+      "error": null
+    },
+    {
+      "id": "circuit-visitors--plateleave--q02--01",
+      "text": "她嫌我应得太慢。",
+      "status": "needs_review",
+      "asr": {
+        "transcript": "呵呵 她嫌我硬的太慢",
+        "cer": 0.571429,
+        "polarityCountsMatch": true,
+        "passed": false
+      },
+      "error": null
+    },
+    {
+      "id": "circuit-tickets--breakfast--q03--01",
+      "text": "现在还响？",
+      "status": "needs_review",
+      "asr": {
+        "transcript": "现在还想呢",
+        "cer": 0.5,
+        "polarityCountsMatch": true,
+        "passed": false
+      },
+      "error": null
+    },
+    {
+      "id": "circuit-tickets--firsthub--q01--01",
+      "text": "这次别泡成复写联了。",
+      "status": "needs_review",
+      "asr": {
+        "transcript": "这次别泡成腹血连了",
+        "cer": 0.333333,
+        "polarityCountsMatch": true,
+        "passed": false
+      },
+      "error": null
+    },
+    {
+      "id": "circuit-tickets--recordpaper--q02--01",
+      "text": "朝椅子。",
+      "status": "needs_review",
+      "asr": {
+        "transcript": "长椅子",
+        "cer": 0.333333,
+        "polarityCountsMatch": true,
+        "passed": false
+      },
+      "error": null
+    },
+    {
+      "id": "circuit-tickets--job--q01--01",
+      "text": "十七是后来取文件的。",
+      "status": "needs_review",
+      "asr": {
+        "transcript": "17是後來取文件的",
+        "cer": 0.222222,
+        "polarityCountsMatch": true,
+        "passed": false
+      },
+      "error": null
+    },
+    {
+      "id": "circuit-tickets--oldfile--q01--01",
+      "text": "先别替它确认。",
+      "status": "replay_reference",
+      "asr": null,
+      "error": null
+    },
+    {
+      "id": "circuit-tickets--witnesses--q01--01",
+      "text": "程砚的砚，别又写成石见两个字。",
+      "status": "needs_review",
+      "asr": {
+        "transcript": "诚艳的艳别又写成时间两个字",
+        "cer": 0.384615,
+        "polarityCountsMatch": true,
+        "passed": false
+      },
+      "error": null
+    },
+    {
+      "id": "circuit-tickets--wrongwriter--q02--01",
+      "text": "重查吧。",
+      "status": "needs_review",
+      "asr": {
+        "transcript": "重茶吧!",
+        "cer": 0.333333,
+        "polarityCountsMatch": true,
+        "passed": false
+      },
+      "error": null
+    }
+  ],
+  "status": "recovered_verified_takes",
+  "archive": "assets_source/voice/full-20261020",
+  "humanListening": false,
+  "runtimeIntegration": "pending",
+  "release": "not_published"
+}

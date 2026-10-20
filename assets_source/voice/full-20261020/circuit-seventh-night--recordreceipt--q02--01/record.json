@@ -1,0 +1,59 @@
+{
+  "id": "circuit-seventh-night--recordreceipt--q02--01",
+  "sceneId": "seventh-night",
+  "lineId": "seventh-night--recordReceipt--q02--01",
+  "lineIndex": 0,
+  "speaker": "shen",
+  "text": "我爸说，起点点一遍，终点再点一遍。这次没点齐。",
+  "nodeId": "recordReceipt",
+  "start": 57,
+  "end": 80,
+  "quoteIndex": 1,
+  "actorId": "shen",
+  "voice": "Serena",
+  "instruct": "二十八岁女性，普通话，声音轻而疲惫，口语自然，像一晚上没睡好的人，不要哭腔。 只朗读给定台词，不添加词语或音效。",
+  "seed": 361846936,
+  "textSha256": "1ac71f504c61d911a48a25f111f70eae61319b74831b701517c54557234cd283",
+  "medium": "spoken",
+  "requestSha256": "b73233e518a5f9a0ba7f6ee5085ac34dac65250c832c1d995fa2b4ac55222eb4",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "我爸说,起点点一遍,终点再点一遍。这次没点齐。",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 5.36,
+  "wallSeconds": 173.455,
+  "loudness": {
+    "input_i": "-27.47",
+    "input_tp": "-6.12",
+    "input_lra": "5.30",
+    "input_thresh": "-37.70",
+    "output_i": "-21.39",
+    "output_tp": "-2.00",
+    "output_lra": "4.20",
+    "output_thresh": "-31.57",
+    "normalization_type": "dynamic",
+    "target_offset": "1.39"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-seventh-night--recordreceipt--q02--01/raw.wav",
+      "bytes": 514640,
+      "sha256": "79dc7286e580e393a553f4d2cc442d4f4c03006ce44f0952d5f5ded535063e6a"
+    },
+    "master": {
+      "path": "circuit-seventh-night--recordreceipt--q02--01/master.wav",
+      "bytes": 257358,
+      "sha256": "566f53ea520be9a985eef06d818d3f124a620019d51345b4c1766a12f8ad0804"
+    },
+    "runtime": {
+      "path": "circuit-seventh-night--recordreceipt--q02--01/runtime.ogg",
+      "bytes": 41197,
+      "sha256": "3060fcc41c39c0842648b578fc61e5e1afd5f92b14c7c1bcb6171ae90852e105"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

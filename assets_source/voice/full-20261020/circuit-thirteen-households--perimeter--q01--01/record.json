@@ -1,0 +1,59 @@
+{
+  "id": "circuit-thirteen-households--perimeter--q01--01",
+  "sceneId": "thirteen-households",
+  "lineId": "thirteen-households--perimeter--q01--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "这根呢？",
+  "nodeId": "perimeter",
+  "start": 66,
+  "end": 70,
+  "quoteIndex": 0,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 103482263,
+  "textSha256": "7c47c5b384ca0c837b0e83bd0341d2bf3cabc4ac610f1afdec26a7d1092983ae",
+  "medium": "spoken",
+  "requestSha256": "bf136d1fe7a622f5252b8488e4be03d57ad80ee6b8034b8d0a0f5dba4688b337",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "这根呢",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 0.96,
+  "wallSeconds": 5.045,
+  "loudness": {
+    "input_i": "-15.92",
+    "input_tp": "-0.87",
+    "input_lra": "0.00",
+    "input_thresh": "-25.92",
+    "output_i": "-19.97",
+    "output_tp": "-4.94",
+    "output_lra": "0.00",
+    "output_thresh": "-29.97",
+    "normalization_type": "linear",
+    "target_offset": "-0.03"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-thirteen-households--perimeter--q01--01/raw.wav",
+      "bytes": 92240,
+      "sha256": "7fd5409623ff665f217a247a24550c074caf2f38678d5ddcdc971ea1b18e0aaa"
+    },
+    "master": {
+      "path": "circuit-thirteen-households--perimeter--q01--01/master.wav",
+      "bytes": 46158,
+      "sha256": "63129ccdf0db8aee732da852c88771374a3780327a21aa65c781d9f49b34b970"
+    },
+    "runtime": {
+      "path": "circuit-thirteen-households--perimeter--q01--01/runtime.ogg",
+      "bytes": 10425,
+      "sha256": "be568a9c3a05a7034c978b605f0d2be903be8342bf24674200c8b4412695e4b8"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

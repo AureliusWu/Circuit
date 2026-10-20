@@ -1,0 +1,59 @@
+{
+  "id": "circuit-return-visit--echo--extra2--01",
+  "sceneId": "return-visit",
+  "lineId": "return-visit--echo--extra2--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "季宁，收到。",
+  "nodeId": "echo",
+  "start": 24,
+  "end": 30,
+  "medium": "recorded",
+  "recordingKey": "received",
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 299359291,
+  "textSha256": "075c6dad5dac3f3992e2983b56416bfef075af945b30ad828f660bc04898c70b",
+  "requestSha256": "d08e61c40f174ec7c0e8699fa198a3b1c48c28a9ed9bfa97604481780b3eda90",
+  "attempt": 2,
+  "status": "needs_review",
+  "asr": {
+    "transcript": "记宁收到",
+    "cer": 0.25,
+    "polarityCountsMatch": true,
+    "passed": false
+  },
+  "duration": 2.0,
+  "wallSeconds": 69.609,
+  "loudness": {
+    "input_i": "-19.31",
+    "input_tp": "-3.91",
+    "input_lra": "0.00",
+    "input_thresh": "-29.87",
+    "output_i": "-19.99",
+    "output_tp": "-4.59",
+    "output_lra": "0.00",
+    "output_thresh": "-30.55",
+    "normalization_type": "linear",
+    "target_offset": "-0.01"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-return-visit--echo--extra2--01/raw.wav",
+      "bytes": 192080,
+      "sha256": "1a662b7e178f4a9c538fa4d6ebe6c7d9b3bc17376be2da44ad001a6cbf433f69"
+    },
+    "master": {
+      "path": "circuit-return-visit--echo--extra2--01/master.wav",
+      "bytes": 96078,
+      "sha256": "c4588e9a39411a8ecda6411a2c79987661cc3d1eecf02dc762b9ad9ab91a3345"
+    },
+    "runtime": {
+      "path": "circuit-return-visit--echo--extra2--01/runtime.ogg",
+      "bytes": 16855,
+      "sha256": "1e442db81bf031bde63389cb5bce9f241798b6c058c73916f5322a521aa8e5ca"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

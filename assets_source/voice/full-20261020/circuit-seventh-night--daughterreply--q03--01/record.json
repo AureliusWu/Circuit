@@ -1,0 +1,59 @@
+{
+  "id": "circuit-seventh-night--daughterreply--q03--01",
+  "sceneId": "seventh-night",
+  "lineId": "seventh-night--daughterReply--q03--01",
+  "lineIndex": 0,
+  "speaker": "cheng",
+  "text": "可以，你同意提供哪一段，就留哪一段。",
+  "nodeId": "daughterReply",
+  "start": 60,
+  "end": 78,
+  "quoteIndex": 2,
+  "actorId": "cheng",
+  "voice": "Dylan",
+  "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1725498610,
+  "textSha256": "1bfec34ecde1ff35239de676220383a5f5fceeaa815acdb09fa2b7fda6e31e0e",
+  "medium": "spoken",
+  "requestSha256": "99101e53e16a21086a5aa512cc71b5632b9daa1fbb0442a164f849357ae93ddf",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "可以,你同意提供哪一段就留那一段。",
+    "cer": 0.066667,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 3.04,
+  "wallSeconds": 14.421,
+  "loudness": {
+    "input_i": "-27.54",
+    "input_tp": "-8.96",
+    "input_lra": "0.30",
+    "input_thresh": "-37.54",
+    "output_i": "-19.86",
+    "output_tp": "-2.00",
+    "output_lra": "0.00",
+    "output_thresh": "-29.86",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.14"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-seventh-night--daughterreply--q03--01/raw.wav",
+      "bytes": 291920,
+      "sha256": "c67ae691c5b5ae712654da29908e230b0d608d15ec6207916ffbdcb31e5a3613"
+    },
+    "master": {
+      "path": "circuit-seventh-night--daughterreply--q03--01/master.wav",
+      "bytes": 145998,
+      "sha256": "97f9ec31db1bae87ae45e725d3316770146ad9d32c5b13e3a885cecbb9b90ad2"
+    },
+    "runtime": {
+      "path": "circuit-seventh-night--daughterreply--q03--01/runtime.ogg",
+      "bytes": 27942,
+      "sha256": "41aa06883c23c62a1ac44e0b0726d2162bde048800ae4241c9063dfdd168c464"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

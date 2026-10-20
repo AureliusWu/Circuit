@@ -1,0 +1,112 @@
+{
+  "id": "circuit-closure--maprecord--q01--01",
+  "sceneId": "closure",
+  "lineId": "closure--mapRecord--q01--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "也不能照这圈顺序说哪件事先发生。",
+  "nodeId": "mapRecord",
+  "start": 43,
+  "end": 59,
+  "quoteIndex": 0,
+  "legacy": {
+    "id": "c00-ji",
+    "character": "ji",
+    "speaker": "Vivian",
+    "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。",
+    "text": "也不能照这圈顺序说哪件事先发生。",
+    "seed": 120028,
+    "bindings": [
+      {
+        "chapter": "closure",
+        "node": "mapRecord"
+      }
+    ],
+    "requestSha256": "0b1b2b51b4240b10df933bc7c91760bbd4b056b6044be0814f27cc5b69a2fb49",
+    "duration": 3.36,
+    "generationSeconds": 17.831,
+    "loudnessInput": {
+      "input_i": "-16.51",
+      "input_tp": "-2.70",
+      "input_lra": "0.40",
+      "input_thresh": "-26.51",
+      "output_i": "-19.89",
+      "output_tp": "-6.09",
+      "output_lra": "0.00",
+      "output_thresh": "-29.89",
+      "normalization_type": "dynamic",
+      "target_offset": "-0.11"
+    },
+    "files": [
+      {
+        "path": "assets_source/audio/v1.2.0/c00-ji-raw.wav",
+        "bytes": 161324,
+        "sha256": "7d6164a4ed5dde994864de39465b41fa1ee2e7a456949d775eae95fac378811e"
+      },
+      {
+        "path": "assets_source/audio/v1.2.0/c00-ji.wav",
+        "bytes": 161358,
+        "sha256": "ab7e4290e699a88c9cac08f1ebcb087e59ba1ad98cb81422f0332ad3f8e0829e"
+      },
+      {
+        "path": "public/audio/voice/c00-ji.mp3",
+        "bytes": 41229,
+        "sha256": "0d9142944ef95bafe063a3136c89c2857823c1301f3310e493ed6b37182ed0a5"
+      }
+    ],
+    "asr": {
+      "id": "c00-ji",
+      "mp3Sha256": "0d9142944ef95bafe063a3136c89c2857823c1301f3310e493ed6b37182ed0a5",
+      "expected": "也不能照这圈顺序说哪件事先发生。",
+      "transcript": "也不能照这圈顺序说哪件事先发生",
+      "cer": 0,
+      "polarityCountsMatch": true,
+      "status": "passed"
+    },
+    "asrModel": "Systran/faster-whisper-large-v3",
+    "evidencePath": "docs/audio/voice-asr.json",
+    "evidenceSha256": "25d0e31c3decd5262d92349d6571ec67ac58723ea00c40005ddff4d8b9a58334"
+  },
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1616429032,
+  "textSha256": "5747d81939dfdb7b6308deec9ae2efcc3b7ab88c127c95a54198225037b44fa6",
+  "medium": "spoken",
+  "requestSha256": "7c6adf120e0f5b272a0c58296539cea1b4e1edf238b6a7b4b473e23792cb3a50",
+  "status": "accepted",
+  "productionMethod": "preserved_exact_legacy_bytes",
+  "duration": 3.36,
+  "actualGenerationRequest": {
+    "id": "c00-ji",
+    "speaker": "Vivian",
+    "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。",
+    "seed": 120028,
+    "requestSha256": "0b1b2b51b4240b10df933bc7c91760bbd4b056b6044be0814f27cc5b69a2fb49"
+  },
+  "asr": {
+    "passed": true,
+    "transcript": "也不能照这圈顺序说哪件事先发生",
+    "cer": 0,
+    "polarityCountsMatch": true,
+    "model": "Systran/faster-whisper-large-v3"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-closure--maprecord--q01--01/raw.wav",
+      "bytes": 161324,
+      "sha256": "7d6164a4ed5dde994864de39465b41fa1ee2e7a456949d775eae95fac378811e"
+    },
+    "master": {
+      "path": "circuit-closure--maprecord--q01--01/master.wav",
+      "bytes": 161358,
+      "sha256": "ab7e4290e699a88c9cac08f1ebcb087e59ba1ad98cb81422f0332ad3f8e0829e"
+    },
+    "runtime": {
+      "path": "circuit-closure--maprecord--q01--01/runtime.mp3",
+      "bytes": 41229,
+      "sha256": "0d9142944ef95bafe063a3136c89c2857823c1301f3310e493ed6b37182ed0a5"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

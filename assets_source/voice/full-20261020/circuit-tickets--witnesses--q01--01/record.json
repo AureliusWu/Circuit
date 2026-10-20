@@ -1,0 +1,59 @@
+{
+  "id": "circuit-tickets--witnesses--q01--01",
+  "sceneId": "tickets",
+  "lineId": "tickets--witnesses--q01--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "程砚的砚，别又写成石见两个字。",
+  "nodeId": "witnesses",
+  "start": 59,
+  "end": 74,
+  "quoteIndex": 0,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 12838952,
+  "textSha256": "d62a26afa8eb6686045a8651a337676e34ac00233fd6010640b0614c40bbdcd2",
+  "medium": "spoken",
+  "requestSha256": "5d61d1f510e0f234f92e56b2407d94ae92dfbff3c9957d3c736ca91c8079b27d",
+  "attempt": 2,
+  "status": "needs_review",
+  "asr": {
+    "transcript": "诚艳的艳别又写成时间两个字",
+    "cer": 0.384615,
+    "polarityCountsMatch": true,
+    "passed": false
+  },
+  "duration": 4.08,
+  "wallSeconds": 33.259,
+  "loudness": {
+    "input_i": "-20.47",
+    "input_tp": "-5.64",
+    "input_lra": "0.50",
+    "input_thresh": "-31.84",
+    "output_i": "-18.01",
+    "output_tp": "-3.34",
+    "output_lra": "0.10",
+    "output_thresh": "-29.37",
+    "normalization_type": "dynamic",
+    "target_offset": "-1.99"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-tickets--witnesses--q01--01/raw.wav",
+      "bytes": 391760,
+      "sha256": "0a536b646afe2a910d208deb45aba6b78122b4d5f3a11c8f6f0908c5ae58b581"
+    },
+    "master": {
+      "path": "circuit-tickets--witnesses--q01--01/master.wav",
+      "bytes": 195918,
+      "sha256": "b147d62ebe9f30e043adba30165aaa72db4ca8396082f1e23bed1dbfa2b2a200"
+    },
+    "runtime": {
+      "path": "circuit-tickets--witnesses--q01--01/runtime.ogg",
+      "bytes": 31470,
+      "sha256": "4842933c461d7daba7947545abf79a64a704dbf389876210e99e23201b9b2f8c"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

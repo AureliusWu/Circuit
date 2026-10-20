@@ -1,0 +1,59 @@
+{
+  "id": "circuit-backfeed--houseone--q01--01",
+  "sceneId": "backfeed",
+  "lineId": "backfeed--houseOne--q01--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "仪表又不知道谁按的指印。",
+  "nodeId": "houseOne",
+  "start": 68,
+  "end": 80,
+  "quoteIndex": 0,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1273830383,
+  "textSha256": "0b41aab5bb4220f34a440b22bef239a70a2a03d653627d62abb1b1a8a44ad581",
+  "medium": "spoken",
+  "requestSha256": "c329aaec63c3553288ad2e999657fd69a564bd582c460fbf65869d2d20de5008",
+  "attempt": 1,
+  "status": "accepted",
+  "asr": {
+    "transcript": "儀表又不知道誰按的指印",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 2.24,
+  "wallSeconds": 133.485,
+  "loudness": {
+    "input_i": "-19.00",
+    "input_tp": "-3.42",
+    "input_lra": "0.00",
+    "input_thresh": "-29.00",
+    "output_i": "-20.00",
+    "output_tp": "-4.42",
+    "output_lra": "0.00",
+    "output_thresh": "-30.00",
+    "normalization_type": "linear",
+    "target_offset": "0.00"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-backfeed--houseone--q01--01/raw.wav",
+      "bytes": 215120,
+      "sha256": "163b514c3eae6f9a5b4928735dd058554e8a99af28488f9e2acd41424aee68a1"
+    },
+    "master": {
+      "path": "circuit-backfeed--houseone--q01--01/master.wav",
+      "bytes": 107598,
+      "sha256": "8eba040f15a609d4b43604d4cae7ce0d6920ca09d10a1435f15f90b264a51c96"
+    },
+    "runtime": {
+      "path": "circuit-backfeed--houseone--q01--01/runtime.ogg",
+      "bytes": 19824,
+      "sha256": "61219a8d7d2e27e3eaa39045a2d8522b65eae6adf8c0b496a66f6e49981e06b1"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

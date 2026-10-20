@@ -1,0 +1,59 @@
+{
+  "id": "circuit-tickets--recordpaper--q01--01",
+  "sceneId": "tickets",
+  "lineId": "tickets--recordPaper--q01--01",
+  "lineIndex": 0,
+  "speaker": "chen",
+  "text": "那张有我名字的，纸正面朝哪边？",
+  "nodeId": "recordPaper",
+  "start": 33,
+  "end": 48,
+  "quoteIndex": 0,
+  "actorId": "chen",
+  "voice": "Uncle_Fu",
+  "instruct": "六十岁男性，普通话，语速慢，声音低哑，像看门的老人轻声说话，口语平实。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1804012250,
+  "textSha256": "a76ea7f90c9f826df4857d333d116e516a686eff9ae1e5ee3b40e1480d6fcfc0",
+  "medium": "spoken",
+  "requestSha256": "de1663e6548746eb877576817f37a5d1018735abaf5f0ac7b65df2a749944695",
+  "attempt": 2,
+  "status": "accepted",
+  "asr": {
+    "transcript": "那张有我名字的执政面朝哪边",
+    "cer": 0.153846,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 3.76,
+  "wallSeconds": 163.808,
+  "loudness": {
+    "input_i": "-23.39",
+    "input_tp": "-4.49",
+    "input_lra": "0.60",
+    "input_thresh": "-33.66",
+    "output_i": "-19.38",
+    "output_tp": "-2.00",
+    "output_lra": "0.00",
+    "output_thresh": "-29.64",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.62"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-tickets--recordpaper--q01--01/raw.wav",
+      "bytes": 361040,
+      "sha256": "4f79e07812f959c3ed97a292a898a673253107ebd87f19f737e1be33db383b01"
+    },
+    "master": {
+      "path": "circuit-tickets--recordpaper--q01--01/master.wav",
+      "bytes": 180558,
+      "sha256": "ada6b795eae0e82f2ed17d1ef69929679a94d0b7e89ef1eb265cfd05d5cade87"
+    },
+    "runtime": {
+      "path": "circuit-tickets--recordpaper--q01--01/runtime.ogg",
+      "bytes": 31258,
+      "sha256": "fe930526c177dcc78fdf52e4dd62fbfe268ce569a273363125d52fef750f751e"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

@@ -1,0 +1,59 @@
+{
+  "id": "circuit-tickets--message--q01--01",
+  "sceneId": "tickets",
+  "lineId": "tickets--message--q01--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "下次有正式单再去。",
+  "nodeId": "message",
+  "start": 71,
+  "end": 80,
+  "quoteIndex": 0,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 55969900,
+  "textSha256": "aa3ccfdc423f6d6dbd20d569b75c9e7da58d079920e77930e4e0cb7e971e6b8b",
+  "medium": "spoken",
+  "requestSha256": "0680a75018a6f7839f9956a6b4a44d832c89824e1df638e54988e2793c210ee6",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "下次有正式单再去。",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 3.2,
+  "wallSeconds": 15.02,
+  "loudness": {
+    "input_i": "-19.69",
+    "input_tp": "-5.75",
+    "input_lra": "0.10",
+    "input_thresh": "-29.69",
+    "output_i": "-19.92",
+    "output_tp": "-6.04",
+    "output_lra": "0.00",
+    "output_thresh": "-29.92",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.08"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-tickets--message--q01--01/raw.wav",
+      "bytes": 307280,
+      "sha256": "0d35a1e886bec6121fd746dcd0b95c6ac5ca975be57a779be2135b4b7e57b28a"
+    },
+    "master": {
+      "path": "circuit-tickets--message--q01--01/master.wav",
+      "bytes": 153678,
+      "sha256": "2b50ffac80bb6f3ca563c3899c1f7ff06a51a76cd4839a9b6857beae1430444e"
+    },
+    "runtime": {
+      "path": "circuit-tickets--message--q01--01/runtime.ogg",
+      "bytes": 26352,
+      "sha256": "ee5560cf5a4db2721a8ea8e017606b8b735e8c6ee458c9c86824a046a1264e1b"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

@@ -1,0 +1,59 @@
+{
+  "id": "circuit-backfeed--chen--q05--01",
+  "sceneId": "backfeed",
+  "lineId": "backfeed--chen--q05--01",
+  "lineIndex": 0,
+  "speaker": "chen",
+  "text": "我也想问，现在该拿给谁。",
+  "nodeId": "chen",
+  "start": 106,
+  "end": 118,
+  "quoteIndex": 4,
+  "actorId": "chen",
+  "voice": "Uncle_Fu",
+  "instruct": "六十岁男性，普通话，语速慢，声音低哑，像看门的老人轻声说话，口语平实。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1947497271,
+  "textSha256": "aee74258f0a2ee57e4c85a35501dfdf0095b93ea0c0dd5e82fd0ca703f177bcd",
+  "medium": "spoken",
+  "requestSha256": "0a1abe6c8534e6144f38fd4f80f4c2a159c8fe1908ecf79fb4d2b3897105aca8",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "我也想問現在開拿給誰",
+    "cer": 0.1,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 3.36,
+  "wallSeconds": 166.864,
+  "loudness": {
+    "input_i": "-20.35",
+    "input_tp": "-3.15",
+    "input_lra": "0.30",
+    "input_thresh": "-30.64",
+    "output_i": "-19.50",
+    "output_tp": "-2.32",
+    "output_lra": "0.00",
+    "output_thresh": "-29.79",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.50"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-backfeed--chen--q05--01/raw.wav",
+      "bytes": 322640,
+      "sha256": "c5ec019fd9484bef8f5226053ae618e26784d7e2e7396f281e8ac206d6f4b80e"
+    },
+    "master": {
+      "path": "circuit-backfeed--chen--q05--01/master.wav",
+      "bytes": 161358,
+      "sha256": "211ab6413731d141641f34a4a879dac4b959673bd7963c7d5832b9ecf80c7b72"
+    },
+    "runtime": {
+      "path": "circuit-backfeed--chen--q05--01/runtime.ogg",
+      "bytes": 28232,
+      "sha256": "0490b07b864ce1548320b069017ab499570b48697fb148a6429db25b08e36aff"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

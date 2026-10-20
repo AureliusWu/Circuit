@@ -1,0 +1,59 @@
+{
+  "id": "circuit-answering--secondhub--q01--01",
+  "sceneId": "answering",
+  "lineId": "answering--secondHub--q01--01",
+  "lineIndex": 0,
+  "speaker": "luo",
+  "text": "我名字怎么会在这里？",
+  "nodeId": "secondHub",
+  "start": 50,
+  "end": 60,
+  "quoteIndex": 0,
+  "actorId": "luo",
+  "voice": "Vivian",
+  "instruct": "二十九岁女性，普通话，声音偏低，夜班值班员谨慎地问话，平静自然，略有迟疑，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 521242635,
+  "textSha256": "500045e6f652c8244a27618684bece5aba1fbab12b04f0cbf4fb4252e65db197",
+  "medium": "spoken",
+  "requestSha256": "dd013f9dfa4656ce97ee4a3dfc6bb0dbd658633c491825e145f890ef151e17df",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "我…名字怎麼會在這裡?",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 2.8,
+  "wallSeconds": 94.355,
+  "loudness": {
+    "input_i": "-18.87",
+    "input_tp": "-6.78",
+    "input_lra": "0.00",
+    "input_thresh": "-28.87",
+    "output_i": "-19.99",
+    "output_tp": "-7.90",
+    "output_lra": "0.00",
+    "output_thresh": "-29.99",
+    "normalization_type": "linear",
+    "target_offset": "-0.01"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-answering--secondhub--q01--01/raw.wav",
+      "bytes": 268880,
+      "sha256": "d16459298315833a0c28b60d87e8e9e26468bb2036e5216c34bfbec3b987b5a7"
+    },
+    "master": {
+      "path": "circuit-answering--secondhub--q01--01/master.wav",
+      "bytes": 134478,
+      "sha256": "26bf3dc46057e6c258b756fc5e4442baf5b587266c365fba4c33c0ffd45ef8a2"
+    },
+    "runtime": {
+      "path": "circuit-answering--secondhub--q01--01/runtime.ogg",
+      "bytes": 23286,
+      "sha256": "bbc8840255ed33779e2bd132f384e94f559be3f3821ab6ac799cfc8f35649d62"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

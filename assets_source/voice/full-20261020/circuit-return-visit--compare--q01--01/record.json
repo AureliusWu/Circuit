@@ -1,0 +1,59 @@
+{
+  "id": "circuit-return-visit--compare--q01--01",
+  "sceneId": "return-visit",
+  "lineId": "return-visit--compare--q01--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "00:03，林岚收到过。",
+  "nodeId": "compare",
+  "start": 49,
+  "end": 61,
+  "quoteIndex": 0,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1290339905,
+  "textSha256": "13b1e43e71bd843090bcb89dbfc0b4b6b54b8895ae179de31000adbca5adf141",
+  "medium": "spoken",
+  "requestSha256": "b1cd0d6855ee287c26e99cd8168a5af70856209be6306d23e5c062c33fd3a669",
+  "attempt": 2,
+  "status": "needs_review",
+  "asr": {
+    "transcript": "零零零三 林蘭收到國",
+    "cer": 0.666667,
+    "polarityCountsMatch": true,
+    "passed": false
+  },
+  "duration": 3.12,
+  "wallSeconds": 27.626,
+  "loudness": {
+    "input_i": "-20.23",
+    "input_tp": "-3.35",
+    "input_lra": "0.40",
+    "input_thresh": "-30.53",
+    "output_i": "-19.63",
+    "output_tp": "-2.95",
+    "output_lra": "0.00",
+    "output_thresh": "-29.95",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.37"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-return-visit--compare--q01--01/raw.wav",
+      "bytes": 299600,
+      "sha256": "8c6062d4bf447a53cf5f6a6de77e3a2485344411f35b1a36c6592a05e7400aea"
+    },
+    "master": {
+      "path": "circuit-return-visit--compare--q01--01/master.wav",
+      "bytes": 149838,
+      "sha256": "30c9a5e6f3a8a5029be38e1f8d71f8472d26383043a4e4d2f3049446d141d34f"
+    },
+    "runtime": {
+      "path": "circuit-return-visit--compare--q01--01/runtime.ogg",
+      "bytes": 25541,
+      "sha256": "7ad1b7ed8d7dd2b0948a544953d59fcc24fbea3d6706c3ba63bd777795a15f8c"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

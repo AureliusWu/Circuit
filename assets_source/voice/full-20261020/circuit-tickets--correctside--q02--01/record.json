@@ -1,0 +1,59 @@
+{
+  "id": "circuit-tickets--correctside--q02--01",
+  "sceneId": "tickets",
+  "lineId": "tickets--correctSide--q02--01",
+  "lineIndex": 0,
+  "speaker": "cheng",
+  "text": "对。",
+  "nodeId": "correctSide",
+  "start": 84,
+  "end": 86,
+  "quoteIndex": 1,
+  "actorId": "cheng",
+  "voice": "Dylan",
+  "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 604197387,
+  "textSha256": "175739968f720c7573761bd835171725c6468dade64afe274a03d8eb2336ef1b",
+  "medium": "spoken",
+  "requestSha256": "95505a160b6be01d117e9412b398b20e5605893a3075a4e3f6d668aa4055d45a",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "对",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 0.4,
+  "wallSeconds": 3.973,
+  "loudness": {
+    "input_i": "-21.65",
+    "input_tp": "-4.55",
+    "input_lra": "0.00",
+    "input_thresh": "-31.65",
+    "output_i": "-19.95",
+    "output_tp": "-2.90",
+    "output_lra": "0.00",
+    "output_thresh": "-29.95",
+    "normalization_type": "linear",
+    "target_offset": "-0.05"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-tickets--correctside--q02--01/raw.wav",
+      "bytes": 38480,
+      "sha256": "f591465a6e66f7888130c8602adef94dc80a51eb1f254cf6af58ae6fa42ef295"
+    },
+    "master": {
+      "path": "circuit-tickets--correctside--q02--01/master.wav",
+      "bytes": 19278,
+      "sha256": "a392440c5332d44e565fa1c903b1fc7cf12ccefd60a72b682ca8f169f9d69210"
+    },
+    "runtime": {
+      "path": "circuit-tickets--correctside--q02--01/runtime.ogg",
+      "bytes": 6577,
+      "sha256": "79cc207dda41716c3f6c0ae013a015396b9180fc5182923820f3f1d357210b54"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

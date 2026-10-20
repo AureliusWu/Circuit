@@ -1,0 +1,59 @@
+{
+  "id": "circuit-thirteen-households--meiaccount--q02--01",
+  "sceneId": "thirteen-households",
+  "lineId": "thirteen-households--meiAccount--q02--01",
+  "lineIndex": 0,
+  "speaker": "mei",
+  "text": "后来他们说，出事那晚这里就没人。",
+  "nodeId": "meiAccount",
+  "start": 97,
+  "end": 113,
+  "quoteIndex": 1,
+  "actorId": "mei",
+  "voice": "Serena",
+  "instruct": "六十岁女性，普通话，声音偏低，平实缓慢，像老邻居小声嘱咐，句尾稍停，不要年轻撒娇。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1735864721,
+  "textSha256": "4234354a9065488c3ffdafa52c46df29fefed3f1bd174f02f35543cf07637d90",
+  "medium": "spoken",
+  "requestSha256": "a39e9ff88e0a652064ace32231fcea77819d25188002dca7c6a539e9d8fa7e35",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "后来他们说,出事那晚,这里就没人",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 5.2,
+  "wallSeconds": 168.627,
+  "loudness": {
+    "input_i": "-24.62",
+    "input_tp": "-9.78",
+    "input_lra": "0.20",
+    "input_thresh": "-35.68",
+    "output_i": "-19.56",
+    "output_tp": "-5.13",
+    "output_lra": "2.50",
+    "output_thresh": "-31.03",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.44"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-thirteen-households--meiaccount--q02--01/raw.wav",
+      "bytes": 499280,
+      "sha256": "11eb13d1cdf3e474083d6a6194016304ac5187b326f420828d9e5676a21d1278"
+    },
+    "master": {
+      "path": "circuit-thirteen-households--meiaccount--q02--01/master.wav",
+      "bytes": 249678,
+      "sha256": "8d161dc0285f57b3cd4a3852fc8e1424c260e92ed8e042acfc04bf956a9681a6"
+    },
+    "runtime": {
+      "path": "circuit-thirteen-households--meiaccount--q02--01/runtime.ogg",
+      "bytes": 38283,
+      "sha256": "9de1ff5de93111a8ed6de901e92bd2417b2072f90c0daad685fdf4843fb7e59c"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

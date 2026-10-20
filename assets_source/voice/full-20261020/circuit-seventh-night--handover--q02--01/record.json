@@ -1,0 +1,59 @@
+{
+  "id": "circuit-seventh-night--handover--q02--01",
+  "sceneId": "seventh-night",
+  "lineId": "seventh-night--handover--q02--01",
+  "lineIndex": 0,
+  "speaker": "cheng",
+  "text": "今晚自己看。",
+  "nodeId": "handover",
+  "start": 70,
+  "end": 76,
+  "quoteIndex": 1,
+  "actorId": "cheng",
+  "voice": "Dylan",
+  "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 672212770,
+  "textSha256": "ba6ccfddcbdd46c944aa3e533be54fb906f27cea057fbbe3cae8b0bf71ddf6f9",
+  "medium": "spoken",
+  "requestSha256": "d4be19d8d7887d7f752a54cc9c7c528d185ebf76507fe8bec5288e7232469ad7",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "今晚自己看",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 1.36,
+  "wallSeconds": 53.386,
+  "loudness": {
+    "input_i": "-25.92",
+    "input_tp": "-5.89",
+    "input_lra": "0.00",
+    "input_thresh": "-35.92",
+    "output_i": "-22.02",
+    "output_tp": "-2.00",
+    "output_lra": "0.00",
+    "output_thresh": "-32.02",
+    "normalization_type": "linear",
+    "target_offset": "2.02"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-seventh-night--handover--q02--01/raw.wav",
+      "bytes": 130640,
+      "sha256": "bd62b4e367aee6b60260774618c3e9244a0852aee598d2093e1b3809bff3d097"
+    },
+    "master": {
+      "path": "circuit-seventh-night--handover--q02--01/master.wav",
+      "bytes": 65358,
+      "sha256": "2303b75486f2fd160b8b498cfb6c22be049d724c4f4c2e5a38a631a1586bd846"
+    },
+    "runtime": {
+      "path": "circuit-seventh-night--handover--q02--01/runtime.ogg",
+      "bytes": 13542,
+      "sha256": "c7e23422c229375a62d0219d34c1ecc62753b195c46e15627955fcf6752a0c90"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

@@ -1,0 +1,59 @@
+{
+  "id": "circuit-answering--handoff--q02--01",
+  "sceneId": "answering",
+  "lineId": "answering--handoff--q02--01",
+  "lineIndex": 0,
+  "speaker": "cheng",
+  "text": "记。你什么时候听见、什么时候答，照你记得的写。",
+  "nodeId": "handoff",
+  "start": 81,
+  "end": 104,
+  "quoteIndex": 1,
+  "actorId": "cheng",
+  "voice": "Dylan",
+  "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1161210109,
+  "textSha256": "7564225dac7476fe75f4d9e8e8ce336250b9a06b24855193ab65b633e3819c96",
+  "medium": "spoken",
+  "requestSha256": "5c48a6fbf58d0e4bda4f3d13c48627f7d4d3dd27e7a306fcf0b5ee012bd3b532",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "记你什么时候听见什么时候打照你记的的写",
+    "cer": 0.105263,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 4.72,
+  "wallSeconds": 156.825,
+  "loudness": {
+    "input_i": "-25.03",
+    "input_tp": "-6.64",
+    "input_lra": "2.40",
+    "input_thresh": "-35.46",
+    "output_i": "-19.02",
+    "output_tp": "-2.00",
+    "output_lra": "1.60",
+    "output_thresh": "-29.66",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.98"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-answering--handoff--q02--01/raw.wav",
+      "bytes": 453200,
+      "sha256": "8e197254b8b423d50b408840208103fe57f0d827e6180ebcbcab8213a56b7487"
+    },
+    "master": {
+      "path": "circuit-answering--handoff--q02--01/master.wav",
+      "bytes": 226638,
+      "sha256": "27c4957429f7412640cf05cd72d40909562a738b405a9f08813375fec4bb1cfb"
+    },
+    "runtime": {
+      "path": "circuit-answering--handoff--q02--01/runtime.ogg",
+      "bytes": 37944,
+      "sha256": "b4aca129b0f451a56ef95375221eaa0e1e06cdde7e297fd927e6caf8c0f08757"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

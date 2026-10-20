@@ -1,0 +1,59 @@
+{
+  "id": "circuit-visitors--plateside--q01--01",
+  "sceneId": "visitors",
+  "lineId": "visitors--plateSide--q01--01",
+  "lineIndex": 0,
+  "speaker": "chen",
+  "text": "管理那边登记过我，钥匙今天也是按借用记录领的。你们要看原件，我带进去。",
+  "nodeId": "plateSide",
+  "start": 20,
+  "end": 55,
+  "quoteIndex": 0,
+  "actorId": "chen",
+  "voice": "Uncle_Fu",
+  "instruct": "六十岁男性，普通话，语速慢，声音低哑，像看门的老人轻声说话，口语平实。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1998513548,
+  "textSha256": "d093782abace6d1b5025a5cbf986563e92594d258b76d62d5d91569fbcd220bb",
+  "medium": "spoken",
+  "requestSha256": "56e9d65bff40d93754598d077de5bccbc7d0a3a7d3fedfc6b478ad1c2144bea4",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "管理那边登记过我要是今天也是按借用纪录领的你们要看原件我带进去",
+    "cer": 0.096774,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 7.92,
+  "wallSeconds": 383.971,
+  "loudness": {
+    "input_i": "-23.78",
+    "input_tp": "-4.75",
+    "input_lra": "3.20",
+    "input_thresh": "-34.25",
+    "output_i": "-20.11",
+    "output_tp": "-2.00",
+    "output_lra": "1.00",
+    "output_thresh": "-30.59",
+    "normalization_type": "dynamic",
+    "target_offset": "0.11"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-visitors--plateside--q01--01/raw.wav",
+      "bytes": 760400,
+      "sha256": "aa867e6e0cc9bcfc2156767d67c1db7056d0d297f38aaed8103062b6ecd1d08f"
+    },
+    "master": {
+      "path": "circuit-visitors--plateside--q01--01/master.wav",
+      "bytes": 380238,
+      "sha256": "5359a0f10b97ba4d89ea8b36946aafc6efe2191e3d7b56b33c8e8ed779d55063"
+    },
+    "runtime": {
+      "path": "circuit-visitors--plateside--q01--01/runtime.ogg",
+      "bytes": 61709,
+      "sha256": "bdf020a5407a4546120f92fedb4d9dedd6980d21afa4793eb7a03b714bedf817"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

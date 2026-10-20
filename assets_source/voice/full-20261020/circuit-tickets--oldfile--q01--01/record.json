@@ -1,0 +1,85 @@
+{
+  "id": "circuit-tickets--oldfile--q01--01",
+  "sceneId": "tickets",
+  "lineId": "tickets--oldFile--q01--01",
+  "lineIndex": 0,
+  "speaker": "cheng",
+  "text": "先别替它确认。",
+  "nodeId": "oldFile",
+  "start": 25,
+  "end": 32,
+  "quoteIndex": 0,
+  "legacy": {
+    "id": "v01-confirm",
+    "character": "cheng",
+    "speaker": "Dylan",
+    "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。",
+    "text": "先别替它确认。",
+    "seed": 120041,
+    "bindings": [
+      {
+        "chapter": "return-visit",
+        "node": "onward"
+      },
+      {
+        "chapter": "return-visit",
+        "node": "end"
+      }
+    ],
+    "requestSha256": "cbbf1dbbdb203f4d06472c1a09066343071e08b1d693d9808cdf2124423b61c5",
+    "duration": 1.28,
+    "generationSeconds": 7.141,
+    "loudnessInput": {
+      "input_i": "-24.65",
+      "input_tp": "-8.42",
+      "input_lra": "0.00",
+      "input_thresh": "-34.65",
+      "output_i": "-19.99",
+      "output_tp": "-3.77",
+      "output_lra": "0.00",
+      "output_thresh": "-29.99",
+      "normalization_type": "linear",
+      "target_offset": "-0.01"
+    },
+    "files": [
+      {
+        "path": "assets_source/audio/v1.2.0/v01-confirm-raw.wav",
+        "bytes": 61484,
+        "sha256": "2519a8035fa7024df3c48c63605da803bd9f892f45237710894dce85a3aaf7f9"
+      },
+      {
+        "path": "assets_source/audio/v1.2.0/v01-confirm.wav",
+        "bytes": 61518,
+        "sha256": "ad5f85cc865c670df68eaf175270d3cc4a61513b241f3046d0dfef62c100fdfd"
+      },
+      {
+        "path": "public/audio/voice/v01-confirm.mp3",
+        "bytes": 16461,
+        "sha256": "32e4a93ffbdecc05c00cf73a6d6bd0ade906d4ae89b6438e3bba3f0ba0572b76"
+      }
+    ],
+    "asr": {
+      "id": "v01-confirm",
+      "mp3Sha256": "32e4a93ffbdecc05c00cf73a6d6bd0ade906d4ae89b6438e3bba3f0ba0572b76",
+      "expected": "先别替它确认。",
+      "transcript": "先别替他确认",
+      "cer": 0.166667,
+      "polarityCountsMatch": true,
+      "status": "passed"
+    },
+    "asrModel": "Systran/faster-whisper-large-v3",
+    "evidencePath": "docs/audio/voice-asr.json",
+    "evidenceSha256": "25d0e31c3decd5262d92349d6571ec67ac58723ea00c40005ddff4d8b9a58334"
+  },
+  "replayOf": "circuit-return-visit--onward--q02--01",
+  "actorId": "cheng",
+  "voice": "Dylan",
+  "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 234774195,
+  "textSha256": "30f09f5361ddd273195f02171897fd451796e0ca60ebc481b25eae3c23793f73",
+  "medium": "spoken",
+  "requestSha256": "fd9fbd7ee7ab548306858de6d8a3e273b86f03c287b93b9d5bc852b62c269f0a",
+  "status": "replay_reference",
+  "files": {},
+  "recoveredFromRun": 39391771655
+}

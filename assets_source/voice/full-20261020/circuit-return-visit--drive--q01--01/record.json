@@ -1,0 +1,112 @@
+{
+  "id": "circuit-return-visit--drive--q01--01",
+  "sceneId": "return-visit",
+  "lineId": "return-visit--drive--q01--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "十三号搬来以后还是十三号？",
+  "nodeId": "drive",
+  "start": 31,
+  "end": 44,
+  "quoteIndex": 0,
+  "legacy": {
+    "id": "v01-ji-address",
+    "character": "ji",
+    "speaker": "Vivian",
+    "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。",
+    "text": "十三号搬来以后还是十三号？",
+    "seed": 120032,
+    "bindings": [
+      {
+        "chapter": "return-visit",
+        "node": "drive"
+      }
+    ],
+    "requestSha256": "fa509bd899156f2baeadadc23f96765aca1103fcb8462ae97dcb44823d1f3fea",
+    "duration": 2.8,
+    "generationSeconds": 15.729,
+    "loudnessInput": {
+      "input_i": "-17.47",
+      "input_tp": "-2.24",
+      "input_lra": "0.00",
+      "input_thresh": "-27.47",
+      "output_i": "-19.99",
+      "output_tp": "-4.77",
+      "output_lra": "0.00",
+      "output_thresh": "-29.99",
+      "normalization_type": "linear",
+      "target_offset": "-0.01"
+    },
+    "files": [
+      {
+        "path": "assets_source/audio/v1.2.0/v01-ji-address-raw.wav",
+        "bytes": 134444,
+        "sha256": "ef52358ace25e41fbb346c36aff492b09cfa9b0e1b5ad375e554b8b768995e28"
+      },
+      {
+        "path": "assets_source/audio/v1.2.0/v01-ji-address.wav",
+        "bytes": 134478,
+        "sha256": "dc2a213aec2073062f3be8dc2088b30bacee7fc4bb8560a277b855beadbbb9fb"
+      },
+      {
+        "path": "public/audio/voice/v01-ji-address.mp3",
+        "bytes": 34605,
+        "sha256": "bcc67305f281a4b3b2bfd5e924600a3dd9e429c3bc734d63d8a21745ed3510e2"
+      }
+    ],
+    "asr": {
+      "id": "v01-ji-address",
+      "mp3Sha256": "bcc67305f281a4b3b2bfd5e924600a3dd9e429c3bc734d63d8a21745ed3510e2",
+      "expected": "十三号搬来以后还是十三号？",
+      "transcript": "13号搬来以后还是13号",
+      "cer": 0,
+      "polarityCountsMatch": true,
+      "status": "passed"
+    },
+    "asrModel": "Systran/faster-whisper-large-v3",
+    "evidencePath": "docs/audio/voice-asr.json",
+    "evidenceSha256": "25d0e31c3decd5262d92349d6571ec67ac58723ea00c40005ddff4d8b9a58334"
+  },
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 84625610,
+  "textSha256": "797c7374b058e5358f8d1729320e7defea4668e7e321cb7124eca4394efbf8cf",
+  "medium": "spoken",
+  "requestSha256": "06362e4e6606591eedd9ce2f83e53aabd73b43e93d944c18edfdc41135314948",
+  "status": "accepted",
+  "productionMethod": "preserved_exact_legacy_bytes",
+  "duration": 2.8,
+  "actualGenerationRequest": {
+    "id": "v01-ji-address",
+    "speaker": "Vivian",
+    "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。",
+    "seed": 120032,
+    "requestSha256": "fa509bd899156f2baeadadc23f96765aca1103fcb8462ae97dcb44823d1f3fea"
+  },
+  "asr": {
+    "passed": true,
+    "transcript": "13号搬来以后还是13号",
+    "cer": 0,
+    "polarityCountsMatch": true,
+    "model": "Systran/faster-whisper-large-v3"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-return-visit--drive--q01--01/raw.wav",
+      "bytes": 134444,
+      "sha256": "ef52358ace25e41fbb346c36aff492b09cfa9b0e1b5ad375e554b8b768995e28"
+    },
+    "master": {
+      "path": "circuit-return-visit--drive--q01--01/master.wav",
+      "bytes": 134478,
+      "sha256": "dc2a213aec2073062f3be8dc2088b30bacee7fc4bb8560a277b855beadbbb9fb"
+    },
+    "runtime": {
+      "path": "circuit-return-visit--drive--q01--01/runtime.mp3",
+      "bytes": 34605,
+      "sha256": "bcc67305f281a4b3b2bfd5e924600a3dd9e429c3bc734d63d8a21745ed3510e2"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

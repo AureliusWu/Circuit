@@ -1,0 +1,112 @@
+{
+  "id": "circuit-seventh-night--recordreceipt--q01--01",
+  "sceneId": "seventh-night",
+  "lineId": "seventh-night--recordReceipt--q01--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "沈师傅回家，许师傅没上车。这两行分开。",
+  "nodeId": "recordReceipt",
+  "start": 24,
+  "end": 43,
+  "quoteIndex": 0,
+  "legacy": {
+    "id": "q07-ji",
+    "character": "ji",
+    "speaker": "Vivian",
+    "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。",
+    "text": "沈师傅回家，许师傅没上车。这两行分开。",
+    "seed": 120018,
+    "bindings": [
+      {
+        "chapter": "seventh-night",
+        "node": "recordReceipt"
+      }
+    ],
+    "requestSha256": "1b30a1cb98ed2d791968df1bc67eb3fd768cd084e9eb4e79780cd1c47ca8a88f",
+    "duration": 4.24,
+    "generationSeconds": 23.107,
+    "loudnessInput": {
+      "input_i": "-18.99",
+      "input_tp": "-3.71",
+      "input_lra": "0.40",
+      "input_thresh": "-29.31",
+      "output_i": "-19.71",
+      "output_tp": "-4.34",
+      "output_lra": "0.40",
+      "output_thresh": "-30.05",
+      "normalization_type": "dynamic",
+      "target_offset": "-0.29"
+    },
+    "files": [
+      {
+        "path": "assets_source/audio/v1.2.0/q07-ji-raw.wav",
+        "bytes": 203564,
+        "sha256": "49c961815d33aa7828c920c6ed09a652cc00aba62bbd74709e6534fd03eae1dc"
+      },
+      {
+        "path": "assets_source/audio/v1.2.0/q07-ji.wav",
+        "bytes": 203598,
+        "sha256": "cd520bc25a6c465dd40702879d27d13d6a4b290bf338010c9e169b5e504f723e"
+      },
+      {
+        "path": "public/audio/voice/q07-ji.mp3",
+        "bytes": 51885,
+        "sha256": "743ee3b330de9bb07248669f7f6a991c0321e8541fe1286c3be3312c067d0239"
+      }
+    ],
+    "asr": {
+      "id": "q07-ji",
+      "mp3Sha256": "743ee3b330de9bb07248669f7f6a991c0321e8541fe1286c3be3312c067d0239",
+      "expected": "沈师傅回家，许师傅没上车。这两行分开。",
+      "transcript": "沈师傅回家,许师傅没上车,这两行分开。",
+      "cer": 0,
+      "polarityCountsMatch": true,
+      "status": "passed"
+    },
+    "asrModel": "Systran/faster-whisper-large-v3",
+    "evidencePath": "docs/audio/voice-asr.json",
+    "evidenceSha256": "25d0e31c3decd5262d92349d6571ec67ac58723ea00c40005ddff4d8b9a58334"
+  },
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 138111942,
+  "textSha256": "5f6f398bdb217977f158d86b5b73b5df802057d98395f896acd3ba409cd3282d",
+  "medium": "spoken",
+  "requestSha256": "fe9a1c7fcc1cd6c0160c81c53b1f08452d5c663100ac8a9cc6307a32621d89a6",
+  "status": "accepted",
+  "productionMethod": "preserved_exact_legacy_bytes",
+  "duration": 4.24,
+  "actualGenerationRequest": {
+    "id": "q07-ji",
+    "speaker": "Vivian",
+    "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。",
+    "seed": 120018,
+    "requestSha256": "1b30a1cb98ed2d791968df1bc67eb3fd768cd084e9eb4e79780cd1c47ca8a88f"
+  },
+  "asr": {
+    "passed": true,
+    "transcript": "沈师傅回家,许师傅没上车,这两行分开。",
+    "cer": 0,
+    "polarityCountsMatch": true,
+    "model": "Systran/faster-whisper-large-v3"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-seventh-night--recordreceipt--q01--01/raw.wav",
+      "bytes": 203564,
+      "sha256": "49c961815d33aa7828c920c6ed09a652cc00aba62bbd74709e6534fd03eae1dc"
+    },
+    "master": {
+      "path": "circuit-seventh-night--recordreceipt--q01--01/master.wav",
+      "bytes": 203598,
+      "sha256": "cd520bc25a6c465dd40702879d27d13d6a4b290bf338010c9e169b5e504f723e"
+    },
+    "runtime": {
+      "path": "circuit-seventh-night--recordreceipt--q01--01/runtime.mp3",
+      "bytes": 51885,
+      "sha256": "743ee3b330de9bb07248669f7f6a991c0321e8541fe1286c3be3312c067d0239"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

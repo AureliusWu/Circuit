@@ -1,0 +1,59 @@
+{
+  "id": "circuit-backfeed--recordisolation--q01--01",
+  "sceneId": "backfeed",
+  "lineId": "backfeed--recordIsolation--q01--01",
+  "lineIndex": 0,
+  "speaker": "chen",
+  "text": "这屋子还不能拆？",
+  "nodeId": "recordIsolation",
+  "start": 44,
+  "end": 52,
+  "quoteIndex": 0,
+  "actorId": "chen",
+  "voice": "Uncle_Fu",
+  "instruct": "六十岁男性，普通话，语速慢，声音低哑，像看门的老人轻声说话，口语平实。 只朗读给定台词，不添加词语或音效。",
+  "seed": 924030565,
+  "textSha256": "0c04261577e65f0c932d03c3347a83bf70e10d9c4ff4cc48229b25f4b7924b4c",
+  "medium": "spoken",
+  "requestSha256": "c17e3de4f9719c692561176db505ce3878ec5a0c7371d1bc9d14efbcf0d0a896",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "这屋子还不能拆",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 2.16,
+  "wallSeconds": 20.338,
+  "loudness": {
+    "input_i": "-26.68",
+    "input_tp": "-6.66",
+    "input_lra": "0.00",
+    "input_thresh": "-36.68",
+    "output_i": "-22.01",
+    "output_tp": "-2.00",
+    "output_lra": "0.00",
+    "output_thresh": "-32.01",
+    "normalization_type": "linear",
+    "target_offset": "2.01"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-backfeed--recordisolation--q01--01/raw.wav",
+      "bytes": 207440,
+      "sha256": "c5464ea7e39d5dc42b33bb718a094f68b5b623c7eadb55d44b387e3f2e25b691"
+    },
+    "master": {
+      "path": "circuit-backfeed--recordisolation--q01--01/master.wav",
+      "bytes": 103758,
+      "sha256": "c03e25e45ba812c9b8ba753a04b3c058733d4fe79ddbc0ea78bb6fa3b8d6a18d"
+    },
+    "runtime": {
+      "path": "circuit-backfeed--recordisolation--q01--01/runtime.ogg",
+      "bytes": 19445,
+      "sha256": "55a8c1011fb363b3c0f9783dc9afc88f4f080f39294bbd4fb3303d2bfd0f2975"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

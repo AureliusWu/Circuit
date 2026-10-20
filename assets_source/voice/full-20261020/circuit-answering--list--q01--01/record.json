@@ -1,0 +1,59 @@
+{
+  "id": "circuit-answering--list--q01--01",
+  "sceneId": "answering",
+  "lineId": "answering--list--q01--01",
+  "lineIndex": 0,
+  "speaker": "luo",
+  "text": "这两个人我认识，都还在小区住。",
+  "nodeId": "list",
+  "start": 110,
+  "end": 125,
+  "quoteIndex": 0,
+  "actorId": "luo",
+  "voice": "Vivian",
+  "instruct": "二十九岁女性，普通话，声音偏低，夜班值班员谨慎地问话，平静自然，略有迟疑，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 977011470,
+  "textSha256": "676e90cde665d0b895ac1ad895fda99c8404b0b08b6ff7edeaae242fd76395cb",
+  "medium": "spoken",
+  "requestSha256": "c1b746eb1d71d5d34a458463c0c4b1631553476588ef0632fe1608e0752be8b2",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "这两个人我认识都还在小居住",
+    "cer": 0.076923,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 2.8,
+  "wallSeconds": 120.168,
+  "loudness": {
+    "input_i": "-20.04",
+    "input_tp": "-3.09",
+    "input_lra": "0.00",
+    "input_thresh": "-30.43",
+    "output_i": "-20.00",
+    "output_tp": "-3.05",
+    "output_lra": "0.00",
+    "output_thresh": "-30.39",
+    "normalization_type": "linear",
+    "target_offset": "0.00"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-answering--list--q01--01/raw.wav",
+      "bytes": 268880,
+      "sha256": "88a30eab7bbb4880a38dead83446043b7370486ed4ae450b92eabcad01c49558"
+    },
+    "master": {
+      "path": "circuit-answering--list--q01--01/master.wav",
+      "bytes": 134478,
+      "sha256": "706ef56325708ea2d24e7b66f38ec342e0d8270f3951b23402259d1eea6cb835"
+    },
+    "runtime": {
+      "path": "circuit-answering--list--q01--01/runtime.ogg",
+      "bytes": 22426,
+      "sha256": "140b7bbc5e024c99e86eba815e5ccd2ee7ed84be5ed69b9a8406ae7084e385d4"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

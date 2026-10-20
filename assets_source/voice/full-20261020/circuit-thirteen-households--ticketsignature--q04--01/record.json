@@ -1,0 +1,59 @@
+{
+  "id": "circuit-thirteen-households--ticketsignature--q04--01",
+  "sceneId": "thirteen-households",
+  "lineId": "thirteen-households--ticketSignature--q04--01",
+  "lineIndex": 0,
+  "speaker": "cheng",
+  "text": "都写。",
+  "nodeId": "ticketSignature",
+  "start": 84,
+  "end": 87,
+  "quoteIndex": 3,
+  "actorId": "cheng",
+  "voice": "Dylan",
+  "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1341089392,
+  "textSha256": "61c690ec8d0d1026ca404e2d72912ddca8270e580c7cf150015ca2e55f037599",
+  "medium": "spoken",
+  "requestSha256": "5e8b1fc24f4cbf25203c8616eebc3f94c32836bd1ad17518a3c5c0fff46bf6ff",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "都写",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 0.88,
+  "wallSeconds": 39.238,
+  "loudness": {
+    "input_i": "-22.38",
+    "input_tp": "-9.47",
+    "input_lra": "0.00",
+    "input_thresh": "-32.38",
+    "output_i": "-19.98",
+    "output_tp": "-7.09",
+    "output_lra": "0.00",
+    "output_thresh": "-29.98",
+    "normalization_type": "linear",
+    "target_offset": "-0.02"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-thirteen-households--ticketsignature--q04--01/raw.wav",
+      "bytes": 84560,
+      "sha256": "3c609249521f7bdb88d539075cc31eb313cfa74ba7ee12c4f3cfc2144f3e5e8f"
+    },
+    "master": {
+      "path": "circuit-thirteen-households--ticketsignature--q04--01/master.wav",
+      "bytes": 42318,
+      "sha256": "5ddf8f619bbc8003e88848bc4efcd854b6c17c4e2e1e92f87bd8513e7a56f3a7"
+    },
+    "runtime": {
+      "path": "circuit-thirteen-households--ticketsignature--q04--01/runtime.ogg",
+      "bytes": 9792,
+      "sha256": "1dc292d6ae5f67fa50651241b003f77b049a39a32f7c46c023cf18222f69f8d9"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

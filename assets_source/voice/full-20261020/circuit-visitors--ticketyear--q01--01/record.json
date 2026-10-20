@@ -1,0 +1,59 @@
+{
+  "id": "circuit-visitors--ticketyear--q01--01",
+  "sceneId": "visitors",
+  "lineId": "visitors--ticketYear--q01--01",
+  "lineIndex": 0,
+  "speaker": "luo",
+  "text": "我今晚是接收人吗？",
+  "nodeId": "ticketYear",
+  "start": 53,
+  "end": 62,
+  "quoteIndex": 0,
+  "actorId": "luo",
+  "voice": "Vivian",
+  "instruct": "二十九岁女性，普通话，声音偏低，夜班值班员谨慎地问话，平静自然，略有迟疑，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1044419278,
+  "textSha256": "d650b7b9b1b6147038164c31a829bc80d5bef16ffbf9111f1a63ff1d285048aa",
+  "medium": "spoken",
+  "requestSha256": "5b0db2c5cab0092d39d3db4eec230edf439c64b52a6067bc541404c28c04c43c",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "我今晚是接受人嗎",
+    "cer": 0.125,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 1.92,
+  "wallSeconds": 11.949,
+  "loudness": {
+    "input_i": "-19.23",
+    "input_tp": "-2.70",
+    "input_lra": "0.00",
+    "input_thresh": "-29.23",
+    "output_i": "-20.01",
+    "output_tp": "-3.47",
+    "output_lra": "0.00",
+    "output_thresh": "-30.01",
+    "normalization_type": "linear",
+    "target_offset": "0.01"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-visitors--ticketyear--q01--01/raw.wav",
+      "bytes": 184400,
+      "sha256": "11a54ed1544e34caef9dbfa1c2549fb7e8a51666fbaae409ae0655b01bf34bb2"
+    },
+    "master": {
+      "path": "circuit-visitors--ticketyear--q01--01/master.wav",
+      "bytes": 92238,
+      "sha256": "478d284ad683f83c425b0c35d74c11a507e06844cbbcd85927341b1747ef7d65"
+    },
+    "runtime": {
+      "path": "circuit-visitors--ticketyear--q01--01/runtime.ogg",
+      "bytes": 17582,
+      "sha256": "f930eff6b3a3400ce5b8970fac9a11b927485d23028d9081adbc5b39938b58a7"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

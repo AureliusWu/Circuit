@@ -1,0 +1,59 @@
+{
+  "id": "circuit-neutral--approach--q02--01",
+  "sceneId": "neutral",
+  "lineId": "neutral--approach--q02--01",
+  "lineIndex": 0,
+  "speaker": "resident-cabinet",
+  "text": "我说都结案了，就这么一下。",
+  "nodeId": "approach",
+  "start": 101,
+  "end": 114,
+  "quoteIndex": 1,
+  "actorId": "resident-cabinet",
+  "voice": "Uncle_Fu",
+  "instruct": "年长男性住户，普通话，平实缓慢地交谈，字句清楚，自然克制，不夸张。",
+  "seed": 76469550,
+  "textSha256": "275d369f0517260e457448cc80676ac36d9ad4be746046a1759597473556661f",
+  "medium": "spoken",
+  "requestSha256": "82b25b4cb17ecebccdb4ff5ce881209867ab1297a78f6ebb176b589c8922fbca",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "我说都结案了就这么一下",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 3.2,
+  "wallSeconds": 26.768,
+  "loudness": {
+    "input_i": "-18.55",
+    "input_tp": "-3.94",
+    "input_lra": "0.70",
+    "input_thresh": "-29.00",
+    "output_i": "-19.33",
+    "output_tp": "-4.62",
+    "output_lra": "0.00",
+    "output_thresh": "-29.78",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.67"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-neutral--approach--q02--01/raw.wav",
+      "bytes": 307280,
+      "sha256": "11cd50f68b2a248eb576cc948d6d286fc1696d021b52868b1c37f5d610eefdaf"
+    },
+    "master": {
+      "path": "circuit-neutral--approach--q02--01/master.wav",
+      "bytes": 153678,
+      "sha256": "0c0313ed34d20e9f1aa4ee93ce0dece7fabddcc68a1c2bf537ab9e8f949892fa"
+    },
+    "runtime": {
+      "path": "circuit-neutral--approach--q02--01/runtime.ogg",
+      "bytes": 26522,
+      "sha256": "85e8b7bc0591f8b6615dd083ac9b968a790dc5f061b4aa251285dfd2d71526ee"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

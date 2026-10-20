@@ -1,0 +1,59 @@
+{
+  "id": "circuit-closure--zhoureturn--q01--01",
+  "sceneId": "closure",
+  "lineId": "closure--zhouReturn--q01--01",
+  "lineIndex": 0,
+  "speaker": "zhou",
+  "text": "习惯了。",
+  "nodeId": "zhouReturn",
+  "start": 61,
+  "end": 65,
+  "quoteIndex": 0,
+  "actorId": "zhou",
+  "voice": "Uncle_Fu",
+  "instruct": "五十岁男性，普通话，声音低沉略沙哑，克制缓慢，像夜班老工人，语气自然，不要表演悲伤。 语速稍慢，逐字说清楚，季宁读jì níng。句尾完整，不要吞字。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1047225849,
+  "textSha256": "b1f33052a0efaa3e4092a4d41f957213df5fc4a3fce1a5339d1b2360b5dca25a",
+  "medium": "spoken",
+  "requestSha256": "d9b8f2b884cef60178d9c7d0bab4bb0249ac80db60018fa99b98af2e5a6460de",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "习惯了",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 1.28,
+  "wallSeconds": 142.429,
+  "loudness": {
+    "input_i": "-24.23",
+    "input_tp": "-5.89",
+    "input_lra": "0.00",
+    "input_thresh": "-34.23",
+    "output_i": "-20.37",
+    "output_tp": "-2.00",
+    "output_lra": "0.00",
+    "output_thresh": "-30.37",
+    "normalization_type": "linear",
+    "target_offset": "0.37"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-closure--zhoureturn--q01--01/raw.wav",
+      "bytes": 122960,
+      "sha256": "83499e7dc39b95ba799fe45391d8a604e37d3294902762926a26327f9b6ae460"
+    },
+    "master": {
+      "path": "circuit-closure--zhoureturn--q01--01/master.wav",
+      "bytes": 61518,
+      "sha256": "bdcf1f170bbb350c6ffb00997684b28ec1ea304833860b830a444a45c7a2f3d6"
+    },
+    "runtime": {
+      "path": "circuit-closure--zhoureturn--q01--01/runtime.ogg",
+      "bytes": 12598,
+      "sha256": "f40b410b95b230f69cdf23b1064450dd4511897e41449793035bd032ae1473ef"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

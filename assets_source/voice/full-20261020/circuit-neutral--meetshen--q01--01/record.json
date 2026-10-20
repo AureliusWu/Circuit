@@ -1,0 +1,59 @@
+{
+  "id": "circuit-neutral--meetshen--q01--01",
+  "sceneId": "neutral",
+  "lineId": "neutral--meetShen--q01--01",
+  "lineIndex": 0,
+  "speaker": "shen",
+  "text": "他们都来过许师傅的追悼会。",
+  "nodeId": "meetShen",
+  "start": 1,
+  "end": 14,
+  "quoteIndex": 0,
+  "actorId": "shen",
+  "voice": "Serena",
+  "instruct": "二十八岁女性，普通话，声音轻而疲惫，口语自然，像一晚上没睡好的人，不要哭腔。 只朗读给定台词，不添加词语或音效。",
+  "seed": 335763844,
+  "textSha256": "adacf881a94ff230d0492af7a4c5de3d2f87cf70aaf6c6e162ffa33b77a906c8",
+  "medium": "spoken",
+  "requestSha256": "fb762bb7fd143c8c232376ac36537d53be03e979fe8654fa95f7cd66ce713863",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "他们都来过许师傅的追悼会",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 2.08,
+  "wallSeconds": 10.309,
+  "loudness": {
+    "input_i": "-23.49",
+    "input_tp": "-8.40",
+    "input_lra": "0.00",
+    "input_thresh": "-33.49",
+    "output_i": "-19.99",
+    "output_tp": "-4.90",
+    "output_lra": "0.00",
+    "output_thresh": "-29.99",
+    "normalization_type": "linear",
+    "target_offset": "-0.01"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-neutral--meetshen--q01--01/raw.wav",
+      "bytes": 199760,
+      "sha256": "79143974400b99158c6c9b0e12ccff80c5a089536ba98946b7f3a613ff782a47"
+    },
+    "master": {
+      "path": "circuit-neutral--meetshen--q01--01/master.wav",
+      "bytes": 99918,
+      "sha256": "39c44e073ff99ebc215ebf56b18f6902a739add198d19d88d9be618a326ab678"
+    },
+    "runtime": {
+      "path": "circuit-neutral--meetshen--q01--01/runtime.ogg",
+      "bytes": 19075,
+      "sha256": "f40d5d742dca3090356d60ae4d35dd8352fb144c39d3906b2ee3d72d6761fc24"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

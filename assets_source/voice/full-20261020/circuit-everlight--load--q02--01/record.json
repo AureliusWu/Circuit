@@ -1,0 +1,59 @@
+{
+  "id": "circuit-everlight--load--q02--01",
+  "sceneId": "everlight",
+  "lineId": "everlight--load--q02--01",
+  "lineIndex": 0,
+  "speaker": "resident-young",
+  "text": "想不起来。",
+  "nodeId": "load",
+  "start": 78,
+  "end": 83,
+  "quoteIndex": 1,
+  "actorId": "resident-young",
+  "voice": "Ryan",
+  "instruct": "年轻成年男性住户，普通话，略显困倦的自然交谈，清楚平实，别朗诵。",
+  "seed": 221547043,
+  "textSha256": "a998cb2987a9e97e91ae8f5c09a63acd8f372c12f32d638aaab99982c0bf88c6",
+  "medium": "spoken",
+  "requestSha256": "f96ec5890475a5a7d475beadbec8f68c8fdb70b21e3299526ab891f1660ecbdd",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "想不起來",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 2.4,
+  "wallSeconds": 11.388,
+  "loudness": {
+    "input_i": "-26.85",
+    "input_tp": "-12.95",
+    "input_lra": "0.00",
+    "input_thresh": "-36.85",
+    "output_i": "-20.00",
+    "output_tp": "-6.10",
+    "output_lra": "0.00",
+    "output_thresh": "-30.00",
+    "normalization_type": "linear",
+    "target_offset": "0.00"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-everlight--load--q02--01/raw.wav",
+      "bytes": 230480,
+      "sha256": "047d981e05d2b36b904000ca32fa79bfd269f89a5d9595b29cd3b127c7fed9fd"
+    },
+    "master": {
+      "path": "circuit-everlight--load--q02--01/master.wav",
+      "bytes": 115278,
+      "sha256": "4223cc9cd413a66c24b12cb578f27298ce86e98a69d6db575549b9bdaed95d08"
+    },
+    "runtime": {
+      "path": "circuit-everlight--load--q02--01/runtime.ogg",
+      "bytes": 20127,
+      "sha256": "164fe675d3cd1758b6949b244462abb8d074fffda4e89f1b75d19adf66e4f5d4"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

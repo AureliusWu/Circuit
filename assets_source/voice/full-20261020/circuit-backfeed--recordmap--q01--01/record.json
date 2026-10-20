@@ -1,0 +1,59 @@
+{
+  "id": "circuit-backfeed--recordmap--q01--01",
+  "sceneId": "backfeed",
+  "lineId": "backfeed--recordMap--q01--01",
+  "lineIndex": 0,
+  "speaker": "chen",
+  "text": "搬走那天带过，后来又送回来，说新房子不许挂这个。",
+  "nodeId": "recordMap",
+  "start": 53,
+  "end": 77,
+  "quoteIndex": 0,
+  "actorId": "chen",
+  "voice": "Uncle_Fu",
+  "instruct": "六十岁男性，普通话，语速慢，声音低哑，像看门的老人轻声说话，口语平实。 只朗读给定台词，不添加词语或音效。",
+  "seed": 51103281,
+  "textSha256": "3cef5c495f403ad9f7b1dc7ab7a0da04c59d9a897279344e5a417e245304285b",
+  "medium": "spoken",
+  "requestSha256": "e3dcf0a6ae16a83b029eb403700c86138387aad5797f9328fe078458a1feae77",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "搬走那天带过,后来又送回来,说新房子不许挂这个。",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 7.6,
+  "wallSeconds": 59.16,
+  "loudness": {
+    "input_i": "-23.97",
+    "input_tp": "-4.68",
+    "input_lra": "3.90",
+    "input_thresh": "-34.50",
+    "output_i": "-20.65",
+    "output_tp": "-2.00",
+    "output_lra": "3.80",
+    "output_thresh": "-31.21",
+    "normalization_type": "dynamic",
+    "target_offset": "0.65"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-backfeed--recordmap--q01--01/raw.wav",
+      "bytes": 729680,
+      "sha256": "b95cc3ae19d6c2751b78f25887aff9b42e52cc7a90a469ad7be477692af8e8d0"
+    },
+    "master": {
+      "path": "circuit-backfeed--recordmap--q01--01/master.wav",
+      "bytes": 364878,
+      "sha256": "de2fa0e7a305e969a3a50f1a6fa2765a66a16df143750bfb24e24843e16c50a2"
+    },
+    "runtime": {
+      "path": "circuit-backfeed--recordmap--q01--01/runtime.ogg",
+      "bytes": 57915,
+      "sha256": "cd32fab5f2576ab0a83195c64a764e8e5867528fe72886d5b610da1cff287c53"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

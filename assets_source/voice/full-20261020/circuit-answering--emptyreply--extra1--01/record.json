@@ -1,0 +1,23 @@
+{
+  "id": "circuit-answering--emptyreply--extra1--01",
+  "sceneId": "answering",
+  "lineId": "answering--emptyReply--extra1--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "季宁，收到。",
+  "nodeId": "emptyReply",
+  "start": 5,
+  "end": 11,
+  "medium": "recorded",
+  "recordingKey": "received",
+  "replayOf": "circuit-return-visit--echo--extra2--01",
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 350522621,
+  "textSha256": "075c6dad5dac3f3992e2983b56416bfef075af945b30ad828f660bc04898c70b",
+  "requestSha256": "0bada6558bbc352f4a6ef77acae6a01a6463905738611b57fcd99456dab61da0",
+  "status": "replay_reference",
+  "files": {},
+  "recoveredFromRun": 39391771655
+}

@@ -1,0 +1,59 @@
+{
+  "id": "circuit-seventh-night--timertheory--q02--01",
+  "sceneId": "seventh-night",
+  "lineId": "seventh-night--timerTheory--q02--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "今晚灯灭没灭？",
+  "nodeId": "timerTheory",
+  "start": 76,
+  "end": 83,
+  "quoteIndex": 1,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 597198258,
+  "textSha256": "b4c18602e96b65c8dae07df6282379ebb3a98173ff48c4a303a2e99eac0c7441",
+  "medium": "spoken",
+  "requestSha256": "a859cf58d82fea9209ec38c3c83298fcc6aa4010d97ecad452d531b718e56731",
+  "attempt": 1,
+  "status": "accepted",
+  "asr": {
+    "transcript": "今晚燈滅沒滅",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 1.52,
+  "wallSeconds": 58.649,
+  "loudness": {
+    "input_i": "-15.19",
+    "input_tp": "-3.35",
+    "input_lra": "0.00",
+    "input_thresh": "-25.19",
+    "output_i": "-19.99",
+    "output_tp": "-8.16",
+    "output_lra": "0.00",
+    "output_thresh": "-29.99",
+    "normalization_type": "linear",
+    "target_offset": "-0.01"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-seventh-night--timertheory--q02--01/raw.wav",
+      "bytes": 146000,
+      "sha256": "5d8509b92ca75853bd7325b3ac1fba653763fb002c073ba1be5f4e8ad26cdea2"
+    },
+    "master": {
+      "path": "circuit-seventh-night--timertheory--q02--01/master.wav",
+      "bytes": 73038,
+      "sha256": "9102dfbddf58f7458e5b82583bd61bacac47f602667039d2cc55ed73ea66d354"
+    },
+    "runtime": {
+      "path": "circuit-seventh-night--timertheory--q02--01/runtime.ogg",
+      "bytes": 13928,
+      "sha256": "0f16929560e3d7c1678e120242f284201912f708606f2b17e7b1eb8dccb3903d"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

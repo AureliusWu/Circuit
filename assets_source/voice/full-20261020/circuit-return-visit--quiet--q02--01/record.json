@@ -1,0 +1,59 @@
+{
+  "id": "circuit-return-visit--quiet--q02--01",
+  "sceneId": "return-visit",
+  "lineId": "return-visit--quiet--q02--01",
+  "lineIndex": 0,
+  "speaker": "cheng",
+  "text": "这份先留，来源还得查。",
+  "nodeId": "quiet",
+  "start": 91,
+  "end": 102,
+  "quoteIndex": 1,
+  "actorId": "cheng",
+  "voice": "Dylan",
+  "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 892466985,
+  "textSha256": "096f56247c62c038b06ad225656d7d6f672f225a159dec17d9df62e33b7bb657",
+  "medium": "spoken",
+  "requestSha256": "b93a3c8739b4757b973d4f71b552f31e3229a6f3862a1673dc666a3d9a17f017",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "这份先留来院还得查",
+    "cer": 0.111111,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 2.0,
+  "wallSeconds": 87.779,
+  "loudness": {
+    "input_i": "-23.24",
+    "input_tp": "-7.49",
+    "input_lra": "0.00",
+    "input_thresh": "-33.24",
+    "output_i": "-19.99",
+    "output_tp": "-4.25",
+    "output_lra": "0.00",
+    "output_thresh": "-29.99",
+    "normalization_type": "linear",
+    "target_offset": "-0.01"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-return-visit--quiet--q02--01/raw.wav",
+      "bytes": 192080,
+      "sha256": "02b572435236f82e7efa37818b297193cace03c32ebcda7b964093ca02075f42"
+    },
+    "master": {
+      "path": "circuit-return-visit--quiet--q02--01/master.wav",
+      "bytes": 96078,
+      "sha256": "245c388779fa07ab2a0b865ff5c6edaf233a1971849c1c149823609b62eeae05"
+    },
+    "runtime": {
+      "path": "circuit-return-visit--quiet--q02--01/runtime.ogg",
+      "bytes": 18471,
+      "sha256": "2d1811636219af5d8949e9d367820e7b748b6c94f3baa4af97993ec167ffb39f"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

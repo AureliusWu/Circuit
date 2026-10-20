@@ -1,0 +1,112 @@
+{
+  "id": "circuit-return-visit--approved--q01--01",
+  "sceneId": "return-visit",
+  "lineId": "return-visit--approved--q01--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "季宁，现场记录已交。",
+  "nodeId": "approved",
+  "start": 82,
+  "end": 92,
+  "quoteIndex": 0,
+  "legacy": {
+    "id": "v01-record",
+    "character": "ji",
+    "speaker": "Vivian",
+    "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。",
+    "text": "季宁，现场记录已交。",
+    "seed": 120039,
+    "bindings": [
+      {
+        "chapter": "return-visit",
+        "node": "approved"
+      }
+    ],
+    "requestSha256": "cbb3039f1ad3364f11de904aa965285f287470a997bd2001c826515cb0de7522",
+    "duration": 2.48,
+    "generationSeconds": 13.85,
+    "loudnessInput": {
+      "input_i": "-19.41",
+      "input_tp": "-2.17",
+      "input_lra": "0.00",
+      "input_thresh": "-29.61",
+      "output_i": "-20.01",
+      "output_tp": "-2.76",
+      "output_lra": "0.00",
+      "output_thresh": "-30.21",
+      "normalization_type": "linear",
+      "target_offset": "0.01"
+    },
+    "files": [
+      {
+        "path": "assets_source/audio/v1.2.0/v01-record-raw.wav",
+        "bytes": 119084,
+        "sha256": "21f850279cd7f3ed28b25054f45298bec2dadbbd770b4f1c9ca0ba8fcd6866b3"
+      },
+      {
+        "path": "assets_source/audio/v1.2.0/v01-record.wav",
+        "bytes": 119118,
+        "sha256": "4fb3e42a1e2dd58f19919d031ce6a306b93dbef7b7c7d5f43c834d6b214d7d0c"
+      },
+      {
+        "path": "public/audio/voice/v01-record.mp3",
+        "bytes": 30861,
+        "sha256": "8a84eeb8a0c258c5c2efda850520352f6e96ab962f736793033931bb3cb0b000"
+      }
+    ],
+    "asr": {
+      "id": "v01-record",
+      "mp3Sha256": "8a84eeb8a0c258c5c2efda850520352f6e96ab962f736793033931bb3cb0b000",
+      "expected": "季宁，现场记录已交。",
+      "transcript": "纪宁,现场记录已交",
+      "cer": 0.125,
+      "polarityCountsMatch": true,
+      "status": "passed"
+    },
+    "asrModel": "Systran/faster-whisper-large-v3",
+    "evidencePath": "docs/audio/voice-asr.json",
+    "evidenceSha256": "25d0e31c3decd5262d92349d6571ec67ac58723ea00c40005ddff4d8b9a58334"
+  },
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 569080346,
+  "textSha256": "df1ceef6c1f7090de7e73675b06ccdb36da387e52ff1da2c86bbdbf13491e0ee",
+  "medium": "spoken",
+  "requestSha256": "09845376a5fb408dfc5c4ff88f0fb3313126b37d92b2ac311653445d605584c7",
+  "status": "accepted",
+  "productionMethod": "preserved_exact_legacy_bytes",
+  "duration": 2.48,
+  "actualGenerationRequest": {
+    "id": "v01-record",
+    "speaker": "Vivian",
+    "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。",
+    "seed": 120039,
+    "requestSha256": "cbb3039f1ad3364f11de904aa965285f287470a997bd2001c826515cb0de7522"
+  },
+  "asr": {
+    "passed": true,
+    "transcript": "纪宁,现场记录已交",
+    "cer": 0.125,
+    "polarityCountsMatch": true,
+    "model": "Systran/faster-whisper-large-v3"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-return-visit--approved--q01--01/raw.wav",
+      "bytes": 119084,
+      "sha256": "21f850279cd7f3ed28b25054f45298bec2dadbbd770b4f1c9ca0ba8fcd6866b3"
+    },
+    "master": {
+      "path": "circuit-return-visit--approved--q01--01/master.wav",
+      "bytes": 119118,
+      "sha256": "4fb3e42a1e2dd58f19919d031ce6a306b93dbef7b7c7d5f43c834d6b214d7d0c"
+    },
+    "runtime": {
+      "path": "circuit-return-visit--approved--q01--01/runtime.mp3",
+      "bytes": 30861,
+      "sha256": "8a84eeb8a0c258c5c2efda850520352f6e96ab962f736793033931bb3cb0b000"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

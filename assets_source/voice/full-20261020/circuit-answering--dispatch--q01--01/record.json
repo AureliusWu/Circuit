@@ -1,0 +1,59 @@
+{
+  "id": "circuit-answering--dispatch--q01--01",
+  "sceneId": "answering",
+  "lineId": "answering--dispatch--q01--01",
+  "lineIndex": 0,
+  "speaker": "lin",
+  "text": "正式单已经结了，这次是物业请求协助核录音。电网侧不重开停电任务。",
+  "nodeId": "dispatch",
+  "start": 35,
+  "end": 67,
+  "quoteIndex": 0,
+  "actorId": "lin",
+  "voice": "Serena",
+  "instruct": "成年女性，普通话，声音干脆平稳，值班调度员在电台里说话，清楚利落，不要播音腔。 调度通话，语速稍慢，逐句吐字清楚。槐荫巷读huái yīn xiàng，在线读zài xiàn。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1983632632,
+  "textSha256": "0846dbd9c54c87aa61445737331ab9842fa1c71037e878b4947ed5ce40a80fdf",
+  "medium": "spoken",
+  "requestSha256": "30736ffb64daca1dc842cb37d29c188ff36821f9e3675b482d1355b833ad1921",
+  "attempt": 1,
+  "status": "accepted",
+  "asr": {
+    "transcript": "正式单已经结了这次是物业请求协助和录音电网侧不重开停电任务",
+    "cer": 0.034483,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 5.84,
+  "wallSeconds": 273.226,
+  "loudness": {
+    "input_i": "-27.82",
+    "input_tp": "-11.51",
+    "input_lra": "1.10",
+    "input_thresh": "-37.93",
+    "output_i": "-19.90",
+    "output_tp": "-3.54",
+    "output_lra": "1.30",
+    "output_thresh": "-29.98",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.10"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-answering--dispatch--q01--01/raw.wav",
+      "bytes": 560720,
+      "sha256": "553d33bc40e9066a5ae77c129821b5ff6704f9b14e0b25a1d9ca474c7189c128"
+    },
+    "master": {
+      "path": "circuit-answering--dispatch--q01--01/master.wav",
+      "bytes": 280398,
+      "sha256": "22e8950f79fa1fc5c5a2497b9f21e7715cdda1d964c3d1639f4cdf8ed240fa3a"
+    },
+    "runtime": {
+      "path": "circuit-answering--dispatch--q01--01/runtime.ogg",
+      "bytes": 45968,
+      "sha256": "4505f0b1de758f67b3af74bea7e60873ab1cb58e3c5467ba6adde7cb404b55ef"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

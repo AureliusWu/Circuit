@@ -1,0 +1,59 @@
+{
+  "id": "circuit-thirteen-households--ashseal--q01--01",
+  "sceneId": "thirteen-households",
+  "lineId": "thirteen-households--ashSeal--q01--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "有人从外面塞的。",
+  "nodeId": "ashSeal",
+  "start": 44,
+  "end": 52,
+  "quoteIndex": 0,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1061915066,
+  "textSha256": "aa0cf8a4f87c610b55deb8934b1b541b44027c6cb833826ba2809e75adc7eb38",
+  "medium": "spoken",
+  "requestSha256": "eebf1d0e5784507c1143d0e0eac8d4fb466464d85980a144262babe4226b7470",
+  "attempt": 1,
+  "status": "accepted",
+  "asr": {
+    "transcript": "有人从外面塞的",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 1.52,
+  "wallSeconds": 16.138,
+  "loudness": {
+    "input_i": "-18.28",
+    "input_tp": "-3.26",
+    "input_lra": "0.00",
+    "input_thresh": "-28.28",
+    "output_i": "-19.98",
+    "output_tp": "-4.98",
+    "output_lra": "0.00",
+    "output_thresh": "-29.98",
+    "normalization_type": "linear",
+    "target_offset": "-0.02"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-thirteen-households--ashseal--q01--01/raw.wav",
+      "bytes": 146000,
+      "sha256": "bda9ff4382355796bf77068bf1c1d850d6ccd340420707159ac03318dfd03548"
+    },
+    "master": {
+      "path": "circuit-thirteen-households--ashseal--q01--01/master.wav",
+      "bytes": 73038,
+      "sha256": "8acebf29e99db4960c03de9f688161474304953b46c77f87ecd0fa587dda9d41"
+    },
+    "runtime": {
+      "path": "circuit-thirteen-households--ashseal--q01--01/runtime.ogg",
+      "bytes": 15161,
+      "sha256": "3d7222da9f80d29686fcebec17279db3ce7da71228f9f63fb22cd1b145ab5adf"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

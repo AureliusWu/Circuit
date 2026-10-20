@@ -1,0 +1,59 @@
+{
+  "id": "circuit-backfeed--route--q01--01",
+  "sceneId": "backfeed",
+  "lineId": "backfeed--route--q01--01",
+  "lineIndex": 0,
+  "speaker": "cheng",
+  "text": "别按地图导航直接走。",
+  "nodeId": "route",
+  "start": 59,
+  "end": 69,
+  "quoteIndex": 0,
+  "actorId": "cheng",
+  "voice": "Dylan",
+  "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 440655510,
+  "textSha256": "0410c86e190509dec76c4c9e78c3b935f9ca881dee9e202ddb370699300742d2",
+  "medium": "spoken",
+  "requestSha256": "f2b7d739aa3338a7ea414f6f4c5f12518adfe5bec0534c43a3c81770c53c02bd",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "别按地图导航直接走",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 2.0,
+  "wallSeconds": 72.68,
+  "loudness": {
+    "input_i": "-31.33",
+    "input_tp": "-12.22",
+    "input_lra": "0.00",
+    "input_thresh": "-41.33",
+    "output_i": "-21.12",
+    "output_tp": "-2.00",
+    "output_lra": "0.00",
+    "output_thresh": "-31.12",
+    "normalization_type": "linear",
+    "target_offset": "1.12"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-backfeed--route--q01--01/raw.wav",
+      "bytes": 192080,
+      "sha256": "22e5812e930e8f4a1ce3ac7e67e039c69deceb03b5b7fa7a93695ee4676e8baa"
+    },
+    "master": {
+      "path": "circuit-backfeed--route--q01--01/master.wav",
+      "bytes": 96078,
+      "sha256": "f7bb2bc7f8e5893a70d40e8d02feece35871dd6c03209106d9e00c6c9559669d"
+    },
+    "runtime": {
+      "path": "circuit-backfeed--route--q01--01/runtime.ogg",
+      "bytes": 18941,
+      "sha256": "58ad4e85e8cac3d7b3aa82488fb7f8e63c744b063590750834bc4c9c617fc4a1"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

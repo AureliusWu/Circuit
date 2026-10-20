@@ -1,0 +1,59 @@
+{
+  "id": "circuit-visitors--ticket--q01--01",
+  "sceneId": "visitors",
+  "lineId": "visitors--ticket--q01--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "这张证明领过号，另一张才有谁收。",
+  "nodeId": "ticket",
+  "start": 94,
+  "end": 110,
+  "quoteIndex": 0,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 994447790,
+  "textSha256": "c80a2213e679a3aadc302a18f6cf161b879f7bbe13cf475af1eb3a05190f52b8",
+  "medium": "spoken",
+  "requestSha256": "724c8ba9eb13bc80a705eef46420a7a620c70f1e39faac0f1d1706f5ae637a2b",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "這張證明領過號 另一張才有誰收",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 3.2,
+  "wallSeconds": 28.134,
+  "loudness": {
+    "input_i": "-19.25",
+    "input_tp": "-2.01",
+    "input_lra": "0.50",
+    "input_thresh": "-29.55",
+    "output_i": "-19.83",
+    "output_tp": "-2.81",
+    "output_lra": "0.00",
+    "output_thresh": "-30.13",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.17"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-visitors--ticket--q01--01/raw.wav",
+      "bytes": 307280,
+      "sha256": "3974bc98114ae8ad7c8688e9ef3a083ed21f2e0c8c1872afbc65955c3e306f66"
+    },
+    "master": {
+      "path": "circuit-visitors--ticket--q01--01/master.wav",
+      "bytes": 153678,
+      "sha256": "e86ecd7017866a26a85e7671e519e94cd9f0dd73f347fec03e5369f684932df8"
+    },
+    "runtime": {
+      "path": "circuit-visitors--ticket--q01--01/runtime.ogg",
+      "bytes": 26386,
+      "sha256": "ec7496235f5c74310be50379c996ed1679c0ef4a4278f2c18055a6e7b8a1af28"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

@@ -1,0 +1,59 @@
+{
+  "id": "circuit-everlight--timeexplained--q01--01",
+  "sceneId": "everlight",
+  "lineId": "everlight--timeExplained--q01--01",
+  "lineIndex": 0,
+  "speaker": "cheng",
+  "text": "原接收页缺着，完成时间也对不上。",
+  "nodeId": "timeExplained",
+  "start": 48,
+  "end": 64,
+  "quoteIndex": 0,
+  "actorId": "cheng",
+  "voice": "Dylan",
+  "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 414320853,
+  "textSha256": "28d92a77580d99559c457e15dbc12545411139ee21c49343710655fe61517358",
+  "medium": "spoken",
+  "requestSha256": "ebd91ae2cc1f97067ce98871a6d3ad5ad4155545801aac44d9b95b4a6583d966",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "原接收页缺着完成时间也对不上",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 2.96,
+  "wallSeconds": 121.567,
+  "loudness": {
+    "input_i": "-23.24",
+    "input_tp": "-7.05",
+    "input_lra": "0.00",
+    "input_thresh": "-33.24",
+    "output_i": "-19.99",
+    "output_tp": "-3.82",
+    "output_lra": "0.00",
+    "output_thresh": "-29.99",
+    "normalization_type": "linear",
+    "target_offset": "-0.01"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-everlight--timeexplained--q01--01/raw.wav",
+      "bytes": 284240,
+      "sha256": "52ab72a33fcc141fef56c9bb14f5cd99e0dcde7a3bd0a5a365cd02b54f2df2df"
+    },
+    "master": {
+      "path": "circuit-everlight--timeexplained--q01--01/master.wav",
+      "bytes": 142158,
+      "sha256": "795e03d917d096fbf5c33659a48899ba84ba0151019af7319e55eb03e44d9261"
+    },
+    "runtime": {
+      "path": "circuit-everlight--timeexplained--q01--01/runtime.ogg",
+      "bytes": 26349,
+      "sha256": "73241aaf78af1141e5520ca06113448d3e2a84ddd64b60dba919d39f87137a7b"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

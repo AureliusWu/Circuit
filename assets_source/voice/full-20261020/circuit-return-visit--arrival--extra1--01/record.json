@@ -1,0 +1,59 @@
+{
+  "id": "circuit-return-visit--arrival--extra1--01",
+  "sceneId": "return-visit",
+  "lineId": "return-visit--arrival--extra1--01",
+  "lineIndex": 0,
+  "speaker": "cheng",
+  "text": "程砚，已经到场。",
+  "nodeId": "arrival",
+  "start": 29,
+  "end": 37,
+  "medium": "recorded",
+  "recordingKey": "arrived",
+  "actorId": "cheng",
+  "voice": "Dylan",
+  "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 988679086,
+  "textSha256": "732e7fb1ad9138c3251b6879c9cf2778ec7686d954bf2baf2cd28a256f637509",
+  "requestSha256": "9d6da1b292467bd89e3179e5f968637561dab1baca8ace2447508eafd060c63c",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "程艳已经到场",
+    "cer": 0.166667,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 1.68,
+  "wallSeconds": 62.631,
+  "loudness": {
+    "input_i": "-24.53",
+    "input_tp": "-3.92",
+    "input_lra": "0.00",
+    "input_thresh": "-34.53",
+    "output_i": "-22.61",
+    "output_tp": "-2.00",
+    "output_lra": "0.00",
+    "output_thresh": "-32.61",
+    "normalization_type": "linear",
+    "target_offset": "2.61"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-return-visit--arrival--extra1--01/raw.wav",
+      "bytes": 161360,
+      "sha256": "84285262fc3743911cd083cacec0f93685936044d7d503d28e0cc1337dc0c719"
+    },
+    "master": {
+      "path": "circuit-return-visit--arrival--extra1--01/master.wav",
+      "bytes": 80718,
+      "sha256": "63a62e75a9944211eefe8731fe8d1a942b08039cf93687a0dfcd22184ff49651"
+    },
+    "runtime": {
+      "path": "circuit-return-visit--arrival--extra1--01/runtime.ogg",
+      "bytes": 17015,
+      "sha256": "3d41b242c574fd4182243d6ce0dbe1f91f82231aeb6bb7ac2254b02a54ea325a"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

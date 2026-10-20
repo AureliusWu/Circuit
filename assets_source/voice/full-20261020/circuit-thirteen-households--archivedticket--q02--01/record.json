@@ -1,0 +1,59 @@
+{
+  "id": "circuit-thirteen-households--archivedticket--q02--01",
+  "sceneId": "thirteen-households",
+  "lineId": "thirteen-households--archivedTicket--q02--01",
+  "lineIndex": 0,
+  "speaker": "cheng",
+  "text": "你一直带着？",
+  "nodeId": "archivedTicket",
+  "start": 39,
+  "end": 45,
+  "quoteIndex": 1,
+  "actorId": "cheng",
+  "voice": "Dylan",
+  "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1516829139,
+  "textSha256": "8bec67a34b8ebbf7548007cb345a866e5290b75cd6416c362c0122aeb0611340",
+  "medium": "spoken",
+  "requestSha256": "3035931ae4bb590a6d839f832c848f05b29a6f5bbe0b4974d84a0551605794f2",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "你一直戴着",
+    "cer": 0.2,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 1.44,
+  "wallSeconds": 79.335,
+  "loudness": {
+    "input_i": "-22.71",
+    "input_tp": "-8.23",
+    "input_lra": "0.00",
+    "input_thresh": "-32.71",
+    "output_i": "-20.00",
+    "output_tp": "-5.52",
+    "output_lra": "0.00",
+    "output_thresh": "-30.00",
+    "normalization_type": "linear",
+    "target_offset": "0.00"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-thirteen-households--archivedticket--q02--01/raw.wav",
+      "bytes": 138320,
+      "sha256": "c87b56353886330dc330454f609f98150ec12dcf2ed2957eadfc4472a4063b71"
+    },
+    "master": {
+      "path": "circuit-thirteen-households--archivedticket--q02--01/master.wav",
+      "bytes": 69198,
+      "sha256": "a606a2292c60c260cc6b405ee0513cc9cbdfbd1b8853478a7a6c07d322390c0d"
+    },
+    "runtime": {
+      "path": "circuit-thirteen-households--archivedticket--q02--01/runtime.ogg",
+      "bytes": 15197,
+      "sha256": "1d7a242ddfe1e2413cc999b464cc39912469bd097093d639b7ede863cb049f9b"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

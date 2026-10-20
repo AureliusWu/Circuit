@@ -1,0 +1,59 @@
+{
+  "id": "circuit-thirteen-households--bypasswarning--q01--01",
+  "sceneId": "thirteen-households",
+  "lineId": "thirteen-households--bypassWarning--q01--01",
+  "lineIndex": 0,
+  "speaker": "zhou",
+  "text": "那边有条旧旁路。",
+  "nodeId": "bypassWarning",
+  "start": 1,
+  "end": 9,
+  "quoteIndex": 0,
+  "actorId": "zhou",
+  "voice": "Uncle_Fu",
+  "instruct": "五十岁男性，普通话，声音低沉略沙哑，克制缓慢，像夜班老工人，语气自然，不要表演悲伤。 语速稍慢，逐字说清楚，季宁读jì níng。句尾完整，不要吞字。 只朗读给定台词，不添加词语或音效。",
+  "seed": 301911694,
+  "textSha256": "a7bab4337394ad63883702f1a3ed2ab5934ca74b8e2e98f45b118060c4a52163",
+  "medium": "spoken",
+  "requestSha256": "c50656f66cd7caf4849d4b6b4de053bf1f3ddee5e63e3fea4573bcb398efc610",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "那边有条旧旁路",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 2.0,
+  "wallSeconds": 73.258,
+  "loudness": {
+    "input_i": "-27.70",
+    "input_tp": "-10.71",
+    "input_lra": "0.00",
+    "input_thresh": "-37.70",
+    "output_i": "-20.00",
+    "output_tp": "-3.01",
+    "output_lra": "0.00",
+    "output_thresh": "-30.00",
+    "normalization_type": "linear",
+    "target_offset": "0.00"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-thirteen-households--bypasswarning--q01--01/raw.wav",
+      "bytes": 192080,
+      "sha256": "47e0e9e7a7350b4b078349849b12f18f9e7e8464f17738cdb823c1219e2debd2"
+    },
+    "master": {
+      "path": "circuit-thirteen-households--bypasswarning--q01--01/master.wav",
+      "bytes": 96078,
+      "sha256": "0f64611c2b370286156f65b64ded4ebfc0373ddcb89b4d1765c40f0a4313c008"
+    },
+    "runtime": {
+      "path": "circuit-thirteen-households--bypasswarning--q01--01/runtime.ogg",
+      "bytes": 18852,
+      "sha256": "643a45824e12f558fae34df2f32db2709f56ee382f721732bfea4d8efd8d1a3d"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

@@ -1,0 +1,59 @@
+{
+  "id": "circuit-seventh-night--recordwake--q02--01",
+  "sceneId": "seventh-night",
+  "lineId": "seventh-night--recordWake--q02--01",
+  "lineIndex": 0,
+  "speaker": "cheng",
+  "text": "先把发生过的留齐。",
+  "nodeId": "recordWake",
+  "start": 58,
+  "end": 67,
+  "quoteIndex": 1,
+  "actorId": "cheng",
+  "voice": "Dylan",
+  "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1907510173,
+  "textSha256": "ce067f9d969658bae1b9eed62a4364ee47fd2e2e427df40532cbcdc94715b428",
+  "medium": "spoken",
+  "requestSha256": "7caa221c8e90a5b036928f059a8781a10cd4c3202abef85fe82c6ce09b1a792b",
+  "attempt": 2,
+  "status": "needs_review",
+  "asr": {
+    "transcript": "先把发生过的流奇",
+    "cer": 0.25,
+    "polarityCountsMatch": true,
+    "passed": false
+  },
+  "duration": 1.84,
+  "wallSeconds": 8.917,
+  "loudness": {
+    "input_i": "-29.57",
+    "input_tp": "-10.61",
+    "input_lra": "0.00",
+    "input_thresh": "-39.57",
+    "output_i": "-20.96",
+    "output_tp": "-2.00",
+    "output_lra": "0.00",
+    "output_thresh": "-30.96",
+    "normalization_type": "linear",
+    "target_offset": "0.96"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-seventh-night--recordwake--q02--01/raw.wav",
+      "bytes": 176720,
+      "sha256": "5a4536dc3f97f19c0b44e6219660c2ce80f830b676044779571d2a4d249bd027"
+    },
+    "master": {
+      "path": "circuit-seventh-night--recordwake--q02--01/master.wav",
+      "bytes": 88398,
+      "sha256": "c591b59f9ff2c6b4907620103945ebfe46fe6c43785167652da0307d0fa6eb17"
+    },
+    "runtime": {
+      "path": "circuit-seventh-night--recordwake--q02--01/runtime.ogg",
+      "bytes": 17185,
+      "sha256": "a578c971f96a966192f2261409c624c2c6ca1d94fa8b4cb29a0d3e4a2a6d74ba"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

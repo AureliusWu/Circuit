@@ -1,0 +1,59 @@
+{
+  "id": "circuit-answering--return--q03--01",
+  "sceneId": "answering",
+  "lineId": "answering--return--q03--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "那包已经加过水。",
+  "nodeId": "return",
+  "start": 53,
+  "end": 61,
+  "quoteIndex": 2,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1176452645,
+  "textSha256": "afdd7edca8c438f9b7be905fef7af6990ca4cc626e7ddd7951ae441897750d3f",
+  "medium": "spoken",
+  "requestSha256": "6c75d95c033af32d848d900ec36c9fd2b0d23ceca769a621adc0f6ef402a82a6",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "那包已經加過水",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 1.28,
+  "wallSeconds": 143.343,
+  "loudness": {
+    "input_i": "-19.82",
+    "input_tp": "-4.98",
+    "input_lra": "0.00",
+    "input_thresh": "-29.82",
+    "output_i": "-19.99",
+    "output_tp": "-5.16",
+    "output_lra": "0.00",
+    "output_thresh": "-29.99",
+    "normalization_type": "linear",
+    "target_offset": "-0.01"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-answering--return--q03--01/raw.wav",
+      "bytes": 122960,
+      "sha256": "c860e0ce1633404ae4a6ed963134cf6a4d566f037698745af7491f9c3e854762"
+    },
+    "master": {
+      "path": "circuit-answering--return--q03--01/master.wav",
+      "bytes": 61518,
+      "sha256": "41e53d298e617e65e5464a77e1dc2a32f8a06913e28fa7436f145ac6dfff107e"
+    },
+    "runtime": {
+      "path": "circuit-answering--return--q03--01/runtime.ogg",
+      "bytes": 13454,
+      "sha256": "7343a052d838e603ecd20024055da5e4f0e15e6abf65f766bb8af0b176930cb6"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

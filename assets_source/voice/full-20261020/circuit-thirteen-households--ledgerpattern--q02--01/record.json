@@ -1,0 +1,59 @@
+{
+  "id": "circuit-thirteen-households--ledgerpattern--q02--01",
+  "sceneId": "thirteen-households",
+  "lineId": "thirteen-households--ledgerPattern--q02--01",
+  "lineIndex": 0,
+  "speaker": "cheng",
+  "text": "先留原时标。",
+  "nodeId": "ledgerPattern",
+  "start": 63,
+  "end": 69,
+  "quoteIndex": 1,
+  "actorId": "cheng",
+  "voice": "Dylan",
+  "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1167345925,
+  "textSha256": "fec61a2a611b459cd155ead0ffafe37d98230da2f4063447c42724502217e9fa",
+  "medium": "spoken",
+  "requestSha256": "6cde8838e904e6479e43d7a721f2759626681d73ad954929183a2f62d866fc95",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "先留原石标",
+    "cer": 0.2,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 1.2,
+  "wallSeconds": 52.087,
+  "loudness": {
+    "input_i": "-23.32",
+    "input_tp": "-9.61",
+    "input_lra": "0.00",
+    "input_thresh": "-33.32",
+    "output_i": "-20.02",
+    "output_tp": "-6.29",
+    "output_lra": "0.00",
+    "output_thresh": "-30.02",
+    "normalization_type": "linear",
+    "target_offset": "0.02"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-thirteen-households--ledgerpattern--q02--01/raw.wav",
+      "bytes": 115280,
+      "sha256": "af0a2ff960530c841c69740370bdca54351b624946264b0e085e18d1e9bde8df"
+    },
+    "master": {
+      "path": "circuit-thirteen-households--ledgerpattern--q02--01/master.wav",
+      "bytes": 57678,
+      "sha256": "6d4030cb87aa6a46d8a4a850b163c1e43173ffa592c53001d43af512f2b297b0"
+    },
+    "runtime": {
+      "path": "circuit-thirteen-households--ledgerpattern--q02--01/runtime.ogg",
+      "bytes": 12365,
+      "sha256": "b0fb919113ba453a13b472b31ad52721e0d396e54c5bf3fdc9eae6e7d87486b5"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

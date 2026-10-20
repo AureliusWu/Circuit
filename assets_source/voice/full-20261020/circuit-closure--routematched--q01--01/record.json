@@ -1,0 +1,59 @@
+{
+  "id": "circuit-closure--routematched--q01--01",
+  "sceneId": "closure",
+  "lineId": "closure--routeMatched--q01--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "它画的是让人和纸走一遍。",
+  "nodeId": "routeMatched",
+  "start": 54,
+  "end": 66,
+  "quoteIndex": 0,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 81101976,
+  "textSha256": "2e3c745d2d3b4112f8a3b388a92db25dd2ead0f77d0f7113e01fd06498de0219",
+  "medium": "spoken",
+  "requestSha256": "14762dcc30de384c5c092b56a4526822967cb60354c366aa7692d9c37bc443be",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "他画的是让人和之走一遍",
+    "cer": 0.181818,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 2.56,
+  "wallSeconds": 15.278,
+  "loudness": {
+    "input_i": "-19.28",
+    "input_tp": "-3.67",
+    "input_lra": "0.00",
+    "input_thresh": "-29.28",
+    "output_i": "-20.01",
+    "output_tp": "-4.39",
+    "output_lra": "0.00",
+    "output_thresh": "-30.01",
+    "normalization_type": "linear",
+    "target_offset": "0.01"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-closure--routematched--q01--01/raw.wav",
+      "bytes": 245840,
+      "sha256": "9da0c20211a82dce75de377ec6a3df156eb361384cd6c915011393c2044bd495"
+    },
+    "master": {
+      "path": "circuit-closure--routematched--q01--01/master.wav",
+      "bytes": 122958,
+      "sha256": "29ca3aaf7d3de6afd83ce0e5d46d86a5b5b351099d30323e6aa1c6b74f98fe35"
+    },
+    "runtime": {
+      "path": "circuit-closure--routematched--q01--01/runtime.ogg",
+      "bytes": 21769,
+      "sha256": "8a00381389f6456e0f7801bce2371cb050da5aef2ff5f07fae2b416ca2dc56ff"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

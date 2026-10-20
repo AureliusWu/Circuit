@@ -1,0 +1,59 @@
+{
+  "id": "circuit-seventh-night--interval--q01--01",
+  "sceneId": "seventh-night",
+  "lineId": "seventh-night--interval--q01--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "反正我也睡不着，算陪监测了。",
+  "nodeId": "interval",
+  "start": 74,
+  "end": 88,
+  "quoteIndex": 0,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1859179196,
+  "textSha256": "f1e2e4da34ef1bd010a02909fe231f11bce17a4a6991f7356c24b1c6465bcb66",
+  "medium": "spoken",
+  "requestSha256": "86e561a6510120400fdb73bb8c6893f675c0cbd811534940a787d9314b942f87",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "反正我也睡不着算赔监测了",
+    "cer": 0.083333,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 2.88,
+  "wallSeconds": 158.339,
+  "loudness": {
+    "input_i": "-20.94",
+    "input_tp": "-4.32",
+    "input_lra": "0.00",
+    "input_thresh": "-31.29",
+    "output_i": "-20.00",
+    "output_tp": "-3.38",
+    "output_lra": "0.00",
+    "output_thresh": "-30.36",
+    "normalization_type": "linear",
+    "target_offset": "0.00"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-seventh-night--interval--q01--01/raw.wav",
+      "bytes": 276560,
+      "sha256": "b4569dcb35ec11ed0a710431ef3bbb1edcb72de4493061a79b95189f3fb4ecda"
+    },
+    "master": {
+      "path": "circuit-seventh-night--interval--q01--01/master.wav",
+      "bytes": 138318,
+      "sha256": "eb61173b1a221ef5486fc9153ba7310b5d301eb6fb936700f0c25ce2e499b9fb"
+    },
+    "runtime": {
+      "path": "circuit-seventh-night--interval--q01--01/runtime.ogg",
+      "bytes": 24107,
+      "sha256": "eea7d9c53086c63278d38d122ba6f1772c6ccc335e2ca0bdf95fc5a2e302e318"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

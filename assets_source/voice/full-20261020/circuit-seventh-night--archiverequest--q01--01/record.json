@@ -1,0 +1,59 @@
+{
+  "id": "circuit-seventh-night--archiverequest--q01--01",
+  "sceneId": "seventh-night",
+  "lineId": "seventh-night--archiveRequest--q01--01",
+  "lineIndex": 0,
+  "speaker": "cheng",
+  "text": "电话里叫的是他？",
+  "nodeId": "archiveRequest",
+  "start": 55,
+  "end": 63,
+  "quoteIndex": 0,
+  "actorId": "cheng",
+  "voice": "Dylan",
+  "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1323192283,
+  "textSha256": "506a1d9bee291c43e07d445f026dbd894b166732ee28b860ce3b4a0a88a6e47a",
+  "medium": "spoken",
+  "requestSha256": "7783b5b69fe468e858ee7e8dc0de1ce4bab08a6b01105dbc1cdf2ec2e404279d",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "電話裡叫的是他",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 1.6,
+  "wallSeconds": 91.849,
+  "loudness": {
+    "input_i": "-22.84",
+    "input_tp": "-8.42",
+    "input_lra": "0.00",
+    "input_thresh": "-32.84",
+    "output_i": "-20.00",
+    "output_tp": "-5.58",
+    "output_lra": "0.00",
+    "output_thresh": "-30.00",
+    "normalization_type": "linear",
+    "target_offset": "-0.00"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-seventh-night--archiverequest--q01--01/raw.wav",
+      "bytes": 153680,
+      "sha256": "7d0ea82bf78ea591d192fc8592c5b46eb464004602977d2eacebed5fe72ee546"
+    },
+    "master": {
+      "path": "circuit-seventh-night--archiverequest--q01--01/master.wav",
+      "bytes": 76878,
+      "sha256": "0c3bd7840c06497d8a3973abe0fd8eae58159a1b7310a0aebc6267f16e124213"
+    },
+    "runtime": {
+      "path": "circuit-seventh-night--archiverequest--q01--01/runtime.ogg",
+      "bytes": 15512,
+      "sha256": "fa662ec7ec5c26ef013bd2f406b324eed8e63042c4ac3598578cf84885912002"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

@@ -1,0 +1,59 @@
+{
+  "id": "circuit-thirteen-households--noticedebt--q04--01",
+  "sceneId": "thirteen-households",
+  "lineId": "thirteen-households--noticeDebt--q04--01",
+  "lineIndex": 0,
+  "speaker": "mei",
+  "text": "守成以前写票，最后一笔总是拖到格子外面。",
+  "nodeId": "noticeDebt",
+  "start": 87,
+  "end": 107,
+  "quoteIndex": 3,
+  "actorId": "mei",
+  "voice": "Serena",
+  "instruct": "六十岁女性，普通话，声音偏低，平实缓慢，像老邻居小声嘱咐，句尾稍停，不要年轻撒娇。 只朗读给定台词，不添加词语或音效。",
+  "seed": 54734404,
+  "textSha256": "bb420432380ef49dab9de86d0c834681ad0a444b8d4718b4011fe5fd96b8c249",
+  "medium": "spoken",
+  "requestSha256": "9b2d54a6204214f758e197a9651d62a32eeaa5fed551f705f3781eda3e9265ae",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "守城以前写票,最后一笔总是托到格子外面。",
+    "cer": 0.111111,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 4.48,
+  "wallSeconds": 37.273,
+  "loudness": {
+    "input_i": "-25.18",
+    "input_tp": "-10.20",
+    "input_lra": "0.80",
+    "input_thresh": "-35.44",
+    "output_i": "-19.48",
+    "output_tp": "-4.85",
+    "output_lra": "0.70",
+    "output_thresh": "-29.70",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.52"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-thirteen-households--noticedebt--q04--01/raw.wav",
+      "bytes": 430160,
+      "sha256": "5805da7e7dbf5f35547138307e74417c55e1bad7445d405550d01bf113ee859e"
+    },
+    "master": {
+      "path": "circuit-thirteen-households--noticedebt--q04--01/master.wav",
+      "bytes": 215118,
+      "sha256": "01534bd111f7ea3261f3a2653051442bccfbd9319fa2d1d5a6d439aa0f5655df"
+    },
+    "runtime": {
+      "path": "circuit-thirteen-households--noticedebt--q04--01/runtime.ogg",
+      "bytes": 35654,
+      "sha256": "35cb39dee1da3cdcd48655a8df950cacfc73a6f2b1e1b3630edf927b6c606382"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

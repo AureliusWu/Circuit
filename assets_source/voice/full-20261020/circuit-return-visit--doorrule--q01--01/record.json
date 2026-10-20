@@ -1,0 +1,59 @@
+{
+  "id": "circuit-return-visit--doorrule--q01--01",
+  "sceneId": "return-visit",
+  "lineId": "return-visit--doorRule--q01--01",
+  "lineIndex": 0,
+  "speaker": "luo",
+  "text": "朝里贴，说让跟着搬家的认得门。白天就揭，物业总忘。",
+  "nodeId": "doorRule",
+  "start": 40,
+  "end": 65,
+  "quoteIndex": 0,
+  "actorId": "luo",
+  "voice": "Vivian",
+  "instruct": "二十九岁女性，普通话，声音偏低，夜班值班员谨慎地问话，平静自然，略有迟疑，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1709237528,
+  "textSha256": "7bd46302e2ab0750db5d948a134ceef5fe599fcfaa3dec75793c6e50a38bce4c",
+  "medium": "spoken",
+  "requestSha256": "e2a09ac83e2b010750acbe49e3cec2d8e91a86b8663ea58023beef53672a33ed",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "朝裡貼,說讓跟著搬家的認得門,白天就接,烏葉總忘。",
+    "cer": 0.190476,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 7.04,
+  "wallSeconds": 490.002,
+  "loudness": {
+    "input_i": "-19.30",
+    "input_tp": "-2.19",
+    "input_lra": "2.20",
+    "input_thresh": "-29.80",
+    "output_i": "-20.39",
+    "output_tp": "-3.43",
+    "output_lra": "2.00",
+    "output_thresh": "-30.90",
+    "normalization_type": "dynamic",
+    "target_offset": "0.39"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-return-visit--doorrule--q01--01/raw.wav",
+      "bytes": 675920,
+      "sha256": "7d53da5be174fce231efc7c8b71eb4c077eabb091c9316150b7eab846b54871c"
+    },
+    "master": {
+      "path": "circuit-return-visit--doorrule--q01--01/master.wav",
+      "bytes": 337998,
+      "sha256": "9366501143e739eb9ba7019d4957b644f7eec9f853585aeb7f050ac85eb2d2d1"
+    },
+    "runtime": {
+      "path": "circuit-return-visit--doorrule--q01--01/runtime.ogg",
+      "bytes": 51595,
+      "sha256": "adc7c0f329e8262f04d291db9edda3d91fa43b0094e1cc853b8517dd39520ca9"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

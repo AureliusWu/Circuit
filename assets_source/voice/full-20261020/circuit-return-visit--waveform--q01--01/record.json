@@ -1,0 +1,59 @@
+{
+  "id": "circuit-return-visit--waveform--q01--01",
+  "sceneId": "return-visit",
+  "lineId": "return-visit--waveform--q01--01",
+  "lineIndex": 0,
+  "speaker": "luo",
+  "text": "那我昨晚记的两次，到底算谁？",
+  "nodeId": "waveform",
+  "start": 79,
+  "end": 93,
+  "quoteIndex": 0,
+  "actorId": "luo",
+  "voice": "Vivian",
+  "instruct": "二十九岁女性，普通话，声音偏低，夜班值班员谨慎地问话，平静自然，略有迟疑，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1224653302,
+  "textSha256": "1c11e9bbc97d2fd734013b3c5a38f4bc30eadb8f0ed60d559fe28b20460b4074",
+  "medium": "spoken",
+  "requestSha256": "e54037ca838cd7888de39f2b512aa8e22cffbddd19085b375daa0c0e115ddb4d",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "那我昨晚記得兩次 到底算誰",
+    "cer": 0.083333,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 3.92,
+  "wallSeconds": 131.561,
+  "loudness": {
+    "input_i": "-21.56",
+    "input_tp": "-6.88",
+    "input_lra": "1.10",
+    "input_thresh": "-31.91",
+    "output_i": "-18.13",
+    "output_tp": "-3.96",
+    "output_lra": "0.00",
+    "output_thresh": "-28.44",
+    "normalization_type": "dynamic",
+    "target_offset": "-1.87"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-return-visit--waveform--q01--01/raw.wav",
+      "bytes": 376400,
+      "sha256": "21534a469e902f3c37c456f462519ad8cf4442ed98b7b170c1bc44938b9742ee"
+    },
+    "master": {
+      "path": "circuit-return-visit--waveform--q01--01/master.wav",
+      "bytes": 188238,
+      "sha256": "39837353c19f27f27599d6308fa7394c32e1566a1a8e4f33e80b414ad703e65b"
+    },
+    "runtime": {
+      "path": "circuit-return-visit--waveform--q01--01/runtime.ogg",
+      "bytes": 30234,
+      "sha256": "a26c62c83def086516d1ca8f8169e975d16369e6af2e0bbebac79a0ea8d726cf"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

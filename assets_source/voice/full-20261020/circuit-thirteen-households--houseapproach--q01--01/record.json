@@ -1,0 +1,59 @@
+{
+  "id": "circuit-thirteen-households--houseapproach--q01--01",
+  "sceneId": "thirteen-households",
+  "lineId": "thirteen-households--houseApproach--q01--01",
+  "lineIndex": 0,
+  "speaker": "zhou",
+  "text": "里面没核清，别进去。",
+  "nodeId": "houseApproach",
+  "start": 45,
+  "end": 55,
+  "quoteIndex": 0,
+  "actorId": "zhou",
+  "voice": "Uncle_Fu",
+  "instruct": "五十岁男性，普通话，声音低沉略沙哑，克制缓慢，像夜班老工人，语气自然，不要表演悲伤。 语速稍慢，逐字说清楚，季宁读jì níng。句尾完整，不要吞字。 只朗读给定台词，不添加词语或音效。",
+  "seed": 516625893,
+  "textSha256": "b2119490cd671e549fb8013d5ed4825c5188882ac4e333ae848f7f8019cb7faa",
+  "medium": "spoken",
+  "requestSha256": "76a0943a8ccc296197618f6687529bad50fbcf4d4768273dfc0a327b0d317409",
+  "attempt": 2,
+  "status": "accepted",
+  "asr": {
+    "transcript": "里面没和清别进去",
+    "cer": 0.125,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 2.4,
+  "wallSeconds": 125.3,
+  "loudness": {
+    "input_i": "-20.33",
+    "input_tp": "-3.79",
+    "input_lra": "0.00",
+    "input_thresh": "-30.56",
+    "output_i": "-20.01",
+    "output_tp": "-3.46",
+    "output_lra": "0.00",
+    "output_thresh": "-30.24",
+    "normalization_type": "linear",
+    "target_offset": "0.01"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-thirteen-households--houseapproach--q01--01/raw.wav",
+      "bytes": 230480,
+      "sha256": "938fdd16037895f9495f0b174bba6be6d568265b5c77442d34d80416ac4c3518"
+    },
+    "master": {
+      "path": "circuit-thirteen-households--houseapproach--q01--01/master.wav",
+      "bytes": 115278,
+      "sha256": "b8ae7d7fcf83436d053d6db05f21f96c702003fb994bd4c1cfd7a7335149f475"
+    },
+    "runtime": {
+      "path": "circuit-thirteen-households--houseapproach--q01--01/runtime.ogg",
+      "bytes": 20783,
+      "sha256": "f4e5cfd95bd88aef96caca5a76850604fd98e40f3a06ecf67aed3d41b116b3bb"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

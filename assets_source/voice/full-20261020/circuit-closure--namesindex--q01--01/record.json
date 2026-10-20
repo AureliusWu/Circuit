@@ -1,0 +1,59 @@
+{
+  "id": "circuit-closure--namesindex--q01--01",
+  "sceneId": "closure",
+  "lineId": "closure--namesIndex--q01--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "七年啊。",
+  "nodeId": "namesIndex",
+  "start": 88,
+  "end": 92,
+  "quoteIndex": 0,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 953055267,
+  "textSha256": "d8b580af3bd135aabccf3ecb2f8068a4b7049348ac7c5e19015818bbb55fbe5d",
+  "medium": "spoken",
+  "requestSha256": "9460acd3a68242effc3166a046c60c90445283eb47e0205e7591c736b3bd0f29",
+  "attempt": 1,
+  "status": "accepted",
+  "asr": {
+    "transcript": "七年啊",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 1.52,
+  "wallSeconds": 63.593,
+  "loudness": {
+    "input_i": "-19.15",
+    "input_tp": "-7.21",
+    "input_lra": "0.00",
+    "input_thresh": "-29.15",
+    "output_i": "-20.00",
+    "output_tp": "-8.05",
+    "output_lra": "0.00",
+    "output_thresh": "-30.00",
+    "normalization_type": "linear",
+    "target_offset": "0.00"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-closure--namesindex--q01--01/raw.wav",
+      "bytes": 146000,
+      "sha256": "171a69cc8128aabc5f5670abb80c709d2dd8afdf3e9e6ea0e1b29418a5bfcd0b"
+    },
+    "master": {
+      "path": "circuit-closure--namesindex--q01--01/master.wav",
+      "bytes": 73038,
+      "sha256": "0c4cd350bc4254477f90c90d2b11a4a5567d44927c91b3e1f77e29fc670acebe"
+    },
+    "runtime": {
+      "path": "circuit-closure--namesindex--q01--01/runtime.ogg",
+      "bytes": 13828,
+      "sha256": "8fc6e61af006586fde898662d16338a5d97b6c98de4d62333a6932b6c530eb03"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

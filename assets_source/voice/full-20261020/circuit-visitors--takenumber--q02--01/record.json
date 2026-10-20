@@ -1,0 +1,59 @@
+{
+  "id": "circuit-visitors--takenumber--q02--01",
+  "sceneId": "visitors",
+  "lineId": "visitors--takeNumber--q02--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "你今晚的班表不在这儿。",
+  "nodeId": "takeNumber",
+  "start": 86,
+  "end": 97,
+  "quoteIndex": 1,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1011834685,
+  "textSha256": "09f1f8a471dcd5ce21366eaeac18b031da38c57377c236284a169eb24acb7264",
+  "medium": "spoken",
+  "requestSha256": "ba50413e2b29c346796fd8470aa54fea7378c0940a166cfa1aa7825769c239c0",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "你今晚的班表不在这儿",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 2.08,
+  "wallSeconds": 111.818,
+  "loudness": {
+    "input_i": "-19.81",
+    "input_tp": "-6.20",
+    "input_lra": "0.00",
+    "input_thresh": "-30.05",
+    "output_i": "-20.00",
+    "output_tp": "-6.39",
+    "output_lra": "0.00",
+    "output_thresh": "-30.24",
+    "normalization_type": "linear",
+    "target_offset": "-0.00"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-visitors--takenumber--q02--01/raw.wav",
+      "bytes": 199760,
+      "sha256": "6a1ee61fd967ad42aee0ffbfbc902870e7933785000765c28da8587f1883f45f"
+    },
+    "master": {
+      "path": "circuit-visitors--takenumber--q02--01/master.wav",
+      "bytes": 99918,
+      "sha256": "e5120f2cbd21e022e7b3f48fbb46ec7e6919fb9aee3bb4bac5b6b00ee138186e"
+    },
+    "runtime": {
+      "path": "circuit-visitors--takenumber--q02--01/runtime.ogg",
+      "bytes": 18616,
+      "sha256": "d96409828a003a4975423280d98632d3f066ea8978ff14c6ba9a26f6ad573968"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

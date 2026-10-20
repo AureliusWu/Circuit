@@ -1,0 +1,59 @@
+{
+  "id": "circuit-seventh-night--fathermessage--q03--01",
+  "sceneId": "seventh-night",
+  "lineId": "seventh-night--fatherMessage--q03--01",
+  "lineIndex": 0,
+  "speaker": "shen-father",
+  "text": "等。",
+  "nodeId": "fatherMessage",
+  "start": 58,
+  "end": 60,
+  "quoteIndex": 2,
+  "actorId": "shen-father",
+  "voice": "Uncle_Fu",
+  "instruct": "中年成年男性公交司机，普通话，旧录音中的日常交谈，平实自然，声音低缓清楚，只读给定台词。",
+  "seed": 1095147772,
+  "textSha256": "97c4869a6d18f25f3adf1e4c8e3251e620309763512aa4ea7538451d53d24717",
+  "medium": "spoken",
+  "requestSha256": "7b594652ccc2b8ea8a0a671ab2352448898ae2b54155dfdfeaddce177402bcd2",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "等",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 0.56,
+  "wallSeconds": 24.735,
+  "loudness": {
+    "input_i": "-24.93",
+    "input_tp": "-9.12",
+    "input_lra": "0.00",
+    "input_thresh": "-34.93",
+    "output_i": "-19.93",
+    "output_tp": "-4.18",
+    "output_lra": "0.00",
+    "output_thresh": "-29.93",
+    "normalization_type": "linear",
+    "target_offset": "-0.07"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-seventh-night--fathermessage--q03--01/raw.wav",
+      "bytes": 53840,
+      "sha256": "2de346d275a0a5c86eb6ddd5523eeebdf27b247ea15a705e8c7ec5b6a6b27277"
+    },
+    "master": {
+      "path": "circuit-seventh-night--fathermessage--q03--01/master.wav",
+      "bytes": 26958,
+      "sha256": "7d77af53333cc9118bbbd749b28158c908e50f4c785fac45423e14a339e32cef"
+    },
+    "runtime": {
+      "path": "circuit-seventh-night--fathermessage--q03--01/runtime.ogg",
+      "bytes": 7488,
+      "sha256": "9d9b0758de1cd07dd86e34be5d86be678f947d0cb2f306141a1f1e57a18bd4ae"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

@@ -1,0 +1,59 @@
+{
+  "id": "circuit-thirteen-households--dispatch--q02--01",
+  "sceneId": "thirteen-households",
+  "lineId": "thirteen-households--dispatch--q02--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "带走？",
+  "nodeId": "dispatch",
+  "start": 71,
+  "end": 74,
+  "quoteIndex": 1,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 394226360,
+  "textSha256": "9c33d4cff00ce1c35d20d946cfc6dffa6632b76fcb989850e0b409b0abb1fe8c",
+  "medium": "spoken",
+  "requestSha256": "2b0efb7983d96fe724642676ba9ac0baa17b476d9d7339c4fa3d0fbe4c418377",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "帶走",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 0.8,
+  "wallSeconds": 11.149,
+  "loudness": {
+    "input_i": "-19.73",
+    "input_tp": "-8.89",
+    "input_lra": "0.00",
+    "input_thresh": "-29.73",
+    "output_i": "-19.99",
+    "output_tp": "-9.15",
+    "output_lra": "0.00",
+    "output_thresh": "-29.99",
+    "normalization_type": "linear",
+    "target_offset": "-0.01"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-thirteen-households--dispatch--q02--01/raw.wav",
+      "bytes": 76880,
+      "sha256": "618cbedbcd9dbbe1d977cbb23cc2e572f468844a39f097222fc0cb8fba6cddbe"
+    },
+    "master": {
+      "path": "circuit-thirteen-households--dispatch--q02--01/master.wav",
+      "bytes": 38478,
+      "sha256": "dd860095332225a469ebec7dc2164be5eba400e1ef54232f03e2fa5e38302b68"
+    },
+    "runtime": {
+      "path": "circuit-thirteen-households--dispatch--q02--01/runtime.ogg",
+      "bytes": 8997,
+      "sha256": "d802f17a70c6b7bc04d9d6e73742fd73ce8367827c061e55479203581859885e"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

@@ -1,0 +1,59 @@
+{
+  "id": "circuit-visitors--port--q02--01",
+  "sceneId": "visitors",
+  "lineId": "visitors--port--q02--01",
+  "lineIndex": 0,
+  "speaker": "cheng",
+  "text": "当年还有窗口语音。先查原配置，别拿名字猜。",
+  "nodeId": "port",
+  "start": 99,
+  "end": 120,
+  "quoteIndex": 1,
+  "actorId": "cheng",
+  "voice": "Dylan",
+  "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1289166801,
+  "textSha256": "8b5676159d5b7289a6927f00886b99f953b77565449df8ccb2ee2286851276dd",
+  "medium": "spoken",
+  "requestSha256": "57767fd52c3f04eff650f3fbf966c00e69340b5a9ff3484691d322b453cfaf6e",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "当年还有窗口语音先查原配置别拿名字猜",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 5.28,
+  "wallSeconds": 24.457,
+  "loudness": {
+    "input_i": "-26.08",
+    "input_tp": "-7.73",
+    "input_lra": "2.70",
+    "input_thresh": "-36.40",
+    "output_i": "-20.07",
+    "output_tp": "-2.12",
+    "output_lra": "2.90",
+    "output_thresh": "-30.84",
+    "normalization_type": "dynamic",
+    "target_offset": "0.07"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-visitors--port--q02--01/raw.wav",
+      "bytes": 506960,
+      "sha256": "672cdfe3ce7ee457227867ef2b1cb923ffba0e1dd617e0405c9db1438e428148"
+    },
+    "master": {
+      "path": "circuit-visitors--port--q02--01/master.wav",
+      "bytes": 253518,
+      "sha256": "a851fb3fe8936469fa0f26b6dad16ef194a80ad8a68ff2652ea18fd22f55a136"
+    },
+    "runtime": {
+      "path": "circuit-visitors--port--q02--01/runtime.ogg",
+      "bytes": 41206,
+      "sha256": "59729919b83d4ead76b2a35bd1ad4aa31985146b289957aefc9a3b9642500c1d"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

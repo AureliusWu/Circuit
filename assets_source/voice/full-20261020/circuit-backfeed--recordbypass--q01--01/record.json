@@ -1,0 +1,59 @@
+{
+  "id": "circuit-backfeed--recordbypass--q01--01",
+  "sceneId": "backfeed",
+  "lineId": "backfeed--recordBypass--q01--01",
+  "lineIndex": 0,
+  "speaker": "cheng",
+  "text": "能，原顺序留着。",
+  "nodeId": "recordBypass",
+  "start": 76,
+  "end": 84,
+  "quoteIndex": 0,
+  "actorId": "cheng",
+  "voice": "Dylan",
+  "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1323835302,
+  "textSha256": "3113a236c038b456a8c9a6917c4edfaa5ef5bd5a82423d4003e35fd4be4a7eee",
+  "medium": "spoken",
+  "requestSha256": "820510155b30636cd07ab8be6652367aff55fb5e7a5ee37804e88483d2c23a2f",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "能圆顺序留着",
+    "cer": 0.166667,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 2.08,
+  "wallSeconds": 20.219,
+  "loudness": {
+    "input_i": "-25.36",
+    "input_tp": "-8.74",
+    "input_lra": "0.00",
+    "input_thresh": "-35.89",
+    "output_i": "-19.99",
+    "output_tp": "-3.38",
+    "output_lra": "0.00",
+    "output_thresh": "-30.51",
+    "normalization_type": "linear",
+    "target_offset": "-0.01"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-backfeed--recordbypass--q01--01/raw.wav",
+      "bytes": 199760,
+      "sha256": "f24ab7c3d3e026a3995765b1b16a2dfdb3046b3d1fead0941a5b8d0ecdc475d6"
+    },
+    "master": {
+      "path": "circuit-backfeed--recordbypass--q01--01/master.wav",
+      "bytes": 99918,
+      "sha256": "5223ceddc956cf73cf4027034c7bbba829b86e182efc771e545976e10bd50fcd"
+    },
+    "runtime": {
+      "path": "circuit-backfeed--recordbypass--q01--01/runtime.ogg",
+      "bytes": 19763,
+      "sha256": "ec12825ecf089bf7fa6e1ad7b43aa9dd973c63ecdf718e45862b7ff50694e9d8"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

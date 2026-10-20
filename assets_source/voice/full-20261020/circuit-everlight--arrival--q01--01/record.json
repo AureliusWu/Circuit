@@ -1,0 +1,59 @@
+{
+  "id": "circuit-everlight--arrival--q01--01",
+  "sceneId": "everlight",
+  "lineId": "everlight--arrival--q01--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "风从后门进来，水往这边晃。影子怎么一直朝上？",
+  "nodeId": "arrival",
+  "start": 76,
+  "end": 98,
+  "quoteIndex": 0,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1564207375,
+  "textSha256": "ba7f4bdc630ccfd0943cf32aa29e8001c04ac66860ab4860cd18d14521ed3ddc",
+  "medium": "spoken",
+  "requestSha256": "2894f80711bf2abab6a78b52dc593b44a776973e1248dc2a1aa74b17c0764e8f",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "封從後門進來 水往這邊晃 影子怎麼一直朝上",
+    "cer": 0.052632,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 3.36,
+  "wallSeconds": 166.693,
+  "loudness": {
+    "input_i": "-19.17",
+    "input_tp": "-2.88",
+    "input_lra": "0.30",
+    "input_thresh": "-29.44",
+    "output_i": "-19.71",
+    "output_tp": "-3.53",
+    "output_lra": "0.00",
+    "output_thresh": "-29.98",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.29"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-everlight--arrival--q01--01/raw.wav",
+      "bytes": 322640,
+      "sha256": "a54d3f2f53ef01b40cc7ee35172def7e9312bc4e83cd2a1643749e978872636b"
+    },
+    "master": {
+      "path": "circuit-everlight--arrival--q01--01/master.wav",
+      "bytes": 161358,
+      "sha256": "fb4e82fc4a4a8b44075c5a38794da1b9b48683c4fc81bd0e8f69588a16e5db19"
+    },
+    "runtime": {
+      "path": "circuit-everlight--arrival--q01--01/runtime.ogg",
+      "bytes": 28010,
+      "sha256": "5379dcc3604df59d64ed0c9d9f55b89bee500adb705a75997f9989c8c59cac9f"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

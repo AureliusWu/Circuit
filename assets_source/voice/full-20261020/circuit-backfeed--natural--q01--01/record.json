@@ -1,0 +1,59 @@
+{
+  "id": "circuit-backfeed--natural--q01--01",
+  "sceneId": "backfeed",
+  "lineId": "backfeed--natural--q01--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "能确认它在往外送。",
+  "nodeId": "natural",
+  "start": 82,
+  "end": 91,
+  "quoteIndex": 0,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 165723804,
+  "textSha256": "a7848c905412c4b4f8800f4d7d8d75e417b6e2b2bc9324c5daea81cf346c1623",
+  "medium": "spoken",
+  "requestSha256": "1ff5796e093a6dd1ba00f5a8dc6e78a9fb10ade03d7eb59a7f4e2404b150859f",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "能確認他在往外送",
+    "cer": 0.125,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 1.44,
+  "wallSeconds": 7.582,
+  "loudness": {
+    "input_i": "-18.75",
+    "input_tp": "-4.28",
+    "input_lra": "0.00",
+    "input_thresh": "-28.75",
+    "output_i": "-20.02",
+    "output_tp": "-5.53",
+    "output_lra": "0.00",
+    "output_thresh": "-30.02",
+    "normalization_type": "linear",
+    "target_offset": "0.02"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-backfeed--natural--q01--01/raw.wav",
+      "bytes": 138320,
+      "sha256": "90a4ccfb79a97d245e7b9a7cdd27cae513d170507c649e06e95f37ef758c625f"
+    },
+    "master": {
+      "path": "circuit-backfeed--natural--q01--01/master.wav",
+      "bytes": 69198,
+      "sha256": "b0060cd022dada7a649577f1075ff5809fe217e61c465bf4c5a20a33a7822181"
+    },
+    "runtime": {
+      "path": "circuit-backfeed--natural--q01--01/runtime.ogg",
+      "bytes": 14101,
+      "sha256": "5c6b43a936016f6e6443d7b5ba7e667970b7007c856f26ebd7eba66c57951b07"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

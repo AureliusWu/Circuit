@@ -1,0 +1,59 @@
+{
+  "id": "circuit-backfeed--survey--q01--01",
+  "sceneId": "backfeed",
+  "lineId": "backfeed--survey--q01--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "这面墙后来砌的？",
+  "nodeId": "survey",
+  "start": 101,
+  "end": 109,
+  "quoteIndex": 0,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 754163899,
+  "textSha256": "e9729cc85d8a670f71823156c9bb7818fee3bbd16cb3ac5ce4e15c902aefebc4",
+  "medium": "spoken",
+  "requestSha256": "81ff511192ca94a34555c8b493187306990d7f5d9d736c8b622ae3f34a289d4a",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "这面墙后来气的",
+    "cer": 0.142857,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 2.08,
+  "wallSeconds": 9.646,
+  "loudness": {
+    "input_i": "-18.80",
+    "input_tp": "-2.32",
+    "input_lra": "0.00",
+    "input_thresh": "-28.80",
+    "output_i": "-20.00",
+    "output_tp": "-3.52",
+    "output_lra": "0.00",
+    "output_thresh": "-30.00",
+    "normalization_type": "linear",
+    "target_offset": "-0.00"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-backfeed--survey--q01--01/raw.wav",
+      "bytes": 199760,
+      "sha256": "fc581adf9fe03c6a4bc5ae572f82c6590ee563162481568ad421d39f73e8b07b"
+    },
+    "master": {
+      "path": "circuit-backfeed--survey--q01--01/master.wav",
+      "bytes": 99918,
+      "sha256": "2bde6fed22c5b3f2814a764063d1fd438ab8a263d441e5fec6890865e7dc6068"
+    },
+    "runtime": {
+      "path": "circuit-backfeed--survey--q01--01/runtime.ogg",
+      "bytes": 18268,
+      "sha256": "23ecc8b76d8a72440637d33098f8fd34b936db868af85fd294064b77c647a64f"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

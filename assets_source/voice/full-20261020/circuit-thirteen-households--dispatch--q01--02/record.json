@@ -1,0 +1,59 @@
+{
+  "id": "circuit-thirteen-households--dispatch--q01--02",
+  "sceneId": "thirteen-households",
+  "lineId": "thirteen-households--dispatch--q01--02",
+  "lineIndex": 1,
+  "speaker": "lin",
+  "text": "老周已经往那边去了。",
+  "nodeId": "dispatch",
+  "start": 42,
+  "end": 52,
+  "quoteIndex": 0,
+  "actorId": "lin",
+  "voice": "Serena",
+  "instruct": "成年女性，普通话，声音干脆平稳，值班调度员在电台里说话，清楚利落，不要播音腔。 调度通话，语速稍慢，逐句吐字清楚。槐荫巷读huái yīn xiàng，在线读zài xiàn。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1882713393,
+  "textSha256": "b82a4b8ab7869b6b81e8803ea4df99912be8f4ac2fb354f08520c7dd384d24fd",
+  "medium": "spoken",
+  "requestSha256": "bb11ec19a5815aebd191c284822785bf3a5af7646ca2a4d7eb39f2856092019b",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "老周已经往那边去了",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 1.68,
+  "wallSeconds": 8.454,
+  "loudness": {
+    "input_i": "-22.32",
+    "input_tp": "-5.38",
+    "input_lra": "0.00",
+    "input_thresh": "-32.32",
+    "output_i": "-20.01",
+    "output_tp": "-3.06",
+    "output_lra": "0.00",
+    "output_thresh": "-30.01",
+    "normalization_type": "linear",
+    "target_offset": "0.01"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-thirteen-households--dispatch--q01--02/raw.wav",
+      "bytes": 161360,
+      "sha256": "e6174b3b60bc28a3b58bbe412a6a15c1fb7daa18229e1e338b4644dff3201c0b"
+    },
+    "master": {
+      "path": "circuit-thirteen-households--dispatch--q01--02/master.wav",
+      "bytes": 80718,
+      "sha256": "fa080a1887d19a52ac013d8eded4a69c7929c404dccbbeaac108220bf8c72d30"
+    },
+    "runtime": {
+      "path": "circuit-thirteen-households--dispatch--q01--02/runtime.ogg",
+      "bytes": 16248,
+      "sha256": "ed1947bba62441250e6bc46609da0a1d01c1befabc6ae983a8cfc37d29c8de89"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

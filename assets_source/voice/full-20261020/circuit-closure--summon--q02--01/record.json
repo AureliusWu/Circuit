@@ -1,0 +1,112 @@
+{
+  "id": "circuit-closure--summon--q02--01",
+  "sceneId": "closure",
+  "lineId": "closure--summon--q02--01",
+  "lineIndex": 0,
+  "speaker": "cheng",
+  "text": "按页来。",
+  "nodeId": "summon",
+  "start": 104,
+  "end": 108,
+  "quoteIndex": 1,
+  "legacy": {
+    "id": "c00-cheng",
+    "character": "cheng",
+    "speaker": "Dylan",
+    "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。",
+    "text": "按页来。",
+    "seed": 120029,
+    "bindings": [
+      {
+        "chapter": "closure",
+        "node": "summon"
+      }
+    ],
+    "requestSha256": "12af291b043db81eeec8ff75f2ced94ce4865fd1e96cca19793181022d794ffe",
+    "duration": 0.8,
+    "generationSeconds": 4.77,
+    "loudnessInput": {
+      "input_i": "-21.89",
+      "input_tp": "-6.37",
+      "input_lra": "0.00",
+      "input_thresh": "-31.89",
+      "output_i": "-19.99",
+      "output_tp": "-4.48",
+      "output_lra": "0.00",
+      "output_thresh": "-29.99",
+      "normalization_type": "linear",
+      "target_offset": "-0.01"
+    },
+    "files": [
+      {
+        "path": "assets_source/audio/v1.2.0/c00-cheng-raw.wav",
+        "bytes": 38444,
+        "sha256": "9e7dff59f2df3b07c82b4fc3b20b12695913004208661a860b4236b3f1feedae"
+      },
+      {
+        "path": "assets_source/audio/v1.2.0/c00-cheng.wav",
+        "bytes": 38478,
+        "sha256": "dc9366ef08f5925d96b67a75454163223e7966cc3ee48af9f65c6745298a2f7e"
+      },
+      {
+        "path": "public/audio/voice/c00-cheng.mp3",
+        "bytes": 10701,
+        "sha256": "9a919dd8062ed783612383dbbcdcdaf88c0282357f1399e8e508cdcc5205bee0"
+      }
+    ],
+    "asr": {
+      "id": "c00-cheng",
+      "mp3Sha256": "9a919dd8062ed783612383dbbcdcdaf88c0282357f1399e8e508cdcc5205bee0",
+      "expected": "按页来。",
+      "transcript": "按頁來",
+      "cer": 0,
+      "polarityCountsMatch": true,
+      "status": "passed"
+    },
+    "asrModel": "Systran/faster-whisper-large-v3",
+    "evidencePath": "docs/audio/voice-asr.json",
+    "evidenceSha256": "25d0e31c3decd5262d92349d6571ec67ac58723ea00c40005ddff4d8b9a58334"
+  },
+  "actorId": "cheng",
+  "voice": "Dylan",
+  "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1219532064,
+  "textSha256": "be24be8eb161a7282c44bdc60b7384aff02112f0d52dbc9fa384e46420b19863",
+  "medium": "spoken",
+  "requestSha256": "84df7ab1ecf586cefb04509aa7518e8b5781f331597c124a16fe5fd7973da423",
+  "status": "accepted",
+  "productionMethod": "preserved_exact_legacy_bytes",
+  "duration": 0.8,
+  "actualGenerationRequest": {
+    "id": "c00-cheng",
+    "speaker": "Dylan",
+    "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。",
+    "seed": 120029,
+    "requestSha256": "12af291b043db81eeec8ff75f2ced94ce4865fd1e96cca19793181022d794ffe"
+  },
+  "asr": {
+    "passed": true,
+    "transcript": "按頁來",
+    "cer": 0,
+    "polarityCountsMatch": true,
+    "model": "Systran/faster-whisper-large-v3"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-closure--summon--q02--01/raw.wav",
+      "bytes": 38444,
+      "sha256": "9e7dff59f2df3b07c82b4fc3b20b12695913004208661a860b4236b3f1feedae"
+    },
+    "master": {
+      "path": "circuit-closure--summon--q02--01/master.wav",
+      "bytes": 38478,
+      "sha256": "dc9366ef08f5925d96b67a75454163223e7966cc3ee48af9f65c6745298a2f7e"
+    },
+    "runtime": {
+      "path": "circuit-closure--summon--q02--01/runtime.mp3",
+      "bytes": 10701,
+      "sha256": "9a919dd8062ed783612383dbbcdcdaf88c0282357f1399e8e508cdcc5205bee0"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

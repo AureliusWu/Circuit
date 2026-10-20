@@ -1,0 +1,59 @@
+{
+  "id": "circuit-everlight--interview--q01--01",
+  "sceneId": "everlight",
+  "lineId": "everlight--interview--q01--01",
+  "lineIndex": 0,
+  "speaker": "mei",
+  "text": "他那天说回来量灯，没量。",
+  "nodeId": "interview",
+  "start": 63,
+  "end": 75,
+  "quoteIndex": 0,
+  "actorId": "mei",
+  "voice": "Serena",
+  "instruct": "六十岁女性，普通话，声音偏低，平实缓慢，像老邻居小声嘱咐，句尾稍停，不要年轻撒娇。 只朗读给定台词，不添加词语或音效。",
+  "seed": 125518243,
+  "textSha256": "da01492b9d27c65d7993f581a57dd4900747cb8550ee5016bbf7cd638749db6e",
+  "medium": "spoken",
+  "requestSha256": "eb036c4f72b99c74f24d91eec8cf86a710c4bad511041daa034167c7c76ebbb6",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "他那天说回来凉灯没凉",
+    "cer": 0.2,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 4.48,
+  "wallSeconds": 308.944,
+  "loudness": {
+    "input_i": "-28.79",
+    "input_tp": "-13.48",
+    "input_lra": "3.30",
+    "input_thresh": "-40.96",
+    "output_i": "-19.12",
+    "output_tp": "-4.25",
+    "output_lra": "3.30",
+    "output_thresh": "-31.25",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.88"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-everlight--interview--q01--01/raw.wav",
+      "bytes": 430160,
+      "sha256": "e89c1d5cd7cc01067e92f0a070a422937bbc650433ecc1acd4c7e6ea34813e0e"
+    },
+    "master": {
+      "path": "circuit-everlight--interview--q01--01/master.wav",
+      "bytes": 215118,
+      "sha256": "2c2bba0a5851bf2b6a2af4ba67576cb7d3f49dbc29453a887f87d5151a9de623"
+    },
+    "runtime": {
+      "path": "circuit-everlight--interview--q01--01/runtime.ogg",
+      "bytes": 33742,
+      "sha256": "702dc77e25ee2e213243a3cac00cd382ce992d0932a99ae49cd8e9882132156d"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

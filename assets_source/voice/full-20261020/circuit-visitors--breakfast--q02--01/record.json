@@ -1,0 +1,59 @@
+{
+  "id": "circuit-visitors--breakfast--q02--01",
+  "sceneId": "visitors",
+  "lineId": "visitors--breakfast--q02--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "师傅，那个叫清理车门储物格。",
+  "nodeId": "breakfast",
+  "start": 60,
+  "end": 74,
+  "quoteIndex": 1,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1114452721,
+  "textSha256": "90e3af8a7a98fcc3fe96c176ff45d486849182995169e37742fbefb1c5d0ace0",
+  "medium": "spoken",
+  "requestSha256": "48118faffce00bc762941a972737d8f2c7a031010cc8c282023cdc57bda64c8d",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "师傅,那个叫清理车门储物阁?",
+    "cer": 0.083333,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 3.52,
+  "wallSeconds": 20.313,
+  "loudness": {
+    "input_i": "-20.97",
+    "input_tp": "-4.08",
+    "input_lra": "0.60",
+    "input_thresh": "-31.29",
+    "output_i": "-19.40",
+    "output_tp": "-2.59",
+    "output_lra": "0.00",
+    "output_thresh": "-29.70",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.60"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-visitors--breakfast--q02--01/raw.wav",
+      "bytes": 338000,
+      "sha256": "5a2e5990781dc2c79065b0a93b8bb82cc2bd4a055428acf836c80810db0ec228"
+    },
+    "master": {
+      "path": "circuit-visitors--breakfast--q02--01/master.wav",
+      "bytes": 169038,
+      "sha256": "293244b051395c37f3ff874ce1a882dec5a6dd8872019d9e905298ef1f1c13ef"
+    },
+    "runtime": {
+      "path": "circuit-visitors--breakfast--q02--01/runtime.ogg",
+      "bytes": 28083,
+      "sha256": "0d4a58f75a4ea96b228246ea2955d943abfad328b8374bef404529fdb05b659b"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

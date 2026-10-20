@@ -1,0 +1,59 @@
+{
+  "id": "circuit-thirteen-households--bypassalarm--q01--01",
+  "sceneId": "thirteen-households",
+  "lineId": "thirteen-households--bypassAlarm--q01--01",
+  "lineIndex": 0,
+  "speaker": "zhou",
+  "text": "不能靠试送找电源。",
+  "nodeId": "bypassAlarm",
+  "start": 11,
+  "end": 20,
+  "quoteIndex": 0,
+  "actorId": "zhou",
+  "voice": "Uncle_Fu",
+  "instruct": "五十岁男性，普通话，声音低沉略沙哑，克制缓慢，像夜班老工人，语气自然，不要表演悲伤。 语速稍慢，逐字说清楚，季宁读jì níng。句尾完整，不要吞字。 只朗读给定台词，不添加词语或音效。",
+  "seed": 789925560,
+  "textSha256": "1db669f055ad7d723876412eaea29a1634572a97f6b68bb4568c98418ea1230c",
+  "medium": "spoken",
+  "requestSha256": "1abe6dad49513691c6d1fadb6a5b009824cb9b2ad9a5b181e36a0112b2391574",
+  "attempt": 2,
+  "status": "needs_review",
+  "asr": {
+    "transcript": "不能靠世宋找電源",
+    "cer": 0.25,
+    "polarityCountsMatch": true,
+    "passed": false
+  },
+  "duration": 2.24,
+  "wallSeconds": 13.815,
+  "loudness": {
+    "input_i": "-18.65",
+    "input_tp": "-4.18",
+    "input_lra": "0.00",
+    "input_thresh": "-28.65",
+    "output_i": "-20.00",
+    "output_tp": "-5.54",
+    "output_lra": "0.00",
+    "output_thresh": "-30.00",
+    "normalization_type": "linear",
+    "target_offset": "0.00"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-thirteen-households--bypassalarm--q01--01/raw.wav",
+      "bytes": 215120,
+      "sha256": "59a6c1ce87639989a2f7dbc5f0e2dc8ea20ee6fd14916c09118c15f9e153d7dc"
+    },
+    "master": {
+      "path": "circuit-thirteen-households--bypassalarm--q01--01/master.wav",
+      "bytes": 107598,
+      "sha256": "cb5c26a5faac063b70ffcc1c62bd3fd1ec08772b303fcb5381e0a74777e8b7b5"
+    },
+    "runtime": {
+      "path": "circuit-thirteen-households--bypassalarm--q01--01/runtime.ogg",
+      "bytes": 20161,
+      "sha256": "d053eb9b41103dfb625b8b9000d37fbaffeb953e68fe9092aad921730737b735"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

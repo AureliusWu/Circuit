@@ -1,0 +1,59 @@
+{
+  "id": "circuit-closure--release--q02--01",
+  "sceneId": "closure",
+  "lineId": "closure--release--q02--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "这次没有少半页。",
+  "nodeId": "release",
+  "start": 101,
+  "end": 109,
+  "quoteIndex": 1,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 265843862,
+  "textSha256": "0ebd5c010b85d5d34a88a9fafa6ee9cabff1adaefd942222cbfffa0097495460",
+  "medium": "spoken",
+  "requestSha256": "0777efe4fe17a74bd92323a8311aeb8ddfbee1cf76b84da9e5bda7996067aa85",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "这次没有少半夜",
+    "cer": 0.142857,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 1.68,
+  "wallSeconds": 66.419,
+  "loudness": {
+    "input_i": "-16.78",
+    "input_tp": "-3.51",
+    "input_lra": "0.00",
+    "input_thresh": "-26.78",
+    "output_i": "-19.98",
+    "output_tp": "-6.73",
+    "output_lra": "0.00",
+    "output_thresh": "-29.98",
+    "normalization_type": "linear",
+    "target_offset": "-0.02"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-closure--release--q02--01/raw.wav",
+      "bytes": 161360,
+      "sha256": "22e4bebcb340e5d4ffc1edd80d7f2b64d74512f5e835fef0c35c5377be60e89e"
+    },
+    "master": {
+      "path": "circuit-closure--release--q02--01/master.wav",
+      "bytes": 80718,
+      "sha256": "3ae4d7f0b65060a712b58b098aad0b7392011b932ebe061e8487c6777fd10d7f"
+    },
+    "runtime": {
+      "path": "circuit-closure--release--q02--01/runtime.ogg",
+      "bytes": 15369,
+      "sha256": "e7bc1f877782fcef722d02213f3b84dc160a82b2a146323e9c11550fd2228e06"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

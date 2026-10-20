@@ -1,0 +1,59 @@
+{
+  "id": "circuit-tickets--handoff--q02--01",
+  "sceneId": "tickets",
+  "lineId": "tickets--handoff--q02--01",
+  "lineIndex": 0,
+  "speaker": "manager",
+  "text": "您家的原退号纸，找着了再联系，别自己回来塞窗口。",
+  "nodeId": "handoff",
+  "start": 31,
+  "end": 55,
+  "quoteIndex": 1,
+  "actorId": "manager",
+  "voice": "Dylan",
+  "instruct": "成年男性管理方工作人员，普通话，平静利落，日常工作交接，清楚自然，不朗诵。",
+  "seed": 1436044011,
+  "textSha256": "176dd269f7f00e6a826fb2beea43de0b18c77550a5fcc7ea42bfcea33b5575af",
+  "medium": "spoken",
+  "requestSha256": "9c6a3eaa761b9518cb07d957a712705ef5492d24425e5dbb45747fb286355416",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "您家的原退号纸找着了再联系别自己回来塞窗口",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 4.64,
+  "wallSeconds": 225.383,
+  "loudness": {
+    "input_i": "-27.29",
+    "input_tp": "-7.58",
+    "input_lra": "0.50",
+    "input_thresh": "-37.41",
+    "output_i": "-20.05",
+    "output_tp": "-2.00",
+    "output_lra": "0.20",
+    "output_thresh": "-30.15",
+    "normalization_type": "dynamic",
+    "target_offset": "0.05"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-tickets--handoff--q02--01/raw.wav",
+      "bytes": 445520,
+      "sha256": "b6dcd3a558f1c230c0e3b7c5e33f1808bd8315f4c5e51d01af50d44ff9cf2273"
+    },
+    "master": {
+      "path": "circuit-tickets--handoff--q02--01/master.wav",
+      "bytes": 222798,
+      "sha256": "e38e5d52b26d80af1751f8f4a29fe6ac73c7aef12084f26c08ac71289cb5e364"
+    },
+    "runtime": {
+      "path": "circuit-tickets--handoff--q02--01/runtime.ogg",
+      "bytes": 40708,
+      "sha256": "8eb524003529afc9e4cc27763c091688da8368f7f29a91e82e957a914cd70643"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

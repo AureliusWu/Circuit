@@ -1,0 +1,59 @@
+{
+  "id": "circuit-answering--luo--q02--01",
+  "sceneId": "answering",
+  "lineId": "answering--luo--q02--01",
+  "lineIndex": 0,
+  "speaker": "luo",
+  "text": "这句是我问的。后面那句不是。",
+  "nodeId": "luo",
+  "start": 70,
+  "end": 84,
+  "quoteIndex": 1,
+  "actorId": "luo",
+  "voice": "Vivian",
+  "instruct": "二十九岁女性，普通话，声音偏低，夜班值班员谨慎地问话，平静自然，略有迟疑，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1583217734,
+  "textSha256": "20a91bd4fbc8c108da93e2dd340a6a3fa0414dc1859566155a38896f03ea3d24",
+  "medium": "spoken",
+  "requestSha256": "0556acc8c791fec6fe6e5640bfdf2a872a5c2822d7056d174cbbff6186f8bd18",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "这句是我问的,后面那句不是",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 4.08,
+  "wallSeconds": 199.982,
+  "loudness": {
+    "input_i": "-25.97",
+    "input_tp": "-11.05",
+    "input_lra": "4.40",
+    "input_thresh": "-36.59",
+    "output_i": "-19.59",
+    "output_tp": "-5.77",
+    "output_lra": "2.70",
+    "output_thresh": "-30.14",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.41"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-answering--luo--q02--01/raw.wav",
+      "bytes": 391760,
+      "sha256": "a3dda2493f863803ffe8888fc54c54c0c2c5d4e37c2937d86c734eb2fe761215"
+    },
+    "master": {
+      "path": "circuit-answering--luo--q02--01/master.wav",
+      "bytes": 195918,
+      "sha256": "c0df33e4f726ffc67e0791bc6a9e4e94e06af378d34e65720c7dd03c3b3f52f8"
+    },
+    "runtime": {
+      "path": "circuit-answering--luo--q02--01/runtime.ogg",
+      "bytes": 30970,
+      "sha256": "8e4ed14d8ea90e9b07e8e04cc5739f73fe5140d16f6dc7320a99774593938150"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

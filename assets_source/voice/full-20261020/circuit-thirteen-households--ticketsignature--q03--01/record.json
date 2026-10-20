@@ -1,0 +1,59 @@
+{
+  "id": "circuit-thirteen-households--ticketsignature--q03--01",
+  "sceneId": "thirteen-households",
+  "lineId": "thirteen-households--ticketSignature--q03--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "这几件都要写？",
+  "nodeId": "ticketSignature",
+  "start": 74,
+  "end": 81,
+  "quoteIndex": 2,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 46121076,
+  "textSha256": "9587279882022ea4885c59b9a96ea9b1f098a711abf7b0524018f98607579f2d",
+  "medium": "spoken",
+  "requestSha256": "d94c137998cd2adde572b395336cd170036377e93f4afcad8e1ecff225422b83",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "这几件都有写",
+    "cer": 0.166667,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 1.52,
+  "wallSeconds": 56.351,
+  "loudness": {
+    "input_i": "-19.77",
+    "input_tp": "-7.06",
+    "input_lra": "0.00",
+    "input_thresh": "-29.77",
+    "output_i": "-20.02",
+    "output_tp": "-7.29",
+    "output_lra": "0.00",
+    "output_thresh": "-30.02",
+    "normalization_type": "linear",
+    "target_offset": "0.02"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-thirteen-households--ticketsignature--q03--01/raw.wav",
+      "bytes": 146000,
+      "sha256": "76137643106c29e98c463e22c595da4d491eae740f558d10f0055e6c06a45ae8"
+    },
+    "master": {
+      "path": "circuit-thirteen-households--ticketsignature--q03--01/master.wav",
+      "bytes": 73038,
+      "sha256": "f1eafce3d8c3a3ea51596aeaa82872d70a164a641e9290a330b643a6c37547ef"
+    },
+    "runtime": {
+      "path": "circuit-thirteen-households--ticketsignature--q03--01/runtime.ogg",
+      "bytes": 14742,
+      "sha256": "498bc20336ac3c5c6f3ebfce2e844eab48d8ae24746bb25ceafb50060c1adf8c"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

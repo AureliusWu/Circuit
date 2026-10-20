@@ -1,0 +1,59 @@
+{
+  "id": "circuit-backfeed--recordnames--q01--01",
+  "sceneId": "backfeed",
+  "lineId": "backfeed--recordNames--q01--01",
+  "lineIndex": 0,
+  "speaker": "chen",
+  "text": "没有，一直十二把。",
+  "nodeId": "recordNames",
+  "start": 58,
+  "end": 67,
+  "quoteIndex": 0,
+  "actorId": "chen",
+  "voice": "Uncle_Fu",
+  "instruct": "六十岁男性，普通话，语速慢，声音低哑，像看门的老人轻声说话，口语平实。 只朗读给定台词，不添加词语或音效。",
+  "seed": 218222537,
+  "textSha256": "53e03d8a4839783395599c745ed86d7f50801ad01dd5f72895f59e59564eecfc",
+  "medium": "spoken",
+  "requestSha256": "855b7a44124981d485b946dbc4e30290a0c36be7352774feff0e2a7f6df68af9",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "没有一只十二把",
+    "cer": 0.142857,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 5.92,
+  "wallSeconds": 283.904,
+  "loudness": {
+    "input_i": "-22.21",
+    "input_tp": "-7.17",
+    "input_lra": "4.00",
+    "input_thresh": "-33.20",
+    "output_i": "-16.85",
+    "output_tp": "-2.00",
+    "output_lra": "5.00",
+    "output_thresh": "-27.85",
+    "normalization_type": "dynamic",
+    "target_offset": "-3.15"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-backfeed--recordnames--q01--01/raw.wav",
+      "bytes": 568400,
+      "sha256": "485cd7202fc8e384efe9d59cf38f9319606710b9f2a90b451b4ed2755e760f7f"
+    },
+    "master": {
+      "path": "circuit-backfeed--recordnames--q01--01/master.wav",
+      "bytes": 284238,
+      "sha256": "bf036d904260a4cdf525259a19669cd36d342f9e02ae411f03f7ed46497319ed"
+    },
+    "runtime": {
+      "path": "circuit-backfeed--recordnames--q01--01/runtime.ogg",
+      "bytes": 42803,
+      "sha256": "6f939aa7b9f130dd1d34c951bf1b7d6e6611446e53099b28cd29e83fd0339f88"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

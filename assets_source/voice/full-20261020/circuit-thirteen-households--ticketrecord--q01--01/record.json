@@ -1,0 +1,59 @@
+{
+  "id": "circuit-thirteen-households--ticketrecord--q01--01",
+  "sceneId": "thirteen-households",
+  "lineId": "thirteen-households--ticketRecord--q01--01",
+  "lineIndex": 0,
+  "speaker": "zhou",
+  "text": "外面那根线呢？",
+  "nodeId": "ticketRecord",
+  "start": 79,
+  "end": 86,
+  "quoteIndex": 0,
+  "actorId": "zhou",
+  "voice": "Uncle_Fu",
+  "instruct": "五十岁男性，普通话，声音低沉略沙哑，克制缓慢，像夜班老工人，语气自然，不要表演悲伤。 语速稍慢，逐字说清楚，季宁读jì níng。句尾完整，不要吞字。 只朗读给定台词，不添加词语或音效。",
+  "seed": 522939856,
+  "textSha256": "517ec0812229a8c7b70d945b2a648a48c005b6bed8d4ff17fe2779933a04f93f",
+  "medium": "spoken",
+  "requestSha256": "c01a06c17956083f2f22584ce04f76c3d6042d90bb10e0c4f64dfbd34ed7db7c",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "外面那根线",
+    "cer": 0.166667,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 1.52,
+  "wallSeconds": 17.426,
+  "loudness": {
+    "input_i": "-23.75",
+    "input_tp": "-6.22",
+    "input_lra": "0.00",
+    "input_thresh": "-33.75",
+    "output_i": "-19.97",
+    "output_tp": "-2.47",
+    "output_lra": "0.00",
+    "output_thresh": "-29.97",
+    "normalization_type": "linear",
+    "target_offset": "-0.03"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-thirteen-households--ticketrecord--q01--01/raw.wav",
+      "bytes": 146000,
+      "sha256": "1774cac86bf5e362cc0788b757ea5f49ec973131a350359a4ba78d7348fb1e12"
+    },
+    "master": {
+      "path": "circuit-thirteen-households--ticketrecord--q01--01/master.wav",
+      "bytes": 73038,
+      "sha256": "8a3346f5e3569c8398adb255ee817b45fa2cdeacf022f9682bc41cbdf05fc4e4"
+    },
+    "runtime": {
+      "path": "circuit-thirteen-households--ticketrecord--q01--01/runtime.ogg",
+      "bytes": 14799,
+      "sha256": "f13aeb39d798d6c03bd9734149ccd5d079bb04b4dd5a36cf39b66f25bd90f3fd"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

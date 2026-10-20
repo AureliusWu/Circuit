@@ -1,0 +1,59 @@
+{
+  "id": "circuit-everlight--pause--q02--01",
+  "sceneId": "everlight",
+  "lineId": "everlight--pause--q02--01",
+  "lineIndex": 0,
+  "speaker": "zhou",
+  "text": "到他下来。",
+  "nodeId": "pause",
+  "start": 64,
+  "end": 69,
+  "quoteIndex": 1,
+  "actorId": "zhou",
+  "voice": "Uncle_Fu",
+  "instruct": "五十岁男性，普通话，声音低沉略沙哑，克制缓慢，像夜班老工人，语气自然，不要表演悲伤。 语速稍慢，逐字说清楚，季宁读jì níng。句尾完整，不要吞字。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1453045913,
+  "textSha256": "2ec540080f4ca3c444085696f45d176216e2cd9beeede1c1e49b1bb68f75ee66",
+  "medium": "spoken",
+  "requestSha256": "e0029ac5dd92507c89e0010dab4b594515e94c7e779224dee2e7d3704feba716",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "到他下来",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 1.12,
+  "wallSeconds": 69.318,
+  "loudness": {
+    "input_i": "-20.43",
+    "input_tp": "-6.42",
+    "input_lra": "0.00",
+    "input_thresh": "-30.43",
+    "output_i": "-20.00",
+    "output_tp": "-6.00",
+    "output_lra": "0.00",
+    "output_thresh": "-30.00",
+    "normalization_type": "linear",
+    "target_offset": "0.00"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-everlight--pause--q02--01/raw.wav",
+      "bytes": 107600,
+      "sha256": "865d40761ceec654527559f7c71db33a5a120f5e59cf4125e54d60301701a272"
+    },
+    "master": {
+      "path": "circuit-everlight--pause--q02--01/master.wav",
+      "bytes": 53838,
+      "sha256": "925e369678d86f8749025e5b9526190f950f767612648fab50d036a467a8e607"
+    },
+    "runtime": {
+      "path": "circuit-everlight--pause--q02--01/runtime.ogg",
+      "bytes": 11632,
+      "sha256": "ec3bd176a8b8bbfa4a0099828f136ad21c80487c8391b3f863a618db53823a10"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

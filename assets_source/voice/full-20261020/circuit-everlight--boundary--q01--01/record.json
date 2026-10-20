@@ -1,0 +1,59 @@
+{
+  "id": "circuit-everlight--boundary--q01--01",
+  "sceneId": "everlight",
+  "lineId": "everlight--boundary--q01--01",
+  "lineIndex": 0,
+  "speaker": "mei",
+  "text": "它今晚还响吗？",
+  "nodeId": "boundary",
+  "start": 73,
+  "end": 80,
+  "quoteIndex": 0,
+  "actorId": "mei",
+  "voice": "Serena",
+  "instruct": "六十岁女性，普通话，声音偏低，平实缓慢，像老邻居小声嘱咐，句尾稍停，不要年轻撒娇。 只朗读给定台词，不添加词语或音效。",
+  "seed": 439235771,
+  "textSha256": "0d40c23b3e8ea6b2076e9ef13f3d5436b15b6d71688c21f2efc6f51e1e77a19c",
+  "medium": "spoken",
+  "requestSha256": "f41bb3514b1b51894fecdec032ba4bc25c960546e65ed5a0854e5171c8c1aca4",
+  "attempt": 2,
+  "status": "needs_review",
+  "asr": {
+    "transcript": "他今晚还想吗",
+    "cer": 0.333333,
+    "polarityCountsMatch": true,
+    "passed": false
+  },
+  "duration": 1.28,
+  "wallSeconds": 138.94,
+  "loudness": {
+    "input_i": "-26.16",
+    "input_tp": "-14.58",
+    "input_lra": "0.00",
+    "input_thresh": "-36.16",
+    "output_i": "-19.99",
+    "output_tp": "-8.42",
+    "output_lra": "0.00",
+    "output_thresh": "-29.99",
+    "normalization_type": "linear",
+    "target_offset": "-0.01"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-everlight--boundary--q01--01/raw.wav",
+      "bytes": 122960,
+      "sha256": "8e5d59bfdb9219f2040b1ae470aadcd607a9811b506458ee2301deeff73fbc0c"
+    },
+    "master": {
+      "path": "circuit-everlight--boundary--q01--01/master.wav",
+      "bytes": 61518,
+      "sha256": "9cfe7356b4d45d9406b4eb746d612c1d17300ff9a7920e9b261469ae2a62ec77"
+    },
+    "runtime": {
+      "path": "circuit-everlight--boundary--q01--01/runtime.ogg",
+      "bytes": 13175,
+      "sha256": "17219aa0987d8bbf6c6b5f9307bd148cb24f592153013a4c6ce85c551cc3ce40"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

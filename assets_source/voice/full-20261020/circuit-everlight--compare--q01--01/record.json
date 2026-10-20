@@ -1,0 +1,59 @@
+{
+  "id": "circuit-everlight--compare--q01--01",
+  "sceneId": "everlight",
+  "lineId": "everlight--compare--q01--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "人是谁能查，灯怎么亮还没查到。",
+  "nodeId": "compare",
+  "start": 76,
+  "end": 91,
+  "quoteIndex": 0,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 672120971,
+  "textSha256": "81f1cfb167a990af2cb7bb6dc89f8cdd10b4003faab1867fec9395d9e2ea4b72",
+  "medium": "spoken",
+  "requestSha256": "cce3d15a0b35313eb3b3b8b0cdf13af21e899a46a86315c2b24fa756437a93b8",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "人是誰能查啊 燈怎麼亮還沒查到",
+    "cer": 0.076923,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 2.96,
+  "wallSeconds": 100.498,
+  "loudness": {
+    "input_i": "-23.19",
+    "input_tp": "-7.88",
+    "input_lra": "0.00",
+    "input_thresh": "-33.35",
+    "output_i": "-20.00",
+    "output_tp": "-4.68",
+    "output_lra": "0.00",
+    "output_thresh": "-30.16",
+    "normalization_type": "linear",
+    "target_offset": "0.00"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-everlight--compare--q01--01/raw.wav",
+      "bytes": 284240,
+      "sha256": "9e14bc5904684dc78e0392f0afc0cdea237dfb552975262827f0de14ecd78431"
+    },
+    "master": {
+      "path": "circuit-everlight--compare--q01--01/master.wav",
+      "bytes": 142158,
+      "sha256": "5683a55a230476fe098cb311c56e8d9213edf12feadffbb75ad64585a2ffd517"
+    },
+    "runtime": {
+      "path": "circuit-everlight--compare--q01--01/runtime.ogg",
+      "bytes": 24898,
+      "sha256": "64e7c0a77f27e8aa9b7bfff1ff31a29e33c096d2eef034905d051e2728276d03"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

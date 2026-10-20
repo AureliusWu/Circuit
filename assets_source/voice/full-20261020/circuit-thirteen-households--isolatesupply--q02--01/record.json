@@ -1,0 +1,59 @@
+{
+  "id": "circuit-thirteen-households--isolatesupply--q02--01",
+  "sceneId": "thirteen-households",
+  "lineId": "thirteen-households--isolateSupply--q02--01",
+  "lineIndex": 0,
+  "speaker": "cheng",
+  "text": "来路没找到，还是按可能带电看。",
+  "nodeId": "isolateSupply",
+  "start": 79,
+  "end": 94,
+  "quoteIndex": 1,
+  "actorId": "cheng",
+  "voice": "Dylan",
+  "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1769758885,
+  "textSha256": "b5e723ff8dd0df26ddd9b92bab629cb5ecb081737205dfd87bd145567912b102",
+  "medium": "spoken",
+  "requestSha256": "c0f5e8fd1bbbe574bc13da8914674423505937cfbf36c7c4689071c8f04759ee",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "来路没找到还是让可能带电看",
+    "cer": 0.076923,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 2.72,
+  "wallSeconds": 135.195,
+  "loudness": {
+    "input_i": "-28.62",
+    "input_tp": "-9.67",
+    "input_lra": "0.00",
+    "input_thresh": "-38.62",
+    "output_i": "-20.96",
+    "output_tp": "-2.00",
+    "output_lra": "0.00",
+    "output_thresh": "-30.96",
+    "normalization_type": "linear",
+    "target_offset": "0.96"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-thirteen-households--isolatesupply--q02--01/raw.wav",
+      "bytes": 261200,
+      "sha256": "253fdd00eebd70404342265343dc47a36b538ca700eeb810cc50284e1656f88f"
+    },
+    "master": {
+      "path": "circuit-thirteen-households--isolatesupply--q02--01/master.wav",
+      "bytes": 130638,
+      "sha256": "7d115709a7df25355f7304e9e5c29de7d9188b4d91de5f4deb631313385e2205"
+    },
+    "runtime": {
+      "path": "circuit-thirteen-households--isolatesupply--q02--01/runtime.ogg",
+      "bytes": 26952,
+      "sha256": "a398c7a36bc23139c90371e0ea041791c706a44b6113063582dd897b3f54e9a9"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

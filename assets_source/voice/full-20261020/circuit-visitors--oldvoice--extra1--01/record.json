@@ -1,0 +1,81 @@
+{
+  "id": "circuit-visitors--oldvoice--extra1--01",
+  "sceneId": "visitors",
+  "lineId": "visitors--oldVoice--extra1--01",
+  "lineIndex": 0,
+  "speaker": "xu",
+  "text": "车还等吗？",
+  "nodeId": "oldVoice",
+  "start": 47,
+  "end": 52,
+  "medium": "recorded",
+  "recordingKey": "car-wait",
+  "legacy": {
+    "id": "q07-xu",
+    "character": "xu",
+    "speaker": "Dylan",
+    "instruct": "四十岁男性，普通话，声音比平常低一些，短句利落，是工地电台里平常的询问，不要朗诵。",
+    "text": "车还等吗？",
+    "seed": 120019,
+    "bindings": [
+      {
+        "chapter": "seventh-night",
+        "node": "fatherMessage"
+      }
+    ],
+    "requestSha256": "53c0685a1ac7c843b3a6e3019a9edff1f0e3e6e882a8497578dfad23c6d8846f",
+    "duration": 1.12,
+    "generationSeconds": 7.171,
+    "loudnessInput": {
+      "input_i": "-21.12",
+      "input_tp": "-5.35",
+      "input_lra": "0.00",
+      "input_thresh": "-31.12",
+      "output_i": "-19.98",
+      "output_tp": "-4.23",
+      "output_lra": "0.00",
+      "output_thresh": "-29.98",
+      "normalization_type": "linear",
+      "target_offset": "-0.02"
+    },
+    "files": [
+      {
+        "path": "assets_source/audio/v1.2.0/q07-xu-raw.wav",
+        "bytes": 53804,
+        "sha256": "b5c03892e099b509dc108e168763688e8518d5ac3885f0825b0c57214e796758"
+      },
+      {
+        "path": "assets_source/audio/v1.2.0/q07-xu.wav",
+        "bytes": 53838,
+        "sha256": "37bdf70dd5477f18142d78d323e1faf493f65c9e015a3a1e16927b79d9ad525e"
+      },
+      {
+        "path": "public/audio/voice/q07-xu.mp3",
+        "bytes": 14445,
+        "sha256": "3a05ccc10250ff83eb442057ed32cd68fea3a39b9689c06aabc45d9054f41fd8"
+      }
+    ],
+    "asr": {
+      "id": "q07-xu",
+      "mp3Sha256": "3a05ccc10250ff83eb442057ed32cd68fea3a39b9689c06aabc45d9054f41fd8",
+      "expected": "车还等吗？",
+      "transcript": "车还等吗?",
+      "cer": 0,
+      "polarityCountsMatch": true,
+      "status": "passed"
+    },
+    "asrModel": "Systran/faster-whisper-large-v3",
+    "evidencePath": "docs/audio/voice-asr.json",
+    "evidenceSha256": "25d0e31c3decd5262d92349d6571ec67ac58723ea00c40005ddff4d8b9a58334"
+  },
+  "replayOf": "circuit-seventh-night--fathermessage--q02--01",
+  "actorId": "xu",
+  "voice": "Dylan",
+  "instruct": "四十岁男性，普通话，声音比平常低一些，短句利落，是工地电台里平常的询问，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 362670918,
+  "textSha256": "7c29306069914d0e26a42e22566872ef2913a993265f35a381a85f919d63a00d",
+  "requestSha256": "78e266409604afa9d1cad1737dbfaec0d506fd28fa351c7dfe8cf4f24f5aaf41",
+  "status": "replay_reference",
+  "files": {},
+  "recoveredFromRun": 39391771655
+}

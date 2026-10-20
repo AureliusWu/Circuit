@@ -1,0 +1,59 @@
+{
+  "id": "circuit-return-visit--onward--q01--01",
+  "sceneId": "return-visit",
+  "lineId": "return-visit--onward--q01--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "师傅，它是不是会用我们的声音了？",
+  "nodeId": "onward",
+  "start": 58,
+  "end": 74,
+  "quoteIndex": 0,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 478032326,
+  "textSha256": "63906ae351f585cdbcc2df464bce9922151cd69fe8c5405410d297a36ffc1a36",
+  "medium": "spoken",
+  "requestSha256": "37ff9d967b9c34be17270aefccaa21daf799f69ee9fca36d940f4cabd57a1bb6",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "师父 她是不是会用我们的声音了",
+    "cer": 0.142857,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 2.8,
+  "wallSeconds": 24.795,
+  "loudness": {
+    "input_i": "-18.20",
+    "input_tp": "-5.79",
+    "input_lra": "0.00",
+    "input_thresh": "-28.95",
+    "output_i": "-20.00",
+    "output_tp": "-7.60",
+    "output_lra": "0.00",
+    "output_thresh": "-30.75",
+    "normalization_type": "linear",
+    "target_offset": "-0.00"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-return-visit--onward--q01--01/raw.wav",
+      "bytes": 268880,
+      "sha256": "25536fa84cf40e6784813c82daee76e51b7ff226fcf2f787e51c3f1055479125"
+    },
+    "master": {
+      "path": "circuit-return-visit--onward--q01--01/master.wav",
+      "bytes": 134478,
+      "sha256": "65908dbcd144e1ed28d4361cf25a07ba10ed05a0a31196ea1b9d556e62dc68b5"
+    },
+    "runtime": {
+      "path": "circuit-return-visit--onward--q01--01/runtime.ogg",
+      "bytes": 22536,
+      "sha256": "499fd0f2d61d55660b58f9f004ac76aadfb3e5b2fdfaf6dceea8f4f35f14d0c6"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

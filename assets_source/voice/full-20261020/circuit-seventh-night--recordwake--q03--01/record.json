@@ -1,0 +1,59 @@
+{
+  "id": "circuit-seventh-night--recordwake--q03--01",
+  "sceneId": "seventh-night",
+  "lineId": "seventh-night--recordWake--q03--01",
+  "lineIndex": 0,
+  "speaker": "shen",
+  "text": "那这张也看看。我爸一直说不能扔，不是今年的。",
+  "nodeId": "recordWake",
+  "start": 89,
+  "end": 111,
+  "quoteIndex": 2,
+  "actorId": "shen",
+  "voice": "Serena",
+  "instruct": "二十八岁女性，普通话，声音轻而疲惫，口语自然，像一晚上没睡好的人，不要哭腔。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1489423732,
+  "textSha256": "636d52d67384274a14b0559c7c798d0e701076bc9d6a11e1c2a2991538064453",
+  "medium": "spoken",
+  "requestSha256": "cc6707c76f7455e4e407753b98d111ebf6ae852bc3cc9ea9448974eca05924f7",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "那這張也看看,我爸一直說不能扔,不是今年的",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 4.8,
+  "wallSeconds": 39.599,
+  "loudness": {
+    "input_i": "-26.89",
+    "input_tp": "-8.06",
+    "input_lra": "3.10",
+    "input_thresh": "-37.14",
+    "output_i": "-20.57",
+    "output_tp": "-2.20",
+    "output_lra": "3.10",
+    "output_thresh": "-30.88",
+    "normalization_type": "dynamic",
+    "target_offset": "0.57"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-seventh-night--recordwake--q03--01/raw.wav",
+      "bytes": 460880,
+      "sha256": "e3ead3fc7ded60ab07177cb56f69f74ec42a952d94b4b5f5be5d13b3174dcb6e"
+    },
+    "master": {
+      "path": "circuit-seventh-night--recordwake--q03--01/master.wav",
+      "bytes": 230478,
+      "sha256": "cc2e5d95c21bd625dea99cccbd3c2fe88d4dda02576c5654cd430da95e166429"
+    },
+    "runtime": {
+      "path": "circuit-seventh-night--recordwake--q03--01/runtime.ogg",
+      "bytes": 36499,
+      "sha256": "99334b4646363aecff9007e45e7dc29bb6af039615fc3b23c2b048ad3b9a157d"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

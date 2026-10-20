@@ -1,0 +1,59 @@
+{
+  "id": "circuit-seventh-night--waiting--q01--01",
+  "sceneId": "seventh-night",
+  "lineId": "seventh-night--waiting--q01--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "那地方还有机器吗？",
+  "nodeId": "waiting",
+  "start": 81,
+  "end": 90,
+  "quoteIndex": 0,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1890072433,
+  "textSha256": "a7d44ba3187c851720477142779f2ed1d6da5ef12c923b2010ab589c9bb21a85",
+  "medium": "spoken",
+  "requestSha256": "a91659712faf2e4869fca63aa090d4fa390e93fe780cb32e487f931310f6badd",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "那地方还有机器吗?",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 1.6,
+  "wallSeconds": 91.993,
+  "loudness": {
+    "input_i": "-17.76",
+    "input_tp": "-5.81",
+    "input_lra": "0.00",
+    "input_thresh": "-27.76",
+    "output_i": "-20.01",
+    "output_tp": "-8.04",
+    "output_lra": "0.00",
+    "output_thresh": "-30.01",
+    "normalization_type": "linear",
+    "target_offset": "0.01"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-seventh-night--waiting--q01--01/raw.wav",
+      "bytes": 153680,
+      "sha256": "f8ec0bf6603da68118806eb5f1913b50407899a8648b4159a136420700d899ac"
+    },
+    "master": {
+      "path": "circuit-seventh-night--waiting--q01--01/master.wav",
+      "bytes": 76878,
+      "sha256": "0055807b38c7a8bb5e1b46d2af809224e1b321945be8853d8331e594b3cf3689"
+    },
+    "runtime": {
+      "path": "circuit-seventh-night--waiting--q01--01/runtime.ogg",
+      "bytes": 15333,
+      "sha256": "bc4f876becacc6441c2eee8232456dd27941869edc399430ae8a0b54360ca5d4"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

@@ -1,0 +1,59 @@
+{
+  "id": "circuit-answering--recordclock--q01--01",
+  "sceneId": "answering",
+  "lineId": "answering--recordClock--q01--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "你那句在车上，差不多几点？",
+  "nodeId": "recordClock",
+  "start": 54,
+  "end": 67,
+  "quoteIndex": 0,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1511386585,
+  "textSha256": "ad03850d59cca46ef0d48f374dae96130b849b83bbc4c1fb3023f9554be4a48c",
+  "medium": "spoken",
+  "requestSha256": "4c1f0006aaf11fbae0074424eb944f77a6c9db7c04ae13bc75b4da0c49e27c35",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "你那句在車上差不多幾點",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 2.72,
+  "wallSeconds": 24.241,
+  "loudness": {
+    "input_i": "-18.67",
+    "input_tp": "-4.12",
+    "input_lra": "0.00",
+    "input_thresh": "-28.67",
+    "output_i": "-20.00",
+    "output_tp": "-5.46",
+    "output_lra": "0.00",
+    "output_thresh": "-30.00",
+    "normalization_type": "linear",
+    "target_offset": "0.00"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-answering--recordclock--q01--01/raw.wav",
+      "bytes": 261200,
+      "sha256": "baba139b2e970fef4310aef689b2b5cad03a6f5f826653a929f1e5b2430a0f8b"
+    },
+    "master": {
+      "path": "circuit-answering--recordclock--q01--01/master.wav",
+      "bytes": 130638,
+      "sha256": "3ee79abf8638f6c6196cd326b3cbd844aa8aafc17a53618f63169be26c971392"
+    },
+    "runtime": {
+      "path": "circuit-answering--recordclock--q01--01/runtime.ogg",
+      "bytes": 23013,
+      "sha256": "f7913d682ccd8cfd2430242be22b20de5fd0ed3a7551166b09cbc0ede86195c3"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

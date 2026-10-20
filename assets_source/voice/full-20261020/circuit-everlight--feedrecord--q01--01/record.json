@@ -1,0 +1,59 @@
+{
+  "id": "circuit-everlight--feedrecord--q01--01",
+  "sceneId": "everlight",
+  "lineId": "everlight--feedRecord--q01--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "现在只能说它没跟住宅灯一起变。",
+  "nodeId": "feedRecord",
+  "start": 43,
+  "end": 58,
+  "quoteIndex": 0,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1779894730,
+  "textSha256": "1401fe10b03c822ecbd1ce1e258cbdae8dbff7402e3bd9b010806ddb344e20f5",
+  "medium": "spoken",
+  "requestSha256": "f872c8a2795e8d2e29a884a264b9703025ae704fc81a6efa5b099ecb04fa8f89",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "现在只能说他没跟住宅登一起变。",
+    "cer": 0.142857,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 2.8,
+  "wallSeconds": 95.38,
+  "loudness": {
+    "input_i": "-17.89",
+    "input_tp": "-2.23",
+    "input_lra": "0.00",
+    "input_thresh": "-27.89",
+    "output_i": "-20.00",
+    "output_tp": "-4.34",
+    "output_lra": "0.00",
+    "output_thresh": "-30.00",
+    "normalization_type": "linear",
+    "target_offset": "-0.00"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-everlight--feedrecord--q01--01/raw.wav",
+      "bytes": 268880,
+      "sha256": "5d5068ad569ae80001b46df08ba55f4875d3d978217f6d142fe9ad85dae16bfe"
+    },
+    "master": {
+      "path": "circuit-everlight--feedrecord--q01--01/master.wav",
+      "bytes": 134478,
+      "sha256": "cc9b21d2c3d0c72437d04792ac8c9e9c6292e453b12ee4554bb13d680024a21c"
+    },
+    "runtime": {
+      "path": "circuit-everlight--feedrecord--q01--01/runtime.ogg",
+      "bytes": 24934,
+      "sha256": "a1f84034e4b55ffccce219e5c30c2c52bc2eac8797840698981b9b1e7917e9d5"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

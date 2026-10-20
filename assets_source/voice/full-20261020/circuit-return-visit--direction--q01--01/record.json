@@ -1,0 +1,59 @@
+{
+  "id": "circuit-return-visit--direction--q01--01",
+  "sceneId": "return-visit",
+  "lineId": "return-visit--direction--q01--01",
+  "lineIndex": 0,
+  "speaker": "luo",
+  "text": "讲究是老人说的，印子从哪里来我不知道。",
+  "nodeId": "direction",
+  "start": 62,
+  "end": 81,
+  "quoteIndex": 0,
+  "actorId": "luo",
+  "voice": "Vivian",
+  "instruct": "二十九岁女性，普通话，声音偏低，夜班值班员谨慎地问话，平静自然，略有迟疑，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 990984439,
+  "textSha256": "ebdf534d62a8e7cb6d0641e47c0dc847ea11f5117927151cb2b6afefc932db49",
+  "medium": "spoken",
+  "requestSha256": "28d7fcc6402e456a8b0a73cac5c353ec302c998114bd6455232adc31987fd47c",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "讲就是老人说的 燕子从哪里来 我不知道",
+    "cer": 0.117647,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 5.84,
+  "wallSeconds": 25.586,
+  "loudness": {
+    "input_i": "-20.67",
+    "input_tp": "-6.28",
+    "input_lra": "0.40",
+    "input_thresh": "-31.82",
+    "output_i": "-19.44",
+    "output_tp": "-4.91",
+    "output_lra": "1.20",
+    "output_thresh": "-30.59",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.56"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-return-visit--direction--q01--01/raw.wav",
+      "bytes": 560720,
+      "sha256": "3a79c39ec12318d8d475bd33890dc73d658460bf7ecc47251320f0f7e13e10fa"
+    },
+    "master": {
+      "path": "circuit-return-visit--direction--q01--01/master.wav",
+      "bytes": 280398,
+      "sha256": "11a509848332f3e82b40137b25319c7342302df6ea164de14ba33d1bd960e670"
+    },
+    "runtime": {
+      "path": "circuit-return-visit--direction--q01--01/runtime.ogg",
+      "bytes": 43283,
+      "sha256": "453dc45299b72a832ca5ea09bc80ebe7f30c11a8b0e575a8ec8c6a32300ad313"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

@@ -1,0 +1,59 @@
+{
+  "id": "circuit-everlight--delivery--q01--01",
+  "sceneId": "everlight",
+  "lineId": "everlight--delivery--q01--01",
+  "lineIndex": 0,
+  "speaker": "mei",
+  "text": "后门别走。",
+  "nodeId": "delivery",
+  "start": 22,
+  "end": 27,
+  "quoteIndex": 0,
+  "actorId": "mei",
+  "voice": "Serena",
+  "instruct": "六十岁女性，普通话，声音偏低，平实缓慢，像老邻居小声嘱咐，句尾稍停，不要年轻撒娇。 只朗读给定台词，不添加词语或音效。",
+  "seed": 365142724,
+  "textSha256": "f98ab78056d3914912d901e30b789ea4a7302b971adb182640f170adf1d74e84",
+  "medium": "spoken",
+  "requestSha256": "f3f81a43ba9a6ae464e8d2765b2851f996f4572df1b545b01ff4ac3c20d19a6b",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "后门别走。",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 1.44,
+  "wallSeconds": 15.579,
+  "loudness": {
+    "input_i": "-27.11",
+    "input_tp": "-11.20",
+    "input_lra": "0.00",
+    "input_thresh": "-37.11",
+    "output_i": "-20.00",
+    "output_tp": "-4.09",
+    "output_lra": "0.00",
+    "output_thresh": "-30.00",
+    "normalization_type": "linear",
+    "target_offset": "-0.00"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-everlight--delivery--q01--01/raw.wav",
+      "bytes": 138320,
+      "sha256": "c75f8e2c93bb58ce5210715298ef9346b3f2453295ba9e5860ab23642528f1d0"
+    },
+    "master": {
+      "path": "circuit-everlight--delivery--q01--01/master.wav",
+      "bytes": 69198,
+      "sha256": "f15e416c590f7dda245e707600551e913922c685336dc326f7d2f7d04ba6e4ac"
+    },
+    "runtime": {
+      "path": "circuit-everlight--delivery--q01--01/runtime.ogg",
+      "bytes": 13669,
+      "sha256": "ec7b181d889b24701d76808f6f86d34520caa09603b1ad2fd4786690fb602cf2"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

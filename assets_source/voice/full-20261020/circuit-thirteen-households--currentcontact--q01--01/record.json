@@ -1,0 +1,59 @@
+{
+  "id": "circuit-thirteen-households--currentcontact--q01--01",
+  "sceneId": "thirteen-households",
+  "lineId": "thirteen-households--currentContact--q01--01",
+  "lineIndex": 0,
+  "speaker": "lin",
+  "text": "现场照片给我，测量条件也带上。",
+  "nodeId": "currentContact",
+  "start": 17,
+  "end": 32,
+  "quoteIndex": 0,
+  "actorId": "lin",
+  "voice": "Serena",
+  "instruct": "成年女性，普通话，声音干脆平稳，值班调度员在电台里说话，清楚利落，不要播音腔。 调度通话，语速稍慢，逐句吐字清楚。槐荫巷读huái yīn xiàng，在线读zài xiàn。 只朗读给定台词，不添加词语或音效。",
+  "seed": 517120566,
+  "textSha256": "a43288f50d8c8db58c22cbd21fbb225993756a27ecedd5d9788b1ce8f21256db",
+  "medium": "spoken",
+  "requestSha256": "e09c3c45205d7741e814d82a4b7e54a40163acf7aacea864f1b90390dcf80594",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "現場照片給我 測量條件也戴上",
+    "cer": 0.076923,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 3.12,
+  "wallSeconds": 109.63,
+  "loudness": {
+    "input_i": "-26.40",
+    "input_tp": "-10.11",
+    "input_lra": "0.70",
+    "input_thresh": "-36.95",
+    "output_i": "-18.65",
+    "output_tp": "-2.53",
+    "output_lra": "0.00",
+    "output_thresh": "-29.38",
+    "normalization_type": "dynamic",
+    "target_offset": "-1.35"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-thirteen-households--currentcontact--q01--01/raw.wav",
+      "bytes": 299600,
+      "sha256": "420dfb5a9d2f5414e479fda77eefe8bcf5ef71f07bf289103f1792a0649973fa"
+    },
+    "master": {
+      "path": "circuit-thirteen-households--currentcontact--q01--01/master.wav",
+      "bytes": 149838,
+      "sha256": "f2539eef61665ea207e3c04838ef803fdcf13d21e77007c958e665c0091136f5"
+    },
+    "runtime": {
+      "path": "circuit-thirteen-households--currentcontact--q01--01/runtime.ogg",
+      "bytes": 25515,
+      "sha256": "0a3483d1c9fa466005cb4a67c76b501853e22dfc8705cc109639390fc6d57e13"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

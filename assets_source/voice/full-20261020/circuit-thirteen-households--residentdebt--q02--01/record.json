@@ -1,0 +1,59 @@
+{
+  "id": "circuit-thirteen-households--residentdebt--q02--01",
+  "sceneId": "thirteen-households",
+  "lineId": "thirteen-households--residentDebt--q02--01",
+  "lineIndex": 0,
+  "speaker": "mei",
+  "text": "陈家外孙都长大了，不信可以去问。别光问这张表。",
+  "nodeId": "residentDebt",
+  "start": 85,
+  "end": 108,
+  "quoteIndex": 1,
+  "actorId": "mei",
+  "voice": "Serena",
+  "instruct": "六十岁女性，普通话，声音偏低，平实缓慢，像老邻居小声嘱咐，句尾稍停，不要年轻撒娇。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1773106263,
+  "textSha256": "ee4e3cc0510789d3ca8e705d52583d31d0b4fb9f6050ca0f38ef12f9599d8b32",
+  "medium": "spoken",
+  "requestSha256": "6ba52985d59e56b93b93d1dab3c3656758628c1b7a5de46dc26965077404ae2e",
+  "attempt": 1,
+  "status": "accepted",
+  "asr": {
+    "transcript": "陈家外孙都长大了不幸可以去问别光问这张表",
+    "cer": 0.05,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 5.28,
+  "wallSeconds": 42.651,
+  "loudness": {
+    "input_i": "-22.37",
+    "input_tp": "-7.26",
+    "input_lra": "1.30",
+    "input_thresh": "-32.96",
+    "output_i": "-18.61",
+    "output_tp": "-3.66",
+    "output_lra": "3.50",
+    "output_thresh": "-29.53",
+    "normalization_type": "dynamic",
+    "target_offset": "-1.39"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-thirteen-households--residentdebt--q02--01/raw.wav",
+      "bytes": 506960,
+      "sha256": "ddaa4958668fd509e408c7d793f7d516d92fe721f2e6c5181ff4e65f3348d782"
+    },
+    "master": {
+      "path": "circuit-thirteen-households--residentdebt--q02--01/master.wav",
+      "bytes": 253518,
+      "sha256": "5d90010c95761625368da62990b6acafd9a4a15cc3a5f5d3720a09d92cdc058d"
+    },
+    "runtime": {
+      "path": "circuit-thirteen-households--residentdebt--q02--01/runtime.ogg",
+      "bytes": 39862,
+      "sha256": "ad845d0683d1804a600a711a7a8b9d90e00105ae1acf6932e0cc149977f6530e"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

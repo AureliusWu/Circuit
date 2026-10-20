@@ -1,0 +1,59 @@
+{
+  "id": "circuit-everlight--promise--q02--01",
+  "sceneId": "everlight",
+  "lineId": "everlight--promise--q02--01",
+  "lineIndex": 0,
+  "speaker": "cheng",
+  "text": "几下？",
+  "nodeId": "promise",
+  "start": 57,
+  "end": 60,
+  "quoteIndex": 1,
+  "actorId": "cheng",
+  "voice": "Dylan",
+  "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 691297115,
+  "textSha256": "977465dea83e4b5a3288cf5450eb5c93b23006f6cf99151adf9f5f7613b7c99a",
+  "medium": "spoken",
+  "requestSha256": "9b0620af960b35b24d8009b0cc9befc91926c0663ef3915152ce31b5a778313e",
+  "attempt": 1,
+  "status": "accepted",
+  "asr": {
+    "transcript": "幾下",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 0.72,
+  "wallSeconds": 31.53,
+  "loudness": {
+    "input_i": "-21.82",
+    "input_tp": "-4.52",
+    "input_lra": "0.00",
+    "input_thresh": "-31.82",
+    "output_i": "-20.01",
+    "output_tp": "-2.70",
+    "output_lra": "0.00",
+    "output_thresh": "-30.01",
+    "normalization_type": "linear",
+    "target_offset": "0.01"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-everlight--promise--q02--01/raw.wav",
+      "bytes": 69200,
+      "sha256": "8ce39f3cbd0aefe25faed34c36b8572e6cefa7213e779061221fd2e0287061df"
+    },
+    "master": {
+      "path": "circuit-everlight--promise--q02--01/master.wav",
+      "bytes": 34638,
+      "sha256": "89ec7d968bb8c8cc3862394b5170f2c3fcc95ce937aaa03b3ab3a8d0fac0de76"
+    },
+    "runtime": {
+      "path": "circuit-everlight--promise--q02--01/runtime.ogg",
+      "bytes": 8518,
+      "sha256": "95262e8bd959afd9c4faf1299eadfae50e832837c3b06bf95c2233f879ea4877"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

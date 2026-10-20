@@ -1,0 +1,59 @@
+{
+  "id": "circuit-seventh-night--earlytrip--q02--01",
+  "sceneId": "seventh-night",
+  "lineId": "seventh-night--earlyTrip--q02--01",
+  "lineIndex": 0,
+  "speaker": "shen",
+  "text": "我爸不是这么说的。他先数人，再说能不能走。",
+  "nodeId": "earlyTrip",
+  "start": 70,
+  "end": 91,
+  "quoteIndex": 1,
+  "actorId": "shen",
+  "voice": "Serena",
+  "instruct": "二十八岁女性，普通话，声音轻而疲惫，口语自然，像一晚上没睡好的人，不要哭腔。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1227943903,
+  "textSha256": "1ae69315c369444f03860fadf0bfeafec5069a3a2d0c85ddc6d951f33cc01aac",
+  "medium": "spoken",
+  "requestSha256": "8e06ee2e8a80bb948a3d0f55c0f98c209ae28b1f4af8fa09e7ad8548cd56e28a",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "我爸不是这么说的他先属人再说能不能走",
+    "cer": 0.055556,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 4.64,
+  "wallSeconds": 38.117,
+  "loudness": {
+    "input_i": "-24.59",
+    "input_tp": "-8.37",
+    "input_lra": "1.10",
+    "input_thresh": "-34.99",
+    "output_i": "-19.64",
+    "output_tp": "-3.47",
+    "output_lra": "0.50",
+    "output_thresh": "-29.86",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.36"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-seventh-night--earlytrip--q02--01/raw.wav",
+      "bytes": 445520,
+      "sha256": "19e3ed4f378d7bbce71e5d8a00b439bd0b8f3422141346fea806b8ecf4c209a4"
+    },
+    "master": {
+      "path": "circuit-seventh-night--earlytrip--q02--01/master.wav",
+      "bytes": 222798,
+      "sha256": "e7e1507dc4b3f08b6df83712d59608606aa3d2b2f0c0cb884eee08fafad051a7"
+    },
+    "runtime": {
+      "path": "circuit-seventh-night--earlytrip--q02--01/runtime.ogg",
+      "bytes": 35839,
+      "sha256": "144e0cc3ed4b46a15a40b26741451dea32e16eec30412bdd0ac51bf15f4753cf"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

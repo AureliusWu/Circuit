@@ -1,0 +1,59 @@
+{
+  "id": "circuit-answering--boundary--q01--01",
+  "sceneId": "answering",
+  "lineId": "answering--boundary--q01--01",
+  "lineIndex": 0,
+  "speaker": "luo",
+  "text": "你们在的时候，它就不叫了。",
+  "nodeId": "boundary",
+  "start": 89,
+  "end": 102,
+  "quoteIndex": 0,
+  "actorId": "luo",
+  "voice": "Vivian",
+  "instruct": "二十九岁女性，普通话，声音偏低，夜班值班员谨慎地问话，平静自然，略有迟疑，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 95934755,
+  "textSha256": "f7cc4bc246c5802491af67f6968e8e039a6337c128207d98959540a40fae70f7",
+  "medium": "spoken",
+  "requestSha256": "28e1c73da2154fa043245a7ed6dcbaf323bfd1d9ef396a44fe7146a3a34bc8d4",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "你們在的時候,他就不叫了",
+    "cer": 0.090909,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 2.64,
+  "wallSeconds": 13.239,
+  "loudness": {
+    "input_i": "-23.95",
+    "input_tp": "-10.29",
+    "input_lra": "0.00",
+    "input_thresh": "-34.13",
+    "output_i": "-20.00",
+    "output_tp": "-6.33",
+    "output_lra": "0.00",
+    "output_thresh": "-30.17",
+    "normalization_type": "linear",
+    "target_offset": "-0.00"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-answering--boundary--q01--01/raw.wav",
+      "bytes": 253520,
+      "sha256": "19c2dcd5627f350f1cdb917d76fbfa2ea40049b9cb5a2a3ba2f6caacabd3fa57"
+    },
+    "master": {
+      "path": "circuit-answering--boundary--q01--01/master.wav",
+      "bytes": 126798,
+      "sha256": "259d3acbc3d6135ea572f6bc3a024ad9f60d51bb09e9672f9b5f23daeb432054"
+    },
+    "runtime": {
+      "path": "circuit-answering--boundary--q01--01/runtime.ogg",
+      "bytes": 23074,
+      "sha256": "b3e60eeeabf1e8640c9984c372c6a245034ac3fe4b7baa5b5f1514185d5126da"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

@@ -1,0 +1,59 @@
+{
+  "id": "circuit-closure--radiorecord--q02--01",
+  "sceneId": "closure",
+  "lineId": "closure--radioRecord--q02--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "今天是谁又按了发送，还没有。",
+  "nodeId": "radioRecord",
+  "start": 99,
+  "end": 113,
+  "quoteIndex": 1,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 142471014,
+  "textSha256": "f0186dee935afadb5641bd4b79734e66ce0ad0f26de89d9254358565be9010a2",
+  "medium": "spoken",
+  "requestSha256": "a7b06d64dd491d58e55cbeceea905f27b4fadf65557b2b4e7cb429153c025c47",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "今天是谁又按了发送?还没有?",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 4.0,
+  "wallSeconds": 32.82,
+  "loudness": {
+    "input_i": "-19.93",
+    "input_tp": "-6.11",
+    "input_lra": "0.90",
+    "input_thresh": "-30.37",
+    "output_i": "-18.83",
+    "output_tp": "-4.88",
+    "output_lra": "0.50",
+    "output_thresh": "-29.22",
+    "normalization_type": "dynamic",
+    "target_offset": "-1.17"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-closure--radiorecord--q02--01/raw.wav",
+      "bytes": 384080,
+      "sha256": "35ff51d002cc28706644ac389fd42248f6ca3639140a9000adebfcbd38140e39"
+    },
+    "master": {
+      "path": "circuit-closure--radiorecord--q02--01/master.wav",
+      "bytes": 192078,
+      "sha256": "2d9a58177f46d66657e32e52921c325086ac9284632a2107f9e9c0fe83609d11"
+    },
+    "runtime": {
+      "path": "circuit-closure--radiorecord--q02--01/runtime.ogg",
+      "bytes": 30307,
+      "sha256": "894e546c55f1ac4b2be4eafe106f9388f990eff5da8214180a327d2e632febf2"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

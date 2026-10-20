@@ -1,0 +1,59 @@
+{
+  "id": "circuit-seventh-night--zerominute--q03--01",
+  "sceneId": "seventh-night",
+  "lineId": "seventh-night--zeroMinute--q03--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "槐荫巷那个字也是这样。",
+  "nodeId": "zeroMinute",
+  "start": 82,
+  "end": 93,
+  "quoteIndex": 2,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 554833090,
+  "textSha256": "87bbf6d8f166ce6f026b704d44573b350ea60a06815db67dc054ca1c995aeb98",
+  "medium": "spoken",
+  "requestSha256": "28f210cf32967479316d2eeafcbf19dcbd0a458c71501665c9c7469d52563d38",
+  "attempt": 2,
+  "status": "needs_review",
+  "asr": {
+    "transcript": "懷英向那個字也是這樣",
+    "cer": 0.3,
+    "polarityCountsMatch": true,
+    "passed": false
+  },
+  "duration": 1.92,
+  "wallSeconds": 137.273,
+  "loudness": {
+    "input_i": "-21.43",
+    "input_tp": "-6.25",
+    "input_lra": "0.00",
+    "input_thresh": "-31.43",
+    "output_i": "-20.01",
+    "output_tp": "-4.82",
+    "output_lra": "0.00",
+    "output_thresh": "-30.01",
+    "normalization_type": "linear",
+    "target_offset": "0.01"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-seventh-night--zerominute--q03--01/raw.wav",
+      "bytes": 184400,
+      "sha256": "44fae2026d8548d0b741e534a47610aa11e96f7c0231f0d35ffd6bd5c15ce70e"
+    },
+    "master": {
+      "path": "circuit-seventh-night--zerominute--q03--01/master.wav",
+      "bytes": 92238,
+      "sha256": "68b3754f788fb1d63c3e777b1a7431f6794c8e8d886f168416f52880408e3c03"
+    },
+    "runtime": {
+      "path": "circuit-seventh-night--zerominute--q03--01/runtime.ogg",
+      "bytes": 18270,
+      "sha256": "aca3bae77f5fbfad0675b3bac7f98b22aceab262463bb23bf08d95cf1a83bee7"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

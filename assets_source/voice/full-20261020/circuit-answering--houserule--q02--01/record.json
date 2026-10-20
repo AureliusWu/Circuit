@@ -1,0 +1,59 @@
+{
+  "id": "circuit-answering--houserule--q02--01",
+  "sceneId": "answering",
+  "lineId": "answering--houseRule--q02--01",
+  "lineIndex": 0,
+  "speaker": "cheng",
+  "text": "你应了？",
+  "nodeId": "houseRule",
+  "start": 69,
+  "end": 73,
+  "quoteIndex": 1,
+  "actorId": "cheng",
+  "voice": "Dylan",
+  "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1429500496,
+  "textSha256": "9e3234d514aeb6bf1423b7c689ac2a8978aa07f2af4015c7d439082809ba453a",
+  "medium": "spoken",
+  "requestSha256": "a6545dcbac451dbed168bf0e6c8261ef468885244f70878b33a6866c1fcb15f9",
+  "attempt": 2,
+  "status": "needs_review",
+  "asr": {
+    "transcript": "你硬了",
+    "cer": 0.333333,
+    "polarityCountsMatch": true,
+    "passed": false
+  },
+  "duration": 0.88,
+  "wallSeconds": 38.345,
+  "loudness": {
+    "input_i": "-22.14",
+    "input_tp": "-5.93",
+    "input_lra": "0.00",
+    "input_thresh": "-32.14",
+    "output_i": "-19.99",
+    "output_tp": "-3.79",
+    "output_lra": "0.00",
+    "output_thresh": "-29.99",
+    "normalization_type": "linear",
+    "target_offset": "-0.01"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-answering--houserule--q02--01/raw.wav",
+      "bytes": 84560,
+      "sha256": "4f8c97701ed307203329cff4e95b227e433704bce29525ed8df8488ad02bfe8c"
+    },
+    "master": {
+      "path": "circuit-answering--houserule--q02--01/master.wav",
+      "bytes": 42318,
+      "sha256": "7d0de5cf048f408e43ead7605f28b68368c9fa42e7dfaf13a1f3914f5a083bad"
+    },
+    "runtime": {
+      "path": "circuit-answering--houserule--q02--01/runtime.ogg",
+      "bytes": 9647,
+      "sha256": "d7bc5ba4f2a1360be1d43a239b6a195e0ff9acc6c2731401fde9ed86d3a3dff7"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

@@ -1,0 +1,59 @@
+{
+  "id": "circuit-answering--sealposition--q01--01",
+  "sceneId": "answering",
+  "lineId": "answering--sealPosition--q01--01",
+  "lineIndex": 0,
+  "speaker": "luo",
+  "text": "怎么又躲起来了？",
+  "nodeId": "sealPosition",
+  "start": 88,
+  "end": 96,
+  "quoteIndex": 0,
+  "actorId": "luo",
+  "voice": "Vivian",
+  "instruct": "二十九岁女性，普通话，声音偏低，夜班值班员谨慎地问话，平静自然，略有迟疑，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 788951072,
+  "textSha256": "36712b37347e2a7a0c0205d345d3a5b7fbf3bfb4899c5db0c61aad90e29d5104",
+  "medium": "spoken",
+  "requestSha256": "2898da68c3d94f1b0cd11a073656a63a3cb72a36dc7eb378d061d76f7bd5537e",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "怎么又躲起来了",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 1.36,
+  "wallSeconds": 58.306,
+  "loudness": {
+    "input_i": "-21.15",
+    "input_tp": "-6.73",
+    "input_lra": "0.00",
+    "input_thresh": "-31.15",
+    "output_i": "-19.98",
+    "output_tp": "-5.58",
+    "output_lra": "0.00",
+    "output_thresh": "-29.98",
+    "normalization_type": "linear",
+    "target_offset": "-0.02"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-answering--sealposition--q01--01/raw.wav",
+      "bytes": 130640,
+      "sha256": "062aa587f1f3d8e31caa27559a69a31371ccb6fdb8c69ebd81f01706e7224a52"
+    },
+    "master": {
+      "path": "circuit-answering--sealposition--q01--01/master.wav",
+      "bytes": 65358,
+      "sha256": "19066a75fda28a14b54bf39578c20d7e9b043c405f3155f6bcdba220e4bf3584"
+    },
+    "runtime": {
+      "path": "circuit-answering--sealposition--q01--01/runtime.ogg",
+      "bytes": 13747,
+      "sha256": "28d8390dc02f167f3f97f1b19f9b0bc321bb4d7596e0005264da9985034f3370"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

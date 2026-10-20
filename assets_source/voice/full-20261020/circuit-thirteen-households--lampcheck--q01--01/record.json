@@ -1,0 +1,59 @@
+{
+  "id": "circuit-thirteen-households--lampcheck--q01--01",
+  "sceneId": "thirteen-households",
+  "lineId": "thirteen-households--lampCheck--q01--01",
+  "lineIndex": 0,
+  "speaker": "cheng",
+  "text": "再找一项能对上的。",
+  "nodeId": "lampCheck",
+  "start": 79,
+  "end": 88,
+  "quoteIndex": 0,
+  "actorId": "cheng",
+  "voice": "Dylan",
+  "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 598222377,
+  "textSha256": "f107364c65e1c0a0945889394b87a1efab35c4cf161be074e904d49d9706f342",
+  "medium": "spoken",
+  "requestSha256": "583123d6fbd8f0cbccdb2b2c8ee401b088d60510b6a9c28c78a69e109b1eb721",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "再找一项能对上的",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 1.44,
+  "wallSeconds": 81.184,
+  "loudness": {
+    "input_i": "-24.17",
+    "input_tp": "-6.66",
+    "input_lra": "0.00",
+    "input_thresh": "-34.17",
+    "output_i": "-20.03",
+    "output_tp": "-2.49",
+    "output_lra": "0.00",
+    "output_thresh": "-30.03",
+    "normalization_type": "linear",
+    "target_offset": "0.03"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-thirteen-households--lampcheck--q01--01/raw.wav",
+      "bytes": 138320,
+      "sha256": "71999944ac07228e2bc739e37c2d3d95b2908ddca59a2bf2d85ac10823487eec"
+    },
+    "master": {
+      "path": "circuit-thirteen-households--lampcheck--q01--01/master.wav",
+      "bytes": 69198,
+      "sha256": "292ebb12eca8c934264547ff463afec4b7d634f07cfa732172484eb5848ffa16"
+    },
+    "runtime": {
+      "path": "circuit-thirteen-households--lampcheck--q01--01/runtime.ogg",
+      "bytes": 15524,
+      "sha256": "c93d0ece4dc51af9a51bf17b2bf85382e15ab107d45b7d660b7fff1b74e3f006"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

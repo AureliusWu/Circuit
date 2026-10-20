@@ -1,0 +1,59 @@
+{
+  "id": "circuit-answering--return--q02--01",
+  "sceneId": "answering",
+  "lineId": "answering--return--q02--01",
+  "lineIndex": 0,
+  "speaker": "cheng",
+  "text": "回班里再泡。",
+  "nodeId": "return",
+  "start": 44,
+  "end": 50,
+  "quoteIndex": 1,
+  "actorId": "cheng",
+  "voice": "Dylan",
+  "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1466833631,
+  "textSha256": "6b6f32c6e5de6b46716d46aaec057e0d0b05b36717b4e1074a9a8d4a48f8fc71",
+  "medium": "spoken",
+  "requestSha256": "4e641fbf1eedfc030d34e7910f17be12da9a45306094e0e191e14c0055ead714",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "回班里再跑",
+    "cer": 0.2,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 1.04,
+  "wallSeconds": 43.648,
+  "loudness": {
+    "input_i": "-26.69",
+    "input_tp": "-9.17",
+    "input_lra": "0.00",
+    "input_thresh": "-36.69",
+    "output_i": "-19.99",
+    "output_tp": "-2.48",
+    "output_lra": "0.00",
+    "output_thresh": "-29.99",
+    "normalization_type": "linear",
+    "target_offset": "-0.01"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-answering--return--q02--01/raw.wav",
+      "bytes": 99920,
+      "sha256": "c27e83fea5275062e94e1068f277e4576d56c7dbe4fdf9abb836fae7f9c54ce3"
+    },
+    "master": {
+      "path": "circuit-answering--return--q02--01/master.wav",
+      "bytes": 49998,
+      "sha256": "ad60bf2613fe07e6638cb2e24f3bfe3858e3999419544b86fc2a7c22407c59d4"
+    },
+    "runtime": {
+      "path": "circuit-answering--return--q02--01/runtime.ogg",
+      "bytes": 11986,
+      "sha256": "26db9f22aec73b6cce83bc9a0be8af9f3173e00c191710d7ce769c5812fa1f3b"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

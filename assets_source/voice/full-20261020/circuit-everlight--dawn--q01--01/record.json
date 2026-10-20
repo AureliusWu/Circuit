@@ -1,0 +1,59 @@
+{
+  "id": "circuit-everlight--dawn--q01--01",
+  "sceneId": "everlight",
+  "lineId": "everlight--dawn--q01--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "正常电、旧灯、台阶，都有后续。",
+  "nodeId": "dawn",
+  "start": 24,
+  "end": 39,
+  "quoteIndex": 0,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 702948990,
+  "textSha256": "d79658deeb48dec5958c20a7dfbe90ab440d1076a0bacf9a327455bfba3fd29d",
+  "medium": "spoken",
+  "requestSha256": "f64133069db3e49927c4f6008f19b80edd64b3d8afe3ea3627b24ce4070ea864",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "正常店、舊燈、台階都有後續",
+    "cer": 0.090909,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 3.84,
+  "wallSeconds": 22.104,
+  "loudness": {
+    "input_i": "-20.62",
+    "input_tp": "-2.56",
+    "input_lra": "0.90",
+    "input_thresh": "-30.88",
+    "output_i": "-19.37",
+    "output_tp": "-2.00",
+    "output_lra": "0.00",
+    "output_thresh": "-29.61",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.63"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-everlight--dawn--q01--01/raw.wav",
+      "bytes": 368720,
+      "sha256": "c9f8ec2944027f28873555e040fd66a90ab3beb629cf9f48997d5ab706752a58"
+    },
+    "master": {
+      "path": "circuit-everlight--dawn--q01--01/master.wav",
+      "bytes": 184398,
+      "sha256": "970493216bd4bc5afe51c69b78385c7ba25492b1e4e9cb20d5b38590f7c11a1e"
+    },
+    "runtime": {
+      "path": "circuit-everlight--dawn--q01--01/runtime.ogg",
+      "bytes": 29350,
+      "sha256": "1fea0044c279dcf029b97647b7466587735f2a2644af105859098e5299a5cdeb"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

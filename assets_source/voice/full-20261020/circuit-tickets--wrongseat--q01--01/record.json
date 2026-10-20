@@ -1,0 +1,59 @@
+{
+  "id": "circuit-tickets--wrongseat--q01--01",
+  "sceneId": "tickets",
+  "lineId": "tickets--wrongSeat--q01--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "师傅，这两本又混了。",
+  "nodeId": "wrongSeat",
+  "start": 49,
+  "end": 59,
+  "quoteIndex": 0,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1806554971,
+  "textSha256": "53f78c64fd572311b38067079adaefee3ec11df79d15ab036b3659f9feea0433",
+  "medium": "spoken",
+  "requestSha256": "ea89a43c9c98d2f601bdc394346c8fedebc87f2711b7d26c812d7b98e587498f",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "师父 这两本又混了",
+    "cer": 0.125,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 2.4,
+  "wallSeconds": 11.548,
+  "loudness": {
+    "input_i": "-17.57",
+    "input_tp": "-1.92",
+    "input_lra": "0.00",
+    "input_thresh": "-28.09",
+    "output_i": "-19.99",
+    "output_tp": "-4.36",
+    "output_lra": "0.00",
+    "output_thresh": "-30.51",
+    "normalization_type": "linear",
+    "target_offset": "-0.01"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-tickets--wrongseat--q01--01/raw.wav",
+      "bytes": 230480,
+      "sha256": "f52c2dc96b8808ec9c12be49ee9d727d1820ca31c907e890cfd8b046987b5cee"
+    },
+    "master": {
+      "path": "circuit-tickets--wrongseat--q01--01/master.wav",
+      "bytes": 115278,
+      "sha256": "4e7eb7cd63a42fdb7fd2ada413482fc1afaafa48f4f3799474921e6c1f7d0d21"
+    },
+    "runtime": {
+      "path": "circuit-tickets--wrongseat--q01--01/runtime.ogg",
+      "bytes": 19029,
+      "sha256": "9846f626f3232a13bde49c1c03c645cc193a6aa34637d815f846457cb9231cbd"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

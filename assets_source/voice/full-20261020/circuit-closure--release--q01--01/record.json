@@ -1,0 +1,59 @@
+{
+  "id": "circuit-closure--release--q01--01",
+  "sceneId": "closure",
+  "lineId": "closure--release--q01--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "三遍。",
+  "nodeId": "release",
+  "start": 87,
+  "end": 90,
+  "quoteIndex": 0,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1181999555,
+  "textSha256": "d1a636516eb12f4e15534d3fd2407216f01670b6cf65541840b17aa531ab3ab8",
+  "medium": "spoken",
+  "requestSha256": "9b6502e5425637e2c6f476d31ec8af74efed52cc6abb29776e28a33149d284e5",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "三遍",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 0.88,
+  "wallSeconds": 36.982,
+  "loudness": {
+    "input_i": "-18.97",
+    "input_tp": "-3.56",
+    "input_lra": "0.00",
+    "input_thresh": "-28.97",
+    "output_i": "-20.00",
+    "output_tp": "-4.58",
+    "output_lra": "0.00",
+    "output_thresh": "-30.00",
+    "normalization_type": "linear",
+    "target_offset": "-0.00"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-closure--release--q01--01/raw.wav",
+      "bytes": 84560,
+      "sha256": "363695ebb1fa9db6ce5943d2c6e7dd508f9af597ed706be94774ce866b1109fe"
+    },
+    "master": {
+      "path": "circuit-closure--release--q01--01/master.wav",
+      "bytes": 42318,
+      "sha256": "4d12ad1edd4fa556512d3b70b419dc7e8284c374928f5a789acf0cfa96a5e182"
+    },
+    "runtime": {
+      "path": "circuit-closure--release--q01--01/runtime.ogg",
+      "bytes": 10096,
+      "sha256": "cd3a7cec0ac3d029683026294de969b5769bee5eabc71e4a5eff9e27bb7d8c78"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

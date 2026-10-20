@@ -1,0 +1,59 @@
+{
+  "id": "circuit-visitors--end--q01--01",
+  "sceneId": "visitors",
+  "lineId": "visitors--end--q01--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "我们是四个人到的。",
+  "nodeId": "end",
+  "start": 140,
+  "end": 149,
+  "quoteIndex": 0,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1086917903,
+  "textSha256": "ba43624e9e89d1ea58e3ef7b1366ae71963b2e7b664ccdd6ae62f7e270f4a10a",
+  "medium": "spoken",
+  "requestSha256": "6bee91ce78da614b50e1912b4afa680bebf4993f874d2d13c8e42f047ebe6843",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "我们是四个人到的",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 2.4,
+  "wallSeconds": 121.166,
+  "loudness": {
+    "input_i": "-22.93",
+    "input_tp": "-8.85",
+    "input_lra": "0.00",
+    "input_thresh": "-32.93",
+    "output_i": "-20.01",
+    "output_tp": "-5.92",
+    "output_lra": "0.00",
+    "output_thresh": "-30.01",
+    "normalization_type": "linear",
+    "target_offset": "0.01"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-visitors--end--q01--01/raw.wav",
+      "bytes": 230480,
+      "sha256": "60d7446d3944cbef8768b6ccb9aed3206d3c885714dc87ed212c40b27e34e101"
+    },
+    "master": {
+      "path": "circuit-visitors--end--q01--01/master.wav",
+      "bytes": 115278,
+      "sha256": "501ede98f076b038f4f7b33fcf7d7f486f19d982505d1a8bcc9b06d5d66cec96"
+    },
+    "runtime": {
+      "path": "circuit-visitors--end--q01--01/runtime.ogg",
+      "bytes": 20571,
+      "sha256": "f4825572414379be4b4a1e114b43526430471f1503b991e01cea3e2355e765ea"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

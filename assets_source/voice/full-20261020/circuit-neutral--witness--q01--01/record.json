@@ -1,0 +1,112 @@
+{
+  "id": "circuit-neutral--witness--q01--01",
+  "sceneId": "neutral",
+  "lineId": "neutral--witness--q01--01",
+  "lineIndex": 0,
+  "speaker": "zhou",
+  "text": "没查齐旁路，也没等到交班，我就写了完成。",
+  "nodeId": "witness",
+  "start": 1,
+  "end": 21,
+  "quoteIndex": 0,
+  "legacy": {
+    "id": "n04-zhou",
+    "character": "zhou",
+    "speaker": "Uncle_Fu",
+    "instruct": "五十岁男性，普通话，声音低沉略沙哑，克制缓慢，像夜班老工人，语气自然，不要表演悲伤。",
+    "text": "没查齐旁路，也没等到交班，我就写了完成。",
+    "seed": 120026,
+    "bindings": [
+      {
+        "chapter": "neutral",
+        "node": "witness"
+      }
+    ],
+    "requestSha256": "e187ccb12ef9a33931f395aa0f67c28847b9eb5c263f64b7b1de3c2a7f4420a9",
+    "duration": 4.8,
+    "generationSeconds": 28.701,
+    "loudnessInput": {
+      "input_i": "-22.61",
+      "input_tp": "-5.77",
+      "input_lra": "1.70",
+      "input_thresh": "-32.86",
+      "output_i": "-18.93",
+      "output_tp": "-2.00",
+      "output_lra": "0.20",
+      "output_thresh": "-29.33",
+      "normalization_type": "dynamic",
+      "target_offset": "-1.07"
+    },
+    "files": [
+      {
+        "path": "assets_source/audio/v1.2.0/n04-zhou-raw.wav",
+        "bytes": 230444,
+        "sha256": "027da433601f4082f91d059e3e60afe0189ad02aa52e36677e237430fe24d7cc"
+      },
+      {
+        "path": "assets_source/audio/v1.2.0/n04-zhou.wav",
+        "bytes": 230478,
+        "sha256": "9bd0b3ffed062c9c73ff91671b2f290844099766b2fa21b1f03753bc5f5b4a9b"
+      },
+      {
+        "path": "public/audio/voice/n04-zhou.mp3",
+        "bytes": 58509,
+        "sha256": "b4f467cd767e39b84aa0abf842e8c032841b5455cfe66bf4028a54068f4272f4"
+      }
+    ],
+    "asr": {
+      "id": "n04-zhou",
+      "mp3Sha256": "b4f467cd767e39b84aa0abf842e8c032841b5455cfe66bf4028a54068f4272f4",
+      "expected": "没查齐旁路，也没等到交班，我就写了完成。",
+      "transcript": "没查其旁路,也没等到交班,我就写了完成。",
+      "cer": 0.058824,
+      "polarityCountsMatch": true,
+      "status": "passed"
+    },
+    "asrModel": "Systran/faster-whisper-large-v3",
+    "evidencePath": "docs/audio/voice-asr.json",
+    "evidenceSha256": "25d0e31c3decd5262d92349d6571ec67ac58723ea00c40005ddff4d8b9a58334"
+  },
+  "actorId": "zhou",
+  "voice": "Uncle_Fu",
+  "instruct": "五十岁男性，普通话，声音低沉略沙哑，克制缓慢，像夜班老工人，语气自然，不要表演悲伤。 语速稍慢，逐字说清楚，季宁读jì níng。句尾完整，不要吞字。 只朗读给定台词，不添加词语或音效。",
+  "seed": 147344753,
+  "textSha256": "5aea76512b2be09bd5e1bc1e55910ad11dc6c2ad6faf00b4d367b98636473e36",
+  "medium": "spoken",
+  "requestSha256": "2baf1c4be042aeba52bc82fc022d92cf3fe9a17c162c4f574fba856e556cc514",
+  "status": "accepted",
+  "productionMethod": "preserved_exact_legacy_bytes",
+  "duration": 4.8,
+  "actualGenerationRequest": {
+    "id": "n04-zhou",
+    "speaker": "Uncle_Fu",
+    "instruct": "五十岁男性，普通话，声音低沉略沙哑，克制缓慢，像夜班老工人，语气自然，不要表演悲伤。",
+    "seed": 120026,
+    "requestSha256": "e187ccb12ef9a33931f395aa0f67c28847b9eb5c263f64b7b1de3c2a7f4420a9"
+  },
+  "asr": {
+    "passed": true,
+    "transcript": "没查其旁路,也没等到交班,我就写了完成。",
+    "cer": 0.058824,
+    "polarityCountsMatch": true,
+    "model": "Systran/faster-whisper-large-v3"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-neutral--witness--q01--01/raw.wav",
+      "bytes": 230444,
+      "sha256": "027da433601f4082f91d059e3e60afe0189ad02aa52e36677e237430fe24d7cc"
+    },
+    "master": {
+      "path": "circuit-neutral--witness--q01--01/master.wav",
+      "bytes": 230478,
+      "sha256": "9bd0b3ffed062c9c73ff91671b2f290844099766b2fa21b1f03753bc5f5b4a9b"
+    },
+    "runtime": {
+      "path": "circuit-neutral--witness--q01--01/runtime.mp3",
+      "bytes": 58509,
+      "sha256": "b4f467cd767e39b84aa0abf842e8c032841b5455cfe66bf4028a54068f4272f4"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

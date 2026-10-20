@@ -1,0 +1,59 @@
+{
+  "id": "circuit-thirteen-households--residentmemory--q02--01",
+  "sceneId": "thirteen-households",
+  "lineId": "thirteen-households--residentMemory--q02--01",
+  "lineIndex": 0,
+  "speaker": "mei",
+  "text": "出来没有，我没看见。",
+  "nodeId": "residentMemory",
+  "start": 73,
+  "end": 83,
+  "quoteIndex": 1,
+  "actorId": "mei",
+  "voice": "Serena",
+  "instruct": "六十岁女性，普通话，声音偏低，平实缓慢，像老邻居小声嘱咐，句尾稍停，不要年轻撒娇。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1579897510,
+  "textSha256": "1d1462d155c1a03731bbad3b95d06bddfe58f5ff5f7f65b2cbd44f0e034c7d07",
+  "medium": "spoken",
+  "requestSha256": "9e60e88314a85fab5f15de68fb7e33dba7af1ce0ae2d7d0177a153af6f973448",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "出来没有,我没看见。",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 3.52,
+  "wallSeconds": 206.421,
+  "loudness": {
+    "input_i": "-23.96",
+    "input_tp": "-8.65",
+    "input_lra": "0.60",
+    "input_thresh": "-34.33",
+    "output_i": "-17.84",
+    "output_tp": "-2.59",
+    "output_lra": "0.00",
+    "output_thresh": "-28.18",
+    "normalization_type": "dynamic",
+    "target_offset": "-2.16"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-thirteen-households--residentmemory--q02--01/raw.wav",
+      "bytes": 338000,
+      "sha256": "42bbf93bf0e422185d4e29e87307d96b532d971080de1dd25694e803cb2b0d19"
+    },
+    "master": {
+      "path": "circuit-thirteen-households--residentmemory--q02--01/master.wav",
+      "bytes": 169038,
+      "sha256": "eaf01ab82bee3395b77e33af8ab090f5a61fe88da8d0e3f5b58631270a05f26c"
+    },
+    "runtime": {
+      "path": "circuit-thirteen-households--residentmemory--q02--01/runtime.ogg",
+      "bytes": 25919,
+      "sha256": "6dba6f6f71817e5be40609fd3fed88a8d3a745adb41ed7fb94d8be65b9c7d7ee"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

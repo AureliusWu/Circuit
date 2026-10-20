@@ -1,0 +1,59 @@
+{
+  "id": "circuit-backfeed--dispatch--q03--01",
+  "sceneId": "backfeed",
+  "lineId": "backfeed--dispatch--q03--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "我知道。我是说它这班挺会挑地方。",
+  "nodeId": "dispatch",
+  "start": 74,
+  "end": 90,
+  "quoteIndex": 2,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 202742092,
+  "textSha256": "844a61600dd43f14cc3b5beb1b8a156a7f8966e76f8e08307f0e35b1651c3c94",
+  "medium": "spoken",
+  "requestSha256": "fb77ed9e54d67928f25287a91f1646ef337668d84fca8fb97a0423c3f35bb3d7",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "我知道我是說他這班挺會挑地方",
+    "cer": 0.071429,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 4.88,
+  "wallSeconds": 22.401,
+  "loudness": {
+    "input_i": "-22.98",
+    "input_tp": "-7.38",
+    "input_lra": "3.00",
+    "input_thresh": "-33.48",
+    "output_i": "-20.20",
+    "output_tp": "-5.62",
+    "output_lra": "1.00",
+    "output_thresh": "-30.94",
+    "normalization_type": "dynamic",
+    "target_offset": "0.20"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-backfeed--dispatch--q03--01/raw.wav",
+      "bytes": 468560,
+      "sha256": "02d640a247808242d8be617ca4dde7a82ce30c3c7ef38ab7e44867bb5700cdb5"
+    },
+    "master": {
+      "path": "circuit-backfeed--dispatch--q03--01/master.wav",
+      "bytes": 234318,
+      "sha256": "c66fc8cbdb46d533b386836931abac7631181909b80db0006fe4a593d546e6aa"
+    },
+    "runtime": {
+      "path": "circuit-backfeed--dispatch--q03--01/runtime.ogg",
+      "bytes": 36725,
+      "sha256": "a25c3cb8df2ea3eac5026da4d0302a858f04ae23536bc0aa34e01d831c4e5bfe"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

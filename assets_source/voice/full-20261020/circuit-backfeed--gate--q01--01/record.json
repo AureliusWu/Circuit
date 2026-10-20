@@ -1,0 +1,112 @@
+{
+  "id": "circuit-backfeed--gate--q01--01",
+  "sceneId": "backfeed",
+  "lineId": "backfeed--gate--q01--01",
+  "lineIndex": 0,
+  "speaker": "chen",
+  "text": "晚上别这么响。",
+  "nodeId": "gate",
+  "start": 99,
+  "end": 106,
+  "quoteIndex": 0,
+  "legacy": {
+    "id": "r02-chen",
+    "character": "chen",
+    "speaker": "Uncle_Fu",
+    "instruct": "六十岁男性，普通话，语速慢，声音低哑，像看门的老人轻声说话，口语平实。",
+    "text": "晚上别这么响。",
+    "seed": 120020,
+    "bindings": [
+      {
+        "chapter": "backfeed",
+        "node": "gate"
+      }
+    ],
+    "requestSha256": "0eb30a8e28b6b28e9b73af82b838c5cd68242bb43915eced62324592cf1d5a60",
+    "duration": 1.52,
+    "generationSeconds": 8.17,
+    "loudnessInput": {
+      "input_i": "-22.61",
+      "input_tp": "-6.08",
+      "input_lra": "0.00",
+      "input_thresh": "-32.61",
+      "output_i": "-19.99",
+      "output_tp": "-3.47",
+      "output_lra": "0.00",
+      "output_thresh": "-29.99",
+      "normalization_type": "linear",
+      "target_offset": "-0.01"
+    },
+    "files": [
+      {
+        "path": "assets_source/audio/v1.2.0/r02-chen-raw.wav",
+        "bytes": 73004,
+        "sha256": "ed40dbb207f2eeb51220733992eca051a63841c46c9f249ca2fc290eec9361d4"
+      },
+      {
+        "path": "assets_source/audio/v1.2.0/r02-chen.wav",
+        "bytes": 73038,
+        "sha256": "e0259f1d274379c2c1a158db14c6df146eba24a2fa0f48b17f3032d819a5eaf4"
+      },
+      {
+        "path": "public/audio/voice/r02-chen.mp3",
+        "bytes": 19341,
+        "sha256": "16f9041ba8e56f4d9dd0be58a365030c3f14851f9f64d1147bfbe95291e281a2"
+      }
+    ],
+    "asr": {
+      "id": "r02-chen",
+      "mp3Sha256": "16f9041ba8e56f4d9dd0be58a365030c3f14851f9f64d1147bfbe95291e281a2",
+      "expected": "晚上别这么响。",
+      "transcript": "晚上别这么想",
+      "cer": 0.166667,
+      "polarityCountsMatch": true,
+      "status": "passed"
+    },
+    "asrModel": "Systran/faster-whisper-large-v3",
+    "evidencePath": "docs/audio/voice-asr.json",
+    "evidenceSha256": "25d0e31c3decd5262d92349d6571ec67ac58723ea00c40005ddff4d8b9a58334"
+  },
+  "actorId": "chen",
+  "voice": "Uncle_Fu",
+  "instruct": "六十岁男性，普通话，语速慢，声音低哑，像看门的老人轻声说话，口语平实。 只朗读给定台词，不添加词语或音效。",
+  "seed": 600441651,
+  "textSha256": "cf79c1cfeec0d41c07865b0312b514f3c29f0562eab434935e8723c61f951f6e",
+  "medium": "spoken",
+  "requestSha256": "62a8b4602f3335b1013cd8ad7ebe131ee3bc8f6df57e181fe60bd8e1a69bf9f9",
+  "status": "accepted",
+  "productionMethod": "preserved_exact_legacy_bytes",
+  "duration": 1.52,
+  "actualGenerationRequest": {
+    "id": "r02-chen",
+    "speaker": "Uncle_Fu",
+    "instruct": "六十岁男性，普通话，语速慢，声音低哑，像看门的老人轻声说话，口语平实。",
+    "seed": 120020,
+    "requestSha256": "0eb30a8e28b6b28e9b73af82b838c5cd68242bb43915eced62324592cf1d5a60"
+  },
+  "asr": {
+    "passed": true,
+    "transcript": "晚上别这么想",
+    "cer": 0.166667,
+    "polarityCountsMatch": true,
+    "model": "Systran/faster-whisper-large-v3"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-backfeed--gate--q01--01/raw.wav",
+      "bytes": 73004,
+      "sha256": "ed40dbb207f2eeb51220733992eca051a63841c46c9f249ca2fc290eec9361d4"
+    },
+    "master": {
+      "path": "circuit-backfeed--gate--q01--01/master.wav",
+      "bytes": 73038,
+      "sha256": "e0259f1d274379c2c1a158db14c6df146eba24a2fa0f48b17f3032d819a5eaf4"
+    },
+    "runtime": {
+      "path": "circuit-backfeed--gate--q01--01/runtime.mp3",
+      "bytes": 19341,
+      "sha256": "16f9041ba8e56f4d9dd0be58a365030c3f14851f9f64d1147bfbe95291e281a2"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

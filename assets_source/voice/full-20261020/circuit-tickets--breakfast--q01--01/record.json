@@ -1,0 +1,59 @@
+{
+  "id": "circuit-tickets--breakfast--q01--01",
+  "sceneId": "tickets",
+  "lineId": "tickets--breakfast--q01--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "您刚才说什么来着？",
+  "nodeId": "breakfast",
+  "start": 1,
+  "end": 10,
+  "quoteIndex": 0,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 447174970,
+  "textSha256": "c9d852353046ec60dd24185bb7f259b101c1b0fa9249d17698ce500743fed95e",
+  "medium": "spoken",
+  "requestSha256": "0a71297f1bf800d76adc3454aae3e1d61ad733f57f4db15ee8dd408633e72791",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "您刚才说什么来着",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 1.76,
+  "wallSeconds": 17.469,
+  "loudness": {
+    "input_i": "-18.70",
+    "input_tp": "-3.34",
+    "input_lra": "0.00",
+    "input_thresh": "-28.70",
+    "output_i": "-20.00",
+    "output_tp": "-4.63",
+    "output_lra": "0.00",
+    "output_thresh": "-30.00",
+    "normalization_type": "linear",
+    "target_offset": "0.00"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-tickets--breakfast--q01--01/raw.wav",
+      "bytes": 169040,
+      "sha256": "b76b932a6998cf69cb85ed3088b472339c79d26b025a6f275c6bb6f9842e87a1"
+    },
+    "master": {
+      "path": "circuit-tickets--breakfast--q01--01/master.wav",
+      "bytes": 84558,
+      "sha256": "2bed1cb16c37b8d51dd3a5e05797224ecc29da4bc496b18c189604f0910770c1"
+    },
+    "runtime": {
+      "path": "circuit-tickets--breakfast--q01--01/runtime.ogg",
+      "bytes": 16417,
+      "sha256": "d4ec8dedde4670dbba293c8ecd2ab1e826238d5b2116ecfcee72f62f4a752f67"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

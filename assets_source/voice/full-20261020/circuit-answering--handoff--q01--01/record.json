@@ -1,0 +1,59 @@
+{
+  "id": "circuit-answering--handoff--q01--01",
+  "sceneId": "answering",
+  "lineId": "answering--handoff--q01--01",
+  "lineIndex": 0,
+  "speaker": "luo",
+  "text": "我今晚应那两声，记不记？",
+  "nodeId": "handoff",
+  "start": 66,
+  "end": 78,
+  "quoteIndex": 0,
+  "actorId": "luo",
+  "voice": "Vivian",
+  "instruct": "二十九岁女性，普通话，声音偏低，夜班值班员谨慎地问话，平静自然，略有迟疑，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1082162109,
+  "textSha256": "465ea74dc30f5dec055bfcc2125e22810f991a049c3af9bcd2ca7b0d4063320f",
+  "medium": "spoken",
+  "requestSha256": "ceba5ccb2050a60386cd53aea2405820f54ff338433c1ddf859f564a69012b87",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "我今晚,應那兩生,記不記。",
+    "cer": 0.1,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 6.0,
+  "wallSeconds": 27.64,
+  "loudness": {
+    "input_i": "-18.93",
+    "input_tp": "-6.01",
+    "input_lra": "0.70",
+    "input_thresh": "-29.20",
+    "output_i": "-19.76",
+    "output_tp": "-6.79",
+    "output_lra": "0.90",
+    "output_thresh": "-30.08",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.24"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-answering--handoff--q01--01/raw.wav",
+      "bytes": 576080,
+      "sha256": "f2395b0ac0ac0c6c31e53a2165b1be8da7563b2b97c5ee193015b07587900170"
+    },
+    "master": {
+      "path": "circuit-answering--handoff--q01--01/master.wav",
+      "bytes": 288078,
+      "sha256": "81b4cedaad1e5d17fc58d69fa560fc71cafbd43aabd26f9ed7ee883600dd6f98"
+    },
+    "runtime": {
+      "path": "circuit-answering--handoff--q01--01/runtime.ogg",
+      "bytes": 43449,
+      "sha256": "445cc01f300464777e67ad35b01d430b2d297377c1b4a02aee2d4227f8f04a4e"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

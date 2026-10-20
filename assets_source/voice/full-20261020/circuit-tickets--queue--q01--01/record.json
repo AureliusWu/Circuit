@@ -1,0 +1,59 @@
+{
+  "id": "circuit-tickets--queue--q01--01",
+  "sceneId": "tickets",
+  "lineId": "tickets--queue--q01--01",
+  "lineIndex": 0,
+  "speaker": "luo",
+  "text": "所以不是给第零个人的。",
+  "nodeId": "queue",
+  "start": 92,
+  "end": 103,
+  "quoteIndex": 0,
+  "actorId": "luo",
+  "voice": "Vivian",
+  "instruct": "二十九岁女性，普通话，声音偏低，夜班值班员谨慎地问话，平静自然，略有迟疑，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 144247455,
+  "textSha256": "b474b1f84809088c709aa65afd9401cf8125c170cc16aa120c12ace9d3d4fb90",
+  "medium": "spoken",
+  "requestSha256": "04624c5cce400dd1efa95baffcf0b6546c12603221782b5236a52e7d7db1441d",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "所以不是給第零個人的",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 2.32,
+  "wallSeconds": 11.57,
+  "loudness": {
+    "input_i": "-24.28",
+    "input_tp": "-8.66",
+    "input_lra": "0.00",
+    "input_thresh": "-34.49",
+    "output_i": "-19.99",
+    "output_tp": "-4.38",
+    "output_lra": "0.00",
+    "output_thresh": "-30.19",
+    "normalization_type": "linear",
+    "target_offset": "-0.01"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-tickets--queue--q01--01/raw.wav",
+      "bytes": 222800,
+      "sha256": "4a2cc4fd4754ed1ab3ba94a3490d9a24b38a774396db3918571515f6d2c853cb"
+    },
+    "master": {
+      "path": "circuit-tickets--queue--q01--01/master.wav",
+      "bytes": 111438,
+      "sha256": "bf20128e3b0ddd6ec40d9d316859496ef1b49ae2d96e44c97ee9adee2f32e83e"
+    },
+    "runtime": {
+      "path": "circuit-tickets--queue--q01--01/runtime.ogg",
+      "bytes": 19668,
+      "sha256": "a8e4cd86b96ab64c673c8cd6b55094237f5d764a24157e3941f01dad9b32cd74"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

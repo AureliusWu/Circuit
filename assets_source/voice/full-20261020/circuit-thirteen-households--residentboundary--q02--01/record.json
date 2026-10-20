@@ -1,0 +1,59 @@
+{
+  "id": "circuit-thirteen-households--residentboundary--q02--01",
+  "sceneId": "thirteen-households",
+  "lineId": "thirteen-households--residentBoundary--q02--01",
+  "lineIndex": 0,
+  "speaker": "mei",
+  "text": "对。门牌新换了，姓没换。",
+  "nodeId": "residentBoundary",
+  "start": 76,
+  "end": 88,
+  "quoteIndex": 1,
+  "actorId": "mei",
+  "voice": "Serena",
+  "instruct": "六十岁女性，普通话，声音偏低，平实缓慢，像老邻居小声嘱咐，句尾稍停，不要年轻撒娇。 只朗读给定台词，不添加词语或音效。",
+  "seed": 888163835,
+  "textSha256": "b5f34dd729917cc2899e8884f5fdc15604a3af83fe5608fc7eae12567e013ed6",
+  "medium": "spoken",
+  "requestSha256": "f6e042aca2e0a6a5dfa630f6d4209a0fb31db006db8f3093a3e00a196f3c67fb",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "对,门牌新换了,幸没换",
+    "cer": 0.111111,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 2.56,
+  "wallSeconds": 283.247,
+  "loudness": {
+    "input_i": "-26.13",
+    "input_tp": "-9.45",
+    "input_lra": "0.00",
+    "input_thresh": "-36.35",
+    "output_i": "-19.99",
+    "output_tp": "-3.32",
+    "output_lra": "0.00",
+    "output_thresh": "-30.42",
+    "normalization_type": "linear",
+    "target_offset": "-0.01"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-thirteen-households--residentboundary--q02--01/raw.wav",
+      "bytes": 245840,
+      "sha256": "c257fdd6653921e8061df8cebfa444679455f84923c28003b3bfbbd9fd93c309"
+    },
+    "master": {
+      "path": "circuit-thirteen-households--residentboundary--q02--01/master.wav",
+      "bytes": 122958,
+      "sha256": "22dc4d85b482aff905eccb86756d392bb6b81732f8b012683708b53453e78a45"
+    },
+    "runtime": {
+      "path": "circuit-thirteen-households--residentboundary--q02--01/runtime.ogg",
+      "bytes": 21267,
+      "sha256": "aa1bad6c629ba70e4558fdf5dffa1d3c4b716680364670a5adf622daf76d1612"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

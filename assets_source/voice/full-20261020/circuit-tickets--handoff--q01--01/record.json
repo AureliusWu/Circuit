@@ -1,0 +1,59 @@
+{
+  "id": "circuit-tickets--handoff--q01--01",
+  "sceneId": "tickets",
+  "lineId": "tickets--handoff--q01--01",
+  "lineIndex": 0,
+  "speaker": "manager",
+  "text": "按编号接走。",
+  "nodeId": "handoff",
+  "start": 12,
+  "end": 18,
+  "quoteIndex": 0,
+  "actorId": "manager",
+  "voice": "Dylan",
+  "instruct": "成年男性管理方工作人员，普通话，平静利落，日常工作交接，清楚自然，不朗诵。",
+  "seed": 1357911353,
+  "textSha256": "63ea706eb1992eacf42570d241dd626551ae82c0cc6fd91d7d4971eb9289f599",
+  "medium": "spoken",
+  "requestSha256": "313884ad280f57cf499dadf564167f5c2c62ff4b0aa1d0bedf45d4dbf8310780",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "按编号接走",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 1.2,
+  "wallSeconds": 43.823,
+  "loudness": {
+    "input_i": "-25.94",
+    "input_tp": "-9.95",
+    "input_lra": "0.00",
+    "input_thresh": "-35.94",
+    "output_i": "-20.01",
+    "output_tp": "-4.01",
+    "output_lra": "0.00",
+    "output_thresh": "-30.01",
+    "normalization_type": "linear",
+    "target_offset": "0.01"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-tickets--handoff--q01--01/raw.wav",
+      "bytes": 115280,
+      "sha256": "439fffcca7382885a2e9ecfcddc7a82896f22a701cd292c5b1bb1c4766953340"
+    },
+    "master": {
+      "path": "circuit-tickets--handoff--q01--01/master.wav",
+      "bytes": 57678,
+      "sha256": "8da9583057bff3fff8e6562301a5fa506a43ddefb64d9c7c8f1e7b2766fd7f19"
+    },
+    "runtime": {
+      "path": "circuit-tickets--handoff--q01--01/runtime.ogg",
+      "bytes": 13822,
+      "sha256": "542fd73d526b335ef651cdc60841a8eca55fadfc7a6c20e649a21940dc8ebc0a"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

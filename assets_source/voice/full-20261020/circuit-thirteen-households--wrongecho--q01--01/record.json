@@ -1,0 +1,59 @@
+{
+  "id": "circuit-thirteen-households--wrongecho--q01--01",
+  "sceneId": "thirteen-households",
+  "lineId": "thirteen-households--wrongEcho--q01--01",
+  "lineIndex": 0,
+  "speaker": "unknown-radio",
+  "text": "到",
+  "nodeId": "wrongEcho",
+  "start": 74,
+  "end": 75,
+  "quoteIndex": 0,
+  "actorId": "unknown-radio",
+  "voice": "Dylan",
+  "instruct": "成年男性，普通话，来源未识别的短促电台录音，清楚克制，声调平，不夸张，不要添加台词。",
+  "seed": 1350979023,
+  "textSha256": "b56f36b529dbcd625f9c46a94290cf100c634643c282107e391a5e86a482c641",
+  "medium": "spoken",
+  "requestSha256": "2f66e18d51160570443610e6828f5afe4d99cad1104692668e6446c01de8429c",
+  "attempt": 2,
+  "status": "accepted",
+  "asr": {
+    "transcript": "到",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 0.4,
+  "wallSeconds": 7.444,
+  "loudness": {
+    "input_i": "-22.95",
+    "input_tp": "-11.01",
+    "input_lra": "0.00",
+    "input_thresh": "-32.95",
+    "output_i": "-20.05",
+    "output_tp": "-8.06",
+    "output_lra": "0.00",
+    "output_thresh": "-30.05",
+    "normalization_type": "linear",
+    "target_offset": "0.05"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-thirteen-households--wrongecho--q01--01/raw.wav",
+      "bytes": 38480,
+      "sha256": "7912a8f30447d9c5124e8b8a91a73c0e417f695c557ca1dbd571b67a0203f89c"
+    },
+    "master": {
+      "path": "circuit-thirteen-households--wrongecho--q01--01/master.wav",
+      "bytes": 19278,
+      "sha256": "a38cf9742829d1919d9864a2f0bc979e7925bf5f5713e6763df048426e44be60"
+    },
+    "runtime": {
+      "path": "circuit-thirteen-households--wrongecho--q01--01/runtime.ogg",
+      "bytes": 6289,
+      "sha256": "66c0a6f26bdffc25a10b73b621a50358e0337eb1847c34dff4936a60104a0865"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

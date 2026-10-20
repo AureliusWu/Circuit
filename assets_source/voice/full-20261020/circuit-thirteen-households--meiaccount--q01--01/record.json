@@ -1,0 +1,59 @@
+{
+  "id": "circuit-thirteen-households--meiaccount--q01--01",
+  "sceneId": "thirteen-households",
+  "lineId": "thirteen-households--meiAccount--q01--01",
+  "lineIndex": 0,
+  "speaker": "mei",
+  "text": "我以为说的是签字这天。",
+  "nodeId": "meiAccount",
+  "start": 77,
+  "end": 88,
+  "quoteIndex": 0,
+  "actorId": "mei",
+  "voice": "Serena",
+  "instruct": "六十岁女性，普通话，声音偏低，平实缓慢，像老邻居小声嘱咐，句尾稍停，不要年轻撒娇。 只朗读给定台词，不添加词语或音效。",
+  "seed": 841568048,
+  "textSha256": "98db963f879678fce729c60ef8e076a51081d6041511c14dbfea252564861f5e",
+  "medium": "spoken",
+  "requestSha256": "455e7c5b21c51e022bc2048e66b2b76ebc8a37ab5b759def8f2849d3ac64ec53",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "我以為說的是簽字這天",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 1.76,
+  "wallSeconds": 95.908,
+  "loudness": {
+    "input_i": "-28.60",
+    "input_tp": "-13.60",
+    "input_lra": "0.00",
+    "input_thresh": "-38.60",
+    "output_i": "-20.00",
+    "output_tp": "-5.00",
+    "output_lra": "0.00",
+    "output_thresh": "-30.00",
+    "normalization_type": "linear",
+    "target_offset": "0.00"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-thirteen-households--meiaccount--q01--01/raw.wav",
+      "bytes": 169040,
+      "sha256": "09ace350cde4514f72fcb0ffa387ba82c80166b9017d7832d142b60130b5c03f"
+    },
+    "master": {
+      "path": "circuit-thirteen-households--meiaccount--q01--01/master.wav",
+      "bytes": 84558,
+      "sha256": "3509d4606fa65bc8218ab443b5e6cb6e990a2d8228111f061cb46fcffbf12a45"
+    },
+    "runtime": {
+      "path": "circuit-thirteen-households--meiaccount--q01--01/runtime.ogg",
+      "bytes": 16957,
+      "sha256": "ec72fa18946abbdf6ad2a29b30f1fad31826d48030f9afb228154914a635507e"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

@@ -1,0 +1,59 @@
+{
+  "id": "circuit-backfeed--chen--q03--01",
+  "sceneId": "backfeed",
+  "lineId": "backfeed--chen--q03--01",
+  "lineIndex": 0,
+  "speaker": "cheng",
+  "text": "这些又不归你。",
+  "nodeId": "chen",
+  "start": 83,
+  "end": 90,
+  "quoteIndex": 2,
+  "actorId": "cheng",
+  "voice": "Dylan",
+  "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 424890520,
+  "textSha256": "1281413ae4e12d21d43ede06fb56813f40c80d6f58bcca8d847c3c47c3c1e7a4",
+  "medium": "spoken",
+  "requestSha256": "b90e4f5ae9e1bf08d3d485e96319e73799eb60d960a5fcb4b82608ca25b237c3",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "这些又不归你",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 1.6,
+  "wallSeconds": 90.101,
+  "loudness": {
+    "input_i": "-22.91",
+    "input_tp": "-7.57",
+    "input_lra": "0.00",
+    "input_thresh": "-33.24",
+    "output_i": "-20.01",
+    "output_tp": "-4.66",
+    "output_lra": "0.00",
+    "output_thresh": "-30.34",
+    "normalization_type": "linear",
+    "target_offset": "0.01"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-backfeed--chen--q03--01/raw.wav",
+      "bytes": 153680,
+      "sha256": "8cdf21b383f00726a86c2b80056a44aa07b17acef366b023615db060f7ee8b20"
+    },
+    "master": {
+      "path": "circuit-backfeed--chen--q03--01/master.wav",
+      "bytes": 76878,
+      "sha256": "e31625b171d75656a7d4bab3bf3051c73b0c729a2a1bdbec63a52322f6c4ea94"
+    },
+    "runtime": {
+      "path": "circuit-backfeed--chen--q03--01/runtime.ogg",
+      "bytes": 15886,
+      "sha256": "baa7da280fd45ec192b55e6924c5191b184f9b7548c6aa90a5b6bbf280b620a4"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

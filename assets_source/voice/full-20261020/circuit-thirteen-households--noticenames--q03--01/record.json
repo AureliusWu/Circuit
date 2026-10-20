@@ -1,0 +1,59 @@
+{
+  "id": "circuit-thirteen-households--noticenames--q03--01",
+  "sceneId": "thirteen-households",
+  "lineId": "thirteen-households--noticeNames--q03--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "那张表为什么非得让屋子先空？",
+  "nodeId": "noticeNames",
+  "start": 85,
+  "end": 99,
+  "quoteIndex": 2,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 228068486,
+  "textSha256": "b92058e6ea81597989e5c233dace2d03513c563ac6a6e62b247fd1882c5dc20b",
+  "medium": "spoken",
+  "requestSha256": "441128f22570f0e8700a83a3583b28440247be0ffa5ce311236e17338f023bac",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "那张表为什么非得让屋子先空",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 2.8,
+  "wallSeconds": 113.217,
+  "loudness": {
+    "input_i": "-19.36",
+    "input_tp": "-6.76",
+    "input_lra": "0.00",
+    "input_thresh": "-29.36",
+    "output_i": "-19.98",
+    "output_tp": "-7.40",
+    "output_lra": "0.00",
+    "output_thresh": "-29.98",
+    "normalization_type": "linear",
+    "target_offset": "-0.02"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-thirteen-households--noticenames--q03--01/raw.wav",
+      "bytes": 268880,
+      "sha256": "21d962627f93d4f63ab5f1631d8d7d684365dfb7bb19cd25b4eaa5274b7086f5"
+    },
+    "master": {
+      "path": "circuit-thirteen-households--noticenames--q03--01/master.wav",
+      "bytes": 134478,
+      "sha256": "e7f581e693495f456faa1432fd9ea0fbeb3645e0a749637a539f63f45cf53133"
+    },
+    "runtime": {
+      "path": "circuit-thirteen-households--noticenames--q03--01/runtime.ogg",
+      "bytes": 23550,
+      "sha256": "c67fd1481ac781179ae20ff39fc33d61e9056e9fe67b264ce564955b84a74b15"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

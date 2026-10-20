@@ -1,0 +1,59 @@
+{
+  "id": "circuit-thirteen-households--bypasswarning--q03--01",
+  "sceneId": "thirteen-households",
+  "lineId": "thirteen-households--bypassWarning--q03--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "后来拆了吗？",
+  "nodeId": "bypassWarning",
+  "start": 94,
+  "end": 100,
+  "quoteIndex": 2,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 398525560,
+  "textSha256": "2beca181a2cb542865daabb7b08f70e3caac08dba6f7c3bf7d0b2fed71f5338d",
+  "medium": "spoken",
+  "requestSha256": "71baa3315ec6154affe4058177a7bd2c5d09cd83f192724ebcd11d4f1a3183e8",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "後來拆了嗎?",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 1.2,
+  "wallSeconds": 47.247,
+  "loudness": {
+    "input_i": "-17.83",
+    "input_tp": "-6.09",
+    "input_lra": "0.00",
+    "input_thresh": "-27.83",
+    "output_i": "-20.02",
+    "output_tp": "-8.26",
+    "output_lra": "0.00",
+    "output_thresh": "-30.02",
+    "normalization_type": "linear",
+    "target_offset": "0.02"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-thirteen-households--bypasswarning--q03--01/raw.wav",
+      "bytes": 115280,
+      "sha256": "1c0897cd08ed5b233274689728881a6dab14e61dfa8dcd42faa3e2bb951e8988"
+    },
+    "master": {
+      "path": "circuit-thirteen-households--bypasswarning--q03--01/master.wav",
+      "bytes": 57678,
+      "sha256": "33bdcfcb557900c476fafe5d854d95d18edb3d6419d5d1dfc15b5bd6cbfec608"
+    },
+    "runtime": {
+      "path": "circuit-thirteen-households--bypasswarning--q03--01/runtime.ogg",
+      "bytes": 11772,
+      "sha256": "dc23955867f8694542e9e35f9bca9a32148ed90041993f6f1f28fa75b9e68afb"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

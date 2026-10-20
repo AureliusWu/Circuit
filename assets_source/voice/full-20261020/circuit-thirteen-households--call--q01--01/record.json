@@ -1,0 +1,59 @@
+{
+  "id": "circuit-thirteen-households--call--q01--01",
+  "sceneId": "thirteen-households",
+  "lineId": "thirteen-households--call--q01--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "还有一家没停？",
+  "nodeId": "call",
+  "start": 57,
+  "end": 64,
+  "quoteIndex": 0,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1979893379,
+  "textSha256": "416edfae9d0b930c9dac6f46d5fc384260a65c87821d6b451c75205febb14147",
+  "medium": "spoken",
+  "requestSha256": "cfb7b0bd7b9ba764a72702baf3bc29a88d7f57e059001bdde6a41328d1a2b12e",
+  "attempt": 1,
+  "status": "accepted",
+  "asr": {
+    "transcript": "还有一家没停。",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 1.04,
+  "wallSeconds": 42.91,
+  "loudness": {
+    "input_i": "-17.02",
+    "input_tp": "-4.40",
+    "input_lra": "0.00",
+    "input_thresh": "-27.02",
+    "output_i": "-20.02",
+    "output_tp": "-7.39",
+    "output_lra": "0.00",
+    "output_thresh": "-30.02",
+    "normalization_type": "linear",
+    "target_offset": "0.02"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-thirteen-households--call--q01--01/raw.wav",
+      "bytes": 99920,
+      "sha256": "c7e84bd4dd209fae8efe172f76d301ad5e8749b763252a05831ac229dc68c78a"
+    },
+    "master": {
+      "path": "circuit-thirteen-households--call--q01--01/master.wav",
+      "bytes": 49998,
+      "sha256": "92194f9b11be04681af71d8dc68ac119f2b6c32cd9c2c470b0c7942e3436c17e"
+    },
+    "runtime": {
+      "path": "circuit-thirteen-households--call--q01--01/runtime.ogg",
+      "bytes": 11188,
+      "sha256": "f2144176f4d553098184439f7fc0d76756710aa8e32d809248cc88a0bc4dbbe5"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

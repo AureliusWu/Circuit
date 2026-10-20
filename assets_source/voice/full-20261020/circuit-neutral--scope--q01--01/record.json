@@ -1,0 +1,59 @@
+{
+  "id": "circuit-neutral--scope--q01--01",
+  "sceneId": "neutral",
+  "lineId": "neutral--scope--q01--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "一个没接线的柜子也报麻？",
+  "nodeId": "scope",
+  "start": 41,
+  "end": 53,
+  "quoteIndex": 0,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 358445680,
+  "textSha256": "1b14a1170d7547918e30030470cc2f01a04c70ecca4cc34601641737f4fca752",
+  "medium": "spoken",
+  "requestSha256": "e6c0cbdf456b351c5e5f33c39610f1d39fbf4ff4cd17eee693199883c2141d69",
+  "attempt": 1,
+  "status": "accepted",
+  "asr": {
+    "transcript": "一个没接线的柜子,也帮忙?",
+    "cer": 0.181818,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 3.52,
+  "wallSeconds": 198.126,
+  "loudness": {
+    "input_i": "-17.29",
+    "input_tp": "-5.11",
+    "input_lra": "1.00",
+    "input_thresh": "-27.72",
+    "output_i": "-19.76",
+    "output_tp": "-7.87",
+    "output_lra": "0.00",
+    "output_thresh": "-30.17",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.24"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-neutral--scope--q01--01/raw.wav",
+      "bytes": 338000,
+      "sha256": "83bbb2a608bef326a138cf9dfbd59e22df53b9b13835d79122348ac9c9e95f57"
+    },
+    "master": {
+      "path": "circuit-neutral--scope--q01--01/master.wav",
+      "bytes": 169038,
+      "sha256": "51a727b164b76f902753d785b75e1f86492815eaacc1edd2f86c24c6dc9987f1"
+    },
+    "runtime": {
+      "path": "circuit-neutral--scope--q01--01/runtime.ogg",
+      "bytes": 27860,
+      "sha256": "f35d357fa8d037e9c16561142598728640dd4018a6c3c8eea84064e956ca8df8"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

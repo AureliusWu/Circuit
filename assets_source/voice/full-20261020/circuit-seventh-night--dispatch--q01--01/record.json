@@ -1,0 +1,112 @@
+{
+  "id": "circuit-seventh-night--dispatch--q01--01",
+  "sceneId": "seventh-night",
+  "lineId": "seventh-night--dispatch--q01--01",
+  "lineIndex": 0,
+  "speaker": "lin",
+  "text": "清河里七号院，报了九夜。",
+  "nodeId": "dispatch",
+  "start": 19,
+  "end": 31,
+  "quoteIndex": 0,
+  "legacy": {
+    "id": "q07-dispatch",
+    "character": "lin",
+    "speaker": "Serena",
+    "instruct": "成年女性，普通话，声音干脆平稳，值班调度员在电台里说话，清楚利落，不要播音腔。",
+    "text": "清河里七号院，报了九夜。",
+    "seed": 120016,
+    "bindings": [
+      {
+        "chapter": "seventh-night",
+        "node": "dispatch"
+      }
+    ],
+    "requestSha256": "f48d50cfdcc36352a95d2fb6544d7d6a3fe1661fd74e6445871efea69012e6b0",
+    "duration": 2,
+    "generationSeconds": 11.586,
+    "loudnessInput": {
+      "input_i": "-24.63",
+      "input_tp": "-9.11",
+      "input_lra": "0.00",
+      "input_thresh": "-34.63",
+      "output_i": "-19.99",
+      "output_tp": "-4.47",
+      "output_lra": "0.00",
+      "output_thresh": "-29.99",
+      "normalization_type": "linear",
+      "target_offset": "-0.01"
+    },
+    "files": [
+      {
+        "path": "assets_source/audio/v1.2.0/q07-dispatch-raw.wav",
+        "bytes": 96044,
+        "sha256": "d19f0f274ff66dd0834645eced07934fd49fe8406a24ae72b677bba68eb7ff82"
+      },
+      {
+        "path": "assets_source/audio/v1.2.0/q07-dispatch.wav",
+        "bytes": 96078,
+        "sha256": "647892da2d23e642287e602b25a85cb1793f5fc0410d9f1ec46e7f0f6ff286f8"
+      },
+      {
+        "path": "public/audio/voice/q07-dispatch.mp3",
+        "bytes": 25101,
+        "sha256": "cba211c791b5359a0f388e9044fb4befe15c5227fe120b3255b7be6a543acc47"
+      }
+    ],
+    "asr": {
+      "id": "q07-dispatch",
+      "mp3Sha256": "cba211c791b5359a0f388e9044fb4befe15c5227fe120b3255b7be6a543acc47",
+      "expected": "清河里七号院，报了九夜。",
+      "transcript": "清河里七号院报了九页",
+      "cer": 0.1,
+      "polarityCountsMatch": true,
+      "status": "passed"
+    },
+    "asrModel": "Systran/faster-whisper-large-v3",
+    "evidencePath": "docs/audio/voice-asr.json",
+    "evidenceSha256": "25d0e31c3decd5262d92349d6571ec67ac58723ea00c40005ddff4d8b9a58334"
+  },
+  "actorId": "lin",
+  "voice": "Serena",
+  "instruct": "成年女性，普通话，声音干脆平稳，值班调度员在电台里说话，清楚利落，不要播音腔。 调度通话，语速稍慢，逐句吐字清楚。槐荫巷读huái yīn xiàng，在线读zài xiàn。 只朗读给定台词，不添加词语或音效。",
+  "seed": 622601233,
+  "textSha256": "2d04d65e77eb7f053c4f039fdf1655acf6232eec154c9f3f5a23950715f6aedf",
+  "medium": "spoken",
+  "requestSha256": "5e5c3f2e9f7c37ce42607dd37fcb792f7ff73b408ac47edd68d542358cd2c5d9",
+  "status": "accepted",
+  "productionMethod": "preserved_exact_legacy_bytes",
+  "duration": 2,
+  "actualGenerationRequest": {
+    "id": "q07-dispatch",
+    "speaker": "Serena",
+    "instruct": "成年女性，普通话，声音干脆平稳，值班调度员在电台里说话，清楚利落，不要播音腔。",
+    "seed": 120016,
+    "requestSha256": "f48d50cfdcc36352a95d2fb6544d7d6a3fe1661fd74e6445871efea69012e6b0"
+  },
+  "asr": {
+    "passed": true,
+    "transcript": "清河里七号院报了九页",
+    "cer": 0.1,
+    "polarityCountsMatch": true,
+    "model": "Systran/faster-whisper-large-v3"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-seventh-night--dispatch--q01--01/raw.wav",
+      "bytes": 96044,
+      "sha256": "d19f0f274ff66dd0834645eced07934fd49fe8406a24ae72b677bba68eb7ff82"
+    },
+    "master": {
+      "path": "circuit-seventh-night--dispatch--q01--01/master.wav",
+      "bytes": 96078,
+      "sha256": "647892da2d23e642287e602b25a85cb1793f5fc0410d9f1ec46e7f0f6ff286f8"
+    },
+    "runtime": {
+      "path": "circuit-seventh-night--dispatch--q01--01/runtime.mp3",
+      "bytes": 25101,
+      "sha256": "cba211c791b5359a0f388e9044fb4befe15c5227fe120b3255b7be6a543acc47"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

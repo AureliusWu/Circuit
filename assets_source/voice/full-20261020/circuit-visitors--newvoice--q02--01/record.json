@@ -1,0 +1,59 @@
+{
+  "id": "circuit-visitors--newvoice--q02--01",
+  "sceneId": "visitors",
+  "lineId": "visitors--newVoice--q02--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "谁把车上那句装进去的，还没找到。",
+  "nodeId": "newVoice",
+  "start": 88,
+  "end": 104,
+  "quoteIndex": 1,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1594185753,
+  "textSha256": "e1c601dd0df8d90a5d2ebe873e12769c13e9a8780aa463813f4c5efe47d09445",
+  "medium": "spoken",
+  "requestSha256": "cc430bbe954dc6b86680f5b25b5ba625c0a46c26a7feee39884dcd29b996680f",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "谁把车上那句装进去的还没找到",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 3.2,
+  "wallSeconds": 15.711,
+  "loudness": {
+    "input_i": "-20.61",
+    "input_tp": "-0.02",
+    "input_lra": "0.60",
+    "input_thresh": "-31.78",
+    "output_i": "-19.56",
+    "output_tp": "-2.00",
+    "output_lra": "0.00",
+    "output_thresh": "-30.73",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.44"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-visitors--newvoice--q02--01/raw.wav",
+      "bytes": 307280,
+      "sha256": "9a88c5bb850b9304cfb07f7653b2b24c70164ed3f0857ccb3c1199fd218fbd4a"
+    },
+    "master": {
+      "path": "circuit-visitors--newvoice--q02--01/master.wav",
+      "bytes": 153678,
+      "sha256": "01f2014d4545a1d68feacf5c791d78fb36f18a235a4791b4e972711769f0cc51"
+    },
+    "runtime": {
+      "path": "circuit-visitors--newvoice--q02--01/runtime.ogg",
+      "bytes": 27020,
+      "sha256": "66650a0f2db8fdd0efe4799dea9a2a67c6cfc053fb08605c12944fdb7d09529c"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

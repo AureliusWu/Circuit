@@ -1,0 +1,59 @@
+{
+  "id": "circuit-seventh-night--linger--q01--01",
+  "sceneId": "seventh-night",
+  "lineId": "seventh-night--linger--q01--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "饭点是不是也能提前一分钟？",
+  "nodeId": "linger",
+  "start": 30,
+  "end": 43,
+  "quoteIndex": 0,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 95017200,
+  "textSha256": "f82b6ad0eac992bb0ad128edd9d8025f7fe4cbaeb1d38cfe2844be2b816cac58",
+  "medium": "spoken",
+  "requestSha256": "9e22467c4a08159a630751ad92c757e830107e6619af44fa8d5fc5a6a38dc884",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "飯點是不是也能提前一分鐘",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 2.16,
+  "wallSeconds": 82.986,
+  "loudness": {
+    "input_i": "-17.79",
+    "input_tp": "-3.45",
+    "input_lra": "0.00",
+    "input_thresh": "-27.79",
+    "output_i": "-20.00",
+    "output_tp": "-5.67",
+    "output_lra": "0.00",
+    "output_thresh": "-30.00",
+    "normalization_type": "linear",
+    "target_offset": "-0.00"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-seventh-night--linger--q01--01/raw.wav",
+      "bytes": 207440,
+      "sha256": "f0549377c1530404db6d9eb9c7ed0910a3e9415091b1d7e22a4ba487d22a19b8"
+    },
+    "master": {
+      "path": "circuit-seventh-night--linger--q01--01/master.wav",
+      "bytes": 103758,
+      "sha256": "be07f71e065cba7268a4d9df19aa1c2d04e3bd1972df449bb38d72f02eca502d"
+    },
+    "runtime": {
+      "path": "circuit-seventh-night--linger--q01--01/runtime.ogg",
+      "bytes": 19078,
+      "sha256": "ab96cf69089ca61d644b32ddbd0f65707b6768b5ab8f819a5de2c7701136146c"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

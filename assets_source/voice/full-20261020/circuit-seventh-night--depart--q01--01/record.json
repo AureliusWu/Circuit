@@ -1,0 +1,59 @@
+{
+  "id": "circuit-seventh-night--depart--q01--01",
+  "sceneId": "seventh-night",
+  "lineId": "seventh-night--depart--q01--01",
+  "lineIndex": 0,
+  "speaker": "shen",
+  "text": "今天不跳的话，你们还查吗？",
+  "nodeId": "depart",
+  "start": 18,
+  "end": 31,
+  "quoteIndex": 0,
+  "actorId": "shen",
+  "voice": "Serena",
+  "instruct": "二十八岁女性，普通话，声音轻而疲惫，口语自然，像一晚上没睡好的人，不要哭腔。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1751070352,
+  "textSha256": "a4a78f9abddd5b89b5fc3c74ed9bcca8782a6c78dc8170ecd33b4a601a86e247",
+  "medium": "spoken",
+  "requestSha256": "93cabe931b576d1f0ffc06347aa4c2bd51792ffd3b415e0bb805eeb089ab6fab",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "今天不跳的话 你们还查吗",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 1.76,
+  "wallSeconds": 95.75,
+  "loudness": {
+    "input_i": "-27.46",
+    "input_tp": "-9.62",
+    "input_lra": "0.00",
+    "input_thresh": "-37.46",
+    "output_i": "-19.99",
+    "output_tp": "-2.16",
+    "output_lra": "0.00",
+    "output_thresh": "-29.99",
+    "normalization_type": "linear",
+    "target_offset": "-0.01"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-seventh-night--depart--q01--01/raw.wav",
+      "bytes": 169040,
+      "sha256": "132a911ee6f9e9f61dea1a8fe05f67a6bfbb98ee9f7cb8f1c39c6b44258de07a"
+    },
+    "master": {
+      "path": "circuit-seventh-night--depart--q01--01/master.wav",
+      "bytes": 84558,
+      "sha256": "2c6ca841814898d92dde436718482c88e36bdd27f3a7e099169969195c590900"
+    },
+    "runtime": {
+      "path": "circuit-seventh-night--depart--q01--01/runtime.ogg",
+      "bytes": 16096,
+      "sha256": "82243c4bdc0aa6c2eb599d2f044859d20e5ed47656f80e73d289b6549a892a12"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

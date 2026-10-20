@@ -1,0 +1,59 @@
+{
+  "id": "circuit-tickets--wrongwriter--q01--01",
+  "sceneId": "tickets",
+  "lineId": "tickets--wrongWriter--q01--01",
+  "lineIndex": 0,
+  "speaker": "manager",
+  "text": "哪项是他的操作记录？",
+  "nodeId": "wrongWriter",
+  "start": 19,
+  "end": 29,
+  "quoteIndex": 0,
+  "actorId": "manager",
+  "voice": "Dylan",
+  "instruct": "成年男性管理方工作人员，普通话，平静利落，日常工作交接，清楚自然，不朗诵。",
+  "seed": 1767439703,
+  "textSha256": "82f6d2edcd64790f1e94a2d98ca5179a92c3f174596d745f5a1692fa946591f3",
+  "medium": "spoken",
+  "requestSha256": "ec981262e91530f27ba780960d34ce6c3fda8158f3d96c133666946e2ae695eb",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "哪像是他的操作記錄",
+    "cer": 0.111111,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 2.0,
+  "wallSeconds": 18.613,
+  "loudness": {
+    "input_i": "-26.54",
+    "input_tp": "-6.09",
+    "input_lra": "0.00",
+    "input_thresh": "-36.54",
+    "output_i": "-22.46",
+    "output_tp": "-2.00",
+    "output_lra": "0.00",
+    "output_thresh": "-32.46",
+    "normalization_type": "linear",
+    "target_offset": "2.46"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-tickets--wrongwriter--q01--01/raw.wav",
+      "bytes": 192080,
+      "sha256": "9d19a5bf9b421d6043ce53927213e8b9a8c8c55367a862d3a0198a65669a7ab0"
+    },
+    "master": {
+      "path": "circuit-tickets--wrongwriter--q01--01/master.wav",
+      "bytes": 96078,
+      "sha256": "1de0dc5193d03fb24c080ba0165e4badf46eab16ec490975bc519c715b464111"
+    },
+    "runtime": {
+      "path": "circuit-tickets--wrongwriter--q01--01/runtime.ogg",
+      "bytes": 19627,
+      "sha256": "e8a9fc0ec3370ee8e184a900a3141a1bfeda8e43c5e644ff8ac1e55eb694a819"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

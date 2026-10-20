@@ -1,0 +1,59 @@
+{
+  "id": "circuit-tickets--lastsheet--q01--01",
+  "sceneId": "tickets",
+  "lineId": "tickets--lastSheet--q01--01",
+  "lineIndex": 0,
+  "speaker": "cheng",
+  "text": "那就别按这个排谁先到。",
+  "nodeId": "lastSheet",
+  "start": 43,
+  "end": 54,
+  "quoteIndex": 0,
+  "actorId": "cheng",
+  "voice": "Dylan",
+  "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 541900341,
+  "textSha256": "f8b00668212725a3006e54e7342651ab04a9487f55f24b52ab8ecbc6851bf487",
+  "medium": "spoken",
+  "requestSha256": "506a41ba9f83f661cc1accb2a8ca03550cf63fa7f3e0f66f16b5e3c70123ffa0",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "那就别按这个牌谁先到",
+    "cer": 0.1,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 2.0,
+  "wallSeconds": 85.526,
+  "loudness": {
+    "input_i": "-24.10",
+    "input_tp": "-6.96",
+    "input_lra": "0.00",
+    "input_thresh": "-34.10",
+    "output_i": "-20.00",
+    "output_tp": "-2.86",
+    "output_lra": "0.00",
+    "output_thresh": "-30.00",
+    "normalization_type": "linear",
+    "target_offset": "0.00"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-tickets--lastsheet--q01--01/raw.wav",
+      "bytes": 192080,
+      "sha256": "2a162fc15aaa6d6f2e14d6b4a0b697179d775471e6781fb2043ab2b679d232cd"
+    },
+    "master": {
+      "path": "circuit-tickets--lastsheet--q01--01/master.wav",
+      "bytes": 96078,
+      "sha256": "6e1735b5603ec72b715cd04f59ca43601fb2fafe11405e8283059c824c84d7b4"
+    },
+    "runtime": {
+      "path": "circuit-tickets--lastsheet--q01--01/runtime.ogg",
+      "bytes": 18781,
+      "sha256": "29df7aba715999f806c217a33c916f3370558bc1e7cc6a2b884eb44e221a9289"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

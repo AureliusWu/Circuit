@@ -1,0 +1,81 @@
+{
+  "id": "circuit-answering--luo--q01--01",
+  "sceneId": "answering",
+  "lineId": "answering--luo--q01--01",
+  "lineIndex": 0,
+  "speaker": "luo",
+  "text": "到底谁在后面应我？",
+  "nodeId": "luo",
+  "start": 35,
+  "end": 44,
+  "quoteIndex": 0,
+  "legacy": {
+    "id": "v01-question",
+    "character": "luo",
+    "speaker": "Vivian",
+    "instruct": "二十九岁女性，普通话，声音偏低，夜班值班员谨慎地问话，平静自然，略有迟疑，不要朗诵。 语速稍慢，完整说清问句，句尾应我两个字读yìng wǒ，不要省字。",
+    "text": "到底谁在后面应我？",
+    "seed": 220040,
+    "bindings": [
+      {
+        "chapter": "return-visit",
+        "node": "quiet"
+      }
+    ],
+    "requestSha256": "5d9bba947313c4bd81715dc13cb7def645472b2b4f8a54fce690def5cb9604c2",
+    "duration": 1.52,
+    "generationSeconds": 8.863,
+    "loudnessInput": {
+      "input_i": "-21.77",
+      "input_tp": "-9.39",
+      "input_lra": "0.00",
+      "input_thresh": "-31.77",
+      "output_i": "-20.02",
+      "output_tp": "-7.62",
+      "output_lra": "0.00",
+      "output_thresh": "-30.02",
+      "normalization_type": "linear",
+      "target_offset": "0.02"
+    },
+    "files": [
+      {
+        "path": "assets_source/audio/v1.2.0/v01-question-raw.wav",
+        "bytes": 73004,
+        "sha256": "43074e9daeeed06b3432379ba87ec06d5c1cc1320bf0d8a2790d4ad1411fa9a6"
+      },
+      {
+        "path": "assets_source/audio/v1.2.0/v01-question.wav",
+        "bytes": 73038,
+        "sha256": "02234efedb51a6f3af7a632aafb6e91771e52aa8a376fd7673d76be1d8519e2a"
+      },
+      {
+        "path": "public/audio/voice/v01-question.mp3",
+        "bytes": 19341,
+        "sha256": "db4b49f5b2f2a253d7e1f7f0469f7dc9894c064878539c47de921555cece40aa"
+      }
+    ],
+    "asr": {
+      "id": "v01-question",
+      "mp3Sha256": "db4b49f5b2f2a253d7e1f7f0469f7dc9894c064878539c47de921555cece40aa",
+      "expected": "到底谁在后面应我？",
+      "transcript": "到底谁在后面应我",
+      "cer": 0,
+      "polarityCountsMatch": true,
+      "status": "passed"
+    },
+    "asrModel": "Systran/faster-whisper-large-v3",
+    "evidencePath": "docs/audio/voice-asr.json",
+    "evidenceSha256": "25d0e31c3decd5262d92349d6571ec67ac58723ea00c40005ddff4d8b9a58334"
+  },
+  "replayOf": "circuit-return-visit--quiet--q01--01",
+  "actorId": "luo",
+  "voice": "Vivian",
+  "instruct": "二十九岁女性，普通话，声音偏低，夜班值班员谨慎地问话，平静自然，略有迟疑，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 243174760,
+  "textSha256": "bd989a5f4827ff55923c66ee15383dfb026151a42f1d0b2c1f34806912fbfb0d",
+  "medium": "spoken",
+  "requestSha256": "10294d6536095898c1af288a0a130d62b5cffc1b2b1c5b6da1e2b277de752449",
+  "status": "replay_reference",
+  "files": {},
+  "recoveredFromRun": 39391771655
+}

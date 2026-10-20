@@ -1,0 +1,59 @@
+{
+  "id": "circuit-backfeed--drawing--q02--01",
+  "sceneId": "backfeed",
+  "lineId": "backfeed--drawing--q02--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "同一条巷子，怎么两张图宽度都不一样？",
+  "nodeId": "drawing",
+  "start": 76,
+  "end": 94,
+  "quoteIndex": 1,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 130552208,
+  "textSha256": "6f381e08b90ce92feefae3d8ac740d39a9eb453512d429b18f34c51265e49b0b",
+  "medium": "spoken",
+  "requestSha256": "e167321dabbe953423d9aee6949d225e20fa39434add1e691a9159432a93b5b1",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "同一条巷子怎么两张图宽度都不一样",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 4.8,
+  "wallSeconds": 287.005,
+  "loudness": {
+    "input_i": "-19.01",
+    "input_tp": "-5.18",
+    "input_lra": "0.30",
+    "input_thresh": "-29.50",
+    "output_i": "-18.66",
+    "output_tp": "-5.29",
+    "output_lra": "0.40",
+    "output_thresh": "-29.24",
+    "normalization_type": "dynamic",
+    "target_offset": "-1.34"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-backfeed--drawing--q02--01/raw.wav",
+      "bytes": 460880,
+      "sha256": "2ffceef8382c7464327b2912c2861135c05568ba368631339d2830bb5eefbf54"
+    },
+    "master": {
+      "path": "circuit-backfeed--drawing--q02--01/master.wav",
+      "bytes": 230478,
+      "sha256": "2c06b0e16af8084dea30e87e5974620bd2c7bc475f3b24864a67863c53af799c"
+    },
+    "runtime": {
+      "path": "circuit-backfeed--drawing--q02--01/runtime.ogg",
+      "bytes": 35840,
+      "sha256": "22313402d82f35e2248fd5e0ce04bf5f251ef9376a094f8df7fb090e11f152a7"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

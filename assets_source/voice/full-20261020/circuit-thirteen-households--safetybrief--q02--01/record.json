@@ -1,0 +1,59 @@
+{
+  "id": "circuit-thirteen-households--safetybrief--q02--01",
+  "sceneId": "thirteen-households",
+  "lineId": "thirteen-households--safetyBrief--q02--01",
+  "lineIndex": 0,
+  "speaker": "lin",
+  "text": "十三号先留着。刚才我想查它，系统让我填销户日期。",
+  "nodeId": "safetyBrief",
+  "start": 69,
+  "end": 93,
+  "quoteIndex": 1,
+  "actorId": "lin",
+  "voice": "Serena",
+  "instruct": "成年女性，普通话，声音干脆平稳，值班调度员在电台里说话，清楚利落，不要播音腔。 调度通话，语速稍慢，逐句吐字清楚。槐荫巷读huái yīn xiàng，在线读zài xiàn。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1917793922,
+  "textSha256": "4056dac4964216d0509228312a9fbad8e2c9f3e447de2c798f2113515c836714",
+  "medium": "spoken",
+  "requestSha256": "97cfc1aa94a6febc9108926b2853967ecbdfad566857081388feb2567643ed17",
+  "attempt": 2,
+  "status": "accepted",
+  "asr": {
+    "transcript": "13号先留着刚才我想查他系统让我填销护日期",
+    "cer": 0.190476,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 4.96,
+  "wallSeconds": 250.552,
+  "loudness": {
+    "input_i": "-24.72",
+    "input_tp": "-8.12",
+    "input_lra": "1.80",
+    "input_thresh": "-34.90",
+    "output_i": "-19.73",
+    "output_tp": "-3.36",
+    "output_lra": "2.20",
+    "output_thresh": "-30.05",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.27"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-thirteen-households--safetybrief--q02--01/raw.wav",
+      "bytes": 476240,
+      "sha256": "4c79dc2565192691ce304366c4a81a1e22187741e50c604ff16032dc6613e20a"
+    },
+    "master": {
+      "path": "circuit-thirteen-households--safetybrief--q02--01/master.wav",
+      "bytes": 238158,
+      "sha256": "bd8c97cfabc251b9636e75abe9aa512629225636df8fd4611184e77f3ec2d43d"
+    },
+    "runtime": {
+      "path": "circuit-thirteen-households--safetybrief--q02--01/runtime.ogg",
+      "bytes": 38654,
+      "sha256": "37582f7c377397e9a06b90a88eeab9216aba7c23f139034e48e126e93fc92438"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

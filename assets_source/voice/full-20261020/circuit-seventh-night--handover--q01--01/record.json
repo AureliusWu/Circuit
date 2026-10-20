@@ -1,0 +1,59 @@
+{
+  "id": "circuit-seventh-night--handover--q01--01",
+  "sceneId": "seventh-night",
+  "lineId": "seventh-night--handover--q01--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "住户说停电，系统也说停电，就这么往下抄了九次？",
+  "nodeId": "handover",
+  "start": 44,
+  "end": 67,
+  "quoteIndex": 0,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 516737706,
+  "textSha256": "6fe824cf46ea49bf83b4dbe16e1df4db372a62aba490a9fe301f300f44f0bbad",
+  "medium": "spoken",
+  "requestSha256": "835fc8c7bd288349985e50be659156123c770b56731fbf862abfdc81fd12c26d",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "住戶说停电,系统也说停电,就这么往下抄了9次!",
+    "cer": 0.05,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 4.56,
+  "wallSeconds": 148.623,
+  "loudness": {
+    "input_i": "-20.04",
+    "input_tp": "-5.05",
+    "input_lra": "1.60",
+    "input_thresh": "-30.48",
+    "output_i": "-18.45",
+    "output_tp": "-3.38",
+    "output_lra": "1.30",
+    "output_thresh": "-28.86",
+    "normalization_type": "dynamic",
+    "target_offset": "-1.55"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-seventh-night--handover--q01--01/raw.wav",
+      "bytes": 437840,
+      "sha256": "ff4282b024b23a1bd434196b1da3403efe4b0c017d8655fc647d6110d9f0e56c"
+    },
+    "master": {
+      "path": "circuit-seventh-night--handover--q01--01/master.wav",
+      "bytes": 218958,
+      "sha256": "6f6f0167bac0b72773c9fc37ccc7f4aaf99a86f4f0f120c441bf6970af7342f8"
+    },
+    "runtime": {
+      "path": "circuit-seventh-night--handover--q01--01/runtime.ogg",
+      "bytes": 37016,
+      "sha256": "47c7c16650bd237f21cb396d5d992d6f3ae0ef79ff3fa7eb7f608ad2cd2d2edf"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

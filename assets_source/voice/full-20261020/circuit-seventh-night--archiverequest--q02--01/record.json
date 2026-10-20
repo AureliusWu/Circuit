@@ -1,0 +1,59 @@
+{
+  "id": "circuit-seventh-night--archiverequest--q02--01",
+  "sceneId": "seventh-night",
+  "lineId": "seventh-night--archiveRequest--q02--01",
+  "lineIndex": 0,
+  "speaker": "zhou",
+  "text": "我听到的，叫守成。",
+  "nodeId": "archiveRequest",
+  "start": 66,
+  "end": 75,
+  "quoteIndex": 1,
+  "actorId": "zhou",
+  "voice": "Uncle_Fu",
+  "instruct": "五十岁男性，普通话，声音低沉略沙哑，克制缓慢，像夜班老工人，语气自然，不要表演悲伤。 语速稍慢，逐字说清楚，季宁读jì níng。句尾完整，不要吞字。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1313245501,
+  "textSha256": "52585fe588e087dd027f4f485ed6711b3a04cd5ac3d314ae83509f065a53845a",
+  "medium": "spoken",
+  "requestSha256": "123c102534a87aada950e6e6cc5f170f5390294b4da744d8ca0f7b013cddb519",
+  "attempt": 2,
+  "status": "needs_review",
+  "asr": {
+    "transcript": "我听到的",
+    "cer": 0.428571,
+    "polarityCountsMatch": true,
+    "passed": false
+  },
+  "duration": 1.28,
+  "wallSeconds": 6.51,
+  "loudness": {
+    "input_i": "-21.24",
+    "input_tp": "-6.31",
+    "input_lra": "0.00",
+    "input_thresh": "-31.24",
+    "output_i": "-19.99",
+    "output_tp": "-5.07",
+    "output_lra": "0.00",
+    "output_thresh": "-29.99",
+    "normalization_type": "linear",
+    "target_offset": "-0.01"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-seventh-night--archiverequest--q02--01/raw.wav",
+      "bytes": 122960,
+      "sha256": "3b1b4ce0149940ceb9956cbcd9af51fd1948a347bb02f0b19ace371ed6daae45"
+    },
+    "master": {
+      "path": "circuit-seventh-night--archiverequest--q02--01/master.wav",
+      "bytes": 61518,
+      "sha256": "85cc670b212cd886ea7600b4c092315a4d7e5ce9e856df93557f1f528ab28e38"
+    },
+    "runtime": {
+      "path": "circuit-seventh-night--archiverequest--q02--01/runtime.ogg",
+      "bytes": 13752,
+      "sha256": "e9c8db32f5440dfff83b5e21430d2db28a15d774fc4e0e376282eba3b56108d5"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

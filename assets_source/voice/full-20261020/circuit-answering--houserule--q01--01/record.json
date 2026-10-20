@@ -1,0 +1,59 @@
+{
+  "id": "circuit-answering--houserule--q01--01",
+  "sceneId": "answering",
+  "lineId": "answering--houseRule--q01--01",
+  "lineIndex": 0,
+  "speaker": "luo",
+  "text": "我奶奶说的。住河边那会儿，说第三声是来点人数的。",
+  "nodeId": "houseRule",
+  "start": 42,
+  "end": 66,
+  "quoteIndex": 0,
+  "actorId": "luo",
+  "voice": "Vivian",
+  "instruct": "二十九岁女性，普通话，声音偏低，夜班值班员谨慎地问话，平静自然，略有迟疑，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 286566669,
+  "textSha256": "fc8ce6f2ef5defbe318ca17d005dba7d8bec968092329df1c9a5550c6a03e602",
+  "medium": "spoken",
+  "requestSha256": "cdb4f6a6dfc13b17f782d7b74319ae271f4652a7b2f1ec6d987fa08d2c2882d2",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "我奶奶说的祝河边那会儿说第三声是来点人数的",
+    "cer": 0.047619,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 6.64,
+  "wallSeconds": 215.197,
+  "loudness": {
+    "input_i": "-27.13",
+    "input_tp": "-11.30",
+    "input_lra": "1.90",
+    "input_thresh": "-37.84",
+    "output_i": "-20.38",
+    "output_tp": "-4.90",
+    "output_lra": "3.10",
+    "output_thresh": "-31.67",
+    "normalization_type": "dynamic",
+    "target_offset": "0.38"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-answering--houserule--q01--01/raw.wav",
+      "bytes": 637520,
+      "sha256": "cdf0c1c887c3b6f1116bd4c3a67e89cff9f553dec76193de2a7405691c8f2446"
+    },
+    "master": {
+      "path": "circuit-answering--houserule--q01--01/master.wav",
+      "bytes": 318798,
+      "sha256": "dfd0bad6ef52835d96ba57e3c3b329168c8fd3b23358d73d4519c0dc2b711810"
+    },
+    "runtime": {
+      "path": "circuit-answering--houserule--q01--01/runtime.ogg",
+      "bytes": 48636,
+      "sha256": "242d69fd8a9706ca7c7091bc73e61ccb4580c0adfefa8f7a2db0bfc7846d5138"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

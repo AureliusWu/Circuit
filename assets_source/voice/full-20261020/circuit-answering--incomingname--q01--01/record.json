@@ -1,0 +1,59 @@
+{
+  "id": "circuit-answering--incomingname--q01--01",
+  "sceneId": "answering",
+  "lineId": "answering--incomingName--q01--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "所以它先在这里播，再从门厅出声？",
+  "nodeId": "incomingName",
+  "start": 60,
+  "end": 76,
+  "quoteIndex": 0,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1345076104,
+  "textSha256": "948af03f1478295c1c2738b317ea519194e11a2acfadd6ce582a828d14f0a61c",
+  "medium": "spoken",
+  "requestSha256": "ae2bfe907b0d46224da8dc1f940acb985154f6fda96ed16f9e219d5c4e7c4ecc",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "所以他先在这里播 再从门听出声",
+    "cer": 0.142857,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 2.88,
+  "wallSeconds": 162.398,
+  "loudness": {
+    "input_i": "-19.88",
+    "input_tp": "-5.43",
+    "input_lra": "0.00",
+    "input_thresh": "-29.88",
+    "output_i": "-20.00",
+    "output_tp": "-5.55",
+    "output_lra": "0.00",
+    "output_thresh": "-30.00",
+    "normalization_type": "linear",
+    "target_offset": "-0.00"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-answering--incomingname--q01--01/raw.wav",
+      "bytes": 276560,
+      "sha256": "d24deaa97f00a3a69cba41f1cc91aeb383ea08b98aee6c7c2aab683f88532e7b"
+    },
+    "master": {
+      "path": "circuit-answering--incomingname--q01--01/master.wav",
+      "bytes": 138318,
+      "sha256": "60a5d4765494fdf0c1b31eccbaebb60c5e79fd2f396fd86da75087f8a2de27c0"
+    },
+    "runtime": {
+      "path": "circuit-answering--incomingname--q01--01/runtime.ogg",
+      "bytes": 24912,
+      "sha256": "5d9a86a51db3849f0b345adfb2702046f7ac464c1ce5702027a8aeeec42acea5"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

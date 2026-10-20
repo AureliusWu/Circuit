@@ -1,0 +1,59 @@
+{
+  "id": "circuit-everlight--promise--q01--01",
+  "sceneId": "everlight",
+  "lineId": "everlight--promise--q01--01",
+  "lineIndex": 0,
+  "speaker": "mei",
+  "text": "我说你忙，回来敲栏杆就行。",
+  "nodeId": "promise",
+  "start": 41,
+  "end": 54,
+  "quoteIndex": 0,
+  "actorId": "mei",
+  "voice": "Serena",
+  "instruct": "六十岁女性，普通话，声音偏低，平实缓慢，像老邻居小声嘱咐，句尾稍停，不要年轻撒娇。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1268655470,
+  "textSha256": "82eb7aea7d4d1cbf0bdf059183552fcd6fbcdc7c9f755409915eeae9c9054fcf",
+  "medium": "spoken",
+  "requestSha256": "c4952a7bd0f17704d54c83edeeb7b95de6043af3a1bf61ecbf24573cbda2deae",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "我说你忙 回来敲蓝干就行",
+    "cer": 0.181818,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 3.04,
+  "wallSeconds": 153.616,
+  "loudness": {
+    "input_i": "-24.98",
+    "input_tp": "-12.71",
+    "input_lra": "0.20",
+    "input_thresh": "-35.12",
+    "output_i": "-19.63",
+    "output_tp": "-7.41",
+    "output_lra": "0.00",
+    "output_thresh": "-29.78",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.37"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-everlight--promise--q01--01/raw.wav",
+      "bytes": 291920,
+      "sha256": "d83cf03729b84c0b956391a89bff26c23e84752029af2a403ae4b4ac67f2f15f"
+    },
+    "master": {
+      "path": "circuit-everlight--promise--q01--01/master.wav",
+      "bytes": 145998,
+      "sha256": "57a17abb92ed287f020f8e31790ac8425b0f55851f788594d9bb68d84b224145"
+    },
+    "runtime": {
+      "path": "circuit-everlight--promise--q01--01/runtime.ogg",
+      "bytes": 25128,
+      "sha256": "fdeb71c79b73135d1fe90164f742d3e6c9f3486766e2ccf709d55201d9c29fd4"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

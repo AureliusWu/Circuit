@@ -1,0 +1,59 @@
+{
+  "id": "circuit-seventh-night--offering--q01--01",
+  "sceneId": "seventh-night",
+  "lineId": "seventh-night--offering--q01--01",
+  "lineIndex": 0,
+  "speaker": "shen",
+  "text": "说看见印子就知道他认过门。",
+  "nodeId": "offering",
+  "start": 74,
+  "end": 87,
+  "quoteIndex": 0,
+  "actorId": "shen",
+  "voice": "Serena",
+  "instruct": "二十八岁女性，普通话，声音轻而疲惫，口语自然，像一晚上没睡好的人，不要哭腔。 只朗读给定台词，不添加词语或音效。",
+  "seed": 74613891,
+  "textSha256": "168b929e24f2f2184e435f468b1c13985d201a0e3f934d010977b44613495308",
+  "medium": "spoken",
+  "requestSha256": "2a32368ee60a3b867a38e082c2230097f70c8745a45f3f70136bd81217b853fc",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "说 看见印子就知道他认过门",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 2.96,
+  "wallSeconds": 121.864,
+  "loudness": {
+    "input_i": "-24.56",
+    "input_tp": "-5.77",
+    "input_lra": "0.00",
+    "input_thresh": "-34.89",
+    "output_i": "-20.78",
+    "output_tp": "-2.00",
+    "output_lra": "0.00",
+    "output_thresh": "-31.12",
+    "normalization_type": "linear",
+    "target_offset": "0.78"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-seventh-night--offering--q01--01/raw.wav",
+      "bytes": 284240,
+      "sha256": "c9632fb2aec41e302d8279ff70b362991a6c527e947351daaad3d6a0c722d791"
+    },
+    "master": {
+      "path": "circuit-seventh-night--offering--q01--01/master.wav",
+      "bytes": 142158,
+      "sha256": "92647eabe0e5ffcd89773ef8d164f4a5b5b50fd410d2752fb390aa101e9c4f81"
+    },
+    "runtime": {
+      "path": "circuit-seventh-night--offering--q01--01/runtime.ogg",
+      "bytes": 24448,
+      "sha256": "8f8386f54df28b5d172df37936f10509aa67ab4213182cf0e41d1e08736bbc5c"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

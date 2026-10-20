@@ -1,0 +1,59 @@
+{
+  "id": "circuit-visitors--repair--q01--01",
+  "sceneId": "visitors",
+  "lineId": "visitors--repair--q01--01",
+  "lineIndex": 0,
+  "speaker": "luo",
+  "text": "刚才灯暗的时候，那把椅子转过来了。",
+  "nodeId": "repair",
+  "start": 111,
+  "end": 128,
+  "quoteIndex": 0,
+  "actorId": "luo",
+  "voice": "Vivian",
+  "instruct": "二十九岁女性，普通话，声音偏低，夜班值班员谨慎地问话，平静自然，略有迟疑，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 402509100,
+  "textSha256": "216db933ffeba3cd9688327bb4c92ad03dd6a64907680a044b17b606dba2402d",
+  "medium": "spoken",
+  "requestSha256": "0235c031febc1eedb95a721b04e1f1077054c45eb2804eb128b9d583a14dc1cb",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "刚才灯暗的时候,那把椅子转过来了",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 5.44,
+  "wallSeconds": 301.824,
+  "loudness": {
+    "input_i": "-27.05",
+    "input_tp": "-10.38",
+    "input_lra": "3.70",
+    "input_thresh": "-37.51",
+    "output_i": "-20.76",
+    "output_tp": "-4.74",
+    "output_lra": "3.70",
+    "output_thresh": "-31.21",
+    "normalization_type": "dynamic",
+    "target_offset": "0.76"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-visitors--repair--q01--01/raw.wav",
+      "bytes": 522320,
+      "sha256": "dfb51fce5da5a2c4b7b5c80cefd12c40a634b5035e88d90343c7bf0c9709a584"
+    },
+    "master": {
+      "path": "circuit-visitors--repair--q01--01/master.wav",
+      "bytes": 261198,
+      "sha256": "07e88a3525dcd70788113f08d86a280f74bdfc0b3a3a24b9c6ce1cb13e8e48a5"
+    },
+    "runtime": {
+      "path": "circuit-visitors--repair--q01--01/runtime.ogg",
+      "bytes": 39990,
+      "sha256": "38fa75ef9beedc4a4966922c3784821d58d7abaa19d3b510b024c6c291303b34"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

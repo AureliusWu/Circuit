@@ -1,0 +1,59 @@
+{
+  "id": "circuit-seventh-night--recordwake--q01--01",
+  "sceneId": "seventh-night",
+  "lineId": "seventh-night--recordWake--q01--01",
+  "lineIndex": 0,
+  "speaker": "shen",
+  "text": "这样能查？",
+  "nodeId": "recordWake",
+  "start": 50,
+  "end": 55,
+  "quoteIndex": 0,
+  "actorId": "shen",
+  "voice": "Serena",
+  "instruct": "二十八岁女性，普通话，声音轻而疲惫，口语自然，像一晚上没睡好的人，不要哭腔。 只朗读给定台词，不添加词语或音效。",
+  "seed": 64905678,
+  "textSha256": "2488f7c2b73bec44e77b41b59d704d509c914f97afc9891e06d3dd82030ecb81",
+  "medium": "spoken",
+  "requestSha256": "560a15f2033fc08c284c8ec88f48b9d58a97fc6d6752124a9b8c99026fe31204",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "這樣能查?",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 0.96,
+  "wallSeconds": 58.887,
+  "loudness": {
+    "input_i": "-22.27",
+    "input_tp": "-8.02",
+    "input_lra": "0.00",
+    "input_thresh": "-32.27",
+    "output_i": "-19.99",
+    "output_tp": "-5.75",
+    "output_lra": "0.00",
+    "output_thresh": "-29.99",
+    "normalization_type": "linear",
+    "target_offset": "-0.01"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-seventh-night--recordwake--q01--01/raw.wav",
+      "bytes": 92240,
+      "sha256": "b978de570b5c91eeb962741fa295be290978e9cff1883753e0b934cd846e0c44"
+    },
+    "master": {
+      "path": "circuit-seventh-night--recordwake--q01--01/master.wav",
+      "bytes": 46158,
+      "sha256": "78c1b030d19ace0d8be9d2cbd6336fec76fab64e30e5c4c241147a649edcff26"
+    },
+    "runtime": {
+      "path": "circuit-seventh-night--recordwake--q01--01/runtime.ogg",
+      "bytes": 10391,
+      "sha256": "e979114e1c7054c154a88ea2b4f3cb5c9c397322973e21119beb4c76b3b033a4"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

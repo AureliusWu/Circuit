@@ -1,0 +1,59 @@
+{
+  "id": "circuit-thirteen-households--call--q03--01",
+  "sceneId": "thirteen-households",
+  "lineId": "thirteen-households--call--q03--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "哦。它地址怎么是空的？",
+  "nodeId": "call",
+  "start": 88,
+  "end": 99,
+  "quoteIndex": 2,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1098922300,
+  "textSha256": "d2c1e5db01e993b9713fff65ce2f57d9f3b1c8ac03cc1e6db3f28c20bd640751",
+  "medium": "spoken",
+  "requestSha256": "0bcda9654b4c83d780e015fb9d97c2f2fa92da47fa79253e5f88f64ab4428c40",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "哇 它地址怎么是空的",
+    "cer": 0.111111,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 3.04,
+  "wallSeconds": 161.788,
+  "loudness": {
+    "input_i": "-21.77",
+    "input_tp": "-7.08",
+    "input_lra": "0.30",
+    "input_thresh": "-33.10",
+    "output_i": "-18.49",
+    "output_tp": "-3.81",
+    "output_lra": "0.00",
+    "output_thresh": "-29.76",
+    "normalization_type": "dynamic",
+    "target_offset": "-1.51"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-thirteen-households--call--q03--01/raw.wav",
+      "bytes": 291920,
+      "sha256": "68b937f3f9250225d95a664af022373291b754d1e1524a8418d30651d0447614"
+    },
+    "master": {
+      "path": "circuit-thirteen-households--call--q03--01/master.wav",
+      "bytes": 145998,
+      "sha256": "4eb03713d28020e02e785f92b9c80bb38ab3eeb08405e7204bc9c909c59168c3"
+    },
+    "runtime": {
+      "path": "circuit-thirteen-households--call--q03--01/runtime.ogg",
+      "bytes": 24930,
+      "sha256": "3facf1c9e3fc55096ae459ef703071cb3d823fb6724127c40dd999635389bea0"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

@@ -1,0 +1,59 @@
+{
+  "id": "circuit-visitors--plateleave--q01--01",
+  "sceneId": "visitors",
+  "lineId": "visitors--plateLeave--q01--01",
+  "lineIndex": 0,
+  "speaker": "chen",
+  "text": "我妈以前催我吃饭，就在那边叫。",
+  "nodeId": "plateLeave",
+  "start": 42,
+  "end": 57,
+  "quoteIndex": 0,
+  "actorId": "chen",
+  "voice": "Uncle_Fu",
+  "instruct": "六十岁男性，普通话，语速慢，声音低哑，像看门的老人轻声说话，口语平实。 只朗读给定台词，不添加词语或音效。",
+  "seed": 940398597,
+  "textSha256": "12d98fba398a0f8afbcf39e93517698b5c042b1d2936709b73c3b1b1109696f9",
+  "medium": "spoken",
+  "requestSha256": "779ef815d03688f1c9943d7bcb86da0a0086e56dce37f777e338fb042f8fa5d9",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "我妈以前催我吃饭就在那边叫",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 3.28,
+  "wallSeconds": 19.153,
+  "loudness": {
+    "input_i": "-21.97",
+    "input_tp": "-4.21",
+    "input_lra": "0.50",
+    "input_thresh": "-32.12",
+    "output_i": "-19.63",
+    "output_tp": "-2.00",
+    "output_lra": "0.00",
+    "output_thresh": "-29.78",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.37"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-visitors--plateleave--q01--01/raw.wav",
+      "bytes": 314960,
+      "sha256": "efadf42535ecc985feb9e6d39fd31576ad86bd3a463ae73b7fde66044d084e2c"
+    },
+    "master": {
+      "path": "circuit-visitors--plateleave--q01--01/master.wav",
+      "bytes": 157518,
+      "sha256": "420e014ff74b12a4bac167226c9f81f4e00c39961b7d752d87f413601a6370a7"
+    },
+    "runtime": {
+      "path": "circuit-visitors--plateleave--q01--01/runtime.ogg",
+      "bytes": 27845,
+      "sha256": "e72882835b9bbfa23aad32436de8a3fb6c63aa5caf0ca1b1d6c409bcbd657690"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

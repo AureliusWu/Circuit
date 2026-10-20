@@ -1,0 +1,59 @@
+{
+  "id": "circuit-return-visit--transferlist--q01--01",
+  "sceneId": "return-visit",
+  "lineId": "return-visit--transferList--q01--01",
+  "lineIndex": 0,
+  "speaker": "luo",
+  "text": "怪不得有人说按错门铃。",
+  "nodeId": "transferList",
+  "start": 56,
+  "end": 67,
+  "quoteIndex": 0,
+  "actorId": "luo",
+  "voice": "Vivian",
+  "instruct": "二十九岁女性，普通话，声音偏低，夜班值班员谨慎地问话，平静自然，略有迟疑，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 420482914,
+  "textSha256": "d8b971b4ad8ea81485811e029bdec2d97d5b9b0a3e2e377ccb0a623e6142c7d2",
+  "medium": "spoken",
+  "requestSha256": "590272aa262e862c2f313a472938675f6603fedada67d29608236789b690ac9a",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "怪不得有人說,按錯門鈴",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 3.04,
+  "wallSeconds": 171.925,
+  "loudness": {
+    "input_i": "-22.08",
+    "input_tp": "-7.75",
+    "input_lra": "0.10",
+    "input_thresh": "-32.39",
+    "output_i": "-19.44",
+    "output_tp": "-5.19",
+    "output_lra": "0.00",
+    "output_thresh": "-29.76",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.56"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-return-visit--transferlist--q01--01/raw.wav",
+      "bytes": 291920,
+      "sha256": "88fab07a8895c99a4c374cfc0d30adb54247e44c3292117f9bed1bef2d6de56e"
+    },
+    "master": {
+      "path": "circuit-return-visit--transferlist--q01--01/master.wav",
+      "bytes": 145998,
+      "sha256": "9a087495e50750ae317ffda9bfda25668cc331f7ecb6fc6a722127b645eda109"
+    },
+    "runtime": {
+      "path": "circuit-return-visit--transferlist--q01--01/runtime.ogg",
+      "bytes": 24853,
+      "sha256": "843f32701f80de24bb86b7648934d4f47f20646fa9296eedd5c552de8e516cd7"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

@@ -1,0 +1,59 @@
+{
+  "id": "circuit-everlight--meetmei--q01--01",
+  "sceneId": "everlight",
+  "lineId": "everlight--meetMei--q01--01",
+  "lineIndex": 0,
+  "speaker": "mei",
+  "text": "卧室没停电。",
+  "nodeId": "meetMei",
+  "start": 56,
+  "end": 62,
+  "quoteIndex": 0,
+  "actorId": "mei",
+  "voice": "Serena",
+  "instruct": "六十岁女性，普通话，声音偏低，平实缓慢，像老邻居小声嘱咐，句尾稍停，不要年轻撒娇。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1605741281,
+  "textSha256": "c2023383fd37007fa3a72a58fbd5a33b06be04c9963231f2531e3cdd86916501",
+  "medium": "spoken",
+  "requestSha256": "e63931028d88ecb894c0ce7e2d4e316a820331e4d2c34b20d3fd3448a3615e3e",
+  "attempt": 2,
+  "status": "needs_review",
+  "asr": {
+    "transcript": "我是煤亭店",
+    "cer": 1.0,
+    "polarityCountsMatch": false,
+    "passed": false
+  },
+  "duration": 1.52,
+  "wallSeconds": 16.167,
+  "loudness": {
+    "input_i": "-26.34",
+    "input_tp": "-12.64",
+    "input_lra": "0.00",
+    "input_thresh": "-36.34",
+    "output_i": "-19.99",
+    "output_tp": "-6.30",
+    "output_lra": "0.00",
+    "output_thresh": "-29.99",
+    "normalization_type": "linear",
+    "target_offset": "-0.01"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-everlight--meetmei--q01--01/raw.wav",
+      "bytes": 146000,
+      "sha256": "79b2dd51e6973bc6b58ddbbf58db7c64f0b88c6f9c6f88a60023af3e063cb4f3"
+    },
+    "master": {
+      "path": "circuit-everlight--meetmei--q01--01/master.wav",
+      "bytes": 73038,
+      "sha256": "9f271247fd119a2e6adccae32671b219587361171cdd011ee6bd624b8094cbf4"
+    },
+    "runtime": {
+      "path": "circuit-everlight--meetmei--q01--01/runtime.ogg",
+      "bytes": 14199,
+      "sha256": "f426e1e94e45dcf547bd3d2021e158584782b9ba8181216e000d5376e0890db1"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

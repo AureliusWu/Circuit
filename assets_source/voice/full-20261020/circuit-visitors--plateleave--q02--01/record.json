@@ -1,0 +1,59 @@
+{
+  "id": "circuit-visitors--plateleave--q02--01",
+  "sceneId": "visitors",
+  "lineId": "visitors--plateLeave--q02--01",
+  "lineIndex": 0,
+  "speaker": "chen",
+  "text": "她嫌我应得太慢。",
+  "nodeId": "plateLeave",
+  "start": 73,
+  "end": 81,
+  "quoteIndex": 1,
+  "actorId": "chen",
+  "voice": "Uncle_Fu",
+  "instruct": "六十岁男性，普通话，语速慢，声音低哑，像看门的老人轻声说话，口语平实。 只朗读给定台词，不添加词语或音效。",
+  "seed": 239724456,
+  "textSha256": "6849cab824b77e7dcb4a833dce58ca1a757d9765474aceb2c700744a48c1db82",
+  "medium": "spoken",
+  "requestSha256": "a2831550fc8e974a2d498f914584c375c0c86d6cf77027d8f21efa5a18fbe10e",
+  "attempt": 2,
+  "status": "needs_review",
+  "asr": {
+    "transcript": "呵呵 她嫌我硬的太慢",
+    "cer": 0.571429,
+    "polarityCountsMatch": true,
+    "passed": false
+  },
+  "duration": 3.52,
+  "wallSeconds": 194.862,
+  "loudness": {
+    "input_i": "-29.24",
+    "input_tp": "-9.33",
+    "input_lra": "0.50",
+    "input_thresh": "-39.51",
+    "output_i": "-19.49",
+    "output_tp": "-2.00",
+    "output_lra": "0.00",
+    "output_thresh": "-29.75",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.51"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-visitors--plateleave--q02--01/raw.wav",
+      "bytes": 338000,
+      "sha256": "973893da0c01372f87362d82e5982a4a7c65ab064784a714e97ed01f456c8829"
+    },
+    "master": {
+      "path": "circuit-visitors--plateleave--q02--01/master.wav",
+      "bytes": 169038,
+      "sha256": "15dd056adec15c0aca919715c01eddd347b62ff468bfee7094755882b457cc33"
+    },
+    "runtime": {
+      "path": "circuit-visitors--plateleave--q02--01/runtime.ogg",
+      "bytes": 28502,
+      "sha256": "54037913bc9153a3daf77e90e5e362a18f2e443388f126baa3983a824e34068a"
+    }
+  },
+  "recoveredFromRun": 39391771655
+}

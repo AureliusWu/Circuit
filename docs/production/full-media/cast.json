@@ -1,0 +1,138 @@
+{
+  "schema": 1,
+  "project": "Circuit",
+  "model": {
+    "id": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+    "revision": "0c0e3051f131929182e2c023b9537f8b1c68adfe",
+    "sampleRate": 24000,
+    "license": "Apache-2.0",
+    "asrModel": "Systran/faster-whisper-small",
+    "asrRevision": "536b0662742c02347bc0e980a01041f333bce120",
+    "processing": "ebu_r128_minus20_lufs_truepeak_minus2_db_24k_mono_vorbis_q5_v1",
+    "snapshotFiles": [
+      {
+        "path": "config.json",
+        "bytes": 4908,
+        "sha256": "17a07f527a1c25ea30b4e023a184482a23d3e279d697b1dc81b1bde498d29cf9"
+      },
+      {
+        "path": "generation_config.json",
+        "bytes": 245,
+        "sha256": "f1b90b4513f3b34c62851049e2492d7b4c5940daf1276f89c82b8ef04127f3aa"
+      },
+      {
+        "path": "merges.txt",
+        "bytes": 1671839,
+        "sha256": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3"
+      },
+      {
+        "path": "model.safetensors",
+        "bytes": 3833402552,
+        "sha256": "38b1d5971bdbd982b561cccec982669a53b0537c3cf5e9bd4778ed07bb2f5137"
+      },
+      {
+        "path": "preprocessor_config.json",
+        "bytes": 127,
+        "sha256": "efdde1022ea9d76928bf7a9cd53139138f5ba2e466e837f08f6105ab1af1c119"
+      },
+      {
+        "path": "speech_tokenizer/config.json",
+        "bytes": 2336,
+        "sha256": "ee65bb901c876664ab8707c487157aa1a6ee57c65969b28fb5ec9dc211e68167"
+      },
+      {
+        "path": "speech_tokenizer/configuration.json",
+        "bytes": 76,
+        "sha256": "6bc26d64eb5024b4d1dab5a52371958b429256d6c9d59787f1f5294a54e0cebd"
+      },
+      {
+        "path": "speech_tokenizer/model.safetensors",
+        "bytes": 682293092,
+        "sha256": "836b7b357f5ea43e889936a3709af68dfe3751881acefe4ecf0dbd30ba571258"
+      },
+      {
+        "path": "speech_tokenizer/preprocessor_config.json",
+        "bytes": 234,
+        "sha256": "fcb3805e597e786d4067706e602f6688524640f8d3396790e2e09b5942fcbdfb"
+      },
+      {
+        "path": "tokenizer_config.json",
+        "bytes": 7344,
+        "sha256": "dc3c31c3bdaedd5016382bb3cbe07323026775ad51f5a4fb564505992ae4a670"
+      },
+      {
+        "path": "vocab.json",
+        "bytes": 2776833,
+        "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+      }
+    ]
+  },
+  "actors": {
+    "lin": {
+      "voice": "Serena",
+      "instruct": "成年女性，普通话，声音干脆平稳，值班调度员在电台里说话，清楚利落，不要播音腔。 调度通话，语速稍慢，逐句吐字清楚。槐荫巷读huái yīn xiàng，在线读zài xiàn。 只朗读给定台词，不添加词语或音效。"
+    },
+    "cheng": {
+      "voice": "Dylan",
+      "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。 只朗读给定台词，不添加词语或音效。"
+    },
+    "ji": {
+      "voice": "Vivian",
+      "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。"
+    },
+    "zhou": {
+      "voice": "Uncle_Fu",
+      "instruct": "五十岁男性，普通话，声音低沉略沙哑，克制缓慢，像夜班老工人，语气自然，不要表演悲伤。 语速稍慢，逐字说清楚，季宁读jì níng。句尾完整，不要吞字。 只朗读给定台词，不添加词语或音效。"
+    },
+    "mei": {
+      "voice": "Serena",
+      "instruct": "六十岁女性，普通话，声音偏低，平实缓慢，像老邻居小声嘱咐，句尾稍停，不要年轻撒娇。 只朗读给定台词，不添加词语或音效。"
+    },
+    "shen": {
+      "voice": "Serena",
+      "instruct": "二十八岁女性，普通话，声音轻而疲惫，口语自然，像一晚上没睡好的人，不要哭腔。 只朗读给定台词，不添加词语或音效。"
+    },
+    "xu": {
+      "voice": "Dylan",
+      "instruct": "四十岁男性，普通话，声音比平常低一些，短句利落，是工地电台里平常的询问，不要朗诵。 只朗读给定台词，不添加词语或音效。"
+    },
+    "chen": {
+      "voice": "Uncle_Fu",
+      "instruct": "六十岁男性，普通话，语速慢，声音低哑，像看门的老人轻声说话，口语平实。 只朗读给定台词，不添加词语或音效。"
+    },
+    "luo": {
+      "voice": "Vivian",
+      "instruct": "二十九岁女性，普通话，声音偏低，夜班值班员谨慎地问话，平静自然，略有迟疑，不要朗诵。 只朗读给定台词，不添加词语或音效。"
+    },
+    "unknown-radio": {
+      "voice": "Dylan",
+      "instruct": "成年男性，普通话，来源未识别的短促电台录音，清楚克制，声调平，不夸张，不要添加台词。"
+    },
+    "shen-father": {
+      "voice": "Uncle_Fu",
+      "instruct": "中年成年男性公交司机，普通话，旧录音中的日常交谈，平实自然，声音低缓清楚，只读给定台词。"
+    },
+    "resident-gate": {
+      "voice": "Dylan",
+      "instruct": "成年男性住户，普通话，夜里睡不好，声音低而疲惫，日常交谈，清楚自然，不要夸张。"
+    },
+    "resident-young": {
+      "voice": "Ryan",
+      "instruct": "年轻成年男性住户，普通话，略显困倦的自然交谈，清楚平实，别朗诵。"
+    },
+    "resident-cabinet": {
+      "voice": "Uncle_Fu",
+      "instruct": "年长男性住户，普通话，平实缓慢地交谈，字句清楚，自然克制，不夸张。"
+    },
+    "manager": {
+      "voice": "Dylan",
+      "instruct": "成年男性管理方工作人员，普通话，平静利落，日常工作交接，清楚自然，不朗诵。"
+    },
+    "breakfast-owner": {
+      "voice": "Uncle_Fu",
+      "instruct": "中年男性早点店老板，普通话，自然口语，声音平实，清楚短促，不夸张。"
+    }
+  },
+  "aliases": {},
+  "humanListening": "pending"
+}

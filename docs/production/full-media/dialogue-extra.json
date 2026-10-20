@@ -1,0 +1,55 @@
+{
+  "return-visit/arrival": [
+    {
+      "actorId": "cheng",
+      "text": "程砚，已经到场。",
+      "recordingKey": "arrived"
+    }
+  ],
+  "return-visit/echo": [
+    {
+      "actorId": "cheng",
+      "text": "程砚，已经到场。",
+      "recordingKey": "arrived"
+    },
+    {
+      "actorId": "ji",
+      "text": "季宁，收到。",
+      "recordingKey": "received"
+    }
+  ],
+  "return-visit/end": [
+    {
+      "actorId": "cheng",
+      "text": "先别替它确认。",
+      "recordingKey": "confirm"
+    }
+  ],
+  "answering/incomingName": [
+    {
+      "actorId": "cheng",
+      "text": "程砚，已经到场。",
+      "recordingKey": "arrived"
+    }
+  ],
+  "answering/emptyReply": [
+    {
+      "actorId": "ji",
+      "text": "季宁，收到。",
+      "recordingKey": "received"
+    },
+    {
+      "actorId": "unknown-radio",
+      "text": "罗禾",
+      "anchor": "第三句开始叫罗禾",
+      "anchorOffset": 6
+    }
+  ],
+  "visitors/oldVoice": [
+    {
+      "actorId": "xu",
+      "text": "车还等吗？",
+      "recordingKey": "car-wait"
+    }
+  ]
+}

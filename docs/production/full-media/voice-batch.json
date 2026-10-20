@@ -1,0 +1,9 @@
+{
+  "schema": 1,
+  "batch": "20261020-full-dialogue-01",
+  "project": "Circuit",
+  "count": 402,
+  "semanticSha256": "9be5c03c84a83e094aa9f4b0f6157bc9716213decd698563d0b23f4e340c7468",
+  "scope": "Ten chapters, reviewed quoted dialogue plus authored unquoted recording cues; written citations are excluded.",
+  "humanListening": false
+}

@@ -1,0 +1,930 @@
+{
+  "thirteen-households/dispatch": [
+    "lin",
+    "ji",
+    "cheng"
+  ],
+  "thirteen-households/call": [
+    "ji",
+    "cheng",
+    "ji"
+  ],
+  "thirteen-households/safetyBrief": [
+    "lin",
+    "lin",
+    "ji",
+    "lin"
+  ],
+  "thirteen-households/vehicleKit": [
+    "ji",
+    "cheng"
+  ],
+  "thirteen-households/zhouCall": [
+    "zhou",
+    "cheng",
+    "zhou",
+    "ji",
+    "zhou"
+  ],
+  "thirteen-households/bypassWarning": [
+    "zhou",
+    "citation",
+    "ji",
+    "zhou"
+  ],
+  "thirteen-households/alley": [
+    "ji"
+  ],
+  "thirteen-households/alleyResidents": [
+    "mei"
+  ],
+  "thirteen-households/meiDoor": [
+    "mei",
+    "cheng",
+    "mei",
+    "mei"
+  ],
+  "thirteen-households/perimeter": [
+    "ji",
+    "zhou"
+  ],
+  "thirteen-households/isolateSupply": [
+    "ji",
+    "cheng"
+  ],
+  "thirteen-households/inspectCurrent": [
+    "cheng",
+    "citation"
+  ],
+  "thirteen-households/currentLimit": [
+    "ji",
+    "citation",
+    "ji"
+  ],
+  "thirteen-households/currentDirection": [
+    "citation"
+  ],
+  "thirteen-households/currentContact": [
+    "lin",
+    "lin"
+  ],
+  "thirteen-households/inspectLedger": [
+    "ji"
+  ],
+  "thirteen-households/ledgerAddress": [
+    "citation",
+    "ji"
+  ],
+  "thirteen-households/ledgerPattern": [
+    "ji",
+    "cheng"
+  ],
+  "thirteen-households/ledgerContact": [
+    "lin"
+  ],
+  "thirteen-households/inspectAsh": [
+    "citation"
+  ],
+  "thirteen-households/ashSeal": [
+    "ji",
+    "cheng"
+  ],
+  "thirteen-households/ashMeaning": [
+    "cheng",
+    "mei",
+    "ji"
+  ],
+  "thirteen-households/residentTalk": [
+    "mei",
+    "cheng",
+    "mei",
+    "mei"
+  ],
+  "thirteen-households/residentMemory": [
+    "mei",
+    "mei"
+  ],
+  "thirteen-households/residentDebt": [
+    "mei",
+    "mei"
+  ],
+  "thirteen-households/residentBoundary": [
+    "cheng",
+    "mei"
+  ],
+  "thirteen-households/residentRecord": [
+    "citation",
+    "mei"
+  ],
+  "thirteen-households/archivedTicket": [
+    "zhou",
+    "cheng",
+    "zhou"
+  ],
+  "thirteen-households/ticketGap": [
+    "ji"
+  ],
+  "thirteen-households/ticketSignature": [
+    "zhou",
+    "zhou",
+    "ji",
+    "cheng"
+  ],
+  "thirteen-households/ticketRoute": [
+    "ji",
+    "citation"
+  ],
+  "thirteen-households/ticketRecord": [
+    "zhou",
+    "cheng"
+  ],
+  "thirteen-households/lampCheck": [
+    "cheng"
+  ],
+  "thirteen-households/houseApproach": [
+    "zhou"
+  ],
+  "thirteen-households/houseKnock": [
+    "citation",
+    "ji"
+  ],
+  "thirteen-households/meiAccount": [
+    "mei",
+    "mei"
+  ],
+  "thirteen-households/zhouAdmission": [
+    "zhou",
+    "zhou"
+  ],
+  "thirteen-households/deduction": [
+    "ji",
+    "cheng",
+    "cheng"
+  ],
+  "thirteen-households/wrong": [
+    "ji"
+  ],
+  "thirteen-households/wrongEcho": [
+    "unknown-radio"
+  ],
+  "thirteen-households/bypassAlarm": [
+    "zhou"
+  ],
+  "thirteen-households/hiddenBranch": [
+    "ji"
+  ],
+  "thirteen-households/truth": [
+    "citation"
+  ],
+  "thirteen-households/noticeNames": [
+    "citation",
+    "ji",
+    "ji"
+  ],
+  "thirteen-households/noticeDebt": [
+    "mei",
+    "mei",
+    "mei",
+    "mei"
+  ],
+  "thirteen-households/linCompare": [
+    "ji"
+  ],
+  "thirteen-households/recordCrosscheck": [
+    "cheng"
+  ],
+  "thirteen-households/epilogueCall": [
+    "lin"
+  ],
+  "thirteen-households/end": [
+    "ji",
+    "citation"
+  ],
+  "seventh-night/dispatch": [
+    "lin",
+    "lin"
+  ],
+  "seventh-night/handover": [
+    "ji",
+    "cheng"
+  ],
+  "seventh-night/depart": [
+    "shen",
+    "cheng",
+    "citation"
+  ],
+  "seventh-night/lane": [
+    "shen"
+  ],
+  "seventh-night/welcome": [
+    "shen",
+    "shen"
+  ],
+  "seventh-night/logbook": [
+    "shen",
+    "citation"
+  ],
+  "seventh-night/logAudit": [
+    "ji"
+  ],
+  "seventh-night/recordTime": [
+    "shen",
+    "cheng"
+  ],
+  "seventh-night/breaker": [
+    "ji",
+    "shen",
+    "shen"
+  ],
+  "seventh-night/testPlan": [
+    "shen",
+    "cheng"
+  ],
+  "seventh-night/testResult": [
+    "ji"
+  ],
+  "seventh-night/offering": [
+    "shen",
+    "ji",
+    "shen"
+  ],
+  "seventh-night/sevenMeals": [
+    "citation",
+    "shen"
+  ],
+  "seventh-night/recordWake": [
+    "shen",
+    "cheng",
+    "shen"
+  ],
+  "seventh-night/compare": [
+    "ji",
+    "ji"
+  ],
+  "seventh-night/timerTheory": [
+    "lin",
+    "ji"
+  ],
+  "seventh-night/timerFailure": [
+    "citation"
+  ],
+  "seventh-night/interval": [
+    "ji"
+  ],
+  "seventh-night/recorder": [
+    "shen"
+  ],
+  "seventh-night/waiting": [
+    "ji"
+  ],
+  "seventh-night/earlyTrip": [
+    "citation",
+    "shen"
+  ],
+  "seventh-night/receipt": [
+    "citation",
+    "shen",
+    "shen"
+  ],
+  "seventh-night/archiveRequest": [
+    "cheng",
+    "zhou"
+  ],
+  "seventh-night/archiveReply": [
+    "citation",
+    "ji"
+  ],
+  "seventh-night/recordReceipt": [
+    "ji",
+    "shen"
+  ],
+  "seventh-night/conversation": [
+    "shen"
+  ],
+  "seventh-night/fatherMessage": [
+    "shen-father",
+    "xu",
+    "shen-father"
+  ],
+  "seventh-night/daughterReply": [
+    "shen",
+    "shen",
+    "cheng"
+  ],
+  "seventh-night/reconcile": [
+    "ji",
+    "cheng"
+  ],
+  "seventh-night/override": [
+    "ji"
+  ],
+  "seventh-night/familyChoice": [
+    "shen",
+    "shen"
+  ],
+  "seventh-night/clockOff": [
+    "shen"
+  ],
+  "seventh-night/zeroMinute": [
+    "citation",
+    "citation",
+    "ji"
+  ],
+  "seventh-night/recordClosure": [
+    "shen"
+  ],
+  "seventh-night/linger": [
+    "ji",
+    "cheng"
+  ],
+  "backfeed/dispatch": [
+    "ji",
+    "cheng",
+    "ji"
+  ],
+  "backfeed/route": [
+    "cheng",
+    "cheng",
+    "ji",
+    "cheng"
+  ],
+  "backfeed/gate": [
+    "chen"
+  ],
+  "backfeed/chen": [
+    "chen",
+    "chen",
+    "cheng",
+    "chen",
+    "chen"
+  ],
+  "backfeed/boundary": [
+    "ji",
+    "cheng"
+  ],
+  "backfeed/meter": [
+    "citation",
+    "citation"
+  ],
+  "backfeed/natural": [
+    "ji",
+    "chen"
+  ],
+  "backfeed/drawing": [
+    "citation",
+    "ji"
+  ],
+  "backfeed/survey": [
+    "ji"
+  ],
+  "backfeed/recordMap": [
+    "chen"
+  ],
+  "backfeed/voices": [
+    "citation",
+    "chen",
+    "ji"
+  ],
+  "backfeed/recordNames": [
+    "chen"
+  ],
+  "backfeed/compare": [
+    "citation",
+    "chen"
+  ],
+  "backfeed/trace": [
+    "chen"
+  ],
+  "backfeed/marking": [
+    "chen"
+  ],
+  "backfeed/relay": [
+    "citation"
+  ],
+  "backfeed/relayTest": [
+    "ji"
+  ],
+  "backfeed/recordIsolation": [
+    "chen",
+    "cheng"
+  ],
+  "backfeed/fileRequest": [
+    "ji"
+  ],
+  "backfeed/fileReply": [
+    "ji"
+  ],
+  "backfeed/chenMemory": [
+    "chen"
+  ],
+  "backfeed/recordBypass": [
+    "cheng"
+  ],
+  "backfeed/reconcile": [
+    "ji"
+  ],
+  "backfeed/houseOne": [
+    "ji"
+  ],
+  "backfeed/handwriting": [
+    "citation",
+    "citation"
+  ],
+  "backfeed/memoryTable": [
+    "ji"
+  ],
+  "backfeed/report": [
+    "ji"
+  ],
+  "backfeed/linger": [
+    "ji",
+    "cheng"
+  ],
+  "backfeed/end": [
+    "citation"
+  ],
+  "everlight/dispatch": [
+    "ji",
+    "lin"
+  ],
+  "everlight/consult": [
+    "ji"
+  ],
+  "everlight/arrival": [
+    "ji"
+  ],
+  "everlight/gate": [
+    "cheng",
+    "resident-gate"
+  ],
+  "everlight/meetMei": [
+    "mei",
+    "mei",
+    "mei"
+  ],
+  "everlight/houseRules": [
+    "mei",
+    "mei"
+  ],
+  "everlight/stairs": [
+    "ji"
+  ],
+  "everlight/feedRecord": [
+    "ji"
+  ],
+  "everlight/relayRecord": [
+    "ji"
+  ],
+  "everlight/load": [
+    "ji",
+    "resident-young"
+  ],
+  "everlight/promise": [
+    "mei",
+    "cheng",
+    "mei"
+  ],
+  "everlight/promiseRecord": [
+    "mei"
+  ],
+  "everlight/meeting": [
+    "ji"
+  ],
+  "everlight/notice": [
+    "ji"
+  ],
+  "everlight/compare": [
+    "ji"
+  ],
+  "everlight/timeExplained": [
+    "cheng"
+  ],
+  "everlight/boundary": [
+    "mei",
+    "cheng"
+  ],
+  "everlight/interview": [
+    "mei"
+  ],
+  "everlight/letter": [
+    "ji"
+  ],
+  "everlight/turnOff": [
+    "mei"
+  ],
+  "everlight/pause": [
+    "cheng",
+    "zhou",
+    "cheng"
+  ],
+  "everlight/delivery": [
+    "mei"
+  ],
+  "everlight/dawn": [
+    "ji",
+    "ji"
+  ],
+  "neutral/dispatch": [
+    "ji",
+    "zhou"
+  ],
+  "neutral/scope": [
+    "ji",
+    "cheng"
+  ],
+  "neutral/approach": [
+    "resident-cabinet",
+    "resident-cabinet"
+  ],
+  "neutral/meetShen": [
+    "shen",
+    "shen"
+  ],
+  "neutral/readingRecord": [
+    "resident-cabinet"
+  ],
+  "neutral/ticket": [
+    "ji",
+    "zhou",
+    "ji"
+  ],
+  "neutral/copy": [
+    "shen"
+  ],
+  "neutral/copyRecord": [
+    "ji"
+  ],
+  "neutral/west": [
+    "zhou",
+    "zhou",
+    "zhou"
+  ],
+  "neutral/witness": [
+    "zhou"
+  ],
+  "neutral/signed": [
+    "ji"
+  ],
+  "neutral/handover": [
+    "shen"
+  ],
+  "neutral/debt": [
+    "shen"
+  ],
+  "neutral/courier": [
+    "shen"
+  ],
+  "neutral/neighbors": [
+    "resident-cabinet"
+  ],
+  "neutral/visit": [
+    "zhou"
+  ],
+  "neutral/night": [
+    "shen"
+  ],
+  "neutral/receive": [
+    "ji"
+  ],
+  "closure/dispatch": [
+    "ji"
+  ],
+  "closure/summon": [
+    "ji",
+    "cheng"
+  ],
+  "closure/mapRecord": [
+    "ji"
+  ],
+  "closure/radioRecord": [
+    "ji",
+    "ji"
+  ],
+  "closure/permitIndex": [
+    "ji",
+    "cheng"
+  ],
+  "closure/namesIndex": [
+    "ji"
+  ],
+  "closure/reassemble": [
+    "cheng"
+  ],
+  "closure/routeReview": [
+    "lin"
+  ],
+  "closure/routeMatched": [
+    "ji"
+  ],
+  "closure/lastMinute": [
+    "cheng"
+  ],
+  "closure/oldZhou": [
+    "zhou"
+  ],
+  "closure/release": [
+    "ji",
+    "ji"
+  ],
+  "closure/mei": [
+    "mei"
+  ],
+  "closure/zhouReturn": [
+    "zhou"
+  ],
+  "closure/meal": [
+    "ji",
+    "cheng"
+  ],
+  "return-visit/dispatch": [
+    "cheng",
+    "lin"
+  ],
+  "return-visit/handover": [
+    "ji"
+  ],
+  "return-visit/drive": [
+    "ji",
+    "cheng"
+  ],
+  "return-visit/luo": [
+    "luo",
+    "cheng",
+    "luo"
+  ],
+  "return-visit/doorRule": [
+    "luo",
+    "luo"
+  ],
+  "return-visit/firstHub": [
+    "ji"
+  ],
+  "return-visit/intercom": [
+    "luo"
+  ],
+  "return-visit/waveform": [
+    "luo"
+  ],
+  "return-visit/transferList": [
+    "luo"
+  ],
+  "return-visit/direction": [
+    "luo"
+  ],
+  "return-visit/compare": [
+    "ji"
+  ],
+  "return-visit/receipt": [
+    "luo"
+  ],
+  "return-visit/recordReceipt": [
+    "luo"
+  ],
+  "return-visit/approved": [
+    "ji"
+  ],
+  "return-visit/quiet": [
+    "luo",
+    "cheng"
+  ],
+  "return-visit/onward": [
+    "ji",
+    "cheng"
+  ],
+  "answering/dispatch": [
+    "lin",
+    "cheng",
+    "lin"
+  ],
+  "answering/return": [
+    "ji",
+    "cheng",
+    "ji"
+  ],
+  "answering/luo": [
+    "luo",
+    "luo"
+  ],
+  "answering/houseRule": [
+    "luo",
+    "cheng",
+    "luo"
+  ],
+  "answering/boundary": [
+    "luo"
+  ],
+  "answering/seal": [
+    "luo"
+  ],
+  "answering/sealPosition": [
+    "luo"
+  ],
+  "answering/recorder": [
+    "ji"
+  ],
+  "answering/recordClock": [
+    "ji",
+    "cheng"
+  ],
+  "answering/incomingName": [
+    "ji"
+  ],
+  "answering/secondHub": [
+    "luo"
+  ],
+  "answering/list": [
+    "luo"
+  ],
+  "answering/recordList": [
+    "luo"
+  ],
+  "answering/handoff": [
+    "luo",
+    "cheng"
+  ],
+  "answering/van": [
+    "ji"
+  ],
+  "visitors/dispatch": [
+    "lin"
+  ],
+  "visitors/breakfast": [
+    "cheng",
+    "ji"
+  ],
+  "visitors/repair": [
+    "luo"
+  ],
+  "visitors/plate": [
+    "chen",
+    "cheng",
+    "chen"
+  ],
+  "visitors/knock": [
+    "luo"
+  ],
+  "visitors/firstHub": [
+    "ji"
+  ],
+  "visitors/port": [
+    "ji",
+    "cheng"
+  ],
+  "visitors/recordPort": [
+    "chen"
+  ],
+  "visitors/plateSide": [
+    "chen",
+    "luo"
+  ],
+  "visitors/ticket": [
+    "ji"
+  ],
+  "visitors/ticketYear": [
+    "luo",
+    "cheng"
+  ],
+  "visitors/takeNumber": [
+    "ji",
+    "ji"
+  ],
+  "visitors/seatFailure": [
+    "ji"
+  ],
+  "visitors/oldVoice": [
+    "chen"
+  ],
+  "visitors/newVoice": [
+    "ji",
+    "ji"
+  ],
+  "visitors/recordCard": [
+    "cheng"
+  ],
+  "visitors/reconcile": [
+    "luo",
+    "cheng"
+  ],
+  "visitors/signatureFailure": [
+    "ji"
+  ],
+  "visitors/plateLeave": [
+    "chen",
+    "chen"
+  ],
+  "visitors/wetStep": [
+    "ji"
+  ],
+  "visitors/breakfastEnd": [
+    "cheng",
+    "ji"
+  ],
+  "visitors/end": [
+    "ji"
+  ],
+  "tickets/dispatch": [
+    "luo"
+  ],
+  "tickets/breakfast": [
+    "ji",
+    "cheng",
+    "cheng",
+    "breakfast-owner"
+  ],
+  "tickets/return": [
+    "citation"
+  ],
+  "tickets/boundary": [
+    "chen"
+  ],
+  "tickets/slips": [
+    "ji"
+  ],
+  "tickets/chen": [
+    "chen",
+    "cheng",
+    "chen"
+  ],
+  "tickets/hush": [
+    "luo"
+  ],
+  "tickets/firstHub": [
+    "ji"
+  ],
+  "tickets/paperEdge": [
+    "ji"
+  ],
+  "tickets/recordPaper": [
+    "chen",
+    "cheng"
+  ],
+  "tickets/queue": [
+    "luo"
+  ],
+  "tickets/recordQueue": [
+    "citation",
+    "chen"
+  ],
+  "tickets/lastSheet": [
+    "cheng"
+  ],
+  "tickets/wrongSeat": [
+    "ji"
+  ],
+  "tickets/correctSide": [
+    "chen",
+    "cheng",
+    "cheng"
+  ],
+  "tickets/emptyChair": [
+    "chen"
+  ],
+  "tickets/job": [
+    "ji"
+  ],
+  "tickets/oldFile": [
+    "cheng"
+  ],
+  "tickets/origin": [
+    "citation",
+    "citation"
+  ],
+  "tickets/recordJob": [
+    "citation",
+    "chen",
+    "cheng"
+  ],
+  "tickets/witnesses": [
+    "ji",
+    "cheng",
+    "ji"
+  ],
+  "tickets/recordSeal": [
+    "luo",
+    "cheng"
+  ],
+  "tickets/compareSource": [
+    "citation",
+    "citation"
+  ],
+  "tickets/wrongWriter": [
+    "manager",
+    "ji"
+  ],
+  "tickets/handoff": [
+    "manager",
+    "manager",
+    "chen"
+  ],
+  "tickets/doorway": [
+    "luo",
+    "ji"
+  ],
+  "tickets/van": [
+    "ji",
+    "cheng"
+  ],
+  "tickets/message": [
+    "ji"
+  ]
+}

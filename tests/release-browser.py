@@ -209,7 +209,9 @@ def run(url, pwa):
                         assert saved['evidence'] == step['evidence'], saved
                         assert saved['history'][-1] == step['nodeId'], saved
                         authored_node = chapter['nodes'][step['nodeId']]
-                        if authored_node.get('portrait'):
+                        if authored_node.get('scene', {}).get('eventCg'):
+                            expect(page.locator('.character-portrait')).to_have_count(0)
+                        elif authored_node.get('portrait'):
                             figure = page.locator('.character-portrait')
                             expect(figure).to_have_attribute('data-presence', authored_node.get('presence', 'scene'))
                             figure.locator('img').evaluate('async img => { await img.decode(); }')

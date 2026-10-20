@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "project": "Circuit",
+  "batch": "20261020-continue-verified-01",
+  "count": 402,
+  "semanticSha256": "d2f80ed941e3b06e2fbf53e4cc5af38b123526c1795c73b5031fb2100be46316",
+  "attemptOffset": 3,
+  "reuse": "byte-verified accepted takes only",
+  "humanListening": false
+}

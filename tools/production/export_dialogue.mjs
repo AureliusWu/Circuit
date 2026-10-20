@@ -25,7 +25,7 @@ const add=(sceneId,lineId,index,line,extra={})=>{
   if(['旁白','系统','n'].includes(line.speaker)){excluded.push({...base,reason:'narration_or_system'});return;}
   const actorId=config.aliases[line.speaker]??line.speaker,actor=config.actors[actorId];
   if(!actor)throw Error('Unmapped dialogue speaker: '+line.speaker);
-  const id=(project.toLowerCase()+'-'+lineId).replaceAll('_','-');
+  const id=(project+'-'+lineId).replaceAll('_','-').toLowerCase();
   rows.push({id,...base,actorId,voice:actor.voice,instruct:actor.instruct,
     seed:parseInt(hash(project+'\0'+lineId+'\0'+line.text).slice(0,8),16)%2000000000,
     textSha256:hash(line.text),medium:line.medium??extra.medium??'spoken'});

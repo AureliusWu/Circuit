@@ -8,7 +8,7 @@ permissions:
   contents: read
 concurrency:
   group: full-voice-${{ github.ref }}
-  cancel-in-progress: false
+  cancel-in-progress: true
 jobs:
   plan:
     runs-on: ubuntu-24.04
@@ -33,8 +33,13 @@ jobs:
           python - <<'PYCODE'
           import json
           from pathlib import Path
+          import sys
+          sys.path.insert(0,'tools/production')
+          from render_full_voice import validate_plan
           old=json.loads(Path('docs/production/full-media/dialogue-plan.json').read_text())
           current=json.loads(Path('/tmp/current-dialogue.json').read_text())
+          validate_plan(old)
+          validate_plan(current)
           assert old['semanticSha256']==current['semanticSha256']
           assert old['lines']==current['lines'] and old['actors']==current['actors']
           batch=json.loads(Path('docs/production/full-media/voice-batch.json').read_text())

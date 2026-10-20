@@ -2,19 +2,78 @@
   "date": "2026-10-20",
   "project": "Circuit",
   "version": "1.6.0",
-  "status": "candidate_pending_current_CI",
+  "status": "published_and_public_bytes_verified",
   "cgManifest": "docs/art/ticket-window-manifest.json",
   "musicManifest": "docs/audio/ticket-window-score-manifest.json",
   "tests": {
     "local_logic_or_python": 91,
     "passed": true,
-    "browser": "not executed locally: browser archive download was truncated",
-    "windows": "not executed locally; current CI required",
+    "browser": "CI 39380567388 passed complete campaign, reading, six-viewports CG and offline local OGG decode",
+    "windows": "CI 39380567388 passed real installed NSIS application interaction and uninstall",
     "humanListening": "pending",
     "artFinalChoice": "pending"
   },
   "compatibility": "Stable scene/line IDs, choices, recorded lines and save identity retained",
-  "limits": "Earlier release evidence is historical, not validation for this candidate.",
+  "limits": "Human listening and final creative choice remain pending. The same-origin test exposed a stale Rain release version expectation; a check-only correction is being validated separately.",
   "build": "passed",
-  "newCgAndMusicPrecached": true
+  "newCgAndMusicPrecached": true,
+  "ci": {
+    "release": {
+      "id": 39380567388,
+      "status": "success",
+      "commit": "659727643ab8c502ae4a42902b86f14baaa2bac4"
+    },
+    "logic": {
+      "id": 39380567406,
+      "status": "success"
+    },
+    "pages": {
+      "id": 39380567343,
+      "status": "success"
+    }
+  },
+  "release": {
+    "tag": "v1.6.0",
+    "url": "https://github.com/AureliusWu/Circuit/releases/tag/v1.6.0",
+    "sourceCommit": "659727643ab8c502ae4a42902b86f14baaa2bac4",
+    "publicReadback": [
+      {
+        "name": "circuit-web-1.6.0.zip",
+        "bytes": 8558873,
+        "sha256": "ee7059f038591b5c6b6467b0db7713e15f47907f3f13bb0aa68105b213dcb88e"
+      },
+      {
+        "name": "circuit-web-1.6.0.zip.sha256",
+        "bytes": 88,
+        "sha256": "ff6749309558f0fa8515f6f1c95936cf3e3707e0e53ed17d936d6ddc6091123c"
+      },
+      {
+        "name": "Circuit_1.6.0_x64-setup.exe",
+        "bytes": 10199522,
+        "sha256": "48d81c8f8256f7d6e9213eeb009c1d42b60b7f8ce254da8785d9074cb8079cd0"
+      },
+      {
+        "name": "Circuit_1.6.0_x64-setup.exe.sha256",
+        "bytes": 94,
+        "sha256": "4a2f6a6a3aaa7bfdc1558d457b1b10aef57bd3bf132243219d88e62f1fc01a25"
+      },
+      {
+        "name": "release.json",
+        "bytes": 503,
+        "sha256": "ef928f35cc58710dcee4e99a1fc08f8c56ea4dc97617c7036a3198f89d3c01c2"
+      },
+      {
+        "name": "SHA256SUMS.txt",
+        "bytes": 348,
+        "sha256": "52b2d548b97031015351d112fe27afd6602adea3eed4fd1e1da48a0c2384e76a"
+      },
+      {
+        "name": "windows-runtime.json",
+        "bytes": 1799,
+        "sha256": "2c819f6ab0cec2b52d87c2233fe034502e1bb8f738a4c4f19e79490d5ae54500"
+      }
+    ],
+    "pwaZipCRC": "passed",
+    "newCgAndOggExactSourceBytes": true
+  }
 }

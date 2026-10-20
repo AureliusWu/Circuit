@@ -26,14 +26,25 @@ jobs:
         run: |
           python -m pip install playwright
           python -m playwright install --with-deps chromium
-      - name: Resolve current peer release versions
+      - name: Resolve current deployed peer versions
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           python - <<'PY'
-          import json,os,re,subprocess
+          import json,os,re,subprocess,urllib.request
           versions={'Circuit':json.load(open('package.json'))['version']}
           for game in ('NetLove','Healing','Rain'):
+              if game == 'Rain':
+                  request=urllib.request.Request('https://aureliuswu.github.io/Rain/service-worker.js',headers={'Cache-Control':'no-cache','Pragma':'no-cache'})
+                  with urllib.request.urlopen(request,timeout=60) as response:worker=response.read(1_048_577)
+                  assert len(worker)<=1_048_576, 'Rain worker exceeds expected bound'
+                  configs=re.findall(rb'^const BUILD = (.+);$',worker,re.MULTILINE)
+                  assert len(configs)==1, 'Rain deployed build identity missing or ambiguous'
+                  build=json.loads(configs[0])
+                  assert re.fullmatch(r'\d+\.\d+\.\d+',build.get('version','')), 'Unexpected deployed Rain version'
+                  assert isinstance(build.get('revision'),str) and build['revision'], 'Rain deployed revision missing'
+                  versions[game]=build['version']
+                  continue
               releases=json.loads(subprocess.check_output(['gh','api',f'repos/AureliusWu/{game}/releases?per_page=100']))
               published=[r for r in releases if not r['draft'] and (game=='NetLove' or not r['prerelease'])]
               assert published, 'No public release for '+game

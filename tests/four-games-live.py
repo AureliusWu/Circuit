@@ -44,7 +44,8 @@ def boot(page, game, version):
     if game == 'Rain':
         page.wait_for_function('() => window.rainOfflineReady === true && typeof window.renpy_get === "function"', timeout=120000)
         page.wait_for_function('() => !document.getElementById("presplash")', timeout=120000)
-        assert page.evaluate('() => window.renpy_get("config.version")') == version
+        actual = page.evaluate('() => window.renpy_get("config.version")')
+        assert actual == version, f'Rain deployed version differs: expected {version}, actual {actual}'
         page.wait_for_function('() => window.renpy_get(\'bool(renpy.get_screen("main_menu"))\')', timeout=60000)
         expect(page.locator('#canvas')).to_be_visible()
     else:

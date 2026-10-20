@@ -1,4 +1,4 @@
-# 场景美术与音乐 · 2026-10-20
+# 场景美术与音乐 · v1.6.0已发布 · 2026-10-20
 
 《取号》的 slips 与 paperEdge 进入窗口特写，场景明确标记 eventCg，隐藏立绘。专属配乐使用原音乐总线，配音时压低；离开本章回到旧环境音乐。
 
@@ -17,3 +17,9 @@
 ## 可复用办法
 
 SceneLoop把本地OGG接到已有音乐总线，异步解码结束后重新核对场景与上下文，避免旧场景迟到开播；同一曲目不重复启动。按作品保留独立编配与CG，只交流工具及制作方法。新增OGG要同时核对实际缓存清单，图片只在对应物品出现后显示，收走后恢复场景。
+
+## 本版发布回读
+
+[本版 Build](https://github.com/AureliusWu/Circuit/actions/runs/39380567388) 的网页完整路线、六尺寸事件 CG、离线 OGG 解码，以及实际 Windows 安装、交互和卸载全部通过；[CI](https://github.com/AureliusWu/Circuit/actions/runs/39380567406) 与 [Pages](https://github.com/AureliusWu/Circuit/actions/runs/39380567343) 成功。[v1.6.0 下载](https://github.com/AureliusWu/Circuit/releases/tag/v1.6.0) 已公开。独立重新下载七项公开附件，文件大小、SHA-256 全部匹配 GitHub 摘要；PWA ZIP CRC 正常，新增 CG 和 OGG 逐字节匹配已测源文件。
+
+较早“本地未执行”保留为本地环境边界；本段记录当前 CI 的实际结果。同源联合检查中，三作的缓存与存档均保留；Rain 网页已到 1.4.0，旧检查却要求桌面正式版 1.3.1，因此失败。检查改为核对 Rain 当前部署的官方 WASM worker 版本，联合结果另行记录。真人试听与美术最终选择仍待体验。

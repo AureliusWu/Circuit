@@ -1,3 +1,5 @@
+> 2026-10-20：v1.6.0素材候选已接入取号窗口CG与专属场景配乐；验收状态见[制作记录](docs/production/SCENE-MEDIA-20261020.md)。正式下载仍以已发布版本为准。
+
 > 2026-10-19：**v1.5.2 已正式发布**。标题页补列《取号》，城市线路档案补 V04；Windows 实际安装/保存重开/卸载、公开 PWA 三屏与四作共存断网检查通过。7 份公开下载及校验表已回读。[发布凭据](docs/production/PUBLISHED-v1.5.2.json) · [下载](https://github.com/AureliusWu/Circuit/releases/tag/v1.5.2) · [四作闭环](docs/production/FOUR-GAMES-CLOSURE-20261019.md)。
 
 > 2026-10-19：**v1.5.1 已发布**。存档导入预览、先导出、取消与确认已完成；本次 Windows 实际运行、公开 PWA 三屏断网与字节核验通过。[发布凭据](docs/production/PUBLISHED-v1.5.1.json) · [下载](https://github.com/AureliusWu/Circuit/releases/tag/v1.5.1)。

@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "tool": "built-in image_gen",
+  "intent": "new event CG using project style reference",
+  "prompt": "Use case: illustration-story. Asset type: full-screen 16:9 event CG for the Chinese folk-mystery visual novel Circuit. Reference image 1 is the established receiving-room environment and painting style, not an edit target. Draw a new closer camera angle from the public side of the same rain-stained glass service window. Main subject: the old iron paper clip on the inner window ledge holding TWO small paper slips with their backs facing the viewer; one has a straight cut edge and the other shows a thin white edge underneath. A quiet empty wooden chair remains behind the glass, warm desk lamp glow left, cool rainy courtyard beyond. The absence of a person and the small displacement of paper create subtle unease. Semi-realistic painted 2D urban China, muted damp green, ochre light, credible worn wood and glass. Important paper and clip in upper central 60 percent and visible in a central portrait crop; lower 28 percent subdued and dark for dialogue. No readable text or numbers, no UI, no logos, no ghost, no blood, no people. Wide composition 16:9, high detail without excessive grain.",
+  "references": [
+    "public/art/receiving-room.webp"
+  ],
+  "humanApproval": "pending"
+}

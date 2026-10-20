@@ -1,9 +1,12 @@
 import type { Preferences } from './preferences';
+import { SceneLoop } from './sceneLoop';
 
 /** Original procedural score: low drones, transformer hum and filtered rain. */
 export class CircuitAudio {
   private context: AudioContext;
   private music: GainNode;
+  private droneBus: GainNode;
+  private sceneLoop: SceneLoop;
   private ambience: GainNode;
   private output: GainNode;
   private sources: AudioScheduledSourceNode[] = [];
@@ -16,6 +19,9 @@ export class CircuitAudio {
     this.music = this.context.createGain();
     this.ambience = this.context.createGain();
     this.music.connect(this.output);
+    this.droneBus = this.context.createGain();
+    this.droneBus.connect(this.music);
+    this.sceneLoop = new SceneLoop(this.context, this.music);
     this.ambience.connect(this.output);
     for (const frequency of [43.65, 65.41, 87.3]) {
       const drone = this.context.createOscillator();
@@ -23,7 +29,7 @@ export class CircuitAudio {
       drone.type = 'sine';
       drone.frequency.value = frequency;
       quiet.gain.value = .035;
-      drone.connect(quiet).connect(this.music);
+      drone.connect(quiet).connect(this.droneBus);
       drone.start();
       this.sources.push(drone);
     }
@@ -52,14 +58,16 @@ export class CircuitAudio {
     this.sources.push(rain);
   }
 
-  async configure(preferences: Preferences, running: boolean, speaking = false) {
+  async configure(preferences: Preferences, running: boolean, speaking = false, sceneMusic?: string) {
     if (this.context.state === 'closed') return;
     const now = this.context.currentTime;
+    this.droneBus.gain.setTargetAtTime(sceneMusic ? 0 : 1, now, .3);
+    this.sceneLoop.select(sceneMusic);
     this.music.gain.setTargetAtTime(preferences.musicVolume * (speaking ? .35 : 1), now, .12);
     this.ambience.gain.setTargetAtTime(preferences.ambienceVolume * (speaking ? .6 : 1), now, .12);
     this.output.gain.setTargetAtTime(preferences.muted ? 0 : 1, now, .12);
     try {
-      if (running && !preferences.muted) await this.context.resume();
+      if (running && !preferences.muted) { await this.context.resume(); await this.sceneLoop.ensure(); }
       else await this.context.suspend();
     } catch { /* Audio availability never blocks reading or saving. */ }
   }
@@ -82,6 +90,7 @@ export class CircuitAudio {
   }
 
   dispose() {
+    this.sceneLoop.dispose();
     this.sources.forEach((source) => source.stop());
     this.sources = [];
     void this.context.close().catch(() => {});

@@ -66,6 +66,15 @@ with sync_playwright() as p:
             action('puzzle2')
             checks.append('wrong writer deduction retries without future unlock')
         action(step['actionId'])
+        if saved()['nodeId'] == 'slips':
+            expect(page.locator('.stage-background img')).to_have_attribute('src', re.compile(r'cg-ticket-window\.webp$'))
+            expect(page.locator('.character-portrait')).to_have_count(0)
+            for width, height in [(1440, 900), (412, 915), (568, 320), (640, 360), (844, 390), (915, 412)]:
+                page.set_viewport_size({'width': width, 'height': height})
+                page.wait_for_function("document.querySelector('.stage-background img').naturalWidth === 1600")
+                assert page.evaluate('document.documentElement.scrollWidth <= innerWidth')
+            page.set_viewport_size({'width': 1280, 'height': 720})
+            checks.append('window CG uses no portrait overlay and fits six viewports')
         if step['nodeId'] == 'emptyChair':
             page.wait_for_function("Array.from(document.querySelectorAll('.stage img')).every(i=>i.complete&&i.naturalWidth>0)")
             expect(page.locator('.dialogue-text span')).to_have_text(chapter['nodes']['emptyChair']['text'])
@@ -89,6 +98,13 @@ with sync_playwright() as p:
     page.get_by_role('button', name='继续抢修', exact=True).click()
     assert saved()['nodeId'] == 'end'
     checks.append('complete V04 reopens offline with unchanged position')
+    duration = page.evaluate("""async () => {
+      const audio = new AudioContext();
+      try { return (await audio.decodeAudioData(await (await fetch('./audio/bgm/ticket-window.ogg')).arrayBuffer())).duration; }
+      finally { await audio.close(); }
+    }""")
+    assert 63 < duration < 65
+    checks.append('new 64-second scene score decodes from the actual offline cache')
     assert not errors, errors
     browser.close()
 print(json.dumps({'status': 'passed', 'checks': checks, 'errors': errors}, ensure_ascii=False, indent=2))

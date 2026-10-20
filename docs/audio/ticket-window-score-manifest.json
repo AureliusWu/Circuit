@@ -1,0 +1,19 @@
+{
+  "id": "ticket-window",
+  "title": "玻璃内侧",
+  "generator": "original composition and additive program synthesis; no samples or music model",
+  "recipe": "docs/audio/ticket-window-score.json",
+  "recipe_sha256": "bf7d91dd105d2dc1af573995c8b5e83a2bd3a23dc3576cf5ba029c880ff7046b",
+  "source": "assets_source/audio/scene-20261020/ticket-window.wav",
+  "source_sha256": "cb805e5bb3f4e0382999fe71c98300f2f454504190c49cafbd57f17855a332ba",
+  "output": "public/audio/bgm/ticket-window.ogg",
+  "sha256": "6c0e42a25d2ac8602c58216e669162b0e092ca9f066bc00b0d6179e292717102",
+  "duration_seconds": 64.0,
+  "sample_rate": 24000,
+  "channels": 2,
+  "peak": 0.261054,
+  "rms_dbfs": -24.0,
+  "loop_boundary_delta": 0.008223,
+  "human_listening_review": "pending",
+  "license": "Project-original composition, MIT code; no external recordings"
+}

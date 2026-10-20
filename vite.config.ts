@@ -16,7 +16,7 @@ export default defineConfig(({ mode }) => {
         workbox: {
           skipWaiting: false,
           clientsClaim: true,
-          globPatterns: ['**/*.{js,css,html,ico,png,webp,mp3,woff2,txt}'],
+          globPatterns: ['**/*.{js,css,html,ico,png,webp,mp3,ogg,woff2,txt}'],
           maximumFileSizeToCacheInBytes: 4 * 1024 * 1024
         },
         manifest: {

@@ -101,9 +101,9 @@ function App() {
     return () => document.removeEventListener('visibilitychange', onVisibility);
   }, []);
   useEffect(() => {
-    void audio.current?.configure(preferences, started && pageVisible && !panel, voiceState.status === 'playing');
+    void audio.current?.configure(preferences, started && pageVisible && !panel, voiceState.status === 'playing', state.chapterId === 'tickets' ? `${import.meta.env.BASE_URL}audio/bgm/ticket-window.ogg` : undefined);
     recorded.current?.configure(preferences, started && !panel, started && pageVisible, panel === 'history' || panel === 'evidence');
-  }, [preferences, started, pageVisible, panel, voiceState.status]);
+  }, [preferences, started, pageVisible, panel, voiceState.status, state.chapterId]);
   useEffect(() => {
     if (!started) { recorded.current?.stop(); return; }
     recorded.current?.enter(voicesFor(state.chapterId, state.nodeId), SCENE_EFFECTS[`${state.chapterId}/${state.nodeId}`]);
@@ -124,7 +124,7 @@ function App() {
     if (!audio.current) {
       try { audio.current = new CircuitAudio(); } catch { return; }
     }
-    void audio.current.configure(preferences, true);
+    void audio.current.configure(preferences, true, false, state.chapterId === 'tickets' ? `${import.meta.env.BASE_URL}audio/bgm/ticket-window.ogg` : undefined);
   };
   const commit = useCallback((next: CampaignSession) => {
     const completed = completeChapter(next);
@@ -289,7 +289,7 @@ function App() {
             <section className="stage" aria-label={node.location}>
               <div className="stage-background"><img src={asset(node.scene?.background ?? `/art/${node.visual === 'dispatch' ? 'dispatch' : BACKGROUNDS[state.chapterId]}.webp`)} alt="" /></div>
               <div className="rain" aria-hidden="true" />
-              {character && portraitPath && <figure className={'character-portrait presence-' + (node.presence ?? 'scene')} data-presence={node.presence ?? 'scene'}>
+              {character && portraitPath && !node.scene?.eventCg && <figure className={'character-portrait presence-' + (node.presence ?? 'scene')} data-presence={node.presence ?? 'scene'}>
                 <img src={asset(portraitPath)} alt={character.name + (node.presence === 'radio' ? '通讯头像' : node.presence === 'archive' ? '旧档照片' : '立绘')} />
                 <figcaption className="portrait-caption">{node.presence === 'radio' ? '电台联络 · ' : node.presence === 'archive' ? '2019 旧档 · ' : ''}{character.name}</figcaption>
               </figure>}

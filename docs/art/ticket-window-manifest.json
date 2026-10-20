@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "id": "ticket-window",
+  "source": "assets_source/cg/scene-20261020/ticket-window.png",
+  "sourceSha256": "8b377ce5013f9cfa49faac1210e9407591ab4e9d5ac36e8ae82bd797611d4ee0",
+  "sourceDimensions": [
+    1672,
+    941
+  ],
+  "output": "public/art/cg-ticket-window.webp",
+  "sha256": "20280b88c8de8606bf16467c3c818d307b54d4a862c7ffc2288d671f43cfae4d",
+  "dimensions": [
+    1600,
+    900
+  ],
+  "bytes": 311110,
+  "prompt": "docs/art/ticket-window-prompt.json",
+  "promptSha256": "f411097b24f48fb1f99fc7f51437e709537983ff961a326ba6a24114f040ca70",
+  "references": [
+    {
+      "path": "public/art/receiving-room.webp",
+      "sha256": "509dfd29395f930b8be0747f9e2a376e01dcec3b202b2bb5cf38bab3ed3d365e"
+    }
+  ],
+  "tool": "built-in image_gen",
+  "license": "AI-generated project-only artwork; platform output terms apply",
+  "integrationReview": "full generated image inspected; scene and UI cropping pending",
+  "humanApproval": "pending",
+  "processing": "RGB resize to established project canvas and encoding"
+}

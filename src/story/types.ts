@@ -60,6 +60,7 @@ export type StoryNode = {
   objective?: { title: string; detail: string };
   scene?: {
     background?: string;
+    eventCg?: boolean;
     hotspots?: readonly SceneHotspot[];
     document?: { title: string; lines: readonly string[] };
     inscription?: string;

@@ -14,7 +14,7 @@
     "artFinalChoice": "pending"
   },
   "compatibility": "Stable scene/line IDs, choices, recorded lines and save identity retained",
-  "limits": "Human listening and final creative choice remain pending. The same-origin test exposed a stale Rain release version expectation; a check-only correction is being validated separately.",
+  "limits": "Human listening and final creative choice remain pending. Fresh-profile same-origin/offline checks for all four current PWAs passed separately.",
   "build": "passed",
   "newCgAndMusicPrecached": true,
   "ci": {
@@ -75,5 +75,14 @@
     ],
     "pwaZipCRC": "passed",
     "newCgAndOggExactSourceBytes": true
+  },
+  "jointOffline": {
+    "status": "passed",
+    "runId": 39382250096,
+    "report": "docs/production/FOUR-GAMES-OFFLINE-20261020.json",
+    "games": 4,
+    "cachedFiles": 192,
+    "pageErrors": 0,
+    "cacheAndSaveIsolation": true
   }
 }

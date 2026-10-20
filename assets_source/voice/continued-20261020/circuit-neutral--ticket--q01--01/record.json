@@ -1,0 +1,59 @@
+{
+  "id": "circuit-neutral--ticket--q01--01",
+  "sceneId": "neutral",
+  "lineId": "neutral--ticket--q01--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "这里少一张？",
+  "nodeId": "ticket",
+  "start": 81,
+  "end": 87,
+  "quoteIndex": 0,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 39652004,
+  "textSha256": "8dbb32553ca5b3165a85ade8fac5b98ec401c7d4980a42e93f767ccc93ff742c",
+  "medium": "spoken",
+  "requestSha256": "7ebe3844537e9414356d0c797d457e105c9c5ff97cf252322f17610a529a9356",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "这里少一张",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 1.12,
+  "wallSeconds": 5.76,
+  "loudness": {
+    "input_i": "-20.30",
+    "input_tp": "-8.47",
+    "input_lra": "0.00",
+    "input_thresh": "-30.30",
+    "output_i": "-20.00",
+    "output_tp": "-8.17",
+    "output_lra": "0.00",
+    "output_thresh": "-30.00",
+    "normalization_type": "linear",
+    "target_offset": "0.00"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-neutral--ticket--q01--01/raw.wav",
+      "bytes": 107600,
+      "sha256": "561eb03281e78d5a8c29301231cbebc7fad486cdb88d8a4e30c0cf0eef1baf74"
+    },
+    "master": {
+      "path": "circuit-neutral--ticket--q01--01/master.wav",
+      "bytes": 53838,
+      "sha256": "b89aa718627b1284bc725201e7af4470725f28db2e5be3994c3ad153647e25a9"
+    },
+    "runtime": {
+      "path": "circuit-neutral--ticket--q01--01/runtime.ogg",
+      "bytes": 11698,
+      "sha256": "8add8e38d1930d4f52717a421819cbb7c7667fee974591fc1d826d4780417c79"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

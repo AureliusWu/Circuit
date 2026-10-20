@@ -1,0 +1,59 @@
+{
+  "id": "circuit-tickets--recordseal--q02--01",
+  "sceneId": "tickets",
+  "lineId": "tickets--recordSeal--q02--01",
+  "lineIndex": 0,
+  "speaker": "cheng",
+  "text": "等接收单签完，一起走。",
+  "nodeId": "recordSeal",
+  "start": 77,
+  "end": 88,
+  "quoteIndex": 1,
+  "actorId": "cheng",
+  "voice": "Dylan",
+  "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 46301530,
+  "textSha256": "a8fcc8205ae0e4eac048050e4802c601268dc344731acbf5a49ff8477255f6df",
+  "medium": "spoken",
+  "requestSha256": "233491366f05b09dc5176ec7f57d648881b29f540867fc8ec10601928a93baa6",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "等接收单签完 一起走",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 2.32,
+  "wallSeconds": 10.878,
+  "loudness": {
+    "input_i": "-26.16",
+    "input_tp": "-8.37",
+    "input_lra": "0.00",
+    "input_thresh": "-36.37",
+    "output_i": "-20.00",
+    "output_tp": "-2.21",
+    "output_lra": "0.00",
+    "output_thresh": "-30.21",
+    "normalization_type": "linear",
+    "target_offset": "-0.00"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-tickets--recordseal--q02--01/raw.wav",
+      "bytes": 222800,
+      "sha256": "56125cacce253d0ac551e7bcb1b0631f6bafea7b78bfa54362ef0eae0f108230"
+    },
+    "master": {
+      "path": "circuit-tickets--recordseal--q02--01/master.wav",
+      "bytes": 111438,
+      "sha256": "f5a2c08a081dc06663860122102546f6e6c9c3aed5870e28e343bee76629d33a"
+    },
+    "runtime": {
+      "path": "circuit-tickets--recordseal--q02--01/runtime.ogg",
+      "bytes": 21170,
+      "sha256": "8cd807b670d134b5f1afb2192685442c9029d71b348d25356eee12bb9e774eeb"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

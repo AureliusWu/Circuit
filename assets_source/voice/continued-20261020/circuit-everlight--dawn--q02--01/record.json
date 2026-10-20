@@ -1,0 +1,112 @@
+{
+  "id": "circuit-everlight--dawn--q02--01",
+  "sceneId": "everlight",
+  "lineId": "everlight--dawn--q02--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "师傅，刚才你下楼的时候，钥匙响没响？",
+  "nodeId": "dawn",
+  "start": 83,
+  "end": 101,
+  "quoteIndex": 1,
+  "legacy": {
+    "id": "l03-ji",
+    "character": "ji",
+    "speaker": "Vivian",
+    "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 说清整句疑问，语速稍慢。钥匙读yào shi，响读xiǎng。句尾问完再停。",
+    "text": "师傅，刚才你下楼的时候，钥匙响没响？",
+    "seed": 220025,
+    "bindings": [
+      {
+        "chapter": "everlight",
+        "node": "dawn"
+      }
+    ],
+    "requestSha256": "fccde0367e289f8611975c254072a8b7e920386b055f1c445fe0e180f64ffafc",
+    "duration": 3.84,
+    "generationSeconds": 19.544,
+    "loudnessInput": {
+      "input_i": "-22.95",
+      "input_tp": "-6.22",
+      "input_lra": "1.00",
+      "input_thresh": "-33.15",
+      "output_i": "-19.84",
+      "output_tp": "-3.52",
+      "output_lra": "0.00",
+      "output_thresh": "-30.09",
+      "normalization_type": "dynamic",
+      "target_offset": "-0.16"
+    },
+    "files": [
+      {
+        "path": "assets_source/audio/v1.2.0/l03-ji-raw.wav",
+        "bytes": 184364,
+        "sha256": "044a12a3a274cc4b1663a38a93885737eeb9700497e5b06d3bd62c12580ae11e"
+      },
+      {
+        "path": "assets_source/audio/v1.2.0/l03-ji.wav",
+        "bytes": 184398,
+        "sha256": "bbc0fa181429991de6d2cc7f5cc00fa002d3bb360cf997e6cb2d1fa3071adaaf"
+      },
+      {
+        "path": "public/audio/voice/l03-ji.mp3",
+        "bytes": 46989,
+        "sha256": "179cc40b21514b485bb669bd8591f2093337f10981746149227b1aac5c0d7923"
+      }
+    ],
+    "asr": {
+      "id": "l03-ji",
+      "mp3Sha256": "179cc40b21514b485bb669bd8591f2093337f10981746149227b1aac5c0d7923",
+      "expected": "师傅，刚才你下楼的时候，钥匙响没响？",
+      "transcript": "师父,刚才你下楼的时候,钥匙响没响?",
+      "cer": 0.066667,
+      "polarityCountsMatch": true,
+      "status": "passed"
+    },
+    "asrModel": "Systran/faster-whisper-large-v3",
+    "evidencePath": "docs/audio/voice-asr.json",
+    "evidenceSha256": "25d0e31c3decd5262d92349d6571ec67ac58723ea00c40005ddff4d8b9a58334"
+  },
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 872289479,
+  "textSha256": "bc20058371361023019b5c442d49245673a2313e9c25bb0ec7b640e88d151ec1",
+  "medium": "spoken",
+  "requestSha256": "41d4dcb913de8c5abc4a6808387f84cb75c659af2a9dd4fdee535c79dc6756a6",
+  "status": "accepted",
+  "productionMethod": "preserved_exact_legacy_bytes",
+  "duration": 3.84,
+  "actualGenerationRequest": {
+    "id": "l03-ji",
+    "speaker": "Vivian",
+    "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 说清整句疑问，语速稍慢。钥匙读yào shi，响读xiǎng。句尾问完再停。",
+    "seed": 220025,
+    "requestSha256": "fccde0367e289f8611975c254072a8b7e920386b055f1c445fe0e180f64ffafc"
+  },
+  "asr": {
+    "passed": true,
+    "transcript": "师父,刚才你下楼的时候,钥匙响没响?",
+    "cer": 0.066667,
+    "polarityCountsMatch": true,
+    "model": "Systran/faster-whisper-large-v3"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-everlight--dawn--q02--01/raw.wav",
+      "bytes": 184364,
+      "sha256": "044a12a3a274cc4b1663a38a93885737eeb9700497e5b06d3bd62c12580ae11e"
+    },
+    "master": {
+      "path": "circuit-everlight--dawn--q02--01/master.wav",
+      "bytes": 184398,
+      "sha256": "bbc0fa181429991de6d2cc7f5cc00fa002d3bb360cf997e6cb2d1fa3071adaaf"
+    },
+    "runtime": {
+      "path": "circuit-everlight--dawn--q02--01/runtime.mp3",
+      "bytes": 46989,
+      "sha256": "179cc40b21514b485bb669bd8591f2093337f10981746149227b1aac5c0d7923"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

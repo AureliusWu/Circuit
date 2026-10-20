@@ -1,0 +1,59 @@
+{
+  "id": "circuit-everlight--dispatch--q02--01",
+  "sceneId": "everlight",
+  "lineId": "everlight--dispatch--q02--01",
+  "lineIndex": 0,
+  "speaker": "lin",
+  "text": "楼道疑有未登记来电，得联合核边界。失眠先留口述。",
+  "nodeId": "dispatch",
+  "start": 53,
+  "end": 77,
+  "quoteIndex": 1,
+  "actorId": "lin",
+  "voice": "Serena",
+  "instruct": "成年女性，普通话，声音干脆平稳，值班调度员在电台里说话，清楚利落，不要播音腔。 调度通话，语速稍慢，逐句吐字清楚。槐荫巷读huái yīn xiàng，在线读zài xiàn。 只朗读给定台词，不添加词语或音效。",
+  "seed": 582784699,
+  "textSha256": "57791548ee7fff77f015f6abc903ccaa8aeb2e2393fea11a8e9de48f440686bc",
+  "medium": "spoken",
+  "requestSha256": "5616b7b3c48d91a94621d5baecf287d4c7f4d50b1757484cb8977c6244989ca5",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "樓道已有未登記來電,得聯合河邊界。失眠先留口述。",
+    "cer": 0.095238,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 4.56,
+  "wallSeconds": 39.693,
+  "loudness": {
+    "input_i": "-25.80",
+    "input_tp": "-9.42",
+    "input_lra": "2.00",
+    "input_thresh": "-35.93",
+    "output_i": "-20.27",
+    "output_tp": "-4.34",
+    "output_lra": "1.50",
+    "output_thresh": "-30.48",
+    "normalization_type": "dynamic",
+    "target_offset": "0.27"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-everlight--dispatch--q02--01/raw.wav",
+      "bytes": 437840,
+      "sha256": "5b10f4ff43d3893e96c84b9d99e24f80507c1c3ff6da2c87a131d37e21a28f81"
+    },
+    "master": {
+      "path": "circuit-everlight--dispatch--q02--01/master.wav",
+      "bytes": 218958,
+      "sha256": "7681583b3492ca66d81432d6889bc94aab6693075a19f4c9911233f8d251db2b"
+    },
+    "runtime": {
+      "path": "circuit-everlight--dispatch--q02--01/runtime.ogg",
+      "bytes": 36784,
+      "sha256": "8c2fb48d1bb76390221787e42932fef5503de5f98f3c97f5d6daeb99fa0b11f7"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

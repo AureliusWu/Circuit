@@ -1,0 +1,59 @@
+{
+  "id": "circuit-seventh-night--logbook--q01--01",
+  "sceneId": "seventh-night",
+  "lineId": "seventh-night--logbook--q01--01",
+  "lineIndex": 0,
+  "speaker": "shen",
+  "text": "灯一直亮着。",
+  "nodeId": "logbook",
+  "start": 87,
+  "end": 93,
+  "quoteIndex": 0,
+  "actorId": "shen",
+  "voice": "Serena",
+  "instruct": "二十八岁女性，普通话，声音轻而疲惫，口语自然，像一晚上没睡好的人，不要哭腔。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1291332574,
+  "textSha256": "2a596a5e238db49dbeb7187fc5836241b38a9d6f30386b531e77c41a0904c0eb",
+  "medium": "spoken",
+  "requestSha256": "e541cfbb10c3e390d8d9067c6bb3f456838a367ffc73f8d5901c34b166394679",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "燈一直亮著",
+    "cer": 0.2,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 1.28,
+  "wallSeconds": 139.264,
+  "loudness": {
+    "input_i": "-23.20",
+    "input_tp": "-9.42",
+    "input_lra": "0.00",
+    "input_thresh": "-33.20",
+    "output_i": "-20.01",
+    "output_tp": "-6.22",
+    "output_lra": "0.00",
+    "output_thresh": "-30.01",
+    "normalization_type": "linear",
+    "target_offset": "0.01"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-seventh-night--logbook--q01--01/raw.wav",
+      "bytes": 122960,
+      "sha256": "bb3eee106bb83ca5d806a21e4321bb89e482163ecd97b54b1171c8887fee86e4"
+    },
+    "master": {
+      "path": "circuit-seventh-night--logbook--q01--01/master.wav",
+      "bytes": 61518,
+      "sha256": "7610e9b8fdcc5a3981fce7a364c72d1d57eb179991554418b23f5cd635eb3c44"
+    },
+    "runtime": {
+      "path": "circuit-seventh-night--logbook--q01--01/runtime.ogg",
+      "bytes": 12817,
+      "sha256": "cb937f2a16fb86a2254aeedcf2c21f6949fdc745249eef8cd45db5988f3a0a00"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

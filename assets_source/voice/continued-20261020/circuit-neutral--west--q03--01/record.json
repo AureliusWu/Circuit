@@ -1,0 +1,59 @@
+{
+  "id": "circuit-neutral--west--q03--01",
+  "sceneId": "neutral",
+  "lineId": "neutral--west--q03--01",
+  "lineIndex": 0,
+  "speaker": "zhou",
+  "text": "我。",
+  "nodeId": "west",
+  "start": 95,
+  "end": 97,
+  "quoteIndex": 2,
+  "actorId": "zhou",
+  "voice": "Uncle_Fu",
+  "instruct": "五十岁男性，普通话，声音低沉略沙哑，克制缓慢，像夜班老工人，语气自然，不要表演悲伤。 语速稍慢，逐字说清楚，季宁读jì níng。句尾完整，不要吞字。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1805715169,
+  "textSha256": "0fa3aad7ff9de5022770a402d2c1862ea3460935f4a916f247fc2fc9197881f1",
+  "medium": "spoken",
+  "requestSha256": "5542ef06e85d10c224ce615fe0ae9921631a03a689d3c1f88798de371a20956c",
+  "attempt": 4,
+  "status": "accepted",
+  "asr": {
+    "transcript": "我",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 0.88,
+  "wallSeconds": 40.294,
+  "loudness": {
+    "input_i": "-20.20",
+    "input_tp": "-6.35",
+    "input_lra": "0.00",
+    "input_thresh": "-30.20",
+    "output_i": "-20.00",
+    "output_tp": "-6.15",
+    "output_lra": "0.00",
+    "output_thresh": "-30.00",
+    "normalization_type": "linear",
+    "target_offset": "0.00"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-neutral--west--q03--01/raw.wav",
+      "bytes": 84560,
+      "sha256": "8e26af2b4d0bc51adfa8541eeeda873909940a3b3cba1deecdff849fdc5201fa"
+    },
+    "master": {
+      "path": "circuit-neutral--west--q03--01/master.wav",
+      "bytes": 42318,
+      "sha256": "581a3f4c290f1b916318a3cf500dfe4361a09c84281fd8e8202f92c68c744c7c"
+    },
+    "runtime": {
+      "path": "circuit-neutral--west--q03--01/runtime.ogg",
+      "bytes": 9819,
+      "sha256": "3c3676115163601ef6fdf3ff44b2aa914122cb68e9e27bcc7804bbc0198307eb"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

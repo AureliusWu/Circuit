@@ -1,0 +1,59 @@
+{
+  "id": "circuit-thirteen-households--houseknock--q02--01",
+  "sceneId": "thirteen-households",
+  "lineId": "thirteen-households--houseKnock--q02--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "我们一点二十一就报了。",
+  "nodeId": "houseKnock",
+  "start": 72,
+  "end": 83,
+  "quoteIndex": 1,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 391507768,
+  "textSha256": "23be275e527f6d59e921b5acb0b79521bf69b3baf8a995d62cf41e5f80155350",
+  "medium": "spoken",
+  "requestSha256": "db4855873550df76124b0fa41b6eae8709beed1e8ac6a0dfdc4df0942ca9c1e9",
+  "attempt": 5,
+  "status": "needs_review",
+  "asr": {
+    "transcript": "我们1点29爆了",
+    "cer": 0.6,
+    "polarityCountsMatch": true,
+    "passed": false
+  },
+  "duration": 2.4,
+  "wallSeconds": 128.072,
+  "loudness": {
+    "input_i": "-25.99",
+    "input_tp": "-10.43",
+    "input_lra": "0.00",
+    "input_thresh": "-35.99",
+    "output_i": "-20.01",
+    "output_tp": "-4.44",
+    "output_lra": "0.00",
+    "output_thresh": "-30.01",
+    "normalization_type": "linear",
+    "target_offset": "0.01"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-thirteen-households--houseknock--q02--01/raw.wav",
+      "bytes": 230480,
+      "sha256": "acb5e2c4396598538b1503a6cd948b90b5d4eb267de592415db5962abad53858"
+    },
+    "master": {
+      "path": "circuit-thirteen-households--houseknock--q02--01/master.wav",
+      "bytes": 115278,
+      "sha256": "dde73d4a23ef1ffd5ec6c07073adc7a5bbc4d118362783b315315a780c0ccfab"
+    },
+    "runtime": {
+      "path": "circuit-thirteen-households--houseknock--q02--01/runtime.ogg",
+      "bytes": 21348,
+      "sha256": "1ba73094fc3ea9adbceb72baee3cca0a6e0d553c1b0f7ed5b2e7705973ec7479"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

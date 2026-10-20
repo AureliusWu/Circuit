@@ -1,0 +1,112 @@
+{
+  "id": "circuit-thirteen-households--ticketsignature--q02--01",
+  "sceneId": "thirteen-households",
+  "lineId": "thirteen-households--ticketSignature--q02--01",
+  "lineIndex": 0,
+  "speaker": "zhou",
+  "text": "没安排替代，也没让他停下来。后来有人催关单，我就写完成。没核完。",
+  "nodeId": "ticketSignature",
+  "start": 29,
+  "end": 61,
+  "quoteIndex": 1,
+  "legacy": {
+    "id": "h13-ticket",
+    "character": "zhou",
+    "speaker": "Uncle_Fu",
+    "instruct": "五十岁男性，普通话，声音低沉略沙哑，克制缓慢，像夜班老工人，语气自然，不要表演悲伤。",
+    "text": "没安排替代，也没让他停下来。后来有人催关单，我就写完成。没核完。",
+    "seed": 120015,
+    "bindings": [
+      {
+        "chapter": "thirteen-households",
+        "node": "ticketSignature"
+      }
+    ],
+    "requestSha256": "d634ad833849c8fa67cb8c9e9a844002cf6708f3c455c6d7ddcd17e553372f91",
+    "duration": 7.52,
+    "generationSeconds": 41.756,
+    "loudnessInput": {
+      "input_i": "-23.60",
+      "input_tp": "-5.39",
+      "input_lra": "1.40",
+      "input_thresh": "-33.95",
+      "output_i": "-20.14",
+      "output_tp": "-2.00",
+      "output_lra": "1.80",
+      "output_thresh": "-30.51",
+      "normalization_type": "dynamic",
+      "target_offset": "0.14"
+    },
+    "files": [
+      {
+        "path": "assets_source/audio/v1.2.0/h13-ticket-raw.wav",
+        "bytes": 361004,
+        "sha256": "3c61f28ee10d1efc758e9b3f79d3ba1f413d09c2c82a007c89ac5838d3a7bd8a"
+      },
+      {
+        "path": "assets_source/audio/v1.2.0/h13-ticket.wav",
+        "bytes": 361038,
+        "sha256": "d3215a81329622c76310ee685ec60c954e1bbcb1792aacb71a8d04f402937279"
+      },
+      {
+        "path": "public/audio/voice/h13-ticket.mp3",
+        "bytes": 91341,
+        "sha256": "8b88a16d7ab20396fba68bdd2871948e934ac5b66289328762145df4f387a7b6"
+      }
+    ],
+    "asr": {
+      "id": "h13-ticket",
+      "mp3Sha256": "8b88a16d7ab20396fba68bdd2871948e934ac5b66289328762145df4f387a7b6",
+      "expected": "没安排替代，也没让他停下来。后来有人催关单，我就写完成。没核完。",
+      "transcript": "没安排替代,也没让他停下来,后来有人催关单,我就写完成,没喝完。",
+      "cer": 0.037037,
+      "polarityCountsMatch": true,
+      "status": "passed"
+    },
+    "asrModel": "Systran/faster-whisper-large-v3",
+    "evidencePath": "docs/audio/voice-asr.json",
+    "evidenceSha256": "25d0e31c3decd5262d92349d6571ec67ac58723ea00c40005ddff4d8b9a58334"
+  },
+  "actorId": "zhou",
+  "voice": "Uncle_Fu",
+  "instruct": "五十岁男性，普通话，声音低沉略沙哑，克制缓慢，像夜班老工人，语气自然，不要表演悲伤。 语速稍慢，逐字说清楚，季宁读jì níng。句尾完整，不要吞字。 只朗读给定台词，不添加词语或音效。",
+  "seed": 980834603,
+  "textSha256": "5bd36e4b76043b95659fd91c00c99d4c9e9baebaaef27b816e760486d52b86a0",
+  "medium": "spoken",
+  "requestSha256": "15802ab35d9c476892b68052f970cd915cb5a60f123bd239140669d0c3d58694",
+  "status": "accepted",
+  "productionMethod": "preserved_exact_legacy_bytes",
+  "duration": 7.52,
+  "actualGenerationRequest": {
+    "id": "h13-ticket",
+    "speaker": "Uncle_Fu",
+    "instruct": "五十岁男性，普通话，声音低沉略沙哑，克制缓慢，像夜班老工人，语气自然，不要表演悲伤。",
+    "seed": 120015,
+    "requestSha256": "d634ad833849c8fa67cb8c9e9a844002cf6708f3c455c6d7ddcd17e553372f91"
+  },
+  "asr": {
+    "passed": true,
+    "transcript": "没安排替代,也没让他停下来,后来有人催关单,我就写完成,没喝完。",
+    "cer": 0.037037,
+    "polarityCountsMatch": true,
+    "model": "Systran/faster-whisper-large-v3"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-thirteen-households--ticketsignature--q02--01/raw.wav",
+      "bytes": 361004,
+      "sha256": "3c61f28ee10d1efc758e9b3f79d3ba1f413d09c2c82a007c89ac5838d3a7bd8a"
+    },
+    "master": {
+      "path": "circuit-thirteen-households--ticketsignature--q02--01/master.wav",
+      "bytes": 361038,
+      "sha256": "d3215a81329622c76310ee685ec60c954e1bbcb1792aacb71a8d04f402937279"
+    },
+    "runtime": {
+      "path": "circuit-thirteen-households--ticketsignature--q02--01/runtime.mp3",
+      "bytes": 91341,
+      "sha256": "8b88a16d7ab20396fba68bdd2871948e934ac5b66289328762145df4f387a7b6"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

@@ -1,0 +1,59 @@
+{
+  "id": "circuit-seventh-night--receipt--q02--01",
+  "sceneId": "seventh-night",
+  "lineId": "seventh-night--receipt--q02--01",
+  "lineIndex": 0,
+  "speaker": "shen",
+  "text": "我爸当年回了家。",
+  "nodeId": "receipt",
+  "start": 54,
+  "end": 62,
+  "quoteIndex": 1,
+  "actorId": "shen",
+  "voice": "Serena",
+  "instruct": "二十八岁女性，普通话，声音轻而疲惫，口语自然，像一晚上没睡好的人，不要哭腔。 只朗读给定台词，不添加词语或音效。",
+  "seed": 95025953,
+  "textSha256": "0586c8b6dd3b19d88bf7df18b69426376a9945659883892e31702bc973d47f6e",
+  "medium": "spoken",
+  "requestSha256": "0e33ad867cb1f17316b5697b97f9080ffa3d2e5a62f281a73884176409e9bc63",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "我爸当年回了家",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 1.36,
+  "wallSeconds": 7.24,
+  "loudness": {
+    "input_i": "-21.89",
+    "input_tp": "-4.21",
+    "input_lra": "0.00",
+    "input_thresh": "-31.89",
+    "output_i": "-19.99",
+    "output_tp": "-2.32",
+    "output_lra": "0.00",
+    "output_thresh": "-29.99",
+    "normalization_type": "linear",
+    "target_offset": "-0.01"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-seventh-night--receipt--q02--01/raw.wav",
+      "bytes": 130640,
+      "sha256": "0b10e1ca1b1e5402379b68a6f59a43647f4b0596c27cc811bb6deb1737c71f99"
+    },
+    "master": {
+      "path": "circuit-seventh-night--receipt--q02--01/master.wav",
+      "bytes": 65358,
+      "sha256": "7b8b8b41f990ad573800d1342ab1d4ddca510fbf7feabcb313b528a45199a471"
+    },
+    "runtime": {
+      "path": "circuit-seventh-night--receipt--q02--01/runtime.ogg",
+      "bytes": 13171,
+      "sha256": "f4dcf60f65228b5db5c84d68b3dc9a7d04229b4b3764efbac7e57d936189a126"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

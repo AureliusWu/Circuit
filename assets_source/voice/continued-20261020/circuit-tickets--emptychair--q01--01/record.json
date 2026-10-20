@@ -1,0 +1,59 @@
+{
+  "id": "circuit-tickets--emptychair--q01--01",
+  "sceneId": "tickets",
+  "lineId": "tickets--emptyChair--q01--01",
+  "lineIndex": 0,
+  "speaker": "chen",
+  "text": "以前退号的人，也从这道门出去。",
+  "nodeId": "emptyChair",
+  "start": 43,
+  "end": 58,
+  "quoteIndex": 0,
+  "actorId": "chen",
+  "voice": "Uncle_Fu",
+  "instruct": "六十岁男性，普通话，语速慢，声音低哑，像看门的老人轻声说话，口语平实。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1198216976,
+  "textSha256": "e69a885237ab08109af558240ad30083e5e7aa18dc6df8854e8f8ba363174e21",
+  "medium": "spoken",
+  "requestSha256": "b49cb14fa94ac424cfc3e079c88e10c55dd9d3cc3a7c3b2113d955d184365930",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "以前退後的人也從這道門出去",
+    "cer": 0.076923,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 3.68,
+  "wallSeconds": 181.969,
+  "loudness": {
+    "input_i": "-23.28",
+    "input_tp": "-5.22",
+    "input_lra": "0.30",
+    "input_thresh": "-33.56",
+    "output_i": "-19.57",
+    "output_tp": "-2.00",
+    "output_lra": "0.00",
+    "output_thresh": "-29.83",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.43"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-tickets--emptychair--q01--01/raw.wav",
+      "bytes": 353360,
+      "sha256": "ee17ba76285c408020a218c4f866f17120d0ec50b460b7a6bfe011a3f9ba4c68"
+    },
+    "master": {
+      "path": "circuit-tickets--emptychair--q01--01/master.wav",
+      "bytes": 176718,
+      "sha256": "ed54a30b1f51e14f989939c4f45eaee700db66e3c7bd17c3aa4268a6dcf5e365"
+    },
+    "runtime": {
+      "path": "circuit-tickets--emptychair--q01--01/runtime.ogg",
+      "bytes": 31083,
+      "sha256": "f66a792ed554b0a3c0e97186d4614647c88ef652f6da635ad1c224780477d654"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

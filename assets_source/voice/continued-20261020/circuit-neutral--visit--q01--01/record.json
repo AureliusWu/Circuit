@@ -1,0 +1,59 @@
+{
+  "id": "circuit-neutral--visit--q01--01",
+  "sceneId": "neutral",
+  "lineId": "neutral--visit--q01--01",
+  "lineIndex": 0,
+  "speaker": "zhou",
+  "text": "纸都交了？",
+  "nodeId": "visit",
+  "start": 51,
+  "end": 56,
+  "quoteIndex": 0,
+  "actorId": "zhou",
+  "voice": "Uncle_Fu",
+  "instruct": "五十岁男性，普通话，声音低沉略沙哑，克制缓慢，像夜班老工人，语气自然，不要表演悲伤。 语速稍慢，逐字说清楚，季宁读jì níng。句尾完整，不要吞字。 只朗读给定台词，不添加词语或音效。",
+  "seed": 34999406,
+  "textSha256": "58d7f79270c1864a3e75ebcdef1f5c0999d260ec45120977d06e1eaec0f57509",
+  "medium": "spoken",
+  "requestSha256": "1fa9bcba471e377e15e70c70e6b1108db2c8bc040b91cc9eae2912dbe79f6dae",
+  "attempt": 5,
+  "status": "needs_review",
+  "asr": {
+    "transcript": "只都交了",
+    "cer": 0.25,
+    "polarityCountsMatch": true,
+    "passed": false
+  },
+  "duration": 1.28,
+  "wallSeconds": 138.713,
+  "loudness": {
+    "input_i": "-21.47",
+    "input_tp": "-4.51",
+    "input_lra": "0.00",
+    "input_thresh": "-31.47",
+    "output_i": "-19.99",
+    "output_tp": "-3.04",
+    "output_lra": "0.00",
+    "output_thresh": "-29.99",
+    "normalization_type": "linear",
+    "target_offset": "-0.01"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-neutral--visit--q01--01/raw.wav",
+      "bytes": 122960,
+      "sha256": "3eed21ca9fb7b42a40f68735f219a424fd77cf6a1b73d8ff8331d2ef8679d150"
+    },
+    "master": {
+      "path": "circuit-neutral--visit--q01--01/master.wav",
+      "bytes": 61518,
+      "sha256": "75b2082a104197220dbcb079777b379d8998d87be0610907504ac88d20d32be5"
+    },
+    "runtime": {
+      "path": "circuit-neutral--visit--q01--01/runtime.ogg",
+      "bytes": 12898,
+      "sha256": "8500bb23be882ba0fbaddc92d4b10472bbf284c44f9a0de151608ee9ee732958"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

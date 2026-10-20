@@ -1,0 +1,59 @@
+{
+  "id": "circuit-neutral--receive--q01--01",
+  "sceneId": "neutral",
+  "lineId": "neutral--receive--q01--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "师傅，西边那把椅子，是不是每张都离桌更远？",
+  "nodeId": "receive",
+  "start": 62,
+  "end": 83,
+  "quoteIndex": 0,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 280726930,
+  "textSha256": "d3ada5d0fec3d0da3e921785dd20adc9b2fee8750e2e5cd63578a484e432a7d1",
+  "medium": "spoken",
+  "requestSha256": "ba2c9b001f15b7030faca440b476a6c83291c0e441313993484351b0ecaa006f",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "师佛,西边那把椅子,是不是每张都离着更远?",
+    "cer": 0.111111,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 5.76,
+  "wallSeconds": 389.74,
+  "loudness": {
+    "input_i": "-18.81",
+    "input_tp": "-5.72",
+    "input_lra": "1.20",
+    "input_thresh": "-29.37",
+    "output_i": "-19.10",
+    "output_tp": "-5.47",
+    "output_lra": "1.80",
+    "output_thresh": "-29.72",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.90"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-neutral--receive--q01--01/raw.wav",
+      "bytes": 553040,
+      "sha256": "36579786191c4570373068d97ffe27c06d23dd01fe4e39009611bfd7a69bbb70"
+    },
+    "master": {
+      "path": "circuit-neutral--receive--q01--01/master.wav",
+      "bytes": 276558,
+      "sha256": "d9e09a45990660c851b23cf5a8b7959a050237391ae0a6af63ab4e50a3242442"
+    },
+    "runtime": {
+      "path": "circuit-neutral--receive--q01--01/runtime.ogg",
+      "bytes": 42415,
+      "sha256": "6cec18e30bb1f4f41289c920fae939d90412e60640ed5357dec2a3967e2f16ea"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

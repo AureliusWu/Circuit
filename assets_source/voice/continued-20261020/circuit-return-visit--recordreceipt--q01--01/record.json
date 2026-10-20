@@ -1,0 +1,59 @@
+{
+  "id": "circuit-return-visit--recordreceipt--q01--01",
+  "sceneId": "return-visit",
+  "lineId": "return-visit--recordReceipt--q01--01",
+  "lineIndex": 0,
+  "speaker": "luo",
+  "text": "我在这里守过几夜，总觉得听见名字就得应一声。",
+  "nodeId": "recordReceipt",
+  "start": 60,
+  "end": 82,
+  "quoteIndex": 0,
+  "actorId": "luo",
+  "voice": "Vivian",
+  "instruct": "二十九岁女性，普通话，声音偏低，夜班值班员谨慎地问话，平静自然，略有迟疑，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 240174048,
+  "textSha256": "969ac3ba6ca36ae4f7d21a597c4e124b6be13232a2cef59dc89f61f1fef29158",
+  "medium": "spoken",
+  "requestSha256": "e4d399c9d937a9f5ec2359800aa882f410f1f51cb53d6cabc62ff35d69aedc2c",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "我在這裏守過幾夜,總覺得聽見名字,就得應一聲",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 6.56,
+  "wallSeconds": 379.858,
+  "loudness": {
+    "input_i": "-23.90",
+    "input_tp": "-8.64",
+    "input_lra": "0.80",
+    "input_thresh": "-34.43",
+    "output_i": "-19.44",
+    "output_tp": "-2.96",
+    "output_lra": "1.90",
+    "output_thresh": "-30.04",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.56"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-return-visit--recordreceipt--q01--01/raw.wav",
+      "bytes": 629840,
+      "sha256": "c28b8b397f481449cf75fc2da5ee39d484c3643c4e42515c9c7485123e6c22ef"
+    },
+    "master": {
+      "path": "circuit-return-visit--recordreceipt--q01--01/master.wav",
+      "bytes": 314958,
+      "sha256": "d9c80d478eb196f121fafe7931a587704861f12da2f9d3e153c027a0673855d3"
+    },
+    "runtime": {
+      "path": "circuit-return-visit--recordreceipt--q01--01/runtime.ogg",
+      "bytes": 48236,
+      "sha256": "a2abf72cdb45148c81691fbd7906abeb01a36c8819800bd7ebb17cbff887d9f6"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

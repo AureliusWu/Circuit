@@ -1,0 +1,59 @@
+{
+  "id": "circuit-backfeed--compare--q02--01",
+  "sceneId": "backfeed",
+  "lineId": "backfeed--compare--q02--01",
+  "lineIndex": 0,
+  "speaker": "chen",
+  "text": "以前他们只抄前两个字。",
+  "nodeId": "compare",
+  "start": 78,
+  "end": 89,
+  "quoteIndex": 1,
+  "actorId": "chen",
+  "voice": "Uncle_Fu",
+  "instruct": "六十岁男性，普通话，语速慢，声音低哑，像看门的老人轻声说话，口语平实。 只朗读给定台词，不添加词语或音效。",
+  "seed": 630789946,
+  "textSha256": "8235858b31bdcb7a065e13f8adeee50e0713be3589d814fca3ef496dc9ed1c50",
+  "medium": "spoken",
+  "requestSha256": "bdb57c7bd11f3ca69d506a1968a2678723e213ba5a3deb2faf171f049efd8a13",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "以前他们只抄前两个字",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 3.12,
+  "wallSeconds": 136.759,
+  "loudness": {
+    "input_i": "-20.18",
+    "input_tp": "-2.75",
+    "input_lra": "0.30",
+    "input_thresh": "-30.18",
+    "output_i": "-19.96",
+    "output_tp": "-2.54",
+    "output_lra": "0.00",
+    "output_thresh": "-29.96",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.04"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-backfeed--compare--q02--01/raw.wav",
+      "bytes": 299600,
+      "sha256": "fc032422cb70ab280c80caecb2a8e5262ea7f6354e810484657377fefe7ccc9c"
+    },
+    "master": {
+      "path": "circuit-backfeed--compare--q02--01/master.wav",
+      "bytes": 149838,
+      "sha256": "7eec55aa6fd8c2ded960343dc6adf345a4a512203b512907f16fc5f833f4616c"
+    },
+    "runtime": {
+      "path": "circuit-backfeed--compare--q02--01/runtime.ogg",
+      "bytes": 27640,
+      "sha256": "886bae4cdcf3fdc0e6e2b17705a0b57fe2f956197aeb14e3793ed8dcb3940b34"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

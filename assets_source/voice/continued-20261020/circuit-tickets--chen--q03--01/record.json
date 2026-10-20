@@ -1,0 +1,59 @@
+{
+  "id": "circuit-tickets--chen--q03--01",
+  "sceneId": "tickets",
+  "lineId": "tickets--chen--q03--01",
+  "lineIndex": 0,
+  "speaker": "chen",
+  "text": "规矩我记得。今晚这张，我没拿过。",
+  "nodeId": "chen",
+  "start": 79,
+  "end": 95,
+  "quoteIndex": 2,
+  "actorId": "chen",
+  "voice": "Uncle_Fu",
+  "instruct": "六十岁男性，普通话，语速慢，声音低哑，像看门的老人轻声说话，口语平实。 只朗读给定台词，不添加词语或音效。",
+  "seed": 792626832,
+  "textSha256": "d5719c4fc5792de66a6bc66ba9a998f2939fc698d92561b73fd10f10b5a6a996",
+  "medium": "spoken",
+  "requestSha256": "e10ed832b324da02cb8d772ed30ffc13b3e0a0da82a527a526993e8bea31fdee",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "規矩我记得今晚这撑我没拿过",
+    "cer": 0.076923,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 4.0,
+  "wallSeconds": 196.172,
+  "loudness": {
+    "input_i": "-24.45",
+    "input_tp": "-4.86",
+    "input_lra": "0.70",
+    "input_thresh": "-35.53",
+    "output_i": "-19.99",
+    "output_tp": "-2.00",
+    "output_lra": "0.70",
+    "output_thresh": "-30.87",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.01"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-tickets--chen--q03--01/raw.wav",
+      "bytes": 384080,
+      "sha256": "0eb6f58b70cc53f261edf315bbb67b6af49ae8b52e83e1281f2ae84aebf9dac6"
+    },
+    "master": {
+      "path": "circuit-tickets--chen--q03--01/master.wav",
+      "bytes": 192078,
+      "sha256": "240b9cddc3b845bca696b62c0dab1f46e609b8923eb82171acd2916c73e5ea09"
+    },
+    "runtime": {
+      "path": "circuit-tickets--chen--q03--01/runtime.ogg",
+      "bytes": 33059,
+      "sha256": "82ff730340b4cf1ff0219f0d8d62c770332de0e21e5ece466f0bce44e8b601c6"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

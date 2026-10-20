@@ -1,0 +1,59 @@
+{
+  "id": "circuit-backfeed--voices--q03--01",
+  "sceneId": "backfeed",
+  "lineId": "backfeed--voices--q03--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "谁加的？",
+  "nodeId": "voices",
+  "start": 79,
+  "end": 83,
+  "quoteIndex": 2,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 262678431,
+  "textSha256": "bccb6458784f962b7528babe8ed9ebd863a201b7f78d06ca49675a955cea4ef0",
+  "medium": "spoken",
+  "requestSha256": "0c26f558be82bf59940a21946405fe75e65e9d082f5725e2feca4be23dd8522f",
+  "attempt": 5,
+  "status": "needs_review",
+  "asr": {
+    "transcript": "谁家的",
+    "cer": 0.333333,
+    "polarityCountsMatch": true,
+    "passed": false
+  },
+  "duration": 1.2,
+  "wallSeconds": 53.146,
+  "loudness": {
+    "input_i": "-23.74",
+    "input_tp": "-11.43",
+    "input_lra": "0.00",
+    "input_thresh": "-33.74",
+    "output_i": "-20.00",
+    "output_tp": "-7.69",
+    "output_lra": "0.00",
+    "output_thresh": "-30.00",
+    "normalization_type": "linear",
+    "target_offset": "0.00"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-backfeed--voices--q03--01/raw.wav",
+      "bytes": 115280,
+      "sha256": "d1996971862c5265b6f8170533f2d0f207c28057b9027a521200ade87284fb40"
+    },
+    "master": {
+      "path": "circuit-backfeed--voices--q03--01/master.wav",
+      "bytes": 57678,
+      "sha256": "adc7676e50f66e4adaa74b301cf00b1d1f319ea68affc7da0434d76a72d43fdd"
+    },
+    "runtime": {
+      "path": "circuit-backfeed--voices--q03--01/runtime.ogg",
+      "bytes": 12063,
+      "sha256": "e551d47e8896382ae675badea847a0e5f70a6ab3ec4f800109000487d5049d5e"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

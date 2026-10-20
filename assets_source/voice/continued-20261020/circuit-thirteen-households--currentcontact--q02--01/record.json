@@ -1,0 +1,59 @@
+{
+  "id": "circuit-thirteen-households--currentcontact--q02--01",
+  "sceneId": "thirteen-households",
+  "lineId": "thirteen-households--currentContact--q02--01",
+  "lineIndex": 0,
+  "speaker": "lin",
+  "text": "系统没看见，不能当它没有。",
+  "nodeId": "currentContact",
+  "start": 37,
+  "end": 50,
+  "quoteIndex": 1,
+  "actorId": "lin",
+  "voice": "Serena",
+  "instruct": "成年女性，普通话，声音干脆平稳，值班调度员在电台里说话，清楚利落，不要播音腔。 调度通话，语速稍慢，逐句吐字清楚。槐荫巷读huái yīn xiàng，在线读zài xiàn。 只朗读给定台词，不添加词语或音效。",
+  "seed": 265970724,
+  "textSha256": "740e4f599b18706cc064cac5661ad40f222eb4f957c432667c89309a763c63a9",
+  "medium": "spoken",
+  "requestSha256": "02ce895e0557815ebd4c9644720d8150bf649d98e2a552cdc221c2a28b4ca5dc",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "系統沒看見,不能當它沒有。",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 2.56,
+  "wallSeconds": 307.899,
+  "loudness": {
+    "input_i": "-24.35",
+    "input_tp": "-6.80",
+    "input_lra": "0.00",
+    "input_thresh": "-34.81",
+    "output_i": "-20.00",
+    "output_tp": "-2.45",
+    "output_lra": "0.00",
+    "output_thresh": "-30.45",
+    "normalization_type": "linear",
+    "target_offset": "-0.00"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-thirteen-households--currentcontact--q02--01/raw.wav",
+      "bytes": 245840,
+      "sha256": "18b8ef7b480a25eacba5f318288bd0c3bc22de3627978da6671160cde388466e"
+    },
+    "master": {
+      "path": "circuit-thirteen-households--currentcontact--q02--01/master.wav",
+      "bytes": 122958,
+      "sha256": "7143b3acb58d60a52bbaaa567f4d83a5c7a182d7eeef6164099c998af0ea532b"
+    },
+    "runtime": {
+      "path": "circuit-thirteen-households--currentcontact--q02--01/runtime.ogg",
+      "bytes": 21399,
+      "sha256": "413ecaccd261494aa82ffbc4b7c850b07e5f6fa9e8555e4c0d6d4be391da95f4"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

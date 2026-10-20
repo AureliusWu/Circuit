@@ -1,0 +1,59 @@
+{
+  "id": "circuit-return-visit--doorrule--q02--01",
+  "sceneId": "return-visit",
+  "lineId": "return-visit--doorRule--q02--01",
+  "lineIndex": 0,
+  "speaker": "luo",
+  "text": "早收了。",
+  "nodeId": "doorRule",
+  "start": 80,
+  "end": 84,
+  "quoteIndex": 1,
+  "actorId": "luo",
+  "voice": "Vivian",
+  "instruct": "二十九岁女性，普通话，声音偏低，夜班值班员谨慎地问话，平静自然，略有迟疑，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1605909539,
+  "textSha256": "a539311b7fd20cd53a7d7c25d519c50e0f291eeef6052a19ea344ea19ec3cb67",
+  "medium": "spoken",
+  "requestSha256": "c1ae4772df271c0e800e08028f5be979e8cec4e6239add6351e361df26fd6392",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "早收了",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 0.96,
+  "wallSeconds": 57.224,
+  "loudness": {
+    "input_i": "-22.07",
+    "input_tp": "-11.83",
+    "input_lra": "0.00",
+    "input_thresh": "-32.07",
+    "output_i": "-19.97",
+    "output_tp": "-9.76",
+    "output_lra": "0.00",
+    "output_thresh": "-29.97",
+    "normalization_type": "linear",
+    "target_offset": "-0.03"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-return-visit--doorrule--q02--01/raw.wav",
+      "bytes": 92240,
+      "sha256": "3116d574000c434323cc82fe352067749284730aae3d54106db41bd6a846342e"
+    },
+    "master": {
+      "path": "circuit-return-visit--doorrule--q02--01/master.wav",
+      "bytes": 46158,
+      "sha256": "a0bcdd66ab7b2a427b1241d00b377798a3e171b961b0ed94688282769c6acc3b"
+    },
+    "runtime": {
+      "path": "circuit-return-visit--doorrule--q02--01/runtime.ogg",
+      "bytes": 10390,
+      "sha256": "dbea981a79263a42ff64f588c780747580042c05d860798b13e75d4edb441a02"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

@@ -1,0 +1,59 @@
+{
+  "id": "circuit-thirteen-households--safetybrief--q04--01",
+  "sceneId": "thirteen-households",
+  "lineId": "thirteen-households--safetyBrief--q04--01",
+  "lineIndex": 0,
+  "speaker": "lin",
+  "text": "我要是知道，就不用喊你们了。",
+  "nodeId": "safetyBrief",
+  "start": 103,
+  "end": 117,
+  "quoteIndex": 3,
+  "actorId": "lin",
+  "voice": "Serena",
+  "instruct": "成年女性，普通话，声音干脆平稳，值班调度员在电台里说话，清楚利落，不要播音腔。 调度通话，语速稍慢，逐句吐字清楚。槐荫巷读huái yīn xiàng，在线读zài xiàn。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1244339835,
+  "textSha256": "ff1f61bc02a643e4eb8466d7067f7d5863bb03f77e1fae0254e411d385174872",
+  "medium": "spoken",
+  "requestSha256": "550408402d734ce62f40d0145129e51161341d7454972b28c1ee2543645a1a18",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "我要是知道就不用喊你们了",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 2.24,
+  "wallSeconds": 22.22,
+  "loudness": {
+    "input_i": "-23.97",
+    "input_tp": "-7.84",
+    "input_lra": "0.00",
+    "input_thresh": "-33.97",
+    "output_i": "-20.02",
+    "output_tp": "-3.87",
+    "output_lra": "0.00",
+    "output_thresh": "-30.02",
+    "normalization_type": "linear",
+    "target_offset": "0.02"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-thirteen-households--safetybrief--q04--01/raw.wav",
+      "bytes": 215120,
+      "sha256": "c5ced7c41751e455284513b755bb529e45d0e07ff01252956b64c2f19d1e23bb"
+    },
+    "master": {
+      "path": "circuit-thirteen-households--safetybrief--q04--01/master.wav",
+      "bytes": 107598,
+      "sha256": "9f34d8391c8ce71faa99fd01d185627b6fc7b8ab7f0800b1e8650b9a3e47578e"
+    },
+    "runtime": {
+      "path": "circuit-thirteen-households--safetybrief--q04--01/runtime.ogg",
+      "bytes": 19626,
+      "sha256": "a7ce632c8b24bb91a9e3519421b55ee3865e4d7765c6b87f6f59807b79d2ef09"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

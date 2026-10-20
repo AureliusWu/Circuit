@@ -1,0 +1,59 @@
+{
+  "id": "circuit-thirteen-households--noticedebt--q01--01",
+  "sceneId": "thirteen-households",
+  "lineId": "thirteen-households--noticeDebt--q01--01",
+  "lineIndex": 0,
+  "speaker": "mei",
+  "text": "这张是我们放的。",
+  "nodeId": "noticeDebt",
+  "start": 1,
+  "end": 9,
+  "quoteIndex": 0,
+  "actorId": "mei",
+  "voice": "Serena",
+  "instruct": "六十岁女性，普通话，声音偏低，平实缓慢，像老邻居小声嘱咐，句尾稍停，不要年轻撒娇。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1240770715,
+  "textSha256": "d0f72adec96efe72cc6e63f14993c4d0770cc22c905580898e203bd25b2edbb8",
+  "medium": "spoken",
+  "requestSha256": "82ced7041d5b34c28b39d13db8c0573624ea16de8f1e429c1700447a23a40976",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "这张是我们放的",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 1.68,
+  "wallSeconds": 66.924,
+  "loudness": {
+    "input_i": "-26.74",
+    "input_tp": "-12.77",
+    "input_lra": "0.00",
+    "input_thresh": "-36.74",
+    "output_i": "-19.99",
+    "output_tp": "-6.03",
+    "output_lra": "0.00",
+    "output_thresh": "-29.99",
+    "normalization_type": "linear",
+    "target_offset": "-0.01"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-thirteen-households--noticedebt--q01--01/raw.wav",
+      "bytes": 161360,
+      "sha256": "b46e6b4df40fa33bc1bc52673fb2cd3a98803f6172a5e9a3190d427da55c2f30"
+    },
+    "master": {
+      "path": "circuit-thirteen-households--noticedebt--q01--01/master.wav",
+      "bytes": 80718,
+      "sha256": "7eae86caecfe5ba4c82863e63ecebb4d09cd177082a7f0ff1c9737ea9df14dd7"
+    },
+    "runtime": {
+      "path": "circuit-thirteen-households--noticedebt--q01--01/runtime.ogg",
+      "bytes": 16377,
+      "sha256": "78480bbc15c82500441562368573b0651e1f5f71f965c91663118256a7974ee8"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

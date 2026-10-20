@@ -1,0 +1,59 @@
+{
+  "id": "circuit-thirteen-households--inspectledger--q01--01",
+  "sceneId": "thirteen-households",
+  "lineId": "thirteen-households--inspectLedger--q01--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "它连块表都没有，挺积极。",
+  "nodeId": "inspectLedger",
+  "start": 78,
+  "end": 90,
+  "quoteIndex": 0,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1390265877,
+  "textSha256": "c967ac0f5d257e42924d2deb81854651661e350ecf12750fa7d730e7a87a4830",
+  "medium": "spoken",
+  "requestSha256": "5302afd499a9c05f6a9339013ccb29fa553b01ee4e65e9d9cf9e63c6bed736e2",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "他连块表都没有,挺积极",
+    "cer": 0.1,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 2.96,
+  "wallSeconds": 25.382,
+  "loudness": {
+    "input_i": "-20.92",
+    "input_tp": "-4.82",
+    "input_lra": "0.00",
+    "input_thresh": "-31.44",
+    "output_i": "-19.99",
+    "output_tp": "-3.90",
+    "output_lra": "0.00",
+    "output_thresh": "-30.52",
+    "normalization_type": "linear",
+    "target_offset": "-0.01"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-thirteen-households--inspectledger--q01--01/raw.wav",
+      "bytes": 284240,
+      "sha256": "a7061e9870d98f084ed24ec308f91ec3e319445686275af7406458adafcf8552"
+    },
+    "master": {
+      "path": "circuit-thirteen-households--inspectledger--q01--01/master.wav",
+      "bytes": 142158,
+      "sha256": "dbcc40ed8deae9fc79da15d79e7946c37bb43965dd494a6616c2bb3410e6f345"
+    },
+    "runtime": {
+      "path": "circuit-thirteen-households--inspectledger--q01--01/runtime.ogg",
+      "bytes": 24089,
+      "sha256": "711cc7e85b782c6a6581b8909c7117713ab3145a1c3510bb4c73e2f3e6988165"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

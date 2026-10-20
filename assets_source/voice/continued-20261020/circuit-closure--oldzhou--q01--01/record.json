@@ -1,0 +1,59 @@
+{
+  "id": "circuit-closure--oldzhou--q01--01",
+  "sceneId": "closure",
+  "lineId": "closure--oldZhou--q01--01",
+  "lineIndex": 0,
+  "speaker": "zhou",
+  "text": "以前总想别提了。",
+  "nodeId": "oldZhou",
+  "start": 69,
+  "end": 77,
+  "quoteIndex": 0,
+  "actorId": "zhou",
+  "voice": "Uncle_Fu",
+  "instruct": "五十岁男性，普通话，声音低沉略沙哑，克制缓慢，像夜班老工人，语气自然，不要表演悲伤。 语速稍慢，逐字说清楚，季宁读jì níng。句尾完整，不要吞字。 只朗读给定台词，不添加词语或音效。",
+  "seed": 244354372,
+  "textSha256": "e0d89d01bb2e8f54a9f25d94e9e7a4767c60bb35412b74cd3d6fadc2f67d18ef",
+  "medium": "spoken",
+  "requestSha256": "fc59eb9f6305a0121e5048487573b9a197dfd1ef2695bef960518e3e269cf35d",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "比前总想别提了",
+    "cer": 0.142857,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 3.04,
+  "wallSeconds": 152.243,
+  "loudness": {
+    "input_i": "-24.28",
+    "input_tp": "-9.64",
+    "input_lra": "0.20",
+    "input_thresh": "-34.44",
+    "output_i": "-19.64",
+    "output_tp": "-5.05",
+    "output_lra": "0.00",
+    "output_thresh": "-29.80",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.36"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-closure--oldzhou--q01--01/raw.wav",
+      "bytes": 291920,
+      "sha256": "c88692a127a1d4d6befe83581cf8438d739b955414f4534497a9257137ff17a9"
+    },
+    "master": {
+      "path": "circuit-closure--oldzhou--q01--01/master.wav",
+      "bytes": 145998,
+      "sha256": "d9ad487da3725ea4608d6821dbee62f6c2fc8f9654fd94dea5e3cd7587fb9ff6"
+    },
+    "runtime": {
+      "path": "circuit-closure--oldzhou--q01--01/runtime.ogg",
+      "bytes": 25203,
+      "sha256": "5034975eeffacf0179ed43e9f40b43a4eeee161002e1ee6032ce93e592d0f008"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

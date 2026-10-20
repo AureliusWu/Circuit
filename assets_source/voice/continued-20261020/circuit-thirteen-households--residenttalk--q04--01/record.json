@@ -1,0 +1,59 @@
+{
+  "id": "circuit-thirteen-households--residenttalk--q04--01",
+  "sceneId": "thirteen-households",
+  "lineId": "thirteen-households--residentTalk--q04--01",
+  "lineIndex": 0,
+  "speaker": "mei",
+  "text": "上次写空置，后来就没人来问了。",
+  "nodeId": "residentTalk",
+  "start": 81,
+  "end": 96,
+  "quoteIndex": 3,
+  "actorId": "mei",
+  "voice": "Serena",
+  "instruct": "六十岁女性，普通话，声音偏低，平实缓慢，像老邻居小声嘱咐，句尾稍停，不要年轻撒娇。 只朗读给定台词，不添加词语或音效。",
+  "seed": 746586205,
+  "textSha256": "10efd69c0a9edc1fd4f764e97df149bd96a63c20ba95494e9266c00e11736444",
+  "medium": "spoken",
+  "requestSha256": "b31fa3d509472e767daf118e54d49f00fa21624663f0779740b5c19c431393b0",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "上次寫空置後來就沒人來問了",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 3.76,
+  "wallSeconds": 17.123,
+  "loudness": {
+    "input_i": "-24.70",
+    "input_tp": "-7.38",
+    "input_lra": "1.60",
+    "input_thresh": "-35.53",
+    "output_i": "-19.17",
+    "output_tp": "-2.23",
+    "output_lra": "0.00",
+    "output_thresh": "-30.33",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.83"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-thirteen-households--residenttalk--q04--01/raw.wav",
+      "bytes": 361040,
+      "sha256": "f9b8c26aecaf280c0d0904fcbbe4ed684ea3b607ee251d2d03fe634ff588fd52"
+    },
+    "master": {
+      "path": "circuit-thirteen-households--residenttalk--q04--01/master.wav",
+      "bytes": 180558,
+      "sha256": "9dce9c29663187f541476ecdc538f5e34becc4bd7e7c13090cfd89b3921a2b49"
+    },
+    "runtime": {
+      "path": "circuit-thirteen-households--residenttalk--q04--01/runtime.ogg",
+      "bytes": 28709,
+      "sha256": "0a7ee743e9c7c06652dc8f40ee781aeb00f6dd942a63ae0faf2c753e0a42a49d"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

@@ -1,0 +1,59 @@
+{
+  "id": "circuit-seventh-night--daughterreply--q02--01",
+  "sceneId": "seventh-night",
+  "lineId": "seventh-night--daughterReply--q02--01",
+  "lineIndex": 0,
+  "speaker": "shen",
+  "text": "我那时候嫌他天天加班，又催我吃饭。",
+  "nodeId": "daughterReply",
+  "start": 20,
+  "end": 37,
+  "quoteIndex": 1,
+  "actorId": "shen",
+  "voice": "Serena",
+  "instruct": "二十八岁女性，普通话，声音轻而疲惫，口语自然，像一晚上没睡好的人，不要哭腔。 只朗读给定台词，不添加词语或音效。",
+  "seed": 176122252,
+  "textSha256": "7578bb4806bf9845f30e703e9df9373515647e3bf00d4d081ebb74a75c11ae32",
+  "medium": "spoken",
+  "requestSha256": "279a6cb935d3f8e2870904a8e715285a1211ffea480dc80b8bc1e8c761ad00c2",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "我那時候嫌他天天假扮又催我吃飯",
+    "cer": 0.133333,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 3.6,
+  "wallSeconds": 30.361,
+  "loudness": {
+    "input_i": "-26.92",
+    "input_tp": "-11.06",
+    "input_lra": "2.70",
+    "input_thresh": "-37.05",
+    "output_i": "-20.48",
+    "output_tp": "-5.50",
+    "output_lra": "0.00",
+    "output_thresh": "-30.73",
+    "normalization_type": "dynamic",
+    "target_offset": "0.48"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-seventh-night--daughterreply--q02--01/raw.wav",
+      "bytes": 345680,
+      "sha256": "1769dace2748628b0fab58b50397fccb1284cf82e3a44b2ead4b5e77c4fa4ab6"
+    },
+    "master": {
+      "path": "circuit-seventh-night--daughterreply--q02--01/master.wav",
+      "bytes": 172878,
+      "sha256": "7a62f7012cffdef62770a94a019853f1b1deac3fa36d5ae3dca80260e0619e44"
+    },
+    "runtime": {
+      "path": "circuit-seventh-night--daughterreply--q02--01/runtime.ogg",
+      "bytes": 29173,
+      "sha256": "8b2a6a2b689ccf8cc26bbc403cee79c810563f4ef6bd6ed3189702cf4798d9b5"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

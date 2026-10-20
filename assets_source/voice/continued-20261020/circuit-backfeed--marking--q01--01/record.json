@@ -1,0 +1,59 @@
+{
+  "id": "circuit-backfeed--marking--q01--01",
+  "sceneId": "backfeed",
+  "lineId": "backfeed--marking--q01--01",
+  "lineIndex": 0,
+  "speaker": "chen",
+  "text": "工具袋是我拿的，这份票没接。",
+  "nodeId": "marking",
+  "start": 16,
+  "end": 30,
+  "quoteIndex": 0,
+  "actorId": "chen",
+  "voice": "Uncle_Fu",
+  "instruct": "六十岁男性，普通话，语速慢，声音低哑，像看门的老人轻声说话，口语平实。 只朗读给定台词，不添加词语或音效。",
+  "seed": 224600422,
+  "textSha256": "8dd6be2b8f4b2387043a58c722543d31eb3d5982f9e4f59ef4280252c0e1343e",
+  "medium": "spoken",
+  "requestSha256": "0c81d4037136f5493d26def03063cf148ddf76f9aebd0597e793455fb88f46fd",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "工具袋是我拿的這份票沒借",
+    "cer": 0.083333,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 3.6,
+  "wallSeconds": 119.943,
+  "loudness": {
+    "input_i": "-21.41",
+    "input_tp": "-3.18",
+    "input_lra": "1.00",
+    "input_thresh": "-31.70",
+    "output_i": "-19.16",
+    "output_tp": "-2.00",
+    "output_lra": "0.00",
+    "output_thresh": "-29.43",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.84"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-backfeed--marking--q01--01/raw.wav",
+      "bytes": 345680,
+      "sha256": "b07150231cc2ec3834d53ea03a771b4bddd7b6885174791221c9786d734e316a"
+    },
+    "master": {
+      "path": "circuit-backfeed--marking--q01--01/master.wav",
+      "bytes": 172878,
+      "sha256": "255f946195ba87f36787fdc45e8b048a3ffedb68f6974747361d2b5c1992b102"
+    },
+    "runtime": {
+      "path": "circuit-backfeed--marking--q01--01/runtime.ogg",
+      "bytes": 29675,
+      "sha256": "9cceb57f4f00539ced4429681a25bcb535617aa70ce008513b3583632f8d643a"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

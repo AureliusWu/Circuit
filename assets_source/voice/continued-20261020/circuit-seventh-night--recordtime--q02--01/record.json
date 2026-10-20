@@ -1,0 +1,59 @@
+{
+  "id": "circuit-seventh-night--recordtime--q02--01",
+  "sceneId": "seventh-night",
+  "lineId": "seventh-night--recordTime--q02--01",
+  "lineIndex": 0,
+  "speaker": "cheng",
+  "text": "能确定昨晚灯没灭。",
+  "nodeId": "recordTime",
+  "start": 50,
+  "end": 59,
+  "quoteIndex": 1,
+  "actorId": "cheng",
+  "voice": "Dylan",
+  "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 72499202,
+  "textSha256": "455876cfbaef6d3f858403e011308f63ff139f3c3295b2e0d576aeab7145af5c",
+  "medium": "spoken",
+  "requestSha256": "cc647b57ee00a43e4bb870494de58a1d97e4e68fce75120ba780829746bd5c0d",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "能确定了昨晚灯没灭",
+    "cer": 0.125,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 1.68,
+  "wallSeconds": 17.477,
+  "loudness": {
+    "input_i": "-21.51",
+    "input_tp": "-6.65",
+    "input_lra": "0.00",
+    "input_thresh": "-31.51",
+    "output_i": "-19.99",
+    "output_tp": "-5.14",
+    "output_lra": "0.00",
+    "output_thresh": "-29.99",
+    "normalization_type": "linear",
+    "target_offset": "-0.01"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-seventh-night--recordtime--q02--01/raw.wav",
+      "bytes": 161360,
+      "sha256": "e77e2effde0a0c8887b10525dc3c77b08884c798b6095c2d6d0e1f367d395632"
+    },
+    "master": {
+      "path": "circuit-seventh-night--recordtime--q02--01/master.wav",
+      "bytes": 80718,
+      "sha256": "71fa7aa12ed7d8421b009ee805a020494fcaea2f1a0ec24c0b7fc9ccda50c107"
+    },
+    "runtime": {
+      "path": "circuit-seventh-night--recordtime--q02--01/runtime.ogg",
+      "bytes": 15825,
+      "sha256": "a30a96b4234f33a95cedaf5e2b2477754bd796c035f12e54da1703eafe997f26"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

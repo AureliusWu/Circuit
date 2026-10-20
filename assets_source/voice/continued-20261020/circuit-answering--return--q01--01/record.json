@@ -1,0 +1,59 @@
+{
+  "id": "circuit-answering--return--q01--01",
+  "sceneId": "answering",
+  "lineId": "answering--return--q01--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "泡面彻底吃不上了。",
+  "nodeId": "return",
+  "start": 32,
+  "end": 41,
+  "quoteIndex": 0,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1106511875,
+  "textSha256": "3a410f0b147425823d07db137ff5d8ae4b6e68434d38ab759ac65905708c05d6",
+  "medium": "spoken",
+  "requestSha256": "2f9dcc967af24de2c47ee44889edda840cb608640432fbbc7defcadd6be9184d",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "泡麵徹底吃不上了",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 2.0,
+  "wallSeconds": 12.516,
+  "loudness": {
+    "input_i": "-19.11",
+    "input_tp": "-6.47",
+    "input_lra": "0.00",
+    "input_thresh": "-29.11",
+    "output_i": "-20.01",
+    "output_tp": "-7.36",
+    "output_lra": "0.00",
+    "output_thresh": "-30.01",
+    "normalization_type": "linear",
+    "target_offset": "0.01"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-answering--return--q01--01/raw.wav",
+      "bytes": 192080,
+      "sha256": "1ee65e0c9465b866243cddc20d5f046674970a34153b5254226b17300f37481c"
+    },
+    "master": {
+      "path": "circuit-answering--return--q01--01/master.wav",
+      "bytes": 96078,
+      "sha256": "4d4d06118b552479891cb13079c00a98e688689d7fc4ece770d7048949bc85f2"
+    },
+    "runtime": {
+      "path": "circuit-answering--return--q01--01/runtime.ogg",
+      "bytes": 17963,
+      "sha256": "4555792fbb49f6353c2c2ab05677f7491d015ff7f9173c75a7f4635c9068da75"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

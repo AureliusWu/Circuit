@@ -1,0 +1,59 @@
+{
+  "id": "circuit-neutral--readingrecord--q01--01",
+  "sceneId": "neutral",
+  "lineId": "neutral--readingRecord--q01--01",
+  "lineIndex": 0,
+  "speaker": "resident-cabinet",
+  "text": "字能看出什么吗？",
+  "nodeId": "readingRecord",
+  "start": 57,
+  "end": 65,
+  "quoteIndex": 0,
+  "actorId": "resident-cabinet",
+  "voice": "Uncle_Fu",
+  "instruct": "年长男性住户，普通话，平实缓慢地交谈，字句清楚，自然克制，不夸张。",
+  "seed": 1458747496,
+  "textSha256": "cd7f9946888202ab059ef8ab501491f01a8304da2706aa45361dc46b38abb4f8",
+  "medium": "spoken",
+  "requestSha256": "306b58de2d6852dc4a2fcd048ddf7c23e61dcaab7e999a45f233cef95ab2cb3d",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "自能看出什么吗",
+    "cer": 0.142857,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 2.4,
+  "wallSeconds": 130.945,
+  "loudness": {
+    "input_i": "-25.81",
+    "input_tp": "-13.53",
+    "input_lra": "0.00",
+    "input_thresh": "-35.81",
+    "output_i": "-20.00",
+    "output_tp": "-7.72",
+    "output_lra": "0.00",
+    "output_thresh": "-30.00",
+    "normalization_type": "linear",
+    "target_offset": "0.00"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-neutral--readingrecord--q01--01/raw.wav",
+      "bytes": 230480,
+      "sha256": "58f7659696f000131bcbed533d05cd592fcdf336c2b6b8e6b1d21235825f80ed"
+    },
+    "master": {
+      "path": "circuit-neutral--readingrecord--q01--01/master.wav",
+      "bytes": 115278,
+      "sha256": "d9aea0f053185745afbcd0b2df2dfeffb39d189bc173f08904b3809975132e27"
+    },
+    "runtime": {
+      "path": "circuit-neutral--readingrecord--q01--01/runtime.ogg",
+      "bytes": 20654,
+      "sha256": "f2b17aea9a73e8f10a354441a1c30185c6b36dc9f9e884de0e71265a24501b90"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

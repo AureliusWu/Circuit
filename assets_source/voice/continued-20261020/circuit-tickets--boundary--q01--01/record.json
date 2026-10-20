@@ -1,0 +1,59 @@
+{
+  "id": "circuit-tickets--boundary--q01--01",
+  "sceneId": "tickets",
+  "lineId": "tickets--boundary--q01--01",
+  "lineIndex": 0,
+  "speaker": "chen",
+  "text": "我这回跟你们走后面。",
+  "nodeId": "boundary",
+  "start": 90,
+  "end": 100,
+  "quoteIndex": 0,
+  "actorId": "chen",
+  "voice": "Uncle_Fu",
+  "instruct": "六十岁男性，普通话，语速慢，声音低哑，像看门的老人轻声说话，口语平实。 只朗读给定台词，不添加词语或音效。",
+  "seed": 524607115,
+  "textSha256": "ff50f2832928b7e3af227b45b7f5e2c6ca3d4e5a18fafd47772129fc4de22ed6",
+  "medium": "spoken",
+  "requestSha256": "2f170fbb5f6f52463cced2b151927c9ca86a8dfe2872b823ca0929a556e2e320",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "我这回跟你们走后面",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 2.24,
+  "wallSeconds": 10.772,
+  "loudness": {
+    "input_i": "-21.35",
+    "input_tp": "-5.06",
+    "input_lra": "0.00",
+    "input_thresh": "-31.35",
+    "output_i": "-20.02",
+    "output_tp": "-3.71",
+    "output_lra": "0.00",
+    "output_thresh": "-30.02",
+    "normalization_type": "linear",
+    "target_offset": "0.02"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-tickets--boundary--q01--01/raw.wav",
+      "bytes": 215120,
+      "sha256": "e50d6ed65bb644e689c18a80acbd87c70da6d34c00a7a534852e2d08aa58e942"
+    },
+    "master": {
+      "path": "circuit-tickets--boundary--q01--01/master.wav",
+      "bytes": 107598,
+      "sha256": "555b010da4e26b9680091ba296e385615a544b290a0518ef2e6523df9d080fa5"
+    },
+    "runtime": {
+      "path": "circuit-tickets--boundary--q01--01/runtime.ogg",
+      "bytes": 20778,
+      "sha256": "472bb2fc4c84eda193cca0db5be0c1a6089eb967642cd8c58d4e9abee35bd11d"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

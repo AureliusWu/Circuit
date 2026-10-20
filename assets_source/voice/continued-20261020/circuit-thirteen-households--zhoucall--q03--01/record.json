@@ -1,0 +1,112 @@
+{
+  "id": "circuit-thirteen-households--zhoucall--q03--01",
+  "sceneId": "thirteen-households",
+  "lineId": "thirteen-households--zhouCall--q03--01",
+  "lineIndex": 0,
+  "speaker": "zhou",
+  "text": "季宁跟着你，别让她一个人往旧宅里钻。",
+  "nodeId": "zhouCall",
+  "start": 42,
+  "end": 60,
+  "quoteIndex": 2,
+  "legacy": {
+    "id": "h13-zhou",
+    "character": "zhou",
+    "speaker": "Uncle_Fu",
+    "instruct": "五十岁男性，普通话，声音低沉略沙哑，克制缓慢，像夜班老工人，语气自然，不要表演悲伤。 语速稍慢，逐字说清楚，季宁读jì níng。句尾完整，不要吞字。",
+    "text": "季宁跟着你，别让她一个人往旧宅里钻。",
+    "seed": 220013,
+    "bindings": [
+      {
+        "chapter": "thirteen-households",
+        "node": "zhouCall"
+      }
+    ],
+    "requestSha256": "a6b4698d663c7ee1ae7d1dd64a2dc7ad2e48b0a9405dd03901443c317a988e5b",
+    "duration": 4.72,
+    "generationSeconds": 24.776,
+    "loudnessInput": {
+      "input_i": "-28.73",
+      "input_tp": "-9.73",
+      "input_lra": "1.00",
+      "input_thresh": "-39.29",
+      "output_i": "-19.90",
+      "output_tp": "-2.00",
+      "output_lra": "0.90",
+      "output_thresh": "-30.75",
+      "normalization_type": "dynamic",
+      "target_offset": "-0.10"
+    },
+    "files": [
+      {
+        "path": "assets_source/audio/v1.2.0/h13-zhou-raw.wav",
+        "bytes": 226604,
+        "sha256": "7e654cd4a314ae425c58d083b8cca2f55b45ce6694cdf86dc63dbed1976efafe"
+      },
+      {
+        "path": "assets_source/audio/v1.2.0/h13-zhou.wav",
+        "bytes": 226638,
+        "sha256": "ce0035e116aa18a8ba6d22b948750f79bf27a4fcdea6ea81e095f2fcb4f098be"
+      },
+      {
+        "path": "public/audio/voice/h13-zhou.mp3",
+        "bytes": 57645,
+        "sha256": "43961e3875d03e261a8264b55aa708eca2c1be14d7010fff8bb9d1e571705623"
+      }
+    ],
+    "asr": {
+      "id": "h13-zhou",
+      "mp3Sha256": "43961e3875d03e261a8264b55aa708eca2c1be14d7010fff8bb9d1e571705623",
+      "expected": "季宁跟着你，别让她一个人往旧宅里钻。",
+      "transcript": "锦宁跟着你,别让他一个人往旧宅里钻。",
+      "cer": 0.125,
+      "polarityCountsMatch": true,
+      "status": "passed"
+    },
+    "asrModel": "Systran/faster-whisper-large-v3",
+    "evidencePath": "docs/audio/voice-asr.json",
+    "evidenceSha256": "25d0e31c3decd5262d92349d6571ec67ac58723ea00c40005ddff4d8b9a58334"
+  },
+  "actorId": "zhou",
+  "voice": "Uncle_Fu",
+  "instruct": "五十岁男性，普通话，声音低沉略沙哑，克制缓慢，像夜班老工人，语气自然，不要表演悲伤。 语速稍慢，逐字说清楚，季宁读jì níng。句尾完整，不要吞字。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1131526327,
+  "textSha256": "616e7fac4dd1a4052cbdd007f2867492cd89c44a49e7eadefc42043f8dfb8757",
+  "medium": "spoken",
+  "requestSha256": "5d53008585258c779e326e658571b5aab62b8eee2476510b4e679e0f1ad51dc1",
+  "status": "accepted",
+  "productionMethod": "preserved_exact_legacy_bytes",
+  "duration": 4.72,
+  "actualGenerationRequest": {
+    "id": "h13-zhou",
+    "speaker": "Uncle_Fu",
+    "instruct": "五十岁男性，普通话，声音低沉略沙哑，克制缓慢，像夜班老工人，语气自然，不要表演悲伤。 语速稍慢，逐字说清楚，季宁读jì níng。句尾完整，不要吞字。",
+    "seed": 220013,
+    "requestSha256": "a6b4698d663c7ee1ae7d1dd64a2dc7ad2e48b0a9405dd03901443c317a988e5b"
+  },
+  "asr": {
+    "passed": true,
+    "transcript": "锦宁跟着你,别让他一个人往旧宅里钻。",
+    "cer": 0.125,
+    "polarityCountsMatch": true,
+    "model": "Systran/faster-whisper-large-v3"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-thirteen-households--zhoucall--q03--01/raw.wav",
+      "bytes": 226604,
+      "sha256": "7e654cd4a314ae425c58d083b8cca2f55b45ce6694cdf86dc63dbed1976efafe"
+    },
+    "master": {
+      "path": "circuit-thirteen-households--zhoucall--q03--01/master.wav",
+      "bytes": 226638,
+      "sha256": "ce0035e116aa18a8ba6d22b948750f79bf27a4fcdea6ea81e095f2fcb4f098be"
+    },
+    "runtime": {
+      "path": "circuit-thirteen-households--zhoucall--q03--01/runtime.mp3",
+      "bytes": 57645,
+      "sha256": "43961e3875d03e261a8264b55aa708eca2c1be14d7010fff8bb9d1e571705623"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

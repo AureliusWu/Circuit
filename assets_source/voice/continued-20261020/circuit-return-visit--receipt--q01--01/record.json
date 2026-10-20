@@ -1,0 +1,112 @@
+{
+  "id": "circuit-return-visit--receipt--q01--01",
+  "sceneId": "return-visit",
+  "lineId": "return-visit--receipt--q01--01",
+  "lineIndex": 0,
+  "speaker": "luo",
+  "text": "语音说收到了，我就往后翻。",
+  "nodeId": "receipt",
+  "start": 47,
+  "end": 60,
+  "quoteIndex": 0,
+  "legacy": {
+    "id": "v01-receipt",
+    "character": "luo",
+    "speaker": "Vivian",
+    "instruct": "二十九岁女性，普通话，声音偏低，夜班值班员谨慎地问话，平静自然，略有迟疑，不要朗诵。",
+    "text": "语音说收到了，我就往后翻。",
+    "seed": 120038,
+    "bindings": [
+      {
+        "chapter": "return-visit",
+        "node": "receipt"
+      }
+    ],
+    "requestSha256": "fc6cdad6a912f4affc821b8d9873a0eea404ec8899e9ae256b6fb20710eb9db6",
+    "duration": 2.96,
+    "generationSeconds": 15.48,
+    "loudnessInput": {
+      "input_i": "-16.10",
+      "input_tp": "-2.56",
+      "input_lra": "0.00",
+      "input_thresh": "-27.15",
+      "output_i": "-20.00",
+      "output_tp": "-6.46",
+      "output_lra": "0.00",
+      "output_thresh": "-31.05",
+      "normalization_type": "linear",
+      "target_offset": "-0.00"
+    },
+    "files": [
+      {
+        "path": "assets_source/audio/v1.2.0/v01-receipt-raw.wav",
+        "bytes": 142124,
+        "sha256": "ecc7a032e36461b96e11b1dac021645cdc1adc3bbaa1b2e2118ffa85085bed25"
+      },
+      {
+        "path": "assets_source/audio/v1.2.0/v01-receipt.wav",
+        "bytes": 142158,
+        "sha256": "c0b02315bd9449a2dc18310684c5beff27c8a39d26f73df51549094426cc1068"
+      },
+      {
+        "path": "public/audio/voice/v01-receipt.mp3",
+        "bytes": 36621,
+        "sha256": "ce67907a103bef270b8d9262a6036ff3651ad3e27bbe0ef0d93e2ea8ae53eded"
+      }
+    ],
+    "asr": {
+      "id": "v01-receipt",
+      "mp3Sha256": "ce67907a103bef270b8d9262a6036ff3651ad3e27bbe0ef0d93e2ea8ae53eded",
+      "expected": "语音说收到了，我就往后翻。",
+      "transcript": "语音说收到了,我就往后翻。",
+      "cer": 0,
+      "polarityCountsMatch": true,
+      "status": "passed"
+    },
+    "asrModel": "Systran/faster-whisper-large-v3",
+    "evidencePath": "docs/audio/voice-asr.json",
+    "evidenceSha256": "25d0e31c3decd5262d92349d6571ec67ac58723ea00c40005ddff4d8b9a58334"
+  },
+  "actorId": "luo",
+  "voice": "Vivian",
+  "instruct": "二十九岁女性，普通话，声音偏低，夜班值班员谨慎地问话，平静自然，略有迟疑，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 616200836,
+  "textSha256": "84264ccf8d71cc01c2b3d19c55ce7fce5d09aaabe87e5de87af7193afff9bb50",
+  "medium": "spoken",
+  "requestSha256": "2741a8d6ec3473f3faa6ecd5c2d6a3225db1483b6d233c5aa372d7d7cb5c0d0a",
+  "status": "accepted",
+  "productionMethod": "preserved_exact_legacy_bytes",
+  "duration": 2.96,
+  "actualGenerationRequest": {
+    "id": "v01-receipt",
+    "speaker": "Vivian",
+    "instruct": "二十九岁女性，普通话，声音偏低，夜班值班员谨慎地问话，平静自然，略有迟疑，不要朗诵。",
+    "seed": 120038,
+    "requestSha256": "fc6cdad6a912f4affc821b8d9873a0eea404ec8899e9ae256b6fb20710eb9db6"
+  },
+  "asr": {
+    "passed": true,
+    "transcript": "语音说收到了,我就往后翻。",
+    "cer": 0,
+    "polarityCountsMatch": true,
+    "model": "Systran/faster-whisper-large-v3"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-return-visit--receipt--q01--01/raw.wav",
+      "bytes": 142124,
+      "sha256": "ecc7a032e36461b96e11b1dac021645cdc1adc3bbaa1b2e2118ffa85085bed25"
+    },
+    "master": {
+      "path": "circuit-return-visit--receipt--q01--01/master.wav",
+      "bytes": 142158,
+      "sha256": "c0b02315bd9449a2dc18310684c5beff27c8a39d26f73df51549094426cc1068"
+    },
+    "runtime": {
+      "path": "circuit-return-visit--receipt--q01--01/runtime.mp3",
+      "bytes": 36621,
+      "sha256": "ce67907a103bef270b8d9262a6036ff3651ad3e27bbe0ef0d93e2ea8ae53eded"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

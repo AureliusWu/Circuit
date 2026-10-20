@@ -1,0 +1,59 @@
+{
+  "id": "circuit-everlight--turnoff--q01--01",
+  "sceneId": "everlight",
+  "lineId": "everlight--turnOff--q01--01",
+  "lineIndex": 0,
+  "speaker": "mei",
+  "text": "守成，我知道你没回来。",
+  "nodeId": "turnOff",
+  "start": 30,
+  "end": 41,
+  "quoteIndex": 0,
+  "actorId": "mei",
+  "voice": "Serena",
+  "instruct": "六十岁女性，普通话，声音偏低，平实缓慢，像老邻居小声嘱咐，句尾稍停，不要年轻撒娇。 只朗读给定台词，不添加词语或音效。",
+  "seed": 600904878,
+  "textSha256": "62b8f9c6e3d23ad7cfa3d1274a9b5077a2bd32ee4f8fbd7b5c345b830e7bd15a",
+  "medium": "spoken",
+  "requestSha256": "0897146fe7f52d08dfe9ba8c7e81d9a4831092a0553342891c72ec1835301110",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "守城,我知道你没回来",
+    "cer": 0.111111,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 2.4,
+  "wallSeconds": 11.661,
+  "loudness": {
+    "input_i": "-22.50",
+    "input_tp": "-6.16",
+    "input_lra": "0.00",
+    "input_thresh": "-33.18",
+    "output_i": "-20.00",
+    "output_tp": "-3.66",
+    "output_lra": "0.00",
+    "output_thresh": "-30.68",
+    "normalization_type": "linear",
+    "target_offset": "-0.00"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-everlight--turnoff--q01--01/raw.wav",
+      "bytes": 230480,
+      "sha256": "08eb6a9b0ca88f92b3cde63e5539b48ba2fca34f37bdf3b1e08db93d5c577e0f"
+    },
+    "master": {
+      "path": "circuit-everlight--turnoff--q01--01/master.wav",
+      "bytes": 115278,
+      "sha256": "8c153f328cfa46673209b75cca2bdde0e88c40870fbcd5ca4a6fefb1b992843d"
+    },
+    "runtime": {
+      "path": "circuit-everlight--turnoff--q01--01/runtime.ogg",
+      "bytes": 20164,
+      "sha256": "4b2118a38fbf332a9df5e73a44a528c5606effa34c3f940857b172d01314b6dc"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

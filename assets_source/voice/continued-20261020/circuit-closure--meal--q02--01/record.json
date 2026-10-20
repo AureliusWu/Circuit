@@ -1,0 +1,59 @@
+{
+  "id": "circuit-closure--meal--q02--01",
+  "sceneId": "closure",
+  "lineId": "closure--meal--q02--01",
+  "lineIndex": 0,
+  "speaker": "cheng",
+  "text": "吃。",
+  "nodeId": "meal",
+  "start": 51,
+  "end": 53,
+  "quoteIndex": 1,
+  "actorId": "cheng",
+  "voice": "Dylan",
+  "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 161914050,
+  "textSha256": "616feaa6c2bfacd6f20454ba47691b8cca02f5d73df0cd7e4b2e8531d08a3ceb",
+  "medium": "spoken",
+  "requestSha256": "d7c7f5cd797ef752a83503381cf256947360834ea82dc3f9251d1c1de1fac761",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "吃",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 0.48,
+  "wallSeconds": 3.448,
+  "loudness": {
+    "input_i": "-19.85",
+    "input_tp": "-3.95",
+    "input_lra": "0.00",
+    "input_thresh": "-29.85",
+    "output_i": "-19.95",
+    "output_tp": "-4.10",
+    "output_lra": "0.00",
+    "output_thresh": "-29.95",
+    "normalization_type": "linear",
+    "target_offset": "-0.05"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-closure--meal--q02--01/raw.wav",
+      "bytes": 46160,
+      "sha256": "14137355de58bc163f4eb54206e253c52b267396d18af4b6cb6fda0081831803"
+    },
+    "master": {
+      "path": "circuit-closure--meal--q02--01/master.wav",
+      "bytes": 23118,
+      "sha256": "ac82d896568121eb9ba336b948a2159db929501db9cb1a02ad719f4350b87f28"
+    },
+    "runtime": {
+      "path": "circuit-closure--meal--q02--01/runtime.ogg",
+      "bytes": 6885,
+      "sha256": "4c9b717bc8528cb6ebab98834fad30e7f52e641a54bc65f451085bbe2b03b696"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

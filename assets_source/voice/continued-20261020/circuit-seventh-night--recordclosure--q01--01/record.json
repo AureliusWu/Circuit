@@ -1,0 +1,59 @@
+{
+  "id": "circuit-seventh-night--recordclosure--q01--01",
+  "sceneId": "seventh-night",
+  "lineId": "seventh-night--recordClosure--q01--01",
+  "lineIndex": 0,
+  "speaker": "shen",
+  "text": "许家有这张吗？",
+  "nodeId": "recordClosure",
+  "start": 46,
+  "end": 53,
+  "quoteIndex": 0,
+  "actorId": "shen",
+  "voice": "Serena",
+  "instruct": "二十八岁女性，普通话，声音轻而疲惫，口语自然，像一晚上没睡好的人，不要哭腔。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1835329946,
+  "textSha256": "a1c510cd32868f1015206b830c10de6c8509a94576cbfa8988e66b15dc482f6c",
+  "medium": "spoken",
+  "requestSha256": "c6c54edf0440a4d71a64f76d1b5e613f1121223566c0b9886cbf798b5bce76ac",
+  "attempt": 1,
+  "status": "accepted",
+  "asr": {
+    "transcript": "许佳有这张吗?",
+    "cer": 0.166667,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 1.28,
+  "wallSeconds": 137.555,
+  "loudness": {
+    "input_i": "-21.76",
+    "input_tp": "-8.73",
+    "input_lra": "0.00",
+    "input_thresh": "-31.76",
+    "output_i": "-20.04",
+    "output_tp": "-6.97",
+    "output_lra": "0.00",
+    "output_thresh": "-30.04",
+    "normalization_type": "linear",
+    "target_offset": "0.04"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-seventh-night--recordclosure--q01--01/raw.wav",
+      "bytes": 122960,
+      "sha256": "7da5dbd9e5c5643863973edc3bff6395e73258098973f1f48f13908dea1a6df5"
+    },
+    "master": {
+      "path": "circuit-seventh-night--recordclosure--q01--01/master.wav",
+      "bytes": 61518,
+      "sha256": "cd062dbf5715f482e39a86696f18190d374f5796fe3bdfc5434266463cb8f30b"
+    },
+    "runtime": {
+      "path": "circuit-seventh-night--recordclosure--q01--01/runtime.ogg",
+      "bytes": 12871,
+      "sha256": "ad942f0fc59279253895c6ac53102b3d5f059e462d5ced28e71691a5a5f42126"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

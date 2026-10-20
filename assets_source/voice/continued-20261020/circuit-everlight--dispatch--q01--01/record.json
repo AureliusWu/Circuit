@@ -1,0 +1,59 @@
+{
+  "id": "circuit-everlight--dispatch--q01--01",
+  "sceneId": "everlight",
+  "lineId": "everlight--dispatch--q01--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "这也报给我们？",
+  "nodeId": "dispatch",
+  "start": 39,
+  "end": 46,
+  "quoteIndex": 0,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1659965039,
+  "textSha256": "2c14af0eb5ecda9b47bde03dd40a26af23210e2f836c902dc80db2024b4b9c0c",
+  "medium": "spoken",
+  "requestSha256": "136075393c4af295ef468a9fbfa7b0ee2dd40ee64f3880907a54f2e470e0c179",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "这一报给我们",
+    "cer": 0.166667,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 1.12,
+  "wallSeconds": 64.371,
+  "loudness": {
+    "input_i": "-25.57",
+    "input_tp": "-10.84",
+    "input_lra": "0.00",
+    "input_thresh": "-35.57",
+    "output_i": "-19.99",
+    "output_tp": "-5.27",
+    "output_lra": "0.00",
+    "output_thresh": "-29.99",
+    "normalization_type": "linear",
+    "target_offset": "-0.01"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-everlight--dispatch--q01--01/raw.wav",
+      "bytes": 107600,
+      "sha256": "a4b562008cf0019dddd8629368cec587464495a5c917801ae974da2e271d96ff"
+    },
+    "master": {
+      "path": "circuit-everlight--dispatch--q01--01/master.wav",
+      "bytes": 53838,
+      "sha256": "ebccede3c9e30a32930e9614481e8ac55535b53f5001968a5f9c2d1fb8922078"
+    },
+    "runtime": {
+      "path": "circuit-everlight--dispatch--q01--01/runtime.ogg",
+      "bytes": 11743,
+      "sha256": "ab8e9392c2c44ec816ceccffc95616370f3e6dddd3f7ea202ef0fa5cc1d582e7"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

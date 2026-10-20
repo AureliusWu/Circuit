@@ -1,0 +1,112 @@
+{
+  "id": "circuit-thirteen-households--dispatch--q01--01",
+  "sceneId": "thirteen-households",
+  "lineId": "thirteen-households--dispatch--q01--01",
+  "lineIndex": 0,
+  "speaker": "lin",
+  "text": "槐荫巷，十二户停电，终端显示十三个在线户号。",
+  "nodeId": "dispatch",
+  "start": 20,
+  "end": 42,
+  "quoteIndex": 0,
+  "legacy": {
+    "id": "h13-dispatch",
+    "character": "lin",
+    "speaker": "Serena",
+    "instruct": "成年女性，普通话，声音干脆平稳，值班调度员在电台里说话，清楚利落，不要播音腔。 调度通话，语速稍慢，逐句吐字清楚。槐荫巷读huái yīn xiàng，在线读zài xiàn。",
+    "text": "槐荫巷，十二户停电，终端显示十三个在线户号。",
+    "seed": 220010,
+    "bindings": [
+      {
+        "chapter": "thirteen-households",
+        "node": "dispatch"
+      }
+    ],
+    "requestSha256": "19600cd872f380060511cb88fed6f66e0c3767b53f5ecf5af7f4e535d5d997a3",
+    "duration": 4.4,
+    "generationSeconds": 23.708,
+    "loudnessInput": {
+      "input_i": "-25.55",
+      "input_tp": "-10.35",
+      "input_lra": "1.80",
+      "input_thresh": "-35.80",
+      "output_i": "-19.74",
+      "output_tp": "-5.01",
+      "output_lra": "0.50",
+      "output_thresh": "-29.96",
+      "normalization_type": "dynamic",
+      "target_offset": "-0.26"
+    },
+    "files": [
+      {
+        "path": "assets_source/audio/v1.2.0/h13-dispatch-raw.wav",
+        "bytes": 211244,
+        "sha256": "78b59168a8e0e68bf961dc70ed053180dac119f26eab440e244030c23cbbf721"
+      },
+      {
+        "path": "assets_source/audio/v1.2.0/h13-dispatch.wav",
+        "bytes": 211278,
+        "sha256": "18f872ab8050a7322dffc24eacd08c0a5e5bcad829727993299c3474ea3ad357"
+      },
+      {
+        "path": "public/audio/voice/h13-dispatch.mp3",
+        "bytes": 53901,
+        "sha256": "a81b39dd10f448adba3818df60445b72d138aee5601dbca7850f698a3580e069"
+      }
+    ],
+    "asr": {
+      "id": "h13-dispatch",
+      "mp3Sha256": "a81b39dd10f448adba3818df60445b72d138aee5601dbca7850f698a3580e069",
+      "expected": "槐荫巷，十二户停电，终端显示十三个在线户号。",
+      "transcript": "怀音像12户停电,终端显示13个在线户号。",
+      "cer": 0.157895,
+      "polarityCountsMatch": true,
+      "status": "passed"
+    },
+    "asrModel": "Systran/faster-whisper-large-v3",
+    "evidencePath": "docs/audio/voice-asr.json",
+    "evidenceSha256": "25d0e31c3decd5262d92349d6571ec67ac58723ea00c40005ddff4d8b9a58334"
+  },
+  "actorId": "lin",
+  "voice": "Serena",
+  "instruct": "成年女性，普通话，声音干脆平稳，值班调度员在电台里说话，清楚利落，不要播音腔。 调度通话，语速稍慢，逐句吐字清楚。槐荫巷读huái yīn xiàng，在线读zài xiàn。 只朗读给定台词，不添加词语或音效。",
+  "seed": 118711705,
+  "textSha256": "f40e25f7768db620445fca166d9f029464107682ade4decb73903f96fba0ee3c",
+  "medium": "spoken",
+  "requestSha256": "cf9fcdfc43d7df183b7c1739934d455423e1f32907b4de7507c6557172748755",
+  "status": "accepted",
+  "productionMethod": "preserved_exact_legacy_bytes",
+  "duration": 4.4,
+  "actualGenerationRequest": {
+    "id": "h13-dispatch",
+    "speaker": "Serena",
+    "instruct": "成年女性，普通话，声音干脆平稳，值班调度员在电台里说话，清楚利落，不要播音腔。 调度通话，语速稍慢，逐句吐字清楚。槐荫巷读huái yīn xiàng，在线读zài xiàn。",
+    "seed": 220010,
+    "requestSha256": "19600cd872f380060511cb88fed6f66e0c3767b53f5ecf5af7f4e535d5d997a3"
+  },
+  "asr": {
+    "passed": true,
+    "transcript": "怀音像12户停电,终端显示13个在线户号。",
+    "cer": 0.157895,
+    "polarityCountsMatch": true,
+    "model": "Systran/faster-whisper-large-v3"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-thirteen-households--dispatch--q01--01/raw.wav",
+      "bytes": 211244,
+      "sha256": "78b59168a8e0e68bf961dc70ed053180dac119f26eab440e244030c23cbbf721"
+    },
+    "master": {
+      "path": "circuit-thirteen-households--dispatch--q01--01/master.wav",
+      "bytes": 211278,
+      "sha256": "18f872ab8050a7322dffc24eacd08c0a5e5bcad829727993299c3474ea3ad357"
+    },
+    "runtime": {
+      "path": "circuit-thirteen-households--dispatch--q01--01/runtime.mp3",
+      "bytes": 53901,
+      "sha256": "a81b39dd10f448adba3818df60445b72d138aee5601dbca7850f698a3580e069"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

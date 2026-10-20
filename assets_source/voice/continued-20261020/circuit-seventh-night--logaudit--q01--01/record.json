@@ -1,0 +1,59 @@
+{
+  "id": "circuit-seventh-night--logaudit--q01--01",
+  "sceneId": "seventh-night",
+  "lineId": "seventh-night--logAudit--q01--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "它只是按时通知你。",
+  "nodeId": "logAudit",
+  "start": 71,
+  "end": 80,
+  "quoteIndex": 0,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 342849481,
+  "textSha256": "ece7ee6730cdf6bc5ce20f85b1e5568a37b2f15675e3999b8108ceb65511691b",
+  "medium": "spoken",
+  "requestSha256": "fa78b0a7d51ac2caf992fca0ba1e4830ff50c52e29bfc1ecb13d51aa5cd256d9",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "他只是按时通知你",
+    "cer": 0.125,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 2.32,
+  "wallSeconds": 109.879,
+  "loudness": {
+    "input_i": "-20.61",
+    "input_tp": "-3.37",
+    "input_lra": "0.00",
+    "input_thresh": "-30.61",
+    "output_i": "-19.99",
+    "output_tp": "-2.77",
+    "output_lra": "0.00",
+    "output_thresh": "-29.99",
+    "normalization_type": "linear",
+    "target_offset": "-0.01"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-seventh-night--logaudit--q01--01/raw.wav",
+      "bytes": 222800,
+      "sha256": "f188680a786ea81d6906b496a05f9cdc94a13175263f49af9794c14fc55d2a2a"
+    },
+    "master": {
+      "path": "circuit-seventh-night--logaudit--q01--01/master.wav",
+      "bytes": 111438,
+      "sha256": "dad3f1d3bab1d4a9784d2897ec332e6d297038f9d2e409762301795e6d8a54c8"
+    },
+    "runtime": {
+      "path": "circuit-seventh-night--logaudit--q01--01/runtime.ogg",
+      "bytes": 20240,
+      "sha256": "0ded36575b62b1300dd4e9c623478f3f69de43bc35ac43523295cf9b65dea890"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

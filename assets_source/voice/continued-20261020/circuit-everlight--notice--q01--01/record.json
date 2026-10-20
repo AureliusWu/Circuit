@@ -1,0 +1,59 @@
+{
+  "id": "circuit-everlight--notice--q01--01",
+  "sceneId": "everlight",
+  "lineId": "everlight--notice--q01--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "他还没上楼，就已经交班了？",
+  "nodeId": "notice",
+  "start": 80,
+  "end": 93,
+  "quoteIndex": 0,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 27604867,
+  "textSha256": "4092ffbcc9f2fd5da98803238b774821653a46b9b4825ff1ddff740da9e9762a",
+  "medium": "spoken",
+  "requestSha256": "5ff203bb5980c753b2a0a54f4753df1f0be6dbd7dbffd4507c8a8161a7e96b8a",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "他還沒上樓就已經交班了",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 2.48,
+  "wallSeconds": 84.136,
+  "loudness": {
+    "input_i": "-17.50",
+    "input_tp": "-1.04",
+    "input_lra": "0.00",
+    "input_thresh": "-27.50",
+    "output_i": "-20.00",
+    "output_tp": "-3.55",
+    "output_lra": "0.00",
+    "output_thresh": "-30.00",
+    "normalization_type": "linear",
+    "target_offset": "-0.00"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-everlight--notice--q01--01/raw.wav",
+      "bytes": 238160,
+      "sha256": "3144b3441cd367d5715e4390a52770ed7ad711a2d64444977f74ed23a4928282"
+    },
+    "master": {
+      "path": "circuit-everlight--notice--q01--01/master.wav",
+      "bytes": 119118,
+      "sha256": "3b0e2e9644e149a1bf0548343ec9c0d5dcd23caf6b304bc938ef653d08febad0"
+    },
+    "runtime": {
+      "path": "circuit-everlight--notice--q01--01/runtime.ogg",
+      "bytes": 21334,
+      "sha256": "76885746a36d5751eaeae543efec984b8b728c2637673260c6bb303e5600e3f9"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

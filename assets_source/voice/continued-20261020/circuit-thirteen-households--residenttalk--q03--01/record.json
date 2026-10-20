@@ -1,0 +1,59 @@
+{
+  "id": "circuit-thirteen-households--residenttalk--q03--01",
+  "sceneId": "thirteen-households",
+  "lineId": "thirteen-households--residentTalk--q03--01",
+  "lineIndex": 0,
+  "speaker": "mei",
+  "text": "那就写十三号。",
+  "nodeId": "residentTalk",
+  "start": 61,
+  "end": 68,
+  "quoteIndex": 2,
+  "actorId": "mei",
+  "voice": "Serena",
+  "instruct": "六十岁女性，普通话，声音偏低，平实缓慢，像老邻居小声嘱咐，句尾稍停，不要年轻撒娇。 只朗读给定台词，不添加词语或音效。",
+  "seed": 158950746,
+  "textSha256": "4f45ec666a94c8ac4e1aed6c2a96becca76e7ef4b2277044a3598ea412bf0cdc",
+  "medium": "spoken",
+  "requestSha256": "7084ea4839ece251772ef68584c5ff2b18b2a2fd5a3f97fc6f88ba86d4988654",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "那就写十三号",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 1.52,
+  "wallSeconds": 15.757,
+  "loudness": {
+    "input_i": "-20.08",
+    "input_tp": "-6.19",
+    "input_lra": "0.00",
+    "input_thresh": "-30.08",
+    "output_i": "-20.00",
+    "output_tp": "-6.11",
+    "output_lra": "0.00",
+    "output_thresh": "-30.00",
+    "normalization_type": "linear",
+    "target_offset": "-0.00"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-thirteen-households--residenttalk--q03--01/raw.wav",
+      "bytes": 146000,
+      "sha256": "67ebf2d0dddf38cadba6ed1d2cf02043cbfc6e4183c1cedb235355408d19c75d"
+    },
+    "master": {
+      "path": "circuit-thirteen-households--residenttalk--q03--01/master.wav",
+      "bytes": 73038,
+      "sha256": "97a2e6c8b44b8bd2dd2d91a53b1fd3bd25223dd21bbb94f44597f814c5c7b299"
+    },
+    "runtime": {
+      "path": "circuit-thirteen-households--residenttalk--q03--01/runtime.ogg",
+      "bytes": 14084,
+      "sha256": "a7274cec373dbf1e77784542a89084a25a235c44e5501d2bf8e9e415abb417dd"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

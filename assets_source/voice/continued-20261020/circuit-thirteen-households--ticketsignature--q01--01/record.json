@@ -1,0 +1,59 @@
+{
+  "id": "circuit-thirteen-households--ticketsignature--q01--01",
+  "sceneId": "thirteen-households",
+  "lineId": "thirteen-households--ticketSignature--q01--01",
+  "lineIndex": 0,
+  "speaker": "zhou",
+  "text": "我去疏散了。",
+  "nodeId": "ticketSignature",
+  "start": 17,
+  "end": 23,
+  "quoteIndex": 0,
+  "actorId": "zhou",
+  "voice": "Uncle_Fu",
+  "instruct": "五十岁男性，普通话，声音低沉略沙哑，克制缓慢，像夜班老工人，语气自然，不要表演悲伤。 语速稍慢，逐字说清楚，季宁读jì níng。句尾完整，不要吞字。 只朗读给定台词，不添加词语或音效。",
+  "seed": 685995071,
+  "textSha256": "08efac69621aa3ce563bd3fe2a615cbff8f1e940b1dfd6bf45f91a5f36503e50",
+  "medium": "spoken",
+  "requestSha256": "11ecadad613a20e49da2136356a06f2c1e8e21f7b8c6dcdd434500dbaaf1aa00",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "我却疏散了",
+    "cer": 0.2,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 2.0,
+  "wallSeconds": 20.233,
+  "loudness": {
+    "input_i": "-22.42",
+    "input_tp": "-5.23",
+    "input_lra": "0.00",
+    "input_thresh": "-32.42",
+    "output_i": "-19.99",
+    "output_tp": "-2.81",
+    "output_lra": "0.00",
+    "output_thresh": "-29.99",
+    "normalization_type": "linear",
+    "target_offset": "-0.01"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-thirteen-households--ticketsignature--q01--01/raw.wav",
+      "bytes": 192080,
+      "sha256": "93b9b60a42e6d45ae60a030138a7702ec019cb9dff9dfe21818aabb73bb498ae"
+    },
+    "master": {
+      "path": "circuit-thirteen-households--ticketsignature--q01--01/master.wav",
+      "bytes": 96078,
+      "sha256": "4a7ea20a01fd20e38aa5d2332ad6a4f5e2dced1687f56fe4e19b878b356859e4"
+    },
+    "runtime": {
+      "path": "circuit-thirteen-households--ticketsignature--q01--01/runtime.ogg",
+      "bytes": 17509,
+      "sha256": "3d4b23fe75a7a0c44efe7b7e16c747093d4b556d6f43dc3d6fac1f53ad7cb93d"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

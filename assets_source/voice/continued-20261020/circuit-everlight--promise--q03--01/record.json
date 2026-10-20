@@ -1,0 +1,112 @@
+{
+  "id": "circuit-everlight--promise--q03--01",
+  "sceneId": "everlight",
+  "lineId": "everlight--promise--q03--01",
+  "lineIndex": 0,
+  "speaker": "mei",
+  "text": "轻两下，最后重一下。他钥匙串就那样碰。",
+  "nodeId": "promise",
+  "start": 63,
+  "end": 82,
+  "quoteIndex": 2,
+  "legacy": {
+    "id": "l03-keys",
+    "character": "mei",
+    "speaker": "Serena",
+    "instruct": "六十岁女性，普通话，声音偏低，平实缓慢，像老邻居小声嘱咐，句尾稍停，不要年轻撒娇。",
+    "text": "轻两下，最后重一下。他钥匙串就那样碰。",
+    "seed": 120024,
+    "bindings": [
+      {
+        "chapter": "everlight",
+        "node": "promise"
+      }
+    ],
+    "requestSha256": "343d14fdea790cb085c5f0b158af4c12753f69181b7057d59ff2424ea7dd82ff",
+    "duration": 6.24,
+    "generationSeconds": 34.607,
+    "loudnessInput": {
+      "input_i": "-25.45",
+      "input_tp": "-7.21",
+      "input_lra": "3.20",
+      "input_thresh": "-36.59",
+      "output_i": "-18.56",
+      "output_tp": "-2.00",
+      "output_lra": "5.70",
+      "output_thresh": "-29.92",
+      "normalization_type": "dynamic",
+      "target_offset": "-1.44"
+    },
+    "files": [
+      {
+        "path": "assets_source/audio/v1.2.0/l03-keys-raw.wav",
+        "bytes": 299564,
+        "sha256": "604e24501cce277969522305f9ef628e1900526d3fcc3c6674f7a8e500fe1d26"
+      },
+      {
+        "path": "assets_source/audio/v1.2.0/l03-keys.wav",
+        "bytes": 299598,
+        "sha256": "18b4463b792adebfaada43465cc5d148d14b2686206197094bc593e8ab9e79fa"
+      },
+      {
+        "path": "public/audio/voice/l03-keys.mp3",
+        "bytes": 75789,
+        "sha256": "332cbccb81d64a5f88334e0ed886088340a74acc437de96b72053e8cddf20dee"
+      }
+    ],
+    "asr": {
+      "id": "l03-keys",
+      "mp3Sha256": "332cbccb81d64a5f88334e0ed886088340a74acc437de96b72053e8cddf20dee",
+      "expected": "轻两下，最后重一下。他钥匙串就那样碰。",
+      "transcript": "轻两下,最后重一下,他要是串就那样碰。",
+      "cer": 0.125,
+      "polarityCountsMatch": true,
+      "status": "passed"
+    },
+    "asrModel": "Systran/faster-whisper-large-v3",
+    "evidencePath": "docs/audio/voice-asr.json",
+    "evidenceSha256": "25d0e31c3decd5262d92349d6571ec67ac58723ea00c40005ddff4d8b9a58334"
+  },
+  "actorId": "mei",
+  "voice": "Serena",
+  "instruct": "六十岁女性，普通话，声音偏低，平实缓慢，像老邻居小声嘱咐，句尾稍停，不要年轻撒娇。 只朗读给定台词，不添加词语或音效。",
+  "seed": 696677117,
+  "textSha256": "a04f4957136b15eb990869dd70a0c2a0283e0734524ad44ccc2254bfe2f89014",
+  "medium": "spoken",
+  "requestSha256": "4c0b7b685ce14a9578354bf5a9f4e0624f3669f2ee489bb863b26bc9feb68310",
+  "status": "accepted",
+  "productionMethod": "preserved_exact_legacy_bytes",
+  "duration": 6.24,
+  "actualGenerationRequest": {
+    "id": "l03-keys",
+    "speaker": "Serena",
+    "instruct": "六十岁女性，普通话，声音偏低，平实缓慢，像老邻居小声嘱咐，句尾稍停，不要年轻撒娇。",
+    "seed": 120024,
+    "requestSha256": "343d14fdea790cb085c5f0b158af4c12753f69181b7057d59ff2424ea7dd82ff"
+  },
+  "asr": {
+    "passed": true,
+    "transcript": "轻两下,最后重一下,他要是串就那样碰。",
+    "cer": 0.125,
+    "polarityCountsMatch": true,
+    "model": "Systran/faster-whisper-large-v3"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-everlight--promise--q03--01/raw.wav",
+      "bytes": 299564,
+      "sha256": "604e24501cce277969522305f9ef628e1900526d3fcc3c6674f7a8e500fe1d26"
+    },
+    "master": {
+      "path": "circuit-everlight--promise--q03--01/master.wav",
+      "bytes": 299598,
+      "sha256": "18b4463b792adebfaada43465cc5d148d14b2686206197094bc593e8ab9e79fa"
+    },
+    "runtime": {
+      "path": "circuit-everlight--promise--q03--01/runtime.mp3",
+      "bytes": 75789,
+      "sha256": "332cbccb81d64a5f88334e0ed886088340a74acc437de96b72053e8cddf20dee"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

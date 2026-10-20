@@ -1,0 +1,59 @@
+{
+  "id": "circuit-tickets--correctside--q01--01",
+  "sceneId": "tickets",
+  "lineId": "tickets--correctSide--q01--01",
+  "lineIndex": 0,
+  "speaker": "chen",
+  "text": "我能给你们开门，不能给里面顶班。",
+  "nodeId": "correctSide",
+  "start": 65,
+  "end": 81,
+  "quoteIndex": 0,
+  "actorId": "chen",
+  "voice": "Uncle_Fu",
+  "instruct": "六十岁男性，普通话，语速慢，声音低哑，像看门的老人轻声说话，口语平实。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1506650249,
+  "textSha256": "8af611edf88c79b6ecbd33010a52b22399fa19b6d4e9acd8d0f001e66c9feb0a",
+  "medium": "spoken",
+  "requestSha256": "b84ff12b3d11498fbf723d8c0fde990506871212d9dda3dba949822297b1c5ef",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "我能给你们开门不能给里面顶班",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 4.16,
+  "wallSeconds": 34.84,
+  "loudness": {
+    "input_i": "-22.86",
+    "input_tp": "-7.80",
+    "input_lra": "0.20",
+    "input_thresh": "-33.25",
+    "output_i": "-19.48",
+    "output_tp": "-4.31",
+    "output_lra": "0.30",
+    "output_thresh": "-29.82",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.52"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-tickets--correctside--q01--01/raw.wav",
+      "bytes": 399440,
+      "sha256": "e6acacbac436af6e3690f34a4c826c1f93f05c58ded8a949a4248b90a3c9f5e0"
+    },
+    "master": {
+      "path": "circuit-tickets--correctside--q01--01/master.wav",
+      "bytes": 199758,
+      "sha256": "e4a45da70694152329d9039797957c48183a5a0f105a29fd85bc68370ed3a1bc"
+    },
+    "runtime": {
+      "path": "circuit-tickets--correctside--q01--01/runtime.ogg",
+      "bytes": 32790,
+      "sha256": "c358229b97e4e7b19761b96567212e83fa868312e5de78bc6a107fc3ce3f0795"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

@@ -1,0 +1,59 @@
+{
+  "id": "circuit-seventh-night--testresult--q01--01",
+  "sceneId": "seventh-night",
+  "lineId": "seventh-night--testResult--q01--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "坏了一个东西，不用它也会来的消息，得另找。",
+  "nodeId": "testResult",
+  "start": 87,
+  "end": 108,
+  "quoteIndex": 0,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1803171896,
+  "textSha256": "36bd31168ac3a2136f93b26a7b453e47b6d1d826cda237d41d891868672869f0",
+  "medium": "spoken",
+  "requestSha256": "002bfd4310bc80c8824906eccbf7442745adc30b5ae67c7e6e72f910ea4bed7c",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "坏了一个东西 不用他也会来的消息得另找",
+    "cer": 0.055556,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 4.16,
+  "wallSeconds": 219.276,
+  "loudness": {
+    "input_i": "-21.84",
+    "input_tp": "-2.44",
+    "input_lra": "2.50",
+    "input_thresh": "-32.17",
+    "output_i": "-20.51",
+    "output_tp": "-2.00",
+    "output_lra": "2.50",
+    "output_thresh": "-30.99",
+    "normalization_type": "dynamic",
+    "target_offset": "0.51"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-seventh-night--testresult--q01--01/raw.wav",
+      "bytes": 399440,
+      "sha256": "c73636b542b4f2c8b236b8fc69390849a8ae8014486170cd61332fd508bdba03"
+    },
+    "master": {
+      "path": "circuit-seventh-night--testresult--q01--01/master.wav",
+      "bytes": 199758,
+      "sha256": "c569990a1775cd7acf4863fc203392447ae6ba06c6ef737c2a74a04dbd9c67cc"
+    },
+    "runtime": {
+      "path": "circuit-seventh-night--testresult--q01--01/runtime.ogg",
+      "bytes": 32748,
+      "sha256": "ba17181f0e0e5a2108aad5546edfc5006a06645809d0817e653fb850f0cd8190"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

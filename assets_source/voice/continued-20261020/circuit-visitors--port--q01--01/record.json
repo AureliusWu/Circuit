@@ -1,0 +1,59 @@
+{
+  "id": "circuit-visitors--port--q01--01",
+  "sceneId": "visitors",
+  "lineId": "visitors--port--q01--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "所以三号接收口，接的是文件。",
+  "nodeId": "port",
+  "start": 82,
+  "end": 96,
+  "quoteIndex": 0,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 115391548,
+  "textSha256": "72e6139951f17436ca03c9caa5ef24ec1a9147b940011271965e409fcdc07f3b",
+  "medium": "spoken",
+  "requestSha256": "effbe8a2698204795f8496bb66d63d27cb685bfa255681352944c51e97f869f2",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "所以3号接收口,接的是文件。",
+    "cer": 0.083333,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 3.44,
+  "wallSeconds": 28.922,
+  "loudness": {
+    "input_i": "-19.06",
+    "input_tp": "-2.67",
+    "input_lra": "0.10",
+    "input_thresh": "-29.50",
+    "output_i": "-19.49",
+    "output_tp": "-3.12",
+    "output_lra": "0.00",
+    "output_thresh": "-29.92",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.51"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-visitors--port--q01--01/raw.wav",
+      "bytes": 330320,
+      "sha256": "ff5e85ba810661ac795c23f8899fece7b8177b6fb3dc4ba9855e32cefb3a5488"
+    },
+    "master": {
+      "path": "circuit-visitors--port--q01--01/master.wav",
+      "bytes": 165198,
+      "sha256": "abe18eedb7986428e0e0dd4ecc750d6c7869df940b99cb8fb8c4f7810bf04074"
+    },
+    "runtime": {
+      "path": "circuit-visitors--port--q01--01/runtime.ogg",
+      "bytes": 27769,
+      "sha256": "f4ccaa6415ec0b84b5160afbbc9de3860f6b4137cfed2986b7cdddf2a42639b5"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

@@ -1,0 +1,59 @@
+{
+  "id": "circuit-thirteen-households--meidoor--q03--01",
+  "sceneId": "thirteen-households",
+  "lineId": "thirteen-households--meiDoor--q03--01",
+  "lineIndex": 0,
+  "speaker": "mei",
+  "text": "人搬走了。",
+  "nodeId": "meiDoor",
+  "start": 63,
+  "end": 68,
+  "quoteIndex": 2,
+  "actorId": "mei",
+  "voice": "Serena",
+  "instruct": "六十岁女性，普通话，声音偏低，平实缓慢，像老邻居小声嘱咐，句尾稍停，不要年轻撒娇。 只朗读给定台词，不添加词语或音效。",
+  "seed": 303419616,
+  "textSha256": "af3bfd30e2229393f939fd55041f2162bee852ba535ec1a45f4a9704551ebbf3",
+  "medium": "spoken",
+  "requestSha256": "eaa34cca8669e7898f798ff27bd5f71d75884a541d911d31e3b2b3d35da8cbaa",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "人搬走了",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 1.52,
+  "wallSeconds": 56.688,
+  "loudness": {
+    "input_i": "-29.39",
+    "input_tp": "-16.68",
+    "input_lra": "0.00",
+    "input_thresh": "-39.39",
+    "output_i": "-20.00",
+    "output_tp": "-7.29",
+    "output_lra": "0.00",
+    "output_thresh": "-30.00",
+    "normalization_type": "linear",
+    "target_offset": "-0.00"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-thirteen-households--meidoor--q03--01/raw.wav",
+      "bytes": 146000,
+      "sha256": "425fcd5cfb176aed4cb9b4ee85625e5c84eb3ec5f0388a38a9e0d6c6ff2db01a"
+    },
+    "master": {
+      "path": "circuit-thirteen-households--meidoor--q03--01/master.wav",
+      "bytes": 73038,
+      "sha256": "6224d63b6a0b1d07982c9748b10cba6fc422783bbd9642a93596e2665dbaa8b1"
+    },
+    "runtime": {
+      "path": "circuit-thirteen-households--meidoor--q03--01/runtime.ogg",
+      "bytes": 14414,
+      "sha256": "7d46e755194957fbf253b4657f490df9a1556a7be4d747175cb5b79b997c71e2"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

@@ -1,0 +1,59 @@
+{
+  "id": "circuit-thirteen-households--epiloguecall--q01--01",
+  "sceneId": "thirteen-households",
+  "lineId": "thirteen-households--epilogueCall--q01--01",
+  "lineIndex": 0,
+  "speaker": "lin",
+  "text": "历史检索还在，明天查原卷。",
+  "nodeId": "epilogueCall",
+  "start": 33,
+  "end": 46,
+  "quoteIndex": 0,
+  "actorId": "lin",
+  "voice": "Serena",
+  "instruct": "成年女性，普通话，声音干脆平稳，值班调度员在电台里说话，清楚利落，不要播音腔。 调度通话，语速稍慢，逐句吐字清楚。槐荫巷读huái yīn xiàng，在线读zài xiàn。 只朗读给定台词，不添加词语或音效。",
+  "seed": 847509586,
+  "textSha256": "c347a655f6c66a8079c42e75c576f80055daa726ea130ef04b680bd7b052a5e0",
+  "medium": "spoken",
+  "requestSha256": "4ede2e97d42a4dc71047ed27f92255bb04fb2ecd238c755a6bcb6b776d1fabc4",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "历史检索还在明天查远卷",
+    "cer": 0.090909,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 2.72,
+  "wallSeconds": 162.689,
+  "loudness": {
+    "input_i": "-25.97",
+    "input_tp": "-11.21",
+    "input_lra": "0.00",
+    "input_thresh": "-36.18",
+    "output_i": "-20.00",
+    "output_tp": "-5.24",
+    "output_lra": "0.00",
+    "output_thresh": "-30.58",
+    "normalization_type": "linear",
+    "target_offset": "0.00"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-thirteen-households--epiloguecall--q01--01/raw.wav",
+      "bytes": 261200,
+      "sha256": "bfb3bfb47d47be7e117227b215f99e8d803f3e5d65df21a1ceb7c515a8b37642"
+    },
+    "master": {
+      "path": "circuit-thirteen-households--epiloguecall--q01--01/master.wav",
+      "bytes": 130638,
+      "sha256": "8c9a3c3c9548bc195371f607d14b7e02d6ef7c2182a402b6967f5ed864298dbd"
+    },
+    "runtime": {
+      "path": "circuit-thirteen-households--epiloguecall--q01--01/runtime.ogg",
+      "bytes": 22756,
+      "sha256": "60a498255907cb37a60b14f31b545bcd6a60ab1db3d17cd17224406069d67363"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

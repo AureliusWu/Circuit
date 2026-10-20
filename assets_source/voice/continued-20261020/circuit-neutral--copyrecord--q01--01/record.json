@@ -1,0 +1,59 @@
+{
+  "id": "circuit-neutral--copyrecord--q01--01",
+  "sceneId": "neutral",
+  "lineId": "neutral--copyRecord--q01--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "和长安里那页一样。",
+  "nodeId": "copyRecord",
+  "start": 74,
+  "end": 83,
+  "quoteIndex": 0,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 19429871,
+  "textSha256": "1bffd59577f886125e98c4a4a571d072f1bebb56b761e0597d10aa7526701b6c",
+  "medium": "spoken",
+  "requestSha256": "fd0d569c114e9b1a7b1472b46b72e9795bca1f0b054f29f0150a6536f339cb3f",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "和长安里那叶一样。",
+    "cer": 0.125,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 3.6,
+  "wallSeconds": 119.018,
+  "loudness": {
+    "input_i": "-21.14",
+    "input_tp": "-4.64",
+    "input_lra": "1.00",
+    "input_thresh": "-31.14",
+    "output_i": "-20.30",
+    "output_tp": "-4.12",
+    "output_lra": "0.00",
+    "output_thresh": "-30.30",
+    "normalization_type": "dynamic",
+    "target_offset": "0.30"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-neutral--copyrecord--q01--01/raw.wav",
+      "bytes": 345680,
+      "sha256": "ec19bfdc7c070650a5978ae32dec4c1109bc62843b53d1b1b75beb5ce18836ab"
+    },
+    "master": {
+      "path": "circuit-neutral--copyrecord--q01--01/master.wav",
+      "bytes": 172878,
+      "sha256": "867d6b3e8390ea7af51cec5bb79f406b0b41b04fcf0d69a89cb50eb5a751369c"
+    },
+    "runtime": {
+      "path": "circuit-neutral--copyrecord--q01--01/runtime.ogg",
+      "bytes": 27879,
+      "sha256": "ebbdb4565e8c22e0cdf2fbb96ea19b0829a75040a521f647595fce95e8c5dae1"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

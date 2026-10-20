@@ -1,0 +1,59 @@
+{
+  "id": "circuit-backfeed--dispatch--q01--01",
+  "sceneId": "backfeed",
+  "lineId": "backfeed--dispatch--q01--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "零户，还得抢修。",
+  "nodeId": "dispatch",
+  "start": 52,
+  "end": 60,
+  "quoteIndex": 0,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1355506922,
+  "textSha256": "ec984c794d22f47b1a5e44ad4824a45101552a643b11507fc2c284cf53dfc20e",
+  "medium": "spoken",
+  "requestSha256": "b2d9caa685dc8c03b066b2012d7fc2b965109b50273671545baba4035ef0380f",
+  "attempt": 1,
+  "status": "accepted",
+  "asr": {
+    "transcript": "零戶還得搶修",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 2.08,
+  "wallSeconds": 114.669,
+  "loudness": {
+    "input_i": "-21.12",
+    "input_tp": "-6.73",
+    "input_lra": "0.00",
+    "input_thresh": "-31.38",
+    "output_i": "-19.99",
+    "output_tp": "-5.61",
+    "output_lra": "0.00",
+    "output_thresh": "-30.25",
+    "normalization_type": "linear",
+    "target_offset": "-0.01"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-backfeed--dispatch--q01--01/raw.wav",
+      "bytes": 199760,
+      "sha256": "88e021754b63b6f2ba914f22dec88dc37ea86904f16b83e3a491ba5006cb05c2"
+    },
+    "master": {
+      "path": "circuit-backfeed--dispatch--q01--01/master.wav",
+      "bytes": 99918,
+      "sha256": "c85565c398bbe882ff46367d40e0f27790fdc3ab32ca23047435dee101c157a7"
+    },
+    "runtime": {
+      "path": "circuit-backfeed--dispatch--q01--01/runtime.ogg",
+      "bytes": 17461,
+      "sha256": "d47c00dc11d06da7da3781cf4341efd5c54287e87c843aa8a6c6e68c076b71a0"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

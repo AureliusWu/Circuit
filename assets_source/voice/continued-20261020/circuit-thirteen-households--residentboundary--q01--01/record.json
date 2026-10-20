@@ -1,0 +1,59 @@
+{
+  "id": "circuit-thirteen-households--residentboundary--q01--01",
+  "sceneId": "thirteen-households",
+  "lineId": "thirteen-households--residentBoundary--q01--01",
+  "lineIndex": 0,
+  "speaker": "cheng",
+  "text": "他们搬去了城东？",
+  "nodeId": "residentBoundary",
+  "start": 65,
+  "end": 73,
+  "quoteIndex": 0,
+  "actorId": "cheng",
+  "voice": "Dylan",
+  "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 146599991,
+  "textSha256": "3bae46e6e810b1e44db478c6a54f2461646da436754572bb9ddc8b040960b7cf",
+  "medium": "spoken",
+  "requestSha256": "5c429add41d57c5a882b137a56f6e87c44f95bfbf271b4fbcecdb4e2cb6d48e7",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "他们搬去了成东",
+    "cer": 0.142857,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 1.6,
+  "wallSeconds": 10.225,
+  "loudness": {
+    "input_i": "-26.99",
+    "input_tp": "-9.13",
+    "input_lra": "0.00",
+    "input_thresh": "-36.99",
+    "output_i": "-19.99",
+    "output_tp": "-2.14",
+    "output_lra": "0.00",
+    "output_thresh": "-29.99",
+    "normalization_type": "linear",
+    "target_offset": "-0.01"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-thirteen-households--residentboundary--q01--01/raw.wav",
+      "bytes": 153680,
+      "sha256": "5bf2d824ae418046b9b3e0b26113a6a84bb8711ca0323d21ed420d29d171f600"
+    },
+    "master": {
+      "path": "circuit-thirteen-households--residentboundary--q01--01/master.wav",
+      "bytes": 76878,
+      "sha256": "db3cd8fff38309f0204b3903a60873649b5d06e439f5f2d8af089b41143f23b3"
+    },
+    "runtime": {
+      "path": "circuit-thirteen-households--residentboundary--q01--01/runtime.ogg",
+      "bytes": 15743,
+      "sha256": "62df0328d9a3e6cd016f9ec8c6f141a72438bb35911cf8d13a7051ee1a0bd565"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

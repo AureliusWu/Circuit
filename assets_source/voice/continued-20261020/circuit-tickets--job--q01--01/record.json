@@ -1,0 +1,59 @@
+{
+  "id": "circuit-tickets--job--q01--01",
+  "sceneId": "tickets",
+  "lineId": "tickets--job--q01--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "十七是后来取文件的。",
+  "nodeId": "job",
+  "start": 84,
+  "end": 94,
+  "quoteIndex": 0,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 936801561,
+  "textSha256": "7903243080ac51f6b08ae8e179178f6f789de4954cbe0ce9de03230bc1fe8490",
+  "medium": "spoken",
+  "requestSha256": "f0083c5f57978135790160c47536647b221931e856a5f6f48c566f50222e9c75",
+  "attempt": 5,
+  "status": "needs_review",
+  "asr": {
+    "transcript": "17是後來取文件的。",
+    "cer": 0.222222,
+    "polarityCountsMatch": true,
+    "passed": false
+  },
+  "duration": 2.96,
+  "wallSeconds": 117.783,
+  "loudness": {
+    "input_i": "-17.79",
+    "input_tp": "-2.36",
+    "input_lra": "0.00",
+    "input_thresh": "-27.79",
+    "output_i": "-19.99",
+    "output_tp": "-4.57",
+    "output_lra": "0.00",
+    "output_thresh": "-29.99",
+    "normalization_type": "linear",
+    "target_offset": "-0.01"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-tickets--job--q01--01/raw.wav",
+      "bytes": 284240,
+      "sha256": "9d8436064fdbe3f275a600b796f13f465d49557415655f09729dd693efe3a9e9"
+    },
+    "master": {
+      "path": "circuit-tickets--job--q01--01/master.wav",
+      "bytes": 142158,
+      "sha256": "89fd7b6693519f44ec83f65710933b3f567c1885686f7c72ed94b68016d99fd8"
+    },
+    "runtime": {
+      "path": "circuit-tickets--job--q01--01/runtime.ogg",
+      "bytes": 24499,
+      "sha256": "42497ac3eb29ddbef0df62785725b78f0c81bf0f5821e293f9a9899871eb62f2"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

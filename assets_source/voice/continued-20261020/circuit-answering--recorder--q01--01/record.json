@@ -1,0 +1,59 @@
+{
+  "id": "circuit-answering--recorder--q01--01",
+  "sceneId": "answering",
+  "lineId": "answering--recorder--q01--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "收到得晚，录得没那么晚。",
+  "nodeId": "recorder",
+  "start": 111,
+  "end": 123,
+  "quoteIndex": 0,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 782359017,
+  "textSha256": "f35af3c323353e5b5fb623f847b36f2321a0cfc868fe0c47ac91e31ae9d1f4c0",
+  "medium": "spoken",
+  "requestSha256": "239704e29d548768f56adea2e2392fcf5332bea46ab9efe428f02b1307f8b844",
+  "attempt": 1,
+  "status": "accepted",
+  "asr": {
+    "transcript": "收到的晚 錄的沒那麼晚",
+    "cer": 0.2,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 2.32,
+  "wallSeconds": 11.101,
+  "loudness": {
+    "input_i": "-19.20",
+    "input_tp": "-3.25",
+    "input_lra": "0.00",
+    "input_thresh": "-29.64",
+    "output_i": "-19.99",
+    "output_tp": "-4.05",
+    "output_lra": "0.00",
+    "output_thresh": "-30.43",
+    "normalization_type": "linear",
+    "target_offset": "-0.01"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-answering--recorder--q01--01/raw.wav",
+      "bytes": 222800,
+      "sha256": "01a5a20dd84e7fd1e2f6fa59d3a8c943c45580598a73a9986d0aa7208153f130"
+    },
+    "master": {
+      "path": "circuit-answering--recorder--q01--01/master.wav",
+      "bytes": 111438,
+      "sha256": "7c7933caf1c4ba9c576ae79ad8e0181270b16a1ec13c995907a4a940b3623908"
+    },
+    "runtime": {
+      "path": "circuit-answering--recorder--q01--01/runtime.ogg",
+      "bytes": 19851,
+      "sha256": "dbd5f94379acad456da0f2097f73ff8aa32aefa1bcd015864bad5982351c869f"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

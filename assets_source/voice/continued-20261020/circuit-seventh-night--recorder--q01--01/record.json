@@ -1,0 +1,59 @@
+{
+  "id": "circuit-seventh-night--recorder--q01--01",
+  "sceneId": "seventh-night",
+  "lineId": "seventh-night--recorder--q01--01",
+  "lineIndex": 0,
+  "speaker": "shen",
+  "text": "刚才听见你们叫这个编号。我爸以前也叫过。",
+  "nodeId": "recorder",
+  "start": 91,
+  "end": 111,
+  "quoteIndex": 0,
+  "actorId": "shen",
+  "voice": "Serena",
+  "instruct": "二十八岁女性，普通话，声音轻而疲惫，口语自然，像一晚上没睡好的人，不要哭腔。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1789703299,
+  "textSha256": "c67a8f08da3ce1176a0c9f582eefcd47d122b2017aa9ccf9b54f5a25f43111de",
+  "medium": "spoken",
+  "requestSha256": "90dd76879507c72bf12e694e84e89e80d11330f8b11ddcdda74a955e6d70172d",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "刚才听见你们叫这个编号我爸以前也叫过",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 3.84,
+  "wallSeconds": 390.221,
+  "loudness": {
+    "input_i": "-28.68",
+    "input_tp": "-12.53",
+    "input_lra": "2.00",
+    "input_thresh": "-38.98",
+    "output_i": "-19.69",
+    "output_tp": "-4.06",
+    "output_lra": "0.00",
+    "output_thresh": "-30.10",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.31"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-seventh-night--recorder--q01--01/raw.wav",
+      "bytes": 368720,
+      "sha256": "1946d14938cc00612e68efb896e538de8132c4e87c46d2374ebed8e53f8e95e0"
+    },
+    "master": {
+      "path": "circuit-seventh-night--recorder--q01--01/master.wav",
+      "bytes": 184398,
+      "sha256": "6be5d41205c6a4e9d2fdd6b198edf9d119c506682e0bbff4eb1b4e7e3eafb200"
+    },
+    "runtime": {
+      "path": "circuit-seventh-night--recorder--q01--01/runtime.ogg",
+      "bytes": 30714,
+      "sha256": "7be97fbeabcce21e74f47fada2404ab893f142d2e382b1e8290f72637a630e7a"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

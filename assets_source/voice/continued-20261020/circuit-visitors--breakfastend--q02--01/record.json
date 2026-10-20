@@ -1,0 +1,59 @@
+{
+  "id": "circuit-visitors--breakfastend--q02--01",
+  "sceneId": "visitors",
+  "lineId": "visitors--breakfastEnd--q02--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "您别立刻接着说回班里再吃。",
+  "nodeId": "breakfastEnd",
+  "start": 80,
+  "end": 93,
+  "quoteIndex": 1,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 167236267,
+  "textSha256": "15b2ac24e540164794bfefcbf2ec74161ece8d125feffdcd13e1ee5645dc2040",
+  "medium": "spoken",
+  "requestSha256": "08f2092bf4f6879b218a88003cef3b1bd58e86d732a3c344d3dcf9707659b87b",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "您別立刻接著說回班裡再吃",
+    "cer": 0.083333,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 2.4,
+  "wallSeconds": 128.72,
+  "loudness": {
+    "input_i": "-19.08",
+    "input_tp": "-2.79",
+    "input_lra": "0.00",
+    "input_thresh": "-29.08",
+    "output_i": "-20.01",
+    "output_tp": "-3.71",
+    "output_lra": "0.00",
+    "output_thresh": "-30.01",
+    "normalization_type": "linear",
+    "target_offset": "0.01"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-visitors--breakfastend--q02--01/raw.wav",
+      "bytes": 230480,
+      "sha256": "3bec976c65b421ad065d5fc346c1c0054004885ca06f5354ab686581e1c20956"
+    },
+    "master": {
+      "path": "circuit-visitors--breakfastend--q02--01/master.wav",
+      "bytes": 115278,
+      "sha256": "d6ba5585f2236ee8590271c3662a3ff21d119d467e3bc76592059f06b3bf9ff4"
+    },
+    "runtime": {
+      "path": "circuit-visitors--breakfastend--q02--01/runtime.ogg",
+      "bytes": 21711,
+      "sha256": "306f9c658308fdcbdb532d2078dd278ec6a9bc25aed33b68b8c2c25bad02fd90"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

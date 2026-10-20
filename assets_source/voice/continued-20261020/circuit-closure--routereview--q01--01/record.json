@@ -1,0 +1,59 @@
+{
+  "id": "circuit-closure--routereview--q01--01",
+  "sceneId": "closure",
+  "lineId": "closure--routeReview--q01--01",
+  "lineIndex": 0,
+  "speaker": "lin",
+  "text": "H13是户，Q07是接送等候点，R02是临时照明，L03是巡查等候，N04是原票交回。",
+  "nodeId": "routeReview",
+  "start": 21,
+  "end": 64,
+  "quoteIndex": 0,
+  "actorId": "lin",
+  "voice": "Serena",
+  "instruct": "成年女性，普通话，声音干脆平稳，值班调度员在电台里说话，清楚利落，不要播音腔。 调度通话，语速稍慢，逐句吐字清楚。槐荫巷读huái yīn xiàng，在线读zài xiàn。 只朗读给定台词，不添加词语或音效。",
+  "seed": 257550609,
+  "textSha256": "ace571c8d925d002428dcae8a2658dbcbb00ea92366dde4f9d99c77fadeddb1b",
+  "medium": "spoken",
+  "requestSha256": "2db27fd0479ca543a7b96a244937b2c32136b660be351556cfd24839192ea164",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "H13是戶,Q07是接送等候點。202是臨時照明,L03是巡查等候,N04是元票交回。",
+    "cer": 0.052632,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 10.4,
+  "wallSeconds": 80.793,
+  "loudness": {
+    "input_i": "-25.36",
+    "input_tp": "-6.99",
+    "input_lra": "3.90",
+    "input_thresh": "-35.85",
+    "output_i": "-20.22",
+    "output_tp": "-2.79",
+    "output_lra": "2.80",
+    "output_thresh": "-30.76",
+    "normalization_type": "dynamic",
+    "target_offset": "0.22"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-closure--routereview--q01--01/raw.wav",
+      "bytes": 998480,
+      "sha256": "4e5ae8a6137ba1a1031b03ead97ae09ab90bc22b557cba4492709b506c45a001"
+    },
+    "master": {
+      "path": "circuit-closure--routereview--q01--01/master.wav",
+      "bytes": 499278,
+      "sha256": "9d8ee13ddb8e779064d6101a0613c4248ea650dd9248682f970507383547b876"
+    },
+    "runtime": {
+      "path": "circuit-closure--routereview--q01--01/runtime.ogg",
+      "bytes": 76042,
+      "sha256": "2240de2ddf641384d9604a5a7bd3e9450fe5f5bce2f7c7935ae93f49fa514554"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

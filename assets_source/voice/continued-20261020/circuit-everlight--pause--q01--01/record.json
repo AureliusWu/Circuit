@@ -1,0 +1,59 @@
+{
+  "id": "circuit-everlight--pause--q01--01",
+  "sceneId": "everlight",
+  "lineId": "everlight--pause--q01--01",
+  "lineIndex": 0,
+  "speaker": "cheng",
+  "text": "那天等多久？",
+  "nodeId": "pause",
+  "start": 55,
+  "end": 61,
+  "quoteIndex": 0,
+  "actorId": "cheng",
+  "voice": "Dylan",
+  "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 161748366,
+  "textSha256": "6c53e7f1004667fca31c0618082ed33725a252607edae594b53aa09991816fcd",
+  "medium": "spoken",
+  "requestSha256": "5ae19a764847238130e5ff792e8efffe06bd1cb6d14f2c605bd47c1b26b217e9",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "那天等多久",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 1.76,
+  "wallSeconds": 92.612,
+  "loudness": {
+    "input_i": "-23.32",
+    "input_tp": "-4.52",
+    "input_lra": "0.00",
+    "input_thresh": "-33.32",
+    "output_i": "-20.80",
+    "output_tp": "-2.00",
+    "output_lra": "0.00",
+    "output_thresh": "-30.80",
+    "normalization_type": "linear",
+    "target_offset": "0.80"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-everlight--pause--q01--01/raw.wav",
+      "bytes": 169040,
+      "sha256": "16d3182a2a68f61396842fb937bc61792a607f94b6dfcb846612b0c3a0a486eb"
+    },
+    "master": {
+      "path": "circuit-everlight--pause--q01--01/master.wav",
+      "bytes": 84558,
+      "sha256": "366f7b85f9b550f8b24450790ec0d0cda694e7e144b918a4c0726bad971d0b90"
+    },
+    "runtime": {
+      "path": "circuit-everlight--pause--q01--01/runtime.ogg",
+      "bytes": 16999,
+      "sha256": "33a9e1a158bf4fe0d2d5401dfbe7c772aa516bf7f934bec9b64d4aa4c8b39edb"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

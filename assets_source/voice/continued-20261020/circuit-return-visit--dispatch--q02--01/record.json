@@ -1,0 +1,112 @@
+{
+  "id": "circuit-return-visit--dispatch--q02--01",
+  "sceneId": "return-visit",
+  "lineId": "return-visit--dispatch--q02--01",
+  "lineIndex": 0,
+  "speaker": "lin",
+  "text": "物业说他们听见你了。",
+  "nodeId": "dispatch",
+  "start": 75,
+  "end": 85,
+  "quoteIndex": 1,
+  "legacy": {
+    "id": "v01-lin",
+    "character": "lin",
+    "speaker": "Serena",
+    "instruct": "成年女性，普通话，声音干脆平稳，值班调度员在电台里说话，清楚利落，不要播音腔。",
+    "text": "物业说他们听见你了。",
+    "seed": 120031,
+    "bindings": [
+      {
+        "chapter": "return-visit",
+        "node": "dispatch"
+      }
+    ],
+    "requestSha256": "69b6bccdf1489916168e671fc6dc3b45f51b85fc1792e7f30ae616eb73653448",
+    "duration": 1.68,
+    "generationSeconds": 9.328,
+    "loudnessInput": {
+      "input_i": "-25.41",
+      "input_tp": "-10.14",
+      "input_lra": "0.00",
+      "input_thresh": "-35.41",
+      "output_i": "-19.99",
+      "output_tp": "-4.74",
+      "output_lra": "0.00",
+      "output_thresh": "-29.99",
+      "normalization_type": "linear",
+      "target_offset": "-0.01"
+    },
+    "files": [
+      {
+        "path": "assets_source/audio/v1.2.0/v01-lin-raw.wav",
+        "bytes": 80684,
+        "sha256": "9def026c65e87b175193c83c168df711d75fa0cb8d3c6e4f41ffafb4f23c11b7"
+      },
+      {
+        "path": "assets_source/audio/v1.2.0/v01-lin.wav",
+        "bytes": 80718,
+        "sha256": "9b68336a365182485d57a634af06b32c27efc44785d6f8e18592969922fc0679"
+      },
+      {
+        "path": "public/audio/voice/v01-lin.mp3",
+        "bytes": 21069,
+        "sha256": "428e8037942411d263d5f9e4aa760b9a32a91780103468f42e3fce970324f4d1"
+      }
+    ],
+    "asr": {
+      "id": "v01-lin",
+      "mp3Sha256": "428e8037942411d263d5f9e4aa760b9a32a91780103468f42e3fce970324f4d1",
+      "expected": "物业说他们听见你了。",
+      "transcript": "物业说他们听见你了。",
+      "cer": 0,
+      "polarityCountsMatch": true,
+      "status": "passed"
+    },
+    "asrModel": "Systran/faster-whisper-large-v3",
+    "evidencePath": "docs/audio/voice-asr.json",
+    "evidenceSha256": "25d0e31c3decd5262d92349d6571ec67ac58723ea00c40005ddff4d8b9a58334"
+  },
+  "actorId": "lin",
+  "voice": "Serena",
+  "instruct": "成年女性，普通话，声音干脆平稳，值班调度员在电台里说话，清楚利落，不要播音腔。 调度通话，语速稍慢，逐句吐字清楚。槐荫巷读huái yīn xiàng，在线读zài xiàn。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1007289489,
+  "textSha256": "3c7fce52ea98bc06f9ce5b0e577316458314de313a3bc5d6b821af4ed908f50b",
+  "medium": "spoken",
+  "requestSha256": "371fa05d0038ccd82b9c5d3296aa44f00ae47b390a8d7a97c6ffabf7e837d335",
+  "status": "accepted",
+  "productionMethod": "preserved_exact_legacy_bytes",
+  "duration": 1.68,
+  "actualGenerationRequest": {
+    "id": "v01-lin",
+    "speaker": "Serena",
+    "instruct": "成年女性，普通话，声音干脆平稳，值班调度员在电台里说话，清楚利落，不要播音腔。",
+    "seed": 120031,
+    "requestSha256": "69b6bccdf1489916168e671fc6dc3b45f51b85fc1792e7f30ae616eb73653448"
+  },
+  "asr": {
+    "passed": true,
+    "transcript": "物业说他们听见你了。",
+    "cer": 0,
+    "polarityCountsMatch": true,
+    "model": "Systran/faster-whisper-large-v3"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-return-visit--dispatch--q02--01/raw.wav",
+      "bytes": 80684,
+      "sha256": "9def026c65e87b175193c83c168df711d75fa0cb8d3c6e4f41ffafb4f23c11b7"
+    },
+    "master": {
+      "path": "circuit-return-visit--dispatch--q02--01/master.wav",
+      "bytes": 80718,
+      "sha256": "9b68336a365182485d57a634af06b32c27efc44785d6f8e18592969922fc0679"
+    },
+    "runtime": {
+      "path": "circuit-return-visit--dispatch--q02--01/runtime.mp3",
+      "bytes": 21069,
+      "sha256": "428e8037942411d263d5f9e4aa760b9a32a91780103468f42e3fce970324f4d1"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

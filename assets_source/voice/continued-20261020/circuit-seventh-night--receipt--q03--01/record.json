@@ -1,0 +1,59 @@
+{
+  "id": "circuit-seventh-night--receipt--q03--01",
+  "sceneId": "seventh-night",
+  "lineId": "seventh-night--receipt--q03--01",
+  "lineIndex": 0,
+  "speaker": "shen",
+  "text": "这格怎么空着？",
+  "nodeId": "receipt",
+  "start": 68,
+  "end": 75,
+  "quoteIndex": 2,
+  "actorId": "shen",
+  "voice": "Serena",
+  "instruct": "二十八岁女性，普通话，声音轻而疲惫，口语自然，像一晚上没睡好的人，不要哭腔。 只朗读给定台词，不添加词语或音效。",
+  "seed": 684453499,
+  "textSha256": "4aa5cd5c54e897103451ba2821d989df9bdeabe8bfa88b1b1fafc0501a88a233",
+  "medium": "spoken",
+  "requestSha256": "87a0f75eb050f5bf36d7233dd703bde9289111bf9a372ac2fb25a7986c84dc4f",
+  "attempt": 1,
+  "status": "accepted",
+  "asr": {
+    "transcript": "这隔怎么空着",
+    "cer": 0.166667,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 1.28,
+  "wallSeconds": 139.694,
+  "loudness": {
+    "input_i": "-27.61",
+    "input_tp": "-12.39",
+    "input_lra": "0.00",
+    "input_thresh": "-37.61",
+    "output_i": "-19.98",
+    "output_tp": "-4.78",
+    "output_lra": "0.00",
+    "output_thresh": "-29.98",
+    "normalization_type": "linear",
+    "target_offset": "-0.02"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-seventh-night--receipt--q03--01/raw.wav",
+      "bytes": 122960,
+      "sha256": "b9098952d4ba2df6ba0538d8c4216a71c6cfea6648902677f2ce08e0e57b568a"
+    },
+    "master": {
+      "path": "circuit-seventh-night--receipt--q03--01/master.wav",
+      "bytes": 61518,
+      "sha256": "2c8925087ae17107ac3e78b09748c735b8f8b660b93c241c229a7bc4873f8502"
+    },
+    "runtime": {
+      "path": "circuit-seventh-night--receipt--q03--01/runtime.ogg",
+      "bytes": 13035,
+      "sha256": "1a63a64630d38fa709048d7bfcc794187b2f24d44f0c16dfe4bfe25418c7c490"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

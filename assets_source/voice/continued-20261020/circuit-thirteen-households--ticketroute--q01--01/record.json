@@ -1,0 +1,59 @@
+{
+  "id": "circuit-thirteen-households--ticketroute--q01--01",
+  "sceneId": "thirteen-households",
+  "lineId": "thirteen-households--ticketRoute--q01--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "这不是没画完，是另一页不在。",
+  "nodeId": "ticketRoute",
+  "start": 47,
+  "end": 61,
+  "quoteIndex": 0,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 197002050,
+  "textSha256": "3ce00b4e03904bd62e55197b2676e821f38bf903455c481cfe773dc749cf1510",
+  "medium": "spoken",
+  "requestSha256": "e6c63d7fdf753c491edf8f7467e2f0e31a9ed0b8e39071ba3c1b261d8bdb7813",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "這不是沒畫完,是另一頁不在",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 2.72,
+  "wallSeconds": 12.432,
+  "loudness": {
+    "input_i": "-20.19",
+    "input_tp": "-2.32",
+    "input_lra": "0.00",
+    "input_thresh": "-30.74",
+    "output_i": "-20.02",
+    "output_tp": "-2.13",
+    "output_lra": "0.00",
+    "output_thresh": "-30.58",
+    "normalization_type": "linear",
+    "target_offset": "0.02"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-thirteen-households--ticketroute--q01--01/raw.wav",
+      "bytes": 261200,
+      "sha256": "850a69f7a6df1fa61e3f56aca2a89778bc46a50844b431ade02282b3553aab41"
+    },
+    "master": {
+      "path": "circuit-thirteen-households--ticketroute--q01--01/master.wav",
+      "bytes": 130638,
+      "sha256": "16864bf1b0b93e4f425334cab595016d6dca2b095d615730d6269c6c0a957eeb"
+    },
+    "runtime": {
+      "path": "circuit-thirteen-households--ticketroute--q01--01/runtime.ogg",
+      "bytes": 22463,
+      "sha256": "1f448a95eae9887a57a0bc6f106405b76e9deb62b1c8da83b31052e525e3d9a1"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

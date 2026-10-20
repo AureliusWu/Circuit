@@ -1,0 +1,59 @@
+{
+  "id": "circuit-backfeed--filerequest--q01--01",
+  "sceneId": "backfeed",
+  "lineId": "backfeed--fileRequest--q01--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "袋子不是这条线的移交。",
+  "nodeId": "fileRequest",
+  "start": 69,
+  "end": 80,
+  "quoteIndex": 0,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1779127832,
+  "textSha256": "4bb08bbe52184dfa17aa77816b7806488c557dc8ba28d4f292309a0004ffe1bd",
+  "medium": "spoken",
+  "requestSha256": "41bead883843e18e18a51c76b41e47a3576a74f4beb66237cec1d1435da3ca76",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "带子不是这条线的移交",
+    "cer": 0.1,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 1.76,
+  "wallSeconds": 91.711,
+  "loudness": {
+    "input_i": "-17.74",
+    "input_tp": "-2.72",
+    "input_lra": "0.00",
+    "input_thresh": "-27.74",
+    "output_i": "-20.02",
+    "output_tp": "-4.98",
+    "output_lra": "0.00",
+    "output_thresh": "-30.02",
+    "normalization_type": "linear",
+    "target_offset": "0.02"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-backfeed--filerequest--q01--01/raw.wav",
+      "bytes": 169040,
+      "sha256": "9dd15389648832d36e27f9dd04f7751b95bf81ed40a4fee64aa919393459b2a0"
+    },
+    "master": {
+      "path": "circuit-backfeed--filerequest--q01--01/master.wav",
+      "bytes": 84558,
+      "sha256": "b02732f1b9192c9b8d9df8bf623eab081fcaddf2f021cf5dec41dd7c8864a5d2"
+    },
+    "runtime": {
+      "path": "circuit-backfeed--filerequest--q01--01/runtime.ogg",
+      "bytes": 16619,
+      "sha256": "44e66990d53ae55a4ecc9f36d6638d6351bc0c144fcd1b268ad6b89d66a67d69"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

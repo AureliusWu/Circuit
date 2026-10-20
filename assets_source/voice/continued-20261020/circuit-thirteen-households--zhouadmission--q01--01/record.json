@@ -1,0 +1,59 @@
+{
+  "id": "circuit-thirteen-households--zhouadmission--q01--01",
+  "sceneId": "thirteen-households",
+  "lineId": "thirteen-households--zhouAdmission--q01--01",
+  "lineIndex": 0,
+  "speaker": "zhou",
+  "text": "我知道不对。",
+  "nodeId": "zhouAdmission",
+  "start": 11,
+  "end": 17,
+  "quoteIndex": 0,
+  "actorId": "zhou",
+  "voice": "Uncle_Fu",
+  "instruct": "五十岁男性，普通话，声音低沉略沙哑，克制缓慢，像夜班老工人，语气自然，不要表演悲伤。 语速稍慢，逐字说清楚，季宁读jì níng。句尾完整，不要吞字。 只朗读给定台词，不添加词语或音效。",
+  "seed": 912146761,
+  "textSha256": "f68bb46480a0528414725568a684ab20762e2c818369459ca40702ae221f3743",
+  "medium": "spoken",
+  "requestSha256": "ea5c09949225cda3d060271678ef48475972deaee841a042c49f5c2a277e160c",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "啊 我知道不對",
+    "cer": 0.2,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 3.04,
+  "wallSeconds": 170.416,
+  "loudness": {
+    "input_i": "-31.61",
+    "input_tp": "-14.33",
+    "input_lra": "0.30",
+    "input_thresh": "-42.43",
+    "output_i": "-18.93",
+    "output_tp": "-2.00",
+    "output_lra": "0.00",
+    "output_thresh": "-29.80",
+    "normalization_type": "dynamic",
+    "target_offset": "-1.07"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-thirteen-households--zhouadmission--q01--01/raw.wav",
+      "bytes": 291920,
+      "sha256": "c781063e4dc400ac79fba0f79fedad928d2e120d52039a3f08c9bedb33827efd"
+    },
+    "master": {
+      "path": "circuit-thirteen-households--zhouadmission--q01--01/master.wav",
+      "bytes": 145998,
+      "sha256": "b72c6bf40d0f2f4f674385f3beb62fabbe4fb6a35275ee5cb6fe8e84e698d7a5"
+    },
+    "runtime": {
+      "path": "circuit-thirteen-households--zhouadmission--q01--01/runtime.ogg",
+      "bytes": 24889,
+      "sha256": "a9b8760f40e4de615b05b2890dc8b40a982bb61c52165ef2714790887483d485"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

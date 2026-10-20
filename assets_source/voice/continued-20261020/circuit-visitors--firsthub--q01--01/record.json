@@ -1,0 +1,59 @@
+{
+  "id": "circuit-visitors--firsthub--q01--01",
+  "sceneId": "visitors",
+  "lineId": "visitors--firstHub--q01--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "先别叠着，等会儿看不出是哪年的。",
+  "nodeId": "firstHub",
+  "start": 64,
+  "end": 80,
+  "quoteIndex": 0,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1648563550,
+  "textSha256": "9db57e39f28e71db8a1b25e0b07374caa30b46b0f484686f85823e1681978a01",
+  "medium": "spoken",
+  "requestSha256": "6c133515ba0a1916ca9c636fb6916018723e92fdd6f519897bc0108edd6d4ef7",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "先别叠着,等会看不出是哪年的",
+    "cer": 0.071429,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 4.08,
+  "wallSeconds": 198.514,
+  "loudness": {
+    "input_i": "-20.68",
+    "input_tp": "-6.01",
+    "input_lra": "0.60",
+    "input_thresh": "-31.40",
+    "output_i": "-18.79",
+    "output_tp": "-4.32",
+    "output_lra": "0.20",
+    "output_thresh": "-29.29",
+    "normalization_type": "dynamic",
+    "target_offset": "-1.21"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-visitors--firsthub--q01--01/raw.wav",
+      "bytes": 391760,
+      "sha256": "844acf6e1cac32394c9f30852372a0167f3cad2e5c357d5a909a89c90a6d7be5"
+    },
+    "master": {
+      "path": "circuit-visitors--firsthub--q01--01/master.wav",
+      "bytes": 195918,
+      "sha256": "16caad57213eb386e4a7b7186f12c5a712518c127965fe2f2c086db65031a4ad"
+    },
+    "runtime": {
+      "path": "circuit-visitors--firsthub--q01--01/runtime.ogg",
+      "bytes": 31849,
+      "sha256": "39afe89c1118a2506a6e02f5a75e436874294bfb2cc9898bad432e08e4c9d794"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

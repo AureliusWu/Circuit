@@ -1,0 +1,59 @@
+{
+  "id": "circuit-tickets--recordpaper--q02--01",
+  "sceneId": "tickets",
+  "lineId": "tickets--recordPaper--q02--01",
+  "lineIndex": 0,
+  "speaker": "cheng",
+  "text": "朝椅子。",
+  "nodeId": "recordPaper",
+  "start": 51,
+  "end": 55,
+  "quoteIndex": 1,
+  "actorId": "cheng",
+  "voice": "Dylan",
+  "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 619874408,
+  "textSha256": "848befa2662765f0eb9f3ae9501989756b357baee598a4304aefd259932dcebc",
+  "medium": "spoken",
+  "requestSha256": "2ea90ebc96a3dd024ed19933b0f02b9569d46d150dbba1fd4ecace0385c699a2",
+  "attempt": 5,
+  "status": "needs_review",
+  "asr": {
+    "transcript": "这影子",
+    "cer": 0.666667,
+    "polarityCountsMatch": true,
+    "passed": false
+  },
+  "duration": 0.72,
+  "wallSeconds": 32.098,
+  "loudness": {
+    "input_i": "-22.54",
+    "input_tp": "-4.03",
+    "input_lra": "0.00",
+    "input_thresh": "-32.54",
+    "output_i": "-20.49",
+    "output_tp": "-2.00",
+    "output_lra": "0.00",
+    "output_thresh": "-30.49",
+    "normalization_type": "linear",
+    "target_offset": "0.49"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-tickets--recordpaper--q02--01/raw.wav",
+      "bytes": 69200,
+      "sha256": "3a00468481ab5ed781cacc007c6735e5d85b44c6008e4b01cff4f69c16067cb6"
+    },
+    "master": {
+      "path": "circuit-tickets--recordpaper--q02--01/master.wav",
+      "bytes": 34638,
+      "sha256": "34882f176e01523d01ea690eafd5af381ef093f2b5b780ab77c432ef6d2624e4"
+    },
+    "runtime": {
+      "path": "circuit-tickets--recordpaper--q02--01/runtime.ogg",
+      "bytes": 8934,
+      "sha256": "3ec2577cfcfd2b30eeef0bbc926dc4dfd388c2e3baac2aaafb15f3cdb6bb4eda"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

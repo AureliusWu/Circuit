@@ -1,0 +1,112 @@
+{
+  "id": "circuit-closure--mei--q01--01",
+  "sceneId": "closure",
+  "lineId": "closure--mei--q01--01",
+  "lineIndex": 0,
+  "speaker": "mei",
+  "text": "灯没再亮，后门也没再响。",
+  "nodeId": "mei",
+  "start": 37,
+  "end": 49,
+  "quoteIndex": 0,
+  "legacy": {
+    "id": "c00-mei",
+    "character": "mei",
+    "speaker": "Serena",
+    "instruct": "六十岁女性，普通话，声音偏低，平实缓慢，像老邻居小声嘱咐，句尾稍停，不要年轻撒娇。",
+    "text": "灯没再亮，后门也没再响。",
+    "seed": 120030,
+    "bindings": [
+      {
+        "chapter": "closure",
+        "node": "mei"
+      }
+    ],
+    "requestSha256": "1c76b0a714675a8834c5f70c6ad07009592af1ad94f9f2f2ec5947faaa9ae976",
+    "duration": 3.04,
+    "generationSeconds": 15.661,
+    "loudnessInput": {
+      "input_i": "-27.04",
+      "input_tp": "-9.32",
+      "input_lra": "0.10",
+      "input_thresh": "-37.19",
+      "output_i": "-19.55",
+      "output_tp": "-2.00",
+      "output_lra": "0.00",
+      "output_thresh": "-29.70",
+      "normalization_type": "dynamic",
+      "target_offset": "-0.45"
+    },
+    "files": [
+      {
+        "path": "assets_source/audio/v1.2.0/c00-mei-raw.wav",
+        "bytes": 145964,
+        "sha256": "bc9fa7195c44a4bfe3696e694100f676c74778127a327fb244581beaba11be33"
+      },
+      {
+        "path": "assets_source/audio/v1.2.0/c00-mei.wav",
+        "bytes": 145998,
+        "sha256": "6f45f131004164ed7698a5cf3ceafb0e337dfebeaf88498730f10b31d4ce3195"
+      },
+      {
+        "path": "public/audio/voice/c00-mei.mp3",
+        "bytes": 37485,
+        "sha256": "3cd09cad3a9b3d6da681eb8ff06e48e4046e599283a48b1b81c67fb3ba099999"
+      }
+    ],
+    "asr": {
+      "id": "c00-mei",
+      "mp3Sha256": "3cd09cad3a9b3d6da681eb8ff06e48e4046e599283a48b1b81c67fb3ba099999",
+      "expected": "灯没再亮，后门也没再响。",
+      "transcript": "灯没再亮,后门也没再响。",
+      "cer": 0,
+      "polarityCountsMatch": true,
+      "status": "passed"
+    },
+    "asrModel": "Systran/faster-whisper-large-v3",
+    "evidencePath": "docs/audio/voice-asr.json",
+    "evidenceSha256": "25d0e31c3decd5262d92349d6571ec67ac58723ea00c40005ddff4d8b9a58334"
+  },
+  "actorId": "mei",
+  "voice": "Serena",
+  "instruct": "六十岁女性，普通话，声音偏低，平实缓慢，像老邻居小声嘱咐，句尾稍停，不要年轻撒娇。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1397794346,
+  "textSha256": "71860d932bfdfe0c72775d63cb4b886db9fa1308b581b6f4debd9de022d03b7d",
+  "medium": "spoken",
+  "requestSha256": "ee001369d8768773706446607c00d0ed86ffb17cac2e7af4961e28681630d972",
+  "status": "accepted",
+  "productionMethod": "preserved_exact_legacy_bytes",
+  "duration": 3.04,
+  "actualGenerationRequest": {
+    "id": "c00-mei",
+    "speaker": "Serena",
+    "instruct": "六十岁女性，普通话，声音偏低，平实缓慢，像老邻居小声嘱咐，句尾稍停，不要年轻撒娇。",
+    "seed": 120030,
+    "requestSha256": "1c76b0a714675a8834c5f70c6ad07009592af1ad94f9f2f2ec5947faaa9ae976"
+  },
+  "asr": {
+    "passed": true,
+    "transcript": "灯没再亮,后门也没再响。",
+    "cer": 0,
+    "polarityCountsMatch": true,
+    "model": "Systran/faster-whisper-large-v3"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-closure--mei--q01--01/raw.wav",
+      "bytes": 145964,
+      "sha256": "bc9fa7195c44a4bfe3696e694100f676c74778127a327fb244581beaba11be33"
+    },
+    "master": {
+      "path": "circuit-closure--mei--q01--01/master.wav",
+      "bytes": 145998,
+      "sha256": "6f45f131004164ed7698a5cf3ceafb0e337dfebeaf88498730f10b31d4ce3195"
+    },
+    "runtime": {
+      "path": "circuit-closure--mei--q01--01/runtime.mp3",
+      "bytes": 37485,
+      "sha256": "3cd09cad3a9b3d6da681eb8ff06e48e4046e599283a48b1b81c67fb3ba099999"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

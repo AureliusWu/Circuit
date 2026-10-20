@@ -1,0 +1,59 @@
+{
+  "id": "circuit-neutral--scope--q02--01",
+  "sceneId": "neutral",
+  "lineId": "neutral--scope--q02--01",
+  "lineIndex": 0,
+  "speaker": "cheng",
+  "text": "照口述留着，设备各自查。",
+  "nodeId": "scope",
+  "start": 56,
+  "end": 68,
+  "quoteIndex": 1,
+  "actorId": "cheng",
+  "voice": "Dylan",
+  "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 73720327,
+  "textSha256": "277f386f9bd7d95a3c88b16d464633167ce9523fa9120cf1b3add4c4bd9c400f",
+  "medium": "spoken",
+  "requestSha256": "12205f5f1fc0d5c507e405cdd1e9a175e269f25a58431bd64a826ffbc427b030",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "照口述留着,设备各自查",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 2.16,
+  "wallSeconds": 76.894,
+  "loudness": {
+    "input_i": "-26.19",
+    "input_tp": "-8.44",
+    "input_lra": "0.00",
+    "input_thresh": "-36.67",
+    "output_i": "-20.00",
+    "output_tp": "-2.25",
+    "output_lra": "0.00",
+    "output_thresh": "-30.48",
+    "normalization_type": "linear",
+    "target_offset": "0.00"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-neutral--scope--q02--01/raw.wav",
+      "bytes": 207440,
+      "sha256": "9d74c52cabee2855689410378b4db84aa2575b74418e5ad1aebf093ee6743798"
+    },
+    "master": {
+      "path": "circuit-neutral--scope--q02--01/master.wav",
+      "bytes": 103758,
+      "sha256": "a02ba967c33ec11282fca4ecf54efa1356922fe2494d78a2ddf5c81cd3f5c74b"
+    },
+    "runtime": {
+      "path": "circuit-neutral--scope--q02--01/runtime.ogg",
+      "bytes": 20063,
+      "sha256": "718bed3f27d69183512397f551b78b491c1422781d635ea77bc9b604e2408987"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

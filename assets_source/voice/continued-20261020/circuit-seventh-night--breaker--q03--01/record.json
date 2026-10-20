@@ -1,0 +1,59 @@
+{
+  "id": "circuit-seventh-night--breaker--q03--01",
+  "sceneId": "seventh-night",
+  "lineId": "seventh-night--breaker--q03--01",
+  "lineIndex": 0,
+  "speaker": "shen",
+  "text": "我还把插头收进抽屉，怕母亲再插。",
+  "nodeId": "breaker",
+  "start": 102,
+  "end": 118,
+  "quoteIndex": 2,
+  "actorId": "shen",
+  "voice": "Serena",
+  "instruct": "二十八岁女性，普通话，声音轻而疲惫，口语自然，像一晚上没睡好的人，不要哭腔。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1127072436,
+  "textSha256": "f6d994f775fce6b849eaa0bb1109de87e02f5ddbe65b70cf4432a9eea74549cf",
+  "medium": "spoken",
+  "requestSha256": "17ea67ab775bc14b60dee36ff4a233557d6a0018bd1a28e92cd4b433f36ac5d9",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "我还把插头收进抽铁怕母亲再查",
+    "cer": 0.142857,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 2.72,
+  "wallSeconds": 135.598,
+  "loudness": {
+    "input_i": "-27.07",
+    "input_tp": "-7.81",
+    "input_lra": "0.00",
+    "input_thresh": "-37.07",
+    "output_i": "-21.25",
+    "output_tp": "-2.00",
+    "output_lra": "0.00",
+    "output_thresh": "-31.25",
+    "normalization_type": "linear",
+    "target_offset": "1.25"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-seventh-night--breaker--q03--01/raw.wav",
+      "bytes": 261200,
+      "sha256": "5c9ce955eaea90288b867e074610a3ae9034c36fa722aa50d2c0795d29c7f061"
+    },
+    "master": {
+      "path": "circuit-seventh-night--breaker--q03--01/master.wav",
+      "bytes": 130638,
+      "sha256": "baaaa5d4fcac87da016547af61091f9203dbf3f6da54b1e850393facb8c7d5d1"
+    },
+    "runtime": {
+      "path": "circuit-seventh-night--breaker--q03--01/runtime.ogg",
+      "bytes": 23959,
+      "sha256": "7dfc47799f08b365c8a3dd7e571c9c801275c9bef1928fbd589a92f696993832"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

@@ -1,0 +1,59 @@
+{
+  "id": "circuit-everlight--pause--q03--01",
+  "sceneId": "everlight",
+  "lineId": "everlight--pause--q03--01",
+  "lineIndex": 0,
+  "speaker": "cheng",
+  "text": "他从哪边下来？",
+  "nodeId": "pause",
+  "start": 72,
+  "end": 79,
+  "quoteIndex": 2,
+  "actorId": "cheng",
+  "voice": "Dylan",
+  "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1112499184,
+  "textSha256": "6bd1dd938c9d0814e6344aa892e4751a267d469d1eba139661fc93bb204c9b2e",
+  "medium": "spoken",
+  "requestSha256": "bca1a00645083e08f12d5c2739772f575498d98e968b317c98f3e95a6b85acb6",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "他从哪边下来",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 1.44,
+  "wallSeconds": 7.113,
+  "loudness": {
+    "input_i": "-22.65",
+    "input_tp": "-6.36",
+    "input_lra": "0.00",
+    "input_thresh": "-32.65",
+    "output_i": "-20.03",
+    "output_tp": "-3.71",
+    "output_lra": "0.00",
+    "output_thresh": "-30.03",
+    "normalization_type": "linear",
+    "target_offset": "0.03"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-everlight--pause--q03--01/raw.wav",
+      "bytes": 138320,
+      "sha256": "68ec2ac297cf256a742ed83a5e4d280e0d192d9bea446df641c4c200372a29e0"
+    },
+    "master": {
+      "path": "circuit-everlight--pause--q03--01/master.wav",
+      "bytes": 69198,
+      "sha256": "f3c3dd6d1833d81bc3cabf3c9196af78d90427e3cc8c64757e36787112d7ae59"
+    },
+    "runtime": {
+      "path": "circuit-everlight--pause--q03--01/runtime.ogg",
+      "bytes": 14839,
+      "sha256": "60c8ca0a9b8fb4361c088d36ec5eabcbfc036ca62078c1d6aedeab7571946774"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

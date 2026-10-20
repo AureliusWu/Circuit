@@ -1,0 +1,58 @@
+{
+  "id": "circuit-answering--emptyreply--extra2--01",
+  "sceneId": "answering",
+  "lineId": "answering--emptyReply--extra2--01",
+  "lineIndex": 0,
+  "speaker": "unknown-radio",
+  "text": "罗禾",
+  "nodeId": "emptyReply",
+  "start": 75,
+  "end": 77,
+  "medium": "recorded",
+  "actorId": "unknown-radio",
+  "voice": "Dylan",
+  "instruct": "成年男性，普通话，来源未识别的短促电台录音，清楚克制，声调平，不夸张，不要添加台词。",
+  "seed": 996155925,
+  "textSha256": "543b4d3eed3ce9d005f3e1e8163b113fb7d3cf5dd491fd10268d4b76e316bccc",
+  "requestSha256": "b509882882a7e8670f39edc382ac360f31b85632fcab4e9fc1359c0c3325e309",
+  "attempt": 5,
+  "status": "needs_review",
+  "asr": {
+    "transcript": "羅河",
+    "cer": 0.5,
+    "polarityCountsMatch": true,
+    "passed": false
+  },
+  "duration": 0.8,
+  "wallSeconds": 45.261,
+  "loudness": {
+    "input_i": "-25.02",
+    "input_tp": "-8.05",
+    "input_lra": "0.00",
+    "input_thresh": "-35.02",
+    "output_i": "-20.02",
+    "output_tp": "-3.02",
+    "output_lra": "0.00",
+    "output_thresh": "-30.02",
+    "normalization_type": "linear",
+    "target_offset": "0.02"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-answering--emptyreply--extra2--01/raw.wav",
+      "bytes": 76880,
+      "sha256": "d5f0e443abff5d6ab795ef4f3a8065a0dc9c57106279a7b62d3cca2b7aa915ef"
+    },
+    "master": {
+      "path": "circuit-answering--emptyreply--extra2--01/master.wav",
+      "bytes": 38478,
+      "sha256": "5502368d21adf088303ca5235992d9e3fe80e08c063c950d4c4eb564c4765374"
+    },
+    "runtime": {
+      "path": "circuit-answering--emptyreply--extra2--01/runtime.ogg",
+      "bytes": 9027,
+      "sha256": "38fcd9a566ffc2c92e2e75f30e28eb51d52975584b9eae97300042e2e3a09ff8"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

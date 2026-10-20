@@ -1,0 +1,59 @@
+{
+  "id": "circuit-seventh-night--compare--q01--01",
+  "sceneId": "seventh-night",
+  "lineId": "seventh-night--compare--q01--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "灯不灭，也得记，对吧？",
+  "nodeId": "compare",
+  "start": 65,
+  "end": 76,
+  "quoteIndex": 0,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1856574443,
+  "textSha256": "b99f87b4e156f03e9e732630c4679bf331598b166c4cb2ddab869bc42a59de0f",
+  "medium": "spoken",
+  "requestSha256": "1f373aa2bda5352aca4c6f198a93734799d969a1b2dae67cc2511c444b8ba19f",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "灯不灭也得记 对吧",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 3.84,
+  "wallSeconds": 21.921,
+  "loudness": {
+    "input_i": "-19.31",
+    "input_tp": "-5.47",
+    "input_lra": "1.20",
+    "input_thresh": "-30.22",
+    "output_i": "-18.58",
+    "output_tp": "-4.48",
+    "output_lra": "0.00",
+    "output_thresh": "-29.72",
+    "normalization_type": "dynamic",
+    "target_offset": "-1.42"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-seventh-night--compare--q01--01/raw.wav",
+      "bytes": 368720,
+      "sha256": "f55983234d71abf80e80aab524ff2700915b5b20b8ccc4d086114cc80b5170ef"
+    },
+    "master": {
+      "path": "circuit-seventh-night--compare--q01--01/master.wav",
+      "bytes": 184398,
+      "sha256": "ac85721de08c08ce4917bedf65a13baa0b03ccf6b40f6dfcb30336c945ba56e4"
+    },
+    "runtime": {
+      "path": "circuit-seventh-night--compare--q01--01/runtime.ogg",
+      "bytes": 29492,
+      "sha256": "f1522ccb3ea22b1408c4ba6701cd89e97eb449b09b7a24b1202d7f36bc2b540b"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

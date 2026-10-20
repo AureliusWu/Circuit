@@ -1,0 +1,59 @@
+{
+  "id": "circuit-closure--meal--q01--01",
+  "sceneId": "closure",
+  "lineId": "closure--meal--q01--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "这回能吃了吧？",
+  "nodeId": "meal",
+  "start": 27,
+  "end": 34,
+  "quoteIndex": 0,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 198516753,
+  "textSha256": "076be4cafe69f284c553691374433a7f86142b525b46c83c2c86d2f5f1bc60be",
+  "medium": "spoken",
+  "requestSha256": "4b8630bff07d87eb2c4887af751ce2a7ff09fdaa8717c17180da4c97a4100ec6",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "这回能吃了吧",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 1.36,
+  "wallSeconds": 14.546,
+  "loudness": {
+    "input_i": "-17.90",
+    "input_tp": "-3.39",
+    "input_lra": "0.00",
+    "input_thresh": "-27.90",
+    "output_i": "-20.00",
+    "output_tp": "-5.49",
+    "output_lra": "0.00",
+    "output_thresh": "-30.00",
+    "normalization_type": "linear",
+    "target_offset": "0.00"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-closure--meal--q01--01/raw.wav",
+      "bytes": 130640,
+      "sha256": "87e1a594598c59eeaf1bd2fde74478c366018c37aac4838b7f0976cc88d381f1"
+    },
+    "master": {
+      "path": "circuit-closure--meal--q01--01/master.wav",
+      "bytes": 65358,
+      "sha256": "394376f8aee41605295599eaded0d51cc725a1668d47a6b7d346b70b1a023455"
+    },
+    "runtime": {
+      "path": "circuit-closure--meal--q01--01/runtime.ogg",
+      "bytes": 13384,
+      "sha256": "d4095e921f6d6fa1792c3b2fa908e6981035d4adef96f3cfdb05e620278dffc6"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

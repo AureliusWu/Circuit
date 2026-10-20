@@ -1,0 +1,59 @@
+{
+  "id": "circuit-tickets--witnesses--q03--01",
+  "sceneId": "tickets",
+  "lineId": "tickets--witnesses--q03--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "所以这回先请您看。",
+  "nodeId": "witnesses",
+  "start": 89,
+  "end": 98,
+  "quoteIndex": 2,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 178690074,
+  "textSha256": "a60d483e62de6d5d529769609753f927da832ede909cfd36bc73a21f1d2d6516",
+  "medium": "spoken",
+  "requestSha256": "db4f71a92c8dc301a44ed851794e25f32e61926931c40fb87e9af63464a4f460",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "所以這回先請您看",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 2.08,
+  "wallSeconds": 107.682,
+  "loudness": {
+    "input_i": "-21.89",
+    "input_tp": "-6.43",
+    "input_lra": "0.00",
+    "input_thresh": "-31.89",
+    "output_i": "-20.00",
+    "output_tp": "-4.54",
+    "output_lra": "0.00",
+    "output_thresh": "-30.00",
+    "normalization_type": "linear",
+    "target_offset": "0.00"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-tickets--witnesses--q03--01/raw.wav",
+      "bytes": 199760,
+      "sha256": "ffb075bfd6c5b565e116473639e92a63c165c68bbc75fd1704b34273a49de204"
+    },
+    "master": {
+      "path": "circuit-tickets--witnesses--q03--01/master.wav",
+      "bytes": 99918,
+      "sha256": "4ff350c72977fe691b376f756661b1f51eb3102061b34a455c29af36512a7259"
+    },
+    "runtime": {
+      "path": "circuit-tickets--witnesses--q03--01/runtime.ogg",
+      "bytes": 18723,
+      "sha256": "8b7e081c9192bd35fb6d28cc4cd20d1e4f915fd33ba167109d963fb666eddd27"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

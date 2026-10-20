@@ -1,0 +1,59 @@
+{
+  "id": "circuit-visitors--signaturefailure--q01--01",
+  "sceneId": "visitors",
+  "lineId": "visitors--signatureFailure--q01--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "旧录音是真的，今晚这个来访人没核出来。",
+  "nodeId": "signatureFailure",
+  "start": 53,
+  "end": 72,
+  "quoteIndex": 0,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 839563419,
+  "textSha256": "79421f6092ee58db370bc3b75030d3527f685a17603e687307104d0e9470780b",
+  "medium": "spoken",
+  "requestSha256": "b0c61cd926734e2da7102d23eb9f8ada57d071dd4f1da0f05a2cadd587d9c5e3",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "舊錄音是真的今晚這個來訪人沒合出來",
+    "cer": 0.058824,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 4.16,
+  "wallSeconds": 35.096,
+  "loudness": {
+    "input_i": "-17.43",
+    "input_tp": "-3.82",
+    "input_lra": "0.60",
+    "input_thresh": "-27.88",
+    "output_i": "-18.96",
+    "output_tp": "-5.50",
+    "output_lra": "0.60",
+    "output_thresh": "-29.36",
+    "normalization_type": "dynamic",
+    "target_offset": "-1.04"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-visitors--signaturefailure--q01--01/raw.wav",
+      "bytes": 399440,
+      "sha256": "31dd6d2131f1b85eb547b83dcb2ceb6ce72f29fec93b8303a2a981e27c0a53bf"
+    },
+    "master": {
+      "path": "circuit-visitors--signaturefailure--q01--01/master.wav",
+      "bytes": 199758,
+      "sha256": "6f13f0336485a9f02af07a5012e97edb40db701e4f373f80a8e734889f271aef"
+    },
+    "runtime": {
+      "path": "circuit-visitors--signaturefailure--q01--01/runtime.ogg",
+      "bytes": 31504,
+      "sha256": "c2f11c4b374735000f2f3c9437aef1bb3ae5cd5066d47ddc2aa338efcbdcb528"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

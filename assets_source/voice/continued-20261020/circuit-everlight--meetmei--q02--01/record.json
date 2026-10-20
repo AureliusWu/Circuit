@@ -1,0 +1,59 @@
+{
+  "id": "circuit-everlight--meetmei--q02--01",
+  "sceneId": "everlight",
+  "lineId": "everlight--meetMei--q02--01",
+  "lineIndex": 0,
+  "speaker": "mei",
+  "text": "昨晚楼道灯没了，那声响倒一直有。",
+  "nodeId": "meetMei",
+  "start": 68,
+  "end": 84,
+  "quoteIndex": 1,
+  "actorId": "mei",
+  "voice": "Serena",
+  "instruct": "六十岁女性，普通话，声音偏低，平实缓慢，像老邻居小声嘱咐，句尾稍停，不要年轻撒娇。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1417523296,
+  "textSha256": "8d53161eaa73d7806c5da25c636d8b0ef42847c89f0e5d57e25ac4b2ef425220",
+  "medium": "spoken",
+  "requestSha256": "2cb1134f8a56d0592df13806a785fc92e5c8ca54e7019e37f430c0683e688dd1",
+  "attempt": 2,
+  "status": "accepted",
+  "asr": {
+    "transcript": "昨晚楼到灯没了那声响到一直有",
+    "cer": 0.142857,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 3.92,
+  "wallSeconds": 22.47,
+  "loudness": {
+    "input_i": "-27.25",
+    "input_tp": "-14.20",
+    "input_lra": "1.30",
+    "input_thresh": "-38.51",
+    "output_i": "-18.84",
+    "output_tp": "-6.10",
+    "output_lra": "0.00",
+    "output_thresh": "-30.08",
+    "normalization_type": "dynamic",
+    "target_offset": "-1.16"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-everlight--meetmei--q02--01/raw.wav",
+      "bytes": 376400,
+      "sha256": "4bbe8f3640a52bb77dbbf6b474f5973b0673f11a89ef55e6706eaba048983273"
+    },
+    "master": {
+      "path": "circuit-everlight--meetmei--q02--01/master.wav",
+      "bytes": 188238,
+      "sha256": "d3857e9fac6332a8d05e62d71644994d5c78cdee0225df8ccbbb7ed29cfa07dc"
+    },
+    "runtime": {
+      "path": "circuit-everlight--meetmei--q02--01/runtime.ogg",
+      "bytes": 30644,
+      "sha256": "6a245ecb57ffb518fbb68239a223352eb2edaa17806e1294a15da2029dfe5835"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

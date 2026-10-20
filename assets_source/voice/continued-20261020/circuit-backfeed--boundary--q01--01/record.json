@@ -1,0 +1,59 @@
+{
+  "id": "circuit-backfeed--boundary--q01--01",
+  "sceneId": "backfeed",
+  "lineId": "backfeed--boundary--q01--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "这里没人，里面也按可能带电看？",
+  "nodeId": "boundary",
+  "start": 60,
+  "end": 75,
+  "quoteIndex": 0,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1076601349,
+  "textSha256": "2a318c78bc1f684d93ec097df954648dcd21b10138276aacdf6a9b4167b9306f",
+  "medium": "spoken",
+  "requestSha256": "4b05493c095c70f1d68aad2f1ffba64d36246a47cabbac329db8109ab719b0be",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "这里没人,里面也按可能带电看。",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 3.68,
+  "wallSeconds": 210.146,
+  "loudness": {
+    "input_i": "-18.62",
+    "input_tp": "-4.41",
+    "input_lra": "0.70",
+    "input_thresh": "-28.76",
+    "output_i": "-19.81",
+    "output_tp": "-5.89",
+    "output_lra": "0.00",
+    "output_thresh": "-29.95",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.19"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-backfeed--boundary--q01--01/raw.wav",
+      "bytes": 353360,
+      "sha256": "33e274e50d6648031071107026c0e84c7cfb97c03dad02a0e2a2e2ac78dd37b4"
+    },
+    "master": {
+      "path": "circuit-backfeed--boundary--q01--01/master.wav",
+      "bytes": 176718,
+      "sha256": "5204d8ac665bc2e093f9c5248e2f2a5f154b53a08ea47f76fef24285fe0aa719"
+    },
+    "runtime": {
+      "path": "circuit-backfeed--boundary--q01--01/runtime.ogg",
+      "bytes": 29152,
+      "sha256": "d8c2863dcb69dab6a19b0dfb30476a0b779fdc40e043960dd9f8aeb4a8f86e7b"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

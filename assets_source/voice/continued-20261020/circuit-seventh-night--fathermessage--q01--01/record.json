@@ -1,0 +1,59 @@
+{
+  "id": "circuit-seventh-night--fathermessage--q01--01",
+  "sceneId": "seventh-night",
+  "lineId": "seventh-night--fatherMessage--q01--01",
+  "lineIndex": 0,
+  "speaker": "shen-father",
+  "text": "接出来的都吃过了。还有一个在里面干活，别收，给他留着。",
+  "nodeId": "fatherMessage",
+  "start": 9,
+  "end": 36,
+  "quoteIndex": 0,
+  "actorId": "shen-father",
+  "voice": "Uncle_Fu",
+  "instruct": "中年成年男性公交司机，普通话，旧录音中的日常交谈，平实自然，声音低缓清楚，只读给定台词。",
+  "seed": 67700700,
+  "textSha256": "c3d0bec158d79bfa615828e8e587b27a60427cb2b9de56306b24346b25a0903e",
+  "medium": "spoken",
+  "requestSha256": "3385b23f64c17c9d781967a079341713302d31b5b4143e303bce904058f539b4",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "接出来的都吃过了还有一个在里面干活别手给他留着",
+    "cer": 0.043478,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 6.56,
+  "wallSeconds": 379.728,
+  "loudness": {
+    "input_i": "-25.45",
+    "input_tp": "-6.91",
+    "input_lra": "1.50",
+    "input_thresh": "-35.91",
+    "output_i": "-20.15",
+    "output_tp": "-2.00",
+    "output_lra": "2.10",
+    "output_thresh": "-30.67",
+    "normalization_type": "dynamic",
+    "target_offset": "0.15"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-seventh-night--fathermessage--q01--01/raw.wav",
+      "bytes": 629840,
+      "sha256": "65bfa5e8342e17fb908d528a6e6e95b4ede291571457e27ce0c9823704be102d"
+    },
+    "master": {
+      "path": "circuit-seventh-night--fathermessage--q01--01/master.wav",
+      "bytes": 314958,
+      "sha256": "31335a0aed7c662d52cb71400be119d4ab957d7abe220f95b79e310cc61ebcc9"
+    },
+    "runtime": {
+      "path": "circuit-seventh-night--fathermessage--q01--01/runtime.ogg",
+      "bytes": 50928,
+      "sha256": "78bddb5b42cb98a9aad5e9a04bfa55c31e614de9d2e9e58d057c0f6975603f23"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

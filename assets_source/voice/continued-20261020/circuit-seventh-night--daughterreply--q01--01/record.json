@@ -1,0 +1,59 @@
+{
+  "id": "circuit-seventh-night--daughterreply--q01--01",
+  "sceneId": "seventh-night",
+  "lineId": "seventh-night--daughterReply--q01--01",
+  "lineIndex": 0,
+  "speaker": "shen",
+  "text": "他说的原来不是我。",
+  "nodeId": "daughterReply",
+  "start": 1,
+  "end": 10,
+  "quoteIndex": 0,
+  "actorId": "shen",
+  "voice": "Serena",
+  "instruct": "二十八岁女性，普通话，声音轻而疲惫，口语自然，像一晚上没睡好的人，不要哭腔。 只朗读给定台词，不添加词语或音效。",
+  "seed": 105489162,
+  "textSha256": "45e39451b190a69ffb56cb391e19d862f6e63192680852978be8aa1c4f8f64a9",
+  "medium": "spoken",
+  "requestSha256": "d02a510ac130ea378985046e903dfd807297dcaaff3a56861f45c9c119c23f32",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "他说的原来不是我",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 1.6,
+  "wallSeconds": 93.943,
+  "loudness": {
+    "input_i": "-24.72",
+    "input_tp": "-12.73",
+    "input_lra": "0.00",
+    "input_thresh": "-34.72",
+    "output_i": "-19.99",
+    "output_tp": "-8.01",
+    "output_lra": "0.00",
+    "output_thresh": "-29.99",
+    "normalization_type": "linear",
+    "target_offset": "-0.01"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-seventh-night--daughterreply--q01--01/raw.wav",
+      "bytes": 153680,
+      "sha256": "f5d424c37aed6cedb617bb248d59fbc54ebab1af455e5004eab2de8ce684495a"
+    },
+    "master": {
+      "path": "circuit-seventh-night--daughterreply--q01--01/master.wav",
+      "bytes": 76878,
+      "sha256": "2b0be36b9b7dbdbe4dabb8133569dc3abda2280fe8073779db381355804ec3fa"
+    },
+    "runtime": {
+      "path": "circuit-seventh-night--daughterreply--q01--01/runtime.ogg",
+      "bytes": 15410,
+      "sha256": "d12a6d4bd2a518c31eda3cdfedf140d14f0228cf2dd72a67008bf56b54e454c6"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

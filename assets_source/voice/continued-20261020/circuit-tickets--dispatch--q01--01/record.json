@@ -1,0 +1,59 @@
+{
+  "id": "circuit-tickets--dispatch--q01--01",
+  "sceneId": "tickets",
+  "lineId": "tickets--dispatch--q01--01",
+  "lineIndex": 0,
+  "speaker": "luo",
+  "text": "不是四张。刚才那张照片右边还压着半张，我没拍全。",
+  "nodeId": "dispatch",
+  "start": 17,
+  "end": 41,
+  "quoteIndex": 0,
+  "actorId": "luo",
+  "voice": "Vivian",
+  "instruct": "二十九岁女性，普通话，声音偏低，夜班值班员谨慎地问话，平静自然，略有迟疑，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 291642937,
+  "textSha256": "18c7af5dba92ca7348fe42dd353cd5601aef9d858e637e5581fec278f8fb82bd",
+  "medium": "spoken",
+  "requestSha256": "2c1eacb450b2ed9a9a9a5f3ccf75d582fc1c7014baf1f9c7b460a1654178d10f",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "不是四張,剛才那張照片右邊還壓著半張,我沒拍全",
+    "cer": 0.047619,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 7.2,
+  "wallSeconds": 445.877,
+  "loudness": {
+    "input_i": "-22.98",
+    "input_tp": "-5.74",
+    "input_lra": "5.20",
+    "input_thresh": "-33.84",
+    "output_i": "-21.40",
+    "output_tp": "-5.18",
+    "output_lra": "3.60",
+    "output_thresh": "-32.42",
+    "normalization_type": "dynamic",
+    "target_offset": "1.40"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-tickets--dispatch--q01--01/raw.wav",
+      "bytes": 691280,
+      "sha256": "16bc5c016a6ca42f945e404ae171080586e09ded99d596eb8091f44589ce997a"
+    },
+    "master": {
+      "path": "circuit-tickets--dispatch--q01--01/master.wav",
+      "bytes": 345678,
+      "sha256": "6466ce8034299c3432fbff178253b244d5e3b0577eb76afc9032424d4e2216cb"
+    },
+    "runtime": {
+      "path": "circuit-tickets--dispatch--q01--01/runtime.ogg",
+      "bytes": 51743,
+      "sha256": "0584884c9ac2c7b4119b16326d41817de2819f1d4570e894c32a5267f3918293"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

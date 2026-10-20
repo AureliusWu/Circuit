@@ -1,0 +1,59 @@
+{
+  "id": "circuit-closure--permitindex--q01--01",
+  "sceneId": "closure",
+  "lineId": "closure--permitIndex--q01--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "纸能连到一起，线还是断着。",
+  "nodeId": "permitIndex",
+  "start": 74,
+  "end": 87,
+  "quoteIndex": 0,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1255484589,
+  "textSha256": "10dc2bfd367d84e2b2bb87b76a8a7c4e00384de6c726d08bf36b8b3767a6e54f",
+  "medium": "spoken",
+  "requestSha256": "f550a84f0729367d26d980b4411d8660d1d133059cec5e6df5be2cf5909ca93e",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "只能連到一起 線還是斷著",
+    "cer": 0.181818,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 3.36,
+  "wallSeconds": 15.889,
+  "loudness": {
+    "input_i": "-20.48",
+    "input_tp": "-6.55",
+    "input_lra": "1.70",
+    "input_thresh": "-30.98",
+    "output_i": "-19.22",
+    "output_tp": "-5.88",
+    "output_lra": "0.00",
+    "output_thresh": "-29.72",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.78"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-closure--permitindex--q01--01/raw.wav",
+      "bytes": 322640,
+      "sha256": "a727afb9596d32db774ef191841ed8bce8a48d80d49bf1d3ec833a9c3d358bfe"
+    },
+    "master": {
+      "path": "circuit-closure--permitindex--q01--01/master.wav",
+      "bytes": 161358,
+      "sha256": "dd83cc74e25a97ff15e788249aeeb42567c9cd5daf647728e14027035698828f"
+    },
+    "runtime": {
+      "path": "circuit-closure--permitindex--q01--01/runtime.ogg",
+      "bytes": 26430,
+      "sha256": "21e18ef29e1e985aee775e025aac906b46c6ebc7fb1833a1c353fadb59983dc2"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

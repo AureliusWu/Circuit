@@ -1,0 +1,59 @@
+{
+  "id": "circuit-closure--radiorecord--q01--01",
+  "sceneId": "closure",
+  "lineId": "closure--radioRecord--q01--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "旧名单能解释它认谁。",
+  "nodeId": "radioRecord",
+  "start": 84,
+  "end": 94,
+  "quoteIndex": 0,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 750155796,
+  "textSha256": "272931c1cf7f1baaaaa72e1bb5c750d466ea3b7a7b68b285cb4adf77f3215715",
+  "medium": "spoken",
+  "requestSha256": "a1841bbe690c6f9a8ade6603453986bba57ebb8716cba0ea4ce2073d82345a45",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "舊名單能解釋他認誰",
+    "cer": 0.111111,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 2.0,
+  "wallSeconds": 85.919,
+  "loudness": {
+    "input_i": "-16.76",
+    "input_tp": "-5.18",
+    "input_lra": "0.00",
+    "input_thresh": "-26.76",
+    "output_i": "-19.99",
+    "output_tp": "-8.42",
+    "output_lra": "0.00",
+    "output_thresh": "-29.99",
+    "normalization_type": "linear",
+    "target_offset": "-0.01"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-closure--radiorecord--q01--01/raw.wav",
+      "bytes": 192080,
+      "sha256": "d374b1d7d3bbbb2b49f24bb91ee03b8d780b9b01c84ee5aa541a54235a5cdab3"
+    },
+    "master": {
+      "path": "circuit-closure--radiorecord--q01--01/master.wav",
+      "bytes": 96078,
+      "sha256": "b938e02cf5c1d3c0149782286fe145de473343bbcca32739928bd05befa359be"
+    },
+    "runtime": {
+      "path": "circuit-closure--radiorecord--q01--01/runtime.ogg",
+      "bytes": 18616,
+      "sha256": "14df66b43d2a0f100c138020420998e3456f819f4798640846df4cf0039e1c18"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

@@ -1,0 +1,59 @@
+{
+  "id": "circuit-tickets--witnesses--q02--01",
+  "sceneId": "tickets",
+  "lineId": "tickets--witnesses--q02--01",
+  "lineIndex": 0,
+  "speaker": "cheng",
+  "text": "上回那张是你写的。",
+  "nodeId": "witnesses",
+  "start": 77,
+  "end": 86,
+  "quoteIndex": 1,
+  "actorId": "cheng",
+  "voice": "Dylan",
+  "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 281241713,
+  "textSha256": "58b3081aa1a8439dea446e92a755e1b95869f55e8aeb4d29552a32fafda1f674",
+  "medium": "spoken",
+  "requestSha256": "81000a38c9d87682421210a09fab3febe1be33e217a21e30f6a2a29314284c76",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "上回那章是你写的",
+    "cer": 0.125,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 1.76,
+  "wallSeconds": 8.782,
+  "loudness": {
+    "input_i": "-25.35",
+    "input_tp": "-6.92",
+    "input_lra": "0.00",
+    "input_thresh": "-35.35",
+    "output_i": "-20.42",
+    "output_tp": "-2.00",
+    "output_lra": "0.00",
+    "output_thresh": "-30.42",
+    "normalization_type": "linear",
+    "target_offset": "0.42"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-tickets--witnesses--q02--01/raw.wav",
+      "bytes": 169040,
+      "sha256": "22714c88ce2840df8fb79bd4ab3acaa9b8cd606107d1b1330e074b5fa46972cd"
+    },
+    "master": {
+      "path": "circuit-tickets--witnesses--q02--01/master.wav",
+      "bytes": 84558,
+      "sha256": "0bae1bc50e92db88f1ab6cf852444c015866448b7351e8cd103f708753578ce8"
+    },
+    "runtime": {
+      "path": "circuit-tickets--witnesses--q02--01/runtime.ogg",
+      "bytes": 17401,
+      "sha256": "2fb86769a87203c50478cc3dc2c9762bdf2e16ff1d252ceabeebeaceb2844577"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

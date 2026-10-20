@@ -1,0 +1,59 @@
+{
+  "id": "circuit-seventh-night--dispatch--q01--02",
+  "sceneId": "seventh-night",
+  "lineId": "seventh-night--dispatch--q01--02",
+  "lineIndex": 1,
+  "speaker": "lin",
+  "text": "前七夜零点四十七，昨晚早一分钟，今晚预计还早。",
+  "nodeId": "dispatch",
+  "start": 31,
+  "end": 54,
+  "quoteIndex": 0,
+  "actorId": "lin",
+  "voice": "Serena",
+  "instruct": "成年女性，普通话，声音干脆平稳，值班调度员在电台里说话，清楚利落，不要播音腔。 调度通话，语速稍慢，逐句吐字清楚。槐荫巷读huái yīn xiàng，在线读zài xiàn。 只朗读给定台词，不添加词语或音效。",
+  "seed": 891965430,
+  "textSha256": "bd76eec4cc2851115563ba26e3f0cd28d6572f930d3eefd056da7757bcaf5ceb",
+  "medium": "spoken",
+  "requestSha256": "2933e7f6b399dfa03734fe21cf306c674f5f95a0f9b2e5727a9868d95d58fba1",
+  "attempt": 2,
+  "status": "accepted",
+  "asr": {
+    "transcript": "前七夜零点四十七昨晚早一分钟今晚预计还早",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 4.8,
+  "wallSeconds": 27.584,
+  "loudness": {
+    "input_i": "-25.33",
+    "input_tp": "-9.44",
+    "input_lra": "2.30",
+    "input_thresh": "-35.58",
+    "output_i": "-20.24",
+    "output_tp": "-4.95",
+    "output_lra": "1.60",
+    "output_thresh": "-30.54",
+    "normalization_type": "dynamic",
+    "target_offset": "0.24"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-seventh-night--dispatch--q01--02/raw.wav",
+      "bytes": 460880,
+      "sha256": "fb1980aded144b3413defd299d9c2d2584a05e4933e0efa5d0ca4a472fc87a19"
+    },
+    "master": {
+      "path": "circuit-seventh-night--dispatch--q01--02/master.wav",
+      "bytes": 230478,
+      "sha256": "89185e412a4b47c9c42d22dd10e7dd8557166983713924b43650883f84d871c3"
+    },
+    "runtime": {
+      "path": "circuit-seventh-night--dispatch--q01--02/runtime.ogg",
+      "bytes": 36868,
+      "sha256": "ed8d676fef95ccbd5690be5c2332cbad0aaca2a2d46d3175d08476d81c48200f"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

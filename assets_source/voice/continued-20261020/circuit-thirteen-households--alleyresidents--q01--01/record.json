@@ -1,0 +1,59 @@
+{
+  "id": "circuit-thirteen-households--alleyresidents--q01--01",
+  "sceneId": "thirteen-households",
+  "lineId": "thirteen-households--alleyResidents--q01--01",
+  "lineIndex": 0,
+  "speaker": "mei",
+  "text": "别围着箱子，给师傅腾点地方。",
+  "nodeId": "alleyResidents",
+  "start": 68,
+  "end": 82,
+  "quoteIndex": 0,
+  "actorId": "mei",
+  "voice": "Serena",
+  "instruct": "六十岁女性，普通话，声音偏低，平实缓慢，像老邻居小声嘱咐，句尾稍停，不要年轻撒娇。 只朗读给定台词，不添加词语或音效。",
+  "seed": 408137975,
+  "textSha256": "bb8483212d3d891a053a8f61684b7bba8bca03f9f3ad339ae7c8c847bd7d1f31",
+  "medium": "spoken",
+  "requestSha256": "6ee11014cda02415d46a2da05908c51132a4987d57d147b486f0beebe742d00c",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "别围着箱子给师父腾点地方",
+    "cer": 0.083333,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 2.56,
+  "wallSeconds": 303.237,
+  "loudness": {
+    "input_i": "-23.34",
+    "input_tp": "-7.15",
+    "input_lra": "0.00",
+    "input_thresh": "-33.73",
+    "output_i": "-20.00",
+    "output_tp": "-3.81",
+    "output_lra": "0.00",
+    "output_thresh": "-30.39",
+    "normalization_type": "linear",
+    "target_offset": "0.00"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-thirteen-households--alleyresidents--q01--01/raw.wav",
+      "bytes": 245840,
+      "sha256": "31901face0a47d40c24c2cbc91a510d77e104656c12bdf2cf0f93fcd65d8cfbf"
+    },
+    "master": {
+      "path": "circuit-thirteen-households--alleyresidents--q01--01/master.wav",
+      "bytes": 122958,
+      "sha256": "001733b3031bd29fd883020b5d46dfde77306b80599ee8c92d594f4a216b8a56"
+    },
+    "runtime": {
+      "path": "circuit-thirteen-households--alleyresidents--q01--01/runtime.ogg",
+      "bytes": 22159,
+      "sha256": "e0acc95806249d25d2a6a545890236593616ff5b11d0b4188708c73c53556e1b"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

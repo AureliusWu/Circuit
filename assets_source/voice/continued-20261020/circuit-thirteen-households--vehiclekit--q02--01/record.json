@@ -1,0 +1,59 @@
+{
+  "id": "circuit-thirteen-households--vehiclekit--q02--01",
+  "sceneId": "thirteen-households",
+  "lineId": "thirteen-households--vehicleKit--q02--01",
+  "lineIndex": 0,
+  "speaker": "cheng",
+  "text": "都留。别到时候只记得拍过，不知道拍的是哪家。",
+  "nodeId": "vehicleKit",
+  "start": 68,
+  "end": 90,
+  "quoteIndex": 1,
+  "actorId": "cheng",
+  "voice": "Dylan",
+  "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1832752617,
+  "textSha256": "739ff7f52c1a9952b414af39ed37c9d4ca8c00903109f7e25bdc45b202b89779",
+  "medium": "spoken",
+  "requestSha256": "58e7c94f780b753227337bc1af7f4e1772168d5c85ead28446d1dc2c84c073dd",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "都留,别到时候只记得拍过,不知道拍的是哪家。",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 3.68,
+  "wallSeconds": 177.953,
+  "loudness": {
+    "input_i": "-28.15",
+    "input_tp": "-9.10",
+    "input_lra": "2.50",
+    "input_thresh": "-38.15",
+    "output_i": "-20.65",
+    "output_tp": "-2.32",
+    "output_lra": "0.00",
+    "output_thresh": "-30.65",
+    "normalization_type": "dynamic",
+    "target_offset": "0.65"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-thirteen-households--vehiclekit--q02--01/raw.wav",
+      "bytes": 353360,
+      "sha256": "bd1318a5de9ab9f2c0a24ea9ea1b68d5fc9bd1d568c11b23b5de9ca432405964"
+    },
+    "master": {
+      "path": "circuit-thirteen-households--vehiclekit--q02--01/master.wav",
+      "bytes": 176718,
+      "sha256": "596b51bbe60d4fbc8d669df173a68f63ed82256cf526565a0ebf3f879c8076d8"
+    },
+    "runtime": {
+      "path": "circuit-thirteen-households--vehiclekit--q02--01/runtime.ogg",
+      "bytes": 31707,
+      "sha256": "1d77f2a19abde78c17069f1fa266fbbd9d6764aea6caa1ac49f768a7b46f1c8a"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

@@ -1,0 +1,59 @@
+{
+  "id": "circuit-thirteen-households--bypasswarning--q04--01",
+  "sceneId": "thirteen-households",
+  "lineId": "thirteen-households--bypassWarning--q04--01",
+  "lineIndex": 0,
+  "speaker": "zhou",
+  "text": "记录没齐。到了看。",
+  "nodeId": "bypassWarning",
+  "start": 117,
+  "end": 126,
+  "quoteIndex": 3,
+  "actorId": "zhou",
+  "voice": "Uncle_Fu",
+  "instruct": "五十岁男性，普通话，声音低沉略沙哑，克制缓慢，像夜班老工人，语气自然，不要表演悲伤。 语速稍慢，逐字说清楚，季宁读jì níng。句尾完整，不要吞字。 只朗读给定台词，不添加词语或音效。",
+  "seed": 811007316,
+  "textSha256": "c717354f8bad0e86bbf4c1a6260b0755f1d14afd56f1b1cc952a09f28f6cc936",
+  "medium": "spoken",
+  "requestSha256": "6968c8e562f3e317c37232f40bc161c0b3f934f2729a51ed354307ce8bfbd728",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "記錄沒期 到了看",
+    "cer": 0.142857,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 2.88,
+  "wallSeconds": 164.42,
+  "loudness": {
+    "input_i": "-21.01",
+    "input_tp": "-7.22",
+    "input_lra": "0.00",
+    "input_thresh": "-31.35",
+    "output_i": "-20.01",
+    "output_tp": "-6.21",
+    "output_lra": "0.00",
+    "output_thresh": "-30.35",
+    "normalization_type": "linear",
+    "target_offset": "0.01"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-thirteen-households--bypasswarning--q04--01/raw.wav",
+      "bytes": 276560,
+      "sha256": "861d8b97b9cd52f77a4b15e234a2f9c0c5f673d623594728324d6a11287d4e62"
+    },
+    "master": {
+      "path": "circuit-thirteen-households--bypasswarning--q04--01/master.wav",
+      "bytes": 138318,
+      "sha256": "12604776613e74f08235b45bdca96fe614945aae1aa4f415c398e688b4cc9bfe"
+    },
+    "runtime": {
+      "path": "circuit-thirteen-households--bypasswarning--q04--01/runtime.ogg",
+      "bytes": 23741,
+      "sha256": "442099977e97c68d7cf97ecd25b3938216c7c59659d6b41926a08bb619d9b783"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

@@ -1,0 +1,59 @@
+{
+  "id": "circuit-seventh-night--breaker--q01--01",
+  "sceneId": "seventh-night",
+  "lineId": "seventh-night--breaker--q01--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "前七夜都用了？",
+  "nodeId": "breaker",
+  "start": 78,
+  "end": 85,
+  "quoteIndex": 0,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 16142257,
+  "textSha256": "33a5d4425921b378cc707e0e8d2f0b1c5ac7ce166e13cbf8d9750e25e28f7546",
+  "medium": "spoken",
+  "requestSha256": "43cc1813988524aa758e14353268896b1ccca5581f8cee9d053baaa24256c18b",
+  "attempt": 3,
+  "status": "accepted",
+  "asr": {
+    "transcript": "前七頁都用了?",
+    "cer": 0.166667,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 1.44,
+  "wallSeconds": 80.736,
+  "loudness": {
+    "input_i": "-16.63",
+    "input_tp": "-4.92",
+    "input_lra": "0.00",
+    "input_thresh": "-26.63",
+    "output_i": "-20.00",
+    "output_tp": "-8.28",
+    "output_lra": "0.00",
+    "output_thresh": "-30.00",
+    "normalization_type": "linear",
+    "target_offset": "-0.00"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-seventh-night--breaker--q01--01/raw.wav",
+      "bytes": 138320,
+      "sha256": "0da9d4e3a2b047c0e21847c2d2ce31e791ae5e2c7104a60cde57c9141d82b60b"
+    },
+    "master": {
+      "path": "circuit-seventh-night--breaker--q01--01/master.wav",
+      "bytes": 69198,
+      "sha256": "ef7178eed7948d0c8d206f6ca5a496d87a27d47ea1ba1a870f23d6949c5db4d9"
+    },
+    "runtime": {
+      "path": "circuit-seventh-night--breaker--q01--01/runtime.ogg",
+      "bytes": 13682,
+      "sha256": "8b849973b4be0d37830177b8827c75d8fc5fdccaa0044a5d85f9219b9424177a"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

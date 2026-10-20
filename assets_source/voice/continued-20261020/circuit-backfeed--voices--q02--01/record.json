@@ -1,0 +1,59 @@
+{
+  "id": "circuit-backfeed--voices--q02--01",
+  "sceneId": "backfeed",
+  "lineId": "backfeed--voices--q02--01",
+  "lineIndex": 0,
+  "speaker": "chen",
+  "text": "临时加的。",
+  "nodeId": "voices",
+  "start": 71,
+  "end": 76,
+  "quoteIndex": 1,
+  "actorId": "chen",
+  "voice": "Uncle_Fu",
+  "instruct": "六十岁男性，普通话，语速慢，声音低哑，像看门的老人轻声说话，口语平实。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1362201158,
+  "textSha256": "30b9340a237f2f0d7ede330e1e4e445f79089f6044ea0d66d3ec312475b8ecff",
+  "medium": "spoken",
+  "requestSha256": "dbbebe6e29cb6c44b9f06411af58c44ff5180e6a32c060e03cb2f967e4e83412",
+  "attempt": 2,
+  "status": "accepted",
+  "asr": {
+    "transcript": "临时加的",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 1.44,
+  "wallSeconds": 9.35,
+  "loudness": {
+    "input_i": "-17.07",
+    "input_tp": "-3.44",
+    "input_lra": "0.00",
+    "input_thresh": "-27.07",
+    "output_i": "-20.00",
+    "output_tp": "-6.37",
+    "output_lra": "0.00",
+    "output_thresh": "-30.00",
+    "normalization_type": "linear",
+    "target_offset": "-0.00"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-backfeed--voices--q02--01/raw.wav",
+      "bytes": 138320,
+      "sha256": "dc124e9523b4c66baf151f48fde03403c90fec65077855b5512fd9e6a73f9092"
+    },
+    "master": {
+      "path": "circuit-backfeed--voices--q02--01/master.wav",
+      "bytes": 69198,
+      "sha256": "809d3832f0f22d937ce053e442444eaa24b50c0661b17f4afcbf62e2e33fc46b"
+    },
+    "runtime": {
+      "path": "circuit-backfeed--voices--q02--01/runtime.ogg",
+      "bytes": 14305,
+      "sha256": "778f519df40278c6f8ec8c7b6eca475fac404c1cef486a757e94bc46caeb2cc8"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

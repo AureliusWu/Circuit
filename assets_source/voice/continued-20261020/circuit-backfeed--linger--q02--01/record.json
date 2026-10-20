@@ -1,0 +1,59 @@
+{
+  "id": "circuit-backfeed--linger--q02--01",
+  "sceneId": "backfeed",
+  "lineId": "backfeed--linger--q02--01",
+  "lineIndex": 0,
+  "speaker": "cheng",
+  "text": "后续得查。",
+  "nodeId": "linger",
+  "start": 44,
+  "end": 49,
+  "quoteIndex": 1,
+  "actorId": "cheng",
+  "voice": "Dylan",
+  "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 635109802,
+  "textSha256": "0743b320f825f928c4cf5bbc26e00391a16ce423b4fd4885cc1994441dfc0eda",
+  "medium": "spoken",
+  "requestSha256": "753bd5a4c6397b3ce7f37911658a281144a9f8ad239d2503b1d8be7d33e1c6fb",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "后续得查",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 1.04,
+  "wallSeconds": 41.941,
+  "loudness": {
+    "input_i": "-26.06",
+    "input_tp": "-7.60",
+    "input_lra": "0.00",
+    "input_thresh": "-36.06",
+    "output_i": "-20.46",
+    "output_tp": "-2.00",
+    "output_lra": "0.00",
+    "output_thresh": "-30.46",
+    "normalization_type": "linear",
+    "target_offset": "0.46"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-backfeed--linger--q02--01/raw.wav",
+      "bytes": 99920,
+      "sha256": "d1ed24042524c584aad55b2a4a9653fe81522562acd5f9fa90cd0f3409d1bfd7"
+    },
+    "master": {
+      "path": "circuit-backfeed--linger--q02--01/master.wav",
+      "bytes": 49998,
+      "sha256": "f0c2060bccfe262e2f9bb79a1aaf7ad5da2e645171d3fcf7f82a069ae8eb8341"
+    },
+    "runtime": {
+      "path": "circuit-backfeed--linger--q02--01/runtime.ogg",
+      "bytes": 11268,
+      "sha256": "ec050dfa1ecdd617fdad1f5c58e704d5cc18c6344e0a1fa321031b78183d837e"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

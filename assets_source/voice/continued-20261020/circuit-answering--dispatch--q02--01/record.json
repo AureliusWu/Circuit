@@ -1,0 +1,59 @@
+{
+  "id": "circuit-answering--dispatch--q02--01",
+  "sceneId": "answering",
+  "lineId": "answering--dispatch--q02--01",
+  "lineIndex": 0,
+  "speaker": "cheng",
+  "text": "我知道。",
+  "nodeId": "dispatch",
+  "start": 70,
+  "end": 74,
+  "quoteIndex": 1,
+  "actorId": "cheng",
+  "voice": "Dylan",
+  "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1541790990,
+  "textSha256": "4b4d6b7994f867c64cc18a4a86830cf1cd887960b58ac9f001f7a4902f93dc98",
+  "medium": "spoken",
+  "requestSha256": "0400ccfb8cbe4c4088398d71d74718474639555437a4388a5d71809cc2b912d5",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "我知道",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 0.8,
+  "wallSeconds": 4.624,
+  "loudness": {
+    "input_i": "-21.67",
+    "input_tp": "-5.85",
+    "input_lra": "0.00",
+    "input_thresh": "-31.67",
+    "output_i": "-20.07",
+    "output_tp": "-4.18",
+    "output_lra": "0.00",
+    "output_thresh": "-30.07",
+    "normalization_type": "linear",
+    "target_offset": "0.07"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-answering--dispatch--q02--01/raw.wav",
+      "bytes": 76880,
+      "sha256": "1ba23bb1b5c185e5e9dd92a7c4f4763b305619378aaf98ce6072cd6d790b98a8"
+    },
+    "master": {
+      "path": "circuit-answering--dispatch--q02--01/master.wav",
+      "bytes": 38478,
+      "sha256": "344ecae2f806aa7bf76be8bce5b0c6ee78807a212f4c2059ff4bd87d9143b266"
+    },
+    "runtime": {
+      "path": "circuit-answering--dispatch--q02--01/runtime.ogg",
+      "bytes": 9788,
+      "sha256": "360c7bf30d4c627d1bcaf6938ac98e4d8d247ef80cfca0a99d6976101f6c856e"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

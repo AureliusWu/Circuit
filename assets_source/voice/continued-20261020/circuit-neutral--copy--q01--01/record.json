@@ -1,0 +1,59 @@
+{
+  "id": "circuit-neutral--copy--q01--01",
+  "sceneId": "neutral",
+  "lineId": "neutral--copy--q01--01",
+  "lineIndex": 0,
+  "speaker": "shen",
+  "text": "我才二十一，以为等几天就行。",
+  "nodeId": "copy",
+  "start": 78,
+  "end": 92,
+  "quoteIndex": 0,
+  "actorId": "shen",
+  "voice": "Serena",
+  "instruct": "二十八岁女性，普通话，声音轻而疲惫，口语自然，像一晚上没睡好的人，不要哭腔。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1543837464,
+  "textSha256": "a1ca9bbfe74f7564fe290cb41a090db696bc31009de50baea39e771af00ab64c",
+  "medium": "spoken",
+  "requestSha256": "56d7c39ad242f1923a61d729a77eec1e9ee1a29c6316f8d3e0a09b3c702ae501",
+  "attempt": 5,
+  "status": "accepted",
+  "asr": {
+    "transcript": "我才二十一以为等几天就行",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 3.12,
+  "wallSeconds": 106.058,
+  "loudness": {
+    "input_i": "-26.23",
+    "input_tp": "-9.46",
+    "input_lra": "0.20",
+    "input_thresh": "-36.54",
+    "output_i": "-19.72",
+    "output_tp": "-2.96",
+    "output_lra": "0.00",
+    "output_thresh": "-30.03",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.28"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-neutral--copy--q01--01/raw.wav",
+      "bytes": 299600,
+      "sha256": "a1eefbd718b5ca57028f3d9c1e88478faa44979569500f73f891c46f8204054b"
+    },
+    "master": {
+      "path": "circuit-neutral--copy--q01--01/master.wav",
+      "bytes": 149838,
+      "sha256": "7f9bfd1cfac7675598d6b8be42f6a8da460e78b5ff098af49805cbc8b8c0ca64"
+    },
+    "runtime": {
+      "path": "circuit-neutral--copy--q01--01/runtime.ogg",
+      "bytes": 25632,
+      "sha256": "727d655e161472e50264ad4751286609154e9d61bef34a096cc17433460568a7"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

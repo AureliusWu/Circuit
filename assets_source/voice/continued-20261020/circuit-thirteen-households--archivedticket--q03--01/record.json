@@ -1,0 +1,59 @@
+{
+  "id": "circuit-thirteen-households--archivedticket--q03--01",
+  "sceneId": "thirteen-households",
+  "lineId": "thirteen-households--archivedTicket--q03--01",
+  "lineIndex": 0,
+  "speaker": "zhou",
+  "text": "换雨衣也带着。",
+  "nodeId": "archivedTicket",
+  "start": 48,
+  "end": 55,
+  "quoteIndex": 2,
+  "actorId": "zhou",
+  "voice": "Uncle_Fu",
+  "instruct": "五十岁男性，普通话，声音低沉略沙哑，克制缓慢，像夜班老工人，语气自然，不要表演悲伤。 语速稍慢，逐字说清楚，季宁读jì níng。句尾完整，不要吞字。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1407560099,
+  "textSha256": "fbd84d4543b0a1ed5ece8f05ae1061a64ba17063d2778f388737a7aefd983915",
+  "medium": "spoken",
+  "requestSha256": "3b6f0ebfcee67a4e8d730ec4049e7f69c661f153f73fdc85815ff966200430ef",
+  "attempt": 5,
+  "status": "needs_review",
+  "asr": {
+    "transcript": "幻语衣也带着",
+    "cer": 0.333333,
+    "polarityCountsMatch": true,
+    "passed": false
+  },
+  "duration": 2.4,
+  "wallSeconds": 74.753,
+  "loudness": {
+    "input_i": "-26.54",
+    "input_tp": "-6.03",
+    "input_lra": "0.00",
+    "input_thresh": "-36.54",
+    "output_i": "-22.50",
+    "output_tp": "-2.00",
+    "output_lra": "0.00",
+    "output_thresh": "-32.50",
+    "normalization_type": "linear",
+    "target_offset": "2.50"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-thirteen-households--archivedticket--q03--01/raw.wav",
+      "bytes": 230480,
+      "sha256": "191a74d88935d852417c5e661a11879fc56edc61e745e3ddfb0110a58aac3a4b"
+    },
+    "master": {
+      "path": "circuit-thirteen-households--archivedticket--q03--01/master.wav",
+      "bytes": 115278,
+      "sha256": "1ab915c4df9dee2f2d5ac3c402038375d1836793fc6292c9c752a28f5f9ecfb4"
+    },
+    "runtime": {
+      "path": "circuit-thirteen-households--archivedticket--q03--01/runtime.ogg",
+      "bytes": 20857,
+      "sha256": "563a0285094432bf8e802512739537e693cbdecd0cb9ead1f8c37eae1d3c42dc"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

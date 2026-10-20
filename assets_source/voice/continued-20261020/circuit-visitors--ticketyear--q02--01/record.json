@@ -1,0 +1,59 @@
+{
+  "id": "circuit-visitors--ticketyear--q02--01",
+  "sceneId": "visitors",
+  "lineId": "visitors--ticketYear--q02--01",
+  "lineIndex": 0,
+  "speaker": "cheng",
+  "text": "你是新苑物业当班，接今天的那份移交。这个旧窗口没有你的班。",
+  "nodeId": "ticketYear",
+  "start": 65,
+  "end": 94,
+  "quoteIndex": 1,
+  "actorId": "cheng",
+  "voice": "Dylan",
+  "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1378758419,
+  "textSha256": "75aecc371f218f9f94278c5cccb036ca8de3791bb44228dc833a6dd00388f19c",
+  "medium": "spoken",
+  "requestSha256": "7e6556ea8c480945db7e7a52e31c1471ebed3f33a3e0f812fc2dfd26a26fba7c",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "你是心愿物业当班,接今天的那份移交。这个旧窗口,没有你的班。",
+    "cer": 0.076923,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 6.24,
+  "wallSeconds": 305.348,
+  "loudness": {
+    "input_i": "-25.28",
+    "input_tp": "-7.62",
+    "input_lra": "1.90",
+    "input_thresh": "-35.55",
+    "output_i": "-20.04",
+    "output_tp": "-2.35",
+    "output_lra": "2.00",
+    "output_thresh": "-30.35",
+    "normalization_type": "dynamic",
+    "target_offset": "0.04"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-visitors--ticketyear--q02--01/raw.wav",
+      "bytes": 599120,
+      "sha256": "4598421ecf93bc33dd023aab91d4a7ed4071807b9ca236b28c36c1b5bc8b831c"
+    },
+    "master": {
+      "path": "circuit-visitors--ticketyear--q02--01/master.wav",
+      "bytes": 299598,
+      "sha256": "805f53a2ad0d8b87edb6f8032f1f82b4f0d23b6504c674922fc0ea0be32b748f"
+    },
+    "runtime": {
+      "path": "circuit-visitors--ticketyear--q02--01/runtime.ogg",
+      "bytes": 49573,
+      "sha256": "49d13557867f4b545a21f5f4929b25992a3d1e9f8373f4a4fbf9334373266d58"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

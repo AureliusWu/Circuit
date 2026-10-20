@@ -1,0 +1,59 @@
+{
+  "id": "circuit-visitors--oldvoice--q01--01",
+  "sceneId": "visitors",
+  "lineId": "visitors--oldVoice--q01--01",
+  "lineIndex": 0,
+  "speaker": "chen",
+  "text": "那晚有人在这儿等车。可这句不是今晚打来的。",
+  "nodeId": "oldVoice",
+  "start": 91,
+  "end": 112,
+  "quoteIndex": 0,
+  "actorId": "chen",
+  "voice": "Uncle_Fu",
+  "instruct": "六十岁男性，普通话，语速慢，声音低哑，像看门的老人轻声说话，口语平实。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1153528823,
+  "textSha256": "29ec41928ac1a776e99d9a387ffdbff4d02b989d1fe54af5cceb58caad5c8e22",
+  "medium": "spoken",
+  "requestSha256": "4bfd203b9651788a2436408a366f855c959e7f8accb959a4af2cbce7223e5331",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "那碗有人在这等撤可这句不是今晚打来的",
+    "cer": 0.157895,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 4.56,
+  "wallSeconds": 148.874,
+  "loudness": {
+    "input_i": "-22.21",
+    "input_tp": "-5.53",
+    "input_lra": "3.30",
+    "input_thresh": "-32.64",
+    "output_i": "-20.72",
+    "output_tp": "-4.65",
+    "output_lra": "2.40",
+    "output_thresh": "-31.03",
+    "normalization_type": "dynamic",
+    "target_offset": "0.72"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-visitors--oldvoice--q01--01/raw.wav",
+      "bytes": 437840,
+      "sha256": "df827e3d1aadef153fa2bfcdb6e93a9d44548736c4599554322d58e7b962476c"
+    },
+    "master": {
+      "path": "circuit-visitors--oldvoice--q01--01/master.wav",
+      "bytes": 218958,
+      "sha256": "1082e2f6d0fad7c8d63a2ddc4a4d69491fe3e2931262966d7d7e44e030389271"
+    },
+    "runtime": {
+      "path": "circuit-visitors--oldvoice--q01--01/runtime.ogg",
+      "bytes": 37440,
+      "sha256": "139be58b20e641efb78df34415b243d3b9d95d42d6d930be7179df8693b4aded"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

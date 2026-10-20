@@ -1,0 +1,59 @@
+{
+  "id": "circuit-thirteen-households--safetybrief--q03--01",
+  "sceneId": "thirteen-households",
+  "lineId": "thirteen-households--safetyBrief--q03--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "填多少？",
+  "nodeId": "safetyBrief",
+  "start": 96,
+  "end": 100,
+  "quoteIndex": 2,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1743213165,
+  "textSha256": "c8c9fd4543466694b8d4b3460973a50608e06e95753e8dc61b524de6d1bbe2cf",
+  "medium": "spoken",
+  "requestSha256": "0b72709eb6ad68683d5056ded01fb63596de78ad5505b220c23e2b42482e744b",
+  "attempt": 3,
+  "status": "accepted",
+  "asr": {
+    "transcript": "填多少",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 0.88,
+  "wallSeconds": 38.693,
+  "loudness": {
+    "input_i": "-16.12",
+    "input_tp": "-4.10",
+    "input_lra": "0.00",
+    "input_thresh": "-26.12",
+    "output_i": "-19.98",
+    "output_tp": "-7.98",
+    "output_lra": "0.00",
+    "output_thresh": "-29.98",
+    "normalization_type": "linear",
+    "target_offset": "-0.02"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-thirteen-households--safetybrief--q03--01/raw.wav",
+      "bytes": 84560,
+      "sha256": "343407db8db0bf41641b070d61f075cdc7a532d2fb8cbb3bdd605fb368c3922a"
+    },
+    "master": {
+      "path": "circuit-thirteen-households--safetybrief--q03--01/master.wav",
+      "bytes": 42318,
+      "sha256": "e6807c4018450810ee8a54660db6f56d8025f3af33ea162fb7a49e6a7b9e4724"
+    },
+    "runtime": {
+      "path": "circuit-thirteen-households--safetybrief--q03--01/runtime.ogg",
+      "bytes": 9369,
+      "sha256": "95ae4642da454566e6e65416c1ba67e9ca3c6c713f9bf5ad52312b387df7ab53"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

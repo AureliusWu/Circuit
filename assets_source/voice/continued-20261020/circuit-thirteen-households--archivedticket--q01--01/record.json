@@ -1,0 +1,59 @@
+{
+  "id": "circuit-thirteen-households--archivedticket--q01--01",
+  "sceneId": "thirteen-households",
+  "lineId": "thirteen-households--archivedTicket--q01--01",
+  "lineIndex": 0,
+  "speaker": "zhou",
+  "text": "没进档。",
+  "nodeId": "archivedTicket",
+  "start": 32,
+  "end": 36,
+  "quoteIndex": 0,
+  "actorId": "zhou",
+  "voice": "Uncle_Fu",
+  "instruct": "五十岁男性，普通话，声音低沉略沙哑，克制缓慢，像夜班老工人，语气自然，不要表演悲伤。 语速稍慢，逐字说清楚，季宁读jì níng。句尾完整，不要吞字。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1488315069,
+  "textSha256": "380d63bbe09781d2414c9cf7ec29a3717d010e910cf323686449393bb6519e9e",
+  "medium": "spoken",
+  "requestSha256": "ec368efefee28f70d2112b4f6dcdb808047d5a5865721a8673a85a76038accc4",
+  "attempt": 5,
+  "status": "needs_review",
+  "asr": {
+    "transcript": "没劲到",
+    "cer": 0.666667,
+    "polarityCountsMatch": true,
+    "passed": false
+  },
+  "duration": 1.28,
+  "wallSeconds": 140.479,
+  "loudness": {
+    "input_i": "-24.67",
+    "input_tp": "-8.11",
+    "input_lra": "0.00",
+    "input_thresh": "-34.67",
+    "output_i": "-19.98",
+    "output_tp": "-3.43",
+    "output_lra": "0.00",
+    "output_thresh": "-29.98",
+    "normalization_type": "linear",
+    "target_offset": "-0.02"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-thirteen-households--archivedticket--q01--01/raw.wav",
+      "bytes": 122960,
+      "sha256": "9810c54eccda3f79274c85dc33f72915f718465be05d76a2bc596e7c1c307bab"
+    },
+    "master": {
+      "path": "circuit-thirteen-households--archivedticket--q01--01/master.wav",
+      "bytes": 61518,
+      "sha256": "349e4119e1646e8dd5af0531650cf39372e1a52a38e26024342ee7e91db2b52f"
+    },
+    "runtime": {
+      "path": "circuit-thirteen-households--archivedticket--q01--01/runtime.ogg",
+      "bytes": 13290,
+      "sha256": "d6c6a699139020d3c0d9c58823d75cb18d060308f8c81ebfd6f9b2af3cda1b2f"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

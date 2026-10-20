@@ -1,0 +1,59 @@
+{
+  "id": "circuit-seventh-night--override--q01--01",
+  "sceneId": "seventh-night",
+  "lineId": "seventh-night--override--q01--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "它这次没按刚才的预计走。",
+  "nodeId": "override",
+  "start": 92,
+  "end": 104,
+  "quoteIndex": 0,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1185276311,
+  "textSha256": "f95cb487af2e2ca679c4f868531ff9d7e55023fb1c712d6a0eb705db714cc999",
+  "medium": "spoken",
+  "requestSha256": "03cb66fa9f75c24b59c8dd6f5374aa62337f6f26582b5e320d4959e091dfe0b4",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "他這次沒按剛才的預計走",
+    "cer": 0.090909,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 3.04,
+  "wallSeconds": 13.804,
+  "loudness": {
+    "input_i": "-22.06",
+    "input_tp": "-4.85",
+    "input_lra": "0.20",
+    "input_thresh": "-32.37",
+    "output_i": "-19.42",
+    "output_tp": "-2.30",
+    "output_lra": "0.00",
+    "output_thresh": "-29.73",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.58"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-seventh-night--override--q01--01/raw.wav",
+      "bytes": 291920,
+      "sha256": "039f87bb1c915e5f4591097468234db38e224113e9c5718e2de4d8757ed50178"
+    },
+    "master": {
+      "path": "circuit-seventh-night--override--q01--01/master.wav",
+      "bytes": 145998,
+      "sha256": "988291707d62c52c32785e77e8b9aa3d95e75e8c263ecf45447137cb1018644a"
+    },
+    "runtime": {
+      "path": "circuit-seventh-night--override--q01--01/runtime.ogg",
+      "bytes": 25338,
+      "sha256": "4717c3eb3394bfec82fd0da996740ee799c51a11e07ca76b55f4a21581f446e3"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

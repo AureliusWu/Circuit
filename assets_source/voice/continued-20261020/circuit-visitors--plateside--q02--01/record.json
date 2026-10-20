@@ -1,0 +1,59 @@
+{
+  "id": "circuit-visitors--plateside--q02--01",
+  "sceneId": "visitors",
+  "lineId": "visitors--plateSide--q02--01",
+  "lineIndex": 0,
+  "speaker": "luo",
+  "text": "我从外面看，椅子一直朝我。",
+  "nodeId": "plateSide",
+  "start": 65,
+  "end": 78,
+  "quoteIndex": 1,
+  "actorId": "luo",
+  "voice": "Vivian",
+  "instruct": "二十九岁女性，普通话，声音偏低，夜班值班员谨慎地问话，平静自然，略有迟疑，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1420077806,
+  "textSha256": "68f8d9b31784a76e58fa6cc3e3842a34d3b14e42b92b9288f853bc30621b898c",
+  "medium": "spoken",
+  "requestSha256": "fe5c97891aeb96133fe6bdd864740df8114dc2d1fc03754b2a78ac19cf9d5374",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "我从外面看,椅子一直朝我",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 2.96,
+  "wallSeconds": 14.208,
+  "loudness": {
+    "input_i": "-23.37",
+    "input_tp": "-6.86",
+    "input_lra": "0.00",
+    "input_thresh": "-33.93",
+    "output_i": "-19.98",
+    "output_tp": "-3.49",
+    "output_lra": "0.00",
+    "output_thresh": "-30.55",
+    "normalization_type": "linear",
+    "target_offset": "-0.02"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-visitors--plateside--q02--01/raw.wav",
+      "bytes": 284240,
+      "sha256": "57d18ee13c1a05cd4a42102c93326d9fda3a04c9d3f0c6ec29c03958f1905e39"
+    },
+    "master": {
+      "path": "circuit-visitors--plateside--q02--01/master.wav",
+      "bytes": 142158,
+      "sha256": "9f8c37ae5be89448d6eb68bf11984e685faedefea6de7d4b25b2d2731795a2ea"
+    },
+    "runtime": {
+      "path": "circuit-visitors--plateside--q02--01/runtime.ogg",
+      "bytes": 24323,
+      "sha256": "276f6df822117dceac70d5e9996664512b191cf97a497d3bce581e1553f60799"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

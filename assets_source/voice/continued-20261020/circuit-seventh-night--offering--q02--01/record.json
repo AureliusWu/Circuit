@@ -1,0 +1,59 @@
+{
+  "id": "circuit-seventh-night--offering--q02--01",
+  "sceneId": "seventh-night",
+  "lineId": "seventh-night--offering--q02--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "看见了吗？",
+  "nodeId": "offering",
+  "start": 90,
+  "end": 95,
+  "quoteIndex": 1,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1144090339,
+  "textSha256": "342b2ad8e3ba149398a1206a0bb6a199e9133b63485e94d80c20a5666294d267",
+  "medium": "spoken",
+  "requestSha256": "3d2e779282d8fdf2641fff819d75c608a21d4bbc7488782be81a1bb849846056",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "看见了吗",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 0.8,
+  "wallSeconds": 10.576,
+  "loudness": {
+    "input_i": "-20.71",
+    "input_tp": "-10.81",
+    "input_lra": "0.00",
+    "input_thresh": "-30.71",
+    "output_i": "-20.01",
+    "output_tp": "-10.10",
+    "output_lra": "0.00",
+    "output_thresh": "-30.01",
+    "normalization_type": "linear",
+    "target_offset": "0.01"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-seventh-night--offering--q02--01/raw.wav",
+      "bytes": 76880,
+      "sha256": "b1a2e6af8020f216d41b827cbd617f7cec652b3fdccde4acd944222e9b578018"
+    },
+    "master": {
+      "path": "circuit-seventh-night--offering--q02--01/master.wav",
+      "bytes": 38478,
+      "sha256": "c5bf9c07a98d579a11f9158039b5339b8d8688e69036456d81774ace31846011"
+    },
+    "runtime": {
+      "path": "circuit-seventh-night--offering--q02--01/runtime.ogg",
+      "bytes": 9062,
+      "sha256": "13d33f9db58050df7531456df385f50f4a63fd56c52c53a0e524e0cc78ab5d92"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

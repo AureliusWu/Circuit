@@ -1,0 +1,59 @@
+{
+  "id": "circuit-answering--seal--q01--01",
+  "sceneId": "answering",
+  "lineId": "answering--seal--q01--01",
+  "lineIndex": 0,
+  "speaker": "luo",
+  "text": "没有。我怕碰它。",
+  "nodeId": "seal",
+  "start": 104,
+  "end": 112,
+  "quoteIndex": 0,
+  "actorId": "luo",
+  "voice": "Vivian",
+  "instruct": "二十九岁女性，普通话，声音偏低，夜班值班员谨慎地问话，平静自然，略有迟疑，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 125034265,
+  "textSha256": "c9704077d39f444734750e590aba6c535cfee7a778770b650a728d56ab010252",
+  "medium": "spoken",
+  "requestSha256": "b63a036a7c511b882b3a7e22c11226aa51d822db65427751c6c6696f1a1c6176",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "没有我怕碰他",
+    "cer": 0.166667,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 3.04,
+  "wallSeconds": 152.618,
+  "loudness": {
+    "input_i": "-26.13",
+    "input_tp": "-10.48",
+    "input_lra": "0.20",
+    "input_thresh": "-38.59",
+    "output_i": "-17.14",
+    "output_tp": "-2.00",
+    "output_lra": "0.00",
+    "output_thresh": "-29.94",
+    "normalization_type": "dynamic",
+    "target_offset": "-2.86"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-answering--seal--q01--01/raw.wav",
+      "bytes": 291920,
+      "sha256": "62e547e187cc6ea424a4673059e04bb39a32b79bfa3cc708db86f3b59b07c3df"
+    },
+    "master": {
+      "path": "circuit-answering--seal--q01--01/master.wav",
+      "bytes": 145998,
+      "sha256": "9d2e2d29bef9393d04bf616d4b003a403c7a83d9ab14aba20601495492049f1c"
+    },
+    "runtime": {
+      "path": "circuit-answering--seal--q01--01/runtime.ogg",
+      "bytes": 23000,
+      "sha256": "f0cc8db9669962d2ac7616c1f2b3eaf2e0cec1e57d7edab7b9ef7decf90c0650"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

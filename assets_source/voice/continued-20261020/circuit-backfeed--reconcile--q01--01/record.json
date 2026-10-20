@@ -1,0 +1,59 @@
+{
+  "id": "circuit-backfeed--reconcile--q01--01",
+  "sceneId": "backfeed",
+  "lineId": "backfeed--reconcile--q01--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "旧册多半页，收条又晚了一段。得从原件查。",
+  "nodeId": "reconcile",
+  "start": 66,
+  "end": 86,
+  "quoteIndex": 0,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1662350647,
+  "textSha256": "c527bf334160b9fea7618ee9b2cdaa97985553486aec3228e0930b3e7273ea37",
+  "medium": "spoken",
+  "requestSha256": "7fdbfbf7a6627b624452a77e00cbdd91e6e93116ef0a2aa841af91010fb7366b",
+  "attempt": 5,
+  "status": "needs_review",
+  "asr": {
+    "transcript": "就策多半夜,收條又晚了一段。得從原建查。",
+    "cer": 0.235294,
+    "polarityCountsMatch": true,
+    "passed": false
+  },
+  "duration": 4.8,
+  "wallSeconds": 278.909,
+  "loudness": {
+    "input_i": "-20.40",
+    "input_tp": "-5.55",
+    "input_lra": "2.10",
+    "input_thresh": "-30.91",
+    "output_i": "-20.17",
+    "output_tp": "-5.64",
+    "output_lra": "2.10",
+    "output_thresh": "-30.69",
+    "normalization_type": "dynamic",
+    "target_offset": "0.17"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-backfeed--reconcile--q01--01/raw.wav",
+      "bytes": 460880,
+      "sha256": "fc9e128b18871779e857b8363e11836764763424f5ccaa8c038faf9ef804aad7"
+    },
+    "master": {
+      "path": "circuit-backfeed--reconcile--q01--01/master.wav",
+      "bytes": 230478,
+      "sha256": "0acfcab1f46e44cd8dfe847a3c2a6cd0153d658f2bf903cb12a6849ed5269ef3"
+    },
+    "runtime": {
+      "path": "circuit-backfeed--reconcile--q01--01/runtime.ogg",
+      "bytes": 36619,
+      "sha256": "05a96fa96cd8ab3598ffa117d1fb81a1bf3f4ad9fb46fbd76f2f2049a36775a7"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

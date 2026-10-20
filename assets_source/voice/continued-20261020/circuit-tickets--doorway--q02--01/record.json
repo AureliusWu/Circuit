@@ -1,0 +1,59 @@
+{
+  "id": "circuit-tickets--doorway--q02--01",
+  "sceneId": "tickets",
+  "lineId": "tickets--doorway--q02--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "按今天登记，一个个看脸。",
+  "nodeId": "doorway",
+  "start": 86,
+  "end": 98,
+  "quoteIndex": 1,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1860193837,
+  "textSha256": "11c14ce3ec6ccea965fa59469e74d1e2553fa95ee95df1ada428253fa9001a7d",
+  "medium": "spoken",
+  "requestSha256": "eaed96ed2145ef57f4674f0d80bd95da89234e10fe0d30513629dde4b36c420f",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "按今天登记,一个个看脸",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 2.64,
+  "wallSeconds": 88.824,
+  "loudness": {
+    "input_i": "-20.45",
+    "input_tp": "-8.11",
+    "input_lra": "0.00",
+    "input_thresh": "-30.81",
+    "output_i": "-20.01",
+    "output_tp": "-7.67",
+    "output_lra": "0.00",
+    "output_thresh": "-30.38",
+    "normalization_type": "linear",
+    "target_offset": "0.01"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-tickets--doorway--q02--01/raw.wav",
+      "bytes": 253520,
+      "sha256": "77f9836073cee0bc96e133d65fb886ea776e0a0cd83aa525ef45b13d80cdf1f1"
+    },
+    "master": {
+      "path": "circuit-tickets--doorway--q02--01/master.wav",
+      "bytes": 126798,
+      "sha256": "ced40f861d9a18f3878597aab1d93dbe8f7513a1dcaaafbde0ec9ed0efba015a"
+    },
+    "runtime": {
+      "path": "circuit-tickets--doorway--q02--01/runtime.ogg",
+      "bytes": 22333,
+      "sha256": "d483fad6e1b9960783a704b8f02036c3885089797d0efa84927c2ebb28920f77"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

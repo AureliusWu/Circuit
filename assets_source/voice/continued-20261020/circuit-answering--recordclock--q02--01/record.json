@@ -1,0 +1,59 @@
+{
+  "id": "circuit-answering--recordclock--q02--01",
+  "sceneId": "answering",
+  "lineId": "answering--recordClock--q02--01",
+  "lineIndex": 0,
+  "speaker": "cheng",
+  "text": "01:05。车载记录还能核。",
+  "nodeId": "recordClock",
+  "start": 70,
+  "end": 84,
+  "quoteIndex": 1,
+  "actorId": "cheng",
+  "voice": "Dylan",
+  "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 32986589,
+  "textSha256": "86cbaf704f4766a7bd9e0329bd89ab00b624d32a7c1a90b3967bc56291d2af1c",
+  "medium": "spoken",
+  "requestSha256": "8a50034c8cd32715450e766ed5bcf3539390788ada75ea380079b7df5e6e7973",
+  "attempt": 2,
+  "status": "accepted",
+  "asr": {
+    "transcript": "01.05分车载记录还能合",
+    "cer": 0.181818,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 3.6,
+  "wallSeconds": 20.77,
+  "loudness": {
+    "input_i": "-26.27",
+    "input_tp": "-7.41",
+    "input_lra": "0.70",
+    "input_thresh": "-36.42",
+    "output_i": "-19.89",
+    "output_tp": "-2.00",
+    "output_lra": "0.00",
+    "output_thresh": "-30.02",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.11"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-answering--recordclock--q02--01/raw.wav",
+      "bytes": 345680,
+      "sha256": "14e98f42fa6bb97c012e67889fa202fef1c8c4924f2a54fdf1ba91e8b41af4b9"
+    },
+    "master": {
+      "path": "circuit-answering--recordclock--q02--01/master.wav",
+      "bytes": 172878,
+      "sha256": "20aeeb5a2f2a55bff9586c217f98f09a55c8cb0d66c0e8a63e8567d00e0cfe97"
+    },
+    "runtime": {
+      "path": "circuit-answering--recordclock--q02--01/runtime.ogg",
+      "bytes": 28866,
+      "sha256": "a2b4975c486fb25a9f812752f4736e18cc7e14a50a1ac224d1db0f0ddff717bc"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

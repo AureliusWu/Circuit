@@ -1,0 +1,59 @@
+{
+  "id": "circuit-thirteen-households--zhoucall--q02--01",
+  "sceneId": "thirteen-households",
+  "lineId": "thirteen-households--zhouCall--q02--01",
+  "lineIndex": 0,
+  "speaker": "cheng",
+  "text": "十来分钟。",
+  "nodeId": "zhouCall",
+  "start": 34,
+  "end": 39,
+  "quoteIndex": 1,
+  "actorId": "cheng",
+  "voice": "Dylan",
+  "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1991358447,
+  "textSha256": "b96e10fbc13cb90168330169c95229856c0e32230da1fbc9f9b743c691b71726",
+  "medium": "spoken",
+  "requestSha256": "fc70571b0e855a4babb6a422141dc163b16ccae7fbc0af646f78bf5f1c49a366",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "十来分钟",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 0.96,
+  "wallSeconds": 5.16,
+  "loudness": {
+    "input_i": "-24.11",
+    "input_tp": "-7.95",
+    "input_lra": "0.00",
+    "input_thresh": "-34.11",
+    "output_i": "-20.01",
+    "output_tp": "-3.84",
+    "output_lra": "0.00",
+    "output_thresh": "-30.01",
+    "normalization_type": "linear",
+    "target_offset": "0.01"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-thirteen-households--zhoucall--q02--01/raw.wav",
+      "bytes": 92240,
+      "sha256": "3beeec6e71ebdf615596e1e6fe5b5abf34277c620e3837908e0eece7547c5b15"
+    },
+    "master": {
+      "path": "circuit-thirteen-households--zhoucall--q02--01/master.wav",
+      "bytes": 46158,
+      "sha256": "bb59af3cbe7c5d091c29ef645d9f4118799349730f9c1ed117ac9d5afbcbd769"
+    },
+    "runtime": {
+      "path": "circuit-thirteen-households--zhoucall--q02--01/runtime.ogg",
+      "bytes": 10260,
+      "sha256": "d8d08d985dc41fe502531fcbf9606f095a8fe9a2e41a8bd53dd70e86aea84b7a"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

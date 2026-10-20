@@ -1,0 +1,59 @@
+{
+  "id": "circuit-visitors--recordcard--q01--01",
+  "sceneId": "visitors",
+  "lineId": "visitors--recordCard--q01--01",
+  "lineIndex": 0,
+  "speaker": "cheng",
+  "text": "听着像，还要比。",
+  "nodeId": "recordCard",
+  "start": 50,
+  "end": 58,
+  "quoteIndex": 0,
+  "actorId": "cheng",
+  "voice": "Dylan",
+  "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1197684045,
+  "textSha256": "5099a73e0b3932181d4e34b45652c47e2e9ff4dc64196dcebc04f0a3627833f9",
+  "medium": "spoken",
+  "requestSha256": "59f3cfd8afd2953db1ba9272c7e05fd27f7582882fd652196b8ebb611edae8a7",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "听着像还要比",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 1.84,
+  "wallSeconds": 67.596,
+  "loudness": {
+    "input_i": "-25.06",
+    "input_tp": "-8.61",
+    "input_lra": "0.00",
+    "input_thresh": "-35.35",
+    "output_i": "-20.01",
+    "output_tp": "-3.55",
+    "output_lra": "0.00",
+    "output_thresh": "-30.30",
+    "normalization_type": "linear",
+    "target_offset": "0.01"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-visitors--recordcard--q01--01/raw.wav",
+      "bytes": 176720,
+      "sha256": "997b88f72a019c5b0072ea3f4b8412b2e534bb7b5791a3464a69941aaf9f963c"
+    },
+    "master": {
+      "path": "circuit-visitors--recordcard--q01--01/master.wav",
+      "bytes": 88398,
+      "sha256": "b426fa89b71e111ad44c4306c99deda25b3287ad2d621a3d9594f4ee36ecb136"
+    },
+    "runtime": {
+      "path": "circuit-visitors--recordcard--q01--01/runtime.ogg",
+      "bytes": 17135,
+      "sha256": "9a01651d389eed037e170bc595558b64b91705224a6bcaa563bd1fbd09fd0a81"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

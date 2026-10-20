@@ -1,0 +1,112 @@
+{
+  "id": "circuit-backfeed--chen--q02--01",
+  "sceneId": "backfeed",
+  "lineId": "backfeed--chen--q02--01",
+  "lineIndex": 0,
+  "speaker": "chen",
+  "text": "我母亲搬家都带旧门牌，说怕认错门。",
+  "nodeId": "chen",
+  "start": 63,
+  "end": 80,
+  "quoteIndex": 1,
+  "legacy": {
+    "id": "r02-door",
+    "character": "chen",
+    "speaker": "Uncle_Fu",
+    "instruct": "六十岁男性，普通话，语速慢，声音低哑，像看门的老人轻声说话，口语平实。",
+    "text": "我母亲搬家都带旧门牌，说怕认错门。",
+    "seed": 120021,
+    "bindings": [
+      {
+        "chapter": "backfeed",
+        "node": "chen"
+      }
+    ],
+    "requestSha256": "88f2e6d34cf061245f1c37b2670f3eae337ce43e4a229953d6d7e2840bc6ef15",
+    "duration": 5.76,
+    "generationSeconds": 31.485,
+    "loudnessInput": {
+      "input_i": "-21.42",
+      "input_tp": "-5.87",
+      "input_lra": "1.10",
+      "input_thresh": "-32.07",
+      "output_i": "-19.84",
+      "output_tp": "-4.25",
+      "output_lra": "1.90",
+      "output_thresh": "-30.34",
+      "normalization_type": "dynamic",
+      "target_offset": "-0.16"
+    },
+    "files": [
+      {
+        "path": "assets_source/audio/v1.2.0/r02-door-raw.wav",
+        "bytes": 276524,
+        "sha256": "dabde77f314143945661412c26bc0a3f0f0d0298d0c5af1c5c86b2e2b9070bff"
+      },
+      {
+        "path": "assets_source/audio/v1.2.0/r02-door.wav",
+        "bytes": 276558,
+        "sha256": "4db617bc31d3185f28f59eb91be4531ffd92594540a58f452bf602a0155ca39e"
+      },
+      {
+        "path": "public/audio/voice/r02-door.mp3",
+        "bytes": 70029,
+        "sha256": "a7b92d7c134dffd03c146bf1924504b62f965533176d92324ee2423c11a5b9eb"
+      }
+    ],
+    "asr": {
+      "id": "r02-door",
+      "mp3Sha256": "a7b92d7c134dffd03c146bf1924504b62f965533176d92324ee2423c11a5b9eb",
+      "expected": "我母亲搬家都带旧门牌，说怕认错门。",
+      "transcript": "我母亲搬家都带旧门牌,说怕认错门。",
+      "cer": 0,
+      "polarityCountsMatch": true,
+      "status": "passed"
+    },
+    "asrModel": "Systran/faster-whisper-large-v3",
+    "evidencePath": "docs/audio/voice-asr.json",
+    "evidenceSha256": "25d0e31c3decd5262d92349d6571ec67ac58723ea00c40005ddff4d8b9a58334"
+  },
+  "actorId": "chen",
+  "voice": "Uncle_Fu",
+  "instruct": "六十岁男性，普通话，语速慢，声音低哑，像看门的老人轻声说话，口语平实。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1259514206,
+  "textSha256": "9f4d5e24bf4bc0890f88e093f2afd5b3d079fa1d2ee9ae84339cb8c6c37ba91b",
+  "medium": "spoken",
+  "requestSha256": "a272bc0be1796550cf15796a14b8ca096e408a8b975d32ce9f11b908a9b2ade9",
+  "status": "accepted",
+  "productionMethod": "preserved_exact_legacy_bytes",
+  "duration": 5.76,
+  "actualGenerationRequest": {
+    "id": "r02-door",
+    "speaker": "Uncle_Fu",
+    "instruct": "六十岁男性，普通话，语速慢，声音低哑，像看门的老人轻声说话，口语平实。",
+    "seed": 120021,
+    "requestSha256": "88f2e6d34cf061245f1c37b2670f3eae337ce43e4a229953d6d7e2840bc6ef15"
+  },
+  "asr": {
+    "passed": true,
+    "transcript": "我母亲搬家都带旧门牌,说怕认错门。",
+    "cer": 0,
+    "polarityCountsMatch": true,
+    "model": "Systran/faster-whisper-large-v3"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-backfeed--chen--q02--01/raw.wav",
+      "bytes": 276524,
+      "sha256": "dabde77f314143945661412c26bc0a3f0f0d0298d0c5af1c5c86b2e2b9070bff"
+    },
+    "master": {
+      "path": "circuit-backfeed--chen--q02--01/master.wav",
+      "bytes": 276558,
+      "sha256": "4db617bc31d3185f28f59eb91be4531ffd92594540a58f452bf602a0155ca39e"
+    },
+    "runtime": {
+      "path": "circuit-backfeed--chen--q02--01/runtime.mp3",
+      "bytes": 70029,
+      "sha256": "a7b92d7c134dffd03c146bf1924504b62f965533176d92324ee2423c11a5b9eb"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

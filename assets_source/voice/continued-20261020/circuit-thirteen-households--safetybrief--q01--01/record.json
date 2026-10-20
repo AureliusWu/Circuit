@@ -1,0 +1,59 @@
+{
+  "id": "circuit-thirteen-households--safetybrief--q01--01",
+  "sceneId": "thirteen-households",
+  "lineId": "thirteen-households--safetyBrief--q01--01",
+  "lineIndex": 0,
+  "speaker": "lin",
+  "text": "他负责现场，你们到巷口会合。电网侧归我们，屋里的问题联系产权方。",
+  "nodeId": "safetyBrief",
+  "start": 17,
+  "end": 49,
+  "quoteIndex": 0,
+  "actorId": "lin",
+  "voice": "Serena",
+  "instruct": "成年女性，普通话，声音干脆平稳，值班调度员在电台里说话，清楚利落，不要播音腔。 调度通话，语速稍慢，逐句吐字清楚。槐荫巷读huái yīn xiàng，在线读zài xiàn。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1151827806,
+  "textSha256": "8241ec3bb62edad5245de8d0625bce70dd6b8b6817fc77aafa09c4b63195b8ab",
+  "medium": "spoken",
+  "requestSha256": "a5408696ff4c8cf06100f9b05066228447eb908b092f6b6d362d2dcf2ffce972",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "他负责现场,你们到巷口会合电网测规我们屋里的问题联系产权方",
+    "cer": 0.071429,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 5.44,
+  "wallSeconds": 319.848,
+  "loudness": {
+    "input_i": "-26.43",
+    "input_tp": "-8.07",
+    "input_lra": "0.50",
+    "input_thresh": "-36.59",
+    "output_i": "-20.37",
+    "output_tp": "-2.00",
+    "output_lra": "0.80",
+    "output_thresh": "-30.63",
+    "normalization_type": "dynamic",
+    "target_offset": "0.37"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-thirteen-households--safetybrief--q01--01/raw.wav",
+      "bytes": 522320,
+      "sha256": "94012629861ed1a2db41526f50dbfc43acdfda3910a92eb92ab3de9dcdb5e9a7"
+    },
+    "master": {
+      "path": "circuit-thirteen-households--safetybrief--q01--01/master.wav",
+      "bytes": 261198,
+      "sha256": "bdb30a6802439d1db7edfb3c5f13624bce96205e6623dcd6e2aa7cefb502d6c1"
+    },
+    "runtime": {
+      "path": "circuit-thirteen-households--safetybrief--q01--01/runtime.ogg",
+      "bytes": 42415,
+      "sha256": "782a3421aafc47cb7ff7a2b3faa30d473f794b6c2685197c2bdac5ca6c2bcb28"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

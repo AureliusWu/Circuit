@@ -1,0 +1,59 @@
+{
+  "id": "circuit-answering--van--q01--01",
+  "sceneId": "answering",
+  "lineId": "answering--van--q01--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "这杯居然还能喝。",
+  "nodeId": "van",
+  "start": 25,
+  "end": 33,
+  "quoteIndex": 0,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 629903978,
+  "textSha256": "2b845456ed69948a40347efe1acae9e2986f2f599d8f070840f16384e42af2f0",
+  "medium": "spoken",
+  "requestSha256": "caa06c82398c3de5a54bc7c53b2c0218e1a66e4e7a4742d280035a5cdcdaa2a2",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "这杯居然还能喝",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 1.84,
+  "wallSeconds": 75.9,
+  "loudness": {
+    "input_i": "-16.66",
+    "input_tp": "-2.26",
+    "input_lra": "0.00",
+    "input_thresh": "-26.66",
+    "output_i": "-20.00",
+    "output_tp": "-5.60",
+    "output_lra": "0.00",
+    "output_thresh": "-30.00",
+    "normalization_type": "linear",
+    "target_offset": "-0.00"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-answering--van--q01--01/raw.wav",
+      "bytes": 176720,
+      "sha256": "1f0419b622f9e712a4255f559c103d32ae76cfeb9338afec25c20c5749b51b94"
+    },
+    "master": {
+      "path": "circuit-answering--van--q01--01/master.wav",
+      "bytes": 88398,
+      "sha256": "6e26f2de209aaeb33a16322d5138c87856e2713cab473fc1c7923602926d1d14"
+    },
+    "runtime": {
+      "path": "circuit-answering--van--q01--01/runtime.ogg",
+      "bytes": 16380,
+      "sha256": "23ee03108510179e13bca8028a473d30902c15082c1a4da6ac9d9f844151326e"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

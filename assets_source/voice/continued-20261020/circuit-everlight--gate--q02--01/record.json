@@ -1,0 +1,59 @@
+{
+  "id": "circuit-everlight--gate--q02--01",
+  "sceneId": "everlight",
+  "lineId": "everlight--gate--q02--01",
+  "lineIndex": 0,
+  "speaker": "resident-gate",
+  "text": "只响，不开门。",
+  "nodeId": "gate",
+  "start": 105,
+  "end": 112,
+  "quoteIndex": 1,
+  "actorId": "resident-gate",
+  "voice": "Dylan",
+  "instruct": "成年男性住户，普通话，夜里睡不好，声音低而疲惫，日常交谈，清楚自然，不要夸张。",
+  "seed": 703812925,
+  "textSha256": "4b765fa2fda07e27ca65f13a9f2fc985ad65264d1bafc7c13c1a602125667b57",
+  "medium": "spoken",
+  "requestSha256": "98bd25340d2bc3816c3b4ee331c7e21caa67294c1793dfb9914dd09dded48f5c",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "只想不开门",
+    "cer": 0.2,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 1.52,
+  "wallSeconds": 7.427,
+  "loudness": {
+    "input_i": "-26.56",
+    "input_tp": "-5.94",
+    "input_lra": "0.00",
+    "input_thresh": "-36.56",
+    "output_i": "-22.61",
+    "output_tp": "-2.00",
+    "output_lra": "0.00",
+    "output_thresh": "-32.61",
+    "normalization_type": "linear",
+    "target_offset": "2.61"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-everlight--gate--q02--01/raw.wav",
+      "bytes": 146000,
+      "sha256": "4fb4232b4cb90322a7a6fd58630dc301dd4bdbdf9089eb490233c6c094b5a73f"
+    },
+    "master": {
+      "path": "circuit-everlight--gate--q02--01/master.wav",
+      "bytes": 73038,
+      "sha256": "5a6385ad91948b982e857aa74efc7b3445ce9679ff2a19ad3bec57ac49153b87"
+    },
+    "runtime": {
+      "path": "circuit-everlight--gate--q02--01/runtime.ogg",
+      "bytes": 15710,
+      "sha256": "d0fc990fab755f654c87fad60034c599833291c190092cd67919a1b21f546baf"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

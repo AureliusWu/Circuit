@@ -1,0 +1,112 @@
+{
+  "id": "circuit-thirteen-households--call--q02--01",
+  "sceneId": "thirteen-households",
+  "lineId": "thirteen-households--call--q02--01",
+  "lineIndex": 0,
+  "speaker": "cheng",
+  "text": "在线是通讯状态。有电没电，到了再看。",
+  "nodeId": "call",
+  "start": 67,
+  "end": 85,
+  "quoteIndex": 1,
+  "legacy": {
+    "id": "h13-call",
+    "character": "cheng",
+    "speaker": "Dylan",
+    "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。",
+    "text": "在线是通讯状态。有电没电，到了再看。",
+    "seed": 120011,
+    "bindings": [
+      {
+        "chapter": "thirteen-households",
+        "node": "call"
+      }
+    ],
+    "requestSha256": "14f6e408bd4a74ebf21fd13cfca50725f09b4b772cb97aa808b06576d7a9de38",
+    "duration": 3.44,
+    "generationSeconds": 17.468,
+    "loudnessInput": {
+      "input_i": "-25.96",
+      "input_tp": "-7.14",
+      "input_lra": "1.30",
+      "input_thresh": "-36.25",
+      "output_i": "-20.22",
+      "output_tp": "-2.00",
+      "output_lra": "0.00",
+      "output_thresh": "-30.50",
+      "normalization_type": "dynamic",
+      "target_offset": "0.22"
+    },
+    "files": [
+      {
+        "path": "assets_source/audio/v1.2.0/h13-call-raw.wav",
+        "bytes": 165164,
+        "sha256": "68ee58797dbe3bc8ed0aaeebf6aa1d0b4ef24e250116007834fc553ca55cb1cf"
+      },
+      {
+        "path": "assets_source/audio/v1.2.0/h13-call.wav",
+        "bytes": 165198,
+        "sha256": "3d0a9087d168a140dbea4d3340217cfb30d65f9b20d0238ecf1313d28df90e44"
+      },
+      {
+        "path": "public/audio/voice/h13-call.mp3",
+        "bytes": 42381,
+        "sha256": "c931c099cd860cf1920bf0d6ff2e16b7fa67fd9a092f2aef2e8b267f4943b34a"
+      }
+    ],
+    "asr": {
+      "id": "h13-call",
+      "mp3Sha256": "c931c099cd860cf1920bf0d6ff2e16b7fa67fd9a092f2aef2e8b267f4943b34a",
+      "expected": "在线是通讯状态。有电没电，到了再看。",
+      "transcript": "在线是通讯状态有电没电到了再看",
+      "cer": 0,
+      "polarityCountsMatch": true,
+      "status": "passed"
+    },
+    "asrModel": "Systran/faster-whisper-large-v3",
+    "evidencePath": "docs/audio/voice-asr.json",
+    "evidenceSha256": "25d0e31c3decd5262d92349d6571ec67ac58723ea00c40005ddff4d8b9a58334"
+  },
+  "actorId": "cheng",
+  "voice": "Dylan",
+  "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1632032315,
+  "textSha256": "00e4915fc696c4747b9cee6b8042f8ef17e8d2428d9c26d5442f26ff94c4e0eb",
+  "medium": "spoken",
+  "requestSha256": "4ddb1d2a237b818ebaf6334d32beb1c24c2abbc5141d659cd03437f5b3067586",
+  "status": "accepted",
+  "productionMethod": "preserved_exact_legacy_bytes",
+  "duration": 3.44,
+  "actualGenerationRequest": {
+    "id": "h13-call",
+    "speaker": "Dylan",
+    "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。",
+    "seed": 120011,
+    "requestSha256": "14f6e408bd4a74ebf21fd13cfca50725f09b4b772cb97aa808b06576d7a9de38"
+  },
+  "asr": {
+    "passed": true,
+    "transcript": "在线是通讯状态有电没电到了再看",
+    "cer": 0,
+    "polarityCountsMatch": true,
+    "model": "Systran/faster-whisper-large-v3"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-thirteen-households--call--q02--01/raw.wav",
+      "bytes": 165164,
+      "sha256": "68ee58797dbe3bc8ed0aaeebf6aa1d0b4ef24e250116007834fc553ca55cb1cf"
+    },
+    "master": {
+      "path": "circuit-thirteen-households--call--q02--01/master.wav",
+      "bytes": 165198,
+      "sha256": "3d0a9087d168a140dbea4d3340217cfb30d65f9b20d0238ecf1313d28df90e44"
+    },
+    "runtime": {
+      "path": "circuit-thirteen-households--call--q02--01/runtime.mp3",
+      "bytes": 42381,
+      "sha256": "c931c099cd860cf1920bf0d6ff2e16b7fa67fd9a092f2aef2e8b267f4943b34a"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

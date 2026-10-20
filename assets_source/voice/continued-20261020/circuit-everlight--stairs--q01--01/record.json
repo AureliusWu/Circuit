@@ -1,0 +1,59 @@
+{
+  "id": "circuit-everlight--stairs--q01--01",
+  "sceneId": "everlight",
+  "lineId": "everlight--stairs--q01--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "贴的人站在下面看过。",
+  "nodeId": "stairs",
+  "start": 40,
+  "end": 50,
+  "quoteIndex": 0,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 795672694,
+  "textSha256": "0ec4fda1c1c577dec7888ac95dd0f83bc4aafacbdf40fad7b269f871f55daf82",
+  "medium": "spoken",
+  "requestSha256": "52684dd5e166068328f96f35a2101be8daedb6c3f26b28d7422f390f7e895559",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "貼的人站在下面看過",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 2.0,
+  "wallSeconds": 78.32,
+  "loudness": {
+    "input_i": "-16.38",
+    "input_tp": "-2.40",
+    "input_lra": "0.00",
+    "input_thresh": "-26.38",
+    "output_i": "-20.01",
+    "output_tp": "-6.03",
+    "output_lra": "0.00",
+    "output_thresh": "-30.01",
+    "normalization_type": "linear",
+    "target_offset": "0.01"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-everlight--stairs--q01--01/raw.wav",
+      "bytes": 192080,
+      "sha256": "9e45e6d5e361c3b538cd288d3224178fa1527013c14664c67052b53b0d33e975"
+    },
+    "master": {
+      "path": "circuit-everlight--stairs--q01--01/master.wav",
+      "bytes": 96078,
+      "sha256": "029dc33a6be7ebd0405d9cbd6824d872fb25d5f07f09652bb5d603f0a97337ec"
+    },
+    "runtime": {
+      "path": "circuit-everlight--stairs--q01--01/runtime.ogg",
+      "bytes": 18052,
+      "sha256": "e8c4f80dfb17eb4b1ecd39a2c2a8e9433cbd9e5a0b2612bd51210b4b47a37294"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

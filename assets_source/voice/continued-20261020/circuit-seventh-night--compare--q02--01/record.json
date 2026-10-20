@@ -1,0 +1,59 @@
+{
+  "id": "circuit-seventh-night--compare--q02--01",
+  "sceneId": "seventh-night",
+  "lineId": "seventh-night--compare--q02--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "要是通知准时来，灯也不灭，那它喊的就不是停电。",
+  "nodeId": "compare",
+  "start": 90,
+  "end": 113,
+  "quoteIndex": 1,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 69617417,
+  "textSha256": "bd2dd9bc5fd6a7192726fa681e47c7f074eb23aed7ba8a2befb59318130211da",
+  "medium": "spoken",
+  "requestSha256": "7f04515e418da6232f9fa35d4818aabe384049402e758dc8c6cbdb3ff2a78a34",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "要是通知准时来 灯也不灭 那他喊的就不是停电",
+    "cer": 0.05,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 4.16,
+  "wallSeconds": 229.009,
+  "loudness": {
+    "input_i": "-20.60",
+    "input_tp": "-4.91",
+    "input_lra": "1.00",
+    "input_thresh": "-30.80",
+    "output_i": "-19.07",
+    "output_tp": "-3.26",
+    "output_lra": "0.90",
+    "output_thresh": "-29.30",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.93"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-seventh-night--compare--q02--01/raw.wav",
+      "bytes": 399440,
+      "sha256": "4a7f7aa040895c0942c299237d728ed150437dfbbd0dc8acd6ed5615ecd91e9b"
+    },
+    "master": {
+      "path": "circuit-seventh-night--compare--q02--01/master.wav",
+      "bytes": 199758,
+      "sha256": "87ae920a93d029c5084424eaeb9e1548eec56fb60950a3fe4a7d4a232db9557d"
+    },
+    "runtime": {
+      "path": "circuit-seventh-night--compare--q02--01/runtime.ogg",
+      "bytes": 33869,
+      "sha256": "9d2e90537eeaab9bb19b197c3c5335a14321cd4a664204fa92d98d7897b1c28d"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

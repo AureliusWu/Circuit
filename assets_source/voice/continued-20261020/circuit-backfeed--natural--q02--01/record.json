@@ -1,0 +1,59 @@
+{
+  "id": "circuit-backfeed--natural--q02--01",
+  "sceneId": "backfeed",
+  "lineId": "backfeed--natural--q02--01",
+  "lineIndex": 0,
+  "speaker": "chen",
+  "text": "所以我晚上不关门。",
+  "nodeId": "natural",
+  "start": 102,
+  "end": 111,
+  "quoteIndex": 1,
+  "actorId": "chen",
+  "voice": "Uncle_Fu",
+  "instruct": "六十岁男性，普通话，语速慢，声音低哑，像看门的老人轻声说话，口语平实。 只朗读给定台词，不添加词语或音效。",
+  "seed": 781307177,
+  "textSha256": "f19d5a03fc7c5c3127d638d0edee8a01ff1f144f4b6c95511e4fc945a4c0c4be",
+  "medium": "spoken",
+  "requestSha256": "bc9a770c492caec0a34a72e9a99b6f688a9a38bdc58e3704750225c614c31c14",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "所以我晚上不关门",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 1.84,
+  "wallSeconds": 66.362,
+  "loudness": {
+    "input_i": "-22.33",
+    "input_tp": "-6.28",
+    "input_lra": "0.00",
+    "input_thresh": "-32.33",
+    "output_i": "-19.96",
+    "output_tp": "-3.95",
+    "output_lra": "0.00",
+    "output_thresh": "-29.96",
+    "normalization_type": "linear",
+    "target_offset": "-0.04"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-backfeed--natural--q02--01/raw.wav",
+      "bytes": 176720,
+      "sha256": "6c951cf9f547b9fc2c332af0ed56588309bf2288e9cffcd5df5df5b403d5b895"
+    },
+    "master": {
+      "path": "circuit-backfeed--natural--q02--01/master.wav",
+      "bytes": 88398,
+      "sha256": "75fb8414ddaac0a0d632d366a4e428c76850e987253ce3fe5c17308a9db48568"
+    },
+    "runtime": {
+      "path": "circuit-backfeed--natural--q02--01/runtime.ogg",
+      "bytes": 17785,
+      "sha256": "679d2bf1c96bb9b5e21f318f2e6b76bef9e2db8b69e0b8a134de235f2f81909b"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

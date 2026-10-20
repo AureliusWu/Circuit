@@ -1,0 +1,59 @@
+{
+  "id": "circuit-return-visit--drive--q02--01",
+  "sceneId": "return-visit",
+  "lineId": "return-visit--drive--q02--01",
+  "lineIndex": 0,
+  "speaker": "cheng",
+  "text": "现门牌另核。",
+  "nodeId": "drive",
+  "start": 47,
+  "end": 53,
+  "quoteIndex": 1,
+  "actorId": "cheng",
+  "voice": "Dylan",
+  "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 723641217,
+  "textSha256": "600df22ae99735287a793634c7e3f65046cef1d936ab8c873dff3ce9459a15b3",
+  "medium": "spoken",
+  "requestSha256": "dcea560557dcc994774b65b34ad2044861d34f68a96dab039d1245adb1dd442d",
+  "attempt": 5,
+  "status": "needs_review",
+  "asr": {
+    "transcript": "线门牌领盒",
+    "cer": 0.6,
+    "polarityCountsMatch": true,
+    "passed": false
+  },
+  "duration": 1.28,
+  "wallSeconds": 128.322,
+  "loudness": {
+    "input_i": "-20.41",
+    "input_tp": "-5.72",
+    "input_lra": "0.00",
+    "input_thresh": "-30.41",
+    "output_i": "-20.01",
+    "output_tp": "-5.31",
+    "output_lra": "0.00",
+    "output_thresh": "-30.01",
+    "normalization_type": "linear",
+    "target_offset": "0.01"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-return-visit--drive--q02--01/raw.wav",
+      "bytes": 122960,
+      "sha256": "e284d2f73a286daa79f7236bcbe8f78db1415c58f7982882168ac80cb84fa749"
+    },
+    "master": {
+      "path": "circuit-return-visit--drive--q02--01/master.wav",
+      "bytes": 61518,
+      "sha256": "83dee7b33b4469518169e0ca512f2ede5d3204a1ec74977d5d6af0ac2402fcdc"
+    },
+    "runtime": {
+      "path": "circuit-return-visit--drive--q02--01/runtime.ogg",
+      "bytes": 12692,
+      "sha256": "fd9f7917acf16822f43948be45c929408afd0ec9ad5955c5c141fbc0b87b4520"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

@@ -1,0 +1,112 @@
+{
+  "id": "circuit-thirteen-households--vehiclekit--q01--01",
+  "sceneId": "thirteen-households",
+  "lineId": "thirteen-households--vehicleKit--q01--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "师傅，照片按户号存，还是按时间？",
+  "nodeId": "vehicleKit",
+  "start": 49,
+  "end": 65,
+  "quoteIndex": 0,
+  "legacy": {
+    "id": "h13-kit",
+    "character": "ji",
+    "speaker": "Vivian",
+    "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。",
+    "text": "师傅，照片按户号存，还是按时间？",
+    "seed": 120012,
+    "bindings": [
+      {
+        "chapter": "thirteen-households",
+        "node": "vehicleKit"
+      }
+    ],
+    "requestSha256": "2429ef6f6321e702f61b87a9975446034cc2cd35d2de9ed7ceb1b70daea9ed60",
+    "duration": 3.12,
+    "generationSeconds": 17.105,
+    "loudnessInput": {
+      "input_i": "-20.77",
+      "input_tp": "-2.69",
+      "input_lra": "0.40",
+      "input_thresh": "-31.07",
+      "output_i": "-19.63",
+      "output_tp": "-2.00",
+      "output_lra": "0.00",
+      "output_thresh": "-29.94",
+      "normalization_type": "dynamic",
+      "target_offset": "-0.37"
+    },
+    "files": [
+      {
+        "path": "assets_source/audio/v1.2.0/h13-kit-raw.wav",
+        "bytes": 149804,
+        "sha256": "c249a93176412ed23fcbc0ff649a4c36618bde1849699a9e353b8878ca264123"
+      },
+      {
+        "path": "assets_source/audio/v1.2.0/h13-kit.wav",
+        "bytes": 149838,
+        "sha256": "5e63a50c9a12fe0322628ff299af2938f211167dc24f5d119f89603e0f7ac3ff"
+      },
+      {
+        "path": "public/audio/voice/h13-kit.mp3",
+        "bytes": 38349,
+        "sha256": "7903f2ef27c89f0591193bf9ea513a7c5d427371ca7a0414db4a40c3ff0601a1"
+      }
+    ],
+    "asr": {
+      "id": "h13-kit",
+      "mp3Sha256": "7903f2ef27c89f0591193bf9ea513a7c5d427371ca7a0414db4a40c3ff0601a1",
+      "expected": "师傅，照片按户号存，还是按时间？",
+      "transcript": "师父,照片按户号存,还是按时间?",
+      "cer": 0.076923,
+      "polarityCountsMatch": true,
+      "status": "passed"
+    },
+    "asrModel": "Systran/faster-whisper-large-v3",
+    "evidencePath": "docs/audio/voice-asr.json",
+    "evidenceSha256": "25d0e31c3decd5262d92349d6571ec67ac58723ea00c40005ddff4d8b9a58334"
+  },
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1261727698,
+  "textSha256": "00ec83cb152d6a31204763ecb2c44c1e84520cd349564536b00e456b9e533d82",
+  "medium": "spoken",
+  "requestSha256": "5fb628cd19b1bbdc443098049b43a540ac9dc1435afc22731416edb1de2c6e41",
+  "status": "accepted",
+  "productionMethod": "preserved_exact_legacy_bytes",
+  "duration": 3.12,
+  "actualGenerationRequest": {
+    "id": "h13-kit",
+    "speaker": "Vivian",
+    "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。",
+    "seed": 120012,
+    "requestSha256": "2429ef6f6321e702f61b87a9975446034cc2cd35d2de9ed7ceb1b70daea9ed60"
+  },
+  "asr": {
+    "passed": true,
+    "transcript": "师父,照片按户号存,还是按时间?",
+    "cer": 0.076923,
+    "polarityCountsMatch": true,
+    "model": "Systran/faster-whisper-large-v3"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-thirteen-households--vehiclekit--q01--01/raw.wav",
+      "bytes": 149804,
+      "sha256": "c249a93176412ed23fcbc0ff649a4c36618bde1849699a9e353b8878ca264123"
+    },
+    "master": {
+      "path": "circuit-thirteen-households--vehiclekit--q01--01/master.wav",
+      "bytes": 149838,
+      "sha256": "5e63a50c9a12fe0322628ff299af2938f211167dc24f5d119f89603e0f7ac3ff"
+    },
+    "runtime": {
+      "path": "circuit-thirteen-households--vehiclekit--q01--01/runtime.mp3",
+      "bytes": 38349,
+      "sha256": "7903f2ef27c89f0591193bf9ea513a7c5d427371ca7a0414db4a40c3ff0601a1"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

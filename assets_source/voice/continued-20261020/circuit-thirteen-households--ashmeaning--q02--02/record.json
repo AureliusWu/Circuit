@@ -1,0 +1,112 @@
+{
+  "id": "circuit-thirteen-households--ashmeaning--q02--02",
+  "sceneId": "thirteen-households",
+  "lineId": "thirteen-households--ashMeaning--q02--02",
+  "lineIndex": 1,
+  "speaker": "mei",
+  "text": "门留着，别替他把路画死。",
+  "nodeId": "ashMeaning",
+  "start": 55,
+  "end": 67,
+  "quoteIndex": 1,
+  "legacy": {
+    "id": "h13-mei",
+    "character": "mei",
+    "speaker": "Serena",
+    "instruct": "六十岁女性，普通话，声音偏低，平实缓慢，像老邻居小声嘱咐，句尾稍停，不要年轻撒娇。",
+    "text": "门留着，别替他把路画死。",
+    "seed": 120014,
+    "bindings": [
+      {
+        "chapter": "thirteen-households",
+        "node": "ashMeaning"
+      }
+    ],
+    "requestSha256": "fc3e5d6a3eec3dc6f5b856d38f450709ae9bd04a81a9aa1f956c75137f41d615",
+    "duration": 2.64,
+    "generationSeconds": 15.363,
+    "loudnessInput": {
+      "input_i": "-22.51",
+      "input_tp": "-4.50",
+      "input_lra": "0.00",
+      "input_thresh": "-33.11",
+      "output_i": "-20.01",
+      "output_tp": "-2.00",
+      "output_lra": "0.00",
+      "output_thresh": "-30.60",
+      "normalization_type": "linear",
+      "target_offset": "0.01"
+    },
+    "files": [
+      {
+        "path": "assets_source/audio/v1.2.0/h13-mei-raw.wav",
+        "bytes": 126764,
+        "sha256": "8aa94bee166789b93b074c1028a045246c77f01b956cababd520b2e3d740a464"
+      },
+      {
+        "path": "assets_source/audio/v1.2.0/h13-mei.wav",
+        "bytes": 126798,
+        "sha256": "369efa80dab0da9c5f64a271cd2cba08c8b49a6d0a18674752da045c16bc860a"
+      },
+      {
+        "path": "public/audio/voice/h13-mei.mp3",
+        "bytes": 32589,
+        "sha256": "53eab11265e07c5d1dd1b01a3e651c6fcc4d6f6354db673567ebec247e8f418f"
+      }
+    ],
+    "asr": {
+      "id": "h13-mei",
+      "mp3Sha256": "53eab11265e07c5d1dd1b01a3e651c6fcc4d6f6354db673567ebec247e8f418f",
+      "expected": "门留着，别替他把路画死。",
+      "transcript": "门留着,别替他把路划死。",
+      "cer": 0.1,
+      "polarityCountsMatch": true,
+      "status": "passed"
+    },
+    "asrModel": "Systran/faster-whisper-large-v3",
+    "evidencePath": "docs/audio/voice-asr.json",
+    "evidenceSha256": "25d0e31c3decd5262d92349d6571ec67ac58723ea00c40005ddff4d8b9a58334"
+  },
+  "actorId": "mei",
+  "voice": "Serena",
+  "instruct": "六十岁女性，普通话，声音偏低，平实缓慢，像老邻居小声嘱咐，句尾稍停，不要年轻撒娇。 只朗读给定台词，不添加词语或音效。",
+  "seed": 43735210,
+  "textSha256": "555b01be2af693db3b97c91ce80ec84ab3a2067b61350b0693b8306d04dff326",
+  "medium": "spoken",
+  "requestSha256": "9f329db1c0151358d66767a67c338fe99f4b3b7644016b8b57277188ee08c4a4",
+  "status": "accepted",
+  "productionMethod": "preserved_exact_legacy_bytes",
+  "duration": 2.64,
+  "actualGenerationRequest": {
+    "id": "h13-mei",
+    "speaker": "Serena",
+    "instruct": "六十岁女性，普通话，声音偏低，平实缓慢，像老邻居小声嘱咐，句尾稍停，不要年轻撒娇。",
+    "seed": 120014,
+    "requestSha256": "fc3e5d6a3eec3dc6f5b856d38f450709ae9bd04a81a9aa1f956c75137f41d615"
+  },
+  "asr": {
+    "passed": true,
+    "transcript": "门留着,别替他把路划死。",
+    "cer": 0.1,
+    "polarityCountsMatch": true,
+    "model": "Systran/faster-whisper-large-v3"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-thirteen-households--ashmeaning--q02--02/raw.wav",
+      "bytes": 126764,
+      "sha256": "8aa94bee166789b93b074c1028a045246c77f01b956cababd520b2e3d740a464"
+    },
+    "master": {
+      "path": "circuit-thirteen-households--ashmeaning--q02--02/master.wav",
+      "bytes": 126798,
+      "sha256": "369efa80dab0da9c5f64a271cd2cba08c8b49a6d0a18674752da045c16bc860a"
+    },
+    "runtime": {
+      "path": "circuit-thirteen-households--ashmeaning--q02--02/runtime.mp3",
+      "bytes": 32589,
+      "sha256": "53eab11265e07c5d1dd1b01a3e651c6fcc4d6f6354db673567ebec247e8f418f"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

@@ -1,0 +1,59 @@
+{
+  "id": "circuit-tickets--handoff--q03--01",
+  "sceneId": "tickets",
+  "lineId": "tickets--handoff--q03--01",
+  "lineIndex": 0,
+  "speaker": "chen",
+  "text": "我不坐。你们都听见了啊。",
+  "nodeId": "handoff",
+  "start": 85,
+  "end": 97,
+  "quoteIndex": 2,
+  "actorId": "chen",
+  "voice": "Uncle_Fu",
+  "instruct": "六十岁男性，普通话，语速慢，声音低哑，像看门的老人轻声说话，口语平实。 只朗读给定台词，不添加词语或音效。",
+  "seed": 509327699,
+  "textSha256": "121f9e809fcb66cd8a610bbcc31a0c33ca755e95de9dcd78f3c5b61b96618fb4",
+  "medium": "spoken",
+  "requestSha256": "e19e66be829dda2076a19b469ecc3f2a7d1854300854231fa89b18193eedbb9a",
+  "attempt": 1,
+  "status": "accepted",
+  "asr": {
+    "transcript": "我不做你們都聽見了啊",
+    "cer": 0.1,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 2.96,
+  "wallSeconds": 119.913,
+  "loudness": {
+    "input_i": "-21.19",
+    "input_tp": "-4.89",
+    "input_lra": "0.00",
+    "input_thresh": "-31.72",
+    "output_i": "-20.00",
+    "output_tp": "-3.70",
+    "output_lra": "0.00",
+    "output_thresh": "-30.53",
+    "normalization_type": "linear",
+    "target_offset": "-0.00"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-tickets--handoff--q03--01/raw.wav",
+      "bytes": 284240,
+      "sha256": "175f49e03f1b4709de23ecfc65eaea663905434da57fa1ffc41cedebb06a460b"
+    },
+    "master": {
+      "path": "circuit-tickets--handoff--q03--01/master.wav",
+      "bytes": 142158,
+      "sha256": "38399cfe9a8cdadda314a96f1b15caaa28d94e42bff259492ee475b4c339629d"
+    },
+    "runtime": {
+      "path": "circuit-tickets--handoff--q03--01/runtime.ogg",
+      "bytes": 25410,
+      "sha256": "8c3c38f53cc1c021152589706e482f206976533302cfb1d2ba1f0cb6d7c8e4bd"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

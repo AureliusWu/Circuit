@@ -1,0 +1,59 @@
+{
+  "id": "circuit-backfeed--memorytable--q01--01",
+  "sceneId": "backfeed",
+  "lineId": "backfeed--memoryTable--q01--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "这份单独装。",
+  "nodeId": "memoryTable",
+  "start": 56,
+  "end": 62,
+  "quoteIndex": 0,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 862688875,
+  "textSha256": "22a31074114c8e8bdb62e52ef4c71ebca6b8daa50c09742e5b844d50320dcf06",
+  "medium": "spoken",
+  "requestSha256": "0dfde4925dfcc43384719ad67540812fe9fde83b0dc0aacf9cdbf82f8cc9d5a6",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "这份单独装",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 1.04,
+  "wallSeconds": 42.285,
+  "loudness": {
+    "input_i": "-21.68",
+    "input_tp": "-9.55",
+    "input_lra": "0.00",
+    "input_thresh": "-31.68",
+    "output_i": "-19.99",
+    "output_tp": "-7.87",
+    "output_lra": "0.00",
+    "output_thresh": "-29.99",
+    "normalization_type": "linear",
+    "target_offset": "-0.01"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-backfeed--memorytable--q01--01/raw.wav",
+      "bytes": 99920,
+      "sha256": "6fe8c779d39dced8376edbe87f6fa2494b1463950527a721371dc939d085251b"
+    },
+    "master": {
+      "path": "circuit-backfeed--memorytable--q01--01/master.wav",
+      "bytes": 49998,
+      "sha256": "4f7bae3b83766ff34609c5e1ef688e1141dfe519e1319aad8de89d0f0d9d360b"
+    },
+    "runtime": {
+      "path": "circuit-backfeed--memorytable--q01--01/runtime.ogg",
+      "bytes": 11214,
+      "sha256": "3601a1bd01468ead4cf16ac3a84a899a80d19bd5d0d52e7b289b9d3c1313e2ed"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

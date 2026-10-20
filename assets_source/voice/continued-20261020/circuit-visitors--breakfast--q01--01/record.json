@@ -1,0 +1,59 @@
+{
+  "id": "circuit-visitors--breakfast--q01--01",
+  "sceneId": "visitors",
+  "lineId": "visitors--breakfast--q01--01",
+  "lineIndex": 0,
+  "speaker": "cheng",
+  "text": "你上回不还吃了半块饼干？",
+  "nodeId": "breakfast",
+  "start": 45,
+  "end": 57,
+  "quoteIndex": 0,
+  "actorId": "cheng",
+  "voice": "Dylan",
+  "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 982880777,
+  "textSha256": "c12a59ad712dec45c5f456189ef36197a8cec57d7f420aa4971d16c9bab99ec8",
+  "medium": "spoken",
+  "requestSha256": "911b6d93d7ce19e4df997eed4480a2d0ba3f6ee0560feb2d13465a7d20ce4380",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "你上回不还吃了半块饼干",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 2.16,
+  "wallSeconds": 21.122,
+  "loudness": {
+    "input_i": "-25.81",
+    "input_tp": "-6.18",
+    "input_lra": "0.00",
+    "input_thresh": "-35.81",
+    "output_i": "-21.63",
+    "output_tp": "-2.00",
+    "output_lra": "0.00",
+    "output_thresh": "-31.63",
+    "normalization_type": "linear",
+    "target_offset": "1.63"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-visitors--breakfast--q01--01/raw.wav",
+      "bytes": 207440,
+      "sha256": "c9b1cb65bd244804d5b8ca5b596f98af3b6509ee37dae7649abb61da522b3496"
+    },
+    "master": {
+      "path": "circuit-visitors--breakfast--q01--01/master.wav",
+      "bytes": 103758,
+      "sha256": "92565dcfe065892ada509c096bd449042eb4b6a721497ff9b3435bb89a657cc0"
+    },
+    "runtime": {
+      "path": "circuit-visitors--breakfast--q01--01/runtime.ogg",
+      "bytes": 21636,
+      "sha256": "b5b6f265f49511a750ce4ef110d83e662214d6f69d82349e5290250e4c730933"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

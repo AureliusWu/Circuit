@@ -1,0 +1,59 @@
+{
+  "id": "circuit-neutral--handover--q01--01",
+  "sceneId": "neutral",
+  "lineId": "neutral--handover--q01--01",
+  "lineIndex": 0,
+  "speaker": "shen",
+  "text": "我爸那年明明回家了，为什么许师傅那行不写？",
+  "nodeId": "handover",
+  "start": 43,
+  "end": 64,
+  "quoteIndex": 0,
+  "actorId": "shen",
+  "voice": "Serena",
+  "instruct": "二十八岁女性，普通话，声音轻而疲惫，口语自然，像一晚上没睡好的人，不要哭腔。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1937125870,
+  "textSha256": "8427a4caa97b3733fa23fe4cad68e67a196ddd17b50fcdcc5996b84835f9374f",
+  "medium": "spoken",
+  "requestSha256": "6b4cef87464842a82f77dd1340630e7f7f409ecd00067af73c50d66100a594e4",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "我爸那年明明回家了为什么许师傅呢行不写",
+    "cer": 0.052632,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 4.48,
+  "wallSeconds": 20.901,
+  "loudness": {
+    "input_i": "-25.87",
+    "input_tp": "-6.35",
+    "input_lra": "1.60",
+    "input_thresh": "-36.13",
+    "output_i": "-19.96",
+    "output_tp": "-2.00",
+    "output_lra": "0.90",
+    "output_thresh": "-30.29",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.04"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-neutral--handover--q01--01/raw.wav",
+      "bytes": 430160,
+      "sha256": "2cb6c84f8c8975c08d7a095f406fcc8e8ff014e6bfc73461664bf621b4f93a06"
+    },
+    "master": {
+      "path": "circuit-neutral--handover--q01--01/master.wav",
+      "bytes": 215118,
+      "sha256": "c9f2e36272ca57bcae8d7e3bd4904ad12a3b52dcdc4f05e93f6d42be6f085e1b"
+    },
+    "runtime": {
+      "path": "circuit-neutral--handover--q01--01/runtime.ogg",
+      "bytes": 34781,
+      "sha256": "6ebc86028f39baaf94783bd0dc39980159a21fb1586884f7847196291569e4f6"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

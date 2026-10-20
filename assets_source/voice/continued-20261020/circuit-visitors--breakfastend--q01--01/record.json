@@ -1,0 +1,59 @@
+{
+  "id": "circuit-visitors--breakfastend--q01--01",
+  "sceneId": "visitors",
+  "lineId": "visitors--breakfastEnd--q01--01",
+  "lineIndex": 0,
+  "speaker": "cheng",
+  "text": "这次不是泡面了。",
+  "nodeId": "breakfastEnd",
+  "start": 66,
+  "end": 74,
+  "quoteIndex": 0,
+  "actorId": "cheng",
+  "voice": "Dylan",
+  "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 16016659,
+  "textSha256": "98b3bcdb379f73962ff5359269e1f5551f121b005bfa16d94af3f7c3434486e4",
+  "medium": "spoken",
+  "requestSha256": "7f91d6530302e8c122171e0f3dcfa6fff5470ce8ce853bb77b5d5f22b31ae942",
+  "attempt": 1,
+  "status": "accepted",
+  "asr": {
+    "transcript": "这次不是泡面了",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 1.52,
+  "wallSeconds": 60.594,
+  "loudness": {
+    "input_i": "-26.96",
+    "input_tp": "-8.38",
+    "input_lra": "0.00",
+    "input_thresh": "-36.96",
+    "output_i": "-20.59",
+    "output_tp": "-2.00",
+    "output_lra": "0.00",
+    "output_thresh": "-30.59",
+    "normalization_type": "linear",
+    "target_offset": "0.59"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-visitors--breakfastend--q01--01/raw.wav",
+      "bytes": 146000,
+      "sha256": "2116cf7f56e0c05f9bf7b4d22bbc351bba968463d06da4740f572ee4f85236b4"
+    },
+    "master": {
+      "path": "circuit-visitors--breakfastend--q01--01/master.wav",
+      "bytes": 73038,
+      "sha256": "404e7f27c233293777ee1a09eb5f1220d998cb7759d9c8706e71f8f57b0291ef"
+    },
+    "runtime": {
+      "path": "circuit-visitors--breakfastend--q01--01/runtime.ogg",
+      "bytes": 15930,
+      "sha256": "65ce855bc842540a342829b3f1add7341664fb116666adfb14dea17e02ecf0c3"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

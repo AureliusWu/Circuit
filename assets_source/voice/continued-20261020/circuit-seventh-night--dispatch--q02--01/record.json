@@ -1,0 +1,59 @@
+{
+  "id": "circuit-seventh-night--dispatch--q02--01",
+  "sceneId": "seventh-night",
+  "lineId": "seventh-night--dispatch--q02--01",
+  "lineIndex": 0,
+  "speaker": "lin",
+  "text": "我没写。",
+  "nodeId": "dispatch",
+  "start": 75,
+  "end": 79,
+  "quoteIndex": 1,
+  "actorId": "lin",
+  "voice": "Serena",
+  "instruct": "成年女性，普通话，声音干脆平稳，值班调度员在电台里说话，清楚利落，不要播音腔。 调度通话，语速稍慢，逐句吐字清楚。槐荫巷读huái yīn xiàng，在线读zài xiàn。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1122561671,
+  "textSha256": "b480dbbf70fe8a04535e5a97c28aeca14f19196387f28b0813abb0ecb77e65a0",
+  "medium": "spoken",
+  "requestSha256": "4a891863f50c905c014a3b939a65442051424c74a58c735f2b4102458f353e93",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "我没写",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 0.8,
+  "wallSeconds": 51.325,
+  "loudness": {
+    "input_i": "-23.80",
+    "input_tp": "-12.36",
+    "input_lra": "0.00",
+    "input_thresh": "-33.80",
+    "output_i": "-20.00",
+    "output_tp": "-8.56",
+    "output_lra": "0.00",
+    "output_thresh": "-30.00",
+    "normalization_type": "linear",
+    "target_offset": "-0.00"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-seventh-night--dispatch--q02--01/raw.wav",
+      "bytes": 76880,
+      "sha256": "ce69e69d9f180d5339577955c74dae26f7c12c17275a3efcb03f0e83d5b8de6e"
+    },
+    "master": {
+      "path": "circuit-seventh-night--dispatch--q02--01/master.wav",
+      "bytes": 38478,
+      "sha256": "0227565768364305b694edf9e77e3c4cde30ed3422ae1fae558d1a084fe9dfce"
+    },
+    "runtime": {
+      "path": "circuit-seventh-night--dispatch--q02--01/runtime.ogg",
+      "bytes": 9113,
+      "sha256": "9d56594b36c607709316ebafb07e8a1bdbc86578e833c81e4631941cd893670f"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

@@ -1,0 +1,59 @@
+{
+  "id": "circuit-backfeed--chen--q01--01",
+  "sceneId": "backfeed",
+  "lineId": "backfeed--chen--q01--01",
+  "lineIndex": 0,
+  "speaker": "chen",
+  "text": "进线早拆了，它还朝外走。",
+  "nodeId": "chen",
+  "start": 1,
+  "end": 13,
+  "quoteIndex": 0,
+  "actorId": "chen",
+  "voice": "Uncle_Fu",
+  "instruct": "六十岁男性，普通话，语速慢，声音低哑，像看门的老人轻声说话，口语平实。 只朗读给定台词，不添加词语或音效。",
+  "seed": 195211426,
+  "textSha256": "8d0aa05e6e691b12d55a74806c28f6d722fb8349a49afcc2d7f4857053ea1955",
+  "medium": "spoken",
+  "requestSha256": "19629122dda041a06540f49886d8f484474e83dba11ba4f04102d03a9a672e1a",
+  "attempt": 3,
+  "status": "accepted",
+  "asr": {
+    "transcript": "金线早拆了他还朝外走",
+    "cer": 0.2,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 4.08,
+  "wallSeconds": 113.695,
+  "loudness": {
+    "input_i": "-22.04",
+    "input_tp": "-5.37",
+    "input_lra": "1.30",
+    "input_thresh": "-32.31",
+    "output_i": "-18.29",
+    "output_tp": "-2.00",
+    "output_lra": "1.40",
+    "output_thresh": "-28.64",
+    "normalization_type": "dynamic",
+    "target_offset": "-1.71"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-backfeed--chen--q01--01/raw.wav",
+      "bytes": 391760,
+      "sha256": "6a7ae7ceb878bb752470dcfd85b08d588ad9d31e4c4192e1933d2ceb27062378"
+    },
+    "master": {
+      "path": "circuit-backfeed--chen--q01--01/master.wav",
+      "bytes": 195918,
+      "sha256": "8b5d75e71b900f7614654e87fc393c36083a3963a1c8a8ebe6d28110ff9ae5dc"
+    },
+    "runtime": {
+      "path": "circuit-backfeed--chen--q01--01/runtime.ogg",
+      "bytes": 31986,
+      "sha256": "82feee58a94811c78a9e34f3dea43230acc0d88dd67f3f0c460001235b625670"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

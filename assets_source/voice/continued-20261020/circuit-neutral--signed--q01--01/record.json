@@ -1,0 +1,59 @@
+{
+  "id": "circuit-neutral--signed--q01--01",
+  "sceneId": "neutral",
+  "lineId": "neutral--signed--q01--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "原件交档案，说明交独立复核，是这两份？",
+  "nodeId": "signed",
+  "start": 50,
+  "end": 69,
+  "quoteIndex": 0,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 332628347,
+  "textSha256": "19ebea915160e1a9a1cde39d2b8fabc66f753aa6d8f8fd040d130fcff42e6434",
+  "medium": "spoken",
+  "requestSha256": "e3cdf0d243c52b2862bfdce6e05baa657b4740b4abe9596278595eae0bece0b2",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "原建交档案 說明交獨立負荷 是這兩份",
+    "cer": 0.1875,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 3.36,
+  "wallSeconds": 28.883,
+  "loudness": {
+    "input_i": "-18.06",
+    "input_tp": "-1.26",
+    "input_lra": "0.30",
+    "input_thresh": "-28.20",
+    "output_i": "-19.81",
+    "output_tp": "-3.09",
+    "output_lra": "0.00",
+    "output_thresh": "-29.95",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.19"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-neutral--signed--q01--01/raw.wav",
+      "bytes": 322640,
+      "sha256": "8dacc59ee842b501bee04cb3b2a91f549ebabc3f2dace8e1a3893ffaedce6b4e"
+    },
+    "master": {
+      "path": "circuit-neutral--signed--q01--01/master.wav",
+      "bytes": 161358,
+      "sha256": "bc02b67afc452054f46858b56772e7ff569df08423fa528fc5f0f0192925ab7b"
+    },
+    "runtime": {
+      "path": "circuit-neutral--signed--q01--01/runtime.ogg",
+      "bytes": 28459,
+      "sha256": "0cc5e29a412296268d47cd19f814819a8483ded80202f422581dc5e89b0d348e"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

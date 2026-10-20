@@ -1,0 +1,59 @@
+{
+  "id": "circuit-seventh-night--welcome--q02--01",
+  "sceneId": "seventh-night",
+  "lineId": "seventh-night--welcome--q02--01",
+  "lineIndex": 0,
+  "speaker": "shen",
+  "text": "这回没回来的是谁？",
+  "nodeId": "welcome",
+  "start": 108,
+  "end": 117,
+  "quoteIndex": 1,
+  "actorId": "shen",
+  "voice": "Serena",
+  "instruct": "二十八岁女性，普通话，声音轻而疲惫，口语自然，像一晚上没睡好的人，不要哭腔。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1164956697,
+  "textSha256": "c68da85a1d73b1f831dcd6f96dfb9969978c75894bb5b01423776a4bcd9d725a",
+  "medium": "spoken",
+  "requestSha256": "fe16dc53b18659349fe6c5151077da968e3c439e05e2280b13826f7aa782dd13",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "这回没回来的是谁",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 1.6,
+  "wallSeconds": 8.084,
+  "loudness": {
+    "input_i": "-21.26",
+    "input_tp": "-7.64",
+    "input_lra": "0.00",
+    "input_thresh": "-31.26",
+    "output_i": "-19.99",
+    "output_tp": "-6.38",
+    "output_lra": "0.00",
+    "output_thresh": "-29.99",
+    "normalization_type": "linear",
+    "target_offset": "-0.01"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-seventh-night--welcome--q02--01/raw.wav",
+      "bytes": 153680,
+      "sha256": "409683eee3c6baad198114c9046ae0b79f921d133dac8a80495e36a80dd4d1e4"
+    },
+    "master": {
+      "path": "circuit-seventh-night--welcome--q02--01/master.wav",
+      "bytes": 76878,
+      "sha256": "259eb7965d8b3ebf2b6c8473fd509254155fa3ee0bbf31c6fe630ab768f3fedb"
+    },
+    "runtime": {
+      "path": "circuit-seventh-night--welcome--q02--01/runtime.ogg",
+      "bytes": 15034,
+      "sha256": "d09e0baa25cf26414ac47daca2545ae2b83b0c77c3cd6f1f7152721bba7def1c"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

@@ -1,0 +1,59 @@
+{
+  "id": "circuit-seventh-night--lane--q01--01",
+  "sceneId": "seventh-night",
+  "lineId": "seventh-night--lane--q01--01",
+  "lineIndex": 0,
+  "speaker": "shen",
+  "text": "亲戚说头七让他认门，就这么摆。都过了两天了。",
+  "nodeId": "lane",
+  "start": 62,
+  "end": 84,
+  "quoteIndex": 0,
+  "actorId": "shen",
+  "voice": "Serena",
+  "instruct": "二十八岁女性，普通话，声音轻而疲惫，口语自然，像一晚上没睡好的人，不要哭腔。 只朗读给定台词，不添加词语或音效。",
+  "seed": 743760983,
+  "textSha256": "bf50b76db78a4a8824caae01afaff4ab880c7612b787971a62c7992fd3a1790f",
+  "medium": "spoken",
+  "requestSha256": "c5a25d81b4ed44b6b055fbb6898a28e9716a581260617e4f969a97ac36be72d8",
+  "attempt": 1,
+  "status": "accepted",
+  "asr": {
+    "transcript": "親戚說頭期讓她忍門就這麼擺都過了兩天了",
+    "cer": 0.157895,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 4.96,
+  "wallSeconds": 292.886,
+  "loudness": {
+    "input_i": "-24.13",
+    "input_tp": "-9.59",
+    "input_lra": "2.60",
+    "input_thresh": "-34.54",
+    "output_i": "-20.16",
+    "output_tp": "-5.92",
+    "output_lra": "2.20",
+    "output_thresh": "-30.60",
+    "normalization_type": "dynamic",
+    "target_offset": "0.16"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-seventh-night--lane--q01--01/raw.wav",
+      "bytes": 476240,
+      "sha256": "51c10b6bb6de8318094f82303750d97a14029f8829d2e855c77b142db15e62ac"
+    },
+    "master": {
+      "path": "circuit-seventh-night--lane--q01--01/master.wav",
+      "bytes": 238158,
+      "sha256": "49fedbc2b923838f0436c1363defbf703328605f1de231e8825cca265ff41eb9"
+    },
+    "runtime": {
+      "path": "circuit-seventh-night--lane--q01--01/runtime.ogg",
+      "bytes": 36740,
+      "sha256": "7e0a4f097066f7c15c8eaaefbb723084e8a6c42867626a967a8142fa1a1b82a1"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

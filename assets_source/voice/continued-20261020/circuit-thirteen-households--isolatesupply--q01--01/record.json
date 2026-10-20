@@ -1,0 +1,59 @@
+{
+  "id": "circuit-thirteen-households--isolatesupply--q01--01",
+  "sceneId": "thirteen-households",
+  "lineId": "thirteen-households--isolateSupply--q01--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "巷子都停了，这根也不算在里面？",
+  "nodeId": "isolateSupply",
+  "start": 61,
+  "end": 76,
+  "quoteIndex": 0,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 152150334,
+  "textSha256": "9644e70e6779750dd3ae0705a363cd868f305998ef66f4fdf66a731776cb0243",
+  "medium": "spoken",
+  "requestSha256": "25e8580b8788a906e26f6b376d4cc7b150676c764d76eeb9a4d179d072d11aa1",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "巷子都停了这根也不算在里面",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 3.68,
+  "wallSeconds": 21.217,
+  "loudness": {
+    "input_i": "-21.11",
+    "input_tp": "-4.89",
+    "input_lra": "1.80",
+    "input_thresh": "-31.26",
+    "output_i": "-19.63",
+    "output_tp": "-4.24",
+    "output_lra": "0.00",
+    "output_thresh": "-29.90",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.37"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-thirteen-households--isolatesupply--q01--01/raw.wav",
+      "bytes": 353360,
+      "sha256": "cf2a59864c8799af2c6126a967df8f14d6e00512c99d8c913e60aa88ebdc1225"
+    },
+    "master": {
+      "path": "circuit-thirteen-households--isolatesupply--q01--01/master.wav",
+      "bytes": 176718,
+      "sha256": "1be3835968e25155d9e2e755a7f4780446f7833420f68e644a8aec3f86d25444"
+    },
+    "runtime": {
+      "path": "circuit-thirteen-households--isolatesupply--q01--01/runtime.ogg",
+      "bytes": 29599,
+      "sha256": "ce93cdb288ff0bba6b29e4ca1f9373eeb9e522f58c7fa7d43ecfb4c123659921"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

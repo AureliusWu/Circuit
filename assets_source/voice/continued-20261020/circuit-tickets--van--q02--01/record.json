@@ -1,0 +1,59 @@
+{
+  "id": "circuit-tickets--van--q02--01",
+  "sceneId": "tickets",
+  "lineId": "tickets--van--q02--01",
+  "lineIndex": 0,
+  "speaker": "cheng",
+  "text": "你不是吃完了？",
+  "nodeId": "van",
+  "start": 68,
+  "end": 75,
+  "quoteIndex": 1,
+  "actorId": "cheng",
+  "voice": "Dylan",
+  "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 432447321,
+  "textSha256": "397a255f569b90ec425bde0ed5db0b17102996c354365dd888ba739c12ef0283",
+  "medium": "spoken",
+  "requestSha256": "8ac2be839378e359534287455a24770785b17bdcd3e37c1e2cce59889b696af5",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "你不是吃完了",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 1.28,
+  "wallSeconds": 14.194,
+  "loudness": {
+    "input_i": "-22.03",
+    "input_tp": "-8.18",
+    "input_lra": "0.00",
+    "input_thresh": "-32.03",
+    "output_i": "-20.00",
+    "output_tp": "-6.15",
+    "output_lra": "0.00",
+    "output_thresh": "-30.00",
+    "normalization_type": "linear",
+    "target_offset": "0.00"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-tickets--van--q02--01/raw.wav",
+      "bytes": 122960,
+      "sha256": "3c470a2ce133d7679543e57e483fea788bba2a278e769c4ae534231f006ae39f"
+    },
+    "master": {
+      "path": "circuit-tickets--van--q02--01/master.wav",
+      "bytes": 61518,
+      "sha256": "494bbe8e97d541b17f5849059e10f0bd04afea5ea9a6fade62e7b411106a290d"
+    },
+    "runtime": {
+      "path": "circuit-tickets--van--q02--01/runtime.ogg",
+      "bytes": 12614,
+      "sha256": "7ebbdb2d6c18bca92ddc2940c7e051e07a6636978c4b92e07abf0aa89721b7ef"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

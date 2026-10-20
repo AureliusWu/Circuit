@@ -1,0 +1,59 @@
+{
+  "id": "circuit-visitors--reconcile--q02--01",
+  "sceneId": "visitors",
+  "lineId": "visitors--reconcile--q02--01",
+  "lineIndex": 0,
+  "speaker": "cheng",
+  "text": "那就留它喊过的记录，别让它替你签。",
+  "nodeId": "reconcile",
+  "start": 106,
+  "end": 123,
+  "quoteIndex": 1,
+  "actorId": "cheng",
+  "voice": "Dylan",
+  "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1028270361,
+  "textSha256": "0ac853110b6551c0fab5dd0545813c3302574aacbd6da215e25f7efb4f94e5ad",
+  "medium": "spoken",
+  "requestSha256": "12305f73722ecc995ba2f7d44fc303762e19b4a1eff82a7c05d57371554c8aaf",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "那就留他喊過的記錄別讓他替你簽",
+    "cer": 0.133333,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 2.8,
+  "wallSeconds": 13.32,
+  "loudness": {
+    "input_i": "-27.30",
+    "input_tp": "-6.38",
+    "input_lra": "0.00",
+    "input_thresh": "-37.30",
+    "output_i": "-22.93",
+    "output_tp": "-2.00",
+    "output_lra": "0.00",
+    "output_thresh": "-32.93",
+    "normalization_type": "linear",
+    "target_offset": "2.93"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-visitors--reconcile--q02--01/raw.wav",
+      "bytes": 268880,
+      "sha256": "47bf20c39e5675308f4a5bf05b8fa3230e26965323012d081e04dd681270e855"
+    },
+    "master": {
+      "path": "circuit-visitors--reconcile--q02--01/master.wav",
+      "bytes": 134478,
+      "sha256": "59d8b36237af1dbc72bc7bea4fae5b11e48842b95eebfa2d6053e67b2a345b69"
+    },
+    "runtime": {
+      "path": "circuit-visitors--reconcile--q02--01/runtime.ogg",
+      "bytes": 24211,
+      "sha256": "4c00717ebab1ee50d6f17cabeb15e2de3875b0dbc722370c31b4e6d84208350d"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

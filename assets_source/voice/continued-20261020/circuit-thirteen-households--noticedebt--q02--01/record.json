@@ -1,0 +1,59 @@
+{
+  "id": "circuit-thirteen-households--noticedebt--q02--01",
+  "sceneId": "thirteen-households",
+  "lineId": "thirteen-households--noticeDebt--q02--01",
+  "lineIndex": 0,
+  "speaker": "mei",
+  "text": "袋子也是。怕雨。",
+  "nodeId": "noticeDebt",
+  "start": 15,
+  "end": 23,
+  "quoteIndex": 1,
+  "actorId": "mei",
+  "voice": "Serena",
+  "instruct": "六十岁女性，普通话，声音偏低，平实缓慢，像老邻居小声嘱咐，句尾稍停，不要年轻撒娇。 只朗读给定台词，不添加词语或音效。",
+  "seed": 174334728,
+  "textSha256": "800cdd914184b864aace17789fe5bcce681a28ec633e0d820a7f9e36d69594fb",
+  "medium": "spoken",
+  "requestSha256": "8d7d261493ea1b989d4910afb4957fe4e18c84d498734bde4bee7287b14924a8",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "呆子也是 怕雨",
+    "cer": 0.166667,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 2.48,
+  "wallSeconds": 85.004,
+  "loudness": {
+    "input_i": "-24.10",
+    "input_tp": "-6.88",
+    "input_lra": "0.00",
+    "input_thresh": "-34.92",
+    "output_i": "-20.00",
+    "output_tp": "-2.77",
+    "output_lra": "0.00",
+    "output_thresh": "-31.30",
+    "normalization_type": "linear",
+    "target_offset": "0.00"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-thirteen-households--noticedebt--q02--01/raw.wav",
+      "bytes": 238160,
+      "sha256": "9502db72ea7082e6135ab77f2c8c4379e7e0558498eeb57df5be36098f6f218c"
+    },
+    "master": {
+      "path": "circuit-thirteen-households--noticedebt--q02--01/master.wav",
+      "bytes": 119118,
+      "sha256": "da8dfbbc20035a07cb09d323436c88e240a23f5b9cad0c06827fffc1bd306a3f"
+    },
+    "runtime": {
+      "path": "circuit-thirteen-households--noticedebt--q02--01/runtime.ogg",
+      "bytes": 19566,
+      "sha256": "491ee7a3aa91b54f00103e2896665518bbd5c213ce1ac578f00ac3699b849d6a"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

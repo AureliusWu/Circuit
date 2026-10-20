@@ -1,0 +1,59 @@
+{
+  "id": "circuit-return-visit--firsthub--q01--01",
+  "sceneId": "return-visit",
+  "lineId": "return-visit--firstHub--q01--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "先别替它答到。",
+  "nodeId": "firstHub",
+  "start": 87,
+  "end": 94,
+  "quoteIndex": 0,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1999019583,
+  "textSha256": "e99d8ad5a9ea2347ba52db74eb5d8e3354c92868b2bd1ac4ad47e7fc43909bc3",
+  "medium": "spoken",
+  "requestSha256": "5ecbbf9dff31d5686e32afb2dbb4745d16004478c0adf4215eb6e20623924281",
+  "attempt": 5,
+  "status": "needs_review",
+  "asr": {
+    "transcript": "先别替他达到。",
+    "cer": 0.333333,
+    "polarityCountsMatch": true,
+    "passed": false
+  },
+  "duration": 1.68,
+  "wallSeconds": 70.514,
+  "loudness": {
+    "input_i": "-19.48",
+    "input_tp": "-3.44",
+    "input_lra": "0.00",
+    "input_thresh": "-29.48",
+    "output_i": "-20.02",
+    "output_tp": "-3.96",
+    "output_lra": "0.00",
+    "output_thresh": "-30.02",
+    "normalization_type": "linear",
+    "target_offset": "0.02"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-return-visit--firsthub--q01--01/raw.wav",
+      "bytes": 161360,
+      "sha256": "dba094bd31b76adea957f1cd8f4c527977f6c177141083ac95f787bc7bf114ad"
+    },
+    "master": {
+      "path": "circuit-return-visit--firsthub--q01--01/master.wav",
+      "bytes": 80718,
+      "sha256": "3ea11cf5d89ecc72dc740eb940739fe6c99328fb8afec683f8ec96c8d371970c"
+    },
+    "runtime": {
+      "path": "circuit-return-visit--firsthub--q01--01/runtime.ogg",
+      "bytes": 15911,
+      "sha256": "1c967897843cfa8707d9247149ad51f7ef644c3b207f219a8fbe80bd860eec10"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

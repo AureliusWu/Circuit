@@ -1,0 +1,59 @@
+{
+  "id": "circuit-visitors--recordport--q01--01",
+  "sceneId": "visitors",
+  "lineId": "visitors--recordPort--q01--01",
+  "lineIndex": 0,
+  "speaker": "chen",
+  "text": "这个以前用来喊号。我只管锁门，没管它往哪儿传。",
+  "nodeId": "recordPort",
+  "start": 52,
+  "end": 75,
+  "quoteIndex": 0,
+  "actorId": "chen",
+  "voice": "Uncle_Fu",
+  "instruct": "六十岁男性，普通话，语速慢，声音低哑，像看门的老人轻声说话，口语平实。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1822179549,
+  "textSha256": "117f901f80ec718882c88d472641ecdde9e2200dea8193b9b48cbfc54ad1a3c0",
+  "medium": "spoken",
+  "requestSha256": "6d66de7d76c9deff1ec99ba091113efacf851f6f182ce5101961d97560fc3950",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "这个以前用来喊号我只管锁门没管他往哪儿传",
+    "cer": 0.05,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 6.64,
+  "wallSeconds": 216.031,
+  "loudness": {
+    "input_i": "-25.56",
+    "input_tp": "-3.42",
+    "input_lra": "2.00",
+    "input_thresh": "-36.05",
+    "output_i": "-20.87",
+    "output_tp": "-2.00",
+    "output_lra": "1.80",
+    "output_thresh": "-31.38",
+    "normalization_type": "dynamic",
+    "target_offset": "0.87"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-visitors--recordport--q01--01/raw.wav",
+      "bytes": 637520,
+      "sha256": "43d9352bc1db7338f9f587a63239d5cc6aabdb6c0434908795ed98c80398831c"
+    },
+    "master": {
+      "path": "circuit-visitors--recordport--q01--01/master.wav",
+      "bytes": 318798,
+      "sha256": "92c4690d35e3c56d29dff6f6037371df0b978dc05d03cda246143dde0c0a3323"
+    },
+    "runtime": {
+      "path": "circuit-visitors--recordport--q01--01/runtime.ogg",
+      "bytes": 54668,
+      "sha256": "9865db0db8230a38145c7bc85eabee87bd409a3b26f8c259acf45e93fca77d6c"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

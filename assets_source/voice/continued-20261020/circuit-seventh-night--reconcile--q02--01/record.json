@@ -1,0 +1,59 @@
+{
+  "id": "circuit-seventh-night--reconcile--q02--01",
+  "sceneId": "seventh-night",
+  "lineId": "seventh-night--reconcile--q02--01",
+  "lineIndex": 0,
+  "speaker": "cheng",
+  "text": "它像在等发车，等得越来越不耐烦。",
+  "nodeId": "reconcile",
+  "start": 104,
+  "end": 120,
+  "quoteIndex": 1,
+  "actorId": "cheng",
+  "voice": "Dylan",
+  "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 146341665,
+  "textSha256": "9de0fd795a471c4c15154c4d8d8fcada00e45428061ddacd6b36443b52804e5c",
+  "medium": "spoken",
+  "requestSha256": "ce18522ea8a95a3b30dc2597a963829d53f9aedb75bd1d3ff14144d8aabf5f3a",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "它像在等发车等得越来越不耐烦",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 3.36,
+  "wallSeconds": 192.383,
+  "loudness": {
+    "input_i": "-25.24",
+    "input_tp": "-5.49",
+    "input_lra": "0.50",
+    "input_thresh": "-35.24",
+    "output_i": "-20.27",
+    "output_tp": "-2.00",
+    "output_lra": "0.00",
+    "output_thresh": "-30.27",
+    "normalization_type": "dynamic",
+    "target_offset": "0.27"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-seventh-night--reconcile--q02--01/raw.wav",
+      "bytes": 322640,
+      "sha256": "1dfb580fad8dd89b96ad1e727f86b8a61b4aeb35e7f2bbac1aa117d95ee2e3a2"
+    },
+    "master": {
+      "path": "circuit-seventh-night--reconcile--q02--01/master.wav",
+      "bytes": 161358,
+      "sha256": "31dfcad900bdf5f52e3cdfa7a87efaf4355526d6bf392745a48135bc46ce76cf"
+    },
+    "runtime": {
+      "path": "circuit-seventh-night--reconcile--q02--01/runtime.ogg",
+      "bytes": 30210,
+      "sha256": "c1ce009fca8fbaa90ad986a52c39442a8150f9a29e1ba7b3b8b70889977bb2db"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

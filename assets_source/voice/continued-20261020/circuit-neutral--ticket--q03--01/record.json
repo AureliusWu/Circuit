@@ -1,0 +1,59 @@
+{
+  "id": "circuit-neutral--ticket--q03--01",
+  "sceneId": "neutral",
+  "lineId": "neutral--ticket--q03--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "谁拿的？",
+  "nodeId": "ticket",
+  "start": 96,
+  "end": 100,
+  "quoteIndex": 2,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1333265059,
+  "textSha256": "f15ee6096661592ab94e537128aee8211a5d0132b2eba7b4287943b0a4b61392",
+  "medium": "spoken",
+  "requestSha256": "fd7fc7b613623adc974672b609041772640b31a4ce4d4dc30b90b9a98d74ad39",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "谁拿的?",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 1.12,
+  "wallSeconds": 7.689,
+  "loudness": {
+    "input_i": "-22.13",
+    "input_tp": "-8.24",
+    "input_lra": "0.00",
+    "input_thresh": "-32.13",
+    "output_i": "-19.97",
+    "output_tp": "-6.12",
+    "output_lra": "0.00",
+    "output_thresh": "-29.97",
+    "normalization_type": "linear",
+    "target_offset": "-0.03"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-neutral--ticket--q03--01/raw.wav",
+      "bytes": 107600,
+      "sha256": "2ba48e9b8066ea58a6a814d1b438d622d4654fba7982013302a1c9ae2c4918be"
+    },
+    "master": {
+      "path": "circuit-neutral--ticket--q03--01/master.wav",
+      "bytes": 53838,
+      "sha256": "ab287fb9383d301fc7c434032fcb463844c6c3ae4753f25c96574dc6d2b4d4a9"
+    },
+    "runtime": {
+      "path": "circuit-neutral--ticket--q03--01/runtime.ogg",
+      "bytes": 11610,
+      "sha256": "ff1a9d4bfdde6486f52a0fa3214f912b8e883c168b1240d918554581cadea2d9"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

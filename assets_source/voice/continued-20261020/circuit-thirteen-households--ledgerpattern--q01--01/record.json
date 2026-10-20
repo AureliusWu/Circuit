@@ -1,0 +1,59 @@
+{
+  "id": "circuit-thirteen-households--ledgerpattern--q01--01",
+  "sceneId": "thirteen-households",
+  "lineId": "thirteen-households--ledgerPattern--q01--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "每个月都挑这时候上线？",
+  "nodeId": "ledgerPattern",
+  "start": 49,
+  "end": 60,
+  "quoteIndex": 0,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1554691523,
+  "textSha256": "e99e53d94971726095dcd4ff5a2c0f1c3dfaa628e877ede065baf8cdb835b979",
+  "medium": "spoken",
+  "requestSha256": "c2988b5cac25875d7f71791c0c3f3eb04b1fc2196647f4c59487bd5889269f31",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "每个月都挑这时候上线",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 3.44,
+  "wallSeconds": 114.469,
+  "loudness": {
+    "input_i": "-23.58",
+    "input_tp": "-9.58",
+    "input_lra": "0.70",
+    "input_thresh": "-34.39",
+    "output_i": "-18.46",
+    "output_tp": "-4.54",
+    "output_lra": "0.00",
+    "output_thresh": "-29.58",
+    "normalization_type": "dynamic",
+    "target_offset": "-1.54"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-thirteen-households--ledgerpattern--q01--01/raw.wav",
+      "bytes": 330320,
+      "sha256": "367416e6901450f8d3fde9e0c16bf93c72356b0c23902b20e0b5e4a7227c0cd2"
+    },
+    "master": {
+      "path": "circuit-thirteen-households--ledgerpattern--q01--01/master.wav",
+      "bytes": 165198,
+      "sha256": "77e93030bf41cc1c9295d7d98528a96596e9c08b988b1d04a56decfd622d3662"
+    },
+    "runtime": {
+      "path": "circuit-thirteen-households--ledgerpattern--q01--01/runtime.ogg",
+      "bytes": 27798,
+      "sha256": "599b9d0b363ede26587a650199324cebda2eab15765afaef36da57b66626953c"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

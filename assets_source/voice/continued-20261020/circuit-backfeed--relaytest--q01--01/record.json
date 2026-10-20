@@ -1,0 +1,112 @@
+{
+  "id": "circuit-backfeed--relaytest--q01--01",
+  "sceneId": "backfeed",
+  "lineId": "backfeed--relayTest--q01--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "外面零了，里面还有。",
+  "nodeId": "relayTest",
+  "start": 65,
+  "end": 75,
+  "quoteIndex": 0,
+  "legacy": {
+    "id": "r02-ji",
+    "character": "ji",
+    "speaker": "Vivian",
+    "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。",
+    "text": "外面零了，里面还有。",
+    "seed": 120022,
+    "bindings": [
+      {
+        "chapter": "backfeed",
+        "node": "relayTest"
+      }
+    ],
+    "requestSha256": "8704042f71fa6fad63a341b8930dcd3db46c165cd73ac5d5c3a7847fc6333879",
+    "duration": 2.4,
+    "generationSeconds": 14.202,
+    "loudnessInput": {
+      "input_i": "-18.10",
+      "input_tp": "-3.37",
+      "input_lra": "0.00",
+      "input_thresh": "-28.10",
+      "output_i": "-20.00",
+      "output_tp": "-5.27",
+      "output_lra": "0.00",
+      "output_thresh": "-30.00",
+      "normalization_type": "linear",
+      "target_offset": "-0.00"
+    },
+    "files": [
+      {
+        "path": "assets_source/audio/v1.2.0/r02-ji-raw.wav",
+        "bytes": 115244,
+        "sha256": "d65f84b93cb14186cfe7ee5215cee48cedbbc28771514ada5e8a5e99fd2a12cd"
+      },
+      {
+        "path": "assets_source/audio/v1.2.0/r02-ji.wav",
+        "bytes": 115278,
+        "sha256": "508cc2f3e9f6b5d923eadf9512406982735d3ae3f6041b650f6302b3c2b41510"
+      },
+      {
+        "path": "public/audio/voice/r02-ji.mp3",
+        "bytes": 29709,
+        "sha256": "d7158c4cb64df6e048d49df123c54b5a720840c1b0b97106edbe616d3c080b64"
+      }
+    ],
+    "asr": {
+      "id": "r02-ji",
+      "mp3Sha256": "d7158c4cb64df6e048d49df123c54b5a720840c1b0b97106edbe616d3c080b64",
+      "expected": "外面零了，里面还有。",
+      "transcript": "外面零了,里面还有……",
+      "cer": 0,
+      "polarityCountsMatch": true,
+      "status": "passed"
+    },
+    "asrModel": "Systran/faster-whisper-large-v3",
+    "evidencePath": "docs/audio/voice-asr.json",
+    "evidenceSha256": "25d0e31c3decd5262d92349d6571ec67ac58723ea00c40005ddff4d8b9a58334"
+  },
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 767190377,
+  "textSha256": "56ce04ff581a9d800f4d94a509f7719490871d806ad84a1fb6f74d1b267e3af6",
+  "medium": "spoken",
+  "requestSha256": "b82a2ea182d73689859b6ee6bdfecdcd1f6bbbfe483a0cde2f108b9d78b41048",
+  "status": "accepted",
+  "productionMethod": "preserved_exact_legacy_bytes",
+  "duration": 2.4,
+  "actualGenerationRequest": {
+    "id": "r02-ji",
+    "speaker": "Vivian",
+    "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。",
+    "seed": 120022,
+    "requestSha256": "8704042f71fa6fad63a341b8930dcd3db46c165cd73ac5d5c3a7847fc6333879"
+  },
+  "asr": {
+    "passed": true,
+    "transcript": "外面零了,里面还有……",
+    "cer": 0,
+    "polarityCountsMatch": true,
+    "model": "Systran/faster-whisper-large-v3"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-backfeed--relaytest--q01--01/raw.wav",
+      "bytes": 115244,
+      "sha256": "d65f84b93cb14186cfe7ee5215cee48cedbbc28771514ada5e8a5e99fd2a12cd"
+    },
+    "master": {
+      "path": "circuit-backfeed--relaytest--q01--01/master.wav",
+      "bytes": 115278,
+      "sha256": "508cc2f3e9f6b5d923eadf9512406982735d3ae3f6041b650f6302b3c2b41510"
+    },
+    "runtime": {
+      "path": "circuit-backfeed--relaytest--q01--01/runtime.mp3",
+      "bytes": 29709,
+      "sha256": "d7158c4cb64df6e048d49df123c54b5a720840c1b0b97106edbe616d3c080b64"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

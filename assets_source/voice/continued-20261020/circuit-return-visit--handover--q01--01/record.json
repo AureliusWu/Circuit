@@ -1,0 +1,59 @@
+{
+  "id": "circuit-return-visit--handover--q01--01",
+  "sceneId": "return-visit",
+  "lineId": "return-visit--handover--q01--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "一个有地址，另一个先写了我们的人。",
+  "nodeId": "handover",
+  "start": 69,
+  "end": 86,
+  "quoteIndex": 0,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1106693580,
+  "textSha256": "e1c6144927675b400acd254ac6749a5e2d4aa1744cb39953c5f6bc04befa5025",
+  "medium": "spoken",
+  "requestSha256": "a396f69ab6e3ade104f997895e7ffa89826b8f4a9d889deaa4c277eb9e83ca87",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "一个有地址另一个先写了我们的人",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 4.16,
+  "wallSeconds": 18.391,
+  "loudness": {
+    "input_i": "-19.40",
+    "input_tp": "-1.50",
+    "input_lra": "0.70",
+    "input_thresh": "-29.53",
+    "output_i": "-19.57",
+    "output_tp": "-2.00",
+    "output_lra": "0.60",
+    "output_thresh": "-29.68",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.43"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-return-visit--handover--q01--01/raw.wav",
+      "bytes": 399440,
+      "sha256": "332f04f18f9a3c09121d42a376257e7eec7afe62fabbf7335aa9a5832097909c"
+    },
+    "master": {
+      "path": "circuit-return-visit--handover--q01--01/master.wav",
+      "bytes": 199758,
+      "sha256": "158f89716093db87dea88d819286ed994988cf45bdba815fdc91701c41e65894"
+    },
+    "runtime": {
+      "path": "circuit-return-visit--handover--q01--01/runtime.ogg",
+      "bytes": 31942,
+      "sha256": "9b671c6188c921bd49f5a1310a868fc3112b071a55d9f81bc738b3295c9a3924"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

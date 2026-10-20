@@ -1,0 +1,59 @@
+{
+  "id": "circuit-answering--houserule--q03--01",
+  "sceneId": "answering",
+  "lineId": "answering--houseRule--q03--01",
+  "lineIndex": 0,
+  "speaker": "luo",
+  "text": "第一声以为你们没走。第二声也像你。",
+  "nodeId": "houseRule",
+  "start": 76,
+  "end": 93,
+  "quoteIndex": 2,
+  "actorId": "luo",
+  "voice": "Vivian",
+  "instruct": "二十九岁女性，普通话，声音偏低，夜班值班员谨慎地问话，平静自然，略有迟疑，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 220444133,
+  "textSha256": "b18633dadd1238f6d62197586f4ba2e27e3ebfe306661bb2755fdc78736b0a77",
+  "medium": "spoken",
+  "requestSha256": "25a59bd10cc7d7f571f0c427c1505da6e27240949e5a26ff714c5ee577ffdbaa",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "第一声 以为你们没走第二声 也像你",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 8.08,
+  "wallSeconds": 62.297,
+  "loudness": {
+    "input_i": "-20.74",
+    "input_tp": "-6.21",
+    "input_lra": "3.10",
+    "input_thresh": "-31.98",
+    "output_i": "-19.60",
+    "output_tp": "-4.85",
+    "output_lra": "2.50",
+    "output_thresh": "-31.18",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.40"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-answering--houserule--q03--01/raw.wav",
+      "bytes": 775760,
+      "sha256": "c8d4b6f73eb367caa3b7c7355d397eb471d088e83809234fa305f5a2fcaa4490"
+    },
+    "master": {
+      "path": "circuit-answering--houserule--q03--01/master.wav",
+      "bytes": 387918,
+      "sha256": "c27190f699ecd4c560cf0ff18b1f4cec2ea9f76f60529803eaa2e8a80df45e33"
+    },
+    "runtime": {
+      "path": "circuit-answering--houserule--q03--01/runtime.ogg",
+      "bytes": 54157,
+      "sha256": "f660e14dc99eb46f05ea8f2c15aca9ca3375fc9a536e246ffdd2b97011eae5eb"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

@@ -1,0 +1,59 @@
+{
+  "id": "circuit-tickets--breakfast--q04--01",
+  "sceneId": "tickets",
+  "lineId": "tickets--breakfast--q04--01",
+  "lineIndex": 0,
+  "speaker": "breakfast-owner",
+  "text": "问你们呢。",
+  "nodeId": "breakfast",
+  "start": 93,
+  "end": 98,
+  "quoteIndex": 3,
+  "actorId": "breakfast-owner",
+  "voice": "Uncle_Fu",
+  "instruct": "中年男性早点店老板，普通话，自然口语，声音平实，清楚短促，不夸张。",
+  "seed": 1164792320,
+  "textSha256": "82e571da5afbf21eb4a9cf113a3ccde99afc8f931434344a49f06d33f2957393",
+  "medium": "spoken",
+  "requestSha256": "cfabbf795e2f69afa1f99e4d24c2132ec40d87b4e7a697e3537251576d3af490",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "問你們呢",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 0.96,
+  "wallSeconds": 56.949,
+  "loudness": {
+    "input_i": "-22.56",
+    "input_tp": "-4.30",
+    "input_lra": "0.00",
+    "input_thresh": "-32.56",
+    "output_i": "-20.26",
+    "output_tp": "-2.00",
+    "output_lra": "0.00",
+    "output_thresh": "-30.26",
+    "normalization_type": "linear",
+    "target_offset": "0.26"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-tickets--breakfast--q04--01/raw.wav",
+      "bytes": 92240,
+      "sha256": "fae268923c5c8e23e3457927636e5f41ef14778cd92e2a1ef92ec733b799e005"
+    },
+    "master": {
+      "path": "circuit-tickets--breakfast--q04--01/master.wav",
+      "bytes": 46158,
+      "sha256": "d5a440b3cd2678fa70a93141be5972d86246cd83b06f7499141bceda16415983"
+    },
+    "runtime": {
+      "path": "circuit-tickets--breakfast--q04--01/runtime.ogg",
+      "bytes": 10959,
+      "sha256": "c5fdc51d6d657ef38322e285ae19fa096519ea73543ee1bf4464f2c2fb73c7c3"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

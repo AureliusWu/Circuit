@@ -1,0 +1,59 @@
+{
+  "id": "circuit-seventh-night--conversation--q01--01",
+  "sceneId": "seventh-night",
+  "lineId": "seventh-night--conversation--q01--01",
+  "lineIndex": 0,
+  "speaker": "shen",
+  "text": "以前没有。",
+  "nodeId": "conversation",
+  "start": 89,
+  "end": 94,
+  "quoteIndex": 0,
+  "actorId": "shen",
+  "voice": "Serena",
+  "instruct": "二十八岁女性，普通话，声音轻而疲惫，口语自然，像一晚上没睡好的人，不要哭腔。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1605317434,
+  "textSha256": "d53b277e5b4c9ba6767b17263c32b92477b7bba9977f77ce20cf37ab210d2274",
+  "medium": "spoken",
+  "requestSha256": "55c0b22648579a161c17fbd3fa92179fefce4473d9c592f1022637771500e1a1",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "以前没有",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 0.96,
+  "wallSeconds": 57.166,
+  "loudness": {
+    "input_i": "-25.66",
+    "input_tp": "-13.08",
+    "input_lra": "0.00",
+    "input_thresh": "-35.66",
+    "output_i": "-20.00",
+    "output_tp": "-7.41",
+    "output_lra": "0.00",
+    "output_thresh": "-30.00",
+    "normalization_type": "linear",
+    "target_offset": "-0.00"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-seventh-night--conversation--q01--01/raw.wav",
+      "bytes": 92240,
+      "sha256": "6a4d62f6ff61b566505f30fd2d2d7c8b7e8394102e7e261b1d4de7d2fb62db8e"
+    },
+    "master": {
+      "path": "circuit-seventh-night--conversation--q01--01/master.wav",
+      "bytes": 46158,
+      "sha256": "90500291d860ce26ecf7af1ea5ef97cc54c3ae8ca4876061537cf86489f0ea4d"
+    },
+    "runtime": {
+      "path": "circuit-seventh-night--conversation--q01--01/runtime.ogg",
+      "bytes": 10486,
+      "sha256": "306fd599b988436780cc4d62cf1b3d336fc8af2f64d72071897982c13e64289f"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

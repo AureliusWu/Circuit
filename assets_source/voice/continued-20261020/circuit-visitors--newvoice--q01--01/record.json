@@ -1,0 +1,59 @@
+{
+  "id": "circuit-visitors--newvoice--q01--01",
+  "sceneId": "visitors",
+  "lineId": "visitors--newVoice--q01--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "路找到这里了。",
+  "nodeId": "newVoice",
+  "start": 76,
+  "end": 83,
+  "quoteIndex": 0,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1302836750,
+  "textSha256": "da854604ab9060a2e7213026769fa6ed6647ebe1dbcb9c89b5ca772af9ef3641",
+  "medium": "spoken",
+  "requestSha256": "7109cb5a0d11cda12054a8f56355e106edfd42d41232e097e1291de68132b9dc",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "路找到这里了",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 0.96,
+  "wallSeconds": 11.873,
+  "loudness": {
+    "input_i": "-25.11",
+    "input_tp": "-10.46",
+    "input_lra": "0.00",
+    "input_thresh": "-35.11",
+    "output_i": "-20.01",
+    "output_tp": "-5.36",
+    "output_lra": "0.00",
+    "output_thresh": "-30.01",
+    "normalization_type": "linear",
+    "target_offset": "0.01"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-visitors--newvoice--q01--01/raw.wav",
+      "bytes": 92240,
+      "sha256": "02e31e2a581aa8b858ff400f3c59aaf33d61aa421204d2592802189184f3c0f4"
+    },
+    "master": {
+      "path": "circuit-visitors--newvoice--q01--01/master.wav",
+      "bytes": 46158,
+      "sha256": "44e7b5b2f3255e5da09bff957dd4890bc14e8d6621330a3d856f018c0afdd61f"
+    },
+    "runtime": {
+      "path": "circuit-visitors--newvoice--q01--01/runtime.ogg",
+      "bytes": 11146,
+      "sha256": "b586cd7b755d4c92c8a9152cde6759e8b111557adf8b24ff9abffe463fbea224"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

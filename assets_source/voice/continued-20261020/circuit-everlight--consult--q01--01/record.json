@@ -1,0 +1,59 @@
+{
+  "id": "circuit-everlight--consult--q01--01",
+  "sceneId": "everlight",
+  "lineId": "everlight--consult--q01--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "怎么都这么熟？",
+  "nodeId": "consult",
+  "start": 66,
+  "end": 73,
+  "quoteIndex": 0,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 863489243,
+  "textSha256": "2a3f9cb3604eb1cdfc4bd6d5d469d0e94c1625043bd55bc48ec4395cc7c0ba6c",
+  "medium": "spoken",
+  "requestSha256": "cc39bca657a2971a6bc421ce04e28e7b8a34c688ebd5c08be40d9e1f21e75783",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "怎么都这么熟",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 1.12,
+  "wallSeconds": 6.132,
+  "loudness": {
+    "input_i": "-24.62",
+    "input_tp": "-13.64",
+    "input_lra": "0.00",
+    "input_thresh": "-34.62",
+    "output_i": "-20.02",
+    "output_tp": "-9.02",
+    "output_lra": "0.00",
+    "output_thresh": "-30.02",
+    "normalization_type": "linear",
+    "target_offset": "0.02"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-everlight--consult--q01--01/raw.wav",
+      "bytes": 107600,
+      "sha256": "04f566617edc4f00aa0002d320a386ee389399057cec8f4b80c3f83e1040a3aa"
+    },
+    "master": {
+      "path": "circuit-everlight--consult--q01--01/master.wav",
+      "bytes": 53838,
+      "sha256": "085056a77a225125747920a496dd5603df68ffbb694d284d573a9e36cee577fe"
+    },
+    "runtime": {
+      "path": "circuit-everlight--consult--q01--01/runtime.ogg",
+      "bytes": 11635,
+      "sha256": "d75ad95eef65fa35ff86d6337468c0c748ba86f7807e882ecb5070f65afbc163"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

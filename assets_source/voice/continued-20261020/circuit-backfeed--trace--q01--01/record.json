@@ -1,0 +1,59 @@
+{
+  "id": "circuit-backfeed--trace--q01--01",
+  "sceneId": "backfeed",
+  "lineId": "backfeed--trace--q01--01",
+  "lineIndex": 0,
+  "speaker": "chen",
+  "text": "到了。",
+  "nodeId": "trace",
+  "start": 74,
+  "end": 77,
+  "quoteIndex": 0,
+  "actorId": "chen",
+  "voice": "Uncle_Fu",
+  "instruct": "六十岁男性，普通话，语速慢，声音低哑，像看门的老人轻声说话，口语平实。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1052191774,
+  "textSha256": "07ce80308c70f82cd6cceb36abd9fceb175f3e3ef25105ef6d65662d37f77821",
+  "medium": "spoken",
+  "requestSha256": "af4a5c7fb41d8b076b5d37aad94c1d516fd26c629d73c7f36f6d1f3ca3a1a2fe",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "到了",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 0.64,
+  "wallSeconds": 51.564,
+  "loudness": {
+    "input_i": "-22.13",
+    "input_tp": "-6.97",
+    "input_lra": "0.00",
+    "input_thresh": "-32.13",
+    "output_i": "-19.99",
+    "output_tp": "-4.84",
+    "output_lra": "0.00",
+    "output_thresh": "-29.99",
+    "normalization_type": "linear",
+    "target_offset": "-0.01"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-backfeed--trace--q01--01/raw.wav",
+      "bytes": 61520,
+      "sha256": "4854d767b00f00b4c3c794a68731242fb5cdbcc510b1315a2495bf214f7ede70"
+    },
+    "master": {
+      "path": "circuit-backfeed--trace--q01--01/master.wav",
+      "bytes": 30798,
+      "sha256": "8673d2212d5b30cbbea527ce8b45c3ab1d626934cee4337befbc288c00b01326"
+    },
+    "runtime": {
+      "path": "circuit-backfeed--trace--q01--01/runtime.ogg",
+      "bytes": 8509,
+      "sha256": "ab976029afe04dbbcab4d6b3a0b4d158bbaa04ff5d64bc462aaa653922cb26d2"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

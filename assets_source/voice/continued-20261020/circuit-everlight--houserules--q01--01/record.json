@@ -1,0 +1,112 @@
+{
+  "id": "circuit-everlight--houserules--q01--01",
+  "sceneId": "everlight",
+  "lineId": "everlight--houseRules--q01--01",
+  "lineIndex": 0,
+  "speaker": "mei",
+  "text": "半夜钥匙碰栏杆，别往楼道里叫。",
+  "nodeId": "houseRules",
+  "start": 1,
+  "end": 16,
+  "quoteIndex": 0,
+  "legacy": {
+    "id": "l03-mei",
+    "character": "mei",
+    "speaker": "Serena",
+    "instruct": "六十岁女性，普通话，声音偏低，平实缓慢，像老邻居小声嘱咐，句尾稍停，不要年轻撒娇。",
+    "text": "半夜钥匙碰栏杆，别往楼道里叫。",
+    "seed": 120023,
+    "bindings": [
+      {
+        "chapter": "everlight",
+        "node": "houseRules"
+      }
+    ],
+    "requestSha256": "481808b78f58b5f62e5996d0d5c90095c343ebfdbc920e1d58f1cec86a599da1",
+    "duration": 2.88,
+    "generationSeconds": 16.682,
+    "loudnessInput": {
+      "input_i": "-24.90",
+      "input_tp": "-7.85",
+      "input_lra": "0.00",
+      "input_thresh": "-35.08",
+      "output_i": "-20.00",
+      "output_tp": "-2.95",
+      "output_lra": "0.00",
+      "output_thresh": "-30.18",
+      "normalization_type": "linear",
+      "target_offset": "-0.00"
+    },
+    "files": [
+      {
+        "path": "assets_source/audio/v1.2.0/l03-mei-raw.wav",
+        "bytes": 138284,
+        "sha256": "ad2e2a5c5780d5dd409bcab0616f8f3a431b29dd6185cab7925d1ba3f40b17c5"
+      },
+      {
+        "path": "assets_source/audio/v1.2.0/l03-mei.wav",
+        "bytes": 138318,
+        "sha256": "ff94b4cacc6ce53aa5d97d27d5ed0107b46ef721edb4120b24e410118142580c"
+      },
+      {
+        "path": "public/audio/voice/l03-mei.mp3",
+        "bytes": 35469,
+        "sha256": "898e9221c20a20c7b546314fdba7ced1d435a3408bb7c4a1e6e53f03d5a00e3c"
+      }
+    ],
+    "asr": {
+      "id": "l03-mei",
+      "mp3Sha256": "898e9221c20a20c7b546314fdba7ced1d435a3408bb7c4a1e6e53f03d5a00e3c",
+      "expected": "半夜钥匙碰栏杆，别往楼道里叫。",
+      "transcript": "半夜要是碰栏杆,别往楼道里叫。",
+      "cer": 0.153846,
+      "polarityCountsMatch": true,
+      "status": "passed"
+    },
+    "asrModel": "Systran/faster-whisper-large-v3",
+    "evidencePath": "docs/audio/voice-asr.json",
+    "evidenceSha256": "25d0e31c3decd5262d92349d6571ec67ac58723ea00c40005ddff4d8b9a58334"
+  },
+  "actorId": "mei",
+  "voice": "Serena",
+  "instruct": "六十岁女性，普通话，声音偏低，平实缓慢，像老邻居小声嘱咐，句尾稍停，不要年轻撒娇。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1219498140,
+  "textSha256": "d401f0c87a7138e1bc9f36b83bc3a0ff1867017f74bd8e433570bb6172310aab",
+  "medium": "spoken",
+  "requestSha256": "9157e8c84b050d94c60f153383ab7750f2a4529d66d4d3bc823cfcd71fb272d7",
+  "status": "accepted",
+  "productionMethod": "preserved_exact_legacy_bytes",
+  "duration": 2.88,
+  "actualGenerationRequest": {
+    "id": "l03-mei",
+    "speaker": "Serena",
+    "instruct": "六十岁女性，普通话，声音偏低，平实缓慢，像老邻居小声嘱咐，句尾稍停，不要年轻撒娇。",
+    "seed": 120023,
+    "requestSha256": "481808b78f58b5f62e5996d0d5c90095c343ebfdbc920e1d58f1cec86a599da1"
+  },
+  "asr": {
+    "passed": true,
+    "transcript": "半夜要是碰栏杆,别往楼道里叫。",
+    "cer": 0.153846,
+    "polarityCountsMatch": true,
+    "model": "Systran/faster-whisper-large-v3"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-everlight--houserules--q01--01/raw.wav",
+      "bytes": 138284,
+      "sha256": "ad2e2a5c5780d5dd409bcab0616f8f3a431b29dd6185cab7925d1ba3f40b17c5"
+    },
+    "master": {
+      "path": "circuit-everlight--houserules--q01--01/master.wav",
+      "bytes": 138318,
+      "sha256": "ff94b4cacc6ce53aa5d97d27d5ed0107b46ef721edb4120b24e410118142580c"
+    },
+    "runtime": {
+      "path": "circuit-everlight--houserules--q01--01/runtime.mp3",
+      "bytes": 35469,
+      "sha256": "898e9221c20a20c7b546314fdba7ced1d435a3408bb7c4a1e6e53f03d5a00e3c"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

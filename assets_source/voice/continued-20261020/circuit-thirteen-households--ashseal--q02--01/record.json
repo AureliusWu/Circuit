@@ -1,0 +1,59 @@
+{
+  "id": "circuit-thirteen-households--ashseal--q02--01",
+  "sceneId": "thirteen-households",
+  "lineId": "thirteen-households--ashSeal--q02--01",
+  "lineIndex": 0,
+  "speaker": "cheng",
+  "text": "看位置是这样。",
+  "nodeId": "ashSeal",
+  "start": 59,
+  "end": 66,
+  "quoteIndex": 1,
+  "actorId": "cheng",
+  "voice": "Dylan",
+  "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1771389331,
+  "textSha256": "c0abb5ca45297cceb86dfad7d561f35efb81d3665cab624c1b5bf176597825b1",
+  "medium": "spoken",
+  "requestSha256": "525a96feeab454513bacc04bc4cde2a52878b0a1a6b549cc4519523aaedd546c",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "看位置是这样",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 1.12,
+  "wallSeconds": 7.772,
+  "loudness": {
+    "input_i": "-21.77",
+    "input_tp": "-4.70",
+    "input_lra": "0.00",
+    "input_thresh": "-31.77",
+    "output_i": "-19.98",
+    "output_tp": "-2.93",
+    "output_lra": "0.00",
+    "output_thresh": "-29.98",
+    "normalization_type": "linear",
+    "target_offset": "-0.02"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-thirteen-households--ashseal--q02--01/raw.wav",
+      "bytes": 107600,
+      "sha256": "e4cc952304a1a5e48a72528c43441c31ba4b677ffd56e7d65bc21db29c57cd53"
+    },
+    "master": {
+      "path": "circuit-thirteen-households--ashseal--q02--01/master.wav",
+      "bytes": 53838,
+      "sha256": "25ff19709136cf16572156d524ad552c3ee8c3320d010945c01eea3b475a174f"
+    },
+    "runtime": {
+      "path": "circuit-thirteen-households--ashseal--q02--01/runtime.ogg",
+      "bytes": 11926,
+      "sha256": "32a41e29711dd961f10eec37046786905591245390ccd4b007cca5e2001726b2"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

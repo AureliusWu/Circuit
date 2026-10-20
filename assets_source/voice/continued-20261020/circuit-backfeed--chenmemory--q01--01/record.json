@@ -1,0 +1,59 @@
+{
+  "id": "circuit-backfeed--chenmemory--q01--01",
+  "sceneId": "backfeed",
+  "lineId": "backfeed--chenMemory--q01--01",
+  "lineIndex": 0,
+  "speaker": "chen",
+  "text": "有糖，泡过水，黏在底上。",
+  "nodeId": "chenMemory",
+  "start": 53,
+  "end": 65,
+  "quoteIndex": 0,
+  "actorId": "chen",
+  "voice": "Uncle_Fu",
+  "instruct": "六十岁男性，普通话，语速慢，声音低哑，像看门的老人轻声说话，口语平实。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1198069309,
+  "textSha256": "2e6ce35b1a17f1630ac22f1d57331c339f3c3678adb6461e062bb0d95103c9b7",
+  "medium": "spoken",
+  "requestSha256": "60aa9ddadc57f37a6f2dd269bd3302317f96bf9b943af402ffd63b6c3b785707",
+  "attempt": 1,
+  "status": "accepted",
+  "asr": {
+    "transcript": "有糖泡过水粘在底上",
+    "cer": 0.111111,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 3.36,
+  "wallSeconds": 14.903,
+  "loudness": {
+    "input_i": "-23.84",
+    "input_tp": "-4.75",
+    "input_lra": "0.50",
+    "input_thresh": "-33.84",
+    "output_i": "-19.76",
+    "output_tp": "-2.00",
+    "output_lra": "0.00",
+    "output_thresh": "-29.76",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.24"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-backfeed--chenmemory--q01--01/raw.wav",
+      "bytes": 322640,
+      "sha256": "b64ae13a50b82c593dbb531a0058713363999c6f514061db799cb6ba7ba015cb"
+    },
+    "master": {
+      "path": "circuit-backfeed--chenmemory--q01--01/master.wav",
+      "bytes": 161358,
+      "sha256": "9671a4e1528c8fcd4f9223f02c4f8b04d35f18a1dd9ea0aebd06d24bfdd04c5c"
+    },
+    "runtime": {
+      "path": "circuit-backfeed--chenmemory--q01--01/runtime.ogg",
+      "bytes": 30396,
+      "sha256": "14deb9cbcc1a60e09b154242bec5f1ab9094d9de574d8d03834c7194675c0c14"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

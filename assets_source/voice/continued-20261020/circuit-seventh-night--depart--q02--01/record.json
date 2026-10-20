@@ -1,0 +1,59 @@
+{
+  "id": "circuit-seventh-night--depart--q02--01",
+  "sceneId": "seventh-night",
+  "lineId": "seventh-night--depart--q02--01",
+  "lineIndex": 0,
+  "speaker": "cheng",
+  "text": "查。先看我们这边的进线，屋里联系电工。",
+  "nodeId": "depart",
+  "start": 34,
+  "end": 53,
+  "quoteIndex": 1,
+  "actorId": "cheng",
+  "voice": "Dylan",
+  "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 816055504,
+  "textSha256": "effbffb3b4cca9520b9d1bf18ce2c426f7fe0dd5aab13a2d2973b44f9d5d6c5b",
+  "medium": "spoken",
+  "requestSha256": "36e93e9554932a3896160703159c4b8b3a05d035bede031fa11008cb302a9dcd",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "查,先看我们这边的进线,物理联系电工",
+    "cer": 0.125,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 3.84,
+  "wallSeconds": 398.802,
+  "loudness": {
+    "input_i": "-26.46",
+    "input_tp": "-7.71",
+    "input_lra": "0.10",
+    "input_thresh": "-36.73",
+    "output_i": "-19.74",
+    "output_tp": "-2.00",
+    "output_lra": "0.00",
+    "output_thresh": "-30.12",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.26"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-seventh-night--depart--q02--01/raw.wav",
+      "bytes": 368720,
+      "sha256": "227b3f7d34a71eaa1b703f55c2f1aa54f67c8d15b072e0e580dbea4a31421331"
+    },
+    "master": {
+      "path": "circuit-seventh-night--depart--q02--01/master.wav",
+      "bytes": 184398,
+      "sha256": "bf089b8f7a92e012cce134d0f5370c4c0405e1e0d5e6379ee130ed7eb207c381"
+    },
+    "runtime": {
+      "path": "circuit-seventh-night--depart--q02--01/runtime.ogg",
+      "bytes": 32140,
+      "sha256": "9a6903a408ac6c55cd3ff99db951cf3db76a89628738b45a2d8921e52cf6fb23"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

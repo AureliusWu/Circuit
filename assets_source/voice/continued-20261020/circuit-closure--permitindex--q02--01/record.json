@@ -1,0 +1,59 @@
+{
+  "id": "circuit-closure--permitindex--q02--01",
+  "sceneId": "closure",
+  "lineId": "closure--permitIndex--q02--01",
+  "lineIndex": 0,
+  "speaker": "cheng",
+  "text": "对。",
+  "nodeId": "permitIndex",
+  "start": 90,
+  "end": 92,
+  "quoteIndex": 1,
+  "actorId": "cheng",
+  "voice": "Dylan",
+  "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1828513702,
+  "textSha256": "175739968f720c7573761bd835171725c6468dade64afe274a03d8eb2336ef1b",
+  "medium": "spoken",
+  "requestSha256": "085a9b0d9924df87bfe0c52009311d872a2761d11e797da70b3325b25b52d412",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "对",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 0.4,
+  "wallSeconds": 22.341,
+  "loudness": {
+    "input_i": "-22.45",
+    "input_tp": "-3.40",
+    "input_lra": "0.00",
+    "input_thresh": "-32.45",
+    "output_i": "-21.05",
+    "output_tp": "-2.00",
+    "output_lra": "0.00",
+    "output_thresh": "-31.05",
+    "normalization_type": "linear",
+    "target_offset": "1.05"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-closure--permitindex--q02--01/raw.wav",
+      "bytes": 38480,
+      "sha256": "69a5411a86d5f517b340a2b644c3551e24adaa86c8773af738173b6f2b9ed1d2"
+    },
+    "master": {
+      "path": "circuit-closure--permitindex--q02--01/master.wav",
+      "bytes": 19278,
+      "sha256": "3eb753ef383841c6cc8bc6bf47f16d76e296420b8b6fb7e487f247f3c8ac34f6"
+    },
+    "runtime": {
+      "path": "circuit-closure--permitindex--q02--01/runtime.ogg",
+      "bytes": 6458,
+      "sha256": "459019ad156d55920915983cd08f4c658ef32ca68091492ae41f95a6e810d4fc"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

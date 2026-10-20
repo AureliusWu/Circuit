@@ -1,0 +1,59 @@
+{
+  "id": "circuit-everlight--promiserecord--q01--01",
+  "sceneId": "everlight",
+  "lineId": "everlight--promiseRecord--q01--01",
+  "lineIndex": 0,
+  "speaker": "mei",
+  "text": "人不来了，怎么这事还挂着他？",
+  "nodeId": "promiseRecord",
+  "start": 46,
+  "end": 60,
+  "quoteIndex": 0,
+  "actorId": "mei",
+  "voice": "Serena",
+  "instruct": "六十岁女性，普通话，声音偏低，平实缓慢，像老邻居小声嘱咐，句尾稍停，不要年轻撒娇。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1181877398,
+  "textSha256": "8b33f7f65f911bcdd6c75c32e05841df6c5c671e41d46eefc49ede4a261ef88c",
+  "medium": "spoken",
+  "requestSha256": "7f8103c62581328e9c30248b583500b6a245cd5edb1233c315b001ad4da5568a",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "人不来了,怎么这事还挂着她?",
+    "cer": 0.083333,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 3.36,
+  "wallSeconds": 29.125,
+  "loudness": {
+    "input_i": "-28.92",
+    "input_tp": "-13.11",
+    "input_lra": "0.80",
+    "input_thresh": "-39.23",
+    "output_i": "-19.86",
+    "output_tp": "-4.28",
+    "output_lra": "0.00",
+    "output_thresh": "-30.16",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.14"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-everlight--promiserecord--q01--01/raw.wav",
+      "bytes": 322640,
+      "sha256": "18171f17bd779bfedf8374932175d962c6918d06585ba4b8a0088e78c690bce8"
+    },
+    "master": {
+      "path": "circuit-everlight--promiserecord--q01--01/master.wav",
+      "bytes": 161358,
+      "sha256": "20cab7fad2ae6a45b3894ea099e7236f0bef86059acf5d387b0901cb751d3982"
+    },
+    "runtime": {
+      "path": "circuit-everlight--promiserecord--q01--01/runtime.ogg",
+      "bytes": 26621,
+      "sha256": "d67320fab09be7ab8b1f1342420ed10bfcd3ed3b843a25f4824a8465b63356bd"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

@@ -1,0 +1,59 @@
+{
+  "id": "circuit-seventh-night--breaker--q02--01",
+  "sceneId": "seventh-night",
+  "lineId": "seventh-night--breaker--q02--01",
+  "lineIndex": 0,
+  "speaker": "shen",
+  "text": "用了。昨天拔了。",
+  "nodeId": "breaker",
+  "start": 88,
+  "end": 96,
+  "quoteIndex": 1,
+  "actorId": "shen",
+  "voice": "Serena",
+  "instruct": "二十八岁女性，普通话，声音轻而疲惫，口语自然，像一晚上没睡好的人，不要哭腔。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1925769219,
+  "textSha256": "070300ba348a53d44be3a51186b191699bcdb79e057af7c0e50b1e6f7685d68a",
+  "medium": "spoken",
+  "requestSha256": "6b5f844405857a2d52245f96ac94f433ec9833261875692921c77b941d7b5004",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "用了,昨天拔了",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 2.16,
+  "wallSeconds": 75.847,
+  "loudness": {
+    "input_i": "-23.72",
+    "input_tp": "-7.21",
+    "input_lra": "0.00",
+    "input_thresh": "-34.55",
+    "output_i": "-19.99",
+    "output_tp": "-3.49",
+    "output_lra": "0.00",
+    "output_thresh": "-31.07",
+    "normalization_type": "linear",
+    "target_offset": "-0.01"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-seventh-night--breaker--q02--01/raw.wav",
+      "bytes": 207440,
+      "sha256": "04b288311c24a07faa2be79b2c7a96364d66c3e1dc2062d3a92c2995223060c7"
+    },
+    "master": {
+      "path": "circuit-seventh-night--breaker--q02--01/master.wav",
+      "bytes": 103758,
+      "sha256": "6a3ddef3a079b71c07838bd03e4139f0717bf4f968a672075b1bd00d6e73c750"
+    },
+    "runtime": {
+      "path": "circuit-seventh-night--breaker--q02--01/runtime.ogg",
+      "bytes": 18075,
+      "sha256": "92810b03ddb14cad5bd64199e5c8ea4540ac9bf7e1cc828cc8f80eae79951464"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

@@ -1,0 +1,59 @@
+{
+  "id": "circuit-tickets--paperedge--q01--01",
+  "sceneId": "tickets",
+  "lineId": "tickets--paperEdge--q01--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "只能说不是从这个纸口撕的。",
+  "nodeId": "paperEdge",
+  "start": 72,
+  "end": 85,
+  "quoteIndex": 0,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1544014747,
+  "textSha256": "581cd8250714694a9b69de38c1055a9dccc5b7bfd9abba039627c28cf4dc9a34",
+  "medium": "spoken",
+  "requestSha256": "fc98b9ef169c4b01a741ed21d2f058eb32c582802fb26e1a55404a6d93494abe",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "只能说不是从这个纸口撕的",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 2.64,
+  "wallSeconds": 88.792,
+  "loudness": {
+    "input_i": "-18.55",
+    "input_tp": "-2.14",
+    "input_lra": "0.00",
+    "input_thresh": "-28.55",
+    "output_i": "-20.00",
+    "output_tp": "-3.59",
+    "output_lra": "0.00",
+    "output_thresh": "-30.00",
+    "normalization_type": "linear",
+    "target_offset": "0.00"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-tickets--paperedge--q01--01/raw.wav",
+      "bytes": 253520,
+      "sha256": "d21e77bfaa3e11ce513e4906ea3966f42a9f27b7805a2ec24f1eb8a89e5d0ddf"
+    },
+    "master": {
+      "path": "circuit-tickets--paperedge--q01--01/master.wav",
+      "bytes": 126798,
+      "sha256": "db1ae5b8de41748cedeb90c811745039d336265ea5012b2fc0031168347d3075"
+    },
+    "runtime": {
+      "path": "circuit-tickets--paperedge--q01--01/runtime.ogg",
+      "bytes": 23064,
+      "sha256": "f1a45c96e2ef79881decaff3924c57971b5dd8a5b88fafb9b3de00736310199b"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

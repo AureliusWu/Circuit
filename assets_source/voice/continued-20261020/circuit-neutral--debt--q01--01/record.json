@@ -1,0 +1,112 @@
+{
+  "id": "circuit-neutral--debt--q01--01",
+  "sceneId": "neutral",
+  "lineId": "neutral--debt--q01--01",
+  "lineIndex": 0,
+  "speaker": "shen",
+  "text": "你把原话留着，后面他们还会问。",
+  "nodeId": "debt",
+  "start": 15,
+  "end": 30,
+  "quoteIndex": 0,
+  "legacy": {
+    "id": "n04-shen",
+    "character": "shen",
+    "speaker": "Serena",
+    "instruct": "二十八岁女性，普通话，声音轻而疲惫，口语自然，像一晚上没睡好的人，不要哭腔。",
+    "text": "你把原话留着，后面他们还会问。",
+    "seed": 120027,
+    "bindings": [
+      {
+        "chapter": "neutral",
+        "node": "debt"
+      }
+    ],
+    "requestSha256": "7b7bf690ddc757522a08e005ce99cec57aa29ff74fcd1121d3902fb409dba9d5",
+    "duration": 2.4,
+    "generationSeconds": 13.888,
+    "loudnessInput": {
+      "input_i": "-25.01",
+      "input_tp": "-10.42",
+      "input_lra": "0.00",
+      "input_thresh": "-35.21",
+      "output_i": "-20.00",
+      "output_tp": "-5.41",
+      "output_lra": "0.00",
+      "output_thresh": "-30.20",
+      "normalization_type": "linear",
+      "target_offset": "-0.00"
+    },
+    "files": [
+      {
+        "path": "assets_source/audio/v1.2.0/n04-shen-raw.wav",
+        "bytes": 115244,
+        "sha256": "d73cb3fb96825cc487f2f424140172b7826c285e333240ecc9a11ac8080b1197"
+      },
+      {
+        "path": "assets_source/audio/v1.2.0/n04-shen.wav",
+        "bytes": 115278,
+        "sha256": "00c20bc8993afd127d97671fe89fc36c635903338b5854395c92aa36fe87618a"
+      },
+      {
+        "path": "public/audio/voice/n04-shen.mp3",
+        "bytes": 29709,
+        "sha256": "30254c941153e285b7c5bbe8aa934bcc547250961bd8680457b1419236c659d8"
+      }
+    ],
+    "asr": {
+      "id": "n04-shen",
+      "mp3Sha256": "30254c941153e285b7c5bbe8aa934bcc547250961bd8680457b1419236c659d8",
+      "expected": "你把原话留着，后面他们还会问。",
+      "transcript": "你把原话留着,后面他们还会问。",
+      "cer": 0,
+      "polarityCountsMatch": true,
+      "status": "passed"
+    },
+    "asrModel": "Systran/faster-whisper-large-v3",
+    "evidencePath": "docs/audio/voice-asr.json",
+    "evidenceSha256": "25d0e31c3decd5262d92349d6571ec67ac58723ea00c40005ddff4d8b9a58334"
+  },
+  "actorId": "shen",
+  "voice": "Serena",
+  "instruct": "二十八岁女性，普通话，声音轻而疲惫，口语自然，像一晚上没睡好的人，不要哭腔。 只朗读给定台词，不添加词语或音效。",
+  "seed": 3714694,
+  "textSha256": "1da2fec765484ef48ff4f74ce1b84d705ad59c3e64701ab0414f5e4293804b58",
+  "medium": "spoken",
+  "requestSha256": "74ed3cd70388a3eacefbf6e36da7c0639998a13b34282d6e0c3f00e2c79bb527",
+  "status": "accepted",
+  "productionMethod": "preserved_exact_legacy_bytes",
+  "duration": 2.4,
+  "actualGenerationRequest": {
+    "id": "n04-shen",
+    "speaker": "Serena",
+    "instruct": "二十八岁女性，普通话，声音轻而疲惫，口语自然，像一晚上没睡好的人，不要哭腔。",
+    "seed": 120027,
+    "requestSha256": "7b7bf690ddc757522a08e005ce99cec57aa29ff74fcd1121d3902fb409dba9d5"
+  },
+  "asr": {
+    "passed": true,
+    "transcript": "你把原话留着,后面他们还会问。",
+    "cer": 0,
+    "polarityCountsMatch": true,
+    "model": "Systran/faster-whisper-large-v3"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-neutral--debt--q01--01/raw.wav",
+      "bytes": 115244,
+      "sha256": "d73cb3fb96825cc487f2f424140172b7826c285e333240ecc9a11ac8080b1197"
+    },
+    "master": {
+      "path": "circuit-neutral--debt--q01--01/master.wav",
+      "bytes": 115278,
+      "sha256": "00c20bc8993afd127d97671fe89fc36c635903338b5854395c92aa36fe87618a"
+    },
+    "runtime": {
+      "path": "circuit-neutral--debt--q01--01/runtime.mp3",
+      "bytes": 29709,
+      "sha256": "30254c941153e285b7c5bbe8aa934bcc547250961bd8680457b1419236c659d8"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

@@ -1,0 +1,59 @@
+{
+  "id": "circuit-visitors--reconcile--q01--01",
+  "sceneId": "visitors",
+  "lineId": "visitors--reconcile--q01--01",
+  "lineIndex": 0,
+  "speaker": "luo",
+  "text": "它如果再喊收到呢？",
+  "nodeId": "reconcile",
+  "start": 94,
+  "end": 103,
+  "quoteIndex": 0,
+  "actorId": "luo",
+  "voice": "Vivian",
+  "instruct": "二十九岁女性，普通话，声音偏低，夜班值班员谨慎地问话，平静自然，略有迟疑，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 601099858,
+  "textSha256": "c30c3d7982cb5aeecf737f66659e2e40fe3cfbd502f5fc37f399f37244e4be7c",
+  "medium": "spoken",
+  "requestSha256": "b23ff3fc4e703d9a24aaed20d9b4109d5213303b54cf617ac8e5546d02963760",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "他如果再喊收到呢",
+    "cer": 0.125,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 1.68,
+  "wallSeconds": 68.421,
+  "loudness": {
+    "input_i": "-18.40",
+    "input_tp": "-6.68",
+    "input_lra": "0.00",
+    "input_thresh": "-28.40",
+    "output_i": "-20.00",
+    "output_tp": "-8.28",
+    "output_lra": "0.00",
+    "output_thresh": "-30.00",
+    "normalization_type": "linear",
+    "target_offset": "0.00"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-visitors--reconcile--q01--01/raw.wav",
+      "bytes": 161360,
+      "sha256": "8e2e436436b7dab7fa1efe5d608c2bffda9f4af7c54c458807d387ff6bcea448"
+    },
+    "master": {
+      "path": "circuit-visitors--reconcile--q01--01/master.wav",
+      "bytes": 80718,
+      "sha256": "1006281570c92ca33b425888fecb71a80c04c52914ac711e0544c8a6d45a7d26"
+    },
+    "runtime": {
+      "path": "circuit-visitors--reconcile--q01--01/runtime.ogg",
+      "bytes": 15350,
+      "sha256": "3e95f17eb2fca80b1e3e492cd8e1c5ca448e5873c1b7929271b49492c32d38db"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

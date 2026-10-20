@@ -1,0 +1,59 @@
+{
+  "id": "circuit-seventh-night--testplan--q01--01",
+  "sceneId": "seventh-night",
+  "lineId": "seventh-night--testPlan--q01--01",
+  "lineIndex": 0,
+  "speaker": "shen",
+  "text": "这个留不住饭了？",
+  "nodeId": "testPlan",
+  "start": 84,
+  "end": 92,
+  "quoteIndex": 0,
+  "actorId": "shen",
+  "voice": "Serena",
+  "instruct": "二十八岁女性，普通话，声音轻而疲惫，口语自然，像一晚上没睡好的人，不要哭腔。 只朗读给定台词，不添加词语或音效。",
+  "seed": 524033067,
+  "textSha256": "16b3d2827127ed0a66e3860a7bfb194dbde0ba4a0d583158984b0ada6eb16eee",
+  "medium": "spoken",
+  "requestSha256": "0c6149023c41be807b541da7a7bd28f8f0c530f96e30dd8d006d10d7268a9aa7",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "这个留不住饭啊",
+    "cer": 0.142857,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 1.28,
+  "wallSeconds": 139.277,
+  "loudness": {
+    "input_i": "-23.67",
+    "input_tp": "-10.37",
+    "input_lra": "0.00",
+    "input_thresh": "-33.67",
+    "output_i": "-20.01",
+    "output_tp": "-6.71",
+    "output_lra": "0.00",
+    "output_thresh": "-30.01",
+    "normalization_type": "linear",
+    "target_offset": "0.01"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-seventh-night--testplan--q01--01/raw.wav",
+      "bytes": 122960,
+      "sha256": "c38467b7b6134256bf825acdf20d98629143a8110d9b92f99c2931e6b4ac2020"
+    },
+    "master": {
+      "path": "circuit-seventh-night--testplan--q01--01/master.wav",
+      "bytes": 61518,
+      "sha256": "5e9cddab10d96ab28eb4aeba6002ff3b2abc425f38ea175fbedacb46df198906"
+    },
+    "runtime": {
+      "path": "circuit-seventh-night--testplan--q01--01/runtime.ogg",
+      "bytes": 12755,
+      "sha256": "86f29bc8b7eff280195124e6eb0d39991d55c67b3b4eb5a45764462e724ba201"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

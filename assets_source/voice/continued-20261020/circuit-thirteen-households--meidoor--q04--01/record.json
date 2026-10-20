@@ -1,0 +1,59 @@
+{
+  "id": "circuit-thirteen-households--meidoor--q04--01",
+  "sceneId": "thirteen-households",
+  "lineId": "thirteen-households--meiDoor--q04--01",
+  "lineIndex": 0,
+  "speaker": "mei",
+  "text": "上次有人说里面没人，也是这种雨。",
+  "nodeId": "meiDoor",
+  "start": 95,
+  "end": 111,
+  "quoteIndex": 3,
+  "actorId": "mei",
+  "voice": "Serena",
+  "instruct": "六十岁女性，普通话，声音偏低，平实缓慢，像老邻居小声嘱咐，句尾稍停，不要年轻撒娇。 只朗读给定台词，不添加词语或音效。",
+  "seed": 368950886,
+  "textSha256": "ae25ff0c8f5252728510e3c19d9b886c977e7471cc4ec70cfee46dfb84cfc066",
+  "medium": "spoken",
+  "requestSha256": "c6f84004d4c4c6222ca4539fc19c825f8f6199a124bab872d0e4c0b06678210b",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "上次有人说里面没人也是这种语",
+    "cer": 0.071429,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 4.8,
+  "wallSeconds": 284.426,
+  "loudness": {
+    "input_i": "-31.42",
+    "input_tp": "-17.49",
+    "input_lra": "1.40",
+    "input_thresh": "-42.04",
+    "output_i": "-19.16",
+    "output_tp": "-5.16",
+    "output_lra": "1.10",
+    "output_thresh": "-29.88",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.84"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-thirteen-households--meidoor--q04--01/raw.wav",
+      "bytes": 460880,
+      "sha256": "e4c695c22b0e81b94cc9da3e962d61c4871d9c534614df934a44784996a3f685"
+    },
+    "master": {
+      "path": "circuit-thirteen-households--meidoor--q04--01/master.wav",
+      "bytes": 230478,
+      "sha256": "1434ec7633e3c8396cf0322975deafd76d8c4818e047fe75cf6b5d2be7e21056"
+    },
+    "runtime": {
+      "path": "circuit-thirteen-households--meidoor--q04--01/runtime.ogg",
+      "bytes": 36516,
+      "sha256": "723dc8d14e359019c95dfd8664e8b134180a49af493fb177ca7974d4d6a44a33"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

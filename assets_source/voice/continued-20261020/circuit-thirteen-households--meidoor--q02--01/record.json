@@ -1,0 +1,59 @@
+{
+  "id": "circuit-thirteen-households--meidoor--q02--01",
+  "sceneId": "thirteen-households",
+  "lineId": "thirteen-households--meiDoor--q02--01",
+  "lineIndex": 0,
+  "speaker": "cheng",
+  "text": "现在呢？",
+  "nodeId": "meiDoor",
+  "start": 56,
+  "end": 60,
+  "quoteIndex": 1,
+  "actorId": "cheng",
+  "voice": "Dylan",
+  "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1443607865,
+  "textSha256": "f4f1196358f0eb785c790d006ca939613ed8ff4449661cc20a8f500bcbef5477",
+  "medium": "spoken",
+  "requestSha256": "bb8381de39edfaca2c54a4076056b21d614ee586b41a60368d1695fafce7e257",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "现在呢",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 0.8,
+  "wallSeconds": 5.225,
+  "loudness": {
+    "input_i": "-19.80",
+    "input_tp": "-6.17",
+    "input_lra": "0.00",
+    "input_thresh": "-29.80",
+    "output_i": "-20.00",
+    "output_tp": "-6.37",
+    "output_lra": "0.00",
+    "output_thresh": "-30.00",
+    "normalization_type": "linear",
+    "target_offset": "-0.00"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-thirteen-households--meidoor--q02--01/raw.wav",
+      "bytes": 76880,
+      "sha256": "b410d312ceb9e46b7ec1bc65a2cd342227710d2b6f64c8e99c25c75eb943e990"
+    },
+    "master": {
+      "path": "circuit-thirteen-households--meidoor--q02--01/master.wav",
+      "bytes": 38478,
+      "sha256": "8e4bc57a5f892b36252e99e20bcd33f2e82624118f1824fba71a448f40a8bcc7"
+    },
+    "runtime": {
+      "path": "circuit-thirteen-households--meidoor--q02--01/runtime.ogg",
+      "bytes": 9259,
+      "sha256": "afd644b93ede8d923cbbe9e3619804ecaadb700d375349c0bb3540a633e38766"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

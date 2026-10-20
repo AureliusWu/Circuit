@@ -1,0 +1,59 @@
+{
+  "id": "circuit-thirteen-households--zhoucall--q04--01",
+  "sceneId": "thirteen-households",
+  "lineId": "thirteen-households--zhouCall--q04--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "周师傅，我听见了。",
+  "nodeId": "zhouCall",
+  "start": 71,
+  "end": 80,
+  "quoteIndex": 3,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1361766600,
+  "textSha256": "6745ea41891806584fcf64924977f262686ee213597db36708265533569e1486",
+  "medium": "spoken",
+  "requestSha256": "b2f554773453e5cfbf7a28124c0ce8ae74355d02fc20d355bd5ca706b0621e35",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "双师傅 我听见了",
+    "cer": 0.142857,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 2.08,
+  "wallSeconds": 12.701,
+  "loudness": {
+    "input_i": "-18.47",
+    "input_tp": "-2.80",
+    "input_lra": "0.00",
+    "input_thresh": "-29.92",
+    "output_i": "-20.04",
+    "output_tp": "-4.32",
+    "output_lra": "0.00",
+    "output_thresh": "-31.48",
+    "normalization_type": "linear",
+    "target_offset": "0.04"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-thirteen-households--zhoucall--q04--01/raw.wav",
+      "bytes": 199760,
+      "sha256": "8488ff91b892cdd925c93e418d193a9a8a110b15dbc079c69ddca9d7e7fc99ed"
+    },
+    "master": {
+      "path": "circuit-thirteen-households--zhoucall--q04--01/master.wav",
+      "bytes": 99918,
+      "sha256": "a580b83ece9b63375a25ca797d65473992e768e17b03b8f9bed0e42680df969a"
+    },
+    "runtime": {
+      "path": "circuit-thirteen-households--zhoucall--q04--01/runtime.ogg",
+      "bytes": 18034,
+      "sha256": "9c41d04fad646bc126e3dbcea6d2b079737b25c9d2b1cfcc64824e17a624cc4d"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

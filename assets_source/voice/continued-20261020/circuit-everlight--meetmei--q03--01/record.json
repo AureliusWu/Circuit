@@ -1,0 +1,59 @@
+{
+  "id": "circuit-everlight--meetmei--q03--01",
+  "sceneId": "everlight",
+  "lineId": "everlight--meetMei--q03--01",
+  "lineIndex": 0,
+  "speaker": "mei",
+  "text": "以前只响一回。",
+  "nodeId": "meetMei",
+  "start": 102,
+  "end": 109,
+  "quoteIndex": 2,
+  "actorId": "mei",
+  "voice": "Serena",
+  "instruct": "六十岁女性，普通话，声音偏低，平实缓慢，像老邻居小声嘱咐，句尾稍停，不要年轻撒娇。 只朗读给定台词，不添加词语或音效。",
+  "seed": 296984881,
+  "textSha256": "9364bb99bce4f1bf95ca4d137667969d6b4691fb11709b7b59e643a9c181b8b1",
+  "medium": "spoken",
+  "requestSha256": "625447fb1bbdca872263500e6fe0634775d32259a8accc9dc7f2b8c235d53bb4",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "以前只想一回",
+    "cer": 0.166667,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 1.76,
+  "wallSeconds": 94.374,
+  "loudness": {
+    "input_i": "-20.72",
+    "input_tp": "-7.10",
+    "input_lra": "0.00",
+    "input_thresh": "-30.72",
+    "output_i": "-20.00",
+    "output_tp": "-6.38",
+    "output_lra": "0.00",
+    "output_thresh": "-30.00",
+    "normalization_type": "linear",
+    "target_offset": "0.00"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-everlight--meetmei--q03--01/raw.wav",
+      "bytes": 169040,
+      "sha256": "723311c0dce033e041336efdd0a58cdb9240a4f1434d77f0b72f2586734726c3"
+    },
+    "master": {
+      "path": "circuit-everlight--meetmei--q03--01/master.wav",
+      "bytes": 84558,
+      "sha256": "b2729443ed7f04773bcf78a279be63f85a7bb007ce64d315dd55dd7a7148637d"
+    },
+    "runtime": {
+      "path": "circuit-everlight--meetmei--q03--01/runtime.ogg",
+      "bytes": 15868,
+      "sha256": "78834f3192aa65871fc60ba8ee5383f1c991232fadd22bb7b674bf7af5d8c544"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

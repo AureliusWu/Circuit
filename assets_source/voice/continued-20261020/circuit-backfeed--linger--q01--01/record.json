@@ -1,0 +1,59 @@
+{
+  "id": "circuit-backfeed--linger--q01--01",
+  "sceneId": "backfeed",
+  "lineId": "backfeed--linger--q01--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "墙砌好了，旧图还当那里能走。",
+  "nodeId": "linger",
+  "start": 27,
+  "end": 41,
+  "quoteIndex": 0,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 688194960,
+  "textSha256": "51ec85e6eca70e6eaf1402062ee70a83fae4d5c3410230f910ca20f353a5e221",
+  "medium": "spoken",
+  "requestSha256": "3fe1642c1279c750197e1e562cba537185df01808d2864583a0bf6a2e197a76b",
+  "attempt": 5,
+  "status": "needs_review",
+  "asr": {
+    "transcript": "強氣好了,舊途還當那裡能走。",
+    "cer": 0.25,
+    "polarityCountsMatch": true,
+    "passed": false
+  },
+  "duration": 3.2,
+  "wallSeconds": 213.628,
+  "loudness": {
+    "input_i": "-19.34",
+    "input_tp": "-5.99",
+    "input_lra": "0.30",
+    "input_thresh": "-29.50",
+    "output_i": "-19.48",
+    "output_tp": "-6.20",
+    "output_lra": "0.00",
+    "output_thresh": "-29.63",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.52"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-backfeed--linger--q01--01/raw.wav",
+      "bytes": 307280,
+      "sha256": "4b5ea042070cc284802e7f27574638bc26f14c84bb95cc5fd274fdd75ddc74bd"
+    },
+    "master": {
+      "path": "circuit-backfeed--linger--q01--01/master.wav",
+      "bytes": 153678,
+      "sha256": "43ccf05c00df4d4e5db19d084f7492569d9d1d5b51b40c85a0eea0554357b780"
+    },
+    "runtime": {
+      "path": "circuit-backfeed--linger--q01--01/runtime.ogg",
+      "bytes": 25721,
+      "sha256": "d2333d5d6bbc9de66c218dfcb375635417358cea1beab841876b528a7d545c9d"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

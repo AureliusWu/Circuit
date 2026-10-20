@@ -1,0 +1,59 @@
+{
+  "id": "circuit-seventh-night--linger--q02--01",
+  "sceneId": "seventh-night",
+  "lineId": "seventh-night--linger--q02--01",
+  "lineIndex": 0,
+  "speaker": "cheng",
+  "text": "这个现在就能。",
+  "nodeId": "linger",
+  "start": 59,
+  "end": 66,
+  "quoteIndex": 1,
+  "actorId": "cheng",
+  "voice": "Dylan",
+  "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 140973624,
+  "textSha256": "d514435e9aec39d5cecf4baca0efbb9262bf287a93e563bc9ae8f3601e0fe2e0",
+  "medium": "spoken",
+  "requestSha256": "634781d9ba3f6e8de274cf088d2e265aee8be2bec24d70c3623877be913afd2f",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "这个现在就能",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 1.52,
+  "wallSeconds": 56.063,
+  "loudness": {
+    "input_i": "-21.80",
+    "input_tp": "-5.15",
+    "input_lra": "0.00",
+    "input_thresh": "-31.80",
+    "output_i": "-19.99",
+    "output_tp": "-3.34",
+    "output_lra": "0.00",
+    "output_thresh": "-29.99",
+    "normalization_type": "linear",
+    "target_offset": "-0.01"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-seventh-night--linger--q02--01/raw.wav",
+      "bytes": 146000,
+      "sha256": "fb385abb72dbe61f1e78eaad8e2e49796bbaba2b85a5015585fb4472410813a8"
+    },
+    "master": {
+      "path": "circuit-seventh-night--linger--q02--01/master.wav",
+      "bytes": 73038,
+      "sha256": "cb51a3cef5d5c11f1e5db6af6be2d78776266719b1d29c87bb994fa92e343fb8"
+    },
+    "runtime": {
+      "path": "circuit-seventh-night--linger--q02--01/runtime.ogg",
+      "bytes": 14940,
+      "sha256": "38e369530a8aa5f4cf2ef34886ede63989b9d2f14477bc93ad5e6b62420de603"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

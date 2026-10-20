@@ -1,0 +1,59 @@
+{
+  "id": "circuit-everlight--gate--q01--01",
+  "sceneId": "everlight",
+  "lineId": "everlight--gate--q01--01",
+  "lineIndex": 0,
+  "speaker": "cheng",
+  "text": "哪家的钥匙？",
+  "nodeId": "gate",
+  "start": 92,
+  "end": 98,
+  "quoteIndex": 0,
+  "actorId": "cheng",
+  "voice": "Dylan",
+  "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 287783675,
+  "textSha256": "0cd4ce0b655112705ba69df32e3fb570f0393eb7afc52fc9726f520bc7243b8d",
+  "medium": "spoken",
+  "requestSha256": "ee1741fdffeb71de61b571961c6542d7e02fc66781ecf6f7cfd6f30a1a711606",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "哪家的钥匙",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 1.28,
+  "wallSeconds": 137.554,
+  "loudness": {
+    "input_i": "-21.36",
+    "input_tp": "-5.10",
+    "input_lra": "0.00",
+    "input_thresh": "-31.36",
+    "output_i": "-19.99",
+    "output_tp": "-3.74",
+    "output_lra": "0.00",
+    "output_thresh": "-29.99",
+    "normalization_type": "linear",
+    "target_offset": "-0.01"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-everlight--gate--q01--01/raw.wav",
+      "bytes": 122960,
+      "sha256": "6c7a4f44f52698cf7156df7df306c86a66f0d6fbb39e85f2e6b8c0077c133e7c"
+    },
+    "master": {
+      "path": "circuit-everlight--gate--q01--01/master.wav",
+      "bytes": 61518,
+      "sha256": "151035a3ab6ba5d42b6c12f533fc085cfb500b217e109e685d17a226d8308b39"
+    },
+    "runtime": {
+      "path": "circuit-everlight--gate--q01--01/runtime.ogg",
+      "bytes": 13182,
+      "sha256": "1573b4a55a9c51b4f26fa81e36abb7d13297eb87fd9e1f92975c2cda0ef4e8ff"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

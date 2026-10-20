@@ -1,0 +1,59 @@
+{
+  "id": "circuit-neutral--west--q02--01",
+  "sceneId": "neutral",
+  "lineId": "neutral--west--q02--01",
+  "lineIndex": 0,
+  "speaker": "zhou",
+  "text": "守成没回来，我怕翻开之后，班上谁都躲不过。",
+  "nodeId": "west",
+  "start": 39,
+  "end": 60,
+  "quoteIndex": 1,
+  "actorId": "zhou",
+  "voice": "Uncle_Fu",
+  "instruct": "五十岁男性，普通话，声音低沉略沙哑，克制缓慢，像夜班老工人，语气自然，不要表演悲伤。 语速稍慢，逐字说清楚，季宁读jì níng。句尾完整，不要吞字。 只朗读给定台词，不添加词语或音效。",
+  "seed": 744710877,
+  "textSha256": "91fc7b5eb126abd5b8af2f413157169cf51aacaed4b06c451972577c9f763978",
+  "medium": "spoken",
+  "requestSha256": "66cfb02e6fb96e93f9a3bcb12be0866af4df4fe74d688f521ba80dea2b4009f0",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "手承没回来我怕翻开之后搬上谁都躲不过",
+    "cer": 0.166667,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 7.36,
+  "wallSeconds": 449.845,
+  "loudness": {
+    "input_i": "-23.39",
+    "input_tp": "-5.59",
+    "input_lra": "0.80",
+    "input_thresh": "-33.80",
+    "output_i": "-19.98",
+    "output_tp": "-2.00",
+    "output_lra": "1.50",
+    "output_thresh": "-30.43",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.02"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-neutral--west--q02--01/raw.wav",
+      "bytes": 706640,
+      "sha256": "fe26e240088bba2744c7a24f49166ab20331deb01e1007ace547bd1fdc31b36c"
+    },
+    "master": {
+      "path": "circuit-neutral--west--q02--01/master.wav",
+      "bytes": 353358,
+      "sha256": "915bb87056e3886bf1dc9775fdedb79b298714254d04a4a0a31e9257f204b288"
+    },
+    "runtime": {
+      "path": "circuit-neutral--west--q02--01/runtime.ogg",
+      "bytes": 54875,
+      "sha256": "432f4c043f8e7f8ab2076be9ab009bcd2a5e1d3a95a4368c2e63ee78a8337b31"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

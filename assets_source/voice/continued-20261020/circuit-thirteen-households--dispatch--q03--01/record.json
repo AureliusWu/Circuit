@@ -1,0 +1,59 @@
+{
+  "id": "circuit-thirteen-households--dispatch--q03--01",
+  "sceneId": "thirteen-households",
+  "lineId": "thirteen-households--dispatch--q03--01",
+  "lineIndex": 0,
+  "speaker": "cheng",
+  "text": "回来再吃。",
+  "nodeId": "dispatch",
+  "start": 77,
+  "end": 82,
+  "quoteIndex": 2,
+  "actorId": "cheng",
+  "voice": "Dylan",
+  "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 754442357,
+  "textSha256": "c9fb196db8504cc22da9b5761903ba9108d3225a02ed19a0a8e0f0928f1ce5c3",
+  "medium": "spoken",
+  "requestSha256": "5531ea503368e213accb3211fce6fba54686139e4d94b7ce2c683b379a06c9d7",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "回来再吃",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 0.8,
+  "wallSeconds": 6.435,
+  "loudness": {
+    "input_i": "-23.11",
+    "input_tp": "-8.42",
+    "input_lra": "0.00",
+    "input_thresh": "-33.11",
+    "output_i": "-20.01",
+    "output_tp": "-5.31",
+    "output_lra": "0.00",
+    "output_thresh": "-30.01",
+    "normalization_type": "linear",
+    "target_offset": "0.01"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-thirteen-households--dispatch--q03--01/raw.wav",
+      "bytes": 76880,
+      "sha256": "7c60ff81a35de398c851b0b49c367e752694efe204f40ead6e50a3bd1b4f65b7"
+    },
+    "master": {
+      "path": "circuit-thirteen-households--dispatch--q03--01/master.wav",
+      "bytes": 38478,
+      "sha256": "bea833d48ef9c58c938c5d4a718ef03f3939ed31376741244a5d95ffbd3f038b"
+    },
+    "runtime": {
+      "path": "circuit-thirteen-households--dispatch--q03--01/runtime.ogg",
+      "bytes": 9860,
+      "sha256": "fcfaee330865a0e4b58a6c9914447860c864765cc54c7bed845c63e25b223ba1"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

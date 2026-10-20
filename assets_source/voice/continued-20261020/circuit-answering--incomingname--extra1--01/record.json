@@ -1,0 +1,23 @@
+{
+  "id": "circuit-answering--incomingname--extra1--01",
+  "sceneId": "answering",
+  "lineId": "answering--incomingName--extra1--01",
+  "lineIndex": 0,
+  "speaker": "cheng",
+  "text": "程砚，已经到场。",
+  "nodeId": "incomingName",
+  "start": 0,
+  "end": 8,
+  "medium": "recorded",
+  "recordingKey": "arrived",
+  "replayOf": "circuit-return-visit--arrival--extra1--01",
+  "actorId": "cheng",
+  "voice": "Dylan",
+  "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1518770784,
+  "textSha256": "732e7fb1ad9138c3251b6879c9cf2778ec7686d954bf2baf2cd28a256f637509",
+  "requestSha256": "1caef07860bc680fb837ed07394f1add03cd01cd30c7bd1d97c41bc027703fb8",
+  "status": "replay_reference",
+  "files": {},
+  "recoveredFromRun": 39436504010
+}

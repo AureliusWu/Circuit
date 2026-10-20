@@ -1,0 +1,59 @@
+{
+  "id": "circuit-thirteen-households--residenttalk--q01--01",
+  "sceneId": "thirteen-households",
+  "lineId": "thirteen-households--residentTalk--q01--01",
+  "lineIndex": 0,
+  "speaker": "mei",
+  "text": "你们今天写不写旧门牌？",
+  "nodeId": "residentTalk",
+  "start": 34,
+  "end": 45,
+  "quoteIndex": 0,
+  "actorId": "mei",
+  "voice": "Serena",
+  "instruct": "六十岁女性，普通话，声音偏低，平实缓慢，像老邻居小声嘱咐，句尾稍停，不要年轻撒娇。 只朗读给定台词，不添加词语或音效。",
+  "seed": 528546215,
+  "textSha256": "27ee701051503e00ef79a91aad345954daa665db63d379f116b0e6433ee7ecd7",
+  "medium": "spoken",
+  "requestSha256": "d0212e6fb4cbf1d922166a8c8a97a41f9be431f68c09693a69c69ebdc280255f",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "你们今天写不写救门牌",
+    "cer": 0.1,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 2.4,
+  "wallSeconds": 122.344,
+  "loudness": {
+    "input_i": "-25.53",
+    "input_tp": "-7.56",
+    "input_lra": "0.00",
+    "input_thresh": "-35.53",
+    "output_i": "-20.00",
+    "output_tp": "-2.03",
+    "output_lra": "0.00",
+    "output_thresh": "-30.00",
+    "normalization_type": "linear",
+    "target_offset": "-0.00"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-thirteen-households--residenttalk--q01--01/raw.wav",
+      "bytes": 230480,
+      "sha256": "1f2d63ef6816b944d37e0cd9d5f0725f24b7ccfe8475f8eb8b70cfcd6a074e52"
+    },
+    "master": {
+      "path": "circuit-thirteen-households--residenttalk--q01--01/master.wav",
+      "bytes": 115278,
+      "sha256": "dc2ba392ed53bd35112a35b52610138b5dbb8ea981a64b62b88a27eb52214424"
+    },
+    "runtime": {
+      "path": "circuit-thirteen-households--residenttalk--q01--01/runtime.ogg",
+      "bytes": 20712,
+      "sha256": "a39ee65bf630ae8f65748071599c82e562dbb5850077df7234e94ba634e9c42a"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

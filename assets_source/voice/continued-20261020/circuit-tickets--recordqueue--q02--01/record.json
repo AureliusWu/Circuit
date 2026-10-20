@@ -1,0 +1,59 @@
+{
+  "id": "circuit-tickets--recordqueue--q02--01",
+  "sceneId": "tickets",
+  "lineId": "tickets--recordQueue--q02--01",
+  "lineIndex": 0,
+  "speaker": "chen",
+  "text": "家里喊你，你再答。这里隔着玻璃，先看清。",
+  "nodeId": "recordQueue",
+  "start": 57,
+  "end": 77,
+  "quoteIndex": 1,
+  "actorId": "chen",
+  "voice": "Uncle_Fu",
+  "instruct": "六十岁男性，普通话，语速慢，声音低哑，像看门的老人轻声说话，口语平实。 只朗读给定台词，不添加词语或音效。",
+  "seed": 920231293,
+  "textSha256": "e88c54a7331f9ecfa10a63cdeb693182558e74c112741c597fd8e42d44bfbc5f",
+  "medium": "spoken",
+  "requestSha256": "dc5a732e52dec3b258955327e4380efa3c6310b6ac0c8b36c371de4040a05498",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "那里喊你 你再打这里隔着玻璃先看清",
+    "cer": 0.125,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 5.36,
+  "wallSeconds": 175.332,
+  "loudness": {
+    "input_i": "-24.45",
+    "input_tp": "-5.25",
+    "input_lra": "1.60",
+    "input_thresh": "-35.03",
+    "output_i": "-20.08",
+    "output_tp": "-2.00",
+    "output_lra": "1.40",
+    "output_thresh": "-30.62",
+    "normalization_type": "dynamic",
+    "target_offset": "0.08"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-tickets--recordqueue--q02--01/raw.wav",
+      "bytes": 514640,
+      "sha256": "d9cf72f6fabe975174ad78ebabd73d467f299dff4e75712aaf9a6f5e49042159"
+    },
+    "master": {
+      "path": "circuit-tickets--recordqueue--q02--01/master.wav",
+      "bytes": 257358,
+      "sha256": "2f52cbc81cab14b20606f5ffbe344cf0507136f5f0e0104a7dbc8d2c52f24703"
+    },
+    "runtime": {
+      "path": "circuit-tickets--recordqueue--q02--01/runtime.ogg",
+      "bytes": 42123,
+      "sha256": "90f0589f05afb4f45733a84efaad296e988d655c736f7d1f0edb71ddad4a1186"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

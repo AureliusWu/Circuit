@@ -1,0 +1,59 @@
+{
+  "id": "circuit-seventh-night--familychoice--q01--01",
+  "sceneId": "seventh-night",
+  "lineId": "seventh-night--familyChoice--q01--01",
+  "lineIndex": 0,
+  "speaker": "shen",
+  "text": "我再问问当年开车的人。",
+  "nodeId": "familyChoice",
+  "start": 37,
+  "end": 48,
+  "quoteIndex": 0,
+  "actorId": "shen",
+  "voice": "Serena",
+  "instruct": "二十八岁女性，普通话，声音轻而疲惫，口语自然，像一晚上没睡好的人，不要哭腔。 只朗读给定台词，不添加词语或音效。",
+  "seed": 736125330,
+  "textSha256": "c9bb50b2820dc42858e04ea31e3f01722e460b1759b0bed6adf792f4c9f4c5ac",
+  "medium": "spoken",
+  "requestSha256": "fa53ba62de6bf3ce7a3356aa80a5fce5bf620c7cf8f4bcb0ab8d0c1591e84eb0",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "我再问问当年开车的人",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 1.68,
+  "wallSeconds": 17.376,
+  "loudness": {
+    "input_i": "-25.62",
+    "input_tp": "-11.20",
+    "input_lra": "0.00",
+    "input_thresh": "-35.62",
+    "output_i": "-19.99",
+    "output_tp": "-5.58",
+    "output_lra": "0.00",
+    "output_thresh": "-29.99",
+    "normalization_type": "linear",
+    "target_offset": "-0.01"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-seventh-night--familychoice--q01--01/raw.wav",
+      "bytes": 161360,
+      "sha256": "e1f67e6bb05a849309933ec252ce1f1456dfb16de151aab0b091fac99652a064"
+    },
+    "master": {
+      "path": "circuit-seventh-night--familychoice--q01--01/master.wav",
+      "bytes": 80718,
+      "sha256": "91dd7b5b65d35e463ecccc0987738641c5975db4d803822de69232f7807fe07e"
+    },
+    "runtime": {
+      "path": "circuit-seventh-night--familychoice--q01--01/runtime.ogg",
+      "bytes": 16219,
+      "sha256": "19027160c9973a6513e6539ad00e7f53351569a5a26760aa1578c99b666846fe"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

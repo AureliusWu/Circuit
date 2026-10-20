@@ -1,0 +1,59 @@
+{
+  "id": "circuit-thirteen-households--residentdebt--q01--01",
+  "sceneId": "thirteen-households",
+  "lineId": "thirteen-households--residentDebt--q01--01",
+  "lineIndex": 0,
+  "speaker": "mei",
+  "text": "表这样写，救人的时候他进的是哪家？",
+  "nodeId": "residentDebt",
+  "start": 45,
+  "end": 62,
+  "quoteIndex": 0,
+  "actorId": "mei",
+  "voice": "Serena",
+  "instruct": "六十岁女性，普通话，声音偏低，平实缓慢，像老邻居小声嘱咐，句尾稍停，不要年轻撒娇。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1024894711,
+  "textSha256": "ac7d89d4dc98205a297d4222af819c0b732a2996bff9e6109a72c94d883c57db",
+  "medium": "spoken",
+  "requestSha256": "66ca0effda2fb1e1ae86f6da4ca92f61ccceaf6d5d847729f91e05a5f78162b6",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "表這樣寫,救人的時候,他進的是哪家?",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 5.04,
+  "wallSeconds": 21.665,
+  "loudness": {
+    "input_i": "-26.50",
+    "input_tp": "-10.55",
+    "input_lra": "1.70",
+    "input_thresh": "-37.01",
+    "output_i": "-20.10",
+    "output_tp": "-4.28",
+    "output_lra": "1.90",
+    "output_thresh": "-30.63",
+    "normalization_type": "dynamic",
+    "target_offset": "0.10"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-thirteen-households--residentdebt--q01--01/raw.wav",
+      "bytes": 483920,
+      "sha256": "8be01eb48cdf146c20c7212d28d54f837c5f3aba9770291784555e8fcf6c7a2a"
+    },
+    "master": {
+      "path": "circuit-thirteen-households--residentdebt--q01--01/master.wav",
+      "bytes": 241998,
+      "sha256": "25a1cac2b5bf46a43248446599efa11ca9721078834e8cd2e274f4847335d8e7"
+    },
+    "runtime": {
+      "path": "circuit-thirteen-households--residentdebt--q01--01/runtime.ogg",
+      "bytes": 37430,
+      "sha256": "450ed744afe9b3c1c74e8d44e93f4425ba56902de69584a5d722630747370d09"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

@@ -1,0 +1,59 @@
+{
+  "id": "circuit-thirteen-households--ticketrecord--q02--01",
+  "sceneId": "thirteen-households",
+  "lineId": "thirteen-households--ticketRecord--q02--01",
+  "lineIndex": 0,
+  "speaker": "cheng",
+  "text": "继续隔离。",
+  "nodeId": "ticketRecord",
+  "start": 92,
+  "end": 97,
+  "quoteIndex": 1,
+  "actorId": "cheng",
+  "voice": "Dylan",
+  "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1882006928,
+  "textSha256": "2825cd3afc8f4edf8827f68852d6c5b41608ac6e57b77a0549e160108266fd04",
+  "medium": "spoken",
+  "requestSha256": "1d575f06466d889b94e6fab30eb6582211a35323fbd220b8c5de5bdd2ef85b0a",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "继续隔离",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 0.88,
+  "wallSeconds": 6.618,
+  "loudness": {
+    "input_i": "-23.13",
+    "input_tp": "-2.54",
+    "input_lra": "0.00",
+    "input_thresh": "-33.13",
+    "output_i": "-22.58",
+    "output_tp": "-2.00",
+    "output_lra": "0.00",
+    "output_thresh": "-32.58",
+    "normalization_type": "linear",
+    "target_offset": "2.58"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-thirteen-households--ticketrecord--q02--01/raw.wav",
+      "bytes": 84560,
+      "sha256": "cb0c1527c07b4a61ac756dd915e46a2c9a2e5917937124226ca7743a1512ad10"
+    },
+    "master": {
+      "path": "circuit-thirteen-households--ticketrecord--q02--01/master.wav",
+      "bytes": 42318,
+      "sha256": "c63d92300919857ae77bd17582931b3a4902f99828db6313ee1d7b8745c404d9"
+    },
+    "runtime": {
+      "path": "circuit-thirteen-households--ticketrecord--q02--01/runtime.ogg",
+      "bytes": 9654,
+      "sha256": "bae41156731e100432bf7d363a58ee38ebbd4e00473eacf719bb1e56f88f215a"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

@@ -1,0 +1,59 @@
+{
+  "id": "circuit-everlight--meetmei--q01--01",
+  "sceneId": "everlight",
+  "lineId": "everlight--meetMei--q01--01",
+  "lineIndex": 0,
+  "speaker": "mei",
+  "text": "卧室没停电。",
+  "nodeId": "meetMei",
+  "start": 56,
+  "end": 62,
+  "quoteIndex": 0,
+  "actorId": "mei",
+  "voice": "Serena",
+  "instruct": "六十岁女性，普通话，声音偏低，平实缓慢，像老邻居小声嘱咐，句尾稍停，不要年轻撒娇。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1605741281,
+  "textSha256": "c2023383fd37007fa3a72a58fbd5a33b06be04c9963231f2531e3cdd86916501",
+  "medium": "spoken",
+  "requestSha256": "e63931028d88ecb894c0ce7e2d4e316a820331e4d2c34b20d3fd3448a3615e3e",
+  "attempt": 3,
+  "status": "accepted",
+  "asr": {
+    "transcript": "臥室沒停電",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 1.44,
+  "wallSeconds": 80.798,
+  "loudness": {
+    "input_i": "-21.10",
+    "input_tp": "-7.58",
+    "input_lra": "0.00",
+    "input_thresh": "-31.10",
+    "output_i": "-20.00",
+    "output_tp": "-6.48",
+    "output_lra": "0.00",
+    "output_thresh": "-30.00",
+    "normalization_type": "linear",
+    "target_offset": "-0.00"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-everlight--meetmei--q01--01/raw.wav",
+      "bytes": 138320,
+      "sha256": "41c5e901b11bffa69f97b64b9c02c2603d3e11e06bc28c56a17ab46adf8280eb"
+    },
+    "master": {
+      "path": "circuit-everlight--meetmei--q01--01/master.wav",
+      "bytes": 69198,
+      "sha256": "d466b8523afe6b893f004e37475dfc764c3b99b234a3ed957dc1624c6c9ca87a"
+    },
+    "runtime": {
+      "path": "circuit-everlight--meetmei--q01--01/runtime.ogg",
+      "bytes": 13817,
+      "sha256": "6c00382f110808b45d8a16b97e78d0e898eceb59d7db209cd2e0e3eb90a36ca3"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

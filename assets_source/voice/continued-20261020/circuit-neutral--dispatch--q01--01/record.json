@@ -1,0 +1,59 @@
+{
+  "id": "circuit-neutral--dispatch--q01--01",
+  "sceneId": "neutral",
+  "lineId": "neutral--dispatch--q01--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "这张你也留着？",
+  "nodeId": "dispatch",
+  "start": 89,
+  "end": 96,
+  "quoteIndex": 0,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 246718218,
+  "textSha256": "7673342df9d0e302f3283750259e937f884facb840a151d4457f93fbc7e4872b",
+  "medium": "spoken",
+  "requestSha256": "e4dd3207536ad60b4b202fa016f64ec03b42126c9696a1694553ed3a8281caff",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "这张你也留着",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 1.2,
+  "wallSeconds": 46.078,
+  "loudness": {
+    "input_i": "-21.91",
+    "input_tp": "-7.75",
+    "input_lra": "0.00",
+    "input_thresh": "-31.91",
+    "output_i": "-19.99",
+    "output_tp": "-5.84",
+    "output_lra": "0.00",
+    "output_thresh": "-29.99",
+    "normalization_type": "linear",
+    "target_offset": "-0.01"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-neutral--dispatch--q01--01/raw.wav",
+      "bytes": 115280,
+      "sha256": "d3f586ea8b209a6de90bd835686f1eea76f81b1aa894fbfe5c118dc799d95cdb"
+    },
+    "master": {
+      "path": "circuit-neutral--dispatch--q01--01/master.wav",
+      "bytes": 57678,
+      "sha256": "37b0a29e6fa9987677fc5a57cc4eaab7fd1f2df7bb77007412323463b8627950"
+    },
+    "runtime": {
+      "path": "circuit-neutral--dispatch--q01--01/runtime.ogg",
+      "bytes": 12639,
+      "sha256": "b599cda8ada6e24fa0e55308cddb34b4d5997067ede6a711a9500ca2a206deed"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

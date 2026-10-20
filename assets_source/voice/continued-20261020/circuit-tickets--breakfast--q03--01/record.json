@@ -1,0 +1,59 @@
+{
+  "id": "circuit-tickets--breakfast--q03--01",
+  "sceneId": "tickets",
+  "lineId": "tickets--breakfast--q03--01",
+  "lineIndex": 0,
+  "speaker": "cheng",
+  "text": "现在还响？",
+  "nodeId": "breakfast",
+  "start": 76,
+  "end": 81,
+  "quoteIndex": 2,
+  "actorId": "cheng",
+  "voice": "Dylan",
+  "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 667491427,
+  "textSha256": "854f20ca3880aa13ac2450c258572a821939c4b4b72db991d755365f544fb910",
+  "medium": "spoken",
+  "requestSha256": "07320857c694c59b71a297b7e2a034225872b224d4368ccd5819f5ec4de9ccda",
+  "attempt": 5,
+  "status": "needs_review",
+  "asr": {
+    "transcript": "现在还想",
+    "cer": 0.25,
+    "polarityCountsMatch": true,
+    "passed": false
+  },
+  "duration": 1.6,
+  "wallSeconds": 92.336,
+  "loudness": {
+    "input_i": "-24.43",
+    "input_tp": "-6.64",
+    "input_lra": "0.00",
+    "input_thresh": "-34.43",
+    "output_i": "-20.00",
+    "output_tp": "-2.21",
+    "output_lra": "0.00",
+    "output_thresh": "-30.00",
+    "normalization_type": "linear",
+    "target_offset": "-0.00"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-tickets--breakfast--q03--01/raw.wav",
+      "bytes": 153680,
+      "sha256": "50e90cb12bf06a3cfc42d85afe7c1a249ffb37599532707f7ddb40cb493003b4"
+    },
+    "master": {
+      "path": "circuit-tickets--breakfast--q03--01/master.wav",
+      "bytes": 76878,
+      "sha256": "c9d1a3959f341cb100ad05ff96edf16331998ff22672676b3a99790bcd67eb69"
+    },
+    "runtime": {
+      "path": "circuit-tickets--breakfast--q03--01/runtime.ogg",
+      "bytes": 14366,
+      "sha256": "3d7f9b0e22aa9fcebd2f455c17dae175f6c53aa8b1cb97dca11a0158f2c8362b"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

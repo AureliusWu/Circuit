@@ -1,0 +1,59 @@
+{
+  "id": "circuit-thirteen-households--noticedebt--q03--01",
+  "sceneId": "thirteen-households",
+  "lineId": "thirteen-households--noticeDebt--q03--01",
+  "lineIndex": 0,
+  "speaker": "mei",
+  "text": "我写不了这么小。烧纸留半个字是我母亲的讲究，这张纸我没落过笔。",
+  "nodeId": "noticeDebt",
+  "start": 41,
+  "end": 72,
+  "quoteIndex": 2,
+  "actorId": "mei",
+  "voice": "Serena",
+  "instruct": "六十岁女性，普通话，声音偏低，平实缓慢，像老邻居小声嘱咐，句尾稍停，不要年轻撒娇。 只朗读给定台词，不添加词语或音效。",
+  "seed": 7000133,
+  "textSha256": "6ac4e225405a433ec5abda06204d6f7800b9d86609f9ea0f8327259923a1e632",
+  "medium": "spoken",
+  "requestSha256": "198dc0f06d539c2e42b6dedd21a646e9675ac168c6f0bba5085fbdeddc5a622e",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "我寫不了這麽小稍止留半個字是我母親的講究這張紙我沒落過筆",
+    "cer": 0.071429,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 7.92,
+  "wallSeconds": 390.897,
+  "loudness": {
+    "input_i": "-23.36",
+    "input_tp": "-7.41",
+    "input_lra": "4.60",
+    "input_thresh": "-34.51",
+    "output_i": "-20.70",
+    "output_tp": "-4.73",
+    "output_lra": "4.40",
+    "output_thresh": "-31.68",
+    "normalization_type": "dynamic",
+    "target_offset": "0.70"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-thirteen-households--noticedebt--q03--01/raw.wav",
+      "bytes": 760400,
+      "sha256": "b3717c7bca654b3d8d61fb500d3ba58ab550a06c515edb06ddb25003eaccb824"
+    },
+    "master": {
+      "path": "circuit-thirteen-households--noticedebt--q03--01/master.wav",
+      "bytes": 380238,
+      "sha256": "643a47df84f855ce14690e028d708005436aff208f587850a7c38a60586bb1da"
+    },
+    "runtime": {
+      "path": "circuit-thirteen-households--noticedebt--q03--01/runtime.ogg",
+      "bytes": 58601,
+      "sha256": "b07916ebbf40d22045e1bb0f1e7af3c14b68ecd85482c527106327b47a560916"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

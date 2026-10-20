@@ -1,0 +1,59 @@
+{
+  "id": "circuit-backfeed--route--q02--01",
+  "sceneId": "backfeed",
+  "lineId": "backfeed--route--q02--01",
+  "lineIndex": 0,
+  "speaker": "cheng",
+  "text": "现在可能是墙。",
+  "nodeId": "route",
+  "start": 74,
+  "end": 81,
+  "quoteIndex": 1,
+  "actorId": "cheng",
+  "voice": "Dylan",
+  "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1803576772,
+  "textSha256": "f67e587c813a6d3b8e7890a5afe7d573321fe3343b5c59f51f5bcd45d85367b2",
+  "medium": "spoken",
+  "requestSha256": "cae79899cfe2e84750a2d42896ea8a7cbacf3183559eb2617c46e8dd085f858a",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "现在可能是强",
+    "cer": 0.166667,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 1.6,
+  "wallSeconds": 91.633,
+  "loudness": {
+    "input_i": "-24.81",
+    "input_tp": "-7.09",
+    "input_lra": "0.00",
+    "input_thresh": "-35.12",
+    "output_i": "-20.01",
+    "output_tp": "-2.28",
+    "output_lra": "0.00",
+    "output_thresh": "-30.32",
+    "normalization_type": "linear",
+    "target_offset": "0.01"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-backfeed--route--q02--01/raw.wav",
+      "bytes": 153680,
+      "sha256": "0742325ccf58a7b8694781930a4382826812a50d407151d4b1c16f48af50071b"
+    },
+    "master": {
+      "path": "circuit-backfeed--route--q02--01/master.wav",
+      "bytes": 76878,
+      "sha256": "ba377a08714da1657da458bd63fcf075a90631544d61b5850dfc95d6e4b90ceb"
+    },
+    "runtime": {
+      "path": "circuit-backfeed--route--q02--01/runtime.ogg",
+      "bytes": 15114,
+      "sha256": "6b1b1e0e1455e37fa372021d31f9fb5dde74cf7f16d04b0b4d8b05b5d350aa95"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

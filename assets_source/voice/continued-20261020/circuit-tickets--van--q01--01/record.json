@@ -1,0 +1,59 @@
+{
+  "id": "circuit-tickets--van--q01--01",
+  "sceneId": "tickets",
+  "lineId": "tickets--van--q01--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "您还吃吗？",
+  "nodeId": "van",
+  "start": 60,
+  "end": 65,
+  "quoteIndex": 0,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1005304716,
+  "textSha256": "f0a69abba582c52f2db3d94d766fe5b55844d306f2d8441c9b3cb1412be1b85f",
+  "medium": "spoken",
+  "requestSha256": "fd027ec2523441b7ed37acfd2ebe605ced81af8312db00f2e4a4374ea5c9db7f",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "您还吃吗",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 0.96,
+  "wallSeconds": 56.657,
+  "loudness": {
+    "input_i": "-18.57",
+    "input_tp": "-5.72",
+    "input_lra": "0.00",
+    "input_thresh": "-28.57",
+    "output_i": "-19.99",
+    "output_tp": "-7.15",
+    "output_lra": "0.00",
+    "output_thresh": "-29.99",
+    "normalization_type": "linear",
+    "target_offset": "-0.01"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-tickets--van--q01--01/raw.wav",
+      "bytes": 92240,
+      "sha256": "73d22eba624d82e0b91a3032ec9dda5ab621fef558442fff79bff4bf2fc78867"
+    },
+    "master": {
+      "path": "circuit-tickets--van--q01--01/master.wav",
+      "bytes": 46158,
+      "sha256": "ebb8408e85f6990b463609df9f4c4c5a1f75a0368c4566bbf841755a18ff81ea"
+    },
+    "runtime": {
+      "path": "circuit-tickets--van--q01--01/runtime.ogg",
+      "bytes": 10168,
+      "sha256": "fa404817a0101129446dca11369990ffeedc9584a8bcc0169e9f92185c975273"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

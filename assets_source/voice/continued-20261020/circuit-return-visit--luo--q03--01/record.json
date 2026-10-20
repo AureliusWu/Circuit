@@ -1,0 +1,112 @@
+{
+  "id": "circuit-return-visit--luo--q03--01",
+  "sceneId": "return-visit",
+  "lineId": "return-visit--luo--q03--01",
+  "lineIndex": 0,
+  "speaker": "luo",
+  "text": "我也觉得不对。前两次都说到场，门口一个人没有。",
+  "nodeId": "luo",
+  "start": 55,
+  "end": 78,
+  "quoteIndex": 2,
+  "legacy": {
+    "id": "v01-luo",
+    "character": "luo",
+    "speaker": "Vivian",
+    "instruct": "二十九岁女性，普通话，声音偏低，夜班值班员谨慎地问话，平静自然，略有迟疑，不要朗诵。",
+    "text": "我也觉得不对。前两次都说到场，门口一个人没有。",
+    "seed": 120034,
+    "bindings": [
+      {
+        "chapter": "return-visit",
+        "node": "luo"
+      }
+    ],
+    "requestSha256": "47d0aead8fb6e79fb59c229cc95b97bf848d2b58038831552bd8e3cb5ce893e0",
+    "duration": 7.52,
+    "generationSeconds": 40.632,
+    "loudnessInput": {
+      "input_i": "-20.83",
+      "input_tp": "-7.07",
+      "input_lra": "1.50",
+      "input_thresh": "-31.70",
+      "output_i": "-19.43",
+      "output_tp": "-4.10",
+      "output_lra": "2.20",
+      "output_thresh": "-30.38",
+      "normalization_type": "dynamic",
+      "target_offset": "-0.57"
+    },
+    "files": [
+      {
+        "path": "assets_source/audio/v1.2.0/v01-luo-raw.wav",
+        "bytes": 361004,
+        "sha256": "21a2761b37eb31d78616535a29bc36f268f69e1eecf38e5f49d74f662c68a4c9"
+      },
+      {
+        "path": "assets_source/audio/v1.2.0/v01-luo.wav",
+        "bytes": 361038,
+        "sha256": "5b3eb509754dd4b7a1f7554e996f81b18d2f7d0311181c220367d4ba4af6c060"
+      },
+      {
+        "path": "public/audio/voice/v01-luo.mp3",
+        "bytes": 91341,
+        "sha256": "0a49571c4533c70c8b93f1dd327a01959d6f4767929300afe789ce5b33e100c8"
+      }
+    ],
+    "asr": {
+      "id": "v01-luo",
+      "mp3Sha256": "0a49571c4533c70c8b93f1dd327a01959d6f4767929300afe789ce5b33e100c8",
+      "expected": "我也觉得不对。前两次都说到场，门口一个人没有。",
+      "transcript": "我也觉得不对,前两次都说到场,门口一个人没有。",
+      "cer": 0,
+      "polarityCountsMatch": true,
+      "status": "passed"
+    },
+    "asrModel": "Systran/faster-whisper-large-v3",
+    "evidencePath": "docs/audio/voice-asr.json",
+    "evidenceSha256": "25d0e31c3decd5262d92349d6571ec67ac58723ea00c40005ddff4d8b9a58334"
+  },
+  "actorId": "luo",
+  "voice": "Vivian",
+  "instruct": "二十九岁女性，普通话，声音偏低，夜班值班员谨慎地问话，平静自然，略有迟疑，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 203347122,
+  "textSha256": "94dbb38f5a4fb98ff49ed48d1a920363b925ada39ab13dbd4aa43b2ab272fa4f",
+  "medium": "spoken",
+  "requestSha256": "d092f7d5c25390ce80bb59b17b4a5b3c702871b2c33c44afe96ad7d6a9e835a8",
+  "status": "accepted",
+  "productionMethod": "preserved_exact_legacy_bytes",
+  "duration": 7.52,
+  "actualGenerationRequest": {
+    "id": "v01-luo",
+    "speaker": "Vivian",
+    "instruct": "二十九岁女性，普通话，声音偏低，夜班值班员谨慎地问话，平静自然，略有迟疑，不要朗诵。",
+    "seed": 120034,
+    "requestSha256": "47d0aead8fb6e79fb59c229cc95b97bf848d2b58038831552bd8e3cb5ce893e0"
+  },
+  "asr": {
+    "passed": true,
+    "transcript": "我也觉得不对,前两次都说到场,门口一个人没有。",
+    "cer": 0,
+    "polarityCountsMatch": true,
+    "model": "Systran/faster-whisper-large-v3"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-return-visit--luo--q03--01/raw.wav",
+      "bytes": 361004,
+      "sha256": "21a2761b37eb31d78616535a29bc36f268f69e1eecf38e5f49d74f662c68a4c9"
+    },
+    "master": {
+      "path": "circuit-return-visit--luo--q03--01/master.wav",
+      "bytes": 361038,
+      "sha256": "5b3eb509754dd4b7a1f7554e996f81b18d2f7d0311181c220367d4ba4af6c060"
+    },
+    "runtime": {
+      "path": "circuit-return-visit--luo--q03--01/runtime.mp3",
+      "bytes": 91341,
+      "sha256": "0a49571c4533c70c8b93f1dd327a01959d6f4767929300afe789ce5b33e100c8"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

@@ -1,0 +1,59 @@
+{
+  "id": "circuit-tickets--breakfast--q02--01",
+  "sceneId": "tickets",
+  "lineId": "tickets--breakfast--q02--01",
+  "lineIndex": 0,
+  "speaker": "cheng",
+  "text": "趁热。",
+  "nodeId": "breakfast",
+  "start": 17,
+  "end": 20,
+  "quoteIndex": 1,
+  "actorId": "cheng",
+  "voice": "Dylan",
+  "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 118830086,
+  "textSha256": "3bfb4763bdd01c8b8c6c1ffd18fafcf6001199c8fcb811a804213e51877a1808",
+  "medium": "spoken",
+  "requestSha256": "8645691e7e289cec63797a8dd6d85a52363e03d3b09aa3b0f5d622f96ba1151e",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "趁热",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 0.56,
+  "wallSeconds": 3.996,
+  "loudness": {
+    "input_i": "-24.29",
+    "input_tp": "-5.98",
+    "input_lra": "0.00",
+    "input_thresh": "-34.29",
+    "output_i": "-20.29",
+    "output_tp": "-2.00",
+    "output_lra": "0.00",
+    "output_thresh": "-30.29",
+    "normalization_type": "linear",
+    "target_offset": "0.29"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-tickets--breakfast--q02--01/raw.wav",
+      "bytes": 53840,
+      "sha256": "9f8a536cfb21948c849c19022f2f9ac5ea1460bd5a63006224d0ae63ba64172e"
+    },
+    "master": {
+      "path": "circuit-tickets--breakfast--q02--01/master.wav",
+      "bytes": 26958,
+      "sha256": "b3d9541c66ec2e766f627e4075744d13c5c0449f552c9829fad762bba705d031"
+    },
+    "runtime": {
+      "path": "circuit-tickets--breakfast--q02--01/runtime.ogg",
+      "bytes": 8049,
+      "sha256": "59af5e0d36e4a9b1f8514b662be18c66ab01659e3696c63ca2f14089a25a24ff"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

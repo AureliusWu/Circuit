@@ -1,0 +1,59 @@
+{
+  "id": "circuit-answering--recordlist--q01--01",
+  "sceneId": "answering",
+  "lineId": "answering--recordList--q01--01",
+  "lineIndex": 0,
+  "speaker": "luo",
+  "text": "那它干嘛叫我？",
+  "nodeId": "recordList",
+  "start": 69,
+  "end": 76,
+  "quoteIndex": 0,
+  "actorId": "luo",
+  "voice": "Vivian",
+  "instruct": "二十九岁女性，普通话，声音偏低，夜班值班员谨慎地问话，平静自然，略有迟疑，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1165629506,
+  "textSha256": "aa68227af964a5d052ce2b96d1e827547024a1d4002bf51b72e4cbd6c3dd85cc",
+  "medium": "spoken",
+  "requestSha256": "a76dc96f180fb0da014ea64ae0e521da4a84ef165a6cfa431314e6a917de021a",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "那他 幹嘛叫我?",
+    "cer": 0.166667,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 2.16,
+  "wallSeconds": 20.056,
+  "loudness": {
+    "input_i": "-23.96",
+    "input_tp": "-9.37",
+    "input_lra": "0.00",
+    "input_thresh": "-34.47",
+    "output_i": "-20.01",
+    "output_tp": "-5.41",
+    "output_lra": "0.00",
+    "output_thresh": "-30.52",
+    "normalization_type": "linear",
+    "target_offset": "0.01"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-answering--recordlist--q01--01/raw.wav",
+      "bytes": 207440,
+      "sha256": "ca2dac6e6a131cfe414bd3e0193f6b7b8e4b07542aa657b5c57864dd97441fdc"
+    },
+    "master": {
+      "path": "circuit-answering--recordlist--q01--01/master.wav",
+      "bytes": 103758,
+      "sha256": "c15457fd71d09b19e92e882b32bd6ff0e9bc688df548de5562e042aa9aa696c3"
+    },
+    "runtime": {
+      "path": "circuit-answering--recordlist--q01--01/runtime.ogg",
+      "bytes": 18222,
+      "sha256": "57d18572f8efbd7503fbbebd8d7d3a0eb710b3baf0e423fda6b2d9ea67db076d"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

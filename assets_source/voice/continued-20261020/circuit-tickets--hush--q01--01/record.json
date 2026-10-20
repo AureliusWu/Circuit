@@ -1,0 +1,59 @@
+{
+  "id": "circuit-tickets--hush--q01--01",
+  "sceneId": "tickets",
+  "lineId": "tickets--hush--q01--01",
+  "lineIndex": 0,
+  "speaker": "luo",
+  "text": "这声我小时候听过。叫人退号，就是这个。",
+  "nodeId": "hush",
+  "start": 78,
+  "end": 97,
+  "quoteIndex": 0,
+  "actorId": "luo",
+  "voice": "Vivian",
+  "instruct": "二十九岁女性，普通话，声音偏低，夜班值班员谨慎地问话，平静自然，略有迟疑，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1428851011,
+  "textSha256": "eca22d1b1104840a5155f117eb03b6fc902282f04d20461fa8765a5ffec5df3c",
+  "medium": "spoken",
+  "requestSha256": "c84a5b504c11be149bc3e6471453114e0c575ce7ca95985764719272fa4534ef",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "這聲我想時候聽過叫人退號就是這個",
+    "cer": 0.0625,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 4.48,
+  "wallSeconds": 298.706,
+  "loudness": {
+    "input_i": "-22.92",
+    "input_tp": "-7.23",
+    "input_lra": "7.30",
+    "input_thresh": "-33.62",
+    "output_i": "-20.05",
+    "output_tp": "-6.31",
+    "output_lra": "6.90",
+    "output_thresh": "-31.15",
+    "normalization_type": "dynamic",
+    "target_offset": "0.05"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-tickets--hush--q01--01/raw.wav",
+      "bytes": 430160,
+      "sha256": "87cda73bb5fd6df55626e3bf515547ee9cd29d6931ebf12e1ce002e9ffbee8fb"
+    },
+    "master": {
+      "path": "circuit-tickets--hush--q01--01/master.wav",
+      "bytes": 215118,
+      "sha256": "aa9f82436422da97c6de06cd3d5b5ca6b7bf9bbc99f7249923cb1dbad0a3b463"
+    },
+    "runtime": {
+      "path": "circuit-tickets--hush--q01--01/runtime.ogg",
+      "bytes": 33682,
+      "sha256": "5b9de4091d7c838235d486e9fcd83009ae655d42b242a60caab116702207691e"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

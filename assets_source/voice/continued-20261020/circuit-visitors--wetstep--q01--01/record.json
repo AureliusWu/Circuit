@@ -1,0 +1,59 @@
+{
+  "id": "circuit-visitors--wetstep--q01--01",
+  "sceneId": "visitors",
+  "lineId": "visitors--wetStep--q01--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "师傅，先别往回找。让陈伯别一个人再进去。",
+  "nodeId": "wetStep",
+  "start": 100,
+  "end": 120,
+  "quoteIndex": 0,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 474998600,
+  "textSha256": "15ee8bae9443739d5325ca56203c97d3df6440c871de7742aacad75cd72a3b46",
+  "medium": "spoken",
+  "requestSha256": "d0f462d925c2b4efda924b0685baaf02c576c68a8201eef0073223bc2354df22",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "師父 先別往回找 讓陳伯比一個人再進去",
+    "cer": 0.117647,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 3.92,
+  "wallSeconds": 132.054,
+  "loudness": {
+    "input_i": "-24.37",
+    "input_tp": "-8.72",
+    "input_lra": "0.50",
+    "input_thresh": "-34.75",
+    "output_i": "-19.45",
+    "output_tp": "-3.82",
+    "output_lra": "0.00",
+    "output_thresh": "-29.99",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.55"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-visitors--wetstep--q01--01/raw.wav",
+      "bytes": 376400,
+      "sha256": "5762e4e593ef9a5ccdc3e5cf224684fa6050c931757c43149c133aab7197d016"
+    },
+    "master": {
+      "path": "circuit-visitors--wetstep--q01--01/master.wav",
+      "bytes": 188238,
+      "sha256": "17eb78c14c36a4d446fd5fd83e386d39ca6e00925a8e60efaec801ef85f93c59"
+    },
+    "runtime": {
+      "path": "circuit-visitors--wetstep--q01--01/runtime.ogg",
+      "bytes": 31289,
+      "sha256": "f43e16b9f112b715a4be19b5713fa010400dbdc66e0569f07c67c542a7d81f22"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

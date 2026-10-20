@@ -1,0 +1,59 @@
+{
+  "id": "circuit-visitors--plate--q02--01",
+  "sceneId": "visitors",
+  "lineId": "visitors--plate--q02--01",
+  "lineIndex": 0,
+  "speaker": "cheng",
+  "text": "后来拿走没有？",
+  "nodeId": "plate",
+  "start": 101,
+  "end": 108,
+  "quoteIndex": 1,
+  "actorId": "cheng",
+  "voice": "Dylan",
+  "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1550452263,
+  "textSha256": "54342f4f8320f8e68f4f7b9cb2acd56ed0811b355eb911aaf75d24e3018e8f76",
+  "medium": "spoken",
+  "requestSha256": "a28a130ec0f02761a7503b58a4b1c24e77f54e830013c9f6ec2e237d35114cfa",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "后来拿走没有",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 1.36,
+  "wallSeconds": 53.665,
+  "loudness": {
+    "input_i": "-21.05",
+    "input_tp": "-6.66",
+    "input_lra": "0.00",
+    "input_thresh": "-31.05",
+    "output_i": "-19.96",
+    "output_tp": "-5.61",
+    "output_lra": "0.00",
+    "output_thresh": "-29.96",
+    "normalization_type": "linear",
+    "target_offset": "-0.04"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-visitors--plate--q02--01/raw.wav",
+      "bytes": 130640,
+      "sha256": "da8477b22af23a5862080d41273fbaf1ae006d5ed4ef54f9b569d000ed012e08"
+    },
+    "master": {
+      "path": "circuit-visitors--plate--q02--01/master.wav",
+      "bytes": 65358,
+      "sha256": "0c54299b9e7e6a6a78d4798c429ca5e720ac1e89d1883503b3f50aff631d6a96"
+    },
+    "runtime": {
+      "path": "circuit-visitors--plate--q02--01/runtime.ogg",
+      "bytes": 13184,
+      "sha256": "5543a82813a0a501d8375f0fbb79e8699addeb068cd3ea0413c24d8fc7bac621"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

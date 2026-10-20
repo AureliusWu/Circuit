@@ -1,0 +1,59 @@
+{
+  "id": "circuit-tickets--recordjob--q02--01",
+  "sceneId": "tickets",
+  "lineId": "tickets--recordJob--q02--01",
+  "lineIndex": 0,
+  "speaker": "chen",
+  "text": "我妈最后那次办手续，就是叫到号，又退了。东西没搬齐。",
+  "nodeId": "recordJob",
+  "start": 40,
+  "end": 66,
+  "quoteIndex": 1,
+  "actorId": "chen",
+  "voice": "Uncle_Fu",
+  "instruct": "六十岁男性，普通话，语速慢，声音低哑，像看门的老人轻声说话，口语平实。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1179951618,
+  "textSha256": "12a4602b7baf4be7fdcb3a497f7fca1c548b661486f8fe62e830c7604fcea631",
+  "medium": "spoken",
+  "requestSha256": "82c2a809f41a55f887841c49c1ffb1f4209bfb1a67ba371920afd212a806089b",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "我妈最后那次办手续就是脚刀后又退了东西没办齐",
+    "cer": 0.181818,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 7.6,
+  "wallSeconds": 241.662,
+  "loudness": {
+    "input_i": "-24.75",
+    "input_tp": "-6.71",
+    "input_lra": "5.10",
+    "input_thresh": "-35.37",
+    "output_i": "-21.05",
+    "output_tp": "-3.95",
+    "output_lra": "5.20",
+    "output_thresh": "-31.54",
+    "normalization_type": "dynamic",
+    "target_offset": "1.05"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-tickets--recordjob--q02--01/raw.wav",
+      "bytes": 729680,
+      "sha256": "f64dea3e4133648797633fdcd5e28fdb2b085a80aa996b1b8942d6bd41a66901"
+    },
+    "master": {
+      "path": "circuit-tickets--recordjob--q02--01/master.wav",
+      "bytes": 364878,
+      "sha256": "a7b4f07c24a0080a605e41c1d2aa1696910868454a214a466647c94431548461"
+    },
+    "runtime": {
+      "path": "circuit-tickets--recordjob--q02--01/runtime.ogg",
+      "bytes": 58068,
+      "sha256": "43430731977d5599c707d6f857562ef1b36727e19a156dffe3e022328658d476"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

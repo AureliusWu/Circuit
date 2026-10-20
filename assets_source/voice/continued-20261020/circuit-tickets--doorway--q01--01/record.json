@@ -1,0 +1,59 @@
+{
+  "id": "circuit-tickets--doorway--q01--01",
+  "sceneId": "tickets",
+  "lineId": "tickets--doorway--q01--01",
+  "lineIndex": 0,
+  "speaker": "luo",
+  "text": "一、二、三、四……",
+  "nodeId": "doorway",
+  "start": 34,
+  "end": 43,
+  "quoteIndex": 0,
+  "actorId": "luo",
+  "voice": "Vivian",
+  "instruct": "二十九岁女性，普通话，声音偏低，夜班值班员谨慎地问话，平静自然，略有迟疑，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 268207315,
+  "textSha256": "51f9aba17e2f6cb30304a6b29b7b6e334cc8afc9367e308572a606fb4fde1218",
+  "medium": "spoken",
+  "requestSha256": "52f14bc2c38f5aa7015b765c6d75adc44e145cdd667ce99e40501ab0befd19db",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "一、二、三、四",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 2.88,
+  "wallSeconds": 159.474,
+  "loudness": {
+    "input_i": "-23.63",
+    "input_tp": "-8.98",
+    "input_lra": "0.00",
+    "input_thresh": "-34.52",
+    "output_i": "-20.01",
+    "output_tp": "-5.36",
+    "output_lra": "0.00",
+    "output_thresh": "-30.90",
+    "normalization_type": "linear",
+    "target_offset": "0.01"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-tickets--doorway--q01--01/raw.wav",
+      "bytes": 276560,
+      "sha256": "66c31bdc8af87874caa69eda495514944dbe31099ebf75971d6980a6d3e5c9d6"
+    },
+    "master": {
+      "path": "circuit-tickets--doorway--q01--01/master.wav",
+      "bytes": 138318,
+      "sha256": "4bc009d102b94c8aa755f5e73f034bdf2ac3d00337a8976ce5147c2a09a096e0"
+    },
+    "runtime": {
+      "path": "circuit-tickets--doorway--q01--01/runtime.ogg",
+      "bytes": 21719,
+      "sha256": "cc6528f20d9361f832331c8b5abe52c2657fb56640b5dfac540292d7ea4199ee"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

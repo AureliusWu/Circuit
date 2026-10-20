@@ -1,0 +1,59 @@
+{
+  "id": "circuit-everlight--houserules--q02--01",
+  "sceneId": "everlight",
+  "lineId": "everlight--houseRules--q02--01",
+  "lineIndex": 0,
+  "speaker": "mei",
+  "text": "这楼以前都这么讲，喊了，它就知道哪家还醒着。",
+  "nodeId": "houseRules",
+  "start": 31,
+  "end": 53,
+  "quoteIndex": 1,
+  "actorId": "mei",
+  "voice": "Serena",
+  "instruct": "六十岁女性，普通话，声音偏低，平实缓慢，像老邻居小声嘱咐，句尾稍停，不要年轻撒娇。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1478096280,
+  "textSha256": "e8a1d6d42124e50db1d17cded218e50e3eb1e5ed4d3cbde12893584f5a06920a",
+  "medium": "spoken",
+  "requestSha256": "73e83e8ed24ec17109a2dcbb850139871554a3346e9cf0eb94d3e0cf394a7e4f",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "這樓以前都這麼講喊了他就知道哪家還醒著",
+    "cer": 0.105263,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 4.32,
+  "wallSeconds": 248.426,
+  "loudness": {
+    "input_i": "-27.61",
+    "input_tp": "-6.51",
+    "input_lra": "0.40",
+    "input_thresh": "-38.15",
+    "output_i": "-19.90",
+    "output_tp": "-2.00",
+    "output_lra": "0.30",
+    "output_thresh": "-30.35",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.10"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-everlight--houserules--q02--01/raw.wav",
+      "bytes": 414800,
+      "sha256": "aed60785a478b0c8dbd5d67416e905d819302967d08151a1b61e73e969230f00"
+    },
+    "master": {
+      "path": "circuit-everlight--houserules--q02--01/master.wav",
+      "bytes": 207438,
+      "sha256": "a35a8293ce4af87e3b8503fe3693ac6d8cdd2c5c3192e6d6f3cce2b73f32d49a"
+    },
+    "runtime": {
+      "path": "circuit-everlight--houserules--q02--01/runtime.ogg",
+      "bytes": 34939,
+      "sha256": "c4619ecd38a6d34a677c11871af634460b958b24c907488588326f7f813225d1"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

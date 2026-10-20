@@ -1,0 +1,59 @@
+{
+  "id": "circuit-thirteen-households--ledgercontact--q01--01",
+  "sceneId": "thirteen-households",
+  "lineId": "thirteen-households--ledgerContact--q01--01",
+  "lineIndex": 0,
+  "speaker": "lin",
+  "text": "H13，原附页我请档案那边调。",
+  "nodeId": "ledgerContact",
+  "start": 29,
+  "end": 44,
+  "quoteIndex": 0,
+  "actorId": "lin",
+  "voice": "Serena",
+  "instruct": "成年女性，普通话，声音干脆平稳，值班调度员在电台里说话，清楚利落，不要播音腔。 调度通话，语速稍慢，逐句吐字清楚。槐荫巷读huái yīn xiàng，在线读zài xiàn。 只朗读给定台词，不添加词语或音效。",
+  "seed": 944672494,
+  "textSha256": "d04b88f09ae07ffec9b7320dc2ea7577ec3358f43808886522ffabac47cdd7d3",
+  "medium": "spoken",
+  "requestSha256": "d6b531e24ce993ee0df48a84f8644640cef367df7a897ea947dc10ac14580088",
+  "attempt": 2,
+  "status": "accepted",
+  "asr": {
+    "transcript": "H13 原副业我请档案那边调",
+    "cer": 0.153846,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 2.56,
+  "wallSeconds": 11.944,
+  "loudness": {
+    "input_i": "-24.99",
+    "input_tp": "-10.95",
+    "input_lra": "0.00",
+    "input_thresh": "-34.99",
+    "output_i": "-20.00",
+    "output_tp": "-5.96",
+    "output_lra": "0.00",
+    "output_thresh": "-30.00",
+    "normalization_type": "linear",
+    "target_offset": "-0.00"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-thirteen-households--ledgercontact--q01--01/raw.wav",
+      "bytes": 245840,
+      "sha256": "fbce6669fdde4afd2a88a2756880def0856b9b7d84efd54de3ab7b0ece6ef0ab"
+    },
+    "master": {
+      "path": "circuit-thirteen-households--ledgercontact--q01--01/master.wav",
+      "bytes": 122958,
+      "sha256": "b7553e6e69e8dbde6f032ae605d3c9810ec128d1780b40e2cce22177e27c51e9"
+    },
+    "runtime": {
+      "path": "circuit-thirteen-households--ledgercontact--q01--01/runtime.ogg",
+      "bytes": 22513,
+      "sha256": "959c5e1389a6961bd125596200df844d3c2b516d0a8b1a7b8cd687096fe748c0"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

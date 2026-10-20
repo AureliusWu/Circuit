@@ -1,0 +1,112 @@
+{
+  "id": "circuit-seventh-night--welcome--q01--01",
+  "sceneId": "seventh-night",
+  "lineId": "seventh-night--welcome--q01--01",
+  "lineIndex": 0,
+  "speaker": "shen",
+  "text": "那年我爸回家了，后来还开了好多年车。",
+  "nodeId": "welcome",
+  "start": 77,
+  "end": 95,
+  "quoteIndex": 0,
+  "legacy": {
+    "id": "q07-shen",
+    "character": "shen",
+    "speaker": "Serena",
+    "instruct": "二十八岁女性，普通话，声音轻而疲惫，口语自然，像一晚上没睡好的人，不要哭腔。",
+    "text": "那年我爸回家了，后来还开了好多年车。",
+    "seed": 120017,
+    "bindings": [
+      {
+        "chapter": "seventh-night",
+        "node": "welcome"
+      }
+    ],
+    "requestSha256": "6c6f7ed68fad9aedc2dd862b8930dd1f05700d2a53b68359d398ff8ebd1e2785",
+    "duration": 3.28,
+    "generationSeconds": 17.321,
+    "loudnessInput": {
+      "input_i": "-25.41",
+      "input_tp": "-7.75",
+      "input_lra": "1.00",
+      "input_thresh": "-35.88",
+      "output_i": "-19.62",
+      "output_tp": "-2.30",
+      "output_lra": "0.00",
+      "output_thresh": "-30.09",
+      "normalization_type": "dynamic",
+      "target_offset": "-0.38"
+    },
+    "files": [
+      {
+        "path": "assets_source/audio/v1.2.0/q07-shen-raw.wav",
+        "bytes": 157484,
+        "sha256": "c323e0648a4cfb1a2751b9622bbe16d7b2408edb8f27cf5c59230fd5beb07d71"
+      },
+      {
+        "path": "assets_source/audio/v1.2.0/q07-shen.wav",
+        "bytes": 157518,
+        "sha256": "56efee6d460fe4d5e000730fb29d1856e30b8d3f4774c5b0014670a29b3c3079"
+      },
+      {
+        "path": "public/audio/voice/q07-shen.mp3",
+        "bytes": 40365,
+        "sha256": "92024a80b4a66c9b709c6fcb1cb90499d70a610eb46fdb2680122dde6e41bf07"
+      }
+    ],
+    "asr": {
+      "id": "q07-shen",
+      "mp3Sha256": "92024a80b4a66c9b709c6fcb1cb90499d70a610eb46fdb2680122dde6e41bf07",
+      "expected": "那年我爸回家了，后来还开了好多年车。",
+      "transcript": "那年我爸回家了后来还开了好多年车",
+      "cer": 0,
+      "polarityCountsMatch": true,
+      "status": "passed"
+    },
+    "asrModel": "Systran/faster-whisper-large-v3",
+    "evidencePath": "docs/audio/voice-asr.json",
+    "evidenceSha256": "25d0e31c3decd5262d92349d6571ec67ac58723ea00c40005ddff4d8b9a58334"
+  },
+  "actorId": "shen",
+  "voice": "Serena",
+  "instruct": "二十八岁女性，普通话，声音轻而疲惫，口语自然，像一晚上没睡好的人，不要哭腔。 只朗读给定台词，不添加词语或音效。",
+  "seed": 393570226,
+  "textSha256": "883cb189a46df52596acf2815e192d3329f09f76483495d70a40044d43c5addd",
+  "medium": "spoken",
+  "requestSha256": "cb2f8c14c2f510fdf19d1acd96251e96a2133543b30a0384a3bba61d8bb3965f",
+  "status": "accepted",
+  "productionMethod": "preserved_exact_legacy_bytes",
+  "duration": 3.28,
+  "actualGenerationRequest": {
+    "id": "q07-shen",
+    "speaker": "Serena",
+    "instruct": "二十八岁女性，普通话，声音轻而疲惫，口语自然，像一晚上没睡好的人，不要哭腔。",
+    "seed": 120017,
+    "requestSha256": "6c6f7ed68fad9aedc2dd862b8930dd1f05700d2a53b68359d398ff8ebd1e2785"
+  },
+  "asr": {
+    "passed": true,
+    "transcript": "那年我爸回家了后来还开了好多年车",
+    "cer": 0,
+    "polarityCountsMatch": true,
+    "model": "Systran/faster-whisper-large-v3"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-seventh-night--welcome--q01--01/raw.wav",
+      "bytes": 157484,
+      "sha256": "c323e0648a4cfb1a2751b9622bbe16d7b2408edb8f27cf5c59230fd5beb07d71"
+    },
+    "master": {
+      "path": "circuit-seventh-night--welcome--q01--01/master.wav",
+      "bytes": 157518,
+      "sha256": "56efee6d460fe4d5e000730fb29d1856e30b8d3f4774c5b0014670a29b3c3079"
+    },
+    "runtime": {
+      "path": "circuit-seventh-night--welcome--q01--01/runtime.mp3",
+      "bytes": 40365,
+      "sha256": "92024a80b4a66c9b709c6fcb1cb90499d70a610eb46fdb2680122dde6e41bf07"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

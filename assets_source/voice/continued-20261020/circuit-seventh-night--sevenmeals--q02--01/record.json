@@ -1,0 +1,59 @@
+{
+  "id": "circuit-seventh-night--sevenmeals--q02--01",
+  "sceneId": "seventh-night",
+  "lineId": "seventh-night--sevenMeals--q02--01",
+  "lineIndex": 0,
+  "speaker": "shen",
+  "text": "我爸每次数人都说差一个。",
+  "nodeId": "sevenMeals",
+  "start": 85,
+  "end": 97,
+  "quoteIndex": 1,
+  "actorId": "shen",
+  "voice": "Serena",
+  "instruct": "二十八岁女性，普通话，声音轻而疲惫，口语自然，像一晚上没睡好的人，不要哭腔。 只朗读给定台词，不添加词语或音效。",
+  "seed": 219763650,
+  "textSha256": "7734293c7178cb46805f4101d6d8f7ace60296ae0e2d4fe77e4319d4fbb332e0",
+  "medium": "spoken",
+  "requestSha256": "99669df489bb66beaa5b010e88b90e4dcd78bb5dcedd47dbedc1eda7b0947bf0",
+  "attempt": 1,
+  "status": "accepted",
+  "asr": {
+    "transcript": "我把每次輸人都說差一個",
+    "cer": 0.181818,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 2.24,
+  "wallSeconds": 124.954,
+  "loudness": {
+    "input_i": "-28.17",
+    "input_tp": "-12.14",
+    "input_lra": "0.00",
+    "input_thresh": "-38.17",
+    "output_i": "-20.02",
+    "output_tp": "-3.97",
+    "output_lra": "0.00",
+    "output_thresh": "-30.02",
+    "normalization_type": "linear",
+    "target_offset": "0.02"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-seventh-night--sevenmeals--q02--01/raw.wav",
+      "bytes": 215120,
+      "sha256": "8147a0e743d121c2725f5fa9d7fcc327803964e92b6b4afcf0f38a9b5b10db9c"
+    },
+    "master": {
+      "path": "circuit-seventh-night--sevenmeals--q02--01/master.wav",
+      "bytes": 107598,
+      "sha256": "2826d460791b62e79e1d2174b7d5673c578d9607ae78078cd927ed006a95c91e"
+    },
+    "runtime": {
+      "path": "circuit-seventh-night--sevenmeals--q02--01/runtime.ogg",
+      "bytes": 19663,
+      "sha256": "7f773978c0ba52063bfb9759158d598fe6bad86d39e76aad8f74ae476478d204"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

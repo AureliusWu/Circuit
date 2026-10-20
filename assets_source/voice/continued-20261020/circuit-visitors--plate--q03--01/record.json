@@ -1,0 +1,59 @@
+{
+  "id": "circuit-visitors--plate--q03--01",
+  "sceneId": "visitors",
+  "lineId": "visitors--plate--q03--01",
+  "lineIndex": 0,
+  "speaker": "chen",
+  "text": "她忘了。我也忘了。",
+  "nodeId": "plate",
+  "start": 111,
+  "end": 120,
+  "quoteIndex": 2,
+  "actorId": "chen",
+  "voice": "Uncle_Fu",
+  "instruct": "六十岁男性，普通话，语速慢，声音低哑，像看门的老人轻声说话，口语平实。 只朗读给定台词，不添加词语或音效。",
+  "seed": 533446997,
+  "textSha256": "32f120c4e247cad393f9cc0575df78b3756bd4b53fcbef23f5ef80852ef1d64e",
+  "medium": "spoken",
+  "requestSha256": "fc91f0ac6d4da1ce7b52690e77738a5b4a9222a1e910a462e9d2dd7c660c2648",
+  "attempt": 0,
+  "status": "accepted",
+  "asr": {
+    "transcript": "他忘了 我也忘了",
+    "cer": 0.142857,
+    "polarityCountsMatch": true,
+    "passed": true
+  },
+  "duration": 2.32,
+  "wallSeconds": 101.11,
+  "loudness": {
+    "input_i": "-29.87",
+    "input_tp": "-12.72",
+    "input_lra": "0.00",
+    "input_thresh": "-40.81",
+    "output_i": "-20.01",
+    "output_tp": "-2.86",
+    "output_lra": "0.00",
+    "output_thresh": "-30.95",
+    "normalization_type": "linear",
+    "target_offset": "0.01"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-visitors--plate--q03--01/raw.wav",
+      "bytes": 222800,
+      "sha256": "20307eaf0f97da3a3a82d94f83b1330bb7aee1f5a9f60409d6af94369bb3330d"
+    },
+    "master": {
+      "path": "circuit-visitors--plate--q03--01/master.wav",
+      "bytes": 111438,
+      "sha256": "3c168e9811e08702383a9b025724fb6f94457878c6b896f25ebe1b28bb4ec32d"
+    },
+    "runtime": {
+      "path": "circuit-visitors--plate--q03--01/runtime.ogg",
+      "bytes": 19779,
+      "sha256": "f10c377c116d2ef69d2cae448f53918937c47d213b0d788d99616fffb2b99ba2"
+    }
+  },
+  "recoveredFromRun": 39436504010
+}

@@ -1,0 +1,275 @@
+{
+  "schema": 1,
+  "project": "Circuit",
+  "status": "all_active_images_decoded_and_checked",
+  "count": 6,
+  "assets": [
+    {
+      "id": "shen-father",
+      "kind": "portrait",
+      "active": true,
+      "source": "assets_source/characters/full-20261020/shen-father.png",
+      "sourceBytes": 2358301,
+      "gitBlobSha": "85c843c4ff815ed750245dd7af855e60f2489c1e",
+      "prompt": "Use case: illustration-story. Create one original supporting-character sprite for the Chinese urban night-repair mystery visual novel Circuit. An ordinary middle-aged Chinese man represented only by a 2019 family archive image, a city bus driver during an old rescue evacuation. Short neat salt-and-pepper hair, broader square mature face, gentle serious brown eyes and medium build, no glasses. A plain faded blue long-sleeved collared work shirt, dark gray trousers, hands naturally relaxed. Living ordinary human appearance in the archive, no halo or ghost effect, no power-company uniform or helmet. The supplied two images are ONLY references for the established semi-realistic hand-painted rendering: realistic adult Chinese facial proportions, fine visible painted cloth and skin texture, restrained warm side light from the upper left and cool green-gray shadows. Do not copy either reference person's face, clothes or equipment. A single standing three-quarter-length portrait framed from head to just below the hips, natural subtle 15-degree turn toward the viewer, both shoulders and hands completely inside the frame with comfortable clear side margins and headroom. Tall 2:3 portrait composition, subject fills about 85% of height, all important hands and props readable. Match existing mature painterly cast, no anime eyes, no chibi, no photoreal camera look. True transparent RGBA background, no scenery, ground, haze, glow, shadow, vignette, border, text or watermark.",
+      "tool": "image_gen",
+      "sourceSha256": "0bad4f500b7696db73cefc7f55b4084acc366dc89c16f6c271add0455593920a",
+      "referenceHashes": [
+        {
+          "path": "public/art/portraits/cheng.webp",
+          "sha256": "6c1fc3843590a7d7bc5326b1386046a0400528f4b453c87077665d3dc9406b1c"
+        },
+        {
+          "path": "public/art/portraits/mei.webp",
+          "sha256": "bf5c4cca84a45dd997c1f5d1c30a764943b6c96875676634fb1713b88dcbd265"
+        }
+      ],
+      "qa": {
+        "kind": "sprite",
+        "width": 640,
+        "height": 960,
+        "transparentFraction": 0.4601,
+        "alphaBounds": [
+          0,
+          49,
+          1004,
+          1536
+        ],
+        "solidAlphaBounds": [
+          80,
+          63,
+          921,
+          1536
+        ],
+        "path": "assets_source/full-media-prepared/shen-father.webp",
+        "bytes": 490342,
+        "sha256": "0b952a4090329e02839c1ca782b69e7c8f4be8e419d4363f8247653900402fa3"
+      },
+      "status": "decoded_and_alpha_or_scene_checked",
+      "runtimeIntegration": "pending"
+    },
+    {
+      "id": "resident-gate",
+      "kind": "portrait",
+      "active": true,
+      "source": "assets_source/characters/full-20261020/resident-gate.png",
+      "sourceBytes": 2249087,
+      "gitBlobSha": "4b724d119f82eea9214859f75191159ee2c289b0",
+      "prompt": "Use case: illustration-story. Create one original supporting-character sprite for the Chinese urban night-repair mystery visual novel Circuit. An ordinary young adult Chinese man in his late twenties, a long narrow face, short straight black close-cropped hair, tired red-rimmed eyes after sitting with his mother for two nights, lean build. Plain unbranded faded olive hooded sweatshirt over a gray T-shirt and dark trousers. No props, hands relaxed. Concerned and exhausted but healthy ordinary human appearance. The supplied two images are ONLY references for the established semi-realistic hand-painted rendering: realistic adult Chinese facial proportions, fine visible painted cloth and skin texture, restrained warm side light from the upper left and cool green-gray shadows. Do not copy either reference person's face, clothes or equipment. A single standing three-quarter-length portrait framed from head to just below the hips, natural subtle 15-degree turn toward the viewer, both shoulders and hands completely inside the frame with comfortable clear side margins and headroom. Tall 2:3 portrait composition, subject fills about 85% of height, all important hands and props readable. Match existing mature painterly cast, no anime eyes, no chibi, no photoreal camera look. True transparent RGBA background, no scenery, ground, haze, glow, shadow, vignette, border, text or watermark.",
+      "tool": "image_gen",
+      "sourceSha256": "93376d5187c07c2a1f1daa84955c78884c88460862a321be76833a85b330f9fc",
+      "referenceHashes": [
+        {
+          "path": "public/art/portraits/cheng.webp",
+          "sha256": "6c1fc3843590a7d7bc5326b1386046a0400528f4b453c87077665d3dc9406b1c"
+        },
+        {
+          "path": "public/art/portraits/mei.webp",
+          "sha256": "bf5c4cca84a45dd997c1f5d1c30a764943b6c96875676634fb1713b88dcbd265"
+        }
+      ],
+      "qa": {
+        "kind": "sprite",
+        "width": 640,
+        "height": 960,
+        "transparentFraction": 0.4927,
+        "alphaBounds": [
+          0,
+          19,
+          984,
+          1536
+        ],
+        "solidAlphaBounds": [
+          118,
+          59,
+          880,
+          1536
+        ],
+        "path": "assets_source/full-media-prepared/resident-gate.webp",
+        "bytes": 448788,
+        "sha256": "c66dcc7f7c7b235d539102394712e722048483b786720d8dd0ff03d14dd850c2"
+      },
+      "status": "decoded_and_alpha_or_scene_checked",
+      "runtimeIntegration": "pending"
+    },
+    {
+      "id": "resident-young",
+      "kind": "portrait",
+      "active": true,
+      "source": "assets_source/characters/full-20261020/resident-young.png",
+      "sourceBytes": 2493414,
+      "gitBlobSha": "8c84dd5e071c81a199808454b88717f66ce9964f",
+      "prompt": "Use case: illustration-story. Create one original supporting-character sprite for the Chinese urban night-repair mystery visual novel Circuit. A different ordinary young adult Chinese man around thirty with a rounder face, medium brown skin, swept short black hair and simple dark round-frame glasses, average build. Plain unbranded muted brown zip cardigan over an ivory T-shirt and charcoal trousers. One hand resting loosely by the waist, the other relaxed, pensive slightly puzzled expression. Keep him clearly distinct from the narrow-faced sleepless man, no props. The supplied two images are ONLY references for the established semi-realistic hand-painted rendering: realistic adult Chinese facial proportions, fine visible painted cloth and skin texture, restrained warm side light from the upper left and cool green-gray shadows. Do not copy either reference person's face, clothes or equipment. A single standing three-quarter-length portrait framed from head to just below the hips, natural subtle 15-degree turn toward the viewer, both shoulders and hands completely inside the frame with comfortable clear side margins and headroom. Tall 2:3 portrait composition, subject fills about 85% of height, all important hands and props readable. Match existing mature painterly cast, no anime eyes, no chibi, no photoreal camera look. True transparent RGBA background, no scenery, ground, haze, glow, shadow, vignette, border, text or watermark.",
+      "tool": "image_gen",
+      "sourceSha256": "f18f683ee82dbad93045fc0e6fdc91d3723568fb1017026e36e252132020476f",
+      "referenceHashes": [
+        {
+          "path": "public/art/portraits/cheng.webp",
+          "sha256": "6c1fc3843590a7d7bc5326b1386046a0400528f4b453c87077665d3dc9406b1c"
+        },
+        {
+          "path": "public/art/portraits/mei.webp",
+          "sha256": "bf5c4cca84a45dd997c1f5d1c30a764943b6c96875676634fb1713b88dcbd265"
+        }
+      ],
+      "qa": {
+        "kind": "sprite",
+        "width": 640,
+        "height": 960,
+        "transparentFraction": 0.4192,
+        "alphaBounds": [
+          44,
+          29,
+          957,
+          1536
+        ],
+        "solidAlphaBounds": [
+          48,
+          55,
+          954,
+          1536
+        ],
+        "path": "assets_source/full-media-prepared/resident-young.webp",
+        "bytes": 525970,
+        "sha256": "4ccc077f5f615a8f45125f5e94539dd7336fb1b4bf26236abb6d79087b4a0857"
+      },
+      "status": "decoded_and_alpha_or_scene_checked",
+      "runtimeIntegration": "pending"
+    },
+    {
+      "id": "resident-cabinet",
+      "kind": "portrait",
+      "active": true,
+      "source": "assets_source/characters/full-20261020/resident-cabinet.png",
+      "sourceBytes": 2375223,
+      "gitBlobSha": "03719e33bd68fd5365a9ca24f8f263b46a74dacc",
+      "prompt": "Use case: illustration-story. Create one original supporting-character sprite for the Chinese urban night-repair mystery visual novel Circuit. An ordinary elderly Chinese man, silver-gray short hair, deep but natural face lines, a narrow lined face and a slightly stooped but steady adult posture. Plain worn slate-blue cotton jacket over a beige shirt, dark trousers, one hand loosely resting over the other in front of his waist. Restrained worried expression, no injury or electrical effects, no props. Clearly distinct from the game's elderly watchman Chen Bo. The supplied two images are ONLY references for the established semi-realistic hand-painted rendering: realistic adult Chinese facial proportions, fine visible painted cloth and skin texture, restrained warm side light from the upper left and cool green-gray shadows. Do not copy either reference person's face, clothes or equipment. A single standing three-quarter-length portrait framed from head to just below the hips, natural subtle 15-degree turn toward the viewer, both shoulders and hands completely inside the frame with comfortable clear side margins and headroom. Tall 2:3 portrait composition, subject fills about 85% of height, all important hands and props readable. Match existing mature painterly cast, no anime eyes, no chibi, no photoreal camera look. True transparent RGBA background, no scenery, ground, haze, glow, shadow, vignette, border, text or watermark.",
+      "tool": "image_gen",
+      "sourceSha256": "48acdd9e776f6cdc22efbe85fb8a8d22e2fa5406f3218df219e9a9cab1e701dd",
+      "referenceHashes": [
+        {
+          "path": "public/art/portraits/cheng.webp",
+          "sha256": "6c1fc3843590a7d7bc5326b1386046a0400528f4b453c87077665d3dc9406b1c"
+        },
+        {
+          "path": "public/art/portraits/mei.webp",
+          "sha256": "bf5c4cca84a45dd997c1f5d1c30a764943b6c96875676634fb1713b88dcbd265"
+        }
+      ],
+      "qa": {
+        "kind": "sprite",
+        "width": 640,
+        "height": 960,
+        "transparentFraction": 0.4786,
+        "alphaBounds": [
+          0,
+          17,
+          998,
+          1536
+        ],
+        "solidAlphaBounds": [
+          120,
+          76,
+          926,
+          1536
+        ],
+        "path": "assets_source/full-media-prepared/resident-cabinet.webp",
+        "bytes": 478562,
+        "sha256": "04f4b312b52a7e5e60f3be4c24017fc9ac14fd582d73fcbd9c9e31508dd36b75"
+      },
+      "status": "decoded_and_alpha_or_scene_checked",
+      "runtimeIntegration": "pending"
+    },
+    {
+      "id": "manager",
+      "kind": "portrait",
+      "active": true,
+      "source": "assets_source/characters/full-20261020/manager.png",
+      "sourceBytes": 2347755,
+      "gitBlobSha": "f82f902daa86ba274d970aea44303d29df1673ec",
+      "prompt": "Use case: illustration-story. Create one original supporting-character sprite for the Chinese urban night-repair mystery visual novel Circuit. An ordinary middle-aged Chinese male property administrator in his forties, broad oval mature face, very short tidy black hair, thin rectangular metal glasses, average stocky build. Plain unbranded dark green work jacket over a pale blue collared shirt, charcoal trousers. A small plain tan paper folder held in left hand, right hand relaxed. Professional neutral thoughtful expression, no police or electrical-worker insignia, no invented name. The supplied two images are ONLY references for the established semi-realistic hand-painted rendering: realistic adult Chinese facial proportions, fine visible painted cloth and skin texture, restrained warm side light from the upper left and cool green-gray shadows. Do not copy either reference person's face, clothes or equipment. A single standing three-quarter-length portrait framed from head to just below the hips, natural subtle 15-degree turn toward the viewer, both shoulders and hands completely inside the frame with comfortable clear side margins and headroom. Tall 2:3 portrait composition, subject fills about 85% of height, all important hands and props readable. Match existing mature painterly cast, no anime eyes, no chibi, no photoreal camera look. True transparent RGBA background, no scenery, ground, haze, glow, shadow, vignette, border, text or watermark.",
+      "tool": "image_gen",
+      "sourceSha256": "5a55e53b22749182d1c0470d3d51b9b3af7482235e8b0145a9c4a4cf7a148d17",
+      "referenceHashes": [
+        {
+          "path": "public/art/portraits/cheng.webp",
+          "sha256": "6c1fc3843590a7d7bc5326b1386046a0400528f4b453c87077665d3dc9406b1c"
+        },
+        {
+          "path": "public/art/portraits/mei.webp",
+          "sha256": "bf5c4cca84a45dd997c1f5d1c30a764943b6c96875676634fb1713b88dcbd265"
+        }
+      ],
+      "qa": {
+        "kind": "sprite",
+        "width": 640,
+        "height": 960,
+        "transparentFraction": 0.4162,
+        "alphaBounds": [
+          0,
+          41,
+          1012,
+          1536
+        ],
+        "solidAlphaBounds": [
+          46,
+          58,
+          974,
+          1536
+        ],
+        "path": "assets_source/full-media-prepared/manager.webp",
+        "bytes": 504066,
+        "sha256": "97d654cedd874bd911b7345e46bd40b9d612501243324b47b959d6301897dda2"
+      },
+      "status": "decoded_and_alpha_or_scene_checked",
+      "runtimeIntegration": "pending"
+    },
+    {
+      "id": "breakfast-owner",
+      "kind": "portrait",
+      "active": true,
+      "source": "assets_source/characters/full-20261020/breakfast-owner.png",
+      "sourceBytes": 2441505,
+      "gitBlobSha": "e4b18a72a4618032c0fbb3fc649594bca06ec36e",
+      "prompt": "Use case: illustration-story. Create one original supporting-character sprite for the Chinese urban night-repair mystery visual novel Circuit. An ordinary middle-aged Chinese male breakfast-shop owner in his fifties, warm medium skin, round mature face, short receding black hair with gray temples and a small natural smile, sturdy build. Plain off-white long-sleeved shirt, faded warm brown practical apron, dark trousers. Both hands visible and relaxed in front, no food props, no logos or writing. Ordinary practical human appearance. The supplied two images are ONLY references for the established semi-realistic hand-painted rendering: realistic adult Chinese facial proportions, fine visible painted cloth and skin texture, restrained warm side light from the upper left and cool green-gray shadows. Do not copy either reference person's face, clothes or equipment. A single standing three-quarter-length portrait framed from head to just below the hips, natural subtle 15-degree turn toward the viewer, both shoulders and hands completely inside the frame with comfortable clear side margins and headroom. Tall 2:3 portrait composition, subject fills about 85% of height, all important hands and props readable. Match existing mature painterly cast, no anime eyes, no chibi, no photoreal camera look. True transparent RGBA background, no scenery, ground, haze, glow, shadow, vignette, border, text or watermark.",
+      "tool": "image_gen",
+      "sourceSha256": "7d34cadaba1bbab5bff9e287fd3af8956a287123da71738374cd56220e6acff9",
+      "referenceHashes": [
+        {
+          "path": "public/art/portraits/cheng.webp",
+          "sha256": "6c1fc3843590a7d7bc5326b1386046a0400528f4b453c87077665d3dc9406b1c"
+        },
+        {
+          "path": "public/art/portraits/mei.webp",
+          "sha256": "bf5c4cca84a45dd997c1f5d1c30a764943b6c96875676634fb1713b88dcbd265"
+        }
+      ],
+      "qa": {
+        "kind": "sprite",
+        "width": 640,
+        "height": 960,
+        "transparentFraction": 0.4587,
+        "alphaBounds": [
+          0,
+          60,
+          1024,
+          1536
+        ],
+        "solidAlphaBounds": [
+          82,
+          77,
+          927,
+          1536
+        ],
+        "path": "assets_source/full-media-prepared/breakfast-owner.webp",
+        "bytes": 501360,
+        "sha256": "c8a2c0abcadabaa74f8d42fcd3175da6cfb40bf2a43b690014bbf98f62afe7f6"
+      },
+      "status": "decoded_and_alpha_or_scene_checked",
+      "runtimeIntegration": "pending"
+    }
+  ],
+  "humanVisualApproval": false,
+  "runtimeIntegration": "pending",
+  "release": "not_published"
+}

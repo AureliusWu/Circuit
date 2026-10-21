@@ -80,8 +80,11 @@ def run(url, output, expected_build):
     expected = {name: hashlib.sha256((expected_build / name).read_bytes()).hexdigest()
                 for name in ['index.html', 'sw.js']}
     audio = sorted(urljoin(url, path.relative_to(root / 'public').as_posix())
-                   for path in (root / 'public/audio').rglob('*.mp3'))
-    assert len(audio) == 51, f'Expected all 51 release MP3s, found {len(audio)}'
+                   for path in (root / 'public/audio').rglob('*') if path.suffix in {'.mp3', '.ogg'})
+    media = json.loads((root / 'docs/production/full-media/runtime-voice.json').read_text())
+    required = {urljoin(url, binding['runtime'].removeprefix('public/')) for binding in media['bindings']}
+    assert media['accepted'] == media['target'] == 403 and not media['pending']
+    assert required <= set(audio), 'Full dialogue files must all be checked in the real offline cache'
     samples = [urljoin(url, path) for path in ['audio/voice/h13-dispatch.mp3', 'audio/sfx/glass-tap.mp3']]
     assert all(path in audio for path in samples)
     output.parent.mkdir(parents=True, exist_ok=True)
@@ -139,7 +142,7 @@ def run(url, output, expected_build):
                             page.goto(url, wait_until='load', timeout=60000)
                             settled_title(page, version)
                             initial.close()
-                        page.wait_for_function('Boolean(navigator.serviceWorker.controller)', timeout=30000)
+                        page.wait_for_function('async expected => { const r = await navigator.serviceWorker.getRegistration(expected); return r?.scope === expected && r.active?.state === "activated" && navigator.serviceWorker.controller === r.active; }', arg=url, timeout=30000)
                         page.wait_for_function('''async paths => {
                           const matches=await Promise.all(paths.map(path=>caches.match(path,{ignoreSearch:true})));
                           return matches.every(response=>response&&response.ok);

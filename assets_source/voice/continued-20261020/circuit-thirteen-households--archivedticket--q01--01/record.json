@@ -16,93 +16,45 @@
   "textSha256": "380d63bbe09781d2414c9cf7ec29a3717d010e910cf323686449393bb6519e9e",
   "medium": "spoken",
   "requestSha256": "ec368efefee28f70d2112b4f6dcdb808047d5a5865721a8673a85a76038accc4",
-  "attempt": 8,
-  "status": "needs_review",
+  "attempt": 11,
+  "status": "accepted",
   "asr": {
-    "transcript": "没进党",
-    "cer": 0.333333,
+    "transcript": "沒進檔",
+    "cer": 0.0,
     "polarityCountsMatch": true,
-    "passed": false,
-    "phoneticReview": {
-      "method": "exact_all_syllables_and_tones_pypinyin_0.53.0",
-      "expected": "没进档",
-      "observed": "没进党",
-      "expectedSyllables": [
-        "mei2",
-        "jin4",
-        "dang4"
-      ],
-      "observedSyllables": [
-        "mei2",
-        "jin4",
-        "dang3"
-      ],
-      "sameLength": true,
-      "polarityCountsMatch": true,
-      "passed": false,
-      "humanListening": false
-    },
-    "model": "Systran/faster-whisper-medium",
-    "revision": "08e178d48790749d25932bbc082711ddcfdfbc4f",
-    "audioSha256": "5c522eb9d9b16528fedf4da9d677cba99aba43edfa4f5e162121434ecf0e7e3e"
+    "passed": true,
+    "expectedSpokenText": "没进档。"
   },
-  "duration": 1.44,
-  "wallSeconds": 7.519,
+  "duration": 1.12,
+  "wallSeconds": 68.001,
   "loudness": {
-    "input_i": "-18.27",
-    "input_tp": "-4.70",
+    "input_i": "-22.75",
+    "input_tp": "-7.66",
     "input_lra": "0.00",
-    "input_thresh": "-28.27",
-    "output_i": "-20.00",
-    "output_tp": "-6.43",
+    "input_thresh": "-32.75",
+    "output_i": "-20.02",
+    "output_tp": "-4.91",
     "output_lra": "0.00",
-    "output_thresh": "-30.00",
+    "output_thresh": "-30.02",
     "normalization_type": "linear",
-    "target_offset": "0.00"
+    "target_offset": "0.02"
   },
   "files": {
     "raw": {
       "path": "circuit-thirteen-households--archivedticket--q01--01/raw.wav",
-      "bytes": 138320,
-      "sha256": "edda00f08637a43df1ac720e4da688e7adc4a2ddfa95e59d5b16e79ac0c7f085"
+      "bytes": 107600,
+      "sha256": "d45974c0df048718170bbe116177145a0bd1faa83af85e6e19620c1ed3fbeac9"
     },
     "master": {
       "path": "circuit-thirteen-households--archivedticket--q01--01/master.wav",
-      "bytes": 69198,
-      "sha256": "045d6f19999a054bc79d9a8d2eaff8c8db2f7adb248890a100ce5b469b10a724"
+      "bytes": 53838,
+      "sha256": "98be61d96d0cf73c538e3c7f564ed5771a3d547d2eb6384b3aff64313de0777e"
     },
     "runtime": {
       "path": "circuit-thirteen-households--archivedticket--q01--01/runtime.ogg",
-      "bytes": 13686,
-      "sha256": "5c522eb9d9b16528fedf4da9d677cba99aba43edfa4f5e162121434ecf0e7e3e"
+      "bytes": 11544,
+      "sha256": "8bdb09b10d248dcf21cb9e2d368987c48fe35778357b9242d115599863cd32ef"
     }
   },
-  "recoveredFromRun": 39522065527,
-  "asrReviewHistory": [
-    {
-      "transcript": "没劲挡",
-      "cer": 0.666667,
-      "polarityCountsMatch": true,
-      "passed": false,
-      "phoneticReview": {
-        "method": "exact_all_syllables_and_tones_pypinyin_0.53.0",
-        "expected": "没进档",
-        "observed": "没劲挡",
-        "expectedSyllables": [
-          "mei2",
-          "jin4",
-          "dang4"
-        ],
-        "observedSyllables": [
-          "mei2",
-          "jin4",
-          "dang3"
-        ],
-        "sameLength": true,
-        "polarityCountsMatch": true,
-        "passed": false,
-        "humanListening": false
-      }
-    }
-  ]
+  "recoveredFromRun": 39525769881
 }

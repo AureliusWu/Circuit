@@ -17,26 +17,49 @@
   "medium": "spoken",
   "requestSha256": "db4855873550df76124b0fa41b6eae8709beed1e8ac6a0dfdc4df0942ca9c1e9",
   "attempt": 8,
-  "status": "needs_review",
+  "status": "accepted",
   "asr": {
     "transcript": "我们1点21就爆了",
     "cer": 0.5,
     "polarityCountsMatch": true,
-    "passed": false,
+    "passed": true,
     "phoneticReview": {
-      "method": "exact_all_syllables_and_tones_pypinyin_0.53.0",
+      "method": "exact_all_syllables_tones_and_explicit_numeric_values_v2_pypinyin_0.53.0",
       "expected": "我们一点二十一就报了",
-      "observed": "我们1点21就爆了",
-      "expectedSyllables": [],
-      "observedSyllables": [],
-      "sameLength": false,
+      "observed": "我们一点二十一就爆了",
+      "expectedSyllables": [
+        "wo3",
+        "men5",
+        "yi4",
+        "dian3",
+        "er4",
+        "shi2",
+        "yi1",
+        "jiu4",
+        "bao4",
+        "le5"
+      ],
+      "observedSyllables": [
+        "wo3",
+        "men5",
+        "yi4",
+        "dian3",
+        "er4",
+        "shi2",
+        "yi1",
+        "jiu4",
+        "bao4",
+        "le5"
+      ],
+      "sameLength": true,
       "polarityCountsMatch": true,
-      "passed": false,
+      "passed": true,
       "humanListening": false
     },
     "model": "Systran/faster-whisper-medium",
     "revision": "08e178d48790749d25932bbc082711ddcfdfbc4f",
-    "audioSha256": "09ca4274e320c22823aeb6f7077b3f37b4759eaf7b1f1704f87484df76811122"
+    "audioSha256": "09ca4274e320c22823aeb6f7077b3f37b4759eaf7b1f1704f87484df76811122",
+    "acceptance": "exact_toned_homophones"
   },
   "duration": 2.48,
   "wallSeconds": 84.794,
@@ -69,7 +92,7 @@
       "sha256": "09ca4274e320c22823aeb6f7077b3f37b4759eaf7b1f1704f87484df76811122"
     }
   },
-  "recoveredFromRun": 39522065527,
+  "recoveredFromRun": 39525769881,
   "asrReviewHistory": [
     {
       "transcript": "我們1.21就爆了",

@@ -17,26 +17,47 @@
   "medium": "spoken",
   "requestSha256": "f0083c5f57978135790160c47536647b221931e856a5f6f48c566f50222e9c75",
   "attempt": 8,
-  "status": "needs_review",
+  "status": "accepted",
   "asr": {
     "transcript": "17是后来取文件的。",
     "cer": 0.222222,
     "polarityCountsMatch": true,
-    "passed": false,
+    "passed": true,
     "phoneticReview": {
-      "method": "exact_all_syllables_and_tones_pypinyin_0.53.0",
+      "method": "exact_all_syllables_tones_and_explicit_numeric_values_v2_pypinyin_0.53.0",
       "expected": "十七是后来取文件的",
-      "observed": "17是后来取文件的",
-      "expectedSyllables": [],
-      "observedSyllables": [],
+      "observed": "十七是后来取文件的",
+      "expectedSyllables": [
+        "shi2",
+        "qi1",
+        "shi4",
+        "hou4",
+        "lai2",
+        "qu3",
+        "wen2",
+        "jian4",
+        "de5"
+      ],
+      "observedSyllables": [
+        "shi2",
+        "qi1",
+        "shi4",
+        "hou4",
+        "lai2",
+        "qu3",
+        "wen2",
+        "jian4",
+        "de5"
+      ],
       "sameLength": true,
       "polarityCountsMatch": true,
-      "passed": false,
+      "passed": true,
       "humanListening": false
     },
     "model": "Systran/faster-whisper-medium",
     "revision": "08e178d48790749d25932bbc082711ddcfdfbc4f",
-    "audioSha256": "3d697d146fc1b0b068c003c9fac4319d600dcebd01cddc6c53fa3b4fcaa6551c"
+    "audioSha256": "3d697d146fc1b0b068c003c9fac4319d600dcebd01cddc6c53fa3b4fcaa6551c",
+    "acceptance": "exact_toned_homophones"
   },
   "duration": 3.2,
   "wallSeconds": 217.368,
@@ -69,7 +90,7 @@
       "sha256": "3d697d146fc1b0b068c003c9fac4319d600dcebd01cddc6c53fa3b4fcaa6551c"
     }
   },
-  "recoveredFromRun": 39522065527,
+  "recoveredFromRun": 39525769881,
   "asrReviewHistory": [
     {
       "transcript": "17是后来曲文件的",

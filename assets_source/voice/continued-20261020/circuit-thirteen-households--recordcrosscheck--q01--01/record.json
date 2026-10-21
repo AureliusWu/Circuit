@@ -16,17 +16,18 @@
   "textSha256": "8987e7ebd471aef831ed00dde4873367a7ce4d2b9b49f9b391e942f2871a62d3",
   "medium": "spoken",
   "requestSha256": "1f353a831bf5c91e762ed630529675411bb0344fedea1c26e59b4edc95d38592",
-  "attempt": 8,
-  "status": "needs_review",
+  "attempt": 9,
+  "status": "accepted",
   "asr": {
-    "transcript": "元样香",
-    "cer": 0.666667,
+    "transcript": "圆样交",
+    "cer": 0.333333,
     "polarityCountsMatch": true,
-    "passed": false,
+    "passed": true,
+    "expectedSpokenText": "原样交。",
     "phoneticReview": {
-      "method": "exact_all_syllables_and_tones_pypinyin_0.53.0",
+      "method": "exact_all_syllables_tones_and_explicit_numeric_values_v2_pypinyin_0.53.0",
       "expected": "原样交",
-      "observed": "元样香",
+      "observed": "圆样交",
       "expectedSyllables": [
         "yuan2",
         "yang4",
@@ -35,66 +36,45 @@
       "observedSyllables": [
         "yuan2",
         "yang4",
-        "xiang1"
+        "jiao1"
       ],
       "sameLength": true,
       "polarityCountsMatch": true,
-      "passed": false,
+      "passed": true,
       "humanListening": false
     },
-    "model": "Systran/faster-whisper-medium",
-    "revision": "08e178d48790749d25932bbc082711ddcfdfbc4f",
-    "audioSha256": "8b17013f5b93d63615b8600d63ccdbd2d62aa316cf2c7a891d706654414a35eb"
+    "acceptance": "exact_toned_homophones"
   },
-  "duration": 0.96,
-  "wallSeconds": 5.438,
+  "duration": 0.88,
+  "wallSeconds": 36.857,
   "loudness": {
-    "input_i": "-22.28",
-    "input_tp": "-4.97",
+    "input_i": "-23.83",
+    "input_tp": "-7.49",
     "input_lra": "0.00",
-    "input_thresh": "-32.28",
-    "output_i": "-19.98",
-    "output_tp": "-2.68",
+    "input_thresh": "-33.83",
+    "output_i": "-20.01",
+    "output_tp": "-3.66",
     "output_lra": "0.00",
-    "output_thresh": "-29.98",
+    "output_thresh": "-30.01",
     "normalization_type": "linear",
-    "target_offset": "-0.02"
+    "target_offset": "0.01"
   },
   "files": {
     "raw": {
       "path": "circuit-thirteen-households--recordcrosscheck--q01--01/raw.wav",
-      "bytes": 92240,
-      "sha256": "a45149db5d811535ae617160794e45f8a8e250e45422929bcfdc388ceb3a2f21"
+      "bytes": 84560,
+      "sha256": "b9d337b0f2a1e9ccc63996d715f879f572495e7294df7eb9e73988da5943ff99"
     },
     "master": {
       "path": "circuit-thirteen-households--recordcrosscheck--q01--01/master.wav",
-      "bytes": 46158,
-      "sha256": "5ebba9fb8c93d2477a444a194671080d6ff9927b6537c63519c70145caf7fcdb"
+      "bytes": 42318,
+      "sha256": "fda2acc3cdb270d10a9a46c36711a19dff3bee53fc63f333735e7dc716ab414e"
     },
     "runtime": {
       "path": "circuit-thirteen-households--recordcrosscheck--q01--01/runtime.ogg",
-      "bytes": 10654,
-      "sha256": "8b17013f5b93d63615b8600d63ccdbd2d62aa316cf2c7a891d706654414a35eb"
+      "bytes": 10690,
+      "sha256": "9e97931da6518f8f56fa9d9762ef016e94e072c044276fcbb44c79b1e0b0faa0"
     }
   },
-  "recoveredFromRun": 39522065527,
-  "asrReviewHistory": [
-    {
-      "transcript": "原样的消",
-      "cer": 0.666667,
-      "polarityCountsMatch": true,
-      "passed": false,
-      "phoneticReview": {
-        "method": "exact_all_syllables_and_tones_pypinyin_0.53.0",
-        "expected": "原样交",
-        "observed": "原样的消",
-        "expectedSyllables": [],
-        "observedSyllables": [],
-        "sameLength": false,
-        "polarityCountsMatch": true,
-        "passed": false,
-        "humanListening": false
-      }
-    }
-  ]
+  "recoveredFromRun": 39525769881
 }

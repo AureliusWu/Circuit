@@ -17,19 +17,19 @@
   "medium": "spoken",
   "requestSha256": "a6545dcbac451dbed168bf0e6c8261ef468885244f70878b33a6866c1fcb15f9",
   "attempt": 8,
-  "status": "needs_review",
+  "status": "accepted",
   "asr": {
     "transcript": "你硬了",
     "cer": 0.333333,
     "polarityCountsMatch": true,
-    "passed": false,
+    "passed": true,
     "phoneticReview": {
-      "method": "exact_all_syllables_and_tones_pypinyin_0.53.0",
+      "method": "exact_all_syllables_tones_and_explicit_numeric_values_v2_pypinyin_0.53.0",
       "expected": "你应了",
       "observed": "你硬了",
       "expectedSyllables": [
         "ni3",
-        "ying1",
+        "ying4",
         "le5"
       ],
       "observedSyllables": [
@@ -39,12 +39,13 @@
       ],
       "sameLength": true,
       "polarityCountsMatch": true,
-      "passed": false,
+      "passed": true,
       "humanListening": false
     },
     "model": "Systran/faster-whisper-medium",
     "revision": "08e178d48790749d25932bbc082711ddcfdfbc4f",
-    "audioSha256": "491755761626f4af259ffa97ebcee37c5ec67b6928d8ff616067bfa8837c467f"
+    "audioSha256": "491755761626f4af259ffa97ebcee37c5ec67b6928d8ff616067bfa8837c467f",
+    "acceptance": "exact_toned_homophones"
   },
   "duration": 0.88,
   "wallSeconds": 38.471,
@@ -77,7 +78,7 @@
       "sha256": "491755761626f4af259ffa97ebcee37c5ec67b6928d8ff616067bfa8837c467f"
     }
   },
-  "recoveredFromRun": 39522065527,
+  "recoveredFromRun": 39525769881,
   "asrReviewHistory": [
     {
       "transcript": "你硬了",

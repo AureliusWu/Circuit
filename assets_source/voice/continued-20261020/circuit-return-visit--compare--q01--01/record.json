@@ -15,78 +15,47 @@
   "seed": 1290339905,
   "textSha256": "13b1e43e71bd843090bcb89dbfc0b4b6b54b8895ae179de31000adbca5adf141",
   "medium": "spoken",
-  "requestSha256": "b1cd0d6855ee287c26e99cd8168a5af70856209be6306d23e5c062c33fd3a669",
-  "attempt": 8,
-  "status": "needs_review",
+  "spokenText": "零点零三分，林岚收到过。",
+  "requestSha256": "f3d30dec3bfb7c83beba2cb201322ca0350c525ea211c2d83a3a2055af1fc037",
+  "attempt": 11,
+  "status": "accepted",
   "asr": {
-    "transcript": "林賢 林蘭收到過",
-    "cer": 0.555556,
+    "transcript": "零点零三分林伦收到过",
+    "cer": 0.1,
     "polarityCountsMatch": true,
-    "passed": false,
-    "phoneticReview": {
-      "method": "exact_all_syllables_and_tones_pypinyin_0.53.0",
-      "expected": "0003林岚收到过",
-      "observed": "林贤林兰收到过",
-      "expectedSyllables": [],
-      "observedSyllables": [],
-      "sameLength": false,
-      "polarityCountsMatch": true,
-      "passed": false,
-      "humanListening": false
-    },
-    "model": "Systran/faster-whisper-medium",
-    "revision": "08e178d48790749d25932bbc082711ddcfdfbc4f",
-    "audioSha256": "07998da2bf558378facb37669dd0acd41728fa3e12f18bd4bd89717428e61ba7"
+    "passed": true,
+    "expectedSpokenText": "零点零三分，林岚收到过。"
   },
-  "duration": 2.56,
-  "wallSeconds": 299.15,
+  "duration": 5.44,
+  "wallSeconds": 297.292,
   "loudness": {
-    "input_i": "-19.61",
-    "input_tp": "-6.67",
-    "input_lra": "0.00",
-    "input_thresh": "-29.80",
-    "output_i": "-20.00",
-    "output_tp": "-7.06",
-    "output_lra": "0.00",
-    "output_thresh": "-30.20",
-    "normalization_type": "linear",
-    "target_offset": "0.00"
+    "input_i": "-16.43",
+    "input_tp": "-2.46",
+    "input_lra": "4.30",
+    "input_thresh": "-27.37",
+    "output_i": "-16.07",
+    "output_tp": "-2.11",
+    "output_lra": "3.40",
+    "output_thresh": "-27.18",
+    "normalization_type": "dynamic",
+    "target_offset": "-3.93"
   },
   "files": {
     "raw": {
       "path": "circuit-return-visit--compare--q01--01/raw.wav",
-      "bytes": 245840,
-      "sha256": "a3b35a565b944501c3ff2cf66081f83ac2fcdb813ae1ca47ddf4bbae4fcb37a0"
+      "bytes": 522320,
+      "sha256": "75ff5d6c495994748e316634c5d7c370fef551675c21e991bd3159f3cf3a7676"
     },
     "master": {
       "path": "circuit-return-visit--compare--q01--01/master.wav",
-      "bytes": 122958,
-      "sha256": "eb6ea2867088d38e969b083cb4df418915186587e6901b40843c1a2d7b30e9be"
+      "bytes": 261198,
+      "sha256": "ce87a5b8eca7d6a8b06efdbb4184403b49b929c38eb262fc9c9babace7e93bd6"
     },
     "runtime": {
       "path": "circuit-return-visit--compare--q01--01/runtime.ogg",
-      "bytes": 21270,
-      "sha256": "07998da2bf558378facb37669dd0acd41728fa3e12f18bd4bd89717428e61ba7"
+      "bytes": 38760,
+      "sha256": "35af6212e1df3fd8701597c947501de61ec4a395c09f31160a73bbd8230da954"
     }
   },
-  "recoveredFromRun": 39522065527,
-  "asrReviewHistory": [
-    {
-      "transcript": "丁弦、林兰收到过。",
-      "cer": 0.555556,
-      "polarityCountsMatch": true,
-      "passed": false,
-      "phoneticReview": {
-        "method": "exact_all_syllables_and_tones_pypinyin_0.53.0",
-        "expected": "0003林岚收到过",
-        "observed": "丁弦林兰收到过",
-        "expectedSyllables": [],
-        "observedSyllables": [],
-        "sameLength": false,
-        "polarityCountsMatch": true,
-        "passed": false,
-        "humanListening": false
-      }
-    }
-  ]
+  "recoveredFromRun": 39525769881
 }

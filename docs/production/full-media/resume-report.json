@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "project": "Circuit",
-  "sourceRun": 39593493427,
+  "sourceRun": 39595208596,
   "semanticSha256": "68824bc923500abfaffa5e94195c361feda70c878d95e6218dfb6eaa527e709f",
   "target": 403,
   "accepted": 394,
@@ -61,7 +61,7 @@
       "text": "这次别泡成复写联了。",
       "status": "needs_review",
       "asr": {
-        "transcript": "这次别炮成腹血连了",
+        "transcript": "这次别炮成腹瀉连了",
         "cer": 0.444444,
         "polarityCountsMatch": true,
         "passed": false,
@@ -69,7 +69,7 @@
         "phoneticReview": {
           "method": "exact_all_syllables_tones_and_explicit_numeric_values_v2_pypinyin_0.53.0",
           "expected": "这次别泡成复写联了",
-          "observed": "这次别炮成腹血连了",
+          "observed": "这次别炮成腹泻连了",
           "expectedSyllables": [
             "zhe4",
             "ci4",
@@ -88,7 +88,7 @@
             "pao4",
             "cheng2",
             "fu4",
-            "xue4",
+            "xie4",
             "lian2",
             "le5"
           ],

@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "project": "Circuit",
-  "target": 402,
-  "accepted": 401,
+  "target": 403,
+  "accepted": 402,
   "pendingCount": 1,
   "pending": [
     {
@@ -10,14 +10,14 @@
       "text": "这次别泡成复写联了。",
       "status": "needs_review",
       "asr": {
-        "transcript": "这次别泡成腹血连了",
-        "cer": 0.333333,
+        "transcript": "这次别泡成腹血帘呢",
+        "cer": 0.444444,
         "polarityCountsMatch": true,
         "passed": false,
         "phoneticReview": {
           "method": "exact_all_syllables_tones_and_explicit_numeric_values_v2_pypinyin_0.53.0",
           "expected": "这次别泡成复写联了",
-          "observed": "这次别泡成腹血连了",
+          "observed": "这次别泡成腹血帘呢",
           "expectedSyllables": [
             "zhe4",
             "ci4",
@@ -38,7 +38,7 @@
             "fu4",
             "xue4",
             "lian2",
-            "le5"
+            "ne5"
           ],
           "sameLength": true,
           "polarityCountsMatch": true,
@@ -47,11 +47,11 @@
         },
         "model": "Systran/faster-whisper-large-v3",
         "revision": "edaa852ec7e145841d8ffdb056a99866b5f0a478",
-        "audioSha256": "045e1af11f087b1b23c0f07443e8eee53f57c57b2f7fbfabfe513f4eaca05d12"
+        "audioSha256": "9f7e93d81cd5b35f99e932359c484305b89e76e1b6acab65c24fbaf29bc0cfcf"
       }
     }
   ],
-  "semanticSha256": "d2f80ed941e3b06e2fbf53e4cc5af38b123526c1795c73b5031fb2100be46316",
+  "semanticSha256": "68824bc923500abfaffa5e94195c361feda70c878d95e6218dfb6eaa527e709f",
   "archive": "assets_source/voice/continued-20261020",
   "reviewModel": {
     "id": "Systran/faster-whisper-large-v3",

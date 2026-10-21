@@ -1,11 +1,11 @@
 {
   "schema": 1,
   "project": "Circuit",
-  "sourceRun": 39569411478,
-  "semanticSha256": "d2f80ed941e3b06e2fbf53e4cc5af38b123526c1795c73b5031fb2100be46316",
-  "target": 402,
+  "sourceRun": 39572811017,
+  "semanticSha256": "68824bc923500abfaffa5e94195c361feda70c878d95e6218dfb6eaa527e709f",
+  "target": 403,
   "accepted": 394,
-  "pendingCount": 8,
+  "pendingCount": 9,
   "pending": [
     {
       "id": "circuit-return-visit--echo--extra1--01",
@@ -50,42 +50,29 @@
       "error": null
     },
     {
+      "id": "circuit-visitors--newvoice--extra1--01",
+      "text": "先别替它确认。",
+      "status": "replay_reference",
+      "asr": null,
+      "error": null
+    },
+    {
       "id": "circuit-tickets--firsthub--q01--01",
       "text": "这次别泡成复写联了。",
       "status": "needs_review",
       "asr": {
-        "transcript": "这次别泡成腹 血 脸 了",
-        "cer": 0.333333,
+        "transcript": "这一次别泡成腹血连呐",
+        "cer": 0.555556,
         "polarityCountsMatch": true,
         "passed": false,
         "expectedSpokenText": "这次别泡成复写联了。",
         "phoneticReview": {
           "method": "exact_all_syllables_tones_and_explicit_numeric_values_v2_pypinyin_0.53.0",
           "expected": "这次别泡成复写联了",
-          "observed": "这次别泡成腹血脸了",
-          "expectedSyllables": [
-            "zhe4",
-            "ci4",
-            "bie2",
-            "pao4",
-            "cheng2",
-            "fu4",
-            "xie3",
-            "lian2",
-            "le5"
-          ],
-          "observedSyllables": [
-            "zhe4",
-            "ci4",
-            "bie2",
-            "pao4",
-            "cheng2",
-            "fu4",
-            "xue4",
-            "lian3",
-            "le5"
-          ],
-          "sameLength": true,
+          "observed": "这一次别泡成腹血连呐",
+          "expectedSyllables": [],
+          "observedSyllables": [],
+          "sameLength": false,
           "polarityCountsMatch": true,
           "passed": false,
           "humanListening": false

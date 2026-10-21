@@ -16,17 +16,17 @@
   "textSha256": "4ba36daeca73e5ab155e2fb57393c011b31b9db54dbff9881cb193cb3960e082",
   "medium": "spoken",
   "requestSha256": "6538c13b068015603706aba78ca33cd0725bc3840ada454bc0284ad53cb6ad53",
-  "attempt": 23,
+  "attempt": 26,
   "status": "needs_review",
   "asr": {
-    "transcript": "这次别泡成腹血连了",
-    "cer": 0.333333,
+    "transcript": "这次别泡成腹血帘呢",
+    "cer": 0.444444,
     "polarityCountsMatch": true,
     "passed": false,
     "phoneticReview": {
       "method": "exact_all_syllables_tones_and_explicit_numeric_values_v2_pypinyin_0.53.0",
       "expected": "这次别泡成复写联了",
-      "observed": "这次别泡成腹血连了",
+      "observed": "这次别泡成腹血帘呢",
       "expectedSyllables": [
         "zhe4",
         "ci4",
@@ -47,7 +47,7 @@
         "fu4",
         "xue4",
         "lian2",
-        "le5"
+        "ne5"
       ],
       "sameLength": true,
       "polarityCountsMatch": true,
@@ -56,37 +56,37 @@
     },
     "model": "Systran/faster-whisper-large-v3",
     "revision": "edaa852ec7e145841d8ffdb056a99866b5f0a478",
-    "audioSha256": "045e1af11f087b1b23c0f07443e8eee53f57c57b2f7fbfabfe513f4eaca05d12"
+    "audioSha256": "9f7e93d81cd5b35f99e932359c484305b89e76e1b6acab65c24fbaf29bc0cfcf"
   },
-  "duration": 7.195,
-  "wallSeconds": 40.796,
+  "duration": 2.88,
+  "wallSeconds": 158.775,
   "loudness": {
-    "input_i": "-20.11",
-    "input_tp": "-6.14",
-    "input_lra": "3.40",
-    "input_thresh": "-31.18",
-    "output_i": "-17.14",
-    "output_tp": "-4.00",
-    "output_lra": "10.00",
-    "output_thresh": "-28.59",
-    "normalization_type": "dynamic",
-    "target_offset": "-2.86"
+    "input_i": "-22.77",
+    "input_tp": "-9.59",
+    "input_lra": "0.00",
+    "input_thresh": "-32.77",
+    "output_i": "-20.00",
+    "output_tp": "-6.82",
+    "output_lra": "0.00",
+    "output_thresh": "-30.00",
+    "normalization_type": "linear",
+    "target_offset": "0.00"
   },
   "files": {
     "raw": {
       "path": "circuit-tickets--firsthub--q01--01/raw.wav",
-      "bytes": 690800,
-      "sha256": "3fe8d0c140d9e534a753f347b157da32e2ba70544ff770cbd7b7838d5a7a9bd3"
+      "bytes": 276560,
+      "sha256": "9cf1faf69e095a533d5c7476e659609447bf425258e6e02a223ed6972e335da7"
     },
     "master": {
       "path": "circuit-tickets--firsthub--q01--01/master.wav",
-      "bytes": 345438,
-      "sha256": "5efca80c8e032b7b80be772054dba00a8eaacea41a84f5c8a94c84c083323ef9"
+      "bytes": 138318,
+      "sha256": "7a3e7fb8797e7f8aa303f7668951ec48d4509ad80c9bc33cb5da47ea182c4162"
     },
     "runtime": {
       "path": "circuit-tickets--firsthub--q01--01/runtime.ogg",
-      "bytes": 49513,
-      "sha256": "045e1af11f087b1b23c0f07443e8eee53f57c57b2f7fbfabfe513f4eaca05d12"
+      "bytes": 24171,
+      "sha256": "9f7e93d81cd5b35f99e932359c484305b89e76e1b6acab65c24fbaf29bc0cfcf"
     }
   },
   "performanceDirection": {
@@ -124,25 +124,40 @@
       "passed": true,
       "humanListening": false
     },
-    "segments": [
-      "这次别泡成，",
-      "付，写，连了。"
-    ],
     "textSha256": "4ba36daeca73e5ab155e2fb57393c011b31b9db54dbff9881cb193cb3960e082",
-    "directionSha256": "11bf9f927ee3ff68c4712ea52df3c1891b0ab78b7a75eeb62c427f5f89f011a7"
+    "directionSha256": "5b784b7b0d44fc327fd6b2d0a47ab073bd9032ac062ecbfba5bcbb4c5f5b4520"
   },
-  "recoveredFromRun": 39569411478,
+  "recoveredFromRun": 39572811017,
   "asrReviewHistory": [
     {
-      "transcript": "这次别泡成腹 血 脸 了",
-      "cer": 0.333333,
+      "transcript": "这一次别泡成腹血连呐",
+      "cer": 0.555556,
       "polarityCountsMatch": true,
       "passed": false,
       "expectedSpokenText": "这次别泡成复写联了。",
       "phoneticReview": {
         "method": "exact_all_syllables_tones_and_explicit_numeric_values_v2_pypinyin_0.53.0",
         "expected": "这次别泡成复写联了",
-        "observed": "这次别泡成腹血脸了",
+        "observed": "这一次别泡成腹血连呐",
+        "expectedSyllables": [],
+        "observedSyllables": [],
+        "sameLength": false,
+        "polarityCountsMatch": true,
+        "passed": false,
+        "humanListening": false
+      }
+    }
+  ],
+  "independentReviews": [
+    {
+      "transcript": "这次别泡成腹血莲了",
+      "cer": 0.333333,
+      "polarityCountsMatch": true,
+      "passed": false,
+      "phoneticReview": {
+        "method": "exact_all_syllables_tones_and_explicit_numeric_values_v2_pypinyin_0.53.0",
+        "expected": "这次别泡成复写联了",
+        "observed": "这次别泡成腹血莲了",
         "expectedSyllables": [
           "zhe4",
           "ci4",
@@ -162,14 +177,106 @@
           "cheng2",
           "fu4",
           "xue4",
-          "lian3",
+          "lian2",
           "le5"
         ],
         "sameLength": true,
         "polarityCountsMatch": true,
         "passed": false,
         "humanListening": false
-      }
+      },
+      "acceptance": "independent_exact_words_or_all_syllables_and_tones",
+      "model": "FunAudioLLM/SenseVoiceSmall",
+      "revision": "3847d57b6bdf2dd8875cb1508d2af43d80a16bf7",
+      "rawTranscript": "<|zh|><|NEUTRAL|><|Speech|><|woitn|>这次别泡成腹血莲了",
+      "audioSha256": "9f7e93d81cd5b35f99e932359c484305b89e76e1b6acab65c24fbaf29bc0cfcf",
+      "humanListening": false
+    },
+    {
+      "transcript": "这次别泡城父雪莲了",
+      "cer": 0.444444,
+      "polarityCountsMatch": true,
+      "passed": false,
+      "phoneticReview": {
+        "method": "exact_all_syllables_tones_and_explicit_numeric_values_v2_pypinyin_0.53.0",
+        "expected": "这次别泡成复写联了",
+        "observed": "这次别泡城父雪莲了",
+        "expectedSyllables": [
+          "zhe4",
+          "ci4",
+          "bie2",
+          "pao4",
+          "cheng2",
+          "fu4",
+          "xie3",
+          "lian2",
+          "le5"
+        ],
+        "observedSyllables": [
+          "zhe4",
+          "ci4",
+          "bie2",
+          "pao4",
+          "cheng2",
+          "fu4",
+          "xue3",
+          "lian2",
+          "le5"
+        ],
+        "sameLength": true,
+        "polarityCountsMatch": true,
+        "passed": false,
+        "humanListening": false
+      },
+      "acceptance": "independent_exact_words_or_all_syllables_and_tones",
+      "model": "FunAudioLLM/SenseVoiceSmall",
+      "revision": "3847d57b6bdf2dd8875cb1508d2af43d80a16bf7",
+      "rawTranscript": "<|zh|><|NEUTRAL|><|Speech|><|woitn|>这次别泡城父雪莲了",
+      "audioSha256": "04d28e2c257f2796f150a0627f6e9feac89cdab998aefcbc7f54868308706ba8",
+      "humanListening": false
+    },
+    {
+      "transcript": "这次别泡成父雪莲了",
+      "cer": 0.333333,
+      "polarityCountsMatch": true,
+      "passed": false,
+      "phoneticReview": {
+        "method": "exact_all_syllables_tones_and_explicit_numeric_values_v2_pypinyin_0.53.0",
+        "expected": "这次别泡成复写联了",
+        "observed": "这次别泡成父雪莲了",
+        "expectedSyllables": [
+          "zhe4",
+          "ci4",
+          "bie2",
+          "pao4",
+          "cheng2",
+          "fu4",
+          "xie3",
+          "lian2",
+          "le5"
+        ],
+        "observedSyllables": [
+          "zhe4",
+          "ci4",
+          "bie2",
+          "pao4",
+          "cheng2",
+          "fu4",
+          "xue3",
+          "lian2",
+          "le5"
+        ],
+        "sameLength": true,
+        "polarityCountsMatch": true,
+        "passed": false,
+        "humanListening": false
+      },
+      "acceptance": "independent_exact_words_or_all_syllables_and_tones",
+      "model": "FunAudioLLM/SenseVoiceSmall",
+      "revision": "3847d57b6bdf2dd8875cb1508d2af43d80a16bf7",
+      "rawTranscript": "<|zh|><|NEUTRAL|><|Speech|><|woitn|>这次别泡成父雪莲了",
+      "audioSha256": "010503a274dfd480e9ccf46c3ee70027079299c5379ee9cdf6f630c5262b3d7d",
+      "humanListening": false
     }
   ]
 }

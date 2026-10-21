@@ -13,12 +13,52 @@
     }
   },
   "platform_validation": {
-    "github_ci": "pending push",
-    "windows_actual_package": "pending exact-commit CI",
-    "public_pwa": "pending exact-commit deployment"
+    "github_ci": [
+      {
+        "id": 39528140326,
+        "name": "CI",
+        "status": "completed",
+        "conclusion": "success",
+        "commit": "af25f6ff2be2ab5d6f5e4a0dfc7e847b3ed6dbee",
+        "url": "https://github.com/AureliusWu/Circuit/actions/runs/39528140326"
+      },
+      {
+        "id": 39528140324,
+        "name": "Build release artifacts",
+        "status": "completed",
+        "conclusion": "success",
+        "commit": "af25f6ff2be2ab5d6f5e4a0dfc7e847b3ed6dbee",
+        "url": "https://github.com/AureliusWu/Circuit/actions/runs/39528140324"
+      },
+      {
+        "id": 39528140338,
+        "name": "Deploy playable game to GitHub Pages",
+        "status": "completed",
+        "conclusion": "success",
+        "commit": "af25f6ff2be2ab5d6f5e4a0dfc7e847b3ed6dbee",
+        "url": "https://github.com/AureliusWu/Circuit/actions/runs/39528140338"
+      }
+    ],
+    "windows_actual_package": {
+      "status": "passed",
+      "run_id": 39528140324
+    },
+    "public_pwa": {
+      "status": "passed",
+      "url": "https://aureliuswu.github.io/Circuit/",
+      "run_id": 39528140338
+    },
+    "release": {
+      "status": "not_published",
+      "version": "1.6.1",
+      "reason": "A later voice production checkpoint advanced main before publication; preflight kept the current public release. The verified engine remains in main.",
+      "verified_artifacts_run": 39528140324,
+      "successor_commit": "3a50686b7052bd0853b09aafde421347a323fcdc"
+    }
   },
   "fingerprints": {
     "src/game/sceneLoop.ts": "96a6297419f4f89b5713e13f255d9eeb15d59d6ee8cd6905261c35a84c38d518",
     "tests/scene-loop.test.cjs": "39301aaa78a5b2fd98a7110309d804f011c1b7a61b213f4ad7d39b51132f5332"
-  }
+  },
+  "runtime_commit": "af25f6ff2be2ab5d6f5e4a0dfc7e847b3ed6dbee"
 }

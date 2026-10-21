@@ -10,14 +10,14 @@
       "text": "这次别泡成复写联了。",
       "status": "needs_review",
       "asr": {
-        "transcript": "这次别泡成腹血帘呢",
-        "cer": 0.444444,
+        "transcript": "这次别泡成腹血帘了",
+        "cer": 0.333333,
         "polarityCountsMatch": true,
         "passed": false,
         "phoneticReview": {
           "method": "exact_all_syllables_tones_and_explicit_numeric_values_v2_pypinyin_0.53.0",
           "expected": "这次别泡成复写联了",
-          "observed": "这次别泡成腹血帘呢",
+          "observed": "这次别泡成腹血帘了",
           "expectedSyllables": [
             "zhe4",
             "ci4",
@@ -38,7 +38,7 @@
             "fu4",
             "xue4",
             "lian2",
-            "ne5"
+            "le5"
           ],
           "sameLength": true,
           "polarityCountsMatch": true,
@@ -47,7 +47,7 @@
         },
         "model": "Systran/faster-whisper-large-v3",
         "revision": "edaa852ec7e145841d8ffdb056a99866b5f0a478",
-        "audioSha256": "9f7e93d81cd5b35f99e932359c484305b89e76e1b6acab65c24fbaf29bc0cfcf"
+        "audioSha256": "09b1a3108fef39d6657cfa3f2982b48138097540124c1309c8fe252ceb747bdc"
       }
     }
   ],

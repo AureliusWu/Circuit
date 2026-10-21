@@ -128,11 +128,17 @@ def run(url, output, expected_build):
                         assert response and response.ok, 'Deployed document failed'
                         settled_title(page, version)
                         phase = label + ':service-worker-cache'
-                        page.wait_for_function('async()=>Boolean((await navigator.serviceWorker.getRegistration())?.active)', timeout=90000)
-                        # Precache installation precedes activation. An initial page may still need an online reload to be controlled.
+                        page.wait_for_function('async()=>(await navigator.serviceWorker.getRegistration())?.active?.state === "activated"', timeout=90000)
+                        # A fresh navigation after completed activation must use this app's worker.
+                        # Keep the initial uncontrolled document out of the install/claim race.
                         if not page.evaluate('Boolean(navigator.serviceWorker.controller)'):
-                            page.reload(wait_until='load', timeout=60000)
+                            initial = page
+                            page = context.new_page()
+                            page.set_default_timeout(15000)
+                            page.on('pageerror', lambda error: summary['page_errors'].append(str(error)))
+                            page.goto(url, wait_until='load', timeout=60000)
                             settled_title(page, version)
+                            initial.close()
                         page.wait_for_function('Boolean(navigator.serviceWorker.controller)', timeout=30000)
                         page.wait_for_function('''async paths => {
                           const matches=await Promise.all(paths.map(path=>caches.match(path,{ignoreSearch:true})));

@@ -12,6 +12,7 @@ from pathlib import Path
 from urllib.parse import urlsplit, urljoin
 
 from playwright.sync_api import expect, sync_playwright
+from async_browser import wait_async
 
 AUTO = 'circuit-auto-v100'
 SETTINGS = 'circuit-settings-v100'
@@ -334,7 +335,7 @@ def run(url, pwa):
                     assert {'192x192', '512x512'} <= {icon['sizes'] for icon in icons}, 'Installable PWA icons missing'
                     for icon in icons:
                         assert context.request.get(urljoin(url.rstrip('/') + '/', icon['src'])).ok, icon
-                    page.wait_for_function('async()=>Boolean((await navigator.serviceWorker.ready).active)', timeout=15000)
+                    wait_async(page, 'async()=>Boolean((await navigator.serviceWorker.ready).active)', timeout=15000)
                     page.reload(wait_until='domcontentloaded')
                     page.wait_for_function('Boolean(navigator.serviceWorker.controller)', timeout=15000)
                     summary['service_worker'] = page.evaluate('navigator.serviceWorker.controller.scriptURL')

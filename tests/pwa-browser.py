@@ -10,6 +10,7 @@ import tempfile
 import threading
 from pathlib import Path
 from playwright.sync_api import sync_playwright, expect
+from async_browser import wait_async
 
 
 def run():
@@ -77,16 +78,16 @@ def run():
             assert count == 1, 'index precache revision must change'
             (installed / 'sw.js').write_text(sw)
             first.evaluate('navigator.serviceWorker.getRegistration().then(r => r.update())')
-            first.wait_for_function('navigator.serviceWorker.getRegistration().then(r => r.waiting?.state === "installed")', timeout=90000)
+            wait_async(first, 'navigator.serviceWorker.getRegistration().then(r => r.waiting?.state === "installed")', timeout=90000)
             observer.evaluate('navigator.serviceWorker.getRegistration("/Circuit/").then(r => { window.expectedCircuitWorker = r.waiting; if (!r.waiting) throw new Error("Expected installed candidate"); })')
             assert first.locator('meta[name="circuit-revision"]').count() == 0
             assert first.evaluate("localStorage.getItem('circuit-auto-v100')") == saved
-            second.wait_for_function('navigator.serviceWorker.getRegistration().then(r => r.waiting?.state === "installed")', timeout=30000)
+            wait_async(second, 'navigator.serviceWorker.getRegistration().then(r => r.waiting?.state === "installed")', timeout=30000)
             first.close()
-            second.wait_for_function('navigator.serviceWorker.getRegistration().then(r => r.waiting?.state === "installed")', timeout=30000)
+            wait_async(second, 'navigator.serviceWorker.getRegistration().then(r => r.waiting?.state === "installed")', timeout=30000)
             assert second.evaluate('navigator.serviceWorker.controller === window.initialCircuitController')
             second.close()
-            observer.wait_for_function('navigator.serviceWorker.getRegistration("/Circuit/").then(r => r.active === window.expectedCircuitWorker && r.active?.state === "activated" && !r.waiting)', timeout=90000)
+            wait_async(observer, 'navigator.serviceWorker.getRegistration("/Circuit/").then(r => r.active === window.expectedCircuitWorker && r.active?.state === "activated" && !r.waiting)', timeout=90000)
             reopened = context.new_page(); reopened.goto(url)
             assert reopened.locator('meta[name="circuit-revision"]').get_attribute('content') == 'two'
             assert reopened.evaluate("localStorage.getItem('circuit-auto-v100')") == saved

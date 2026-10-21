@@ -10,6 +10,7 @@ import time
 from urllib.parse import urlsplit
 
 from playwright.sync_api import expect, sync_playwright
+from async_browser import wait_async
 
 BASE = sys.argv[1] if len(sys.argv) > 1 else 'http://127.0.0.1:4173'
 AUTO, PREFS = 'circuit-auto-v100', 'circuit-settings-v100'
@@ -192,7 +193,7 @@ with sync_playwright() as playwright:
         page.evaluate('navigator.serviceWorker.ready')
         page.wait_for_function('!!navigator.serviceWorker.controller')
         # The production worker has completed every file in its current precache.
-        page.wait_for_function('''async()=>{
+        wait_async(page, '''async()=>{
           const keys=await caches.keys();const key=keys.find(k=>k.includes('precache'));
           if(!key)return false;const cache=await caches.open(key);
           const entries=await cache.keys();return entries.some(r=>r.url.includes('communications-room.webp'))&&entries.some(r=>r.url.includes('latch-turn.mp3'));

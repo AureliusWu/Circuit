@@ -10,6 +10,7 @@ import time
 from urllib.parse import urljoin
 
 from playwright.sync_api import expect, sync_playwright
+from async_browser import wait_async
 
 AUTO = 'circuit-auto-v100'
 SETTINGS = 'circuit-settings-v100'
@@ -131,7 +132,7 @@ def run(url, output, expected_build):
                         assert response and response.ok, 'Deployed document failed'
                         settled_title(page, version)
                         phase = label + ':service-worker-cache'
-                        page.wait_for_function('async()=>(await navigator.serviceWorker.getRegistration())?.active?.state === "activated"', timeout=90000)
+                        wait_async(page, 'async()=>(await navigator.serviceWorker.getRegistration())?.active?.state === "activated"', timeout=90000)
                         # A fresh navigation after completed activation must use this app's worker.
                         # Keep the initial uncontrolled document out of the install/claim race.
                         if not page.evaluate('Boolean(navigator.serviceWorker.controller)'):
@@ -142,8 +143,8 @@ def run(url, output, expected_build):
                             page.goto(url, wait_until='load', timeout=60000)
                             settled_title(page, version)
                             initial.close()
-                        page.wait_for_function('async expected => { const r = await navigator.serviceWorker.getRegistration(expected); return r?.scope === expected && r.active?.state === "activated" && navigator.serviceWorker.controller === r.active; }', arg=url, timeout=30000)
-                        page.wait_for_function('''async paths => {
+                        wait_async(page, 'async expected => { const r = await navigator.serviceWorker.getRegistration(expected); return r?.scope === expected && r.active?.state === "activated" && navigator.serviceWorker.controller === r.active; }', arg=url, timeout=30000)
+                        wait_async(page, '''async paths => {
                           const matches=await Promise.all(paths.map(path=>caches.match(path,{ignoreSearch:true})));
                           return matches.every(response=>response&&response.ok);
                         }''', arg=audio, timeout=90000, polling=250)

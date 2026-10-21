@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-21",
+  "project": "Circuit",
+  "version": "1.6.1",
+  "base_commit": "e199913c40b3ea218147762075cbae0e3c9f2f18",
+  "local": {
+    "unit_tests_passed": 95,
+    "production_build": "passed",
+    "browser": {
+      "passed": 28,
+      "kind": "tickets continuation/voice/offline audio (9) and reading/settings/storage (19)",
+      "page_errors": []
+    }
+  },
+  "platform_validation": {
+    "github_ci": "pending push",
+    "windows_actual_package": "pending exact-commit CI",
+    "public_pwa": "pending exact-commit deployment"
+  },
+  "fingerprints": {
+    "src/game/sceneLoop.ts": "96a6297419f4f89b5713e13f255d9eeb15d59d6ee8cd6905261c35a84c38d518",
+    "tests/scene-loop.test.cjs": "39301aaa78a5b2fd98a7110309d804f011c1b7a61b213f4ad7d39b51132f5332"
+  }
+}

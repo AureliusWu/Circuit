@@ -15,6 +15,7 @@ spec = importlib.util.spec_from_file_location('release_browser', Path(__file__).
 release = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(release)
 authored = release.fixtures()
+recordings = release.recording_sources(authored)
 preferences = dict(textSpeed='instant', autoDelay=2, musicVolume=0, ambienceVolume=0,
                    voiceVolume=.8, sfxVolume=.6, voiceEnabled=True, muted=False, highContrast=False, reducedMotion=True)
 checks, errors = [], []
@@ -153,9 +154,9 @@ with sync_playwright() as p:
         echo_seed = {**seed, 'nodeId':'echo', 'history':['echo'], 'evidence':['v01-recording','v01-address','v01-threshold']}
         echo = open_page(echo_seed)
         echo.get_by_role('button', name='继续抢修', exact=True).click()
-        echo.wait_for_function("window.__media.some(m=>m.src.includes('v01-arrived.mp3') && !m.paused)")
+        echo.wait_for_function("window.__media.some(m=>m.src.includes('v01-arrived.mp3') && !m.paused)".replace('v01-arrived.mp3', recordings['v01-arrived']))
         echo.get_by_role('button',name='自动阅读',exact=True).click()
-        echo.wait_for_function("window.__media.some(m=>m.src.includes('v01-received.mp3') && !m.paused)",timeout=10000)
+        echo.wait_for_function("window.__media.some(m=>m.src.includes('v01-received.mp3') && !m.paused)".replace('v01-received.mp3', recordings['v01-received']),timeout=10000)
         assert node(echo) == 'echo'
         echo.wait_for_function(f"JSON.parse(localStorage.getItem('{AUTO}')).nodeId==='secondHub'",timeout=12000)
         assert echo.evaluate("window.__media.filter(m=>m.src.includes('/voice/')).every(m=>m.paused)")

@@ -1,0 +1,68 @@
+{
+  "version": "1.7.0",
+  "commit": "e85dda6d813b48e674d8cbb66fa915ad9d2f28b2",
+  "run": 39598958199,
+  "pagesRun": 39598958208,
+  "release": "https://github.com/AureliusWu/Circuit/releases/tag/v1.7.0",
+  "assets": [
+    {
+      "id": 662434377,
+      "name": "circuit-web-1.7.0.zip",
+      "bytes": 22154826,
+      "sha256": "be79c49a69525e357affcce276297565f9aa57d27aab12c9397f568a1a019fd3",
+      "url": "https://github.com/AureliusWu/Circuit/releases/download/v1.7.0/circuit-web-1.7.0.zip"
+    },
+    {
+      "id": 662434379,
+      "name": "circuit-web-1.7.0.zip.sha256",
+      "bytes": 88,
+      "sha256": "b1bacf558770b11cb9f6d1cb437a679dee4788c164870932db4f393002ecdb20",
+      "url": "https://github.com/AureliusWu/Circuit/releases/download/v1.7.0/circuit-web-1.7.0.zip.sha256"
+    },
+    {
+      "id": 662434375,
+      "name": "Circuit_1.7.0_x64-setup.exe",
+      "bytes": 23725988,
+      "sha256": "ce127896a238416ab19c20291f42bb5cbf2afe3fb60d8e872f374ed69a1cb29e",
+      "url": "https://github.com/AureliusWu/Circuit/releases/download/v1.7.0/Circuit_1.7.0_x64-setup.exe"
+    },
+    {
+      "id": 662434376,
+      "name": "Circuit_1.7.0_x64-setup.exe.sha256",
+      "bytes": 94,
+      "sha256": "68c7a21a7ec0483ff0904bf3407d593f81b198bd1fbee6b6988c20e23c015278",
+      "url": "https://github.com/AureliusWu/Circuit/releases/download/v1.7.0/Circuit_1.7.0_x64-setup.exe.sha256"
+    },
+    {
+      "id": 662434401,
+      "name": "release.json",
+      "bytes": 503,
+      "sha256": "ff5ebf3e3e31d998af16466fbf260f96840d2c383b8346fb0305536ae34754c7",
+      "url": "https://github.com/AureliusWu/Circuit/releases/download/v1.7.0/release.json"
+    },
+    {
+      "id": 662434373,
+      "name": "SHA256SUMS.txt",
+      "bytes": 348,
+      "sha256": "738eefe76c10d819b24064b78f67005de08ded1e638fda01c669be8617bc497a",
+      "url": "https://github.com/AureliusWu/Circuit/releases/download/v1.7.0/SHA256SUMS.txt"
+    },
+    {
+      "id": 662434400,
+      "name": "windows-runtime.json",
+      "bytes": 1800,
+      "sha256": "a0de8aa214b531df0789dcc4820ba3270e55acde727c4e4accc304902d393d2e",
+      "url": "https://github.com/AureliusWu/Circuit/releases/download/v1.7.0/windows-runtime.json"
+    }
+  ],
+  "status": "published_and_public_bytes_verified",
+  "checksumEntries": 4,
+  "pwaZipCrc": true,
+  "pwaFiles": 482,
+  "fullDialogueBindings": 403,
+  "logicTests": 97,
+  "windows": "actual NSIS install, executable interaction, save reopen and uninstall passed",
+  "publicPwa": "three viewports and offline passed on deploy retry after transient OIDC timeout",
+  "humanListening": false,
+  "humanVisualApproval": false
+}

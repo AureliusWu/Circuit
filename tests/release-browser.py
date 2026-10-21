@@ -57,6 +57,17 @@ process.stdout.write(JSON.stringify(results));
         return json.loads(result.stdout)
 
 
+def recording_sources(chapters):
+    """Resolve stable evidence IDs to the current verified playback master."""
+    sources = {}
+    for chapter in chapters:
+        for clips in chapter['voices'].values():
+            for clip in clips:
+                assert clip['id'] not in sources or sources[clip['id']] == clip['src'], 'Inconsistent replay master'
+                sources[clip['id']] = clip['src']
+    return sources
+
+
 def run(url, pwa):
     cg_dimensions = {Path(a['output']).name: (a['width'], a['height'])
                      for a in json.loads(Path('docs/production/full-media/recovered-cg.json').read_text())['assets']}

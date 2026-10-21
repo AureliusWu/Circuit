@@ -18,6 +18,7 @@ spec = importlib.util.spec_from_file_location('release_browser', Path(__file__).
 release = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(release)
 chapters = release.fixtures()
+recordings = release.recording_sources(chapters)
 chapter = next(row for row in chapters if row['id'] == 'answering')
 prefix = [row['id'] for row in chapters[:7]]
 archive = {row['id']: row['requiredEvidence'] for row in chapters[:7]}
@@ -117,22 +118,22 @@ with sync_playwright() as playwright:
         before = raw(page)
         dialog = evidence(page)
         dialog.get_by_role('button', name='重听：柜边录下的程砚声音', exact=True).click()
-        page.wait_for_function("window.__media.some(m=>m.src.includes('v01-confirm.mp3')&&!m.paused)")
+        page.wait_for_function("window.__media.some(m=>m.src.includes('v01-confirm.mp3')&&!m.paused)".replace('v01-confirm.mp3', recordings['v01-confirm']))
         assert raw(page) == before
         checked('collected-evidence-replays-identical-master-without-save-write')
         dialog.get_by_role('button', name='暂停录音', exact=True).click()
         expect(dialog.get_by_role('button', name='继续录音', exact=True)).to_be_visible()
         page.wait_for_function("window.__media.filter(m=>m.src.includes('/voice/')).every(m=>m.paused)")
         dialog.get_by_role('button', name='继续录音', exact=True).click()
-        page.wait_for_function("window.__media.some(m=>m.src.includes('v01-confirm.mp3')&&!m.paused)")
+        page.wait_for_function("window.__media.some(m=>m.src.includes('v01-confirm.mp3')&&!m.paused)".replace('v01-confirm.mp3', recordings['v01-confirm']))
         checked('evidence-pause-and-resume')
         page.evaluate("window.__hidden=true;document.dispatchEvent(new Event('visibilitychange'))")
         page.wait_for_function("window.__media.filter(m=>m.src.includes('/voice/')).every(m=>m.paused)")
-        position = page.evaluate("window.__media.findLast(m=>m.src.includes('v01-confirm.mp3')).currentTime")
+        position = page.evaluate("window.__media.findLast(m=>m.src.includes('v01-confirm.mp3')).currentTime".replace('v01-confirm.mp3', recordings['v01-confirm']))
         page.wait_for_timeout(350)
-        assert abs(page.evaluate("window.__media.findLast(m=>m.src.includes('v01-confirm.mp3')).currentTime") - position) < .1
+        assert abs(page.evaluate("window.__media.findLast(m=>m.src.includes('v01-confirm.mp3')).currentTime".replace('v01-confirm.mp3', recordings['v01-confirm'])) - position) < .1
         page.evaluate("window.__hidden=false;document.dispatchEvent(new Event('visibilitychange'))")
-        page.wait_for_function("window.__media.some(m=>m.src.includes('v01-confirm.mp3')&&!m.paused)")
+        page.wait_for_function("window.__media.some(m=>m.src.includes('v01-confirm.mp3')&&!m.paused)".replace('v01-confirm.mp3', recordings['v01-confirm']))
         dialog.get_by_role('button', name='停止重听', exact=True).click()
         assert raw(page) == before
         checked('hidden-page-suspends-evidence-and-stop-preserves-progress')
@@ -182,7 +183,7 @@ with sync_playwright() as playwright:
         dialog = evidence(page)
         assert dialog.get_by_role('button', name=re.compile(r'^重听：')).count() == 3
         dialog.get_by_role('button', name='重听：第二声：季宁收到', exact=True).click()
-        page.wait_for_function("window.__media.some(m=>m.src.includes('v01-received.mp3')&&!m.paused)")
+        page.wait_for_function("window.__media.some(m=>m.src.includes('v01-received.mp3')&&!m.paused)".replace('v01-received.mp3', recordings['v01-received']))
         dialog.get_by_role('button', name='停止重听', exact=True).click()
         assert raw(page) == before
         page.keyboard.press('Escape')
@@ -201,7 +202,7 @@ with sync_playwright() as playwright:
         page.get_by_role('button', name='继续抢修', exact=True).click()
         dialog = evidence(page)
         dialog.get_by_role('button', name='重听：第一声：程砚到场', exact=True).click()
-        page.wait_for_function("window.__media.some(m=>m.src.includes('v01-arrived.mp3')&&!m.paused&&m.readyState>=3)")
+        page.wait_for_function("window.__media.some(m=>m.src.includes('v01-arrived.mp3')&&!m.paused&&m.readyState>=3)".replace('v01-arrived.mp3', recordings['v01-arrived']))
         dialog.get_by_role('button', name='停止重听', exact=True).click()
         checked('offline-restore-and-evidence-replay')
         context.set_offline(False)

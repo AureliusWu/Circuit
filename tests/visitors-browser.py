@@ -16,6 +16,7 @@ spec = importlib.util.spec_from_file_location('release_browser', Path(__file__).
 release = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(release)
 chapters = release.fixtures()
+recordings = release.recording_sources(chapters)
 chapter = next(row for row in chapters if row['id'] == 'visitors')
 prefix = [row['id'] for row in chapters[:8]]
 archive = {row['id']: row['requiredEvidence'] for row in chapters[:8]}
@@ -185,7 +186,7 @@ with sync_playwright() as playwright:
         dialog.get_by_role('button', name='并排核对', exact=True).click()
         dialog.get_by_label('核对记录一', exact=True).select_option('v03-card')
         dialog.get_by_role('button', name='重听：2019旧档：车还等吗', exact=True).click()
-        offline.wait_for_function("window.__media.some(m=>m.src.includes('q07-xu.mp3')&&!m.paused)")
+        offline.wait_for_function("window.__media.some(m=>m.src.includes('q07-xu.mp3')&&!m.paused)".replace('q07-xu.mp3', recordings['q07-xu']))
         dialog.get_by_role('button', name='停止重听', exact=True).click()
         assert raw(offline) == before
         checked('offline-comparison-replays-original-2019-master-without-save-write')

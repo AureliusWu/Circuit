@@ -1,10 +1,12 @@
 {
   "schema": 1,
   "project": "Circuit",
-  "batch": "20261020-continue-verified-01",
+  "batch": "20261021-continue-latest-02",
   "count": 402,
   "semanticSha256": "d2f80ed941e3b06e2fbf53e4cc5af38b123526c1795c73b5031fb2100be46316",
-  "attemptOffset": 3,
+  "attemptOffset": 6,
   "reuse": "byte-verified accepted takes only",
-  "humanListening": false
+  "humanListening": false,
+  "sourceArchive": "assets_source/voice/continued-20261020",
+  "homophoneReview": "exact same length, syllables and tones; raw ASR retained"
 }

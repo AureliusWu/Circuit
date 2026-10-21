@@ -7,7 +7,7 @@ const build = mkdtempSync(join(tmpdir(), 'circuit-tests-'));
 try {
   const compile = spawnSync(process.execPath, [
     resolve('node_modules/typescript/bin/tsc'),
-    '--module', 'commonjs', '--moduleResolution', 'node',
+    '--module', 'commonjs', '--moduleResolution', 'node', '--resolveJsonModule', '--esModuleInterop',
     '--target', 'ES2020', '--lib', 'ES2020,DOM', '--strict', '--skipLibCheck',
     '--rootDir', 'src', '--outDir', build,
     'src/story/engine.ts', 'src/game/saves.ts', 'src/game/campaign.ts', 'src/game/preferences.ts', 'src/game/recordedAudio.ts', 'src/game/history.ts', 'src/game/pwa.ts', 'src/game/sceneLoop.ts'

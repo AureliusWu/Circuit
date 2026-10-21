@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "project": "Circuit",
+  "outputs": [
+    {
+      "id": "shen-father",
+      "output": "public/art/portraits/shen-father.webp",
+      "sha256": "0b952a4090329e02839c1ca782b69e7c8f4be8e419d4363f8247653900402fa3"
+    },
+    {
+      "id": "resident-gate",
+      "output": "public/art/portraits/resident-gate.webp",
+      "sha256": "c66dcc7f7c7b235d539102394712e722048483b786720d8dd0ff03d14dd850c2"
+    },
+    {
+      "id": "resident-young",
+      "output": "public/art/portraits/resident-young.webp",
+      "sha256": "4ccc077f5f615a8f45125f5e94539dd7336fb1b4bf26236abb6d79087b4a0857"
+    },
+    {
+      "id": "resident-cabinet",
+      "output": "public/art/portraits/resident-cabinet.webp",
+      "sha256": "04f4b312b52a7e5e60f3be4c24017fc9ac14fd582d73fcbd9c9e31508dd36b75"
+    },
+    {
+      "id": "manager",
+      "output": "public/art/portraits/manager.webp",
+      "sha256": "97d654cedd874bd911b7345e46bd40b9d612501243324b47b959d6301897dda2"
+    },
+    {
+      "id": "breakfast-owner",
+      "output": "public/art/portraits/breakfast-owner.webp",
+      "sha256": "c8a2c0abcadabaa74f8d42fcd3175da6cfb40bf2a43b690014bbf98f62afe7f6"
+    },
+    {
+      "id": "do-not-close",
+      "output": "public/art/cg-do-not-close.webp",
+      "sha256": "e586691163c71cf600ed1f3bca4551b0feffeda43dfef7d118d40cd03f2f88fe"
+    },
+    {
+      "id": "threshold-ash",
+      "output": "public/art/cg-threshold-ash.webp",
+      "sha256": "89b3c3a2a00ca13d776958b139a84a0ed923c070c7d7801ac867747a34e1c8a0"
+    },
+    {
+      "id": "plate-03",
+      "output": "public/art/cg-plate-03.webp",
+      "sha256": "f3cdb91be706e5719f0cb6dfadda055bf148420062361cbd12b2ca0edfc08306"
+    },
+    {
+      "id": "missing-stairs",
+      "output": "public/art/cg-missing-stairs.webp",
+      "sha256": "d378d03fe3b3a225b8df63f9a3c76ae2f5f9df9a07b60d90c51187ca42129ece"
+    },
+    {
+      "id": "old-ticket",
+      "output": "public/art/cg-old-ticket.webp",
+      "sha256": "5b4ba6e68334d29761fc1f6b1fe0003a840c2dd6783d1bd74a9c240e4ccaf6a9"
+    },
+    {
+      "id": "blank-order",
+      "output": "public/art/cg-blank-order.webp",
+      "sha256": "4985d620973e3f0ea8620c029c7d8749141e91d5817575f6fd4e6e22bf7ca820"
+    },
+    {
+      "id": "wet-boots",
+      "output": "public/art/cg-wet-boots.webp",
+      "sha256": "56263955ab68327cb906daa8d79c8e2e5840cc5e0226af9c1225acd0edee0995"
+    },
+    {
+      "id": "five-tickets",
+      "output": "public/art/cg-five-tickets.webp",
+      "sha256": "761537d6bee31260a1bd759c7598607a28088516583023fff45e56babafe8790"
+    }
+  ],
+  "humanVisualApproval": false,
+  "release": "not_published",
+  "status": "runtime_files_prepared"
+}

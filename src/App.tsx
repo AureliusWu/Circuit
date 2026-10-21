@@ -325,7 +325,7 @@ function App() {
                 <button onClick={(event) => openPanel('characters', event.currentTarget)} aria-haspopup="dialog">人物</button>
               </div></div>
               {node.speaker && <div className="speaker">{node.speaker}</div>}
-              {voiceState.clip && <p className="voice-caption" role="status">{getCharacter(voiceState.clip.character)?.name} · {voiceState.status === 'failed' ? '录音暂不可用，可继续阅读或重听' : voiceState.status === 'paused' ? '语音已暂停' : voiceState.status === 'loading' ? '准备语音' : '语音播放中'}{!currentVoices.some((clip) => clip.id === voiceState.clip?.id) && `：${voiceState.clip.text}`}</p>}
+              {voiceState.clip && <p className="voice-caption" role="status">{getCharacter(voiceState.clip.character)?.name ?? '未识别录音'} · {voiceState.status === 'failed' ? '录音暂不可用，可继续阅读或重听' : voiceState.status === 'paused' ? '语音已暂停' : voiceState.status === 'loading' ? '准备语音' : '语音播放中'}{!currentVoices.some((clip) => clip.id === voiceState.clip?.id) && `：${voiceState.clip.text}`}</p>}
               <p className="dialogue-text" aria-label={node.text}><span aria-hidden="true">{reading.text}</span></p>
               <div className="actions"><div className={['choice', 'puzzle'].includes(node.kind) ? 'choice-grid deduction' : 'choice-grid'}>
                 {dialogueActions.map((action) => <button key={action.id} data-action-id={action.id} className={action.tone === 'danger' ? 'danger' : ''} onClick={() => act(action.id)}>{action.label}</button>)}

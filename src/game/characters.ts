@@ -1,4 +1,4 @@
-export type CharacterId = 'cheng' | 'ji' | 'lin' | 'zhou' | 'mei' | 'xu' | 'chen' | 'shen' | 'luo';
+export type CharacterId = 'cheng' | 'ji' | 'lin' | 'zhou' | 'mei' | 'xu' | 'chen' | 'shen' | 'luo' | 'shen-father' | 'resident-gate' | 'resident-young' | 'resident-cabinet' | 'manager' | 'breakfast-owner';
 export type CharacterExpression = 'neutral' | 'focused' | 'concerned' | 'wary';
 export type CharacterPresence = 'scene' | 'radio' | 'archive';
 
@@ -11,7 +11,7 @@ export type CharacterProfile = {
   bio: string;
   duty: string;
   portraits: Partial<Record<CharacterExpression, string>> & { neutral: string };
-  chibi: string;
+  chibi?: string;
 };
 
 const portrait = (id: CharacterId) => '/art/portraits/' + id + '.webp';
@@ -74,8 +74,84 @@ export const CHARACTERS: readonly CharacterProfile[] = [
   }
 ];
 
+export const SUPPORTING_CHARACTERS: readonly CharacterProfile[] = [
+  {
+    "id": "shen-father",
+    "name": "沈衡",
+    "age": "2019 年档案",
+    "role": "公交司机 / 沈棠的父亲",
+    "tag": "旧录音",
+    "bio": "2019年接送获救住户后平安回家，之后继续生活多年，今年因病去世。",
+    "duty": "旧录音与许守成的事故分开核对。",
+    "portraits": {
+      "neutral": "/art/portraits/shen-father.webp"
+    }
+  },
+  {
+    "id": "resident-gate",
+    "name": "门口住户",
+    "age": "成年",
+    "role": "长安里住户",
+    "tag": "住户口述",
+    "bio": "夜间向抢修队反映楼道响声与休息受到的影响。",
+    "duty": "提供本人实际观察，不替代现场测量。",
+    "portraits": {
+      "neutral": "/art/portraits/resident-gate.webp"
+    }
+  },
+  {
+    "id": "resident-young",
+    "name": "年轻住户",
+    "age": "成年",
+    "role": "长安里住户",
+    "tag": "楼内联络",
+    "bio": "记录自己听见的声音和发生时刻。",
+    "duty": "由本人确认口述范围。",
+    "portraits": {
+      "neutral": "/art/portraits/resident-young.webp"
+    }
+  },
+  {
+    "id": "resident-cabinet",
+    "name": "年长住户",
+    "age": "成年",
+    "role": "长安里住户",
+    "tag": "现场口述",
+    "bio": "配合核对住宅照明和旧灯的不同情况。",
+    "duty": "日常回忆与设备状态分别留证。",
+    "portraits": {
+      "neutral": "/art/portraits/resident-cabinet.webp"
+    }
+  },
+  {
+    "id": "manager",
+    "name": "管理方人员",
+    "age": "成年",
+    "role": "产权方 / 接收与核查",
+    "tag": "交接",
+    "bio": "负责获准范围内的设备、台账与材料接收。",
+    "duty": "资产所属、物品保管和任务执行分别核对。",
+    "portraits": {
+      "neutral": "/art/portraits/manager.webp"
+    }
+  },
+  {
+    "id": "breakfast-owner",
+    "name": "早点店老板",
+    "age": "中年",
+    "role": "旧接待站附近早点店",
+    "tag": "街坊",
+    "bio": "在夜班结束前开窗递来热食与水。",
+    "duty": "街坊见闻留作口述，交给后续资料互证。",
+    "portraits": {
+      "neutral": "/art/portraits/breakfast-owner.webp"
+    }
+  }
+];
+export const ALL_CHARACTERS = [...CHARACTERS, ...SUPPORTING_CHARACTERS];
+
 export function getCharacter(id: string | undefined): CharacterProfile | undefined {
-  return CHARACTERS.find((character) => character.id === id);
+  return ALL_CHARACTERS.find((character) => character.id === id);
 }
 
 export function getPortraitPath(id: string | undefined, expression: CharacterExpression = 'neutral'): string | undefined {

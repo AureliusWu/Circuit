@@ -30,6 +30,8 @@ jobs:
         run: |
           sudo apt-get update && sudo apt-get install -y ffmpeg
           python tools/audio/validate_media.py
+          python -m pip install Pillow
+          python tools/production/validate_runtime.py --require-complete --decode --report artifacts/full-media.json
       - run: npm run build
       - name: Campaign, reading, saves, voice and offline regression
         run: |

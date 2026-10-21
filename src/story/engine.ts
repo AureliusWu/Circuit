@@ -8,6 +8,7 @@ import { returnVisit } from './chapters/return-visit';
 import { answering } from './chapters/answering';
 import { visitors } from './chapters/visitors';
 import { tickets } from './chapters/tickets';
+import { withFullMedia } from '../game/fullMedia';
 import { getCharacter } from '../game/characters';
 import type { Chapter, ChapterId, EvidenceId, GameState, StoryAction, StoryNode } from './types';
 
@@ -24,7 +25,7 @@ export function getUnlockedChapters(completed: readonly ChapterId[]): ChapterId[
   return CHAPTER_ORDER.slice(0, Math.min(prefix + 1, CHAPTER_ORDER.length));
 }
 
-export const CHAPTERS: Readonly<Record<ChapterId, Chapter>> = Object.freeze({
+const authoredChapters: Record<ChapterId, Chapter> = {
   [PROLOGUE]: thirteenHouseholds,
   'seventh-night': seventhNight,
   backfeed,
@@ -35,7 +36,10 @@ export const CHAPTERS: Readonly<Record<ChapterId, Chapter>> = Object.freeze({
   answering,
   visitors,
   tickets
-});
+};
+export const CHAPTERS = Object.freeze(Object.fromEntries(
+  Object.entries(authoredChapters).map(([id, chapter]) => [id, withFullMedia(chapter)])
+) as Record<ChapterId, Chapter>);
 
 const owns = (record: object, key: string): boolean => Object.prototype.hasOwnProperty.call(record, key);
 

@@ -86,3 +86,33 @@ test('all shipping recordings, sources and scene effect bindings have verified h
     assert.ok(effects.clips.some(c=>c.files.some(f=>'/'+f.path.replace(/^public\//,'')===src)),src);
   }
 });
+
+
+test('all 403 produced dialogue bindings resolve to local runtime audio and the authored scene', () => {
+  const { FULL_VOICE_CLIPS } = require(path.join(process.env.CIRCUIT_TEST_BUILD, 'game/mediaCatalog.js'));
+  assert.equal(FULL_VOICE_CLIPS.length, 403);
+  assert.equal(new Set(FULL_VOICE_CLIPS.map(c => c.productionId)).size, 403);
+  for (const clip of FULL_VOICE_CLIPS) {
+    assert.ok(readFileSync(path.join('public', clip.src.slice(1))).length > 1000, clip.productionId);
+    for (const binding of clip.bindings) {
+      const node = getChapter(binding.chapter).nodes[binding.node];
+      assert.ok(node.text.includes(clip.text), clip.productionId);
+      assert.ok(voicesFor(binding.chapter, binding.node).some(c => c.src === clip.src), clip.productionId);
+    }
+  }
+});
+
+test('new scene CGs and supporting portraits preserve authored nodes and real local assets', () => {
+  const { ALL_CHARACTERS } = require(path.join(process.env.CIRCUIT_TEST_BUILD, 'game/characters.js'));
+  assert.equal(ALL_CHARACTERS.length, 15);
+  const art = JSON.parse(readFileSync('docs/production/full-media/runtime-art.json', 'utf8'));
+  for (const item of art.outputs) {
+    const bytes = readFileSync(item.output);
+    assert.equal(createHash('sha256').update(bytes).digest('hex'), item.sha256);
+  }
+  for (const [chapter, node] of [['thirteen-households','end'], ['seventh-night','sevenMeals'], ['backfeed','end'], ['everlight','end'], ['neutral','receive'], ['closure','end'], ['answering','end'], ['tickets','recordPaper']]) {
+    const scene = getChapter(chapter).nodes[node].scene;
+    assert.equal(scene.eventCg, true);
+    assert.ok(readFileSync(path.join('public',scene.background.slice(1))).length > 1000);
+  }
+});

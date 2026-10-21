@@ -1,0 +1,5651 @@
+{
+  "schema": 1,
+  "project": "Circuit",
+  "target": 403,
+  "accepted": 403,
+  "complete": true,
+  "clips": [
+    {
+      "id": "h13-dispatch",
+      "productionId": "circuit-thirteen-households--dispatch--q01--01",
+      "character": "lin",
+      "text": "槐荫巷，十二户停电，终端显示十三个在线户号。",
+      "src": "/audio/voice/h13-dispatch.mp3",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "dispatch"
+        }
+      ],
+      "start": 20
+    },
+    {
+      "id": "circuit-thirteen-households--dispatch--q01--02",
+      "productionId": "circuit-thirteen-households--dispatch--q01--02",
+      "character": "lin",
+      "text": "老周已经往那边去了。",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--dispatch--q01--02.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "dispatch"
+        }
+      ],
+      "start": 42
+    },
+    {
+      "id": "circuit-thirteen-households--dispatch--q02--01",
+      "productionId": "circuit-thirteen-households--dispatch--q02--01",
+      "character": "ji",
+      "text": "带走？",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--dispatch--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "dispatch"
+        }
+      ],
+      "start": 71
+    },
+    {
+      "id": "circuit-thirteen-households--dispatch--q03--01",
+      "productionId": "circuit-thirteen-households--dispatch--q03--01",
+      "character": "cheng",
+      "text": "回来再吃。",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--dispatch--q03--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "dispatch"
+        }
+      ],
+      "start": 77
+    },
+    {
+      "id": "circuit-thirteen-households--call--q01--01",
+      "productionId": "circuit-thirteen-households--call--q01--01",
+      "character": "ji",
+      "text": "还有一家没停？",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--call--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "call"
+        }
+      ],
+      "start": 57
+    },
+    {
+      "id": "h13-call",
+      "productionId": "circuit-thirteen-households--call--q02--01",
+      "character": "cheng",
+      "text": "在线是通讯状态。有电没电，到了再看。",
+      "src": "/audio/voice/h13-call.mp3",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "call"
+        }
+      ],
+      "start": 67
+    },
+    {
+      "id": "circuit-thirteen-households--call--q03--01",
+      "productionId": "circuit-thirteen-households--call--q03--01",
+      "character": "ji",
+      "text": "哦。它地址怎么是空的？",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--call--q03--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "call"
+        }
+      ],
+      "start": 88
+    },
+    {
+      "id": "circuit-thirteen-households--safetybrief--q01--01",
+      "productionId": "circuit-thirteen-households--safetybrief--q01--01",
+      "character": "lin",
+      "text": "他负责现场，你们到巷口会合。电网侧归我们，屋里的问题联系产权方。",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--safetybrief--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "safetyBrief"
+        }
+      ],
+      "start": 17
+    },
+    {
+      "id": "circuit-thirteen-households--safetybrief--q02--01",
+      "productionId": "circuit-thirteen-households--safetybrief--q02--01",
+      "character": "lin",
+      "text": "十三号先留着。刚才我想查它，系统让我填销户日期。",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--safetybrief--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "safetyBrief"
+        }
+      ],
+      "start": 69
+    },
+    {
+      "id": "circuit-thirteen-households--safetybrief--q03--01",
+      "productionId": "circuit-thirteen-households--safetybrief--q03--01",
+      "character": "ji",
+      "text": "填多少？",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--safetybrief--q03--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "safetyBrief"
+        }
+      ],
+      "start": 96
+    },
+    {
+      "id": "circuit-thirteen-households--safetybrief--q04--01",
+      "productionId": "circuit-thirteen-households--safetybrief--q04--01",
+      "character": "lin",
+      "text": "我要是知道，就不用喊你们了。",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--safetybrief--q04--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "safetyBrief"
+        }
+      ],
+      "start": 103
+    },
+    {
+      "id": "h13-kit",
+      "productionId": "circuit-thirteen-households--vehiclekit--q01--01",
+      "character": "ji",
+      "text": "师傅，照片按户号存，还是按时间？",
+      "src": "/audio/voice/h13-kit.mp3",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "vehicleKit"
+        }
+      ],
+      "start": 49
+    },
+    {
+      "id": "circuit-thirteen-households--vehiclekit--q02--01",
+      "productionId": "circuit-thirteen-households--vehiclekit--q02--01",
+      "character": "cheng",
+      "text": "都留。别到时候只记得拍过，不知道拍的是哪家。",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--vehiclekit--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "vehicleKit"
+        }
+      ],
+      "start": 68
+    },
+    {
+      "id": "circuit-thirteen-households--zhoucall--q01--01",
+      "productionId": "circuit-thirteen-households--zhoucall--q01--01",
+      "character": "zhou",
+      "text": "我到巷口了，你们还有多久？",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--zhoucall--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "zhouCall"
+        }
+      ],
+      "start": 18
+    },
+    {
+      "id": "circuit-thirteen-households--zhoucall--q02--01",
+      "productionId": "circuit-thirteen-households--zhoucall--q02--01",
+      "character": "cheng",
+      "text": "十来分钟。",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--zhoucall--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "zhouCall"
+        }
+      ],
+      "start": 34
+    },
+    {
+      "id": "h13-zhou",
+      "productionId": "circuit-thirteen-households--zhoucall--q03--01",
+      "character": "zhou",
+      "text": "季宁跟着你，别让她一个人往旧宅里钻。",
+      "src": "/audio/voice/h13-zhou.mp3",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "zhouCall"
+        }
+      ],
+      "start": 42
+    },
+    {
+      "id": "circuit-thirteen-households--zhoucall--q04--01",
+      "productionId": "circuit-thirteen-households--zhoucall--q04--01",
+      "character": "ji",
+      "text": "周师傅，我听见了。",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--zhoucall--q04--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "zhouCall"
+        }
+      ],
+      "start": 71
+    },
+    {
+      "id": "circuit-thirteen-households--zhoucall--q05--01",
+      "productionId": "circuit-thirteen-households--zhoucall--q05--01",
+      "character": "zhou",
+      "text": "听见就好。",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--zhoucall--q05--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "zhouCall"
+        }
+      ],
+      "start": 96
+    },
+    {
+      "id": "circuit-thirteen-households--bypasswarning--q01--01",
+      "productionId": "circuit-thirteen-households--bypasswarning--q01--01",
+      "character": "zhou",
+      "text": "那边有条旧旁路。",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--bypasswarning--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "bypassWarning"
+        }
+      ],
+      "start": 1
+    },
+    {
+      "id": "circuit-thirteen-households--bypasswarning--q03--01",
+      "productionId": "circuit-thirteen-households--bypasswarning--q03--01",
+      "character": "ji",
+      "text": "后来拆了吗？",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--bypasswarning--q03--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "bypassWarning"
+        }
+      ],
+      "start": 94
+    },
+    {
+      "id": "circuit-thirteen-households--bypasswarning--q04--01",
+      "productionId": "circuit-thirteen-households--bypasswarning--q04--01",
+      "character": "zhou",
+      "text": "记录没齐。到了看。",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--bypasswarning--q04--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "bypassWarning"
+        }
+      ],
+      "start": 117
+    },
+    {
+      "id": "circuit-thirteen-households--alley--q01--01",
+      "productionId": "circuit-thirteen-households--alley--q01--01",
+      "character": "ji",
+      "text": "这盏归哪家？",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--alley--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "alley"
+        }
+      ],
+      "start": 75
+    },
+    {
+      "id": "circuit-thirteen-households--alleyresidents--q01--01",
+      "productionId": "circuit-thirteen-households--alleyresidents--q01--01",
+      "character": "mei",
+      "text": "别围着箱子，给师傅腾点地方。",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--alleyresidents--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "alleyResidents"
+        }
+      ],
+      "start": 68
+    },
+    {
+      "id": "circuit-thirteen-households--meidoor--q01--01",
+      "productionId": "circuit-thirteen-households--meidoor--q01--01",
+      "character": "mei",
+      "text": "以前是做缝补的陈家。",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--meidoor--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "meiDoor"
+        }
+      ],
+      "start": 43
+    },
+    {
+      "id": "circuit-thirteen-households--meidoor--q02--01",
+      "productionId": "circuit-thirteen-households--meidoor--q02--01",
+      "character": "cheng",
+      "text": "现在呢？",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--meidoor--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "meiDoor"
+        }
+      ],
+      "start": 56
+    },
+    {
+      "id": "circuit-thirteen-households--meidoor--q03--01",
+      "productionId": "circuit-thirteen-households--meidoor--q03--01",
+      "character": "mei",
+      "text": "人搬走了。",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--meidoor--q03--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "meiDoor"
+        }
+      ],
+      "start": 63
+    },
+    {
+      "id": "circuit-thirteen-households--meidoor--q04--01",
+      "productionId": "circuit-thirteen-households--meidoor--q04--01",
+      "character": "mei",
+      "text": "上次有人说里面没人，也是这种雨。",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--meidoor--q04--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "meiDoor"
+        }
+      ],
+      "start": 95
+    },
+    {
+      "id": "circuit-thirteen-households--perimeter--q01--01",
+      "productionId": "circuit-thirteen-households--perimeter--q01--01",
+      "character": "ji",
+      "text": "这根呢？",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--perimeter--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "perimeter"
+        }
+      ],
+      "start": 66
+    },
+    {
+      "id": "circuit-thirteen-households--perimeter--q02--01",
+      "productionId": "circuit-thirteen-households--perimeter--q02--01",
+      "character": "zhou",
+      "text": "单列。",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--perimeter--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "perimeter"
+        }
+      ],
+      "start": 90
+    },
+    {
+      "id": "circuit-thirteen-households--isolatesupply--q01--01",
+      "productionId": "circuit-thirteen-households--isolatesupply--q01--01",
+      "character": "ji",
+      "text": "巷子都停了，这根也不算在里面？",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--isolatesupply--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "isolateSupply"
+        }
+      ],
+      "start": 61
+    },
+    {
+      "id": "circuit-thirteen-households--isolatesupply--q02--01",
+      "productionId": "circuit-thirteen-households--isolatesupply--q02--01",
+      "character": "cheng",
+      "text": "来路没找到，还是按可能带电看。",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--isolatesupply--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "isolateSupply"
+        }
+      ],
+      "start": 79
+    },
+    {
+      "id": "circuit-thirteen-households--inspectcurrent--q01--01",
+      "productionId": "circuit-thirteen-households--inspectcurrent--q01--01",
+      "character": "cheng",
+      "text": "先写有电流。",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--inspectcurrent--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "inspectCurrent"
+        }
+      ],
+      "start": 71
+    },
+    {
+      "id": "circuit-thirteen-households--currentlimit--q01--01",
+      "productionId": "circuit-thirteen-households--currentlimit--q01--01",
+      "character": "ji",
+      "text": "这表只看大小，方向还得另测。",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--currentlimit--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "currentLimit"
+        }
+      ],
+      "start": 1
+    },
+    {
+      "id": "circuit-thirteen-households--currentlimit--q03--01",
+      "productionId": "circuit-thirteen-households--currentlimit--q03--01",
+      "character": "ji",
+      "text": "它从哪儿来？",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--currentlimit--q03--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "currentLimit"
+        }
+      ],
+      "start": 78
+    },
+    {
+      "id": "circuit-thirteen-households--currentcontact--q01--01",
+      "productionId": "circuit-thirteen-households--currentcontact--q01--01",
+      "character": "lin",
+      "text": "现场照片给我，测量条件也带上。",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--currentcontact--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "currentContact"
+        }
+      ],
+      "start": 17
+    },
+    {
+      "id": "circuit-thirteen-households--currentcontact--q02--01",
+      "productionId": "circuit-thirteen-households--currentcontact--q02--01",
+      "character": "lin",
+      "text": "系统没看见，不能当它没有。",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--currentcontact--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "currentContact"
+        }
+      ],
+      "start": 37
+    },
+    {
+      "id": "circuit-thirteen-households--inspectledger--q01--01",
+      "productionId": "circuit-thirteen-households--inspectledger--q01--01",
+      "character": "ji",
+      "text": "它连块表都没有，挺积极。",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--inspectledger--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "inspectLedger"
+        }
+      ],
+      "start": 78
+    },
+    {
+      "id": "circuit-thirteen-households--ledgeraddress--q02--01",
+      "productionId": "circuit-thirteen-households--ledgeraddress--q02--01",
+      "character": "ji",
+      "text": "擦了，没擦干净。",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--ledgeraddress--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "ledgerAddress"
+        }
+      ],
+      "start": 76
+    },
+    {
+      "id": "circuit-thirteen-households--ledgerpattern--q01--01",
+      "productionId": "circuit-thirteen-households--ledgerpattern--q01--01",
+      "character": "ji",
+      "text": "每个月都挑这时候上线？",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--ledgerpattern--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "ledgerPattern"
+        }
+      ],
+      "start": 49
+    },
+    {
+      "id": "circuit-thirteen-households--ledgerpattern--q02--01",
+      "productionId": "circuit-thirteen-households--ledgerpattern--q02--01",
+      "character": "cheng",
+      "text": "先留原时标。",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--ledgerpattern--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "ledgerPattern"
+        }
+      ],
+      "start": 63
+    },
+    {
+      "id": "circuit-thirteen-households--ledgercontact--q01--01",
+      "productionId": "circuit-thirteen-households--ledgercontact--q01--01",
+      "character": "lin",
+      "text": "H13，原附页我请档案那边调。",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--ledgercontact--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "ledgerContact"
+        }
+      ],
+      "start": 29
+    },
+    {
+      "id": "circuit-thirteen-households--ashseal--q01--01",
+      "productionId": "circuit-thirteen-households--ashseal--q01--01",
+      "character": "ji",
+      "text": "有人从外面塞的。",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--ashseal--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "ashSeal"
+        }
+      ],
+      "start": 44
+    },
+    {
+      "id": "circuit-thirteen-households--ashseal--q02--01",
+      "productionId": "circuit-thirteen-households--ashseal--q02--01",
+      "character": "cheng",
+      "text": "看位置是这样。",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--ashseal--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "ashSeal"
+        }
+      ],
+      "start": 59
+    },
+    {
+      "id": "circuit-thirteen-households--ashmeaning--q01--01",
+      "productionId": "circuit-thirteen-households--ashmeaning--q01--01",
+      "character": "cheng",
+      "text": "没碰。",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--ashmeaning--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "ashMeaning"
+        }
+      ],
+      "start": 20
+    },
+    {
+      "id": "circuit-thirteen-households--ashmeaning--q02--01",
+      "productionId": "circuit-thirteen-households--ashmeaning--q02--01",
+      "character": "mei",
+      "text": "我们家给没回来的人烧纸，写到这个字就停笔。",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--ashmeaning--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "ashMeaning"
+        }
+      ],
+      "start": 34
+    },
+    {
+      "id": "h13-mei",
+      "productionId": "circuit-thirteen-households--ashmeaning--q02--02",
+      "character": "mei",
+      "text": "门留着，别替他把路画死。",
+      "src": "/audio/voice/h13-mei.mp3",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "ashMeaning"
+        }
+      ],
+      "start": 55
+    },
+    {
+      "id": "circuit-thirteen-households--ashmeaning--q03--01",
+      "productionId": "circuit-thirteen-households--ashmeaning--q03--01",
+      "character": "ji",
+      "text": "这里也这样？",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--ashmeaning--q03--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "ashMeaning"
+        }
+      ],
+      "start": 90
+    },
+    {
+      "id": "circuit-thirteen-households--residenttalk--q01--01",
+      "productionId": "circuit-thirteen-households--residenttalk--q01--01",
+      "character": "mei",
+      "text": "你们今天写不写旧门牌？",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--residenttalk--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "residentTalk"
+        }
+      ],
+      "start": 34
+    },
+    {
+      "id": "circuit-thirteen-households--residenttalk--q02--01",
+      "productionId": "circuit-thirteen-households--residenttalk--q02--01",
+      "character": "cheng",
+      "text": "可以附上，要核原件。",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--residenttalk--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "residentTalk"
+        }
+      ],
+      "start": 48
+    },
+    {
+      "id": "circuit-thirteen-households--residenttalk--q03--01",
+      "productionId": "circuit-thirteen-households--residenttalk--q03--01",
+      "character": "mei",
+      "text": "那就写十三号。",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--residenttalk--q03--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "residentTalk"
+        }
+      ],
+      "start": 61
+    },
+    {
+      "id": "circuit-thirteen-households--residenttalk--q04--01",
+      "productionId": "circuit-thirteen-households--residenttalk--q04--01",
+      "character": "mei",
+      "text": "上次写空置，后来就没人来问了。",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--residenttalk--q04--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "residentTalk"
+        }
+      ],
+      "start": 81
+    },
+    {
+      "id": "circuit-thirteen-households--residentmemory--q01--01",
+      "productionId": "circuit-thirteen-households--residentmemory--q01--01",
+      "character": "mei",
+      "text": "我看着他第二次进去。",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--residentmemory--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "residentMemory"
+        }
+      ],
+      "start": 57
+    },
+    {
+      "id": "circuit-thirteen-households--residentmemory--q02--01",
+      "productionId": "circuit-thirteen-households--residentmemory--q02--01",
+      "character": "mei",
+      "text": "出来没有，我没看见。",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--residentmemory--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "residentMemory"
+        }
+      ],
+      "start": 73
+    },
+    {
+      "id": "circuit-thirteen-households--residentdebt--q01--01",
+      "productionId": "circuit-thirteen-households--residentdebt--q01--01",
+      "character": "mei",
+      "text": "表这样写，救人的时候他进的是哪家？",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--residentdebt--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "residentDebt"
+        }
+      ],
+      "start": 45
+    },
+    {
+      "id": "circuit-thirteen-households--residentdebt--q02--01",
+      "productionId": "circuit-thirteen-households--residentdebt--q02--01",
+      "character": "mei",
+      "text": "陈家外孙都长大了，不信可以去问。别光问这张表。",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--residentdebt--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "residentDebt"
+        }
+      ],
+      "start": 85
+    },
+    {
+      "id": "circuit-thirteen-households--residentboundary--q01--01",
+      "productionId": "circuit-thirteen-households--residentboundary--q01--01",
+      "character": "cheng",
+      "text": "他们搬去了城东？",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--residentboundary--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "residentBoundary"
+        }
+      ],
+      "start": 65
+    },
+    {
+      "id": "circuit-thirteen-households--residentboundary--q02--01",
+      "productionId": "circuit-thirteen-households--residentboundary--q02--01",
+      "character": "mei",
+      "text": "对。门牌新换了，姓没换。",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--residentboundary--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "residentBoundary"
+        }
+      ],
+      "start": 76
+    },
+    {
+      "id": "circuit-thirteen-households--residentrecord--q02--01",
+      "productionId": "circuit-thirteen-households--residentrecord--q02--01",
+      "character": "mei",
+      "text": "这笔不是我的，守成写的。",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--residentrecord--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "residentRecord"
+        }
+      ],
+      "start": 77
+    },
+    {
+      "id": "circuit-thirteen-households--archivedticket--q01--01",
+      "productionId": "circuit-thirteen-households--archivedticket--q01--01",
+      "character": "zhou",
+      "text": "没进档。",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--archivedticket--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "archivedTicket"
+        }
+      ],
+      "start": 32
+    },
+    {
+      "id": "circuit-thirteen-households--archivedticket--q02--01",
+      "productionId": "circuit-thirteen-households--archivedticket--q02--01",
+      "character": "cheng",
+      "text": "你一直带着？",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--archivedticket--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "archivedTicket"
+        }
+      ],
+      "start": 39
+    },
+    {
+      "id": "circuit-thirteen-households--archivedticket--q03--01",
+      "productionId": "circuit-thirteen-households--archivedticket--q03--01",
+      "character": "zhou",
+      "text": "换雨衣也带着。",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--archivedticket--q03--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "archivedTicket"
+        }
+      ],
+      "start": 48
+    },
+    {
+      "id": "circuit-thirteen-households--ticketgap--q01--01",
+      "productionId": "circuit-thirteen-households--ticketgap--q01--01",
+      "character": "ji",
+      "text": "这儿原来还夹过一张？",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--ticketgap--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "ticketGap"
+        }
+      ],
+      "start": 76
+    },
+    {
+      "id": "circuit-thirteen-households--ticketsignature--q01--01",
+      "productionId": "circuit-thirteen-households--ticketsignature--q01--01",
+      "character": "zhou",
+      "text": "我去疏散了。",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--ticketsignature--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "ticketSignature"
+        }
+      ],
+      "start": 17
+    },
+    {
+      "id": "h13-ticket",
+      "productionId": "circuit-thirteen-households--ticketsignature--q02--01",
+      "character": "zhou",
+      "text": "没安排替代，也没让他停下来。后来有人催关单，我就写完成。没核完。",
+      "src": "/audio/voice/h13-ticket.mp3",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "ticketSignature"
+        }
+      ],
+      "start": 29
+    },
+    {
+      "id": "circuit-thirteen-households--ticketsignature--q03--01",
+      "productionId": "circuit-thirteen-households--ticketsignature--q03--01",
+      "character": "ji",
+      "text": "这几件都要写？",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--ticketsignature--q03--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "ticketSignature"
+        }
+      ],
+      "start": 74
+    },
+    {
+      "id": "circuit-thirteen-households--ticketsignature--q04--01",
+      "productionId": "circuit-thirteen-households--ticketsignature--q04--01",
+      "character": "cheng",
+      "text": "都写。",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--ticketsignature--q04--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "ticketSignature"
+        }
+      ],
+      "start": 84
+    },
+    {
+      "id": "circuit-thirteen-households--ticketroute--q01--01",
+      "productionId": "circuit-thirteen-households--ticketroute--q01--01",
+      "character": "ji",
+      "text": "这不是没画完，是另一页不在。",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--ticketroute--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "ticketRoute"
+        }
+      ],
+      "start": 47
+    },
+    {
+      "id": "circuit-thirteen-households--ticketrecord--q01--01",
+      "productionId": "circuit-thirteen-households--ticketrecord--q01--01",
+      "character": "zhou",
+      "text": "外面那根线呢？",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--ticketrecord--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "ticketRecord"
+        }
+      ],
+      "start": 79
+    },
+    {
+      "id": "circuit-thirteen-households--ticketrecord--q02--01",
+      "productionId": "circuit-thirteen-households--ticketrecord--q02--01",
+      "character": "cheng",
+      "text": "继续隔离。",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--ticketrecord--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "ticketRecord"
+        }
+      ],
+      "start": 92
+    },
+    {
+      "id": "circuit-thirteen-households--lampcheck--q01--01",
+      "productionId": "circuit-thirteen-households--lampcheck--q01--01",
+      "character": "cheng",
+      "text": "再找一项能对上的。",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--lampcheck--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "lampCheck"
+        }
+      ],
+      "start": 79
+    },
+    {
+      "id": "circuit-thirteen-households--houseapproach--q01--01",
+      "productionId": "circuit-thirteen-households--houseapproach--q01--01",
+      "character": "zhou",
+      "text": "里面没核清，别进去。",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--houseapproach--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "houseApproach"
+        }
+      ],
+      "start": 45
+    },
+    {
+      "id": "circuit-thirteen-households--houseknock--q02--01",
+      "productionId": "circuit-thirteen-households--houseknock--q02--01",
+      "character": "ji",
+      "text": "我们一点二十一就报了。",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--houseknock--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "houseKnock"
+        }
+      ],
+      "start": 72
+    },
+    {
+      "id": "circuit-thirteen-households--meiaccount--q01--01",
+      "productionId": "circuit-thirteen-households--meiaccount--q01--01",
+      "character": "mei",
+      "text": "我以为说的是签字这天。",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--meiaccount--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "meiAccount"
+        }
+      ],
+      "start": 77
+    },
+    {
+      "id": "circuit-thirteen-households--meiaccount--q02--01",
+      "productionId": "circuit-thirteen-households--meiaccount--q02--01",
+      "character": "mei",
+      "text": "后来他们说，出事那晚这里就没人。",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--meiaccount--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "meiAccount"
+        }
+      ],
+      "start": 97
+    },
+    {
+      "id": "circuit-thirteen-households--zhouadmission--q01--01",
+      "productionId": "circuit-thirteen-households--zhouadmission--q01--01",
+      "character": "zhou",
+      "text": "我知道不对。",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--zhouadmission--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "zhouAdmission"
+        }
+      ],
+      "start": 11
+    },
+    {
+      "id": "circuit-thirteen-households--zhouadmission--q02--01",
+      "productionId": "circuit-thirteen-households--zhouadmission--q02--01",
+      "character": "zhou",
+      "text": "报告结了，怕再翻出来。",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--zhouadmission--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "zhouAdmission"
+        }
+      ],
+      "start": 34
+    },
+    {
+      "id": "circuit-thirteen-households--deduction--q01--01",
+      "productionId": "circuit-thirteen-households--deduction--q01--01",
+      "character": "ji",
+      "text": "有联系，还缺来源。",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--deduction--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "deduction"
+        }
+      ],
+      "start": 34
+    },
+    {
+      "id": "circuit-thirteen-households--deduction--q02--01",
+      "productionId": "circuit-thirteen-households--deduction--q02--01",
+      "character": "cheng",
+      "text": "别急着替它起名字。",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--deduction--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "deduction"
+        }
+      ],
+      "start": 97
+    },
+    {
+      "id": "circuit-thirteen-households--deduction--q03--01",
+      "productionId": "circuit-thirteen-households--deduction--q03--01",
+      "character": "cheng",
+      "text": "先追。",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--deduction--q03--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "deduction"
+        }
+      ],
+      "start": 111
+    },
+    {
+      "id": "circuit-thirteen-households--wrong--q01--01",
+      "productionId": "circuit-thirteen-households--wrong--q01--01",
+      "character": "ji",
+      "text": "师傅，你看下面。",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--wrong--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "wrong"
+        }
+      ],
+      "start": 77
+    },
+    {
+      "id": "circuit-thirteen-households--wrongecho--q01--01",
+      "productionId": "circuit-thirteen-households--wrongecho--q01--01",
+      "character": "unknown-radio",
+      "text": "到",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--wrongecho--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "wrongEcho"
+        }
+      ],
+      "start": 74
+    },
+    {
+      "id": "circuit-thirteen-households--bypassalarm--q01--01",
+      "productionId": "circuit-thirteen-households--bypassalarm--q01--01",
+      "character": "zhou",
+      "text": "不能靠试送找电源。",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--bypassalarm--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "bypassAlarm"
+        }
+      ],
+      "start": 11
+    },
+    {
+      "id": "circuit-thirteen-households--hiddenbranch--q01--01",
+      "productionId": "circuit-thirteen-households--hiddenbranch--q01--01",
+      "character": "ji",
+      "text": "贴在板上，没接到线。",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--hiddenbranch--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "hiddenBranch"
+        }
+      ],
+      "start": 68
+    },
+    {
+      "id": "circuit-thirteen-households--noticenames--q02--01",
+      "productionId": "circuit-thirteen-households--noticenames--q02--01",
+      "character": "ji",
+      "text": "人出来了，签名也在。",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--noticenames--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "noticeNames"
+        }
+      ],
+      "start": 69
+    },
+    {
+      "id": "circuit-thirteen-households--noticenames--q03--01",
+      "productionId": "circuit-thirteen-households--noticenames--q03--01",
+      "character": "ji",
+      "text": "那张表为什么非得让屋子先空？",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--noticenames--q03--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "noticeNames"
+        }
+      ],
+      "start": 85
+    },
+    {
+      "id": "circuit-thirteen-households--noticedebt--q01--01",
+      "productionId": "circuit-thirteen-households--noticedebt--q01--01",
+      "character": "mei",
+      "text": "这张是我们放的。",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--noticedebt--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "noticeDebt"
+        }
+      ],
+      "start": 1
+    },
+    {
+      "id": "circuit-thirteen-households--noticedebt--q02--01",
+      "productionId": "circuit-thirteen-households--noticedebt--q02--01",
+      "character": "mei",
+      "text": "袋子也是。怕雨。",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--noticedebt--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "noticeDebt"
+        }
+      ],
+      "start": 15
+    },
+    {
+      "id": "circuit-thirteen-households--noticedebt--q03--01",
+      "productionId": "circuit-thirteen-households--noticedebt--q03--01",
+      "character": "mei",
+      "text": "我写不了这么小。烧纸留半个字是我母亲的讲究，这张纸我没落过笔。",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--noticedebt--q03--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "noticeDebt"
+        }
+      ],
+      "start": 41
+    },
+    {
+      "id": "circuit-thirteen-households--noticedebt--q04--01",
+      "productionId": "circuit-thirteen-households--noticedebt--q04--01",
+      "character": "mei",
+      "text": "守成以前写票，最后一笔总是拖到格子外面。",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--noticedebt--q04--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "noticeDebt"
+        }
+      ],
+      "start": 87
+    },
+    {
+      "id": "circuit-thirteen-households--lincompare--q01--01",
+      "productionId": "circuit-thirteen-households--lincompare--q01--01",
+      "character": "ji",
+      "text": "是三处改动，不是一页掉了。",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--lincompare--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "linCompare"
+        }
+      ],
+      "start": 50
+    },
+    {
+      "id": "circuit-thirteen-households--recordcrosscheck--q01--01",
+      "productionId": "circuit-thirteen-households--recordcrosscheck--q01--01",
+      "character": "cheng",
+      "text": "原样交。",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--recordcrosscheck--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "recordCrosscheck"
+        }
+      ],
+      "start": 75
+    },
+    {
+      "id": "circuit-thirteen-households--epiloguecall--q01--01",
+      "productionId": "circuit-thirteen-households--epiloguecall--q01--01",
+      "character": "lin",
+      "text": "历史检索还在，明天查原卷。",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--epiloguecall--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "epilogueCall"
+        }
+      ],
+      "start": 33
+    },
+    {
+      "id": "circuit-thirteen-households--end--q01--01",
+      "productionId": "circuit-thirteen-households--end--q01--01",
+      "character": "ji",
+      "text": "这行谁写的？",
+      "src": "/audio/voice/full-20261021/circuit-thirteen-households--end--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "thirteen-households",
+          "node": "end"
+        }
+      ],
+      "start": 47
+    },
+    {
+      "id": "q07-dispatch",
+      "productionId": "circuit-seventh-night--dispatch--q01--01",
+      "character": "lin",
+      "text": "清河里七号院，报了九夜。",
+      "src": "/audio/voice/q07-dispatch.mp3",
+      "bindings": [
+        {
+          "chapter": "seventh-night",
+          "node": "dispatch"
+        }
+      ],
+      "start": 19
+    },
+    {
+      "id": "circuit-seventh-night--dispatch--q01--02",
+      "productionId": "circuit-seventh-night--dispatch--q01--02",
+      "character": "lin",
+      "text": "前七夜零点四十七，昨晚早一分钟，今晚预计还早。",
+      "src": "/audio/voice/full-20261021/circuit-seventh-night--dispatch--q01--02.ogg",
+      "bindings": [
+        {
+          "chapter": "seventh-night",
+          "node": "dispatch"
+        }
+      ],
+      "start": 31
+    },
+    {
+      "id": "circuit-seventh-night--dispatch--q02--01",
+      "productionId": "circuit-seventh-night--dispatch--q02--01",
+      "character": "lin",
+      "text": "我没写。",
+      "src": "/audio/voice/full-20261021/circuit-seventh-night--dispatch--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "seventh-night",
+          "node": "dispatch"
+        }
+      ],
+      "start": 75
+    },
+    {
+      "id": "circuit-seventh-night--handover--q01--01",
+      "productionId": "circuit-seventh-night--handover--q01--01",
+      "character": "ji",
+      "text": "住户说停电，系统也说停电，就这么往下抄了九次？",
+      "src": "/audio/voice/full-20261021/circuit-seventh-night--handover--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "seventh-night",
+          "node": "handover"
+        }
+      ],
+      "start": 44
+    },
+    {
+      "id": "circuit-seventh-night--handover--q02--01",
+      "productionId": "circuit-seventh-night--handover--q02--01",
+      "character": "cheng",
+      "text": "今晚自己看。",
+      "src": "/audio/voice/full-20261021/circuit-seventh-night--handover--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "seventh-night",
+          "node": "handover"
+        }
+      ],
+      "start": 70
+    },
+    {
+      "id": "circuit-seventh-night--depart--q01--01",
+      "productionId": "circuit-seventh-night--depart--q01--01",
+      "character": "shen",
+      "text": "今天不跳的话，你们还查吗？",
+      "src": "/audio/voice/full-20261021/circuit-seventh-night--depart--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "seventh-night",
+          "node": "depart"
+        }
+      ],
+      "start": 18
+    },
+    {
+      "id": "circuit-seventh-night--depart--q02--01",
+      "productionId": "circuit-seventh-night--depart--q02--01",
+      "character": "cheng",
+      "text": "查。先看我们这边的进线，屋里联系电工。",
+      "src": "/audio/voice/full-20261021/circuit-seventh-night--depart--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "seventh-night",
+          "node": "depart"
+        }
+      ],
+      "start": 34
+    },
+    {
+      "id": "circuit-seventh-night--lane--q01--01",
+      "productionId": "circuit-seventh-night--lane--q01--01",
+      "character": "shen",
+      "text": "亲戚说头七让他认门，就这么摆。都过了两天了。",
+      "src": "/audio/voice/full-20261021/circuit-seventh-night--lane--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "seventh-night",
+          "node": "lane"
+        }
+      ],
+      "start": 62
+    },
+    {
+      "id": "q07-shen",
+      "productionId": "circuit-seventh-night--welcome--q01--01",
+      "character": "shen",
+      "text": "那年我爸回家了，后来还开了好多年车。",
+      "src": "/audio/voice/q07-shen.mp3",
+      "bindings": [
+        {
+          "chapter": "seventh-night",
+          "node": "welcome"
+        }
+      ],
+      "start": 77
+    },
+    {
+      "id": "circuit-seventh-night--welcome--q02--01",
+      "productionId": "circuit-seventh-night--welcome--q02--01",
+      "character": "shen",
+      "text": "这回没回来的是谁？",
+      "src": "/audio/voice/full-20261021/circuit-seventh-night--welcome--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "seventh-night",
+          "node": "welcome"
+        }
+      ],
+      "start": 108
+    },
+    {
+      "id": "circuit-seventh-night--logbook--q01--01",
+      "productionId": "circuit-seventh-night--logbook--q01--01",
+      "character": "shen",
+      "text": "灯一直亮着。",
+      "src": "/audio/voice/full-20261021/circuit-seventh-night--logbook--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "seventh-night",
+          "node": "logbook"
+        }
+      ],
+      "start": 87
+    },
+    {
+      "id": "circuit-seventh-night--logaudit--q01--01",
+      "productionId": "circuit-seventh-night--logaudit--q01--01",
+      "character": "ji",
+      "text": "它只是按时通知你。",
+      "src": "/audio/voice/full-20261021/circuit-seventh-night--logaudit--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "seventh-night",
+          "node": "logAudit"
+        }
+      ],
+      "start": 71
+    },
+    {
+      "id": "circuit-seventh-night--recordtime--q01--01",
+      "productionId": "circuit-seventh-night--recordtime--q01--01",
+      "character": "shen",
+      "text": "所以昨晚没人把灯关掉。",
+      "src": "/audio/voice/full-20261021/circuit-seventh-night--recordtime--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "seventh-night",
+          "node": "recordTime"
+        }
+      ],
+      "start": 36
+    },
+    {
+      "id": "circuit-seventh-night--recordtime--q02--01",
+      "productionId": "circuit-seventh-night--recordtime--q02--01",
+      "character": "cheng",
+      "text": "能确定昨晚灯没灭。",
+      "src": "/audio/voice/full-20261021/circuit-seventh-night--recordtime--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "seventh-night",
+          "node": "recordTime"
+        }
+      ],
+      "start": 50
+    },
+    {
+      "id": "circuit-seventh-night--breaker--q01--01",
+      "productionId": "circuit-seventh-night--breaker--q01--01",
+      "character": "ji",
+      "text": "前七夜都用了？",
+      "src": "/audio/voice/full-20261021/circuit-seventh-night--breaker--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "seventh-night",
+          "node": "breaker"
+        }
+      ],
+      "start": 78
+    },
+    {
+      "id": "circuit-seventh-night--breaker--q02--01",
+      "productionId": "circuit-seventh-night--breaker--q02--01",
+      "character": "shen",
+      "text": "用了。昨天拔了。",
+      "src": "/audio/voice/full-20261021/circuit-seventh-night--breaker--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "seventh-night",
+          "node": "breaker"
+        }
+      ],
+      "start": 88
+    },
+    {
+      "id": "circuit-seventh-night--breaker--q03--01",
+      "productionId": "circuit-seventh-night--breaker--q03--01",
+      "character": "shen",
+      "text": "我还把插头收进抽屉，怕母亲再插。",
+      "src": "/audio/voice/full-20261021/circuit-seventh-night--breaker--q03--01.ogg",
+      "bindings": [
+        {
+          "chapter": "seventh-night",
+          "node": "breaker"
+        }
+      ],
+      "start": 102
+    },
+    {
+      "id": "circuit-seventh-night--testplan--q01--01",
+      "productionId": "circuit-seventh-night--testplan--q01--01",
+      "character": "shen",
+      "text": "这个留不住饭了？",
+      "src": "/audio/voice/full-20261021/circuit-seventh-night--testplan--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "seventh-night",
+          "node": "testPlan"
+        }
+      ],
+      "start": 84
+    },
+    {
+      "id": "circuit-seventh-night--testplan--q02--01",
+      "productionId": "circuit-seventh-night--testplan--q02--01",
+      "character": "cheng",
+      "text": "先别用了。",
+      "src": "/audio/voice/full-20261021/circuit-seventh-night--testplan--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "seventh-night",
+          "node": "testPlan"
+        }
+      ],
+      "start": 95
+    },
+    {
+      "id": "circuit-seventh-night--testresult--q01--01",
+      "productionId": "circuit-seventh-night--testresult--q01--01",
+      "character": "ji",
+      "text": "坏了一个东西，不用它也会来的消息，得另找。",
+      "src": "/audio/voice/full-20261021/circuit-seventh-night--testresult--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "seventh-night",
+          "node": "testResult"
+        }
+      ],
+      "start": 87
+    },
+    {
+      "id": "circuit-seventh-night--offering--q01--01",
+      "productionId": "circuit-seventh-night--offering--q01--01",
+      "character": "shen",
+      "text": "说看见印子就知道他认过门。",
+      "src": "/audio/voice/full-20261021/circuit-seventh-night--offering--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "seventh-night",
+          "node": "offering"
+        }
+      ],
+      "start": 74
+    },
+    {
+      "id": "circuit-seventh-night--offering--q02--01",
+      "productionId": "circuit-seventh-night--offering--q02--01",
+      "character": "ji",
+      "text": "看见了吗？",
+      "src": "/audio/voice/full-20261021/circuit-seventh-night--offering--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "seventh-night",
+          "node": "offering"
+        }
+      ],
+      "start": 90
+    },
+    {
+      "id": "circuit-seventh-night--offering--q03--01",
+      "productionId": "circuit-seventh-night--offering--q03--01",
+      "character": "shen",
+      "text": "你们自己看吧。",
+      "src": "/audio/voice/full-20261021/circuit-seventh-night--offering--q03--01.ogg",
+      "bindings": [
+        {
+          "chapter": "seventh-night",
+          "node": "offering"
+        }
+      ],
+      "start": 108
+    },
+    {
+      "id": "circuit-seventh-night--sevenmeals--q02--01",
+      "productionId": "circuit-seventh-night--sevenmeals--q02--01",
+      "character": "shen",
+      "text": "我爸每次数人都说差一个。",
+      "src": "/audio/voice/full-20261021/circuit-seventh-night--sevenmeals--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "seventh-night",
+          "node": "sevenMeals"
+        }
+      ],
+      "start": 85
+    },
+    {
+      "id": "circuit-seventh-night--recordwake--q01--01",
+      "productionId": "circuit-seventh-night--recordwake--q01--01",
+      "character": "shen",
+      "text": "这样能查？",
+      "src": "/audio/voice/full-20261021/circuit-seventh-night--recordwake--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "seventh-night",
+          "node": "recordWake"
+        }
+      ],
+      "start": 50
+    },
+    {
+      "id": "circuit-seventh-night--recordwake--q02--01",
+      "productionId": "circuit-seventh-night--recordwake--q02--01",
+      "character": "cheng",
+      "text": "先把发生过的留齐。",
+      "src": "/audio/voice/full-20261021/circuit-seventh-night--recordwake--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "seventh-night",
+          "node": "recordWake"
+        }
+      ],
+      "start": 58
+    },
+    {
+      "id": "circuit-seventh-night--recordwake--q03--01",
+      "productionId": "circuit-seventh-night--recordwake--q03--01",
+      "character": "shen",
+      "text": "那这张也看看。我爸一直说不能扔，不是今年的。",
+      "src": "/audio/voice/full-20261021/circuit-seventh-night--recordwake--q03--01.ogg",
+      "bindings": [
+        {
+          "chapter": "seventh-night",
+          "node": "recordWake"
+        }
+      ],
+      "start": 89
+    },
+    {
+      "id": "circuit-seventh-night--compare--q01--01",
+      "productionId": "circuit-seventh-night--compare--q01--01",
+      "character": "ji",
+      "text": "灯不灭，也得记，对吧？",
+      "src": "/audio/voice/full-20261021/circuit-seventh-night--compare--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "seventh-night",
+          "node": "compare"
+        }
+      ],
+      "start": 65
+    },
+    {
+      "id": "circuit-seventh-night--compare--q02--01",
+      "productionId": "circuit-seventh-night--compare--q02--01",
+      "character": "ji",
+      "text": "要是通知准时来，灯也不灭，那它喊的就不是停电。",
+      "src": "/audio/voice/full-20261021/circuit-seventh-night--compare--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "seventh-night",
+          "node": "compare"
+        }
+      ],
+      "start": 90
+    },
+    {
+      "id": "circuit-seventh-night--timertheory--q01--01",
+      "productionId": "circuit-seventh-night--timertheory--q01--01",
+      "character": "lin",
+      "text": "等待人员未到。",
+      "src": "/audio/voice/full-20261021/circuit-seventh-night--timertheory--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "seventh-night",
+          "node": "timerTheory"
+        }
+      ],
+      "start": 47
+    },
+    {
+      "id": "circuit-seventh-night--timertheory--q02--01",
+      "productionId": "circuit-seventh-night--timertheory--q02--01",
+      "character": "ji",
+      "text": "今晚灯灭没灭？",
+      "src": "/audio/voice/full-20261021/circuit-seventh-night--timertheory--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "seventh-night",
+          "node": "timerTheory"
+        }
+      ],
+      "start": 76
+    },
+    {
+      "id": "circuit-seventh-night--interval--q01--01",
+      "productionId": "circuit-seventh-night--interval--q01--01",
+      "character": "ji",
+      "text": "反正我也睡不着，算陪监测了。",
+      "src": "/audio/voice/full-20261021/circuit-seventh-night--interval--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "seventh-night",
+          "node": "interval"
+        }
+      ],
+      "start": 74
+    },
+    {
+      "id": "circuit-seventh-night--recorder--q01--01",
+      "productionId": "circuit-seventh-night--recorder--q01--01",
+      "character": "shen",
+      "text": "刚才听见你们叫这个编号。我爸以前也叫过。",
+      "src": "/audio/voice/full-20261021/circuit-seventh-night--recorder--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "seventh-night",
+          "node": "recorder"
+        }
+      ],
+      "start": 91
+    },
+    {
+      "id": "circuit-seventh-night--waiting--q01--01",
+      "productionId": "circuit-seventh-night--waiting--q01--01",
+      "character": "ji",
+      "text": "那地方还有机器吗？",
+      "src": "/audio/voice/full-20261021/circuit-seventh-night--waiting--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "seventh-night",
+          "node": "waiting"
+        }
+      ],
+      "start": 81
+    },
+    {
+      "id": "circuit-seventh-night--earlytrip--q02--01",
+      "productionId": "circuit-seventh-night--earlytrip--q02--01",
+      "character": "shen",
+      "text": "我爸不是这么说的。他先数人，再说能不能走。",
+      "src": "/audio/voice/full-20261021/circuit-seventh-night--earlytrip--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "seventh-night",
+          "node": "earlyTrip"
+        }
+      ],
+      "start": 70
+    },
+    {
+      "id": "circuit-seventh-night--receipt--q02--01",
+      "productionId": "circuit-seventh-night--receipt--q02--01",
+      "character": "shen",
+      "text": "我爸当年回了家。",
+      "src": "/audio/voice/full-20261021/circuit-seventh-night--receipt--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "seventh-night",
+          "node": "receipt"
+        }
+      ],
+      "start": 54
+    },
+    {
+      "id": "circuit-seventh-night--receipt--q03--01",
+      "productionId": "circuit-seventh-night--receipt--q03--01",
+      "character": "shen",
+      "text": "这格怎么空着？",
+      "src": "/audio/voice/full-20261021/circuit-seventh-night--receipt--q03--01.ogg",
+      "bindings": [
+        {
+          "chapter": "seventh-night",
+          "node": "receipt"
+        }
+      ],
+      "start": 68
+    },
+    {
+      "id": "circuit-seventh-night--archiverequest--q01--01",
+      "productionId": "circuit-seventh-night--archiverequest--q01--01",
+      "character": "cheng",
+      "text": "电话里叫的是他？",
+      "src": "/audio/voice/full-20261021/circuit-seventh-night--archiverequest--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "seventh-night",
+          "node": "archiveRequest"
+        }
+      ],
+      "start": 55
+    },
+    {
+      "id": "circuit-seventh-night--archiverequest--q02--01",
+      "productionId": "circuit-seventh-night--archiverequest--q02--01",
+      "character": "zhou",
+      "text": "我听到的，叫守成。",
+      "src": "/audio/voice/full-20261021/circuit-seventh-night--archiverequest--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "seventh-night",
+          "node": "archiveRequest"
+        }
+      ],
+      "start": 66
+    },
+    {
+      "id": "circuit-seventh-night--archivereply--q02--01",
+      "productionId": "circuit-seventh-night--archivereply--q02--01",
+      "character": "ji",
+      "text": "结束的只是车。",
+      "src": "/audio/voice/full-20261021/circuit-seventh-night--archivereply--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "seventh-night",
+          "node": "archiveReply"
+        }
+      ],
+      "start": 112
+    },
+    {
+      "id": "q07-ji",
+      "productionId": "circuit-seventh-night--recordreceipt--q01--01",
+      "character": "ji",
+      "text": "沈师傅回家，许师傅没上车。这两行分开。",
+      "src": "/audio/voice/q07-ji.mp3",
+      "bindings": [
+        {
+          "chapter": "seventh-night",
+          "node": "recordReceipt"
+        }
+      ],
+      "start": 24
+    },
+    {
+      "id": "circuit-seventh-night--recordreceipt--q02--01",
+      "productionId": "circuit-seventh-night--recordreceipt--q02--01",
+      "character": "shen",
+      "text": "我爸说，起点点一遍，终点再点一遍。这次没点齐。",
+      "src": "/audio/voice/full-20261021/circuit-seventh-night--recordreceipt--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "seventh-night",
+          "node": "recordReceipt"
+        }
+      ],
+      "start": 57
+    },
+    {
+      "id": "circuit-seventh-night--conversation--q01--01",
+      "productionId": "circuit-seventh-night--conversation--q01--01",
+      "character": "shen",
+      "text": "以前没有。",
+      "src": "/audio/voice/full-20261021/circuit-seventh-night--conversation--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "seventh-night",
+          "node": "conversation"
+        }
+      ],
+      "start": 89
+    },
+    {
+      "id": "circuit-seventh-night--fathermessage--q01--01",
+      "productionId": "circuit-seventh-night--fathermessage--q01--01",
+      "character": "shen-father",
+      "text": "接出来的都吃过了。还有一个在里面干活，别收，给他留着。",
+      "src": "/audio/voice/full-20261021/circuit-seventh-night--fathermessage--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "seventh-night",
+          "node": "fatherMessage"
+        }
+      ],
+      "start": 9
+    },
+    {
+      "id": "q07-xu",
+      "productionId": "circuit-seventh-night--fathermessage--q02--01",
+      "character": "xu",
+      "text": "车还等吗？",
+      "src": "/audio/voice/q07-xu.mp3",
+      "bindings": [
+        {
+          "chapter": "seventh-night",
+          "node": "fatherMessage"
+        }
+      ],
+      "start": 50
+    },
+    {
+      "id": "circuit-seventh-night--fathermessage--q03--01",
+      "productionId": "circuit-seventh-night--fathermessage--q03--01",
+      "character": "shen-father",
+      "text": "等。",
+      "src": "/audio/voice/full-20261021/circuit-seventh-night--fathermessage--q03--01.ogg",
+      "bindings": [
+        {
+          "chapter": "seventh-night",
+          "node": "fatherMessage"
+        }
+      ],
+      "start": 58
+    },
+    {
+      "id": "circuit-seventh-night--daughterreply--q01--01",
+      "productionId": "circuit-seventh-night--daughterreply--q01--01",
+      "character": "shen",
+      "text": "他说的原来不是我。",
+      "src": "/audio/voice/full-20261021/circuit-seventh-night--daughterreply--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "seventh-night",
+          "node": "daughterReply"
+        }
+      ],
+      "start": 1
+    },
+    {
+      "id": "circuit-seventh-night--daughterreply--q02--01",
+      "productionId": "circuit-seventh-night--daughterreply--q02--01",
+      "character": "shen",
+      "text": "我那时候嫌他天天加班，又催我吃饭。",
+      "src": "/audio/voice/full-20261021/circuit-seventh-night--daughterreply--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "seventh-night",
+          "node": "daughterReply"
+        }
+      ],
+      "start": 20
+    },
+    {
+      "id": "circuit-seventh-night--daughterreply--q03--01",
+      "productionId": "circuit-seventh-night--daughterreply--q03--01",
+      "character": "cheng",
+      "text": "可以，你同意提供哪一段，就留哪一段。",
+      "src": "/audio/voice/full-20261021/circuit-seventh-night--daughterreply--q03--01.ogg",
+      "bindings": [
+        {
+          "chapter": "seventh-night",
+          "node": "daughterReply"
+        }
+      ],
+      "start": 60
+    },
+    {
+      "id": "circuit-seventh-night--reconcile--q01--01",
+      "productionId": "circuit-seventh-night--reconcile--q01--01",
+      "character": "ji",
+      "text": "收碗后开始催，但收碗是不是原因，还不知道。",
+      "src": "/audio/voice/full-20261021/circuit-seventh-night--reconcile--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "seventh-night",
+          "node": "reconcile"
+        }
+      ],
+      "start": 68
+    },
+    {
+      "id": "circuit-seventh-night--reconcile--q02--01",
+      "productionId": "circuit-seventh-night--reconcile--q02--01",
+      "character": "cheng",
+      "text": "它像在等发车，等得越来越不耐烦。",
+      "src": "/audio/voice/full-20261021/circuit-seventh-night--reconcile--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "seventh-night",
+          "node": "reconcile"
+        }
+      ],
+      "start": 104
+    },
+    {
+      "id": "circuit-seventh-night--override--q01--01",
+      "productionId": "circuit-seventh-night--override--q01--01",
+      "character": "ji",
+      "text": "它这次没按刚才的预计走。",
+      "src": "/audio/voice/full-20261021/circuit-seventh-night--override--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "seventh-night",
+          "node": "override"
+        }
+      ],
+      "start": 92
+    },
+    {
+      "id": "circuit-seventh-night--familychoice--q01--01",
+      "productionId": "circuit-seventh-night--familychoice--q01--01",
+      "character": "shen",
+      "text": "我再问问当年开车的人。",
+      "src": "/audio/voice/full-20261021/circuit-seventh-night--familychoice--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "seventh-night",
+          "node": "familyChoice"
+        }
+      ],
+      "start": 37
+    },
+    {
+      "id": "circuit-seventh-night--familychoice--q02--01",
+      "productionId": "circuit-seventh-night--familychoice--q02--01",
+      "character": "shen",
+      "text": "看谁还记得。",
+      "src": "/audio/voice/full-20261021/circuit-seventh-night--familychoice--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "seventh-night",
+          "node": "familyChoice"
+        }
+      ],
+      "start": 53
+    },
+    {
+      "id": "circuit-seventh-night--clockoff--q01--01",
+      "productionId": "circuit-seventh-night--clockoff--q01--01",
+      "character": "shen",
+      "text": "这个以前就快，跟我爸走的时候一样。",
+      "src": "/audio/voice/full-20261021/circuit-seventh-night--clockoff--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "seventh-night",
+          "node": "clockOff"
+        }
+      ],
+      "start": 38
+    },
+    {
+      "id": "circuit-seventh-night--zerominute--q03--01",
+      "productionId": "circuit-seventh-night--zerominute--q03--01",
+      "character": "ji",
+      "text": "槐荫巷那个字也是这样。",
+      "src": "/audio/voice/full-20261021/circuit-seventh-night--zerominute--q03--01.ogg",
+      "bindings": [
+        {
+          "chapter": "seventh-night",
+          "node": "zeroMinute"
+        }
+      ],
+      "start": 82
+    },
+    {
+      "id": "circuit-seventh-night--recordclosure--q01--01",
+      "productionId": "circuit-seventh-night--recordclosure--q01--01",
+      "character": "shen",
+      "text": "许家有这张吗？",
+      "src": "/audio/voice/full-20261021/circuit-seventh-night--recordclosure--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "seventh-night",
+          "node": "recordClosure"
+        }
+      ],
+      "start": 46
+    },
+    {
+      "id": "circuit-seventh-night--linger--q01--01",
+      "productionId": "circuit-seventh-night--linger--q01--01",
+      "character": "ji",
+      "text": "饭点是不是也能提前一分钟？",
+      "src": "/audio/voice/full-20261021/circuit-seventh-night--linger--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "seventh-night",
+          "node": "linger"
+        }
+      ],
+      "start": 30
+    },
+    {
+      "id": "circuit-seventh-night--linger--q02--01",
+      "productionId": "circuit-seventh-night--linger--q02--01",
+      "character": "cheng",
+      "text": "这个现在就能。",
+      "src": "/audio/voice/full-20261021/circuit-seventh-night--linger--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "seventh-night",
+          "node": "linger"
+        }
+      ],
+      "start": 59
+    },
+    {
+      "id": "circuit-backfeed--dispatch--q01--01",
+      "productionId": "circuit-backfeed--dispatch--q01--01",
+      "character": "ji",
+      "text": "零户，还得抢修。",
+      "src": "/audio/voice/full-20261021/circuit-backfeed--dispatch--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "backfeed",
+          "node": "dispatch"
+        }
+      ],
+      "start": 52
+    },
+    {
+      "id": "circuit-backfeed--dispatch--q02--01",
+      "productionId": "circuit-backfeed--dispatch--q02--01",
+      "character": "cheng",
+      "text": "零户不等于没线。",
+      "src": "/audio/voice/full-20261021/circuit-backfeed--dispatch--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "backfeed",
+          "node": "dispatch"
+        }
+      ],
+      "start": 63
+    },
+    {
+      "id": "circuit-backfeed--dispatch--q03--01",
+      "productionId": "circuit-backfeed--dispatch--q03--01",
+      "character": "ji",
+      "text": "我知道。我是说它这班挺会挑地方。",
+      "src": "/audio/voice/full-20261021/circuit-backfeed--dispatch--q03--01.ogg",
+      "bindings": [
+        {
+          "chapter": "backfeed",
+          "node": "dispatch"
+        }
+      ],
+      "start": 74
+    },
+    {
+      "id": "circuit-backfeed--route--q01--01",
+      "productionId": "circuit-backfeed--route--q01--01",
+      "character": "cheng",
+      "text": "别按地图导航直接走。",
+      "src": "/audio/voice/full-20261021/circuit-backfeed--route--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "backfeed",
+          "node": "route"
+        }
+      ],
+      "start": 59
+    },
+    {
+      "id": "circuit-backfeed--route--q02--01",
+      "productionId": "circuit-backfeed--route--q02--01",
+      "character": "cheng",
+      "text": "现在可能是墙。",
+      "src": "/audio/voice/full-20261021/circuit-backfeed--route--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "backfeed",
+          "node": "route"
+        }
+      ],
+      "start": 74
+    },
+    {
+      "id": "circuit-backfeed--route--q03--01",
+      "productionId": "circuit-backfeed--route--q03--01",
+      "character": "ji",
+      "text": "那听谁的？",
+      "src": "/audio/voice/full-20261021/circuit-backfeed--route--q03--01.ogg",
+      "bindings": [
+        {
+          "chapter": "backfeed",
+          "node": "route"
+        }
+      ],
+      "start": 84
+    },
+    {
+      "id": "circuit-backfeed--route--q04--01",
+      "productionId": "circuit-backfeed--route--q04--01",
+      "character": "cheng",
+      "text": "开门的人。",
+      "src": "/audio/voice/full-20261021/circuit-backfeed--route--q04--01.ogg",
+      "bindings": [
+        {
+          "chapter": "backfeed",
+          "node": "route"
+        }
+      ],
+      "start": 92
+    },
+    {
+      "id": "r02-chen",
+      "productionId": "circuit-backfeed--gate--q01--01",
+      "character": "chen",
+      "text": "晚上别这么响。",
+      "src": "/audio/voice/r02-chen.mp3",
+      "bindings": [
+        {
+          "chapter": "backfeed",
+          "node": "gate"
+        }
+      ],
+      "start": 99
+    },
+    {
+      "id": "circuit-backfeed--chen--q01--01",
+      "productionId": "circuit-backfeed--chen--q01--01",
+      "character": "chen",
+      "text": "进线早拆了，它还朝外走。",
+      "src": "/audio/voice/full-20261021/circuit-backfeed--chen--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "backfeed",
+          "node": "chen"
+        }
+      ],
+      "start": 1
+    },
+    {
+      "id": "r02-door",
+      "productionId": "circuit-backfeed--chen--q02--01",
+      "character": "chen",
+      "text": "我母亲搬家都带旧门牌，说怕认错门。",
+      "src": "/audio/voice/r02-door.mp3",
+      "bindings": [
+        {
+          "chapter": "backfeed",
+          "node": "chen"
+        }
+      ],
+      "start": 63
+    },
+    {
+      "id": "circuit-backfeed--chen--q03--01",
+      "productionId": "circuit-backfeed--chen--q03--01",
+      "character": "cheng",
+      "text": "这些又不归你。",
+      "src": "/audio/voice/full-20261021/circuit-backfeed--chen--q03--01.ogg",
+      "bindings": [
+        {
+          "chapter": "backfeed",
+          "node": "chen"
+        }
+      ],
+      "start": 83
+    },
+    {
+      "id": "circuit-backfeed--chen--q04--01",
+      "productionId": "circuit-backfeed--chen--q04--01",
+      "character": "chen",
+      "text": "是啊。",
+      "src": "/audio/voice/full-20261021/circuit-backfeed--chen--q04--01.ogg",
+      "bindings": [
+        {
+          "chapter": "backfeed",
+          "node": "chen"
+        }
+      ],
+      "start": 93
+    },
+    {
+      "id": "circuit-backfeed--chen--q05--01",
+      "productionId": "circuit-backfeed--chen--q05--01",
+      "character": "chen",
+      "text": "我也想问，现在该拿给谁。",
+      "src": "/audio/voice/full-20261021/circuit-backfeed--chen--q05--01.ogg",
+      "bindings": [
+        {
+          "chapter": "backfeed",
+          "node": "chen"
+        }
+      ],
+      "start": 106
+    },
+    {
+      "id": "circuit-backfeed--boundary--q01--01",
+      "productionId": "circuit-backfeed--boundary--q01--01",
+      "character": "ji",
+      "text": "这里没人，里面也按可能带电看？",
+      "src": "/audio/voice/full-20261021/circuit-backfeed--boundary--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "backfeed",
+          "node": "boundary"
+        }
+      ],
+      "start": 60
+    },
+    {
+      "id": "circuit-backfeed--boundary--q02--01",
+      "productionId": "circuit-backfeed--boundary--q02--01",
+      "character": "cheng",
+      "text": "对。",
+      "src": "/audio/voice/full-20261021/circuit-backfeed--boundary--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "backfeed",
+          "node": "boundary"
+        }
+      ],
+      "start": 78
+    },
+    {
+      "id": "circuit-backfeed--natural--q01--01",
+      "productionId": "circuit-backfeed--natural--q01--01",
+      "character": "ji",
+      "text": "能确认它在往外送。",
+      "src": "/audio/voice/full-20261021/circuit-backfeed--natural--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "backfeed",
+          "node": "natural"
+        }
+      ],
+      "start": 82
+    },
+    {
+      "id": "circuit-backfeed--natural--q02--01",
+      "productionId": "circuit-backfeed--natural--q02--01",
+      "character": "chen",
+      "text": "所以我晚上不关门。",
+      "src": "/audio/voice/full-20261021/circuit-backfeed--natural--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "backfeed",
+          "node": "natural"
+        }
+      ],
+      "start": 102
+    },
+    {
+      "id": "circuit-backfeed--drawing--q02--01",
+      "productionId": "circuit-backfeed--drawing--q02--01",
+      "character": "ji",
+      "text": "同一条巷子，怎么两张图宽度都不一样？",
+      "src": "/audio/voice/full-20261021/circuit-backfeed--drawing--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "backfeed",
+          "node": "drawing"
+        }
+      ],
+      "start": 76
+    },
+    {
+      "id": "circuit-backfeed--survey--q01--01",
+      "productionId": "circuit-backfeed--survey--q01--01",
+      "character": "ji",
+      "text": "这面墙后来砌的？",
+      "src": "/audio/voice/full-20261021/circuit-backfeed--survey--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "backfeed",
+          "node": "survey"
+        }
+      ],
+      "start": 101
+    },
+    {
+      "id": "circuit-backfeed--recordmap--q01--01",
+      "productionId": "circuit-backfeed--recordmap--q01--01",
+      "character": "chen",
+      "text": "搬走那天带过，后来又送回来，说新房子不许挂这个。",
+      "src": "/audio/voice/full-20261021/circuit-backfeed--recordmap--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "backfeed",
+          "node": "recordMap"
+        }
+      ],
+      "start": 53
+    },
+    {
+      "id": "circuit-backfeed--voices--q02--01",
+      "productionId": "circuit-backfeed--voices--q02--01",
+      "character": "chen",
+      "text": "临时加的。",
+      "src": "/audio/voice/full-20261021/circuit-backfeed--voices--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "backfeed",
+          "node": "voices"
+        }
+      ],
+      "start": 71
+    },
+    {
+      "id": "circuit-backfeed--voices--q03--01",
+      "productionId": "circuit-backfeed--voices--q03--01",
+      "character": "ji",
+      "text": "谁加的？",
+      "src": "/audio/voice/full-20261021/circuit-backfeed--voices--q03--01.ogg",
+      "bindings": [
+        {
+          "chapter": "backfeed",
+          "node": "voices"
+        }
+      ],
+      "start": 79
+    },
+    {
+      "id": "circuit-backfeed--recordnames--q01--01",
+      "productionId": "circuit-backfeed--recordnames--q01--01",
+      "character": "chen",
+      "text": "没有，一直十二把。",
+      "src": "/audio/voice/full-20261021/circuit-backfeed--recordnames--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "backfeed",
+          "node": "recordNames"
+        }
+      ],
+      "start": 58
+    },
+    {
+      "id": "circuit-backfeed--compare--q02--01",
+      "productionId": "circuit-backfeed--compare--q02--01",
+      "character": "chen",
+      "text": "以前他们只抄前两个字。",
+      "src": "/audio/voice/full-20261021/circuit-backfeed--compare--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "backfeed",
+          "node": "compare"
+        }
+      ],
+      "start": 78
+    },
+    {
+      "id": "circuit-backfeed--trace--q01--01",
+      "productionId": "circuit-backfeed--trace--q01--01",
+      "character": "chen",
+      "text": "到了。",
+      "src": "/audio/voice/full-20261021/circuit-backfeed--trace--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "backfeed",
+          "node": "trace"
+        }
+      ],
+      "start": 74
+    },
+    {
+      "id": "circuit-backfeed--marking--q01--01",
+      "productionId": "circuit-backfeed--marking--q01--01",
+      "character": "chen",
+      "text": "工具袋是我拿的，这份票没接。",
+      "src": "/audio/voice/full-20261021/circuit-backfeed--marking--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "backfeed",
+          "node": "marking"
+        }
+      ],
+      "start": 16
+    },
+    {
+      "id": "r02-ji",
+      "productionId": "circuit-backfeed--relaytest--q01--01",
+      "character": "ji",
+      "text": "外面零了，里面还有。",
+      "src": "/audio/voice/r02-ji.mp3",
+      "bindings": [
+        {
+          "chapter": "backfeed",
+          "node": "relayTest"
+        }
+      ],
+      "start": 65
+    },
+    {
+      "id": "circuit-backfeed--recordisolation--q01--01",
+      "productionId": "circuit-backfeed--recordisolation--q01--01",
+      "character": "chen",
+      "text": "这屋子还不能拆？",
+      "src": "/audio/voice/full-20261021/circuit-backfeed--recordisolation--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "backfeed",
+          "node": "recordIsolation"
+        }
+      ],
+      "start": 44
+    },
+    {
+      "id": "circuit-backfeed--recordisolation--q02--01",
+      "productionId": "circuit-backfeed--recordisolation--q02--01",
+      "character": "cheng",
+      "text": "源头没查清，管理方得继续留范围。",
+      "src": "/audio/voice/full-20261021/circuit-backfeed--recordisolation--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "backfeed",
+          "node": "recordIsolation"
+        }
+      ],
+      "start": 55
+    },
+    {
+      "id": "circuit-backfeed--filerequest--q01--01",
+      "productionId": "circuit-backfeed--filerequest--q01--01",
+      "character": "ji",
+      "text": "袋子不是这条线的移交。",
+      "src": "/audio/voice/full-20261021/circuit-backfeed--filerequest--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "backfeed",
+          "node": "fileRequest"
+        }
+      ],
+      "start": 69
+    },
+    {
+      "id": "circuit-backfeed--filereply--q01--01",
+      "productionId": "circuit-backfeed--filereply--q01--01",
+      "character": "ji",
+      "text": "不是同一份检查。",
+      "src": "/audio/voice/full-20261021/circuit-backfeed--filereply--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "backfeed",
+          "node": "fileReply"
+        }
+      ],
+      "start": 84
+    },
+    {
+      "id": "circuit-backfeed--chenmemory--q01--01",
+      "productionId": "circuit-backfeed--chenmemory--q01--01",
+      "character": "chen",
+      "text": "有糖，泡过水，黏在底上。",
+      "src": "/audio/voice/full-20261021/circuit-backfeed--chenmemory--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "backfeed",
+          "node": "chenMemory"
+        }
+      ],
+      "start": 53
+    },
+    {
+      "id": "circuit-backfeed--recordbypass--q01--01",
+      "productionId": "circuit-backfeed--recordbypass--q01--01",
+      "character": "cheng",
+      "text": "能，原顺序留着。",
+      "src": "/audio/voice/full-20261021/circuit-backfeed--recordbypass--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "backfeed",
+          "node": "recordBypass"
+        }
+      ],
+      "start": 76
+    },
+    {
+      "id": "circuit-backfeed--reconcile--q01--01",
+      "productionId": "circuit-backfeed--reconcile--q01--01",
+      "character": "ji",
+      "text": "旧册多半页，收条又晚了一段。得从原件查。",
+      "src": "/audio/voice/full-20261021/circuit-backfeed--reconcile--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "backfeed",
+          "node": "reconcile"
+        }
+      ],
+      "start": 66
+    },
+    {
+      "id": "circuit-backfeed--houseone--q01--01",
+      "productionId": "circuit-backfeed--houseone--q01--01",
+      "character": "ji",
+      "text": "仪表又不知道谁按的指印。",
+      "src": "/audio/voice/full-20261021/circuit-backfeed--houseone--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "backfeed",
+          "node": "houseOne"
+        }
+      ],
+      "start": 68
+    },
+    {
+      "id": "circuit-backfeed--memorytable--q01--01",
+      "productionId": "circuit-backfeed--memorytable--q01--01",
+      "character": "ji",
+      "text": "这份单独装。",
+      "src": "/audio/voice/full-20261021/circuit-backfeed--memorytable--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "backfeed",
+          "node": "memoryTable"
+        }
+      ],
+      "start": 56
+    },
+    {
+      "id": "circuit-backfeed--report--q01--01",
+      "productionId": "circuit-backfeed--report--q01--01",
+      "character": "ji",
+      "text": "纸比目录多半页。",
+      "src": "/audio/voice/full-20261021/circuit-backfeed--report--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "backfeed",
+          "node": "report"
+        }
+      ],
+      "start": 55
+    },
+    {
+      "id": "circuit-backfeed--linger--q01--01",
+      "productionId": "circuit-backfeed--linger--q01--01",
+      "character": "ji",
+      "text": "墙砌好了，旧图还当那里能走。",
+      "src": "/audio/voice/full-20261021/circuit-backfeed--linger--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "backfeed",
+          "node": "linger"
+        }
+      ],
+      "start": 27
+    },
+    {
+      "id": "circuit-backfeed--linger--q02--01",
+      "productionId": "circuit-backfeed--linger--q02--01",
+      "character": "cheng",
+      "text": "后续得查。",
+      "src": "/audio/voice/full-20261021/circuit-backfeed--linger--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "backfeed",
+          "node": "linger"
+        }
+      ],
+      "start": 44
+    },
+    {
+      "id": "circuit-everlight--dispatch--q01--01",
+      "productionId": "circuit-everlight--dispatch--q01--01",
+      "character": "ji",
+      "text": "这也报给我们？",
+      "src": "/audio/voice/full-20261021/circuit-everlight--dispatch--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "everlight",
+          "node": "dispatch"
+        }
+      ],
+      "start": 39
+    },
+    {
+      "id": "circuit-everlight--dispatch--q02--01",
+      "productionId": "circuit-everlight--dispatch--q02--01",
+      "character": "lin",
+      "text": "楼道疑有未登记来电，得联合核边界。失眠先留口述。",
+      "src": "/audio/voice/full-20261021/circuit-everlight--dispatch--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "everlight",
+          "node": "dispatch"
+        }
+      ],
+      "start": 53
+    },
+    {
+      "id": "circuit-everlight--consult--q01--01",
+      "productionId": "circuit-everlight--consult--q01--01",
+      "character": "ji",
+      "text": "怎么都这么熟？",
+      "src": "/audio/voice/full-20261021/circuit-everlight--consult--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "everlight",
+          "node": "consult"
+        }
+      ],
+      "start": 66
+    },
+    {
+      "id": "circuit-everlight--arrival--q01--01",
+      "productionId": "circuit-everlight--arrival--q01--01",
+      "character": "ji",
+      "text": "风从后门进来，水往这边晃。影子怎么一直朝上？",
+      "src": "/audio/voice/full-20261021/circuit-everlight--arrival--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "everlight",
+          "node": "arrival"
+        }
+      ],
+      "start": 76
+    },
+    {
+      "id": "circuit-everlight--gate--q01--01",
+      "productionId": "circuit-everlight--gate--q01--01",
+      "character": "cheng",
+      "text": "哪家的钥匙？",
+      "src": "/audio/voice/full-20261021/circuit-everlight--gate--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "everlight",
+          "node": "gate"
+        }
+      ],
+      "start": 92
+    },
+    {
+      "id": "circuit-everlight--gate--q02--01",
+      "productionId": "circuit-everlight--gate--q02--01",
+      "character": "resident-gate",
+      "text": "只响，不开门。",
+      "src": "/audio/voice/full-20261021/circuit-everlight--gate--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "everlight",
+          "node": "gate"
+        }
+      ],
+      "start": 105
+    },
+    {
+      "id": "circuit-everlight--meetmei--q01--01",
+      "productionId": "circuit-everlight--meetmei--q01--01",
+      "character": "mei",
+      "text": "卧室没停电。",
+      "src": "/audio/voice/full-20261021/circuit-everlight--meetmei--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "everlight",
+          "node": "meetMei"
+        }
+      ],
+      "start": 56
+    },
+    {
+      "id": "circuit-everlight--meetmei--q02--01",
+      "productionId": "circuit-everlight--meetmei--q02--01",
+      "character": "mei",
+      "text": "昨晚楼道灯没了，那声响倒一直有。",
+      "src": "/audio/voice/full-20261021/circuit-everlight--meetmei--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "everlight",
+          "node": "meetMei"
+        }
+      ],
+      "start": 68
+    },
+    {
+      "id": "circuit-everlight--meetmei--q03--01",
+      "productionId": "circuit-everlight--meetmei--q03--01",
+      "character": "mei",
+      "text": "以前只响一回。",
+      "src": "/audio/voice/full-20261021/circuit-everlight--meetmei--q03--01.ogg",
+      "bindings": [
+        {
+          "chapter": "everlight",
+          "node": "meetMei"
+        }
+      ],
+      "start": 102
+    },
+    {
+      "id": "l03-mei",
+      "productionId": "circuit-everlight--houserules--q01--01",
+      "character": "mei",
+      "text": "半夜钥匙碰栏杆，别往楼道里叫。",
+      "src": "/audio/voice/l03-mei.mp3",
+      "bindings": [
+        {
+          "chapter": "everlight",
+          "node": "houseRules"
+        }
+      ],
+      "start": 1
+    },
+    {
+      "id": "circuit-everlight--houserules--q02--01",
+      "productionId": "circuit-everlight--houserules--q02--01",
+      "character": "mei",
+      "text": "这楼以前都这么讲，喊了，它就知道哪家还醒着。",
+      "src": "/audio/voice/full-20261021/circuit-everlight--houserules--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "everlight",
+          "node": "houseRules"
+        }
+      ],
+      "start": 31
+    },
+    {
+      "id": "circuit-everlight--stairs--q01--01",
+      "productionId": "circuit-everlight--stairs--q01--01",
+      "character": "ji",
+      "text": "贴的人站在下面看过。",
+      "src": "/audio/voice/full-20261021/circuit-everlight--stairs--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "everlight",
+          "node": "stairs"
+        }
+      ],
+      "start": 40
+    },
+    {
+      "id": "circuit-everlight--feedrecord--q01--01",
+      "productionId": "circuit-everlight--feedrecord--q01--01",
+      "character": "ji",
+      "text": "现在只能说它没跟住宅灯一起变。",
+      "src": "/audio/voice/full-20261021/circuit-everlight--feedrecord--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "everlight",
+          "node": "feedRecord"
+        }
+      ],
+      "start": 43
+    },
+    {
+      "id": "circuit-everlight--relayrecord--q01--01",
+      "productionId": "circuit-everlight--relayrecord--q01--01",
+      "character": "ji",
+      "text": "先改成机械轻响。",
+      "src": "/audio/voice/full-20261021/circuit-everlight--relayrecord--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "everlight",
+          "node": "relayRecord"
+        }
+      ],
+      "start": 1
+    },
+    {
+      "id": "circuit-everlight--load--q01--01",
+      "productionId": "circuit-everlight--load--q01--01",
+      "character": "ji",
+      "text": "给谁开？",
+      "src": "/audio/voice/full-20261021/circuit-everlight--load--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "everlight",
+          "node": "load"
+        }
+      ],
+      "start": 67
+    },
+    {
+      "id": "circuit-everlight--load--q02--01",
+      "productionId": "circuit-everlight--load--q02--01",
+      "character": "resident-young",
+      "text": "想不起来。",
+      "src": "/audio/voice/full-20261021/circuit-everlight--load--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "everlight",
+          "node": "load"
+        }
+      ],
+      "start": 78
+    },
+    {
+      "id": "circuit-everlight--promise--q01--01",
+      "productionId": "circuit-everlight--promise--q01--01",
+      "character": "mei",
+      "text": "我说你忙，回来敲栏杆就行。",
+      "src": "/audio/voice/full-20261021/circuit-everlight--promise--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "everlight",
+          "node": "promise"
+        }
+      ],
+      "start": 41
+    },
+    {
+      "id": "circuit-everlight--promise--q02--01",
+      "productionId": "circuit-everlight--promise--q02--01",
+      "character": "cheng",
+      "text": "几下？",
+      "src": "/audio/voice/full-20261021/circuit-everlight--promise--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "everlight",
+          "node": "promise"
+        }
+      ],
+      "start": 57
+    },
+    {
+      "id": "l03-keys",
+      "productionId": "circuit-everlight--promise--q03--01",
+      "character": "mei",
+      "text": "轻两下，最后重一下。他钥匙串就那样碰。",
+      "src": "/audio/voice/l03-keys.mp3",
+      "bindings": [
+        {
+          "chapter": "everlight",
+          "node": "promise"
+        }
+      ],
+      "start": 63
+    },
+    {
+      "id": "circuit-everlight--promiserecord--q01--01",
+      "productionId": "circuit-everlight--promiserecord--q01--01",
+      "character": "mei",
+      "text": "人不来了，怎么这事还挂着他？",
+      "src": "/audio/voice/full-20261021/circuit-everlight--promiserecord--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "everlight",
+          "node": "promiseRecord"
+        }
+      ],
+      "start": 46
+    },
+    {
+      "id": "circuit-everlight--meeting--q01--01",
+      "productionId": "circuit-everlight--meeting--q01--01",
+      "character": "ji",
+      "text": "这一页是谁提交的？",
+      "src": "/audio/voice/full-20261021/circuit-everlight--meeting--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "everlight",
+          "node": "meeting"
+        }
+      ],
+      "start": 45
+    },
+    {
+      "id": "circuit-everlight--notice--q01--01",
+      "productionId": "circuit-everlight--notice--q01--01",
+      "character": "ji",
+      "text": "他还没上楼，就已经交班了？",
+      "src": "/audio/voice/full-20261021/circuit-everlight--notice--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "everlight",
+          "node": "notice"
+        }
+      ],
+      "start": 80
+    },
+    {
+      "id": "circuit-everlight--compare--q01--01",
+      "productionId": "circuit-everlight--compare--q01--01",
+      "character": "ji",
+      "text": "人是谁能查，灯怎么亮还没查到。",
+      "src": "/audio/voice/full-20261021/circuit-everlight--compare--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "everlight",
+          "node": "compare"
+        }
+      ],
+      "start": 76
+    },
+    {
+      "id": "circuit-everlight--timeexplained--q01--01",
+      "productionId": "circuit-everlight--timeexplained--q01--01",
+      "character": "cheng",
+      "text": "原接收页缺着，完成时间也对不上。",
+      "src": "/audio/voice/full-20261021/circuit-everlight--timeexplained--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "everlight",
+          "node": "timeExplained"
+        }
+      ],
+      "start": 48
+    },
+    {
+      "id": "circuit-everlight--boundary--q01--01",
+      "productionId": "circuit-everlight--boundary--q01--01",
+      "character": "mei",
+      "text": "它今晚还响吗？",
+      "src": "/audio/voice/full-20261021/circuit-everlight--boundary--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "everlight",
+          "node": "boundary"
+        }
+      ],
+      "start": 73
+    },
+    {
+      "id": "circuit-everlight--boundary--q02--01",
+      "productionId": "circuit-everlight--boundary--q02--01",
+      "character": "cheng",
+      "text": "要继续记。",
+      "src": "/audio/voice/full-20261021/circuit-everlight--boundary--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "everlight",
+          "node": "boundary"
+        }
+      ],
+      "start": 83
+    },
+    {
+      "id": "circuit-everlight--interview--q01--01",
+      "productionId": "circuit-everlight--interview--q01--01",
+      "character": "mei",
+      "text": "他那天说回来量灯，没量。",
+      "src": "/audio/voice/full-20261021/circuit-everlight--interview--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "everlight",
+          "node": "interview"
+        }
+      ],
+      "start": 63
+    },
+    {
+      "id": "circuit-everlight--letter--q01--01",
+      "productionId": "circuit-everlight--letter--q01--01",
+      "character": "ji",
+      "text": "和录音里一样？",
+      "src": "/audio/voice/full-20261021/circuit-everlight--letter--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "everlight",
+          "node": "letter"
+        }
+      ],
+      "start": 73
+    },
+    {
+      "id": "circuit-everlight--turnoff--q01--01",
+      "productionId": "circuit-everlight--turnoff--q01--01",
+      "character": "mei",
+      "text": "守成，我知道你没回来。",
+      "src": "/audio/voice/full-20261021/circuit-everlight--turnoff--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "everlight",
+          "node": "turnOff"
+        }
+      ],
+      "start": 30
+    },
+    {
+      "id": "circuit-everlight--pause--q01--01",
+      "productionId": "circuit-everlight--pause--q01--01",
+      "character": "cheng",
+      "text": "那天等多久？",
+      "src": "/audio/voice/full-20261021/circuit-everlight--pause--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "everlight",
+          "node": "pause"
+        }
+      ],
+      "start": 55
+    },
+    {
+      "id": "circuit-everlight--pause--q02--01",
+      "productionId": "circuit-everlight--pause--q02--01",
+      "character": "zhou",
+      "text": "到他下来。",
+      "src": "/audio/voice/full-20261021/circuit-everlight--pause--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "everlight",
+          "node": "pause"
+        }
+      ],
+      "start": 64
+    },
+    {
+      "id": "circuit-everlight--pause--q03--01",
+      "productionId": "circuit-everlight--pause--q03--01",
+      "character": "cheng",
+      "text": "他从哪边下来？",
+      "src": "/audio/voice/full-20261021/circuit-everlight--pause--q03--01.ogg",
+      "bindings": [
+        {
+          "chapter": "everlight",
+          "node": "pause"
+        }
+      ],
+      "start": 72
+    },
+    {
+      "id": "circuit-everlight--delivery--q01--01",
+      "productionId": "circuit-everlight--delivery--q01--01",
+      "character": "mei",
+      "text": "后门别走。",
+      "src": "/audio/voice/full-20261021/circuit-everlight--delivery--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "everlight",
+          "node": "delivery"
+        }
+      ],
+      "start": 22
+    },
+    {
+      "id": "circuit-everlight--dawn--q01--01",
+      "productionId": "circuit-everlight--dawn--q01--01",
+      "character": "ji",
+      "text": "正常电、旧灯、台阶，都有后续。",
+      "src": "/audio/voice/full-20261021/circuit-everlight--dawn--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "everlight",
+          "node": "dawn"
+        }
+      ],
+      "start": 24
+    },
+    {
+      "id": "l03-ji",
+      "productionId": "circuit-everlight--dawn--q02--01",
+      "character": "ji",
+      "text": "师傅，刚才你下楼的时候，钥匙响没响？",
+      "src": "/audio/voice/l03-ji.mp3",
+      "bindings": [
+        {
+          "chapter": "everlight",
+          "node": "dawn"
+        }
+      ],
+      "start": 83
+    },
+    {
+      "id": "circuit-neutral--dispatch--q01--01",
+      "productionId": "circuit-neutral--dispatch--q01--01",
+      "character": "ji",
+      "text": "这张你也留着？",
+      "src": "/audio/voice/full-20261021/circuit-neutral--dispatch--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "neutral",
+          "node": "dispatch"
+        }
+      ],
+      "start": 89
+    },
+    {
+      "id": "circuit-neutral--dispatch--q02--01",
+      "productionId": "circuit-neutral--dispatch--q02--01",
+      "character": "zhou",
+      "text": "名单不是我留的，票是。",
+      "src": "/audio/voice/full-20261021/circuit-neutral--dispatch--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "neutral",
+          "node": "dispatch"
+        }
+      ],
+      "start": 99
+    },
+    {
+      "id": "circuit-neutral--scope--q01--01",
+      "productionId": "circuit-neutral--scope--q01--01",
+      "character": "ji",
+      "text": "一个没接线的柜子也报麻？",
+      "src": "/audio/voice/full-20261021/circuit-neutral--scope--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "neutral",
+          "node": "scope"
+        }
+      ],
+      "start": 41
+    },
+    {
+      "id": "circuit-neutral--scope--q02--01",
+      "productionId": "circuit-neutral--scope--q02--01",
+      "character": "cheng",
+      "text": "照口述留着，设备各自查。",
+      "src": "/audio/voice/full-20261021/circuit-neutral--scope--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "neutral",
+          "node": "scope"
+        }
+      ],
+      "start": 56
+    },
+    {
+      "id": "circuit-neutral--approach--q01--01",
+      "productionId": "circuit-neutral--approach--q01--01",
+      "character": "resident-cabinet",
+      "text": "许师傅那件事。",
+      "src": "/audio/voice/full-20261021/circuit-neutral--approach--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "neutral",
+          "node": "approach"
+        }
+      ],
+      "start": 88
+    },
+    {
+      "id": "circuit-neutral--approach--q02--01",
+      "productionId": "circuit-neutral--approach--q02--01",
+      "character": "resident-cabinet",
+      "text": "我说都结案了，就这么一下。",
+      "src": "/audio/voice/full-20261021/circuit-neutral--approach--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "neutral",
+          "node": "approach"
+        }
+      ],
+      "start": 101
+    },
+    {
+      "id": "circuit-neutral--meetshen--q01--01",
+      "productionId": "circuit-neutral--meetshen--q01--01",
+      "character": "shen",
+      "text": "他们都来过许师傅的追悼会。",
+      "src": "/audio/voice/full-20261021/circuit-neutral--meetshen--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "neutral",
+          "node": "meetShen"
+        }
+      ],
+      "start": 1
+    },
+    {
+      "id": "circuit-neutral--meetshen--q02--01",
+      "productionId": "circuit-neutral--meetshen--q02--01",
+      "character": "shen",
+      "text": "这几天谁说这句话，谁就去摸那几个旧箱。",
+      "src": "/audio/voice/full-20261021/circuit-neutral--meetshen--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "neutral",
+          "node": "meetShen"
+        }
+      ],
+      "start": 91
+    },
+    {
+      "id": "circuit-neutral--readingrecord--q01--01",
+      "productionId": "circuit-neutral--readingrecord--q01--01",
+      "character": "resident-cabinet",
+      "text": "字能看出什么吗？",
+      "src": "/audio/voice/full-20261021/circuit-neutral--readingrecord--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "neutral",
+          "node": "readingRecord"
+        }
+      ],
+      "start": 57
+    },
+    {
+      "id": "circuit-neutral--ticket--q01--01",
+      "productionId": "circuit-neutral--ticket--q01--01",
+      "character": "ji",
+      "text": "这里少一张？",
+      "src": "/audio/voice/full-20261021/circuit-neutral--ticket--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "neutral",
+          "node": "ticket"
+        }
+      ],
+      "start": 81
+    },
+    {
+      "id": "circuit-neutral--ticket--q02--01",
+      "productionId": "circuit-neutral--ticket--q02--01",
+      "character": "zhou",
+      "text": "少过。",
+      "src": "/audio/voice/full-20261021/circuit-neutral--ticket--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "neutral",
+          "node": "ticket"
+        }
+      ],
+      "start": 90
+    },
+    {
+      "id": "circuit-neutral--ticket--q03--01",
+      "productionId": "circuit-neutral--ticket--q03--01",
+      "character": "ji",
+      "text": "谁拿的？",
+      "src": "/audio/voice/full-20261021/circuit-neutral--ticket--q03--01.ogg",
+      "bindings": [
+        {
+          "chapter": "neutral",
+          "node": "ticket"
+        }
+      ],
+      "start": 96
+    },
+    {
+      "id": "circuit-neutral--copy--q01--01",
+      "productionId": "circuit-neutral--copy--q01--01",
+      "character": "shen",
+      "text": "我才二十一，以为等几天就行。",
+      "src": "/audio/voice/full-20261021/circuit-neutral--copy--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "neutral",
+          "node": "copy"
+        }
+      ],
+      "start": 78
+    },
+    {
+      "id": "circuit-neutral--copyrecord--q01--01",
+      "productionId": "circuit-neutral--copyrecord--q01--01",
+      "character": "ji",
+      "text": "和长安里那页一样。",
+      "src": "/audio/voice/full-20261021/circuit-neutral--copyrecord--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "neutral",
+          "node": "copyRecord"
+        }
+      ],
+      "start": 74
+    },
+    {
+      "id": "circuit-neutral--west--q01--01",
+      "productionId": "circuit-neutral--west--q01--01",
+      "character": "zhou",
+      "text": "有人让我先关单，材料后补。",
+      "src": "/audio/voice/full-20261021/circuit-neutral--west--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "neutral",
+          "node": "west"
+        }
+      ],
+      "start": 21
+    },
+    {
+      "id": "circuit-neutral--west--q02--01",
+      "productionId": "circuit-neutral--west--q02--01",
+      "character": "zhou",
+      "text": "守成没回来，我怕翻开之后，班上谁都躲不过。",
+      "src": "/audio/voice/full-20261021/circuit-neutral--west--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "neutral",
+          "node": "west"
+        }
+      ],
+      "start": 39
+    },
+    {
+      "id": "circuit-neutral--west--q03--01",
+      "productionId": "circuit-neutral--west--q03--01",
+      "character": "zhou",
+      "text": "我。",
+      "src": "/audio/voice/full-20261021/circuit-neutral--west--q03--01.ogg",
+      "bindings": [
+        {
+          "chapter": "neutral",
+          "node": "west"
+        }
+      ],
+      "start": 95
+    },
+    {
+      "id": "n04-zhou",
+      "productionId": "circuit-neutral--witness--q01--01",
+      "character": "zhou",
+      "text": "没查齐旁路，也没等到交班，我就写了完成。",
+      "src": "/audio/voice/n04-zhou.mp3",
+      "bindings": [
+        {
+          "chapter": "neutral",
+          "node": "witness"
+        }
+      ],
+      "start": 1
+    },
+    {
+      "id": "circuit-neutral--signed--q01--01",
+      "productionId": "circuit-neutral--signed--q01--01",
+      "character": "ji",
+      "text": "原件交档案，说明交独立复核，是这两份？",
+      "src": "/audio/voice/full-20261021/circuit-neutral--signed--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "neutral",
+          "node": "signed"
+        }
+      ],
+      "start": 50
+    },
+    {
+      "id": "circuit-neutral--handover--q01--01",
+      "productionId": "circuit-neutral--handover--q01--01",
+      "character": "shen",
+      "text": "我爸那年明明回家了，为什么许师傅那行不写？",
+      "src": "/audio/voice/full-20261021/circuit-neutral--handover--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "neutral",
+          "node": "handover"
+        }
+      ],
+      "start": 43
+    },
+    {
+      "id": "n04-shen",
+      "productionId": "circuit-neutral--debt--q01--01",
+      "character": "shen",
+      "text": "你把原话留着，后面他们还会问。",
+      "src": "/audio/voice/n04-shen.mp3",
+      "bindings": [
+        {
+          "chapter": "neutral",
+          "node": "debt"
+        }
+      ],
+      "start": 15
+    },
+    {
+      "id": "circuit-neutral--courier--q01--01",
+      "productionId": "circuit-neutral--courier--q01--01",
+      "character": "shen",
+      "text": "每次带过去都下雨。",
+      "src": "/audio/voice/full-20261021/circuit-neutral--courier--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "neutral",
+          "node": "courier"
+        }
+      ],
+      "start": 59
+    },
+    {
+      "id": "circuit-neutral--neighbors--q01--01",
+      "productionId": "circuit-neutral--neighbors--q01--01",
+      "character": "resident-cabinet",
+      "text": "你们这回留哪张纸？",
+      "src": "/audio/voice/full-20261021/circuit-neutral--neighbors--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "neutral",
+          "node": "neighbors"
+        }
+      ],
+      "start": 69
+    },
+    {
+      "id": "circuit-neutral--visit--q01--01",
+      "productionId": "circuit-neutral--visit--q01--01",
+      "character": "zhou",
+      "text": "纸都交了？",
+      "src": "/audio/voice/full-20261021/circuit-neutral--visit--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "neutral",
+          "node": "visit"
+        }
+      ],
+      "start": 51
+    },
+    {
+      "id": "circuit-neutral--night--q01--01",
+      "productionId": "circuit-neutral--night--q01--01",
+      "character": "shen",
+      "text": "我还替他换过袜子，怎么会记错。",
+      "src": "/audio/voice/full-20261021/circuit-neutral--night--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "neutral",
+          "node": "night"
+        }
+      ],
+      "start": 46
+    },
+    {
+      "id": "circuit-neutral--receive--q01--01",
+      "productionId": "circuit-neutral--receive--q01--01",
+      "character": "ji",
+      "text": "师傅，西边那把椅子，是不是每张都离桌更远？",
+      "src": "/audio/voice/full-20261021/circuit-neutral--receive--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "neutral",
+          "node": "receive"
+        }
+      ],
+      "start": 62
+    },
+    {
+      "id": "circuit-closure--dispatch--q01--01",
+      "productionId": "circuit-closure--dispatch--q01--01",
+      "character": "ji",
+      "text": "这次不用等它报修？",
+      "src": "/audio/voice/full-20261021/circuit-closure--dispatch--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "closure",
+          "node": "dispatch"
+        }
+      ],
+      "start": 73
+    },
+    {
+      "id": "circuit-closure--summon--q01--01",
+      "productionId": "circuit-closure--summon--q01--01",
+      "character": "ji",
+      "text": "00:47之前能看完吗？",
+      "src": "/audio/voice/full-20261021/circuit-closure--summon--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "closure",
+          "node": "summon"
+        }
+      ],
+      "start": 89
+    },
+    {
+      "id": "c00-cheng",
+      "productionId": "circuit-closure--summon--q02--01",
+      "character": "cheng",
+      "text": "按页来。",
+      "src": "/audio/voice/c00-cheng.mp3",
+      "bindings": [
+        {
+          "chapter": "closure",
+          "node": "summon"
+        }
+      ],
+      "start": 104
+    },
+    {
+      "id": "c00-ji",
+      "productionId": "circuit-closure--maprecord--q01--01",
+      "character": "ji",
+      "text": "也不能照这圈顺序说哪件事先发生。",
+      "src": "/audio/voice/c00-ji.mp3",
+      "bindings": [
+        {
+          "chapter": "closure",
+          "node": "mapRecord"
+        }
+      ],
+      "start": 43
+    },
+    {
+      "id": "circuit-closure--radiorecord--q01--01",
+      "productionId": "circuit-closure--radiorecord--q01--01",
+      "character": "ji",
+      "text": "旧名单能解释它认谁。",
+      "src": "/audio/voice/full-20261021/circuit-closure--radiorecord--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "closure",
+          "node": "radioRecord"
+        }
+      ],
+      "start": 84
+    },
+    {
+      "id": "circuit-closure--radiorecord--q02--01",
+      "productionId": "circuit-closure--radiorecord--q02--01",
+      "character": "ji",
+      "text": "今天是谁又按了发送，还没有。",
+      "src": "/audio/voice/full-20261021/circuit-closure--radiorecord--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "closure",
+          "node": "radioRecord"
+        }
+      ],
+      "start": 99
+    },
+    {
+      "id": "circuit-closure--permitindex--q01--01",
+      "productionId": "circuit-closure--permitindex--q01--01",
+      "character": "ji",
+      "text": "纸能连到一起，线还是断着。",
+      "src": "/audio/voice/full-20261021/circuit-closure--permitindex--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "closure",
+          "node": "permitIndex"
+        }
+      ],
+      "start": 74
+    },
+    {
+      "id": "circuit-closure--permitindex--q02--01",
+      "productionId": "circuit-closure--permitindex--q02--01",
+      "character": "cheng",
+      "text": "对。",
+      "src": "/audio/voice/full-20261021/circuit-closure--permitindex--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "closure",
+          "node": "permitIndex"
+        }
+      ],
+      "start": 90
+    },
+    {
+      "id": "circuit-closure--namesindex--q01--01",
+      "productionId": "circuit-closure--namesindex--q01--01",
+      "character": "ji",
+      "text": "七年啊。",
+      "src": "/audio/voice/full-20261021/circuit-closure--namesindex--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "closure",
+          "node": "namesIndex"
+        }
+      ],
+      "start": 88
+    },
+    {
+      "id": "circuit-closure--reassemble--q01--01",
+      "productionId": "circuit-closure--reassemble--q01--01",
+      "character": "cheng",
+      "text": "按图例再走一次。",
+      "src": "/audio/voice/full-20261021/circuit-closure--reassemble--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "closure",
+          "node": "reassemble"
+        }
+      ],
+      "start": 86
+    },
+    {
+      "id": "circuit-closure--routereview--q01--01",
+      "productionId": "circuit-closure--routereview--q01--01",
+      "character": "lin",
+      "text": "H13是户，Q07是接送等候点，R02是临时照明，L03是巡查等候，N04是原票交回。",
+      "src": "/audio/voice/full-20261021/circuit-closure--routereview--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "closure",
+          "node": "routeReview"
+        }
+      ],
+      "start": 21
+    },
+    {
+      "id": "circuit-closure--routematched--q01--01",
+      "productionId": "circuit-closure--routematched--q01--01",
+      "character": "ji",
+      "text": "它画的是让人和纸走一遍。",
+      "src": "/audio/voice/full-20261021/circuit-closure--routematched--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "closure",
+          "node": "routeMatched"
+        }
+      ],
+      "start": 54
+    },
+    {
+      "id": "circuit-closure--lastminute--q01--01",
+      "productionId": "circuit-closure--lastminute--q01--01",
+      "character": "cheng",
+      "text": "先查它沿用了谁的请求。",
+      "src": "/audio/voice/full-20261021/circuit-closure--lastminute--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "closure",
+          "node": "lastMinute"
+        }
+      ],
+      "start": 106
+    },
+    {
+      "id": "circuit-closure--oldzhou--q01--01",
+      "productionId": "circuit-closure--oldzhou--q01--01",
+      "character": "zhou",
+      "text": "以前总想别提了。",
+      "src": "/audio/voice/full-20261021/circuit-closure--oldzhou--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "closure",
+          "node": "oldZhou"
+        }
+      ],
+      "start": 69
+    },
+    {
+      "id": "circuit-closure--release--q01--01",
+      "productionId": "circuit-closure--release--q01--01",
+      "character": "ji",
+      "text": "三遍。",
+      "src": "/audio/voice/full-20261021/circuit-closure--release--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "closure",
+          "node": "release"
+        }
+      ],
+      "start": 87
+    },
+    {
+      "id": "circuit-closure--release--q02--01",
+      "productionId": "circuit-closure--release--q02--01",
+      "character": "ji",
+      "text": "这次没有少半页。",
+      "src": "/audio/voice/full-20261021/circuit-closure--release--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "closure",
+          "node": "release"
+        }
+      ],
+      "start": 101
+    },
+    {
+      "id": "c00-mei",
+      "productionId": "circuit-closure--mei--q01--01",
+      "character": "mei",
+      "text": "灯没再亮，后门也没再响。",
+      "src": "/audio/voice/c00-mei.mp3",
+      "bindings": [
+        {
+          "chapter": "closure",
+          "node": "mei"
+        }
+      ],
+      "start": 37
+    },
+    {
+      "id": "circuit-closure--zhoureturn--q01--01",
+      "productionId": "circuit-closure--zhoureturn--q01--01",
+      "character": "zhou",
+      "text": "习惯了。",
+      "src": "/audio/voice/full-20261021/circuit-closure--zhoureturn--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "closure",
+          "node": "zhouReturn"
+        }
+      ],
+      "start": 61
+    },
+    {
+      "id": "circuit-closure--meal--q01--01",
+      "productionId": "circuit-closure--meal--q01--01",
+      "character": "ji",
+      "text": "这回能吃了吧？",
+      "src": "/audio/voice/full-20261021/circuit-closure--meal--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "closure",
+          "node": "meal"
+        }
+      ],
+      "start": 27
+    },
+    {
+      "id": "circuit-closure--meal--q02--01",
+      "productionId": "circuit-closure--meal--q02--01",
+      "character": "cheng",
+      "text": "吃。",
+      "src": "/audio/voice/full-20261021/circuit-closure--meal--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "closure",
+          "node": "meal"
+        }
+      ],
+      "start": 51
+    },
+    {
+      "id": "circuit-return-visit--dispatch--q01--01",
+      "productionId": "circuit-return-visit--dispatch--q01--01",
+      "character": "cheng",
+      "text": "没有。",
+      "src": "/audio/voice/full-20261021/circuit-return-visit--dispatch--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "return-visit",
+          "node": "dispatch"
+        }
+      ],
+      "start": 69
+    },
+    {
+      "id": "v01-lin",
+      "productionId": "circuit-return-visit--dispatch--q02--01",
+      "character": "lin",
+      "text": "物业说他们听见你了。",
+      "src": "/audio/voice/v01-lin.mp3",
+      "bindings": [
+        {
+          "chapter": "return-visit",
+          "node": "dispatch"
+        }
+      ],
+      "start": 75
+    },
+    {
+      "id": "circuit-return-visit--handover--q01--01",
+      "productionId": "circuit-return-visit--handover--q01--01",
+      "character": "ji",
+      "text": "一个有地址，另一个先写了我们的人。",
+      "src": "/audio/voice/full-20261021/circuit-return-visit--handover--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "return-visit",
+          "node": "handover"
+        }
+      ],
+      "start": 69
+    },
+    {
+      "id": "v01-ji-address",
+      "productionId": "circuit-return-visit--drive--q01--01",
+      "character": "ji",
+      "text": "十三号搬来以后还是十三号？",
+      "src": "/audio/voice/v01-ji-address.mp3",
+      "bindings": [
+        {
+          "chapter": "return-visit",
+          "node": "drive"
+        }
+      ],
+      "start": 31
+    },
+    {
+      "id": "circuit-return-visit--drive--q02--01",
+      "productionId": "circuit-return-visit--drive--q02--01",
+      "character": "cheng",
+      "text": "现门牌另核。",
+      "src": "/audio/voice/full-20261021/circuit-return-visit--drive--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "return-visit",
+          "node": "drive"
+        }
+      ],
+      "start": 47
+    },
+    {
+      "id": "circuit-return-visit--arrival--extra1--01",
+      "productionId": "circuit-return-visit--arrival--extra1--01",
+      "character": "cheng",
+      "text": "程砚，已经到场。",
+      "src": "/audio/voice/full-20261021/circuit-return-visit--arrival--extra1--01.ogg",
+      "bindings": [
+        {
+          "chapter": "return-visit",
+          "node": "arrival"
+        }
+      ],
+      "start": 29
+    },
+    {
+      "id": "circuit-return-visit--luo--q01--01",
+      "productionId": "circuit-return-visit--luo--q01--01",
+      "character": "luo",
+      "text": "刚才那句是你们说的？",
+      "src": "/audio/voice/full-20261021/circuit-return-visit--luo--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "return-visit",
+          "node": "luo"
+        }
+      ],
+      "start": 32
+    },
+    {
+      "id": "circuit-return-visit--luo--q02--01",
+      "productionId": "circuit-return-visit--luo--q02--01",
+      "character": "cheng",
+      "text": "不是。",
+      "src": "/audio/voice/full-20261021/circuit-return-visit--luo--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "return-visit",
+          "node": "luo"
+        }
+      ],
+      "start": 45
+    },
+    {
+      "id": "v01-luo",
+      "productionId": "circuit-return-visit--luo--q03--01",
+      "character": "luo",
+      "text": "我也觉得不对。前两次都说到场，门口一个人没有。",
+      "src": "/audio/voice/v01-luo.mp3",
+      "bindings": [
+        {
+          "chapter": "return-visit",
+          "node": "luo"
+        }
+      ],
+      "start": 55
+    },
+    {
+      "id": "circuit-return-visit--doorrule--q01--01",
+      "productionId": "circuit-return-visit--doorrule--q01--01",
+      "character": "luo",
+      "text": "朝里贴，说让跟着搬家的认得门。白天就揭，物业总忘。",
+      "src": "/audio/voice/full-20261021/circuit-return-visit--doorrule--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "return-visit",
+          "node": "doorRule"
+        }
+      ],
+      "start": 40
+    },
+    {
+      "id": "circuit-return-visit--doorrule--q02--01",
+      "productionId": "circuit-return-visit--doorrule--q02--01",
+      "character": "luo",
+      "text": "早收了。",
+      "src": "/audio/voice/full-20261021/circuit-return-visit--doorrule--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "return-visit",
+          "node": "doorRule"
+        }
+      ],
+      "start": 80
+    },
+    {
+      "id": "circuit-return-visit--firsthub--q01--01",
+      "productionId": "circuit-return-visit--firsthub--q01--01",
+      "character": "ji",
+      "text": "先别替它答到。",
+      "src": "/audio/voice/full-20261021/circuit-return-visit--firsthub--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "return-visit",
+          "node": "firstHub"
+        }
+      ],
+      "start": 87
+    },
+    {
+      "id": "circuit-return-visit--intercom--q01--01",
+      "productionId": "circuit-return-visit--intercom--q01--01",
+      "character": "luo",
+      "text": "真人每回都卡这里？",
+      "src": "/audio/voice/full-20261021/circuit-return-visit--intercom--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "return-visit",
+          "node": "intercom"
+        }
+      ],
+      "start": 55
+    },
+    {
+      "id": "circuit-return-visit--waveform--q01--01",
+      "productionId": "circuit-return-visit--waveform--q01--01",
+      "character": "luo",
+      "text": "那我昨晚记的两次，到底算谁？",
+      "src": "/audio/voice/full-20261021/circuit-return-visit--waveform--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "return-visit",
+          "node": "waveform"
+        }
+      ],
+      "start": 79
+    },
+    {
+      "id": "circuit-return-visit--transferlist--q01--01",
+      "productionId": "circuit-return-visit--transferlist--q01--01",
+      "character": "luo",
+      "text": "怪不得有人说按错门铃。",
+      "src": "/audio/voice/full-20261021/circuit-return-visit--transferlist--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "return-visit",
+          "node": "transferList"
+        }
+      ],
+      "start": 56
+    },
+    {
+      "id": "circuit-return-visit--direction--q01--01",
+      "productionId": "circuit-return-visit--direction--q01--01",
+      "character": "luo",
+      "text": "讲究是老人说的，印子从哪里来我不知道。",
+      "src": "/audio/voice/full-20261021/circuit-return-visit--direction--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "return-visit",
+          "node": "direction"
+        }
+      ],
+      "start": 62
+    },
+    {
+      "id": "circuit-return-visit--compare--q01--01",
+      "productionId": "circuit-return-visit--compare--q01--01",
+      "character": "ji",
+      "text": "00:03，林岚收到过。",
+      "src": "/audio/voice/full-20261021/circuit-return-visit--compare--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "return-visit",
+          "node": "compare"
+        }
+      ],
+      "start": 49
+    },
+    {
+      "id": "circuit-return-visit--arrival--extra1--01",
+      "productionId": "circuit-return-visit--echo--extra1--01",
+      "character": "cheng",
+      "text": "程砚，已经到场。",
+      "src": "/audio/voice/full-20261021/circuit-return-visit--arrival--extra1--01.ogg",
+      "bindings": [
+        {
+          "chapter": "return-visit",
+          "node": "echo"
+        }
+      ],
+      "start": 0
+    },
+    {
+      "id": "circuit-return-visit--echo--extra2--01",
+      "productionId": "circuit-return-visit--echo--extra2--01",
+      "character": "ji",
+      "text": "季宁，收到。",
+      "src": "/audio/voice/full-20261021/circuit-return-visit--echo--extra2--01.ogg",
+      "bindings": [
+        {
+          "chapter": "return-visit",
+          "node": "echo"
+        }
+      ],
+      "start": 24
+    },
+    {
+      "id": "v01-receipt",
+      "productionId": "circuit-return-visit--receipt--q01--01",
+      "character": "luo",
+      "text": "语音说收到了，我就往后翻。",
+      "src": "/audio/voice/v01-receipt.mp3",
+      "bindings": [
+        {
+          "chapter": "return-visit",
+          "node": "receipt"
+        }
+      ],
+      "start": 47
+    },
+    {
+      "id": "circuit-return-visit--recordreceipt--q01--01",
+      "productionId": "circuit-return-visit--recordreceipt--q01--01",
+      "character": "luo",
+      "text": "我在这里守过几夜，总觉得听见名字就得应一声。",
+      "src": "/audio/voice/full-20261021/circuit-return-visit--recordreceipt--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "return-visit",
+          "node": "recordReceipt"
+        }
+      ],
+      "start": 60
+    },
+    {
+      "id": "v01-record",
+      "productionId": "circuit-return-visit--approved--q01--01",
+      "character": "ji",
+      "text": "季宁，现场记录已交。",
+      "src": "/audio/voice/v01-record.mp3",
+      "bindings": [
+        {
+          "chapter": "return-visit",
+          "node": "approved"
+        }
+      ],
+      "start": 82
+    },
+    {
+      "id": "v01-question",
+      "productionId": "circuit-return-visit--quiet--q01--01",
+      "character": "luo",
+      "text": "到底谁在后面应我？",
+      "src": "/audio/voice/v01-question.mp3",
+      "bindings": [
+        {
+          "chapter": "return-visit",
+          "node": "quiet"
+        }
+      ],
+      "start": 64
+    },
+    {
+      "id": "circuit-return-visit--quiet--q02--01",
+      "productionId": "circuit-return-visit--quiet--q02--01",
+      "character": "cheng",
+      "text": "这份先留，来源还得查。",
+      "src": "/audio/voice/full-20261021/circuit-return-visit--quiet--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "return-visit",
+          "node": "quiet"
+        }
+      ],
+      "start": 91
+    },
+    {
+      "id": "circuit-return-visit--onward--q01--01",
+      "productionId": "circuit-return-visit--onward--q01--01",
+      "character": "ji",
+      "text": "师傅，它是不是会用我们的声音了？",
+      "src": "/audio/voice/full-20261021/circuit-return-visit--onward--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "return-visit",
+          "node": "onward"
+        }
+      ],
+      "start": 58
+    },
+    {
+      "id": "v01-confirm",
+      "productionId": "circuit-return-visit--onward--q02--01",
+      "character": "cheng",
+      "text": "先别替它确认。",
+      "src": "/audio/voice/v01-confirm.mp3",
+      "bindings": [
+        {
+          "chapter": "return-visit",
+          "node": "onward"
+        }
+      ],
+      "start": 77
+    },
+    {
+      "id": "v01-confirm",
+      "productionId": "circuit-return-visit--end--extra1--01",
+      "character": "cheng",
+      "text": "先别替它确认。",
+      "src": "/audio/voice/v01-confirm.mp3",
+      "bindings": [
+        {
+          "chapter": "return-visit",
+          "node": "end"
+        }
+      ],
+      "start": 96
+    },
+    {
+      "id": "circuit-answering--dispatch--q01--01",
+      "productionId": "circuit-answering--dispatch--q01--01",
+      "character": "lin",
+      "text": "正式单已经结了，这次是物业请求协助核录音。电网侧不重开停电任务。",
+      "src": "/audio/voice/full-20261021/circuit-answering--dispatch--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "answering",
+          "node": "dispatch"
+        }
+      ],
+      "start": 35
+    },
+    {
+      "id": "circuit-answering--dispatch--q02--01",
+      "productionId": "circuit-answering--dispatch--q02--01",
+      "character": "cheng",
+      "text": "我知道。",
+      "src": "/audio/voice/full-20261021/circuit-answering--dispatch--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "answering",
+          "node": "dispatch"
+        }
+      ],
+      "start": 70
+    },
+    {
+      "id": "circuit-answering--dispatch--q03--01",
+      "productionId": "circuit-answering--dispatch--q03--01",
+      "character": "lin",
+      "text": "程砚，你什么时候又回去了？",
+      "src": "/audio/voice/full-20261021/circuit-answering--dispatch--q03--01.ogg",
+      "bindings": [
+        {
+          "chapter": "answering",
+          "node": "dispatch"
+        }
+      ],
+      "start": 83
+    },
+    {
+      "id": "circuit-answering--return--q01--01",
+      "productionId": "circuit-answering--return--q01--01",
+      "character": "ji",
+      "text": "泡面彻底吃不上了。",
+      "src": "/audio/voice/full-20261021/circuit-answering--return--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "answering",
+          "node": "return"
+        }
+      ],
+      "start": 32
+    },
+    {
+      "id": "circuit-answering--return--q02--01",
+      "productionId": "circuit-answering--return--q02--01",
+      "character": "cheng",
+      "text": "回班里再泡。",
+      "src": "/audio/voice/full-20261021/circuit-answering--return--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "answering",
+          "node": "return"
+        }
+      ],
+      "start": 44
+    },
+    {
+      "id": "circuit-answering--return--q03--01",
+      "productionId": "circuit-answering--return--q03--01",
+      "character": "ji",
+      "text": "那包已经加过水。",
+      "src": "/audio/voice/full-20261021/circuit-answering--return--q03--01.ogg",
+      "bindings": [
+        {
+          "chapter": "answering",
+          "node": "return"
+        }
+      ],
+      "start": 53
+    },
+    {
+      "id": "v01-question",
+      "productionId": "circuit-answering--luo--q01--01",
+      "character": "luo",
+      "text": "到底谁在后面应我？",
+      "src": "/audio/voice/v01-question.mp3",
+      "bindings": [
+        {
+          "chapter": "answering",
+          "node": "luo"
+        }
+      ],
+      "start": 35
+    },
+    {
+      "id": "circuit-answering--luo--q02--01",
+      "productionId": "circuit-answering--luo--q02--01",
+      "character": "luo",
+      "text": "这句是我问的。后面那句不是。",
+      "src": "/audio/voice/full-20261021/circuit-answering--luo--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "answering",
+          "node": "luo"
+        }
+      ],
+      "start": 70
+    },
+    {
+      "id": "circuit-answering--houserule--q01--01",
+      "productionId": "circuit-answering--houserule--q01--01",
+      "character": "luo",
+      "text": "我奶奶说的。住河边那会儿，说第三声是来点人数的。",
+      "src": "/audio/voice/full-20261021/circuit-answering--houserule--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "answering",
+          "node": "houseRule"
+        }
+      ],
+      "start": 42
+    },
+    {
+      "id": "circuit-answering--houserule--q02--01",
+      "productionId": "circuit-answering--houserule--q02--01",
+      "character": "cheng",
+      "text": "你应了？",
+      "src": "/audio/voice/full-20261021/circuit-answering--houserule--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "answering",
+          "node": "houseRule"
+        }
+      ],
+      "start": 69
+    },
+    {
+      "id": "circuit-answering--houserule--q03--01",
+      "productionId": "circuit-answering--houserule--q03--01",
+      "character": "luo",
+      "text": "第一声以为你们没走。第二声也像你。",
+      "src": "/audio/voice/full-20261021/circuit-answering--houserule--q03--01.ogg",
+      "bindings": [
+        {
+          "chapter": "answering",
+          "node": "houseRule"
+        }
+      ],
+      "start": 76
+    },
+    {
+      "id": "circuit-answering--boundary--q01--01",
+      "productionId": "circuit-answering--boundary--q01--01",
+      "character": "luo",
+      "text": "你们在的时候，它就不叫了。",
+      "src": "/audio/voice/full-20261021/circuit-answering--boundary--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "answering",
+          "node": "boundary"
+        }
+      ],
+      "start": 89
+    },
+    {
+      "id": "circuit-answering--seal--q01--01",
+      "productionId": "circuit-answering--seal--q01--01",
+      "character": "luo",
+      "text": "没有。我怕碰它。",
+      "src": "/audio/voice/full-20261021/circuit-answering--seal--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "answering",
+          "node": "seal"
+        }
+      ],
+      "start": 104
+    },
+    {
+      "id": "circuit-answering--sealposition--q01--01",
+      "productionId": "circuit-answering--sealposition--q01--01",
+      "character": "luo",
+      "text": "怎么又躲起来了？",
+      "src": "/audio/voice/full-20261021/circuit-answering--sealposition--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "answering",
+          "node": "sealPosition"
+        }
+      ],
+      "start": 88
+    },
+    {
+      "id": "circuit-answering--recorder--q01--01",
+      "productionId": "circuit-answering--recorder--q01--01",
+      "character": "ji",
+      "text": "收到得晚，录得没那么晚。",
+      "src": "/audio/voice/full-20261021/circuit-answering--recorder--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "answering",
+          "node": "recorder"
+        }
+      ],
+      "start": 111
+    },
+    {
+      "id": "circuit-answering--recordclock--q01--01",
+      "productionId": "circuit-answering--recordclock--q01--01",
+      "character": "ji",
+      "text": "你那句在车上，差不多几点？",
+      "src": "/audio/voice/full-20261021/circuit-answering--recordclock--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "answering",
+          "node": "recordClock"
+        }
+      ],
+      "start": 54
+    },
+    {
+      "id": "circuit-answering--recordclock--q02--01",
+      "productionId": "circuit-answering--recordclock--q02--01",
+      "character": "cheng",
+      "text": "01:05。车载记录还能核。",
+      "src": "/audio/voice/full-20261021/circuit-answering--recordclock--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "answering",
+          "node": "recordClock"
+        }
+      ],
+      "start": 70
+    },
+    {
+      "id": "circuit-answering--incomingname--q01--01",
+      "productionId": "circuit-answering--incomingname--q01--01",
+      "character": "ji",
+      "text": "所以它先在这里播，再从门厅出声？",
+      "src": "/audio/voice/full-20261021/circuit-answering--incomingname--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "answering",
+          "node": "incomingName"
+        }
+      ],
+      "start": 60
+    },
+    {
+      "id": "circuit-return-visit--arrival--extra1--01",
+      "productionId": "circuit-answering--incomingname--extra1--01",
+      "character": "cheng",
+      "text": "程砚，已经到场。",
+      "src": "/audio/voice/full-20261021/circuit-return-visit--arrival--extra1--01.ogg",
+      "bindings": [
+        {
+          "chapter": "answering",
+          "node": "incomingName"
+        }
+      ],
+      "start": 0
+    },
+    {
+      "id": "circuit-return-visit--echo--extra2--01",
+      "productionId": "circuit-answering--emptyreply--extra1--01",
+      "character": "ji",
+      "text": "季宁，收到。",
+      "src": "/audio/voice/full-20261021/circuit-return-visit--echo--extra2--01.ogg",
+      "bindings": [
+        {
+          "chapter": "answering",
+          "node": "emptyReply"
+        }
+      ],
+      "start": 5
+    },
+    {
+      "id": "circuit-answering--emptyreply--extra2--01",
+      "productionId": "circuit-answering--emptyreply--extra2--01",
+      "character": "unknown-radio",
+      "text": "罗禾",
+      "src": "/audio/voice/full-20261021/circuit-answering--emptyreply--extra2--01.ogg",
+      "bindings": [
+        {
+          "chapter": "answering",
+          "node": "emptyReply"
+        }
+      ],
+      "start": 75
+    },
+    {
+      "id": "circuit-answering--secondhub--q01--01",
+      "productionId": "circuit-answering--secondhub--q01--01",
+      "character": "luo",
+      "text": "我名字怎么会在这里？",
+      "src": "/audio/voice/full-20261021/circuit-answering--secondhub--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "answering",
+          "node": "secondHub"
+        }
+      ],
+      "start": 50
+    },
+    {
+      "id": "circuit-answering--list--q01--01",
+      "productionId": "circuit-answering--list--q01--01",
+      "character": "luo",
+      "text": "这两个人我认识，都还在小区住。",
+      "src": "/audio/voice/full-20261021/circuit-answering--list--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "answering",
+          "node": "list"
+        }
+      ],
+      "start": 110
+    },
+    {
+      "id": "circuit-answering--recordlist--q01--01",
+      "productionId": "circuit-answering--recordlist--q01--01",
+      "character": "luo",
+      "text": "那它干嘛叫我？",
+      "src": "/audio/voice/full-20261021/circuit-answering--recordlist--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "answering",
+          "node": "recordList"
+        }
+      ],
+      "start": 69
+    },
+    {
+      "id": "circuit-answering--handoff--q01--01",
+      "productionId": "circuit-answering--handoff--q01--01",
+      "character": "luo",
+      "text": "我今晚应那两声，记不记？",
+      "src": "/audio/voice/full-20261021/circuit-answering--handoff--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "answering",
+          "node": "handoff"
+        }
+      ],
+      "start": 66
+    },
+    {
+      "id": "circuit-answering--handoff--q02--01",
+      "productionId": "circuit-answering--handoff--q02--01",
+      "character": "cheng",
+      "text": "记。你什么时候听见、什么时候答，照你记得的写。",
+      "src": "/audio/voice/full-20261021/circuit-answering--handoff--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "answering",
+          "node": "handoff"
+        }
+      ],
+      "start": 81
+    },
+    {
+      "id": "circuit-answering--van--q01--01",
+      "productionId": "circuit-answering--van--q01--01",
+      "character": "ji",
+      "text": "这杯居然还能喝。",
+      "src": "/audio/voice/full-20261021/circuit-answering--van--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "answering",
+          "node": "van"
+        }
+      ],
+      "start": 25
+    },
+    {
+      "id": "circuit-visitors--dispatch--q01--01",
+      "productionId": "circuit-visitors--dispatch--q01--01",
+      "character": "lin",
+      "text": "监测也有异常，按现场流程核。D3资料走物业移交，别混进故障原因。",
+      "src": "/audio/voice/full-20261021/circuit-visitors--dispatch--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "visitors",
+          "node": "dispatch"
+        }
+      ],
+      "start": 54
+    },
+    {
+      "id": "circuit-visitors--breakfast--q01--01",
+      "productionId": "circuit-visitors--breakfast--q01--01",
+      "character": "cheng",
+      "text": "你上回不还吃了半块饼干？",
+      "src": "/audio/voice/full-20261021/circuit-visitors--breakfast--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "visitors",
+          "node": "breakfast"
+        }
+      ],
+      "start": 45
+    },
+    {
+      "id": "circuit-visitors--breakfast--q02--01",
+      "productionId": "circuit-visitors--breakfast--q02--01",
+      "character": "ji",
+      "text": "师傅，那个叫清理车门储物格。",
+      "src": "/audio/voice/full-20261021/circuit-visitors--breakfast--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "visitors",
+          "node": "breakfast"
+        }
+      ],
+      "start": 60
+    },
+    {
+      "id": "circuit-visitors--repair--q01--01",
+      "productionId": "circuit-visitors--repair--q01--01",
+      "character": "luo",
+      "text": "刚才灯暗的时候，那把椅子转过来了。",
+      "src": "/audio/voice/full-20261021/circuit-visitors--repair--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "visitors",
+          "node": "repair"
+        }
+      ],
+      "start": 111
+    },
+    {
+      "id": "circuit-visitors--plate--q01--01",
+      "productionId": "circuit-visitors--plate--q01--01",
+      "character": "chen",
+      "text": "我妈从老屋搬出来带的。先放这儿，办完手续再拿走。她说字朝外，那些回来认门的就以为已经到家。",
+      "src": "/audio/voice/full-20261021/circuit-visitors--plate--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "visitors",
+          "node": "plate"
+        }
+      ],
+      "start": 53
+    },
+    {
+      "id": "circuit-visitors--plate--q02--01",
+      "productionId": "circuit-visitors--plate--q02--01",
+      "character": "cheng",
+      "text": "后来拿走没有？",
+      "src": "/audio/voice/full-20261021/circuit-visitors--plate--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "visitors",
+          "node": "plate"
+        }
+      ],
+      "start": 101
+    },
+    {
+      "id": "circuit-visitors--plate--q03--01",
+      "productionId": "circuit-visitors--plate--q03--01",
+      "character": "chen",
+      "text": "她忘了。我也忘了。",
+      "src": "/audio/voice/full-20261021/circuit-visitors--plate--q03--01.ogg",
+      "bindings": [
+        {
+          "chapter": "visitors",
+          "node": "plate"
+        }
+      ],
+      "start": 111
+    },
+    {
+      "id": "circuit-visitors--knock--q01--01",
+      "productionId": "circuit-visitors--knock--q01--01",
+      "character": "luo",
+      "text": "这儿以前谁接待？",
+      "src": "/audio/voice/full-20261021/circuit-visitors--knock--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "visitors",
+          "node": "knock"
+        }
+      ],
+      "start": 32
+    },
+    {
+      "id": "circuit-visitors--firsthub--q01--01",
+      "productionId": "circuit-visitors--firsthub--q01--01",
+      "character": "ji",
+      "text": "先别叠着，等会儿看不出是哪年的。",
+      "src": "/audio/voice/full-20261021/circuit-visitors--firsthub--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "visitors",
+          "node": "firstHub"
+        }
+      ],
+      "start": 64
+    },
+    {
+      "id": "circuit-visitors--port--q01--01",
+      "productionId": "circuit-visitors--port--q01--01",
+      "character": "ji",
+      "text": "所以三号接收口，接的是文件。",
+      "src": "/audio/voice/full-20261021/circuit-visitors--port--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "visitors",
+          "node": "port"
+        }
+      ],
+      "start": 82
+    },
+    {
+      "id": "circuit-visitors--port--q02--01",
+      "productionId": "circuit-visitors--port--q02--01",
+      "character": "cheng",
+      "text": "当年还有窗口语音。先查原配置，别拿名字猜。",
+      "src": "/audio/voice/full-20261021/circuit-visitors--port--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "visitors",
+          "node": "port"
+        }
+      ],
+      "start": 99
+    },
+    {
+      "id": "circuit-visitors--recordport--q01--01",
+      "productionId": "circuit-visitors--recordport--q01--01",
+      "character": "chen",
+      "text": "这个以前用来喊号。我只管锁门，没管它往哪儿传。",
+      "src": "/audio/voice/full-20261021/circuit-visitors--recordport--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "visitors",
+          "node": "recordPort"
+        }
+      ],
+      "start": 52
+    },
+    {
+      "id": "circuit-visitors--plateside--q01--01",
+      "productionId": "circuit-visitors--plateside--q01--01",
+      "character": "chen",
+      "text": "管理那边登记过我，钥匙今天也是按借用记录领的。你们要看原件，我带进去。",
+      "src": "/audio/voice/full-20261021/circuit-visitors--plateside--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "visitors",
+          "node": "plateSide"
+        }
+      ],
+      "start": 20
+    },
+    {
+      "id": "circuit-visitors--plateside--q02--01",
+      "productionId": "circuit-visitors--plateside--q02--01",
+      "character": "luo",
+      "text": "我从外面看，椅子一直朝我。",
+      "src": "/audio/voice/full-20261021/circuit-visitors--plateside--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "visitors",
+          "node": "plateSide"
+        }
+      ],
+      "start": 65
+    },
+    {
+      "id": "circuit-visitors--ticket--q01--01",
+      "productionId": "circuit-visitors--ticket--q01--01",
+      "character": "ji",
+      "text": "这张证明领过号，另一张才有谁收。",
+      "src": "/audio/voice/full-20261021/circuit-visitors--ticket--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "visitors",
+          "node": "ticket"
+        }
+      ],
+      "start": 94
+    },
+    {
+      "id": "circuit-visitors--ticketyear--q01--01",
+      "productionId": "circuit-visitors--ticketyear--q01--01",
+      "character": "luo",
+      "text": "我今晚是接收人吗？",
+      "src": "/audio/voice/full-20261021/circuit-visitors--ticketyear--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "visitors",
+          "node": "ticketYear"
+        }
+      ],
+      "start": 53
+    },
+    {
+      "id": "circuit-visitors--ticketyear--q02--01",
+      "productionId": "circuit-visitors--ticketyear--q02--01",
+      "character": "cheng",
+      "text": "你是新苑物业当班，接今天的那份移交。这个旧窗口没有你的班。",
+      "src": "/audio/voice/full-20261021/circuit-visitors--ticketyear--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "visitors",
+          "node": "ticketYear"
+        }
+      ],
+      "start": 65
+    },
+    {
+      "id": "circuit-visitors--takenumber--q01--01",
+      "productionId": "circuit-visitors--takenumber--q01--01",
+      "character": "ji",
+      "text": "别签。",
+      "src": "/audio/voice/full-20261021/circuit-visitors--takenumber--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "visitors",
+          "node": "takeNumber"
+        }
+      ],
+      "start": 72
+    },
+    {
+      "id": "circuit-visitors--takenumber--q02--01",
+      "productionId": "circuit-visitors--takenumber--q02--01",
+      "character": "ji",
+      "text": "你今晚的班表不在这儿。",
+      "src": "/audio/voice/full-20261021/circuit-visitors--takenumber--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "visitors",
+          "node": "takeNumber"
+        }
+      ],
+      "start": 86
+    },
+    {
+      "id": "circuit-visitors--seatfailure--q01--01",
+      "productionId": "circuit-visitors--seatfailure--q01--01",
+      "character": "ji",
+      "text": "师傅，站稳了，别跟着它坐。",
+      "src": "/audio/voice/full-20261021/circuit-visitors--seatfailure--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "visitors",
+          "node": "seatFailure"
+        }
+      ],
+      "start": 70
+    },
+    {
+      "id": "circuit-visitors--oldvoice--q01--01",
+      "productionId": "circuit-visitors--oldvoice--q01--01",
+      "character": "chen",
+      "text": "那晚有人在这儿等车。可这句不是今晚打来的。",
+      "src": "/audio/voice/full-20261021/circuit-visitors--oldvoice--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "visitors",
+          "node": "oldVoice"
+        }
+      ],
+      "start": 91
+    },
+    {
+      "id": "q07-xu",
+      "productionId": "circuit-visitors--oldvoice--extra1--01",
+      "character": "xu",
+      "text": "车还等吗？",
+      "src": "/audio/voice/q07-xu.mp3",
+      "bindings": [
+        {
+          "chapter": "visitors",
+          "node": "oldVoice"
+        }
+      ],
+      "start": 47
+    },
+    {
+      "id": "circuit-visitors--newvoice--q01--01",
+      "productionId": "circuit-visitors--newvoice--q01--01",
+      "character": "ji",
+      "text": "路找到这里了。",
+      "src": "/audio/voice/full-20261021/circuit-visitors--newvoice--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "visitors",
+          "node": "newVoice"
+        }
+      ],
+      "start": 76
+    },
+    {
+      "id": "circuit-visitors--newvoice--q02--01",
+      "productionId": "circuit-visitors--newvoice--q02--01",
+      "character": "ji",
+      "text": "谁把车上那句装进去的，还没找到。",
+      "src": "/audio/voice/full-20261021/circuit-visitors--newvoice--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "visitors",
+          "node": "newVoice"
+        }
+      ],
+      "start": 88
+    },
+    {
+      "id": "v01-confirm",
+      "productionId": "circuit-visitors--newvoice--extra1--01",
+      "character": "cheng",
+      "text": "先别替它确认。",
+      "src": "/audio/voice/v01-confirm.mp3",
+      "bindings": [
+        {
+          "chapter": "visitors",
+          "node": "newVoice"
+        }
+      ],
+      "start": 13
+    },
+    {
+      "id": "circuit-visitors--recordcard--q01--01",
+      "productionId": "circuit-visitors--recordcard--q01--01",
+      "character": "cheng",
+      "text": "听着像，还要比。",
+      "src": "/audio/voice/full-20261021/circuit-visitors--recordcard--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "visitors",
+          "node": "recordCard"
+        }
+      ],
+      "start": 50
+    },
+    {
+      "id": "circuit-visitors--reconcile--q01--01",
+      "productionId": "circuit-visitors--reconcile--q01--01",
+      "character": "luo",
+      "text": "它如果再喊收到呢？",
+      "src": "/audio/voice/full-20261021/circuit-visitors--reconcile--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "visitors",
+          "node": "reconcile"
+        }
+      ],
+      "start": 94
+    },
+    {
+      "id": "circuit-visitors--reconcile--q02--01",
+      "productionId": "circuit-visitors--reconcile--q02--01",
+      "character": "cheng",
+      "text": "那就留它喊过的记录，别让它替你签。",
+      "src": "/audio/voice/full-20261021/circuit-visitors--reconcile--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "visitors",
+          "node": "reconcile"
+        }
+      ],
+      "start": 106
+    },
+    {
+      "id": "circuit-visitors--signaturefailure--q01--01",
+      "productionId": "circuit-visitors--signaturefailure--q01--01",
+      "character": "ji",
+      "text": "旧录音是真的，今晚这个来访人没核出来。",
+      "src": "/audio/voice/full-20261021/circuit-visitors--signaturefailure--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "visitors",
+          "node": "signatureFailure"
+        }
+      ],
+      "start": 53
+    },
+    {
+      "id": "circuit-visitors--plateleave--q01--01",
+      "productionId": "circuit-visitors--plateleave--q01--01",
+      "character": "chen",
+      "text": "我妈以前催我吃饭，就在那边叫。",
+      "src": "/audio/voice/full-20261021/circuit-visitors--plateleave--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "visitors",
+          "node": "plateLeave"
+        }
+      ],
+      "start": 42
+    },
+    {
+      "id": "circuit-visitors--plateleave--q02--01",
+      "productionId": "circuit-visitors--plateleave--q02--01",
+      "character": "chen",
+      "text": "她嫌我应得太慢。",
+      "src": "/audio/voice/full-20261021/circuit-visitors--plateleave--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "visitors",
+          "node": "plateLeave"
+        }
+      ],
+      "start": 73
+    },
+    {
+      "id": "circuit-visitors--wetstep--q01--01",
+      "productionId": "circuit-visitors--wetstep--q01--01",
+      "character": "ji",
+      "text": "师傅，先别往回找。让陈伯别一个人再进去。",
+      "src": "/audio/voice/full-20261021/circuit-visitors--wetstep--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "visitors",
+          "node": "wetStep"
+        }
+      ],
+      "start": 100
+    },
+    {
+      "id": "circuit-visitors--breakfastend--q01--01",
+      "productionId": "circuit-visitors--breakfastend--q01--01",
+      "character": "cheng",
+      "text": "这次不是泡面了。",
+      "src": "/audio/voice/full-20261021/circuit-visitors--breakfastend--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "visitors",
+          "node": "breakfastEnd"
+        }
+      ],
+      "start": 66
+    },
+    {
+      "id": "circuit-visitors--breakfastend--q02--01",
+      "productionId": "circuit-visitors--breakfastend--q02--01",
+      "character": "ji",
+      "text": "您别立刻接着说回班里再吃。",
+      "src": "/audio/voice/full-20261021/circuit-visitors--breakfastend--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "visitors",
+          "node": "breakfastEnd"
+        }
+      ],
+      "start": 80
+    },
+    {
+      "id": "circuit-visitors--end--q01--01",
+      "productionId": "circuit-visitors--end--q01--01",
+      "character": "ji",
+      "text": "我们是四个人到的。",
+      "src": "/audio/voice/full-20261021/circuit-visitors--end--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "visitors",
+          "node": "end"
+        }
+      ],
+      "start": 140
+    },
+    {
+      "id": "circuit-tickets--dispatch--q01--01",
+      "productionId": "circuit-tickets--dispatch--q01--01",
+      "character": "luo",
+      "text": "不是四张。刚才那张照片右边还压着半张，我没拍全。",
+      "src": "/audio/voice/full-20261021/circuit-tickets--dispatch--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "tickets",
+          "node": "dispatch"
+        }
+      ],
+      "start": 17
+    },
+    {
+      "id": "circuit-tickets--breakfast--q01--01",
+      "productionId": "circuit-tickets--breakfast--q01--01",
+      "character": "ji",
+      "text": "您刚才说什么来着？",
+      "src": "/audio/voice/full-20261021/circuit-tickets--breakfast--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "tickets",
+          "node": "breakfast"
+        }
+      ],
+      "start": 1
+    },
+    {
+      "id": "circuit-tickets--breakfast--q02--01",
+      "productionId": "circuit-tickets--breakfast--q02--01",
+      "character": "cheng",
+      "text": "趁热。",
+      "src": "/audio/voice/full-20261021/circuit-tickets--breakfast--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "tickets",
+          "node": "breakfast"
+        }
+      ],
+      "start": 17
+    },
+    {
+      "id": "circuit-tickets--breakfast--q03--01",
+      "productionId": "circuit-tickets--breakfast--q03--01",
+      "character": "cheng",
+      "text": "现在还响？",
+      "src": "/audio/voice/full-20261021/circuit-tickets--breakfast--q03--01.ogg",
+      "bindings": [
+        {
+          "chapter": "tickets",
+          "node": "breakfast"
+        }
+      ],
+      "start": 76
+    },
+    {
+      "id": "circuit-tickets--breakfast--q04--01",
+      "productionId": "circuit-tickets--breakfast--q04--01",
+      "character": "breakfast-owner",
+      "text": "问你们呢。",
+      "src": "/audio/voice/full-20261021/circuit-tickets--breakfast--q04--01.ogg",
+      "bindings": [
+        {
+          "chapter": "tickets",
+          "node": "breakfast"
+        }
+      ],
+      "start": 93
+    },
+    {
+      "id": "circuit-tickets--boundary--q01--01",
+      "productionId": "circuit-tickets--boundary--q01--01",
+      "character": "chen",
+      "text": "我这回跟你们走后面。",
+      "src": "/audio/voice/full-20261021/circuit-tickets--boundary--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "tickets",
+          "node": "boundary"
+        }
+      ],
+      "start": 90
+    },
+    {
+      "id": "circuit-tickets--slips--q01--01",
+      "productionId": "circuit-tickets--slips--q01--01",
+      "character": "ji",
+      "text": "先别碰，看边。",
+      "src": "/audio/voice/full-20261021/circuit-tickets--slips--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "tickets",
+          "node": "slips"
+        }
+      ],
+      "start": 91
+    },
+    {
+      "id": "circuit-tickets--chen--q01--01",
+      "productionId": "circuit-tickets--chen--q01--01",
+      "character": "chen",
+      "text": "说是别让后头跟来的，还以为你在等。",
+      "src": "/audio/voice/full-20261021/circuit-tickets--chen--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "tickets",
+          "node": "chen"
+        }
+      ],
+      "start": 44
+    },
+    {
+      "id": "circuit-tickets--chen--q02--01",
+      "productionId": "circuit-tickets--chen--q02--01",
+      "character": "cheng",
+      "text": "所以您放进去的？",
+      "src": "/audio/voice/full-20261021/circuit-tickets--chen--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "tickets",
+          "node": "chen"
+        }
+      ],
+      "start": 64
+    },
+    {
+      "id": "circuit-tickets--chen--q03--01",
+      "productionId": "circuit-tickets--chen--q03--01",
+      "character": "chen",
+      "text": "规矩我记得。今晚这张，我没拿过。",
+      "src": "/audio/voice/full-20261021/circuit-tickets--chen--q03--01.ogg",
+      "bindings": [
+        {
+          "chapter": "tickets",
+          "node": "chen"
+        }
+      ],
+      "start": 79
+    },
+    {
+      "id": "circuit-tickets--hush--q01--01",
+      "productionId": "circuit-tickets--hush--q01--01",
+      "character": "luo",
+      "text": "这声我小时候听过。叫人退号，就是这个。",
+      "src": "/audio/voice/full-20261021/circuit-tickets--hush--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "tickets",
+          "node": "hush"
+        }
+      ],
+      "start": 78
+    },
+    {
+      "id": "circuit-tickets--firsthub--q01--01",
+      "productionId": "circuit-tickets--firsthub--q01--01",
+      "character": "ji",
+      "text": "这次别泡成复写联了。",
+      "src": "/audio/voice/full-20261021/circuit-tickets--firsthub--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "tickets",
+          "node": "firstHub"
+        }
+      ],
+      "start": 48
+    },
+    {
+      "id": "circuit-tickets--paperedge--q01--01",
+      "productionId": "circuit-tickets--paperedge--q01--01",
+      "character": "ji",
+      "text": "只能说不是从这个纸口撕的。",
+      "src": "/audio/voice/full-20261021/circuit-tickets--paperedge--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "tickets",
+          "node": "paperEdge"
+        }
+      ],
+      "start": 72
+    },
+    {
+      "id": "circuit-tickets--recordpaper--q01--01",
+      "productionId": "circuit-tickets--recordpaper--q01--01",
+      "character": "chen",
+      "text": "那张有我名字的，纸正面朝哪边？",
+      "src": "/audio/voice/full-20261021/circuit-tickets--recordpaper--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "tickets",
+          "node": "recordPaper"
+        }
+      ],
+      "start": 33
+    },
+    {
+      "id": "circuit-tickets--recordpaper--q02--01",
+      "productionId": "circuit-tickets--recordpaper--q02--01",
+      "character": "cheng",
+      "text": "朝椅子。",
+      "src": "/audio/voice/full-20261021/circuit-tickets--recordpaper--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "tickets",
+          "node": "recordPaper"
+        }
+      ],
+      "start": 51
+    },
+    {
+      "id": "circuit-tickets--queue--q01--01",
+      "productionId": "circuit-tickets--queue--q01--01",
+      "character": "luo",
+      "text": "所以不是给第零个人的。",
+      "src": "/audio/voice/full-20261021/circuit-tickets--queue--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "tickets",
+          "node": "queue"
+        }
+      ],
+      "start": 92
+    },
+    {
+      "id": "circuit-tickets--recordqueue--q02--01",
+      "productionId": "circuit-tickets--recordqueue--q02--01",
+      "character": "chen",
+      "text": "家里喊你，你再答。这里隔着玻璃，先看清。",
+      "src": "/audio/voice/full-20261021/circuit-tickets--recordqueue--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "tickets",
+          "node": "recordQueue"
+        }
+      ],
+      "start": 57
+    },
+    {
+      "id": "circuit-tickets--lastsheet--q01--01",
+      "productionId": "circuit-tickets--lastsheet--q01--01",
+      "character": "cheng",
+      "text": "那就别按这个排谁先到。",
+      "src": "/audio/voice/full-20261021/circuit-tickets--lastsheet--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "tickets",
+          "node": "lastSheet"
+        }
+      ],
+      "start": 43
+    },
+    {
+      "id": "circuit-tickets--wrongseat--q01--01",
+      "productionId": "circuit-tickets--wrongseat--q01--01",
+      "character": "ji",
+      "text": "师傅，这两本又混了。",
+      "src": "/audio/voice/full-20261021/circuit-tickets--wrongseat--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "tickets",
+          "node": "wrongSeat"
+        }
+      ],
+      "start": 49
+    },
+    {
+      "id": "circuit-tickets--correctside--q01--01",
+      "productionId": "circuit-tickets--correctside--q01--01",
+      "character": "chen",
+      "text": "我能给你们开门，不能给里面顶班。",
+      "src": "/audio/voice/full-20261021/circuit-tickets--correctside--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "tickets",
+          "node": "correctSide"
+        }
+      ],
+      "start": 65
+    },
+    {
+      "id": "circuit-tickets--correctside--q02--01",
+      "productionId": "circuit-tickets--correctside--q02--01",
+      "character": "cheng",
+      "text": "对。",
+      "src": "/audio/voice/full-20261021/circuit-tickets--correctside--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "tickets",
+          "node": "correctSide"
+        }
+      ],
+      "start": 84
+    },
+    {
+      "id": "circuit-tickets--correctside--q03--01",
+      "productionId": "circuit-tickets--correctside--q03--01",
+      "character": "cheng",
+      "text": "门也是管理方开，您陪着看。",
+      "src": "/audio/voice/full-20261021/circuit-tickets--correctside--q03--01.ogg",
+      "bindings": [
+        {
+          "chapter": "tickets",
+          "node": "correctSide"
+        }
+      ],
+      "start": 94
+    },
+    {
+      "id": "circuit-tickets--emptychair--q01--01",
+      "productionId": "circuit-tickets--emptychair--q01--01",
+      "character": "chen",
+      "text": "以前退号的人，也从这道门出去。",
+      "src": "/audio/voice/full-20261021/circuit-tickets--emptychair--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "tickets",
+          "node": "emptyChair"
+        }
+      ],
+      "start": 43
+    },
+    {
+      "id": "circuit-tickets--job--q01--01",
+      "productionId": "circuit-tickets--job--q01--01",
+      "character": "ji",
+      "text": "十七是后来取文件的。",
+      "src": "/audio/voice/full-20261021/circuit-tickets--job--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "tickets",
+          "node": "job"
+        }
+      ],
+      "start": 84
+    },
+    {
+      "id": "v01-confirm",
+      "productionId": "circuit-tickets--oldfile--q01--01",
+      "character": "cheng",
+      "text": "先别替它确认。",
+      "src": "/audio/voice/v01-confirm.mp3",
+      "bindings": [
+        {
+          "chapter": "tickets",
+          "node": "oldFile"
+        }
+      ],
+      "start": 25
+    },
+    {
+      "id": "circuit-tickets--recordjob--q02--01",
+      "productionId": "circuit-tickets--recordjob--q02--01",
+      "character": "chen",
+      "text": "我妈最后那次办手续，就是叫到号，又退了。东西没搬齐。",
+      "src": "/audio/voice/full-20261021/circuit-tickets--recordjob--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "tickets",
+          "node": "recordJob"
+        }
+      ],
+      "start": 40
+    },
+    {
+      "id": "circuit-tickets--recordjob--q03--01",
+      "productionId": "circuit-tickets--recordjob--q03--01",
+      "character": "cheng",
+      "text": "哪一年？",
+      "src": "/audio/voice/full-20261021/circuit-tickets--recordjob--q03--01.ogg",
+      "bindings": [
+        {
+          "chapter": "tickets",
+          "node": "recordJob"
+        }
+      ],
+      "start": 69
+    },
+    {
+      "id": "circuit-tickets--witnesses--q01--01",
+      "productionId": "circuit-tickets--witnesses--q01--01",
+      "character": "ji",
+      "text": "程砚的砚，别又写成石见两个字。",
+      "src": "/audio/voice/full-20261021/circuit-tickets--witnesses--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "tickets",
+          "node": "witnesses"
+        }
+      ],
+      "start": 59
+    },
+    {
+      "id": "circuit-tickets--witnesses--q02--01",
+      "productionId": "circuit-tickets--witnesses--q02--01",
+      "character": "cheng",
+      "text": "上回那张是你写的。",
+      "src": "/audio/voice/full-20261021/circuit-tickets--witnesses--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "tickets",
+          "node": "witnesses"
+        }
+      ],
+      "start": 77
+    },
+    {
+      "id": "circuit-tickets--witnesses--q03--01",
+      "productionId": "circuit-tickets--witnesses--q03--01",
+      "character": "ji",
+      "text": "所以这回先请您看。",
+      "src": "/audio/voice/full-20261021/circuit-tickets--witnesses--q03--01.ogg",
+      "bindings": [
+        {
+          "chapter": "tickets",
+          "node": "witnesses"
+        }
+      ],
+      "start": 89
+    },
+    {
+      "id": "circuit-tickets--recordseal--q01--01",
+      "productionId": "circuit-tickets--recordseal--q01--01",
+      "character": "luo",
+      "text": "现在可以走了吗？",
+      "src": "/audio/voice/full-20261021/circuit-tickets--recordseal--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "tickets",
+          "node": "recordSeal"
+        }
+      ],
+      "start": 66
+    },
+    {
+      "id": "circuit-tickets--recordseal--q02--01",
+      "productionId": "circuit-tickets--recordseal--q02--01",
+      "character": "cheng",
+      "text": "等接收单签完，一起走。",
+      "src": "/audio/voice/full-20261021/circuit-tickets--recordseal--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "tickets",
+          "node": "recordSeal"
+        }
+      ],
+      "start": 77
+    },
+    {
+      "id": "circuit-tickets--wrongwriter--q01--01",
+      "productionId": "circuit-tickets--wrongwriter--q01--01",
+      "character": "manager",
+      "text": "哪项是他的操作记录？",
+      "src": "/audio/voice/full-20261021/circuit-tickets--wrongwriter--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "tickets",
+          "node": "wrongWriter"
+        }
+      ],
+      "start": 19
+    },
+    {
+      "id": "circuit-tickets--wrongwriter--q02--01",
+      "productionId": "circuit-tickets--wrongwriter--q02--01",
+      "character": "ji",
+      "text": "重查吧。",
+      "src": "/audio/voice/full-20261021/circuit-tickets--wrongwriter--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "tickets",
+          "node": "wrongWriter"
+        }
+      ],
+      "start": 80
+    },
+    {
+      "id": "circuit-tickets--handoff--q01--01",
+      "productionId": "circuit-tickets--handoff--q01--01",
+      "character": "manager",
+      "text": "按编号接走。",
+      "src": "/audio/voice/full-20261021/circuit-tickets--handoff--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "tickets",
+          "node": "handoff"
+        }
+      ],
+      "start": 12
+    },
+    {
+      "id": "circuit-tickets--handoff--q02--01",
+      "productionId": "circuit-tickets--handoff--q02--01",
+      "character": "manager",
+      "text": "您家的原退号纸，找着了再联系，别自己回来塞窗口。",
+      "src": "/audio/voice/full-20261021/circuit-tickets--handoff--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "tickets",
+          "node": "handoff"
+        }
+      ],
+      "start": 31
+    },
+    {
+      "id": "circuit-tickets--handoff--q03--01",
+      "productionId": "circuit-tickets--handoff--q03--01",
+      "character": "chen",
+      "text": "我不坐。你们都听见了啊。",
+      "src": "/audio/voice/full-20261021/circuit-tickets--handoff--q03--01.ogg",
+      "bindings": [
+        {
+          "chapter": "tickets",
+          "node": "handoff"
+        }
+      ],
+      "start": 85
+    },
+    {
+      "id": "circuit-tickets--doorway--q01--01",
+      "productionId": "circuit-tickets--doorway--q01--01",
+      "character": "luo",
+      "text": "一、二、三、四……",
+      "src": "/audio/voice/full-20261021/circuit-tickets--doorway--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "tickets",
+          "node": "doorway"
+        }
+      ],
+      "start": 34
+    },
+    {
+      "id": "circuit-tickets--doorway--q02--01",
+      "productionId": "circuit-tickets--doorway--q02--01",
+      "character": "ji",
+      "text": "按今天登记，一个个看脸。",
+      "src": "/audio/voice/full-20261021/circuit-tickets--doorway--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "tickets",
+          "node": "doorway"
+        }
+      ],
+      "start": 86
+    },
+    {
+      "id": "circuit-tickets--van--q01--01",
+      "productionId": "circuit-tickets--van--q01--01",
+      "character": "ji",
+      "text": "您还吃吗？",
+      "src": "/audio/voice/full-20261021/circuit-tickets--van--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "tickets",
+          "node": "van"
+        }
+      ],
+      "start": 60
+    },
+    {
+      "id": "circuit-tickets--van--q02--01",
+      "productionId": "circuit-tickets--van--q02--01",
+      "character": "cheng",
+      "text": "你不是吃完了？",
+      "src": "/audio/voice/full-20261021/circuit-tickets--van--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "tickets",
+          "node": "van"
+        }
+      ],
+      "start": 68
+    },
+    {
+      "id": "circuit-tickets--message--q01--01",
+      "productionId": "circuit-tickets--message--q01--01",
+      "character": "ji",
+      "text": "下次有正式单再去。",
+      "src": "/audio/voice/full-20261021/circuit-tickets--message--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "tickets",
+          "node": "message"
+        }
+      ],
+      "start": 71
+    }
+  ]
+}

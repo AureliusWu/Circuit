@@ -23,7 +23,7 @@ def fixtures():
     """Compile the authored engine in a temporary directory and find legal BFS routes."""
     with tempfile.TemporaryDirectory(prefix='circuit-browser-engine-') as temporary:
         command = [shutil.which('node') or 'node', 'node_modules/typescript/bin/tsc',
-                   '--module', 'commonjs', '--moduleResolution', 'node', '--target', 'ES2020',
+                   '--module', 'commonjs', '--moduleResolution', 'node', '--resolveJsonModule', '--esModuleInterop', '--target', 'ES2020',
                    '--strict', '--skipLibCheck', '--rootDir', 'src', '--outDir', temporary,
                    'src/story/engine.ts','src/game/mediaCatalog.ts']
         compiled = subprocess.run(command, capture_output=True, text=True)

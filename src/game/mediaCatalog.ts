@@ -1,6 +1,7 @@
+import fullManifest from './full-voice-manifest.json';
 import type { CharacterId } from './characters';
 
-export type VoiceClip = { id: string; character: CharacterId; text: string; src: string; bindings: { chapter: string; node: string }[] };
+export type VoiceClip = { id: string; character: CharacterId | 'unknown-radio'; text: string; src: string; bindings: { chapter: string; node: string }[] };
 
 // Generated from docs/audio/voice-plan.json. See tools/audio/validate_media.py.
 export const VOICE_CLIPS: readonly VoiceClip[] = [
@@ -458,11 +459,28 @@ export const VOICE_REPLAYS: readonly { clipId: string; chapter: string; node: st
   { clipId: 'v01-confirm', chapter: 'visitors', node: 'newVoice' }
 ];
 
-export const getVoiceClip = (id: string) => VOICE_CLIPS.find(clip => clip.id === id);
+export const FULL_VOICE_CLIPS = fullManifest.clips as (VoiceClip & { productionId: string; start: number })[];
+const sameWords = (a: string, b: string) => a.replace(/[^\p{L}\p{N}]/gu, '') === b.replace(/[^\p{L}\p{N}]/gu, '');
+// Evidence IDs stay stable. A newly verified full take is also the original file
+// for every subsequent replay; the former masters remain in the source archive.
+const playbackLegacy = VOICE_CLIPS.map(original => {
+  const full = FULL_VOICE_CLIPS.find(clip => clip.character === original.character && sameWords(clip.text, original.text));
+  return full ? { ...original, src: full.src } : original;
+});
+export const getVoiceClip = (id: string): VoiceClip | undefined => playbackLegacy.find(clip => clip.id === id)
+  ?? FULL_VOICE_CLIPS.find(clip => clip.id === id);
 
-export const voicesFor = (chapter: string, node: string) => {
-  const original = VOICE_CLIPS.filter(clip => clip.bindings.some(binding => binding.chapter === chapter && binding.node === node));
-  const replays = VOICE_REPLAYS.filter(binding => binding.chapter === chapter && binding.node === node)
-    .flatMap(binding => { const clip = getVoiceClip(binding.clipId); return clip ? [clip] : []; });
-  return [...original, ...replays];
+/** Full authored order, with explicit historical-recording cues retained. */
+export const voicesFor = (chapter: string, node: string): VoiceClip[] => {
+  const full = FULL_VOICE_CLIPS.filter(clip => clip.bindings.some(binding => binding.chapter === chapter && binding.node === node))
+    .sort((a, b) => a.start - b.start);
+  const ordered = full.map(clip => playbackLegacy.find(original => original.character === clip.character && sameWords(original.text, clip.text)) ?? clip);
+  const historical = [
+    ...playbackLegacy.filter(clip => clip.bindings.some(binding => binding.chapter === chapter && binding.node === node)),
+    ...VOICE_REPLAYS.filter(binding => binding.chapter === chapter && binding.node === node)
+      .flatMap(binding => { const clip = getVoiceClip(binding.clipId); return clip ? [clip] : []; })
+  ];
+  const missing = historical.filter(clip => !ordered.some(item => item.id === clip.id));
+  // These preserved cues occur before the newly spoken discussion of the record.
+  return [...missing, ...ordered];
 };

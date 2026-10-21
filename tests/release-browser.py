@@ -58,6 +58,8 @@ process.stdout.write(JSON.stringify(results));
 
 
 def run(url, pwa):
+    cg_dimensions = {Path(a['output']).name: (a['width'], a['height'])
+                     for a in json.loads(Path('docs/production/full-media/recovered-cg.json').read_text())['assets']}
     began = time.monotonic()
     phase = 'compile-legal-routes'
     completed, errors, console_errors, http_errors = [], [], [], []
@@ -358,7 +360,7 @@ def run(url, pwa):
                             assert (image['width'], image['height']) == (640, 640), image
                             assert .15 < image['transparent'] < .9, image
                         elif '/art/' in image['path']:
-                            assert (image['width'], image['height']) == (1600, 900), image
+                            assert (image['width'], image['height']) == cg_dimensions.get(Path(urlsplit(image['path']).path).name, (1600, 900)), image
                         else:
                             assert (image['width'], image['height']) == (512, 512), image
                     summary['offline_art'] = images

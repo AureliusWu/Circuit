@@ -6805,7 +6805,8 @@
       "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
       "seed": 1290339905,
       "textSha256": "13b1e43e71bd843090bcb89dbfc0b4b6b54b8895ae179de31000adbca5adf141",
-      "medium": "spoken"
+      "medium": "spoken",
+      "spokenText": "零点零三分，林岚收到过。"
     },
     {
       "id": "circuit-return-visit--echo--extra1--01",

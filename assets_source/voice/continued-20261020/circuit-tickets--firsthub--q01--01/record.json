@@ -16,10 +16,10 @@
   "textSha256": "4ba36daeca73e5ab155e2fb57393c011b31b9db54dbff9881cb193cb3960e082",
   "medium": "spoken",
   "requestSha256": "6538c13b068015603706aba78ca33cd0725bc3840ada454bc0284ad53cb6ad53",
-  "attempt": 29,
+  "attempt": 32,
   "status": "needs_review",
   "asr": {
-    "transcript": "这次别泡成腹血帘了",
+    "transcript": "这次别泡成腹血帘了。",
     "cer": 0.333333,
     "polarityCountsMatch": true,
     "passed": false,
@@ -56,47 +56,47 @@
     },
     "model": "Systran/faster-whisper-large-v3",
     "revision": "edaa852ec7e145841d8ffdb056a99866b5f0a478",
-    "audioSha256": "09b1a3108fef39d6657cfa3f2982b48138097540124c1309c8fe252ceb747bdc"
+    "audioSha256": "2c48ae88f1ddfb3736ecae2298cabf28d5ec966fd1b36311ffff0ad79a5055bf"
   },
-  "duration": 1.84,
-  "wallSeconds": 12.215,
+  "duration": 2.96,
+  "wallSeconds": 111.591,
   "loudness": {
-    "input_i": "-21.39",
-    "input_tp": "-5.28",
+    "input_i": "-23.97",
+    "input_tp": "-8.50",
     "input_lra": "0.00",
-    "input_thresh": "-31.39",
-    "output_i": "-19.99",
-    "output_tp": "-3.90",
+    "input_thresh": "-34.13",
+    "output_i": "-19.98",
+    "output_tp": "-4.53",
     "output_lra": "0.00",
-    "output_thresh": "-29.99",
+    "output_thresh": "-30.15",
     "normalization_type": "linear",
-    "target_offset": "-0.01"
+    "target_offset": "-0.02"
   },
   "files": {
     "raw": {
       "path": "circuit-tickets--firsthub--q01--01/raw.wav",
-      "bytes": 176720,
-      "sha256": "eee5fd7c739fdb6ed81718632567074bd0612e41924f3812e1a6d73e9f7be45b"
+      "bytes": 284240,
+      "sha256": "8be081fbee5a5a96201f30e8de533291f1992061745b4c25c333828f57aca69a"
     },
     "master": {
       "path": "circuit-tickets--firsthub--q01--01/master.wav",
-      "bytes": 88398,
-      "sha256": "1f925ee197801f850f65eada209d336a9ce53f571b66c9e5873e3069f1d2b42b"
+      "bytes": 142158,
+      "sha256": "d678283f276a3dbe92dfe3315b60324863cbc0526a1b35b0e126ad22b9d7627a"
     },
     "runtime": {
       "path": "circuit-tickets--firsthub--q01--01/runtime.ogg",
-      "bytes": 17223,
-      "sha256": "09b1a3108fef39d6657cfa3f2982b48138097540124c1309c8fe252ceb747bdc"
+      "bytes": 24623,
+      "sha256": "2c48ae88f1ddfb3736ecae2298cabf28d5ec966fd1b36311ffff0ad79a5055bf"
     }
   },
   "performanceDirection": {
-    "instruction": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。 复写联是纸质复写票据。复写联读 fù xiě lián，写是 xiě，第三声，咬字清楚。自然地对师傅开一句玩笑，语速稍慢。只读给定台词，不念拼音或补充解释。",
-    "note": "复写联是纸质复写票据。复写联读 fù xiě lián，写是 xiě，第三声，咬字清楚。自然地对师傅开一句玩笑，语速稍慢。只读给定台词，不念拼音或补充解释。",
-    "spokenText": "这次别泡成付写连了。",
+    "instruction": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。 年轻女性，普通话，自然地对师傅开一句玩笑，语速适中，字句完整清楚。复写联是纸质复写票据，复写读 fù xiě，写是书写的写、第三声，不读血。逗号处短暂停顿，句尾完整读了，不加呢。只读给定台词，不读拼音和解释。",
+    "note": "年轻女性，普通话，自然地对师傅开一句玩笑，语速适中，字句完整清楚。复写联是纸质复写票据，复写读 fù xiě，写是书写的写、第三声，不读血。逗号处短暂停顿，句尾完整读了，不加呢。只读给定台词，不读拼音和解释。",
+    "spokenText": "这次别泡成，复写联了。",
     "phoneticSpellingProof": {
       "method": "exact_all_syllables_tones_and_explicit_numeric_values_v2_pypinyin_0.53.0",
       "expected": "这次别泡成复写联了",
-      "observed": "这次别泡成付写连了",
+      "observed": "这次别泡成复写联了",
       "expectedSyllables": [
         "zhe4",
         "ci4",
@@ -125,9 +125,9 @@
       "humanListening": false
     },
     "textSha256": "4ba36daeca73e5ab155e2fb57393c011b31b9db54dbff9881cb193cb3960e082",
-    "directionSha256": "5b784b7b0d44fc327fd6b2d0a47ab073bd9032ac062ecbfba5bcbb4c5f5b4520"
+    "directionSha256": "4707ff5f56135e1131c8fd059307ef608600cfecd8071019a91732862a09fa96"
   },
-  "recoveredFromRun": 39590673943,
+  "recoveredFromRun": 39593493427,
   "asrReviewHistory": [
     {
       "transcript": "这次别炮成腹血连了",
@@ -170,14 +170,14 @@
   ],
   "independentReviews": [
     {
-      "transcript": "这次别泡成负雪莲了",
+      "transcript": "这次别泡成腹血莲了",
       "cer": 0.333333,
       "polarityCountsMatch": true,
       "passed": false,
       "phoneticReview": {
         "method": "exact_all_syllables_tones_and_explicit_numeric_values_v2_pypinyin_0.53.0",
         "expected": "这次别泡成复写联了",
-        "observed": "这次别泡成负雪莲了",
+        "observed": "这次别泡成腹血莲了",
         "expectedSyllables": [
           "zhe4",
           "ci4",
@@ -196,7 +196,7 @@
           "pao4",
           "cheng2",
           "fu4",
-          "xue3",
+          "xue4",
           "lian2",
           "le5"
         ],
@@ -208,8 +208,8 @@
       "acceptance": "independent_exact_words_or_all_syllables_and_tones",
       "model": "FunAudioLLM/SenseVoiceSmall",
       "revision": "3847d57b6bdf2dd8875cb1508d2af43d80a16bf7",
-      "rawTranscript": "<|zh|><|NEUTRAL|><|Speech|><|woitn|>这次别泡成负雪莲了",
-      "audioSha256": "09b1a3108fef39d6657cfa3f2982b48138097540124c1309c8fe252ceb747bdc",
+      "rawTranscript": "<|zh|><|NEUTRAL|><|Speech|><|woitn|>这次别泡成腹血莲了",
+      "audioSha256": "2c48ae88f1ddfb3736ecae2298cabf28d5ec966fd1b36311ffff0ad79a5055bf",
       "humanListening": false
     },
     {
@@ -252,7 +252,7 @@
       "model": "FunAudioLLM/SenseVoiceSmall",
       "revision": "3847d57b6bdf2dd8875cb1508d2af43d80a16bf7",
       "rawTranscript": "<|zh|><|NEUTRAL|><|Speech|><|woitn|>这次别泡成腹血莲了",
-      "audioSha256": "eda3dbce76f64e9534013db2e69765ae49e32aae3d68be86f31f07c73f119f78",
+      "audioSha256": "fc334bc5110c0bc8be1ea719ea983db6261e98dc1dd5d3ac376c4ce52aa5c44d",
       "humanListening": false
     },
     {
@@ -295,7 +295,7 @@
       "model": "FunAudioLLM/SenseVoiceSmall",
       "revision": "3847d57b6bdf2dd8875cb1508d2af43d80a16bf7",
       "rawTranscript": "<|zh|><|NEUTRAL|><|Speech|><|woitn|>这次别泡成腹血莲了",
-      "audioSha256": "d7f05f8c9db144e1e798a04d6483864050396f0a182d87687f21463284c2e3c7",
+      "audioSha256": "4d9c49d5a046aafc179f06c4a0380288c529bd0340c3239355447cd6dbd550b5",
       "humanListening": false
     }
   ]

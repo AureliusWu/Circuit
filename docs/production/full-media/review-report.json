@@ -10,7 +10,7 @@
       "text": "这次别泡成复写联了。",
       "status": "needs_review",
       "asr": {
-        "transcript": "这次别泡成腹血帘了",
+        "transcript": "这次别泡成腹血帘了。",
         "cer": 0.333333,
         "polarityCountsMatch": true,
         "passed": false,
@@ -47,7 +47,7 @@
         },
         "model": "Systran/faster-whisper-large-v3",
         "revision": "edaa852ec7e145841d8ffdb056a99866b5f0a478",
-        "audioSha256": "09b1a3108fef39d6657cfa3f2982b48138097540124c1309c8fe252ceb747bdc"
+        "audioSha256": "2c48ae88f1ddfb3736ecae2298cabf28d5ec966fd1b36311ffff0ad79a5055bf"
       }
     }
   ],

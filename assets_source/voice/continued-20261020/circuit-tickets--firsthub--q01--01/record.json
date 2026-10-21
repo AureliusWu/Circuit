@@ -16,17 +16,17 @@
   "textSha256": "4ba36daeca73e5ab155e2fb57393c011b31b9db54dbff9881cb193cb3960e082",
   "medium": "spoken",
   "requestSha256": "6538c13b068015603706aba78ca33cd0725bc3840ada454bc0284ad53cb6ad53",
-  "attempt": 11,
+  "attempt": 14,
   "status": "needs_review",
   "asr": {
-    "transcript": "這次 別泡成腹血連了",
+    "transcript": "这次别泡成负血连了",
     "cer": 0.333333,
     "polarityCountsMatch": true,
     "passed": false,
     "phoneticReview": {
       "method": "exact_all_syllables_tones_and_explicit_numeric_values_v2_pypinyin_0.53.0",
       "expected": "这次别泡成复写联了",
-      "observed": "这次别泡成腹血连了",
+      "observed": "这次别泡成负血连了",
       "expectedSyllables": [
         "zhe4",
         "ci4",
@@ -56,43 +56,43 @@
     },
     "model": "Systran/faster-whisper-medium",
     "revision": "08e178d48790749d25932bbc082711ddcfdfbc4f",
-    "audioSha256": "09f2cf2bc35fb0bdc04a2ea3202ab6ca5d23dc070ae86cc343b5ae2fd3b7385d"
+    "audioSha256": "fcf5eddc354b7b87a6cc794beb222eafdda7d0f33e70b6746e71fda66668b05e"
   },
-  "duration": 2.48,
-  "wallSeconds": 84.216,
+  "duration": 2.16,
+  "wallSeconds": 78.848,
   "loudness": {
-    "input_i": "-21.67",
-    "input_tp": "-4.03",
+    "input_i": "-19.25",
+    "input_tp": "-2.71",
     "input_lra": "0.00",
-    "input_thresh": "-31.67",
-    "output_i": "-20.03",
-    "output_tp": "-2.36",
+    "input_thresh": "-29.49",
+    "output_i": "-20.00",
+    "output_tp": "-3.46",
     "output_lra": "0.00",
-    "output_thresh": "-30.03",
+    "output_thresh": "-30.24",
     "normalization_type": "linear",
-    "target_offset": "0.03"
+    "target_offset": "0.00"
   },
   "files": {
     "raw": {
       "path": "circuit-tickets--firsthub--q01--01/raw.wav",
-      "bytes": 238160,
-      "sha256": "ca7cbd696d7d8b874dda4ddeeddd4a2efd0915b0dfa07d75b0f92e64bcf22c4f"
+      "bytes": 207440,
+      "sha256": "93fd77645b081935f038fb337ca4bf782cfbd66423a2db8396e4434eba09f9d1"
     },
     "master": {
       "path": "circuit-tickets--firsthub--q01--01/master.wav",
-      "bytes": 119118,
-      "sha256": "8a80085a8b07f53b480240fbe8d1a4893f3b3086ba017f5ab62347d907549ab8"
+      "bytes": 103758,
+      "sha256": "019a496deec449e03abe56f2d87ab2a001839dd70bfa68375a26fa728562aa98"
     },
     "runtime": {
       "path": "circuit-tickets--firsthub--q01--01/runtime.ogg",
-      "bytes": 21243,
-      "sha256": "09f2cf2bc35fb0bdc04a2ea3202ab6ca5d23dc070ae86cc343b5ae2fd3b7385d"
+      "bytes": 19048,
+      "sha256": "fcf5eddc354b7b87a6cc794beb222eafdda7d0f33e70b6746e71fda66668b05e"
     }
   },
-  "recoveredFromRun": 39525769881,
+  "recoveredFromRun": 39561185406,
   "asrReviewHistory": [
     {
-      "transcript": "這次別泡成腹血連了",
+      "transcript": "这次别泡成腹血连了",
       "cer": 0.333333,
       "polarityCountsMatch": true,
       "passed": false,

@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "project": "Circuit",
-  "sourceRun": 39525769881,
+  "sourceRun": 39561185406,
   "semanticSha256": "d2f80ed941e3b06e2fbf53e4cc5af38b123526c1795c73b5031fb2100be46316",
   "target": 402,
   "accepted": 394,
@@ -54,7 +54,7 @@
       "text": "这次别泡成复写联了。",
       "status": "needs_review",
       "asr": {
-        "transcript": "這次別泡成腹血連了",
+        "transcript": "这次别泡成腹血连了",
         "cer": 0.333333,
         "polarityCountsMatch": true,
         "passed": false,

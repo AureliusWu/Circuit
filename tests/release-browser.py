@@ -114,13 +114,16 @@ def run(url, pwa):
         opener.click()
         dialog = page.get_by_role('dialog', name='人物与抢修队', exact=True)
         expect(dialog).to_be_visible()
-        expect(dialog.locator('[data-character-id]')).to_have_count(9)
+        expect(dialog.locator('[data-character-id]')).to_have_count(15)
         for person in dialog.locator('[data-character-id]').all():
             identifier = person.get_attribute('data-character-id')
             person.click()
             profile = dialog.locator('[data-character-profile]')
             expect(profile).to_have_attribute('data-character-profile', identifier)
-            for view, directory in [('立绘', 'portraits'), ('Q版形象', 'chibi')]:
+            legacy = identifier in {'cheng','ji','lin','zhou','mei','xu','chen','shen','luo'}
+            expect(dialog.get_by_role('button', name='Q版形象', exact=True)).to_have_count(1 if legacy else 0)
+            views = [('立绘', 'portraits')] + ([('Q版形象', 'chibi')] if legacy else [])
+            for view, directory in views:
                 control = dialog.get_by_role('button', name=view, exact=True)
                 control.scroll_into_view_if_needed()
                 hit_test(control)

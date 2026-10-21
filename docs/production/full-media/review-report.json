@@ -10,24 +10,44 @@
       "text": "这次别泡成复写联了。",
       "status": "needs_review",
       "asr": {
-        "transcript": "这次别泡成哎腹血连了",
-        "cer": 0.444444,
+        "transcript": "这次别泡成腹血连了",
+        "cer": 0.333333,
         "polarityCountsMatch": true,
         "passed": false,
         "phoneticReview": {
           "method": "exact_all_syllables_tones_and_explicit_numeric_values_v2_pypinyin_0.53.0",
           "expected": "这次别泡成复写联了",
-          "observed": "这次别泡成哎腹血连了",
-          "expectedSyllables": [],
-          "observedSyllables": [],
-          "sameLength": false,
+          "observed": "这次别泡成腹血连了",
+          "expectedSyllables": [
+            "zhe4",
+            "ci4",
+            "bie2",
+            "pao4",
+            "cheng2",
+            "fu4",
+            "xie3",
+            "lian2",
+            "le5"
+          ],
+          "observedSyllables": [
+            "zhe4",
+            "ci4",
+            "bie2",
+            "pao4",
+            "cheng2",
+            "fu4",
+            "xue4",
+            "lian2",
+            "le5"
+          ],
+          "sameLength": true,
           "polarityCountsMatch": true,
           "passed": false,
           "humanListening": false
         },
         "model": "Systran/faster-whisper-large-v3",
         "revision": "edaa852ec7e145841d8ffdb056a99866b5f0a478",
-        "audioSha256": "ba80b06a1589af78e13a9b92ae5590b1be8f87a304d70b2442d644b7e21ca577"
+        "audioSha256": "045e1af11f087b1b23c0f07443e8eee53f57c57b2f7fbfabfe513f4eaca05d12"
       }
     }
   ],

@@ -8,8 +8,7 @@
   "nodeId": "end",
   "start": 96,
   "end": 103,
-  "medium": "recorded",
-  "recordingKey": "confirm",
+  "quoteIndex": 1,
   "legacy": {
     "id": "v01-confirm",
     "character": "cheng",
@@ -72,14 +71,49 @@
     "evidencePath": "docs/audio/voice-asr.json",
     "evidenceSha256": "25d0e31c3decd5262d92349d6571ec67ac58723ea00c40005ddff4d8b9a58334"
   },
-  "replayOf": "circuit-return-visit--onward--q02--01",
   "actorId": "cheng",
   "voice": "Dylan",
   "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。 只朗读给定台词，不添加词语或音效。",
   "seed": 400387684,
   "textSha256": "30f09f5361ddd273195f02171897fd451796e0ca60ebc481b25eae3c23793f73",
+  "medium": "recorded",
   "requestSha256": "c990773e095e026cd32160ef12b11b8d32b6eee91f2dbec543390b463d091111",
-  "status": "replay_reference",
-  "files": {},
-  "recoveredFromRun": 39522065527
+  "status": "accepted",
+  "productionMethod": "replay_exact_original_bytes",
+  "duration": 1.28,
+  "actualGenerationRequest": {
+    "id": "v01-confirm",
+    "speaker": "Dylan",
+    "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。",
+    "seed": 120041,
+    "requestSha256": "cbbf1dbbdb203f4d06472c1a09066343071e08b1d693d9808cdf2124423b61c5"
+  },
+  "asr": {
+    "passed": true,
+    "transcript": "先别替他确认",
+    "cer": 0.166667,
+    "polarityCountsMatch": true,
+    "model": "Systran/faster-whisper-large-v3"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-return-visit--onward--q02--01/raw.wav",
+      "bytes": 61484,
+      "sha256": "2519a8035fa7024df3c48c63605da803bd9f892f45237710894dce85a3aaf7f9"
+    },
+    "master": {
+      "path": "circuit-return-visit--onward--q02--01/master.wav",
+      "bytes": 61518,
+      "sha256": "ad5f85cc865c670df68eaf175270d3cc4a61513b241f3046d0dfef62c100fdfd"
+    },
+    "runtime": {
+      "path": "circuit-return-visit--onward--q02--01/runtime.mp3",
+      "bytes": 16461,
+      "sha256": "32e4a93ffbdecc05c00cf73a6d6bd0ade906d4ae89b6438e3bba3f0ba0572b76"
+    }
+  },
+  "recoveredFromRun": 39522065527,
+  "recordingKey": "confirm",
+  "replayOf": "circuit-return-visit--onward--q02--01",
+  "replaySourceId": "circuit-return-visit--onward--q02--01"
 }

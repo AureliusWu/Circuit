@@ -10,14 +10,75 @@
   "end": 11,
   "medium": "recorded",
   "recordingKey": "received",
-  "replayOf": "circuit-return-visit--echo--extra2--01",
   "actorId": "ji",
   "voice": "Vivian",
   "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
   "seed": 350522621,
   "textSha256": "075c6dad5dac3f3992e2983b56416bfef075af945b30ad828f660bc04898c70b",
   "requestSha256": "0bada6558bbc352f4a6ef77acae6a01a6463905738611b57fcd99456dab61da0",
-  "status": "replay_reference",
-  "files": {},
-  "recoveredFromRun": 39522065527
+  "attempt": 5,
+  "status": "accepted",
+  "asr": {
+    "transcript": "既寧收到",
+    "cer": 0.25,
+    "polarityCountsMatch": true,
+    "passed": true,
+    "phoneticReview": {
+      "method": "exact_all_syllables_and_tones_pypinyin_0.53.0",
+      "expected": "季宁收到",
+      "observed": "既宁收到",
+      "expectedSyllables": [
+        "ji4",
+        "ning2",
+        "shou1",
+        "dao4"
+      ],
+      "observedSyllables": [
+        "ji4",
+        "ning2",
+        "shou1",
+        "dao4"
+      ],
+      "sameLength": true,
+      "polarityCountsMatch": true,
+      "passed": true,
+      "humanListening": false
+    },
+    "acceptance": "exact_toned_homophones"
+  },
+  "duration": 2.56,
+  "wallSeconds": 290.26,
+  "loudness": {
+    "input_i": "-17.95",
+    "input_tp": "-3.32",
+    "input_lra": "0.00",
+    "input_thresh": "-28.37",
+    "output_i": "-20.01",
+    "output_tp": "-5.38",
+    "output_lra": "0.00",
+    "output_thresh": "-30.43",
+    "normalization_type": "linear",
+    "target_offset": "0.01"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-return-visit--echo--extra2--01/raw.wav",
+      "bytes": 245840,
+      "sha256": "a5bd0a8d3e4e7de658173633d46033c231320b9ac433d3c87c9e48f03b50420a"
+    },
+    "master": {
+      "path": "circuit-return-visit--echo--extra2--01/master.wav",
+      "bytes": 122958,
+      "sha256": "a37891f5cef3df52416fbded5a4438c08fcd743f33c0754cdd70fcefdfdfd7dc"
+    },
+    "runtime": {
+      "path": "circuit-return-visit--echo--extra2--01/runtime.ogg",
+      "bytes": 20183,
+      "sha256": "b34f2935f1cc0f208d3ddd78089d5197cb7403d1ce2f94808a51e2cdebee2004"
+    }
+  },
+  "recoveredFromRun": 39522065527,
+  "replayOf": "circuit-return-visit--echo--extra2--01",
+  "productionMethod": "replay_exact_original_bytes",
+  "replaySourceId": "circuit-return-visit--echo--extra2--01"
 }

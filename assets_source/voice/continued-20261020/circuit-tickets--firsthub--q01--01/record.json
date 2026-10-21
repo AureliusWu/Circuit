@@ -19,14 +19,14 @@
   "attempt": 8,
   "status": "needs_review",
   "asr": {
-    "transcript": "这次别泡成腹血脸了",
+    "transcript": "这次别泡成负血连了",
     "cer": 0.333333,
     "polarityCountsMatch": true,
     "passed": false,
     "phoneticReview": {
       "method": "exact_all_syllables_and_tones_pypinyin_0.53.0",
       "expected": "这次别泡成复写联了",
-      "observed": "这次别泡成腹血脸了",
+      "observed": "这次别泡成负血连了",
       "expectedSyllables": [
         "zhe4",
         "ci4",
@@ -46,14 +46,17 @@
         "cheng2",
         "fu4",
         "xue4",
-        "lian3",
+        "lian2",
         "le5"
       ],
       "sameLength": true,
       "polarityCountsMatch": true,
       "passed": false,
       "humanListening": false
-    }
+    },
+    "model": "Systran/faster-whisper-medium",
+    "revision": "08e178d48790749d25932bbc082711ddcfdfbc4f",
+    "audioSha256": "938471350c1492f1927a95c619cfc4cbd3ad78a7aa92ad648a5f9003de14c013"
   },
   "duration": 2.48,
   "wallSeconds": 84.996,
@@ -86,5 +89,44 @@
       "sha256": "938471350c1492f1927a95c619cfc4cbd3ad78a7aa92ad648a5f9003de14c013"
     }
   },
-  "recoveredFromRun": 39522065527
+  "recoveredFromRun": 39522065527,
+  "asrReviewHistory": [
+    {
+      "transcript": "这次别泡成腹血脸了",
+      "cer": 0.333333,
+      "polarityCountsMatch": true,
+      "passed": false,
+      "phoneticReview": {
+        "method": "exact_all_syllables_and_tones_pypinyin_0.53.0",
+        "expected": "这次别泡成复写联了",
+        "observed": "这次别泡成腹血脸了",
+        "expectedSyllables": [
+          "zhe4",
+          "ci4",
+          "bie2",
+          "pao4",
+          "cheng2",
+          "fu4",
+          "xie3",
+          "lian2",
+          "le5"
+        ],
+        "observedSyllables": [
+          "zhe4",
+          "ci4",
+          "bie2",
+          "pao4",
+          "cheng2",
+          "fu4",
+          "xue4",
+          "lian3",
+          "le5"
+        ],
+        "sameLength": true,
+        "polarityCountsMatch": true,
+        "passed": false,
+        "humanListening": false
+      }
+    }
+  ]
 }

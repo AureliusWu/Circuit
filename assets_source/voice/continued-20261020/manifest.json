@@ -3728,14 +3728,14 @@
       "attempt": 8,
       "status": "needs_review",
       "asr": {
-        "transcript": "没劲挡",
-        "cer": 0.666667,
+        "transcript": "没进党",
+        "cer": 0.333333,
         "polarityCountsMatch": true,
         "passed": false,
         "phoneticReview": {
           "method": "exact_all_syllables_and_tones_pypinyin_0.53.0",
           "expected": "没进档",
-          "observed": "没劲挡",
+          "observed": "没进党",
           "expectedSyllables": [
             "mei2",
             "jin4",
@@ -3750,7 +3750,10 @@
           "polarityCountsMatch": true,
           "passed": false,
           "humanListening": false
-        }
+        },
+        "model": "Systran/faster-whisper-medium",
+        "revision": "08e178d48790749d25932bbc082711ddcfdfbc4f",
+        "audioSha256": "5c522eb9d9b16528fedf4da9d677cba99aba43edfa4f5e162121434ecf0e7e3e"
       },
       "duration": 1.44,
       "wallSeconds": 7.519,
@@ -3783,7 +3786,34 @@
           "sha256": "5c522eb9d9b16528fedf4da9d677cba99aba43edfa4f5e162121434ecf0e7e3e"
         }
       },
-      "recoveredFromRun": 39522065527
+      "recoveredFromRun": 39522065527,
+      "asrReviewHistory": [
+        {
+          "transcript": "没劲挡",
+          "cer": 0.666667,
+          "polarityCountsMatch": true,
+          "passed": false,
+          "phoneticReview": {
+            "method": "exact_all_syllables_and_tones_pypinyin_0.53.0",
+            "expected": "没进档",
+            "observed": "没劲挡",
+            "expectedSyllables": [
+              "mei2",
+              "jin4",
+              "dang4"
+            ],
+            "observedSyllables": [
+              "mei2",
+              "jin4",
+              "dang3"
+            ],
+            "sameLength": true,
+            "polarityCountsMatch": true,
+            "passed": false,
+            "humanListening": false
+          }
+        }
+      ]
     },
     {
       "id": "circuit-thirteen-households--archivedticket--q02--01",
@@ -4593,21 +4623,24 @@
       "attempt": 8,
       "status": "needs_review",
       "asr": {
-        "transcript": "我們1.21就爆了",
-        "cer": 0.6,
+        "transcript": "我们1点21就爆了",
+        "cer": 0.5,
         "polarityCountsMatch": true,
         "passed": false,
         "phoneticReview": {
           "method": "exact_all_syllables_and_tones_pypinyin_0.53.0",
           "expected": "我们一点二十一就报了",
-          "observed": "我们121就爆了",
+          "observed": "我们1点21就爆了",
           "expectedSyllables": [],
           "observedSyllables": [],
           "sameLength": false,
           "polarityCountsMatch": true,
           "passed": false,
           "humanListening": false
-        }
+        },
+        "model": "Systran/faster-whisper-medium",
+        "revision": "08e178d48790749d25932bbc082711ddcfdfbc4f",
+        "audioSha256": "09ca4274e320c22823aeb6f7077b3f37b4759eaf7b1f1704f87484df76811122"
       },
       "duration": 2.48,
       "wallSeconds": 84.794,
@@ -4640,7 +4673,26 @@
           "sha256": "09ca4274e320c22823aeb6f7077b3f37b4759eaf7b1f1704f87484df76811122"
         }
       },
-      "recoveredFromRun": 39522065527
+      "recoveredFromRun": 39522065527,
+      "asrReviewHistory": [
+        {
+          "transcript": "我們1.21就爆了",
+          "cer": 0.6,
+          "polarityCountsMatch": true,
+          "passed": false,
+          "phoneticReview": {
+            "method": "exact_all_syllables_and_tones_pypinyin_0.53.0",
+            "expected": "我们一点二十一就报了",
+            "observed": "我们121就爆了",
+            "expectedSyllables": [],
+            "observedSyllables": [],
+            "sameLength": false,
+            "polarityCountsMatch": true,
+            "passed": false,
+            "humanListening": false
+          }
+        }
+      ]
     },
     {
       "id": "circuit-thirteen-households--meiaccount--q01--01",
@@ -5725,21 +5777,32 @@
       "attempt": 8,
       "status": "needs_review",
       "asr": {
-        "transcript": "原样的消",
+        "transcript": "元样香",
         "cer": 0.666667,
         "polarityCountsMatch": true,
         "passed": false,
         "phoneticReview": {
           "method": "exact_all_syllables_and_tones_pypinyin_0.53.0",
           "expected": "原样交",
-          "observed": "原样的消",
-          "expectedSyllables": [],
-          "observedSyllables": [],
-          "sameLength": false,
+          "observed": "元样香",
+          "expectedSyllables": [
+            "yuan2",
+            "yang4",
+            "jiao1"
+          ],
+          "observedSyllables": [
+            "yuan2",
+            "yang4",
+            "xiang1"
+          ],
+          "sameLength": true,
           "polarityCountsMatch": true,
           "passed": false,
           "humanListening": false
-        }
+        },
+        "model": "Systran/faster-whisper-medium",
+        "revision": "08e178d48790749d25932bbc082711ddcfdfbc4f",
+        "audioSha256": "8b17013f5b93d63615b8600d63ccdbd2d62aa316cf2c7a891d706654414a35eb"
       },
       "duration": 0.96,
       "wallSeconds": 5.438,
@@ -5772,7 +5835,26 @@
           "sha256": "8b17013f5b93d63615b8600d63ccdbd2d62aa316cf2c7a891d706654414a35eb"
         }
       },
-      "recoveredFromRun": 39522065527
+      "recoveredFromRun": 39522065527,
+      "asrReviewHistory": [
+        {
+          "transcript": "原样的消",
+          "cer": 0.666667,
+          "polarityCountsMatch": true,
+          "passed": false,
+          "phoneticReview": {
+            "method": "exact_all_syllables_and_tones_pypinyin_0.53.0",
+            "expected": "原样交",
+            "observed": "原样的消",
+            "expectedSyllables": [],
+            "observedSyllables": [],
+            "sameLength": false,
+            "polarityCountsMatch": true,
+            "passed": false,
+            "humanListening": false
+          }
+        }
+      ]
     },
     {
       "id": "circuit-thirteen-households--epiloguecall--q01--01",
@@ -13052,39 +13134,15 @@
       "medium": "spoken",
       "requestSha256": "492cf7168c788122df8be0d5cede427080d21c83453813e41244dee2e72306ab",
       "attempt": 8,
-      "status": "needs_review",
+      "status": "accepted",
       "asr": {
-        "transcript": "先改成機械傾向。",
-        "cer": 0.285714,
+        "transcript": "先改成机械倾响。",
+        "cer": 0.142857,
         "polarityCountsMatch": true,
-        "passed": false,
-        "phoneticReview": {
-          "method": "exact_all_syllables_and_tones_pypinyin_0.53.0",
-          "expected": "先改成机械轻响",
-          "observed": "先改成机械倾向",
-          "expectedSyllables": [
-            "xian1",
-            "gai3",
-            "cheng2",
-            "ji1",
-            "xie4",
-            "qing1",
-            "xiang3"
-          ],
-          "observedSyllables": [
-            "xian1",
-            "gai3",
-            "cheng2",
-            "ji1",
-            "xie4",
-            "qing1",
-            "xiang4"
-          ],
-          "sameLength": true,
-          "polarityCountsMatch": true,
-          "passed": false,
-          "humanListening": false
-        }
+        "passed": true,
+        "model": "Systran/faster-whisper-medium",
+        "revision": "08e178d48790749d25932bbc082711ddcfdfbc4f",
+        "audioSha256": "97c4b1c21b87f001c7d478c62b01b6474989a616a158a5dede0ffa46d8c2cd87"
       },
       "duration": 1.92,
       "wallSeconds": 131.331,
@@ -13117,7 +13175,42 @@
           "sha256": "97c4b1c21b87f001c7d478c62b01b6474989a616a158a5dede0ffa46d8c2cd87"
         }
       },
-      "recoveredFromRun": 39522065527
+      "recoveredFromRun": 39522065527,
+      "asrReviewHistory": [
+        {
+          "transcript": "先改成機械傾向。",
+          "cer": 0.285714,
+          "polarityCountsMatch": true,
+          "passed": false,
+          "phoneticReview": {
+            "method": "exact_all_syllables_and_tones_pypinyin_0.53.0",
+            "expected": "先改成机械轻响",
+            "observed": "先改成机械倾向",
+            "expectedSyllables": [
+              "xian1",
+              "gai3",
+              "cheng2",
+              "ji1",
+              "xie4",
+              "qing1",
+              "xiang3"
+            ],
+            "observedSyllables": [
+              "xian1",
+              "gai3",
+              "cheng2",
+              "ji1",
+              "xie4",
+              "qing1",
+              "xiang4"
+            ],
+            "sameLength": true,
+            "polarityCountsMatch": true,
+            "passed": false,
+            "humanListening": false
+          }
+        }
+      ]
     },
     {
       "id": "circuit-everlight--load--q01--01",
@@ -18665,21 +18758,24 @@
       "attempt": 8,
       "status": "needs_review",
       "asr": {
-        "transcript": "丁弦、林兰收到过。",
+        "transcript": "林賢 林蘭收到過",
         "cer": 0.555556,
         "polarityCountsMatch": true,
         "passed": false,
         "phoneticReview": {
           "method": "exact_all_syllables_and_tones_pypinyin_0.53.0",
           "expected": "0003林岚收到过",
-          "observed": "丁弦林兰收到过",
+          "observed": "林贤林兰收到过",
           "expectedSyllables": [],
           "observedSyllables": [],
           "sameLength": false,
           "polarityCountsMatch": true,
           "passed": false,
           "humanListening": false
-        }
+        },
+        "model": "Systran/faster-whisper-medium",
+        "revision": "08e178d48790749d25932bbc082711ddcfdfbc4f",
+        "audioSha256": "07998da2bf558378facb37669dd0acd41728fa3e12f18bd4bd89717428e61ba7"
       },
       "duration": 2.56,
       "wallSeconds": 299.15,
@@ -18712,7 +18808,26 @@
           "sha256": "07998da2bf558378facb37669dd0acd41728fa3e12f18bd4bd89717428e61ba7"
         }
       },
-      "recoveredFromRun": 39522065527
+      "recoveredFromRun": 39522065527,
+      "asrReviewHistory": [
+        {
+          "transcript": "丁弦、林兰收到过。",
+          "cer": 0.555556,
+          "polarityCountsMatch": true,
+          "passed": false,
+          "phoneticReview": {
+            "method": "exact_all_syllables_and_tones_pypinyin_0.53.0",
+            "expected": "0003林岚收到过",
+            "observed": "丁弦林兰收到过",
+            "expectedSyllables": [],
+            "observedSyllables": [],
+            "sameLength": false,
+            "polarityCountsMatch": true,
+            "passed": false,
+            "humanListening": false
+          }
+        }
+      ]
     },
     {
       "id": "circuit-return-visit--echo--extra1--01",
@@ -18726,16 +18841,55 @@
       "end": 8,
       "medium": "recorded",
       "recordingKey": "arrived",
-      "replayOf": "circuit-return-visit--arrival--extra1--01",
       "actorId": "cheng",
       "voice": "Dylan",
       "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。 只朗读给定台词，不添加词语或音效。",
       "seed": 154445082,
       "textSha256": "732e7fb1ad9138c3251b6879c9cf2778ec7686d954bf2baf2cd28a256f637509",
       "requestSha256": "f15999c312a37424563d99a9068b1cb4ebf74dfde856ca62da769796239c5979",
-      "status": "replay_reference",
-      "files": {},
-      "recoveredFromRun": 39522065527
+      "attempt": 0,
+      "status": "accepted",
+      "asr": {
+        "transcript": "程艳已经到场",
+        "cer": 0.166667,
+        "polarityCountsMatch": true,
+        "passed": true
+      },
+      "duration": 1.68,
+      "wallSeconds": 62.631,
+      "loudness": {
+        "input_i": "-24.53",
+        "input_tp": "-3.92",
+        "input_lra": "0.00",
+        "input_thresh": "-34.53",
+        "output_i": "-22.61",
+        "output_tp": "-2.00",
+        "output_lra": "0.00",
+        "output_thresh": "-32.61",
+        "normalization_type": "linear",
+        "target_offset": "2.61"
+      },
+      "files": {
+        "raw": {
+          "path": "circuit-return-visit--arrival--extra1--01/raw.wav",
+          "bytes": 161360,
+          "sha256": "84285262fc3743911cd083cacec0f93685936044d7d503d28e0cc1337dc0c719"
+        },
+        "master": {
+          "path": "circuit-return-visit--arrival--extra1--01/master.wav",
+          "bytes": 80718,
+          "sha256": "63a62e75a9944211eefe8731fe8d1a942b08039cf93687a0dfcd22184ff49651"
+        },
+        "runtime": {
+          "path": "circuit-return-visit--arrival--extra1--01/runtime.ogg",
+          "bytes": 17015,
+          "sha256": "3d41b242c574fd4182243d6ce0dbe1f91f82231aeb6bb7ac2254b02a54ea325a"
+        }
+      },
+      "recoveredFromRun": 39522065527,
+      "replayOf": "circuit-return-visit--arrival--extra1--01",
+      "productionMethod": "replay_exact_original_bytes",
+      "replaySourceId": "circuit-return-visit--arrival--extra1--01"
     },
     {
       "id": "circuit-return-visit--echo--extra2--01",
@@ -19457,8 +19611,7 @@
       "nodeId": "end",
       "start": 96,
       "end": 103,
-      "medium": "recorded",
-      "recordingKey": "confirm",
+      "quoteIndex": 1,
       "legacy": {
         "id": "v01-confirm",
         "character": "cheng",
@@ -19521,16 +19674,51 @@
         "evidencePath": "docs/audio/voice-asr.json",
         "evidenceSha256": "25d0e31c3decd5262d92349d6571ec67ac58723ea00c40005ddff4d8b9a58334"
       },
-      "replayOf": "circuit-return-visit--onward--q02--01",
       "actorId": "cheng",
       "voice": "Dylan",
       "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。 只朗读给定台词，不添加词语或音效。",
       "seed": 400387684,
       "textSha256": "30f09f5361ddd273195f02171897fd451796e0ca60ebc481b25eae3c23793f73",
+      "medium": "recorded",
       "requestSha256": "c990773e095e026cd32160ef12b11b8d32b6eee91f2dbec543390b463d091111",
-      "status": "replay_reference",
-      "files": {},
-      "recoveredFromRun": 39522065527
+      "status": "accepted",
+      "productionMethod": "replay_exact_original_bytes",
+      "duration": 1.28,
+      "actualGenerationRequest": {
+        "id": "v01-confirm",
+        "speaker": "Dylan",
+        "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。",
+        "seed": 120041,
+        "requestSha256": "cbbf1dbbdb203f4d06472c1a09066343071e08b1d693d9808cdf2124423b61c5"
+      },
+      "asr": {
+        "passed": true,
+        "transcript": "先别替他确认",
+        "cer": 0.166667,
+        "polarityCountsMatch": true,
+        "model": "Systran/faster-whisper-large-v3"
+      },
+      "files": {
+        "raw": {
+          "path": "circuit-return-visit--onward--q02--01/raw.wav",
+          "bytes": 61484,
+          "sha256": "2519a8035fa7024df3c48c63605da803bd9f892f45237710894dce85a3aaf7f9"
+        },
+        "master": {
+          "path": "circuit-return-visit--onward--q02--01/master.wav",
+          "bytes": 61518,
+          "sha256": "ad5f85cc865c670df68eaf175270d3cc4a61513b241f3046d0dfef62c100fdfd"
+        },
+        "runtime": {
+          "path": "circuit-return-visit--onward--q02--01/runtime.mp3",
+          "bytes": 16461,
+          "sha256": "32e4a93ffbdecc05c00cf73a6d6bd0ade906d4ae89b6438e3bba3f0ba0572b76"
+        }
+      },
+      "recoveredFromRun": 39522065527,
+      "recordingKey": "confirm",
+      "replayOf": "circuit-return-visit--onward--q02--01",
+      "replaySourceId": "circuit-return-visit--onward--q02--01"
     },
     {
       "id": "circuit-answering--dispatch--q01--01",
@@ -19955,7 +20143,6 @@
         "evidencePath": "docs/audio/voice-asr.json",
         "evidenceSha256": "25d0e31c3decd5262d92349d6571ec67ac58723ea00c40005ddff4d8b9a58334"
       },
-      "replayOf": "circuit-return-visit--quiet--q01--01",
       "actorId": "luo",
       "voice": "Vivian",
       "instruct": "二十九岁女性，普通话，声音偏低，夜班值班员谨慎地问话，平静自然，略有迟疑，不要朗诵。 只朗读给定台词，不添加词语或音效。",
@@ -19963,9 +20150,43 @@
       "textSha256": "bd989a5f4827ff55923c66ee15383dfb026151a42f1d0b2c1f34806912fbfb0d",
       "medium": "spoken",
       "requestSha256": "10294d6536095898c1af288a0a130d62b5cffc1b2b1c5b6da1e2b277de752449",
-      "status": "replay_reference",
-      "files": {},
-      "recoveredFromRun": 39522065527
+      "status": "accepted",
+      "productionMethod": "replay_exact_original_bytes",
+      "duration": 1.52,
+      "actualGenerationRequest": {
+        "id": "v01-question",
+        "speaker": "Vivian",
+        "instruct": "二十九岁女性，普通话，声音偏低，夜班值班员谨慎地问话，平静自然，略有迟疑，不要朗诵。 语速稍慢，完整说清问句，句尾应我两个字读yìng wǒ，不要省字。",
+        "seed": 220040,
+        "requestSha256": "5d9bba947313c4bd81715dc13cb7def645472b2b4f8a54fce690def5cb9604c2"
+      },
+      "asr": {
+        "passed": true,
+        "transcript": "到底谁在后面应我",
+        "cer": 0,
+        "polarityCountsMatch": true,
+        "model": "Systran/faster-whisper-large-v3"
+      },
+      "files": {
+        "raw": {
+          "path": "circuit-return-visit--quiet--q01--01/raw.wav",
+          "bytes": 73004,
+          "sha256": "43074e9daeeed06b3432379ba87ec06d5c1cc1320bf0d8a2790d4ad1411fa9a6"
+        },
+        "master": {
+          "path": "circuit-return-visit--quiet--q01--01/master.wav",
+          "bytes": 73038,
+          "sha256": "02234efedb51a6f3af7a632aafb6e91771e52aa8a376fd7673d76be1d8519e2a"
+        },
+        "runtime": {
+          "path": "circuit-return-visit--quiet--q01--01/runtime.mp3",
+          "bytes": 19341,
+          "sha256": "db4b49f5b2f2a253d7e1f7f0469f7dc9894c064878539c47de921555cece40aa"
+        }
+      },
+      "recoveredFromRun": 39522065527,
+      "replayOf": "circuit-return-visit--quiet--q01--01",
+      "replaySourceId": "circuit-return-visit--quiet--q01--01"
     },
     {
       "id": "circuit-answering--luo--q02--01",
@@ -20128,7 +20349,10 @@
           "polarityCountsMatch": true,
           "passed": false,
           "humanListening": false
-        }
+        },
+        "model": "Systran/faster-whisper-medium",
+        "revision": "08e178d48790749d25932bbc082711ddcfdfbc4f",
+        "audioSha256": "491755761626f4af259ffa97ebcee37c5ec67b6928d8ff616067bfa8837c467f"
       },
       "duration": 0.88,
       "wallSeconds": 38.471,
@@ -20161,7 +20385,34 @@
           "sha256": "491755761626f4af259ffa97ebcee37c5ec67b6928d8ff616067bfa8837c467f"
         }
       },
-      "recoveredFromRun": 39522065527
+      "recoveredFromRun": 39522065527,
+      "asrReviewHistory": [
+        {
+          "transcript": "你硬了",
+          "cer": 0.333333,
+          "polarityCountsMatch": true,
+          "passed": false,
+          "phoneticReview": {
+            "method": "exact_all_syllables_and_tones_pypinyin_0.53.0",
+            "expected": "你应了",
+            "observed": "你硬了",
+            "expectedSyllables": [
+              "ni3",
+              "ying1",
+              "le5"
+            ],
+            "observedSyllables": [
+              "ni3",
+              "ying4",
+              "le5"
+            ],
+            "sameLength": true,
+            "polarityCountsMatch": true,
+            "passed": false,
+            "humanListening": false
+          }
+        }
+      ]
     },
     {
       "id": "circuit-answering--houserule--q03--01",
@@ -20647,16 +20898,55 @@
       "end": 8,
       "medium": "recorded",
       "recordingKey": "arrived",
-      "replayOf": "circuit-return-visit--arrival--extra1--01",
       "actorId": "cheng",
       "voice": "Dylan",
       "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。 只朗读给定台词，不添加词语或音效。",
       "seed": 1518770784,
       "textSha256": "732e7fb1ad9138c3251b6879c9cf2778ec7686d954bf2baf2cd28a256f637509",
       "requestSha256": "1caef07860bc680fb837ed07394f1add03cd01cd30c7bd1d97c41bc027703fb8",
-      "status": "replay_reference",
-      "files": {},
-      "recoveredFromRun": 39522065527
+      "attempt": 0,
+      "status": "accepted",
+      "asr": {
+        "transcript": "程艳已经到场",
+        "cer": 0.166667,
+        "polarityCountsMatch": true,
+        "passed": true
+      },
+      "duration": 1.68,
+      "wallSeconds": 62.631,
+      "loudness": {
+        "input_i": "-24.53",
+        "input_tp": "-3.92",
+        "input_lra": "0.00",
+        "input_thresh": "-34.53",
+        "output_i": "-22.61",
+        "output_tp": "-2.00",
+        "output_lra": "0.00",
+        "output_thresh": "-32.61",
+        "normalization_type": "linear",
+        "target_offset": "2.61"
+      },
+      "files": {
+        "raw": {
+          "path": "circuit-return-visit--arrival--extra1--01/raw.wav",
+          "bytes": 161360,
+          "sha256": "84285262fc3743911cd083cacec0f93685936044d7d503d28e0cc1337dc0c719"
+        },
+        "master": {
+          "path": "circuit-return-visit--arrival--extra1--01/master.wav",
+          "bytes": 80718,
+          "sha256": "63a62e75a9944211eefe8731fe8d1a942b08039cf93687a0dfcd22184ff49651"
+        },
+        "runtime": {
+          "path": "circuit-return-visit--arrival--extra1--01/runtime.ogg",
+          "bytes": 17015,
+          "sha256": "3d41b242c574fd4182243d6ce0dbe1f91f82231aeb6bb7ac2254b02a54ea325a"
+        }
+      },
+      "recoveredFromRun": 39522065527,
+      "replayOf": "circuit-return-visit--arrival--extra1--01",
+      "productionMethod": "replay_exact_original_bytes",
+      "replaySourceId": "circuit-return-visit--arrival--extra1--01"
     },
     {
       "id": "circuit-answering--emptyreply--extra1--01",
@@ -20670,16 +20960,77 @@
       "end": 11,
       "medium": "recorded",
       "recordingKey": "received",
-      "replayOf": "circuit-return-visit--echo--extra2--01",
       "actorId": "ji",
       "voice": "Vivian",
       "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
       "seed": 350522621,
       "textSha256": "075c6dad5dac3f3992e2983b56416bfef075af945b30ad828f660bc04898c70b",
       "requestSha256": "0bada6558bbc352f4a6ef77acae6a01a6463905738611b57fcd99456dab61da0",
-      "status": "replay_reference",
-      "files": {},
-      "recoveredFromRun": 39522065527
+      "attempt": 5,
+      "status": "accepted",
+      "asr": {
+        "transcript": "既寧收到",
+        "cer": 0.25,
+        "polarityCountsMatch": true,
+        "passed": true,
+        "phoneticReview": {
+          "method": "exact_all_syllables_and_tones_pypinyin_0.53.0",
+          "expected": "季宁收到",
+          "observed": "既宁收到",
+          "expectedSyllables": [
+            "ji4",
+            "ning2",
+            "shou1",
+            "dao4"
+          ],
+          "observedSyllables": [
+            "ji4",
+            "ning2",
+            "shou1",
+            "dao4"
+          ],
+          "sameLength": true,
+          "polarityCountsMatch": true,
+          "passed": true,
+          "humanListening": false
+        },
+        "acceptance": "exact_toned_homophones"
+      },
+      "duration": 2.56,
+      "wallSeconds": 290.26,
+      "loudness": {
+        "input_i": "-17.95",
+        "input_tp": "-3.32",
+        "input_lra": "0.00",
+        "input_thresh": "-28.37",
+        "output_i": "-20.01",
+        "output_tp": "-5.38",
+        "output_lra": "0.00",
+        "output_thresh": "-30.43",
+        "normalization_type": "linear",
+        "target_offset": "0.01"
+      },
+      "files": {
+        "raw": {
+          "path": "circuit-return-visit--echo--extra2--01/raw.wav",
+          "bytes": 245840,
+          "sha256": "a5bd0a8d3e4e7de658173633d46033c231320b9ac433d3c87c9e48f03b50420a"
+        },
+        "master": {
+          "path": "circuit-return-visit--echo--extra2--01/master.wav",
+          "bytes": 122958,
+          "sha256": "a37891f5cef3df52416fbded5a4438c08fcd743f33c0754cdd70fcefdfdfd7dc"
+        },
+        "runtime": {
+          "path": "circuit-return-visit--echo--extra2--01/runtime.ogg",
+          "bytes": 20183,
+          "sha256": "b34f2935f1cc0f208d3ddd78089d5197cb7403d1ce2f94808a51e2cdebee2004"
+        }
+      },
+      "recoveredFromRun": 39522065527,
+      "replayOf": "circuit-return-visit--echo--extra2--01",
+      "productionMethod": "replay_exact_original_bytes",
+      "replaySourceId": "circuit-return-visit--echo--extra2--01"
     },
     {
       "id": "circuit-answering--emptyreply--extra2--01",
@@ -22360,8 +22711,7 @@
       "nodeId": "oldVoice",
       "start": 47,
       "end": 52,
-      "medium": "recorded",
-      "recordingKey": "car-wait",
+      "quoteIndex": 1,
       "legacy": {
         "id": "q07-xu",
         "character": "xu",
@@ -22420,16 +22770,51 @@
         "evidencePath": "docs/audio/voice-asr.json",
         "evidenceSha256": "25d0e31c3decd5262d92349d6571ec67ac58723ea00c40005ddff4d8b9a58334"
       },
-      "replayOf": "circuit-seventh-night--fathermessage--q02--01",
       "actorId": "xu",
       "voice": "Dylan",
       "instruct": "四十岁男性，普通话，声音比平常低一些，短句利落，是工地电台里平常的询问，不要朗诵。 只朗读给定台词，不添加词语或音效。",
       "seed": 362670918,
       "textSha256": "7c29306069914d0e26a42e22566872ef2913a993265f35a381a85f919d63a00d",
+      "medium": "recorded",
       "requestSha256": "78e266409604afa9d1cad1737dbfaec0d506fd28fa351c7dfe8cf4f24f5aaf41",
-      "status": "replay_reference",
-      "files": {},
-      "recoveredFromRun": 39522065527
+      "status": "accepted",
+      "productionMethod": "replay_exact_original_bytes",
+      "duration": 1.12,
+      "actualGenerationRequest": {
+        "id": "q07-xu",
+        "speaker": "Dylan",
+        "instruct": "四十岁男性，普通话，声音比平常低一些，短句利落，是工地电台里平常的询问，不要朗诵。",
+        "seed": 120019,
+        "requestSha256": "53c0685a1ac7c843b3a6e3019a9edff1f0e3e6e882a8497578dfad23c6d8846f"
+      },
+      "asr": {
+        "passed": true,
+        "transcript": "车还等吗?",
+        "cer": 0,
+        "polarityCountsMatch": true,
+        "model": "Systran/faster-whisper-large-v3"
+      },
+      "files": {
+        "raw": {
+          "path": "circuit-seventh-night--fathermessage--q02--01/raw.wav",
+          "bytes": 53804,
+          "sha256": "b5c03892e099b509dc108e168763688e8518d5ac3885f0825b0c57214e796758"
+        },
+        "master": {
+          "path": "circuit-seventh-night--fathermessage--q02--01/master.wav",
+          "bytes": 53838,
+          "sha256": "37bdf70dd5477f18142d78d323e1faf493f65c9e015a3a1e16927b79d9ad525e"
+        },
+        "runtime": {
+          "path": "circuit-seventh-night--fathermessage--q02--01/runtime.mp3",
+          "bytes": 14445,
+          "sha256": "3a05ccc10250ff83eb442057ed32cd68fea3a39b9689c06aabc45d9054f41fd8"
+        }
+      },
+      "recoveredFromRun": 39522065527,
+      "recordingKey": "car-wait",
+      "replayOf": "circuit-seventh-night--fathermessage--q02--01",
+      "replaySourceId": "circuit-seventh-night--fathermessage--q02--01"
     },
     {
       "id": "circuit-visitors--newvoice--q01--01",
@@ -23831,14 +24216,14 @@
       "attempt": 8,
       "status": "needs_review",
       "asr": {
-        "transcript": "这次别泡成腹血脸了",
+        "transcript": "这次别泡成负血连了",
         "cer": 0.333333,
         "polarityCountsMatch": true,
         "passed": false,
         "phoneticReview": {
           "method": "exact_all_syllables_and_tones_pypinyin_0.53.0",
           "expected": "这次别泡成复写联了",
-          "observed": "这次别泡成腹血脸了",
+          "observed": "这次别泡成负血连了",
           "expectedSyllables": [
             "zhe4",
             "ci4",
@@ -23858,14 +24243,17 @@
             "cheng2",
             "fu4",
             "xue4",
-            "lian3",
+            "lian2",
             "le5"
           ],
           "sameLength": true,
           "polarityCountsMatch": true,
           "passed": false,
           "humanListening": false
-        }
+        },
+        "model": "Systran/faster-whisper-medium",
+        "revision": "08e178d48790749d25932bbc082711ddcfdfbc4f",
+        "audioSha256": "938471350c1492f1927a95c619cfc4cbd3ad78a7aa92ad648a5f9003de14c013"
       },
       "duration": 2.48,
       "wallSeconds": 84.996,
@@ -23898,7 +24286,46 @@
           "sha256": "938471350c1492f1927a95c619cfc4cbd3ad78a7aa92ad648a5f9003de14c013"
         }
       },
-      "recoveredFromRun": 39522065527
+      "recoveredFromRun": 39522065527,
+      "asrReviewHistory": [
+        {
+          "transcript": "这次别泡成腹血脸了",
+          "cer": 0.333333,
+          "polarityCountsMatch": true,
+          "passed": false,
+          "phoneticReview": {
+            "method": "exact_all_syllables_and_tones_pypinyin_0.53.0",
+            "expected": "这次别泡成复写联了",
+            "observed": "这次别泡成腹血脸了",
+            "expectedSyllables": [
+              "zhe4",
+              "ci4",
+              "bie2",
+              "pao4",
+              "cheng2",
+              "fu4",
+              "xie3",
+              "lian2",
+              "le5"
+            ],
+            "observedSyllables": [
+              "zhe4",
+              "ci4",
+              "bie2",
+              "pao4",
+              "cheng2",
+              "fu4",
+              "xue4",
+              "lian3",
+              "le5"
+            ],
+            "sameLength": true,
+            "polarityCountsMatch": true,
+            "passed": false,
+            "humanListening": false
+          }
+        }
+      ]
     },
     {
       "id": "circuit-tickets--paperedge--q01--01",
@@ -24061,7 +24488,10 @@
           "polarityCountsMatch": true,
           "passed": false,
           "humanListening": false
-        }
+        },
+        "model": "Systran/faster-whisper-medium",
+        "revision": "08e178d48790749d25932bbc082711ddcfdfbc4f",
+        "audioSha256": "541e8c70591f29a2bba9ba6895cba3df1a1f2328824b20cb74adcf6f1f744340"
       },
       "duration": 1.04,
       "wallSeconds": 5.845,
@@ -24094,7 +24524,34 @@
           "sha256": "541e8c70591f29a2bba9ba6895cba3df1a1f2328824b20cb74adcf6f1f744340"
         }
       },
-      "recoveredFromRun": 39522065527
+      "recoveredFromRun": 39522065527,
+      "asrReviewHistory": [
+        {
+          "transcript": "招椅子",
+          "cer": 0.333333,
+          "polarityCountsMatch": true,
+          "passed": false,
+          "phoneticReview": {
+            "method": "exact_all_syllables_and_tones_pypinyin_0.53.0",
+            "expected": "朝椅子",
+            "observed": "招椅子",
+            "expectedSyllables": [
+              "chao2",
+              "yi3",
+              "zi5"
+            ],
+            "observedSyllables": [
+              "zhao1",
+              "yi3",
+              "zi5"
+            ],
+            "sameLength": true,
+            "polarityCountsMatch": true,
+            "passed": false,
+            "humanListening": false
+          }
+        }
+      ]
     },
     {
       "id": "circuit-tickets--queue--q01--01",
@@ -24589,21 +25046,24 @@
       "attempt": 8,
       "status": "needs_review",
       "asr": {
-        "transcript": "17是后来曲文件的",
-        "cer": 0.333333,
+        "transcript": "17是后来取文件的。",
+        "cer": 0.222222,
         "polarityCountsMatch": true,
         "passed": false,
         "phoneticReview": {
           "method": "exact_all_syllables_and_tones_pypinyin_0.53.0",
           "expected": "十七是后来取文件的",
-          "observed": "17是后来曲文件的",
+          "observed": "17是后来取文件的",
           "expectedSyllables": [],
           "observedSyllables": [],
           "sameLength": true,
           "polarityCountsMatch": true,
           "passed": false,
           "humanListening": false
-        }
+        },
+        "model": "Systran/faster-whisper-medium",
+        "revision": "08e178d48790749d25932bbc082711ddcfdfbc4f",
+        "audioSha256": "3d697d146fc1b0b068c003c9fac4319d600dcebd01cddc6c53fa3b4fcaa6551c"
       },
       "duration": 3.2,
       "wallSeconds": 217.368,
@@ -24636,7 +25096,26 @@
           "sha256": "3d697d146fc1b0b068c003c9fac4319d600dcebd01cddc6c53fa3b4fcaa6551c"
         }
       },
-      "recoveredFromRun": 39522065527
+      "recoveredFromRun": 39522065527,
+      "asrReviewHistory": [
+        {
+          "transcript": "17是后来曲文件的",
+          "cer": 0.333333,
+          "polarityCountsMatch": true,
+          "passed": false,
+          "phoneticReview": {
+            "method": "exact_all_syllables_and_tones_pypinyin_0.53.0",
+            "expected": "十七是后来取文件的",
+            "observed": "17是后来曲文件的",
+            "expectedSyllables": [],
+            "observedSyllables": [],
+            "sameLength": true,
+            "polarityCountsMatch": true,
+            "passed": false,
+            "humanListening": false
+          }
+        }
+      ]
     },
     {
       "id": "circuit-tickets--oldfile--q01--01",
@@ -24711,7 +25190,6 @@
         "evidencePath": "docs/audio/voice-asr.json",
         "evidenceSha256": "25d0e31c3decd5262d92349d6571ec67ac58723ea00c40005ddff4d8b9a58334"
       },
-      "replayOf": "circuit-return-visit--onward--q02--01",
       "actorId": "cheng",
       "voice": "Dylan",
       "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。 只朗读给定台词，不添加词语或音效。",
@@ -24719,9 +25197,43 @@
       "textSha256": "30f09f5361ddd273195f02171897fd451796e0ca60ebc481b25eae3c23793f73",
       "medium": "spoken",
       "requestSha256": "fd9fbd7ee7ab548306858de6d8a3e273b86f03c287b93b9d5bc852b62c269f0a",
-      "status": "replay_reference",
-      "files": {},
-      "recoveredFromRun": 39522065527
+      "status": "accepted",
+      "productionMethod": "replay_exact_original_bytes",
+      "duration": 1.28,
+      "actualGenerationRequest": {
+        "id": "v01-confirm",
+        "speaker": "Dylan",
+        "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。",
+        "seed": 120041,
+        "requestSha256": "cbbf1dbbdb203f4d06472c1a09066343071e08b1d693d9808cdf2124423b61c5"
+      },
+      "asr": {
+        "passed": true,
+        "transcript": "先别替他确认",
+        "cer": 0.166667,
+        "polarityCountsMatch": true,
+        "model": "Systran/faster-whisper-large-v3"
+      },
+      "files": {
+        "raw": {
+          "path": "circuit-return-visit--onward--q02--01/raw.wav",
+          "bytes": 61484,
+          "sha256": "2519a8035fa7024df3c48c63605da803bd9f892f45237710894dce85a3aaf7f9"
+        },
+        "master": {
+          "path": "circuit-return-visit--onward--q02--01/master.wav",
+          "bytes": 61518,
+          "sha256": "ad5f85cc865c670df68eaf175270d3cc4a61513b241f3046d0dfef62c100fdfd"
+        },
+        "runtime": {
+          "path": "circuit-return-visit--onward--q02--01/runtime.mp3",
+          "bytes": 16461,
+          "sha256": "32e4a93ffbdecc05c00cf73a6d6bd0ade906d4ae89b6438e3bba3f0ba0572b76"
+        }
+      },
+      "recoveredFromRun": 39522065527,
+      "replayOf": "circuit-return-visit--onward--q02--01",
+      "replaySourceId": "circuit-return-visit--onward--q02--01"
     },
     {
       "id": "circuit-tickets--recordjob--q02--01",
@@ -25768,5 +26280,43 @@
     }
   ],
   "semanticSha256": "d2f80ed941e3b06e2fbf53e4cc5af38b123526c1795c73b5031fb2100be46316",
-  "sourceRun": 39522065527
+  "sourceRun": 39522065527,
+  "reviewModel": {
+    "id": "Systran/faster-whisper-medium",
+    "revision": "08e178d48790749d25932bbc082711ddcfdfbc4f",
+    "files": [
+      {
+        "path": ".gitattributes",
+        "sha256": "db7c0371f46f0840b8f25794c1e3321c9b5820a8cb6ba9694a46fc64b8fae5a6",
+        "bytes": 1477
+      },
+      {
+        "path": "README.md",
+        "sha256": "a30144a6232423e5e4e9e17952b5a543a506dc0cb9de02fd9d875d7ec40fef83",
+        "bytes": 2005
+      },
+      {
+        "path": "config.json",
+        "sha256": "3622a2ddc41ec0e0fd4e68c13c6830f03b90c38d89aaad184de02c8c642cf807",
+        "bytes": 2257
+      },
+      {
+        "path": "model.bin",
+        "sha256": "9b45e1009dcc4ab601eff815b61d80e60ce3fd8c74c1a14f4a282258286b51ae",
+        "bytes": 1527906378
+      },
+      {
+        "path": "tokenizer.json",
+        "sha256": "fb7b63191e9bb045082c79fd742a3106a12c99513ab30df4a0d47fa6cb6fd0ab",
+        "bytes": 2203239
+      },
+      {
+        "path": "vocabulary.txt",
+        "sha256": "34ce3fe1c5041027b3f8d42912270993f986dbc4bb34cf27f951e34a1e453913",
+        "bytes": 459861
+      }
+    ],
+    "networkPolicy": "network_syscalls_denied_and_telemetry_disabled"
+  },
+  "humanListening": false
 }

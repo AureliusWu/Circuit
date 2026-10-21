@@ -41,7 +41,10 @@
       "polarityCountsMatch": true,
       "passed": false,
       "humanListening": false
-    }
+    },
+    "model": "Systran/faster-whisper-medium",
+    "revision": "08e178d48790749d25932bbc082711ddcfdfbc4f",
+    "audioSha256": "541e8c70591f29a2bba9ba6895cba3df1a1f2328824b20cb74adcf6f1f744340"
   },
   "duration": 1.04,
   "wallSeconds": 5.845,
@@ -74,5 +77,32 @@
       "sha256": "541e8c70591f29a2bba9ba6895cba3df1a1f2328824b20cb74adcf6f1f744340"
     }
   },
-  "recoveredFromRun": 39522065527
+  "recoveredFromRun": 39522065527,
+  "asrReviewHistory": [
+    {
+      "transcript": "招椅子",
+      "cer": 0.333333,
+      "polarityCountsMatch": true,
+      "passed": false,
+      "phoneticReview": {
+        "method": "exact_all_syllables_and_tones_pypinyin_0.53.0",
+        "expected": "朝椅子",
+        "observed": "招椅子",
+        "expectedSyllables": [
+          "chao2",
+          "yi3",
+          "zi5"
+        ],
+        "observedSyllables": [
+          "zhao1",
+          "yi3",
+          "zi5"
+        ],
+        "sameLength": true,
+        "polarityCountsMatch": true,
+        "passed": false,
+        "humanListening": false
+      }
+    }
+  ]
 }

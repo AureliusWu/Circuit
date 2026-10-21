@@ -19,14 +19,14 @@
   "attempt": 8,
   "status": "needs_review",
   "asr": {
-    "transcript": "没劲挡",
-    "cer": 0.666667,
+    "transcript": "没进党",
+    "cer": 0.333333,
     "polarityCountsMatch": true,
     "passed": false,
     "phoneticReview": {
       "method": "exact_all_syllables_and_tones_pypinyin_0.53.0",
       "expected": "没进档",
-      "observed": "没劲挡",
+      "observed": "没进党",
       "expectedSyllables": [
         "mei2",
         "jin4",
@@ -41,7 +41,10 @@
       "polarityCountsMatch": true,
       "passed": false,
       "humanListening": false
-    }
+    },
+    "model": "Systran/faster-whisper-medium",
+    "revision": "08e178d48790749d25932bbc082711ddcfdfbc4f",
+    "audioSha256": "5c522eb9d9b16528fedf4da9d677cba99aba43edfa4f5e162121434ecf0e7e3e"
   },
   "duration": 1.44,
   "wallSeconds": 7.519,
@@ -74,5 +77,32 @@
       "sha256": "5c522eb9d9b16528fedf4da9d677cba99aba43edfa4f5e162121434ecf0e7e3e"
     }
   },
-  "recoveredFromRun": 39522065527
+  "recoveredFromRun": 39522065527,
+  "asrReviewHistory": [
+    {
+      "transcript": "没劲挡",
+      "cer": 0.666667,
+      "polarityCountsMatch": true,
+      "passed": false,
+      "phoneticReview": {
+        "method": "exact_all_syllables_and_tones_pypinyin_0.53.0",
+        "expected": "没进档",
+        "observed": "没劲挡",
+        "expectedSyllables": [
+          "mei2",
+          "jin4",
+          "dang4"
+        ],
+        "observedSyllables": [
+          "mei2",
+          "jin4",
+          "dang3"
+        ],
+        "sameLength": true,
+        "polarityCountsMatch": true,
+        "passed": false,
+        "humanListening": false
+      }
+    }
+  ]
 }

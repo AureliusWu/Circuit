@@ -1,0 +1,270 @@
+{
+  "schema": 1,
+  "project": "Circuit",
+  "target": 402,
+  "accepted": 394,
+  "pendingCount": 8,
+  "pending": [
+    {
+      "id": "circuit-thirteen-households--archivedticket--q01--01",
+      "text": "没进档。",
+      "status": "needs_review",
+      "asr": {
+        "transcript": "没进党",
+        "cer": 0.333333,
+        "polarityCountsMatch": true,
+        "passed": false,
+        "phoneticReview": {
+          "method": "exact_all_syllables_and_tones_pypinyin_0.53.0",
+          "expected": "没进档",
+          "observed": "没进党",
+          "expectedSyllables": [
+            "mei2",
+            "jin4",
+            "dang4"
+          ],
+          "observedSyllables": [
+            "mei2",
+            "jin4",
+            "dang3"
+          ],
+          "sameLength": true,
+          "polarityCountsMatch": true,
+          "passed": false,
+          "humanListening": false
+        },
+        "model": "Systran/faster-whisper-medium",
+        "revision": "08e178d48790749d25932bbc082711ddcfdfbc4f",
+        "audioSha256": "5c522eb9d9b16528fedf4da9d677cba99aba43edfa4f5e162121434ecf0e7e3e"
+      }
+    },
+    {
+      "id": "circuit-thirteen-households--houseknock--q02--01",
+      "text": "我们一点二十一就报了。",
+      "status": "needs_review",
+      "asr": {
+        "transcript": "我们1点21就爆了",
+        "cer": 0.5,
+        "polarityCountsMatch": true,
+        "passed": false,
+        "phoneticReview": {
+          "method": "exact_all_syllables_and_tones_pypinyin_0.53.0",
+          "expected": "我们一点二十一就报了",
+          "observed": "我们1点21就爆了",
+          "expectedSyllables": [],
+          "observedSyllables": [],
+          "sameLength": false,
+          "polarityCountsMatch": true,
+          "passed": false,
+          "humanListening": false
+        },
+        "model": "Systran/faster-whisper-medium",
+        "revision": "08e178d48790749d25932bbc082711ddcfdfbc4f",
+        "audioSha256": "09ca4274e320c22823aeb6f7077b3f37b4759eaf7b1f1704f87484df76811122"
+      }
+    },
+    {
+      "id": "circuit-thirteen-households--recordcrosscheck--q01--01",
+      "text": "原样交。",
+      "status": "needs_review",
+      "asr": {
+        "transcript": "元样香",
+        "cer": 0.666667,
+        "polarityCountsMatch": true,
+        "passed": false,
+        "phoneticReview": {
+          "method": "exact_all_syllables_and_tones_pypinyin_0.53.0",
+          "expected": "原样交",
+          "observed": "元样香",
+          "expectedSyllables": [
+            "yuan2",
+            "yang4",
+            "jiao1"
+          ],
+          "observedSyllables": [
+            "yuan2",
+            "yang4",
+            "xiang1"
+          ],
+          "sameLength": true,
+          "polarityCountsMatch": true,
+          "passed": false,
+          "humanListening": false
+        },
+        "model": "Systran/faster-whisper-medium",
+        "revision": "08e178d48790749d25932bbc082711ddcfdfbc4f",
+        "audioSha256": "8b17013f5b93d63615b8600d63ccdbd2d62aa316cf2c7a891d706654414a35eb"
+      }
+    },
+    {
+      "id": "circuit-return-visit--compare--q01--01",
+      "text": "00:03，林岚收到过。",
+      "status": "needs_review",
+      "asr": {
+        "transcript": "林賢 林蘭收到過",
+        "cer": 0.555556,
+        "polarityCountsMatch": true,
+        "passed": false,
+        "phoneticReview": {
+          "method": "exact_all_syllables_and_tones_pypinyin_0.53.0",
+          "expected": "0003林岚收到过",
+          "observed": "林贤林兰收到过",
+          "expectedSyllables": [],
+          "observedSyllables": [],
+          "sameLength": false,
+          "polarityCountsMatch": true,
+          "passed": false,
+          "humanListening": false
+        },
+        "model": "Systran/faster-whisper-medium",
+        "revision": "08e178d48790749d25932bbc082711ddcfdfbc4f",
+        "audioSha256": "07998da2bf558378facb37669dd0acd41728fa3e12f18bd4bd89717428e61ba7"
+      }
+    },
+    {
+      "id": "circuit-answering--houserule--q02--01",
+      "text": "你应了？",
+      "status": "needs_review",
+      "asr": {
+        "transcript": "你硬了",
+        "cer": 0.333333,
+        "polarityCountsMatch": true,
+        "passed": false,
+        "phoneticReview": {
+          "method": "exact_all_syllables_and_tones_pypinyin_0.53.0",
+          "expected": "你应了",
+          "observed": "你硬了",
+          "expectedSyllables": [
+            "ni3",
+            "ying1",
+            "le5"
+          ],
+          "observedSyllables": [
+            "ni3",
+            "ying4",
+            "le5"
+          ],
+          "sameLength": true,
+          "polarityCountsMatch": true,
+          "passed": false,
+          "humanListening": false
+        },
+        "model": "Systran/faster-whisper-medium",
+        "revision": "08e178d48790749d25932bbc082711ddcfdfbc4f",
+        "audioSha256": "491755761626f4af259ffa97ebcee37c5ec67b6928d8ff616067bfa8837c467f"
+      }
+    },
+    {
+      "id": "circuit-tickets--firsthub--q01--01",
+      "text": "这次别泡成复写联了。",
+      "status": "needs_review",
+      "asr": {
+        "transcript": "这次别泡成负血连了",
+        "cer": 0.333333,
+        "polarityCountsMatch": true,
+        "passed": false,
+        "phoneticReview": {
+          "method": "exact_all_syllables_and_tones_pypinyin_0.53.0",
+          "expected": "这次别泡成复写联了",
+          "observed": "这次别泡成负血连了",
+          "expectedSyllables": [
+            "zhe4",
+            "ci4",
+            "bie2",
+            "pao4",
+            "cheng2",
+            "fu4",
+            "xie3",
+            "lian2",
+            "le5"
+          ],
+          "observedSyllables": [
+            "zhe4",
+            "ci4",
+            "bie2",
+            "pao4",
+            "cheng2",
+            "fu4",
+            "xue4",
+            "lian2",
+            "le5"
+          ],
+          "sameLength": true,
+          "polarityCountsMatch": true,
+          "passed": false,
+          "humanListening": false
+        },
+        "model": "Systran/faster-whisper-medium",
+        "revision": "08e178d48790749d25932bbc082711ddcfdfbc4f",
+        "audioSha256": "938471350c1492f1927a95c619cfc4cbd3ad78a7aa92ad648a5f9003de14c013"
+      }
+    },
+    {
+      "id": "circuit-tickets--recordpaper--q02--01",
+      "text": "朝椅子。",
+      "status": "needs_review",
+      "asr": {
+        "transcript": "招椅子",
+        "cer": 0.333333,
+        "polarityCountsMatch": true,
+        "passed": false,
+        "phoneticReview": {
+          "method": "exact_all_syllables_and_tones_pypinyin_0.53.0",
+          "expected": "朝椅子",
+          "observed": "招椅子",
+          "expectedSyllables": [
+            "chao2",
+            "yi3",
+            "zi5"
+          ],
+          "observedSyllables": [
+            "zhao1",
+            "yi3",
+            "zi5"
+          ],
+          "sameLength": true,
+          "polarityCountsMatch": true,
+          "passed": false,
+          "humanListening": false
+        },
+        "model": "Systran/faster-whisper-medium",
+        "revision": "08e178d48790749d25932bbc082711ddcfdfbc4f",
+        "audioSha256": "541e8c70591f29a2bba9ba6895cba3df1a1f2328824b20cb74adcf6f1f744340"
+      }
+    },
+    {
+      "id": "circuit-tickets--job--q01--01",
+      "text": "十七是后来取文件的。",
+      "status": "needs_review",
+      "asr": {
+        "transcript": "17是后来取文件的。",
+        "cer": 0.222222,
+        "polarityCountsMatch": true,
+        "passed": false,
+        "phoneticReview": {
+          "method": "exact_all_syllables_and_tones_pypinyin_0.53.0",
+          "expected": "十七是后来取文件的",
+          "observed": "17是后来取文件的",
+          "expectedSyllables": [],
+          "observedSyllables": [],
+          "sameLength": true,
+          "polarityCountsMatch": true,
+          "passed": false,
+          "humanListening": false
+        },
+        "model": "Systran/faster-whisper-medium",
+        "revision": "08e178d48790749d25932bbc082711ddcfdfbc4f",
+        "audioSha256": "3d697d146fc1b0b068c003c9fac4319d600dcebd01cddc6c53fa3b4fcaa6551c"
+      }
+    }
+  ],
+  "semanticSha256": "d2f80ed941e3b06e2fbf53e4cc5af38b123526c1795c73b5031fb2100be46316",
+  "archive": "assets_source/voice/continued-20261020",
+  "reviewModel": {
+    "id": "Systran/faster-whisper-medium",
+    "revision": "08e178d48790749d25932bbc082711ddcfdfbc4f"
+  },
+  "humanListening": false,
+  "runtimeIntegration": "pending",
+  "release": "not_published"
+}

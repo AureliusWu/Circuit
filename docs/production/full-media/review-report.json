@@ -10,14 +10,14 @@
       "text": "这次别泡成复写联了。",
       "status": "needs_review",
       "asr": {
-        "transcript": "这次别泡成负血连了",
-        "cer": 0.333333,
+        "transcript": "这次别泡成负血连呢",
+        "cer": 0.444444,
         "polarityCountsMatch": true,
         "passed": false,
         "phoneticReview": {
           "method": "exact_all_syllables_tones_and_explicit_numeric_values_v2_pypinyin_0.53.0",
           "expected": "这次别泡成复写联了",
-          "observed": "这次别泡成负血连了",
+          "observed": "这次别泡成负血连呢",
           "expectedSyllables": [
             "zhe4",
             "ci4",
@@ -38,7 +38,7 @@
             "fu4",
             "xue4",
             "lian2",
-            "le5"
+            "ne5"
           ],
           "sameLength": true,
           "polarityCountsMatch": true,
@@ -47,7 +47,7 @@
         },
         "model": "Systran/faster-whisper-medium",
         "revision": "08e178d48790749d25932bbc082711ddcfdfbc4f",
-        "audioSha256": "fcf5eddc354b7b87a6cc794beb222eafdda7d0f33e70b6746e71fda66668b05e"
+        "audioSha256": "3e6cb09958e440ae0a2aab3a7468e22038ac16458084dbf1d6084f49ab6ce69c"
       }
     }
   ],

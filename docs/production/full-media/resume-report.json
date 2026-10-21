@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "project": "Circuit",
-  "sourceRun": 39561185406,
+  "sourceRun": 39562432422,
   "semanticSha256": "d2f80ed941e3b06e2fbf53e4cc5af38b123526c1795c73b5031fb2100be46316",
   "target": 402,
   "accepted": 394,
@@ -54,15 +54,15 @@
       "text": "这次别泡成复写联了。",
       "status": "needs_review",
       "asr": {
-        "transcript": "这次别泡成腹血连了",
-        "cer": 0.333333,
+        "transcript": "这次别泡成腹血连呢",
+        "cer": 0.444444,
         "polarityCountsMatch": true,
         "passed": false,
         "expectedSpokenText": "这次别泡成复写联了。",
         "phoneticReview": {
           "method": "exact_all_syllables_tones_and_explicit_numeric_values_v2_pypinyin_0.53.0",
           "expected": "这次别泡成复写联了",
-          "observed": "这次别泡成腹血连了",
+          "observed": "这次别泡成腹血连呢",
           "expectedSyllables": [
             "zhe4",
             "ci4",
@@ -83,7 +83,7 @@
             "fu4",
             "xue4",
             "lian2",
-            "le5"
+            "ne5"
           ],
           "sameLength": true,
           "polarityCountsMatch": true,

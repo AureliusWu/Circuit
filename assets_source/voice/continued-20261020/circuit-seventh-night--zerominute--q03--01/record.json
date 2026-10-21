@@ -16,44 +16,78 @@
   "textSha256": "87bbf6d8f166ce6f026b704d44573b350ea60a06815db67dc054ca1c995aeb98",
   "medium": "spoken",
   "requestSha256": "28f210cf32967479316d2eeafcbf19dcbd0a458c71501665c9c7469d52563d38",
-  "attempt": 5,
-  "status": "needs_review",
+  "attempt": 6,
+  "status": "accepted",
   "asr": {
-    "transcript": "拐音項那個字也是這樣",
+    "transcript": "怀音像那个字也是这样",
     "cer": 0.3,
     "polarityCountsMatch": true,
-    "passed": false
+    "passed": true,
+    "phoneticReview": {
+      "method": "exact_all_syllables_and_tones_pypinyin_0.53.0",
+      "expected": "槐荫巷那个字也是这样",
+      "observed": "怀音像那个字也是这样",
+      "expectedSyllables": [
+        "huai2",
+        "yin1",
+        "xiang4",
+        "na4",
+        "ge4",
+        "zi4",
+        "ye3",
+        "shi4",
+        "zhe4",
+        "yang4"
+      ],
+      "observedSyllables": [
+        "huai2",
+        "yin1",
+        "xiang4",
+        "na4",
+        "ge4",
+        "zi4",
+        "ye3",
+        "shi4",
+        "zhe4",
+        "yang4"
+      ],
+      "sameLength": true,
+      "polarityCountsMatch": true,
+      "passed": true,
+      "humanListening": false
+    },
+    "acceptance": "exact_toned_homophones"
   },
-  "duration": 2.08,
-  "wallSeconds": 63.056,
+  "duration": 2.72,
+  "wallSeconds": 154.801,
   "loudness": {
-    "input_i": "-18.18",
-    "input_tp": "-4.53",
+    "input_i": "-17.96",
+    "input_tp": "-2.88",
     "input_lra": "0.00",
-    "input_thresh": "-28.18",
+    "input_thresh": "-28.34",
     "output_i": "-20.00",
-    "output_tp": "-6.35",
+    "output_tp": "-4.92",
     "output_lra": "0.00",
-    "output_thresh": "-30.00",
+    "output_thresh": "-30.37",
     "normalization_type": "linear",
-    "target_offset": "-0.00"
+    "target_offset": "0.00"
   },
   "files": {
     "raw": {
       "path": "circuit-seventh-night--zerominute--q03--01/raw.wav",
-      "bytes": 199760,
-      "sha256": "2459467010faf0101361fac35d2e7ed76473be6db062727ea3a84bfbb4a4f9f2"
+      "bytes": 261200,
+      "sha256": "c517d82c77b18321bb46c33fb0d5946b02c269924826de62c0fa6bc4c32d918d"
     },
     "master": {
       "path": "circuit-seventh-night--zerominute--q03--01/master.wav",
-      "bytes": 99918,
-      "sha256": "099ee1d8d7d41657ee9c4693d272eacc4fce61a1904b2abcfb498c8551885494"
+      "bytes": 130638,
+      "sha256": "56c9d7780be75cf340b915a9f86416ac809da33c2a87916740f5b59d81fbce6e"
     },
     "runtime": {
       "path": "circuit-seventh-night--zerominute--q03--01/runtime.ogg",
-      "bytes": 18601,
-      "sha256": "b157fd9c2b077c0986f4b1a4e27cd0ba4b25ee3ecbff14bf15e325ee5a064a7f"
+      "bytes": 22525,
+      "sha256": "fb546a976be4344110081265968c73dee9b76d3499ed548b3eb22e2965640d50"
     }
   },
-  "recoveredFromRun": 39436504010
+  "recoveredFromRun": 39522065527
 }

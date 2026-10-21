@@ -17,12 +17,38 @@
   "medium": "spoken",
   "requestSha256": "f41bb3514b1b51894fecdec032ba4bc25c960546e65ed5a0854e5171c8c1aca4",
   "attempt": 5,
-  "status": "needs_review",
+  "status": "accepted",
   "asr": {
     "transcript": "他今晚还想吗",
     "cer": 0.333333,
     "polarityCountsMatch": true,
-    "passed": false
+    "passed": true,
+    "phoneticReview": {
+      "method": "exact_all_syllables_and_tones_pypinyin_0.53.0",
+      "expected": "它今晚还响吗",
+      "observed": "他今晚还想吗",
+      "expectedSyllables": [
+        "ta1",
+        "jin1",
+        "wan3",
+        "hai2",
+        "xiang3",
+        "ma5"
+      ],
+      "observedSyllables": [
+        "ta1",
+        "jin1",
+        "wan3",
+        "hai2",
+        "xiang3",
+        "ma5"
+      ],
+      "sameLength": true,
+      "polarityCountsMatch": true,
+      "passed": true,
+      "humanListening": false
+    },
+    "acceptance": "exact_toned_homophones"
   },
   "duration": 1.2,
   "wallSeconds": 51.7,
@@ -55,5 +81,5 @@
       "sha256": "58ca13aa1f24ec245b8b305b829278800006f8f83aa93bd8145aed081043758d"
     }
   },
-  "recoveredFromRun": 39436504010
+  "recoveredFromRun": 39522065527
 }

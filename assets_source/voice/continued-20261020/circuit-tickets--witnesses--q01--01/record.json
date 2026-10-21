@@ -17,12 +17,52 @@
   "medium": "spoken",
   "requestSha256": "5d61d1f510e0f234f92e56b2407d94ae92dfbff3c9957d3c736ca91c8079b27d",
   "attempt": 5,
-  "status": "needs_review",
+  "status": "accepted",
   "asr": {
     "transcript": "程艳的艳别又写成实践两个字",
     "cer": 0.307692,
     "polarityCountsMatch": true,
-    "passed": false
+    "passed": true,
+    "phoneticReview": {
+      "method": "exact_all_syllables_and_tones_pypinyin_0.53.0",
+      "expected": "程砚的砚别又写成石见两个字",
+      "observed": "程艳的艳别又写成实践两个字",
+      "expectedSyllables": [
+        "cheng2",
+        "yan4",
+        "de5",
+        "yan4",
+        "bie2",
+        "you4",
+        "xie3",
+        "cheng2",
+        "shi2",
+        "jian4",
+        "liang3",
+        "ge4",
+        "zi4"
+      ],
+      "observedSyllables": [
+        "cheng2",
+        "yan4",
+        "de5",
+        "yan4",
+        "bie2",
+        "you4",
+        "xie3",
+        "cheng2",
+        "shi2",
+        "jian4",
+        "liang3",
+        "ge4",
+        "zi4"
+      ],
+      "sameLength": true,
+      "polarityCountsMatch": true,
+      "passed": true,
+      "humanListening": false
+    },
+    "acceptance": "exact_toned_homophones"
   },
   "duration": 2.8,
   "wallSeconds": 112.401,
@@ -55,5 +95,5 @@
       "sha256": "413be46bad823b8fe711b22ac7be76169b0fa58b9bce6aafd7d4592a132289b1"
     }
   },
-  "recoveredFromRun": 39436504010
+  "recoveredFromRun": 39522065527
 }

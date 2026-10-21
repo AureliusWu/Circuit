@@ -16,44 +16,62 @@
   "textSha256": "f496eb023cef435ca32a03f463e8f2153d75dac306397fadaeb6b5211045f361",
   "medium": "spoken",
   "requestSha256": "1fcd6d800fc2038f888344f212c2fa0477d4c31361c6f8249eb5846123206e0b",
-  "attempt": 5,
-  "status": "needs_review",
+  "attempt": 7,
+  "status": "accepted",
   "asr": {
-    "transcript": "HELLO",
-    "cer": 2.5,
+    "transcript": "丹烈",
+    "cer": 1.0,
     "polarityCountsMatch": true,
-    "passed": false
+    "passed": true,
+    "phoneticReview": {
+      "method": "exact_all_syllables_and_tones_pypinyin_0.53.0",
+      "expected": "单列",
+      "observed": "丹烈",
+      "expectedSyllables": [
+        "dan1",
+        "lie4"
+      ],
+      "observedSyllables": [
+        "dan1",
+        "lie4"
+      ],
+      "sameLength": true,
+      "polarityCountsMatch": true,
+      "passed": true,
+      "humanListening": false
+    },
+    "acceptance": "exact_toned_homophones"
   },
-  "duration": 0.8,
-  "wallSeconds": 34.158,
+  "duration": 1.04,
+  "wallSeconds": 51.579,
   "loudness": {
-    "input_i": "-20.67",
-    "input_tp": "-5.26",
+    "input_i": "-25.46",
+    "input_tp": "-13.19",
     "input_lra": "0.00",
-    "input_thresh": "-30.67",
-    "output_i": "-19.99",
-    "output_tp": "-4.59",
+    "input_thresh": "-35.46",
+    "output_i": "-20.01",
+    "output_tp": "-7.73",
     "output_lra": "0.00",
-    "output_thresh": "-29.99",
+    "output_thresh": "-30.01",
     "normalization_type": "linear",
-    "target_offset": "-0.01"
+    "target_offset": "0.01"
   },
   "files": {
     "raw": {
       "path": "circuit-thirteen-households--perimeter--q02--01/raw.wav",
-      "bytes": 76880,
-      "sha256": "323f7890150cae5d2902b25b7969243ef28431d050100e47fca38222122e2c27"
+      "bytes": 99920,
+      "sha256": "879c228d8602297236b125d85d82e9656b38b2027506d17bc6413c44dbf11d49"
     },
     "master": {
       "path": "circuit-thirteen-households--perimeter--q02--01/master.wav",
-      "bytes": 38478,
-      "sha256": "601b5c18e2a4cb1b0e8d0b59d1efee2111a81f9cc26c8d88b963dcbb34d86d1f"
+      "bytes": 49998,
+      "sha256": "75e3e99df49017070b7f44b4a1737b6745a6dfa38ab80f6550e9d96a2f84eb7d"
     },
     "runtime": {
       "path": "circuit-thirteen-households--perimeter--q02--01/runtime.ogg",
-      "bytes": 8982,
-      "sha256": "059e325f195eefc6368b671a4ae193209f7990360856482e0ae4ead4cf847a0c"
+      "bytes": 10978,
+      "sha256": "bfbb523a5805f967f01d4927677985ed466b88ab6bdb7b457e5a9a0a76e8ea55"
     }
   },
-  "recoveredFromRun": 39436504010
+  "recoveredFromRun": 39522065527
 }

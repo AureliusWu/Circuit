@@ -16,44 +16,68 @@
   "textSha256": "600df22ae99735287a793634c7e3f65046cef1d936ab8c873dff3ce9459a15b3",
   "medium": "spoken",
   "requestSha256": "dcea560557dcc994774b65b34ad2044861d34f68a96dab039d1245adb1dd442d",
-  "attempt": 5,
-  "status": "needs_review",
+  "attempt": 6,
+  "status": "accepted",
   "asr": {
-    "transcript": "线门牌领盒",
+    "transcript": "线门牌令和",
     "cer": 0.6,
     "polarityCountsMatch": true,
-    "passed": false
+    "passed": true,
+    "phoneticReview": {
+      "method": "exact_all_syllables_and_tones_pypinyin_0.53.0",
+      "expected": "现门牌另核",
+      "observed": "线门牌令和",
+      "expectedSyllables": [
+        "xian4",
+        "men2",
+        "pai2",
+        "ling4",
+        "he2"
+      ],
+      "observedSyllables": [
+        "xian4",
+        "men2",
+        "pai2",
+        "ling4",
+        "he2"
+      ],
+      "sameLength": true,
+      "polarityCountsMatch": true,
+      "passed": true,
+      "humanListening": false
+    },
+    "acceptance": "exact_toned_homophones"
   },
-  "duration": 1.28,
-  "wallSeconds": 128.322,
+  "duration": 1.2,
+  "wallSeconds": 54.323,
   "loudness": {
-    "input_i": "-20.41",
-    "input_tp": "-5.72",
+    "input_i": "-24.53",
+    "input_tp": "-6.43",
     "input_lra": "0.00",
-    "input_thresh": "-30.41",
-    "output_i": "-20.01",
-    "output_tp": "-5.31",
+    "input_thresh": "-34.53",
+    "output_i": "-20.13",
+    "output_tp": "-2.00",
     "output_lra": "0.00",
-    "output_thresh": "-30.01",
+    "output_thresh": "-30.13",
     "normalization_type": "linear",
-    "target_offset": "0.01"
+    "target_offset": "0.13"
   },
   "files": {
     "raw": {
       "path": "circuit-return-visit--drive--q02--01/raw.wav",
-      "bytes": 122960,
-      "sha256": "e284d2f73a286daa79f7236bcbe8f78db1415c58f7982882168ac80cb84fa749"
+      "bytes": 115280,
+      "sha256": "214d805381073e8b60bd99b213b1d87fb455934275c5c104a4052786ed2eccf3"
     },
     "master": {
       "path": "circuit-return-visit--drive--q02--01/master.wav",
-      "bytes": 61518,
-      "sha256": "83dee7b33b4469518169e0ca512f2ede5d3204a1ec74977d5d6af0ac2402fcdc"
+      "bytes": 57678,
+      "sha256": "4681f70003f946a3d0f0552bcd180613f849e91c838b35e6f886515a355f3b1f"
     },
     "runtime": {
       "path": "circuit-return-visit--drive--q02--01/runtime.ogg",
-      "bytes": 12692,
-      "sha256": "fd9f7917acf16822f43948be45c929408afd0ec9ad5955c5c141fbc0b87b4520"
+      "bytes": 12548,
+      "sha256": "0ddea24efae27bec88f204340d2fe6798ce8fc81ce4f1be43a90b6bb9d7e68d7"
     }
   },
-  "recoveredFromRun": 39436504010
+  "recoveredFromRun": 39522065527
 }

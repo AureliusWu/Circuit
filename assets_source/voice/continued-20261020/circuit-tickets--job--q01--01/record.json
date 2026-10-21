@@ -16,44 +16,55 @@
   "textSha256": "7903243080ac51f6b08ae8e179178f6f789de4954cbe0ce9de03230bc1fe8490",
   "medium": "spoken",
   "requestSha256": "f0083c5f57978135790160c47536647b221931e856a5f6f48c566f50222e9c75",
-  "attempt": 5,
+  "attempt": 8,
   "status": "needs_review",
   "asr": {
-    "transcript": "17是後來取文件的。",
-    "cer": 0.222222,
+    "transcript": "17是后来曲文件的",
+    "cer": 0.333333,
     "polarityCountsMatch": true,
-    "passed": false
+    "passed": false,
+    "phoneticReview": {
+      "method": "exact_all_syllables_and_tones_pypinyin_0.53.0",
+      "expected": "十七是后来取文件的",
+      "observed": "17是后来曲文件的",
+      "expectedSyllables": [],
+      "observedSyllables": [],
+      "sameLength": true,
+      "polarityCountsMatch": true,
+      "passed": false,
+      "humanListening": false
+    }
   },
-  "duration": 2.96,
-  "wallSeconds": 117.783,
+  "duration": 3.2,
+  "wallSeconds": 217.368,
   "loudness": {
-    "input_i": "-17.79",
-    "input_tp": "-2.36",
-    "input_lra": "0.00",
-    "input_thresh": "-27.79",
-    "output_i": "-19.99",
-    "output_tp": "-4.57",
+    "input_i": "-19.78",
+    "input_tp": "-3.29",
+    "input_lra": "0.30",
+    "input_thresh": "-29.92",
+    "output_i": "-19.82",
+    "output_tp": "-3.44",
     "output_lra": "0.00",
-    "output_thresh": "-29.99",
-    "normalization_type": "linear",
-    "target_offset": "-0.01"
+    "output_thresh": "-29.96",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.18"
   },
   "files": {
     "raw": {
       "path": "circuit-tickets--job--q01--01/raw.wav",
-      "bytes": 284240,
-      "sha256": "9d8436064fdbe3f275a600b796f13f465d49557415655f09729dd693efe3a9e9"
+      "bytes": 307280,
+      "sha256": "8f559e93f74137e2e3d81d31da55fc4d488d867282355a5ca95c607940de3d24"
     },
     "master": {
       "path": "circuit-tickets--job--q01--01/master.wav",
-      "bytes": 142158,
-      "sha256": "89fd7b6693519f44ec83f65710933b3f567c1885686f7c72ed94b68016d99fd8"
+      "bytes": 153678,
+      "sha256": "9641b135556027641833a4d536c26c2d3b0e2d63607e6e46b6feb983fc5fbc46"
     },
     "runtime": {
       "path": "circuit-tickets--job--q01--01/runtime.ogg",
-      "bytes": 24499,
-      "sha256": "42497ac3eb29ddbef0df62785725b78f0c81bf0f5821e293f9a9899871eb62f2"
+      "bytes": 26145,
+      "sha256": "3d697d146fc1b0b068c003c9fac4319d600dcebd01cddc6c53fa3b4fcaa6551c"
     }
   },
-  "recoveredFromRun": 39436504010
+  "recoveredFromRun": 39522065527
 }

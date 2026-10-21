@@ -17,12 +17,38 @@
   "medium": "spoken",
   "requestSha256": "5ecbbf9dff31d5686e32afb2dbb4745d16004478c0adf4215eb6e20623924281",
   "attempt": 5,
-  "status": "needs_review",
+  "status": "accepted",
   "asr": {
     "transcript": "先别替他达到。",
     "cer": 0.333333,
     "polarityCountsMatch": true,
-    "passed": false
+    "passed": true,
+    "phoneticReview": {
+      "method": "exact_all_syllables_and_tones_pypinyin_0.53.0",
+      "expected": "先别替它答到",
+      "observed": "先别替他达到",
+      "expectedSyllables": [
+        "xian1",
+        "bie2",
+        "ti4",
+        "ta1",
+        "da2",
+        "dao4"
+      ],
+      "observedSyllables": [
+        "xian1",
+        "bie2",
+        "ti4",
+        "ta1",
+        "da2",
+        "dao4"
+      ],
+      "sameLength": true,
+      "polarityCountsMatch": true,
+      "passed": true,
+      "humanListening": false
+    },
+    "acceptance": "exact_toned_homophones"
   },
   "duration": 1.68,
   "wallSeconds": 70.514,
@@ -55,5 +81,5 @@
       "sha256": "1c967897843cfa8707d9247149ad51f7ef644c3b207f219a8fbe80bd860eec10"
     }
   },
-  "recoveredFromRun": 39436504010
+  "recoveredFromRun": 39522065527
 }

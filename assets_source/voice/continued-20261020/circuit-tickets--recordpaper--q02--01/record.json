@@ -16,44 +16,63 @@
   "textSha256": "848befa2662765f0eb9f3ae9501989756b357baee598a4304aefd259932dcebc",
   "medium": "spoken",
   "requestSha256": "2ea90ebc96a3dd024ed19933b0f02b9569d46d150dbba1fd4ecace0385c699a2",
-  "attempt": 5,
+  "attempt": 8,
   "status": "needs_review",
   "asr": {
-    "transcript": "这影子",
-    "cer": 0.666667,
+    "transcript": "招椅子",
+    "cer": 0.333333,
     "polarityCountsMatch": true,
-    "passed": false
+    "passed": false,
+    "phoneticReview": {
+      "method": "exact_all_syllables_and_tones_pypinyin_0.53.0",
+      "expected": "朝椅子",
+      "observed": "招椅子",
+      "expectedSyllables": [
+        "chao2",
+        "yi3",
+        "zi5"
+      ],
+      "observedSyllables": [
+        "zhao1",
+        "yi3",
+        "zi5"
+      ],
+      "sameLength": true,
+      "polarityCountsMatch": true,
+      "passed": false,
+      "humanListening": false
+    }
   },
-  "duration": 0.72,
-  "wallSeconds": 32.098,
+  "duration": 1.04,
+  "wallSeconds": 5.845,
   "loudness": {
-    "input_i": "-22.54",
-    "input_tp": "-4.03",
+    "input_i": "-28.11",
+    "input_tp": "-9.02",
     "input_lra": "0.00",
-    "input_thresh": "-32.54",
-    "output_i": "-20.49",
+    "input_thresh": "-38.75",
+    "output_i": "-21.08",
     "output_tp": "-2.00",
     "output_lra": "0.00",
-    "output_thresh": "-30.49",
+    "output_thresh": "-31.71",
     "normalization_type": "linear",
-    "target_offset": "0.49"
+    "target_offset": "1.08"
   },
   "files": {
     "raw": {
       "path": "circuit-tickets--recordpaper--q02--01/raw.wav",
-      "bytes": 69200,
-      "sha256": "3a00468481ab5ed781cacc007c6735e5d85b44c6008e4b01cff4f69c16067cb6"
+      "bytes": 99920,
+      "sha256": "3d26f097e44dac4d59a2364a03a29948e60edd650bd1b4f59ce692f7d9f76eb8"
     },
     "master": {
       "path": "circuit-tickets--recordpaper--q02--01/master.wav",
-      "bytes": 34638,
-      "sha256": "34882f176e01523d01ea690eafd5af381ef093f2b5b780ab77c432ef6d2624e4"
+      "bytes": 49998,
+      "sha256": "f9ee47e7dbb334779403afbcc8a7af430c6f3bd1d378b98fd7b6c93137e66943"
     },
     "runtime": {
       "path": "circuit-tickets--recordpaper--q02--01/runtime.ogg",
-      "bytes": 8934,
-      "sha256": "3ec2577cfcfd2b30eeef0bbc926dc4dfd388c2e3baac2aaafb15f3cdb6bb4eda"
+      "bytes": 12155,
+      "sha256": "541e8c70591f29a2bba9ba6895cba3df1a1f2328824b20cb74adcf6f1f744340"
     }
   },
-  "recoveredFromRun": 39436504010
+  "recoveredFromRun": 39522065527
 }

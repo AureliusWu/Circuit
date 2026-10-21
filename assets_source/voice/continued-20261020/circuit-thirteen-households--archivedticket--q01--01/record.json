@@ -16,44 +16,63 @@
   "textSha256": "380d63bbe09781d2414c9cf7ec29a3717d010e910cf323686449393bb6519e9e",
   "medium": "spoken",
   "requestSha256": "ec368efefee28f70d2112b4f6dcdb808047d5a5865721a8673a85a76038accc4",
-  "attempt": 5,
+  "attempt": 8,
   "status": "needs_review",
   "asr": {
-    "transcript": "没劲到",
+    "transcript": "没劲挡",
     "cer": 0.666667,
     "polarityCountsMatch": true,
-    "passed": false
+    "passed": false,
+    "phoneticReview": {
+      "method": "exact_all_syllables_and_tones_pypinyin_0.53.0",
+      "expected": "没进档",
+      "observed": "没劲挡",
+      "expectedSyllables": [
+        "mei2",
+        "jin4",
+        "dang4"
+      ],
+      "observedSyllables": [
+        "mei2",
+        "jin4",
+        "dang3"
+      ],
+      "sameLength": true,
+      "polarityCountsMatch": true,
+      "passed": false,
+      "humanListening": false
+    }
   },
-  "duration": 1.28,
-  "wallSeconds": 140.479,
+  "duration": 1.44,
+  "wallSeconds": 7.519,
   "loudness": {
-    "input_i": "-24.67",
-    "input_tp": "-8.11",
+    "input_i": "-18.27",
+    "input_tp": "-4.70",
     "input_lra": "0.00",
-    "input_thresh": "-34.67",
-    "output_i": "-19.98",
-    "output_tp": "-3.43",
+    "input_thresh": "-28.27",
+    "output_i": "-20.00",
+    "output_tp": "-6.43",
     "output_lra": "0.00",
-    "output_thresh": "-29.98",
+    "output_thresh": "-30.00",
     "normalization_type": "linear",
-    "target_offset": "-0.02"
+    "target_offset": "0.00"
   },
   "files": {
     "raw": {
       "path": "circuit-thirteen-households--archivedticket--q01--01/raw.wav",
-      "bytes": 122960,
-      "sha256": "9810c54eccda3f79274c85dc33f72915f718465be05d76a2bc596e7c1c307bab"
+      "bytes": 138320,
+      "sha256": "edda00f08637a43df1ac720e4da688e7adc4a2ddfa95e59d5b16e79ac0c7f085"
     },
     "master": {
       "path": "circuit-thirteen-households--archivedticket--q01--01/master.wav",
-      "bytes": 61518,
-      "sha256": "349e4119e1646e8dd5af0531650cf39372e1a52a38e26024342ee7e91db2b52f"
+      "bytes": 69198,
+      "sha256": "045d6f19999a054bc79d9a8d2eaff8c8db2f7adb248890a100ce5b469b10a724"
     },
     "runtime": {
       "path": "circuit-thirteen-households--archivedticket--q01--01/runtime.ogg",
-      "bytes": 13290,
-      "sha256": "d6c6a699139020d3c0d9c58823d75cb18d060308f8c81ebfd6f9b2af3cda1b2f"
+      "bytes": 13686,
+      "sha256": "5c522eb9d9b16528fedf4da9d677cba99aba43edfa4f5e162121434ecf0e7e3e"
     }
   },
-  "recoveredFromRun": 39436504010
+  "recoveredFromRun": 39522065527
 }

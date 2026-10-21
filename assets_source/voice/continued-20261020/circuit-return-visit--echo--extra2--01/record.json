@@ -17,12 +17,34 @@
   "textSha256": "075c6dad5dac3f3992e2983b56416bfef075af945b30ad828f660bc04898c70b",
   "requestSha256": "d08e61c40f174ec7c0e8699fa198a3b1c48c28a9ed9bfa97604481780b3eda90",
   "attempt": 5,
-  "status": "needs_review",
+  "status": "accepted",
   "asr": {
     "transcript": "既寧收到",
     "cer": 0.25,
     "polarityCountsMatch": true,
-    "passed": false
+    "passed": true,
+    "phoneticReview": {
+      "method": "exact_all_syllables_and_tones_pypinyin_0.53.0",
+      "expected": "季宁收到",
+      "observed": "既宁收到",
+      "expectedSyllables": [
+        "ji4",
+        "ning2",
+        "shou1",
+        "dao4"
+      ],
+      "observedSyllables": [
+        "ji4",
+        "ning2",
+        "shou1",
+        "dao4"
+      ],
+      "sameLength": true,
+      "polarityCountsMatch": true,
+      "passed": true,
+      "humanListening": false
+    },
+    "acceptance": "exact_toned_homophones"
   },
   "duration": 2.56,
   "wallSeconds": 290.26,
@@ -55,5 +77,5 @@
       "sha256": "b34f2935f1cc0f208d3ddd78089d5197cb7403d1ce2f94808a51e2cdebee2004"
     }
   },
-  "recoveredFromRun": 39436504010
+  "recoveredFromRun": 39522065527
 }

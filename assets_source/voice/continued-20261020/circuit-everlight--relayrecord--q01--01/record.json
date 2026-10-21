@@ -16,44 +16,71 @@
   "textSha256": "f54987c41568553c91cf047789c87df32bcdc413692b5bd65d7cd6912d981915",
   "medium": "spoken",
   "requestSha256": "492cf7168c788122df8be0d5cede427080d21c83453813e41244dee2e72306ab",
-  "attempt": 5,
+  "attempt": 8,
   "status": "needs_review",
   "asr": {
     "transcript": "先改成機械傾向。",
     "cer": 0.285714,
     "polarityCountsMatch": true,
-    "passed": false
+    "passed": false,
+    "phoneticReview": {
+      "method": "exact_all_syllables_and_tones_pypinyin_0.53.0",
+      "expected": "先改成机械轻响",
+      "observed": "先改成机械倾向",
+      "expectedSyllables": [
+        "xian1",
+        "gai3",
+        "cheng2",
+        "ji1",
+        "xie4",
+        "qing1",
+        "xiang3"
+      ],
+      "observedSyllables": [
+        "xian1",
+        "gai3",
+        "cheng2",
+        "ji1",
+        "xie4",
+        "qing1",
+        "xiang4"
+      ],
+      "sameLength": true,
+      "polarityCountsMatch": true,
+      "passed": false,
+      "humanListening": false
+    }
   },
-  "duration": 2.32,
-  "wallSeconds": 66.47,
+  "duration": 1.92,
+  "wallSeconds": 131.331,
   "loudness": {
-    "input_i": "-17.36",
-    "input_tp": "-5.12",
+    "input_i": "-20.50",
+    "input_tp": "-3.64",
     "input_lra": "0.00",
-    "input_thresh": "-27.36",
+    "input_thresh": "-30.50",
     "output_i": "-20.00",
-    "output_tp": "-7.76",
+    "output_tp": "-3.14",
     "output_lra": "0.00",
     "output_thresh": "-30.00",
     "normalization_type": "linear",
-    "target_offset": "0.00"
+    "target_offset": "-0.00"
   },
   "files": {
     "raw": {
       "path": "circuit-everlight--relayrecord--q01--01/raw.wav",
-      "bytes": 222800,
-      "sha256": "ccbae2e65cef155f0e6048deb35218078d8619073df95d62a1ad10bf55572307"
+      "bytes": 184400,
+      "sha256": "2ff166df9dcba697c4f4f890039fb6e4fe70d33f272f8921c48d79a63bdef150"
     },
     "master": {
       "path": "circuit-everlight--relayrecord--q01--01/master.wav",
-      "bytes": 111438,
-      "sha256": "d1aac2989ab588de9d9a66a7aeb44976a26f683f405fd59826969a4cc0c228f2"
+      "bytes": 92238,
+      "sha256": "5270d111cca424e186be4a104618d84ff3de7c7113f9a2a6873209f2e94eb77c"
     },
     "runtime": {
       "path": "circuit-everlight--relayrecord--q01--01/runtime.ogg",
-      "bytes": 20215,
-      "sha256": "ad4467ba0a17dfabbcbbcf7343b773facb7b6be26cfb1ea4ee856dbe0ddcf5d4"
+      "bytes": 18407,
+      "sha256": "97c4b1c21b87f001c7d478c62b01b6474989a616a158a5dede0ffa46d8c2cd87"
     }
   },
-  "recoveredFromRun": 39436504010
+  "recoveredFromRun": 39522065527
 }

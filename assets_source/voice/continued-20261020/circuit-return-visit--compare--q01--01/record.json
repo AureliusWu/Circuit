@@ -16,44 +16,55 @@
   "textSha256": "13b1e43e71bd843090bcb89dbfc0b4b6b54b8895ae179de31000adbca5adf141",
   "medium": "spoken",
   "requestSha256": "b1cd0d6855ee287c26e99cd8168a5af70856209be6306d23e5c062c33fd3a669",
-  "attempt": 5,
+  "attempt": 8,
   "status": "needs_review",
   "asr": {
-    "transcript": "零零零零生到果",
-    "cer": 0.888889,
+    "transcript": "丁弦、林兰收到过。",
+    "cer": 0.555556,
     "polarityCountsMatch": true,
-    "passed": false
+    "passed": false,
+    "phoneticReview": {
+      "method": "exact_all_syllables_and_tones_pypinyin_0.53.0",
+      "expected": "0003林岚收到过",
+      "observed": "丁弦林兰收到过",
+      "expectedSyllables": [],
+      "observedSyllables": [],
+      "sameLength": false,
+      "polarityCountsMatch": true,
+      "passed": false,
+      "humanListening": false
+    }
   },
-  "duration": 2.96,
-  "wallSeconds": 83.128,
+  "duration": 2.56,
+  "wallSeconds": 299.15,
   "loudness": {
-    "input_i": "-21.03",
-    "input_tp": "-9.37",
+    "input_i": "-19.61",
+    "input_tp": "-6.67",
     "input_lra": "0.00",
-    "input_thresh": "-31.03",
+    "input_thresh": "-29.80",
     "output_i": "-20.00",
-    "output_tp": "-8.35",
+    "output_tp": "-7.06",
     "output_lra": "0.00",
-    "output_thresh": "-30.00",
+    "output_thresh": "-30.20",
     "normalization_type": "linear",
-    "target_offset": "-0.00"
+    "target_offset": "0.00"
   },
   "files": {
     "raw": {
       "path": "circuit-return-visit--compare--q01--01/raw.wav",
-      "bytes": 284240,
-      "sha256": "fcd279b28d25f16f4823cc3ffa512228459558709b560ab51f78c724d7233b7b"
+      "bytes": 245840,
+      "sha256": "a3b35a565b944501c3ff2cf66081f83ac2fcdb813ae1ca47ddf4bbae4fcb37a0"
     },
     "master": {
       "path": "circuit-return-visit--compare--q01--01/master.wav",
-      "bytes": 142158,
-      "sha256": "4d62fef1683e27ec7a71ae41524666df73272bdad503d4626f2aafb3a8f846a9"
+      "bytes": 122958,
+      "sha256": "eb6ea2867088d38e969b083cb4df418915186587e6901b40843c1a2d7b30e9be"
     },
     "runtime": {
       "path": "circuit-return-visit--compare--q01--01/runtime.ogg",
-      "bytes": 23997,
-      "sha256": "53962cd12cc8837bedaed755779bbcb453fbe3aebf1b10332889c46a0afa612b"
+      "bytes": 21270,
+      "sha256": "07998da2bf558378facb37669dd0acd41728fa3e12f18bd4bd89717428e61ba7"
     }
   },
-  "recoveredFromRun": 39436504010
+  "recoveredFromRun": 39522065527
 }

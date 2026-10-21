@@ -16,23 +16,51 @@
   "textSha256": "20e7acdc31c923c0414224425f87408059f4999e4176fc650396a669ab4f9e65",
   "medium": "spoken",
   "requestSha256": "31396d18e861b1b37b98158ea52e27bafda61e9a305d88c83085a54ce90f4efe",
-  "attempt": 5,
-  "status": "needs_review",
+  "attempt": 7,
+  "status": "accepted",
   "asr": {
-    "transcript": "知笔目录多半夜",
-    "cer": 0.428571,
+    "transcript": "只比目录多半夜。",
+    "cer": 0.285714,
     "polarityCountsMatch": true,
-    "passed": false
+    "passed": true,
+    "phoneticReview": {
+      "method": "exact_all_syllables_and_tones_pypinyin_0.53.0",
+      "expected": "纸比目录多半页",
+      "observed": "只比目录多半夜",
+      "expectedSyllables": [
+        "zhi3",
+        "bi3",
+        "mu4",
+        "lu4",
+        "duo1",
+        "ban4",
+        "ye4"
+      ],
+      "observedSyllables": [
+        "zhi3",
+        "bi3",
+        "mu4",
+        "lu4",
+        "duo1",
+        "ban4",
+        "ye4"
+      ],
+      "sameLength": true,
+      "polarityCountsMatch": true,
+      "passed": true,
+      "humanListening": false
+    },
+    "acceptance": "exact_toned_homophones"
   },
-  "duration": 2.64,
-  "wallSeconds": 75.328,
+  "duration": 2.32,
+  "wallSeconds": 110.556,
   "loudness": {
-    "input_i": "-16.79",
-    "input_tp": "-5.63",
+    "input_i": "-18.82",
+    "input_tp": "-4.59",
     "input_lra": "0.00",
-    "input_thresh": "-26.79",
+    "input_thresh": "-28.82",
     "output_i": "-20.00",
-    "output_tp": "-8.84",
+    "output_tp": "-5.77",
     "output_lra": "0.00",
     "output_thresh": "-30.00",
     "normalization_type": "linear",
@@ -41,19 +69,19 @@
   "files": {
     "raw": {
       "path": "circuit-backfeed--report--q01--01/raw.wav",
-      "bytes": 253520,
-      "sha256": "93ee4a936d43868a1dfaab8edacf4b4a798466ead1cd228c46f59fe9361c093d"
+      "bytes": 222800,
+      "sha256": "adcac6861ea3978a5abef32a402de13fa2c9837bcc510eb4e281c37406ba3854"
     },
     "master": {
       "path": "circuit-backfeed--report--q01--01/master.wav",
-      "bytes": 126798,
-      "sha256": "8c9337459dd3f916d99c178f09ce197703275057ffb6bce6c48dfa30689d03fa"
+      "bytes": 111438,
+      "sha256": "2e2a2e832f2bb79a5bc7ca153be15a1f85190d91ccb56008911a3daa9639099b"
     },
     "runtime": {
       "path": "circuit-backfeed--report--q01--01/runtime.ogg",
-      "bytes": 20623,
-      "sha256": "ad6bcdf87dd0bc1ae47845d69e908d41cfeee25ee99ff7062fa49ae062ab17d8"
+      "bytes": 19507,
+      "sha256": "413d21d4553127005fdf01522fe53b0f4749f6cbc81f8231b287cb723d897d26"
     }
   },
-  "recoveredFromRun": 39436504010
+  "recoveredFromRun": 39522065527
 }

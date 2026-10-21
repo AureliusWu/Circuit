@@ -17,12 +17,38 @@
   "medium": "spoken",
   "requestSha256": "3b6f0ebfcee67a4e8d730ec4049e7f69c661f153f73fdc85815ff966200430ef",
   "attempt": 5,
-  "status": "needs_review",
+  "status": "accepted",
   "asr": {
     "transcript": "幻语衣也带着",
     "cer": 0.333333,
     "polarityCountsMatch": true,
-    "passed": false
+    "passed": true,
+    "phoneticReview": {
+      "method": "exact_all_syllables_and_tones_pypinyin_0.53.0",
+      "expected": "换雨衣也带着",
+      "observed": "幻语衣也带着",
+      "expectedSyllables": [
+        "huan4",
+        "yu3",
+        "yi1",
+        "ye3",
+        "dai4",
+        "zhe5"
+      ],
+      "observedSyllables": [
+        "huan4",
+        "yu3",
+        "yi1",
+        "ye3",
+        "dai4",
+        "zhe5"
+      ],
+      "sameLength": true,
+      "polarityCountsMatch": true,
+      "passed": true,
+      "humanListening": false
+    },
+    "acceptance": "exact_toned_homophones"
   },
   "duration": 2.4,
   "wallSeconds": 74.753,
@@ -55,5 +81,5 @@
       "sha256": "563a0285094432bf8e802512739537e693cbdecd0cb9ead1f8c37eae1d3c42dc"
     }
   },
-  "recoveredFromRun": 39436504010
+  "recoveredFromRun": 39522065527
 }

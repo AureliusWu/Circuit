@@ -1,57 +1,40 @@
 {
   "schema": 1,
   "project": "Circuit",
-  "sourceRun": 39436504010,
+  "sourceRun": 39522065527,
   "semanticSha256": "d2f80ed941e3b06e2fbf53e4cc5af38b123526c1795c73b5031fb2100be46316",
   "target": 402,
-  "accepted": 370,
-  "pendingCount": 32,
+  "accepted": 386,
+  "pendingCount": 16,
   "pending": [
-    {
-      "id": "circuit-thirteen-households--meidoor--q01--01",
-      "text": "以前是做缝补的陈家。",
-      "status": "needs_review",
-      "asr": {
-        "transcript": "以前是做逢捕的成家",
-        "cer": 0.333333,
-        "polarityCountsMatch": true,
-        "passed": false
-      },
-      "error": null
-    },
-    {
-      "id": "circuit-thirteen-households--perimeter--q02--01",
-      "text": "单列。",
-      "status": "needs_review",
-      "asr": {
-        "transcript": "HELLO",
-        "cer": 2.5,
-        "polarityCountsMatch": true,
-        "passed": false
-      },
-      "error": null
-    },
     {
       "id": "circuit-thirteen-households--archivedticket--q01--01",
       "text": "没进档。",
       "status": "needs_review",
       "asr": {
-        "transcript": "没劲到",
+        "transcript": "没劲挡",
         "cer": 0.666667,
         "polarityCountsMatch": true,
-        "passed": false
-      },
-      "error": null
-    },
-    {
-      "id": "circuit-thirteen-households--archivedticket--q03--01",
-      "text": "换雨衣也带着。",
-      "status": "needs_review",
-      "asr": {
-        "transcript": "幻语衣也带着",
-        "cer": 0.333333,
-        "polarityCountsMatch": true,
-        "passed": false
+        "passed": false,
+        "phoneticReview": {
+          "method": "exact_all_syllables_and_tones_pypinyin_0.53.0",
+          "expected": "没进档",
+          "observed": "没劲挡",
+          "expectedSyllables": [
+            "mei2",
+            "jin4",
+            "dang4"
+          ],
+          "observedSyllables": [
+            "mei2",
+            "jin4",
+            "dang3"
+          ],
+          "sameLength": true,
+          "polarityCountsMatch": true,
+          "passed": false,
+          "humanListening": false
+        }
       },
       "error": null
     },
@@ -60,10 +43,21 @@
       "text": "我们一点二十一就报了。",
       "status": "needs_review",
       "asr": {
-        "transcript": "我们1点29爆了",
+        "transcript": "我們1.21就爆了",
         "cer": 0.6,
         "polarityCountsMatch": true,
-        "passed": false
+        "passed": false,
+        "phoneticReview": {
+          "method": "exact_all_syllables_and_tones_pypinyin_0.53.0",
+          "expected": "我们一点二十一就报了",
+          "observed": "我们121就爆了",
+          "expectedSyllables": [],
+          "observedSyllables": [],
+          "sameLength": false,
+          "polarityCountsMatch": true,
+          "passed": false,
+          "humanListening": false
+        }
       },
       "error": null
     },
@@ -72,70 +66,21 @@
       "text": "原样交。",
       "status": "needs_review",
       "asr": {
-        "transcript": "原氧胶",
+        "transcript": "原样的消",
         "cer": 0.666667,
         "polarityCountsMatch": true,
-        "passed": false
-      },
-      "error": null
-    },
-    {
-      "id": "circuit-seventh-night--zerominute--q03--01",
-      "text": "槐荫巷那个字也是这样。",
-      "status": "needs_review",
-      "asr": {
-        "transcript": "拐音項那個字也是這樣",
-        "cer": 0.3,
-        "polarityCountsMatch": true,
-        "passed": false
-      },
-      "error": null
-    },
-    {
-      "id": "circuit-backfeed--voices--q03--01",
-      "text": "谁加的？",
-      "status": "needs_review",
-      "asr": {
-        "transcript": "谁家的",
-        "cer": 0.333333,
-        "polarityCountsMatch": true,
-        "passed": false
-      },
-      "error": null
-    },
-    {
-      "id": "circuit-backfeed--reconcile--q01--01",
-      "text": "旧册多半页，收条又晚了一段。得从原件查。",
-      "status": "needs_review",
-      "asr": {
-        "transcript": "就策多半夜,收條又晚了一段。得從原建查。",
-        "cer": 0.235294,
-        "polarityCountsMatch": true,
-        "passed": false
-      },
-      "error": null
-    },
-    {
-      "id": "circuit-backfeed--report--q01--01",
-      "text": "纸比目录多半页。",
-      "status": "needs_review",
-      "asr": {
-        "transcript": "知笔目录多半夜",
-        "cer": 0.428571,
-        "polarityCountsMatch": true,
-        "passed": false
-      },
-      "error": null
-    },
-    {
-      "id": "circuit-backfeed--linger--q01--01",
-      "text": "墙砌好了，旧图还当那里能走。",
-      "status": "needs_review",
-      "asr": {
-        "transcript": "強氣好了,舊途還當那裡能走。",
-        "cer": 0.25,
-        "polarityCountsMatch": true,
-        "passed": false
+        "passed": false,
+        "phoneticReview": {
+          "method": "exact_all_syllables_and_tones_pypinyin_0.53.0",
+          "expected": "原样交",
+          "observed": "原样的消",
+          "expectedSyllables": [],
+          "observedSyllables": [],
+          "sameLength": false,
+          "polarityCountsMatch": true,
+          "passed": false,
+          "humanListening": false
+        }
       },
       "error": null
     },
@@ -147,55 +92,34 @@
         "transcript": "先改成機械傾向。",
         "cer": 0.285714,
         "polarityCountsMatch": true,
-        "passed": false
-      },
-      "error": null
-    },
-    {
-      "id": "circuit-everlight--boundary--q01--01",
-      "text": "它今晚还响吗？",
-      "status": "needs_review",
-      "asr": {
-        "transcript": "他今晚还想吗",
-        "cer": 0.333333,
-        "polarityCountsMatch": true,
-        "passed": false
-      },
-      "error": null
-    },
-    {
-      "id": "circuit-neutral--visit--q01--01",
-      "text": "纸都交了？",
-      "status": "needs_review",
-      "asr": {
-        "transcript": "只都交了",
-        "cer": 0.25,
-        "polarityCountsMatch": true,
-        "passed": false
-      },
-      "error": null
-    },
-    {
-      "id": "circuit-return-visit--drive--q02--01",
-      "text": "现门牌另核。",
-      "status": "needs_review",
-      "asr": {
-        "transcript": "线门牌领盒",
-        "cer": 0.6,
-        "polarityCountsMatch": true,
-        "passed": false
-      },
-      "error": null
-    },
-    {
-      "id": "circuit-return-visit--firsthub--q01--01",
-      "text": "先别替它答到。",
-      "status": "needs_review",
-      "asr": {
-        "transcript": "先别替他达到。",
-        "cer": 0.333333,
-        "polarityCountsMatch": true,
-        "passed": false
+        "passed": false,
+        "phoneticReview": {
+          "method": "exact_all_syllables_and_tones_pypinyin_0.53.0",
+          "expected": "先改成机械轻响",
+          "observed": "先改成机械倾向",
+          "expectedSyllables": [
+            "xian1",
+            "gai3",
+            "cheng2",
+            "ji1",
+            "xie4",
+            "qing1",
+            "xiang3"
+          ],
+          "observedSyllables": [
+            "xian1",
+            "gai3",
+            "cheng2",
+            "ji1",
+            "xie4",
+            "qing1",
+            "xiang4"
+          ],
+          "sameLength": true,
+          "polarityCountsMatch": true,
+          "passed": false,
+          "humanListening": false
+        }
       },
       "error": null
     },
@@ -204,10 +128,21 @@
       "text": "00:03，林岚收到过。",
       "status": "needs_review",
       "asr": {
-        "transcript": "零零零零生到果",
-        "cer": 0.888889,
+        "transcript": "丁弦、林兰收到过。",
+        "cer": 0.555556,
         "polarityCountsMatch": true,
-        "passed": false
+        "passed": false,
+        "phoneticReview": {
+          "method": "exact_all_syllables_and_tones_pypinyin_0.53.0",
+          "expected": "0003林岚收到过",
+          "observed": "丁弦林兰收到过",
+          "expectedSyllables": [],
+          "observedSyllables": [],
+          "sameLength": false,
+          "polarityCountsMatch": true,
+          "passed": false,
+          "humanListening": false
+        }
       },
       "error": null
     },
@@ -216,18 +151,6 @@
       "text": "程砚，已经到场。",
       "status": "replay_reference",
       "asr": null,
-      "error": null
-    },
-    {
-      "id": "circuit-return-visit--echo--extra2--01",
-      "text": "季宁，收到。",
-      "status": "needs_review",
-      "asr": {
-        "transcript": "既寧收到",
-        "cer": 0.25,
-        "polarityCountsMatch": true,
-        "passed": false
-      },
       "error": null
     },
     {
@@ -249,10 +172,29 @@
       "text": "你应了？",
       "status": "needs_review",
       "asr": {
-        "transcript": "你用了",
+        "transcript": "你硬了",
         "cer": 0.333333,
         "polarityCountsMatch": true,
-        "passed": false
+        "passed": false,
+        "phoneticReview": {
+          "method": "exact_all_syllables_and_tones_pypinyin_0.53.0",
+          "expected": "你应了",
+          "observed": "你硬了",
+          "expectedSyllables": [
+            "ni3",
+            "ying1",
+            "le5"
+          ],
+          "observedSyllables": [
+            "ni3",
+            "ying4",
+            "le5"
+          ],
+          "sameLength": true,
+          "polarityCountsMatch": true,
+          "passed": false,
+          "humanListening": false
+        }
       },
       "error": null
     },
@@ -271,18 +213,6 @@
       "error": null
     },
     {
-      "id": "circuit-answering--emptyreply--extra2--01",
-      "text": "罗禾",
-      "status": "needs_review",
-      "asr": {
-        "transcript": "羅河",
-        "cer": 0.5,
-        "polarityCountsMatch": true,
-        "passed": false
-      },
-      "error": null
-    },
-    {
       "id": "circuit-visitors--oldvoice--extra1--01",
       "text": "车还等吗？",
       "status": "replay_reference",
@@ -290,26 +220,45 @@
       "error": null
     },
     {
-      "id": "circuit-tickets--breakfast--q03--01",
-      "text": "现在还响？",
-      "status": "needs_review",
-      "asr": {
-        "transcript": "现在还想",
-        "cer": 0.25,
-        "polarityCountsMatch": true,
-        "passed": false
-      },
-      "error": null
-    },
-    {
       "id": "circuit-tickets--firsthub--q01--01",
       "text": "这次别泡成复写联了。",
       "status": "needs_review",
       "asr": {
-        "transcript": "这次别泡成腹血连了",
+        "transcript": "这次别泡成腹血脸了",
         "cer": 0.333333,
         "polarityCountsMatch": true,
-        "passed": false
+        "passed": false,
+        "phoneticReview": {
+          "method": "exact_all_syllables_and_tones_pypinyin_0.53.0",
+          "expected": "这次别泡成复写联了",
+          "observed": "这次别泡成腹血脸了",
+          "expectedSyllables": [
+            "zhe4",
+            "ci4",
+            "bie2",
+            "pao4",
+            "cheng2",
+            "fu4",
+            "xie3",
+            "lian2",
+            "le5"
+          ],
+          "observedSyllables": [
+            "zhe4",
+            "ci4",
+            "bie2",
+            "pao4",
+            "cheng2",
+            "fu4",
+            "xue4",
+            "lian3",
+            "le5"
+          ],
+          "sameLength": true,
+          "polarityCountsMatch": true,
+          "passed": false,
+          "humanListening": false
+        }
       },
       "error": null
     },
@@ -318,10 +267,29 @@
       "text": "朝椅子。",
       "status": "needs_review",
       "asr": {
-        "transcript": "这影子",
-        "cer": 0.666667,
+        "transcript": "招椅子",
+        "cer": 0.333333,
         "polarityCountsMatch": true,
-        "passed": false
+        "passed": false,
+        "phoneticReview": {
+          "method": "exact_all_syllables_and_tones_pypinyin_0.53.0",
+          "expected": "朝椅子",
+          "observed": "招椅子",
+          "expectedSyllables": [
+            "chao2",
+            "yi3",
+            "zi5"
+          ],
+          "observedSyllables": [
+            "zhao1",
+            "yi3",
+            "zi5"
+          ],
+          "sameLength": true,
+          "polarityCountsMatch": true,
+          "passed": false,
+          "humanListening": false
+        }
       },
       "error": null
     },
@@ -330,10 +298,21 @@
       "text": "十七是后来取文件的。",
       "status": "needs_review",
       "asr": {
-        "transcript": "17是後來取文件的。",
-        "cer": 0.222222,
+        "transcript": "17是后来曲文件的",
+        "cer": 0.333333,
         "polarityCountsMatch": true,
-        "passed": false
+        "passed": false,
+        "phoneticReview": {
+          "method": "exact_all_syllables_and_tones_pypinyin_0.53.0",
+          "expected": "十七是后来取文件的",
+          "observed": "17是后来曲文件的",
+          "expectedSyllables": [],
+          "observedSyllables": [],
+          "sameLength": true,
+          "polarityCountsMatch": true,
+          "passed": false,
+          "humanListening": false
+        }
       },
       "error": null
     },
@@ -342,18 +321,6 @@
       "text": "先别替它确认。",
       "status": "replay_reference",
       "asr": null,
-      "error": null
-    },
-    {
-      "id": "circuit-tickets--witnesses--q01--01",
-      "text": "程砚的砚，别又写成石见两个字。",
-      "status": "needs_review",
-      "asr": {
-        "transcript": "程艳的艳别又写成实践两个字",
-        "cer": 0.307692,
-        "polarityCountsMatch": true,
-        "passed": false
-      },
       "error": null
     }
   ],

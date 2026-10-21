@@ -17,12 +17,34 @@
   "medium": "spoken",
   "requestSha256": "1fa9bcba471e377e15e70c70e6b1108db2c8bc040b91cc9eae2912dbe79f6dae",
   "attempt": 5,
-  "status": "needs_review",
+  "status": "accepted",
   "asr": {
     "transcript": "只都交了",
     "cer": 0.25,
     "polarityCountsMatch": true,
-    "passed": false
+    "passed": true,
+    "phoneticReview": {
+      "method": "exact_all_syllables_and_tones_pypinyin_0.53.0",
+      "expected": "纸都交了",
+      "observed": "只都交了",
+      "expectedSyllables": [
+        "zhi3",
+        "dou1",
+        "jiao1",
+        "le5"
+      ],
+      "observedSyllables": [
+        "zhi3",
+        "dou1",
+        "jiao1",
+        "le5"
+      ],
+      "sameLength": true,
+      "polarityCountsMatch": true,
+      "passed": true,
+      "humanListening": false
+    },
+    "acceptance": "exact_toned_homophones"
   },
   "duration": 1.28,
   "wallSeconds": 138.713,
@@ -55,5 +77,5 @@
       "sha256": "8500bb23be882ba0fbaddc92d4b10472bbf284c44f9a0de151608ee9ee732958"
     }
   },
-  "recoveredFromRun": 39436504010
+  "recoveredFromRun": 39522065527
 }

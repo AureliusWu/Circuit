@@ -16,44 +16,63 @@
   "textSha256": "9e3234d514aeb6bf1423b7c689ac2a8978aa07f2af4015c7d439082809ba453a",
   "medium": "spoken",
   "requestSha256": "a6545dcbac451dbed168bf0e6c8261ef468885244f70878b33a6866c1fcb15f9",
-  "attempt": 5,
+  "attempt": 8,
   "status": "needs_review",
   "asr": {
-    "transcript": "你用了",
+    "transcript": "你硬了",
     "cer": 0.333333,
     "polarityCountsMatch": true,
-    "passed": false
+    "passed": false,
+    "phoneticReview": {
+      "method": "exact_all_syllables_and_tones_pypinyin_0.53.0",
+      "expected": "你应了",
+      "observed": "你硬了",
+      "expectedSyllables": [
+        "ni3",
+        "ying1",
+        "le5"
+      ],
+      "observedSyllables": [
+        "ni3",
+        "ying4",
+        "le5"
+      ],
+      "sameLength": true,
+      "polarityCountsMatch": true,
+      "passed": false,
+      "humanListening": false
+    }
   },
-  "duration": 1.04,
-  "wallSeconds": 33.955,
+  "duration": 0.88,
+  "wallSeconds": 38.471,
   "loudness": {
-    "input_i": "-22.78",
-    "input_tp": "-5.58",
+    "input_i": "-25.70",
+    "input_tp": "-9.10",
     "input_lra": "0.00",
-    "input_thresh": "-32.78",
-    "output_i": "-19.99",
-    "output_tp": "-2.80",
+    "input_thresh": "-35.70",
+    "output_i": "-20.00",
+    "output_tp": "-3.41",
     "output_lra": "0.00",
-    "output_thresh": "-29.99",
+    "output_thresh": "-30.00",
     "normalization_type": "linear",
-    "target_offset": "-0.01"
+    "target_offset": "-0.00"
   },
   "files": {
     "raw": {
       "path": "circuit-answering--houserule--q02--01/raw.wav",
-      "bytes": 99920,
-      "sha256": "9fc214b8038e8e007c4441b6803f7113a325f061407743a853737ab9fb9b4dc2"
+      "bytes": 84560,
+      "sha256": "1db5b25ca256eaa43dfbacc3c6cc5d8ef20b6883e94137fc63a160c903cddfb8"
     },
     "master": {
       "path": "circuit-answering--houserule--q02--01/master.wav",
-      "bytes": 49998,
-      "sha256": "bd297becc3c91d40e3903af3c1e19ba82d5754443e3a2065814a3f61b9e52618"
+      "bytes": 42318,
+      "sha256": "db08c80b0a96493852a72940a1e368ebd4aa66c79754e4185893d795243f179b"
     },
     "runtime": {
       "path": "circuit-answering--houserule--q02--01/runtime.ogg",
-      "bytes": 10919,
-      "sha256": "0bc1354a80d91ea886be2a2165f4b16536ca3dfeb857c0809c2f682634f81fab"
+      "bytes": 9543,
+      "sha256": "491755761626f4af259ffa97ebcee37c5ec67b6928d8ff616067bfa8837c467f"
     }
   },
-  "recoveredFromRun": 39436504010
+  "recoveredFromRun": 39522065527
 }

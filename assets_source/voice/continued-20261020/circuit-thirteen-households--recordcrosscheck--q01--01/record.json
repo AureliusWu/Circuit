@@ -16,44 +16,55 @@
   "textSha256": "8987e7ebd471aef831ed00dde4873367a7ce4d2b9b49f9b391e942f2871a62d3",
   "medium": "spoken",
   "requestSha256": "1f353a831bf5c91e762ed630529675411bb0344fedea1c26e59b4edc95d38592",
-  "attempt": 5,
+  "attempt": 8,
   "status": "needs_review",
   "asr": {
-    "transcript": "原氧胶",
+    "transcript": "原样的消",
     "cer": 0.666667,
     "polarityCountsMatch": true,
-    "passed": false
+    "passed": false,
+    "phoneticReview": {
+      "method": "exact_all_syllables_and_tones_pypinyin_0.53.0",
+      "expected": "原样交",
+      "observed": "原样的消",
+      "expectedSyllables": [],
+      "observedSyllables": [],
+      "sameLength": false,
+      "polarityCountsMatch": true,
+      "passed": false,
+      "humanListening": false
+    }
   },
-  "duration": 0.88,
-  "wallSeconds": 37.305,
+  "duration": 0.96,
+  "wallSeconds": 5.438,
   "loudness": {
-    "input_i": "-29.34",
-    "input_tp": "-12.86",
+    "input_i": "-22.28",
+    "input_tp": "-4.97",
     "input_lra": "0.00",
-    "input_thresh": "-39.34",
-    "output_i": "-20.02",
-    "output_tp": "-3.52",
+    "input_thresh": "-32.28",
+    "output_i": "-19.98",
+    "output_tp": "-2.68",
     "output_lra": "0.00",
-    "output_thresh": "-30.02",
+    "output_thresh": "-29.98",
     "normalization_type": "linear",
-    "target_offset": "0.02"
+    "target_offset": "-0.02"
   },
   "files": {
     "raw": {
       "path": "circuit-thirteen-households--recordcrosscheck--q01--01/raw.wav",
-      "bytes": 84560,
-      "sha256": "1a6420cd5ee70eab6063f963b021487ed3f176e780df2d610b868874612ebbaf"
+      "bytes": 92240,
+      "sha256": "a45149db5d811535ae617160794e45f8a8e250e45422929bcfdc388ceb3a2f21"
     },
     "master": {
       "path": "circuit-thirteen-households--recordcrosscheck--q01--01/master.wav",
-      "bytes": 42318,
-      "sha256": "f1ec463ac0a1e38de24cf035575e7802f61a202fb24e9ba0904db6acaa564889"
+      "bytes": 46158,
+      "sha256": "5ebba9fb8c93d2477a444a194671080d6ff9927b6537c63519c70145caf7fcdb"
     },
     "runtime": {
       "path": "circuit-thirteen-households--recordcrosscheck--q01--01/runtime.ogg",
-      "bytes": 10454,
-      "sha256": "69f040b821012f56b87f04556432963a060801ce6ce1b4a367d11cba89ed39ac"
+      "bytes": 10654,
+      "sha256": "8b17013f5b93d63615b8600d63ccdbd2d62aa316cf2c7a891d706654414a35eb"
     }
   },
-  "recoveredFromRun": 39436504010
+  "recoveredFromRun": 39522065527
 }

@@ -16,23 +16,23 @@
   "textSha256": "b5b3bf0c40066f8d907b13e4b964b862901ad66cfb21177b312d98f7bf0e57ba",
   "medium": "spoken",
   "requestSha256": "195c1b1d3df18a574de19aba6a6f61a75df0297dbe33da76e1a1dae6e8c2b34b",
-  "attempt": 5,
-  "status": "needs_review",
+  "attempt": 6,
+  "status": "accepted",
   "asr": {
-    "transcript": "以前是做逢捕的成家",
-    "cer": 0.333333,
+    "transcript": "以前是做縫補的陳家",
+    "cer": 0.0,
     "polarityCountsMatch": true,
-    "passed": false
+    "passed": true
   },
-  "duration": 2.4,
-  "wallSeconds": 128.12,
+  "duration": 2.08,
+  "wallSeconds": 107.275,
   "loudness": {
-    "input_i": "-26.66",
-    "input_tp": "-11.14",
+    "input_i": "-26.27",
+    "input_tp": "-10.40",
     "input_lra": "0.00",
-    "input_thresh": "-36.66",
+    "input_thresh": "-36.27",
     "output_i": "-20.00",
-    "output_tp": "-4.47",
+    "output_tp": "-4.12",
     "output_lra": "0.00",
     "output_thresh": "-30.00",
     "normalization_type": "linear",
@@ -41,19 +41,19 @@
   "files": {
     "raw": {
       "path": "circuit-thirteen-households--meidoor--q01--01/raw.wav",
-      "bytes": 230480,
-      "sha256": "85f38b4dba238cbc69b3726ddd6a2f738049bb86b3c13ab32de50e9f0ce8ecb1"
+      "bytes": 199760,
+      "sha256": "e9148322c153066b47d2c9a882470896bad6bedcf5f44606bf750737bceb5111"
     },
     "master": {
       "path": "circuit-thirteen-households--meidoor--q01--01/master.wav",
-      "bytes": 115278,
-      "sha256": "9902df5d0be2397b8a975620b20057e9e24e1460508e76ffe306b0146dc99326"
+      "bytes": 99918,
+      "sha256": "2b4f79e276155d6bd0ca9c9a60b53495a2b9b04c84ca8ed66ac4d055093bc874"
     },
     "runtime": {
       "path": "circuit-thirteen-households--meidoor--q01--01/runtime.ogg",
-      "bytes": 20812,
-      "sha256": "0f96efc3dfe7a2547de3cc093aa70bb00d1a5b476cac3d58f0153066d4e95efa"
+      "bytes": 19229,
+      "sha256": "3cc91fdbd2cf50caf5de88dce0b1a6e84b072e9c3919632d335ed342f743f547"
     }
   },
-  "recoveredFromRun": 39436504010
+  "recoveredFromRun": 39522065527
 }

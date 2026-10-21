@@ -16,164 +16,88 @@
   "textSha256": "4ba36daeca73e5ab155e2fb57393c011b31b9db54dbff9881cb193cb3960e082",
   "medium": "spoken",
   "requestSha256": "6538c13b068015603706aba78ca33cd0725bc3840ada454bc0284ad53cb6ad53",
-  "attempt": 17,
+  "attempt": 20,
   "status": "needs_review",
   "asr": {
-    "transcript": "这次别泡成腹血帘呢",
+    "transcript": "这次别泡成哎腹血连了",
     "cer": 0.444444,
     "polarityCountsMatch": true,
     "passed": false,
     "phoneticReview": {
       "method": "exact_all_syllables_tones_and_explicit_numeric_values_v2_pypinyin_0.53.0",
       "expected": "这次别泡成复写联了",
-      "observed": "这次别泡成腹血帘呢",
-      "expectedSyllables": [
-        "zhe4",
-        "ci4",
-        "bie2",
-        "pao4",
-        "cheng2",
-        "fu4",
-        "xie3",
-        "lian2",
-        "le5"
-      ],
-      "observedSyllables": [
-        "zhe4",
-        "ci4",
-        "bie2",
-        "pao4",
-        "cheng2",
-        "fu4",
-        "xue4",
-        "lian2",
-        "ne5"
-      ],
-      "sameLength": true,
+      "observed": "这次别泡成哎腹血连了",
+      "expectedSyllables": [],
+      "observedSyllables": [],
+      "sameLength": false,
       "polarityCountsMatch": true,
       "passed": false,
       "humanListening": false
     },
     "model": "Systran/faster-whisper-large-v3",
     "revision": "edaa852ec7e145841d8ffdb056a99866b5f0a478",
-    "audioSha256": "3e6cb09958e440ae0a2aab3a7468e22038ac16458084dbf1d6084f49ab6ce69c"
+    "audioSha256": "ba80b06a1589af78e13a9b92ae5590b1be8f87a304d70b2442d644b7e21ca577"
   },
-  "duration": 2.08,
-  "wallSeconds": 10.422,
+  "duration": 4.395,
+  "wallSeconds": 285.917,
   "loudness": {
-    "input_i": "-21.11",
-    "input_tp": "-3.06",
-    "input_lra": "0.00",
-    "input_thresh": "-31.11",
-    "output_i": "-20.07",
-    "output_tp": "-2.00",
-    "output_lra": "0.00",
-    "output_thresh": "-30.07",
-    "normalization_type": "linear",
-    "target_offset": "0.07"
+    "input_i": "-17.69",
+    "input_tp": "-3.67",
+    "input_lra": "1.90",
+    "input_thresh": "-28.49",
+    "output_i": "-18.21",
+    "output_tp": "-3.72",
+    "output_lra": "1.40",
+    "output_thresh": "-28.78",
+    "normalization_type": "dynamic",
+    "target_offset": "-1.79"
   },
   "files": {
     "raw": {
       "path": "circuit-tickets--firsthub--q01--01/raw.wav",
-      "bytes": 199760,
-      "sha256": "fa1aaa19de6d286f0cfd4a6c5de15bf203c7326f891f093232b6bb520b2be3a5"
+      "bytes": 422000,
+      "sha256": "e037821837800559f532db02e70a7064372c1c385a477d35792781d52523a4f5"
     },
     "master": {
       "path": "circuit-tickets--firsthub--q01--01/master.wav",
-      "bytes": 99918,
-      "sha256": "6148ebba285d590bc97aea1541cea486d9ea49a65cec899fefb2bae1e7485e18"
+      "bytes": 211038,
+      "sha256": "a8dcdc54b6d4ed0f4aab1ec2156a2388be39d0408a596861d22f6e066ea4c090"
     },
     "runtime": {
       "path": "circuit-tickets--firsthub--q01--01/runtime.ogg",
-      "bytes": 18937,
-      "sha256": "3e6cb09958e440ae0a2aab3a7468e22038ac16458084dbf1d6084f49ab6ce69c"
+      "bytes": 33639,
+      "sha256": "ba80b06a1589af78e13a9b92ae5590b1be8f87a304d70b2442d644b7e21ca577"
     }
   },
   "performanceDirection": {
     "instruction": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。 复写联是纸质复写票据。复写联读 fù xiě lián，写是 xiě，第三声，咬字清楚。自然地对师傅开一句玩笑，语速稍慢。只读给定台词，不念拼音或补充解释。",
     "note": "复写联是纸质复写票据。复写联读 fù xiě lián，写是 xiě，第三声，咬字清楚。自然地对师傅开一句玩笑，语速稍慢。只读给定台词，不念拼音或补充解释。",
+    "segments": [
+      "这次别泡成，",
+      "复写联了。"
+    ],
     "textSha256": "4ba36daeca73e5ab155e2fb57393c011b31b9db54dbff9881cb193cb3960e082",
-    "directionSha256": "0848e1ea0b4f185ecd7d629b5ad9af30a3e34123fac900b10f41b218aa043706"
+    "directionSha256": "d0e45d3ac1afd3a0f9be825ab9f12e0efc84dddc580a06c8332fb67ef394a729"
   },
-  "recoveredFromRun": 39562432422,
+  "recoveredFromRun": 39565314678,
   "asrReviewHistory": [
     {
-      "transcript": "这次别泡成腹血连呢",
-      "cer": 0.444444,
+      "transcript": "这次别炮成哎腹血连了",
+      "cer": 0.555556,
       "polarityCountsMatch": true,
       "passed": false,
       "expectedSpokenText": "这次别泡成复写联了。",
       "phoneticReview": {
         "method": "exact_all_syllables_tones_and_explicit_numeric_values_v2_pypinyin_0.53.0",
         "expected": "这次别泡成复写联了",
-        "observed": "这次别泡成腹血连呢",
-        "expectedSyllables": [
-          "zhe4",
-          "ci4",
-          "bie2",
-          "pao4",
-          "cheng2",
-          "fu4",
-          "xie3",
-          "lian2",
-          "le5"
-        ],
-        "observedSyllables": [
-          "zhe4",
-          "ci4",
-          "bie2",
-          "pao4",
-          "cheng2",
-          "fu4",
-          "xue4",
-          "lian2",
-          "ne5"
-        ],
-        "sameLength": true,
+        "observed": "这次别炮成哎腹血连了",
+        "expectedSyllables": [],
+        "observedSyllables": [],
+        "sameLength": false,
         "polarityCountsMatch": true,
         "passed": false,
         "humanListening": false
       }
-    },
-    {
-      "transcript": "这次别泡成负血连呢",
-      "cer": 0.444444,
-      "polarityCountsMatch": true,
-      "passed": false,
-      "phoneticReview": {
-        "method": "exact_all_syllables_tones_and_explicit_numeric_values_v2_pypinyin_0.53.0",
-        "expected": "这次别泡成复写联了",
-        "observed": "这次别泡成负血连呢",
-        "expectedSyllables": [
-          "zhe4",
-          "ci4",
-          "bie2",
-          "pao4",
-          "cheng2",
-          "fu4",
-          "xie3",
-          "lian2",
-          "le5"
-        ],
-        "observedSyllables": [
-          "zhe4",
-          "ci4",
-          "bie2",
-          "pao4",
-          "cheng2",
-          "fu4",
-          "xue4",
-          "lian2",
-          "ne5"
-        ],
-        "sameLength": true,
-        "polarityCountsMatch": true,
-        "passed": false,
-        "humanListening": false
-      },
-      "model": "Systran/faster-whisper-medium",
-      "revision": "08e178d48790749d25932bbc082711ddcfdfbc4f",
-      "audioSha256": "3e6cb09958e440ae0a2aab3a7468e22038ac16458084dbf1d6084f49ab6ce69c"
     }
   ]
 }

@@ -1,6 +1,12 @@
 name: Render Four Games PV
 
 on:
+  push:
+    branches:
+      - 'pv/remotion-2min-20261022'
+    paths:
+      - 'pv-remotion/**'
+      - '.github/workflows/render-four-games-pv.yml'
   pull_request:
     paths:
       - 'pv-remotion/**'

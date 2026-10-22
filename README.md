@@ -106,3 +106,7 @@ python3 tests/visitors-browser.py http://127.0.0.1:4173
 ## 本轮新增
 
 [《来访》制作与验收](docs/RELEASE_v1.4.0.md) · [新场景与表情校验](docs/art/visitors-manifest.json) · [人物语音与场景音效](docs/AUDIO_GUIDE.md) · [Rain ↔ Circuit 制作交流](docs/production/RAIN-CIRCUIT-BRIDGE.md)。语音参考《雨停之前》的离线Qwen制作、指纹、响度与重听流程；角色录音为《回路》单独生成。玩家端无需模型、账号或Python。
+
+## 四作共存复验 · 2026-10-22
+
+Rain 1.5.0、Healing 1.3.0、NetLove 0.5.0 与 Circuit 1.7.0 在同一独立浏览器中完成安装缓存与四站断网重开，1,248 条缓存与实际阅读进度保留，页面错误为零。[本轮闭环与素材审计](docs/production/FOUR-GAMES-CLOSURE-20261022.md)。

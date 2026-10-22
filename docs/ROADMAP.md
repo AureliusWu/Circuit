@@ -1,3 +1,11 @@
+# 2026-10-22 · v1.7.0 全对白与完整角色素材已交付
+
+403 条人物对白、十五名角色图鉴、事件 CG 和旧证据录音回放已接入。Windows NSIS 实际安装/保存重开/卸载、十章浏览器路线、完整 419 个 MP3/OGG 离线缓存与本应用 Worker 控制检查通过。七份公开附件与四条校验和独立回读通过；公开首页/Worker 与已验收的 Pages 工件逐字节相同。
+
+[正式下载](https://github.com/AureliusWu/Circuit/releases/tag/v1.7.0) · [发布凭据](production/PUBLISHED-v1.7.0-full-media.json) · [本轮回读](production/PUBLIC-READBACK-20261022.json)。真人试听、阅读时长、实体设备和创作定案继续按实际体验登记。下方记录按日期保留。
+
+---
+
 # 2026-10-19 · v1.5.2 已发布并完成四作共存检查
 
 标题页从实际章节目录生成第二部摘要，补列《取号》，城市档案补 V04。Windows 实际安装/保存重开/卸载、公开 PWA 三屏和四作同源断网通过，7 份公开附件与校验表已回读。[发布凭据](production/PUBLISHED-v1.5.2.json) · [四作闭环](production/FOUR-GAMES-CLOSURE-20261019.md)。下方按日期保留历史版本。

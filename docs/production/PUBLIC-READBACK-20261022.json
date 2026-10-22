@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "checkedAt": "2026-10-22T02:31:39.143Z",
+  "project": "Circuit",
+  "status": "public_assets_and_tested_pages_verified",
+  "assets": [
+    {
+      "repo": "Circuit",
+      "name": "circuit-web-1.7.0.zip",
+      "id": 662434377,
+      "bytes": 22154826,
+      "sha256": "be79c49a69525e357affcce276297565f9aa57d27aab12c9397f568a1a019fd3",
+      "verified": true,
+      "zipCrc": true,
+      "zipFiles": 482
+    },
+    {
+      "repo": "Circuit",
+      "name": "circuit-web-1.7.0.zip.sha256",
+      "id": 662434379,
+      "bytes": 88,
+      "sha256": "b1bacf558770b11cb9f6d1cb437a679dee4788c164870932db4f393002ecdb20",
+      "verified": true
+    },
+    {
+      "repo": "Circuit",
+      "name": "Circuit_1.7.0_x64-setup.exe",
+      "id": 662434375,
+      "bytes": 23725988,
+      "sha256": "ce127896a238416ab19c20291f42bb5cbf2afe3fb60d8e872f374ed69a1cb29e",
+      "verified": true
+    },
+    {
+      "repo": "Circuit",
+      "name": "Circuit_1.7.0_x64-setup.exe.sha256",
+      "id": 662434376,
+      "bytes": 94,
+      "sha256": "68c7a21a7ec0483ff0904bf3407d593f81b198bd1fbee6b6988c20e23c015278",
+      "verified": true
+    },
+    {
+      "repo": "Circuit",
+      "name": "release.json",
+      "id": 662434401,
+      "bytes": 503,
+      "sha256": "ff5ebf3e3e31d998af16466fbf260f96840d2c383b8346fb0305536ae34754c7",
+      "verified": true
+    },
+    {
+      "repo": "Circuit",
+      "name": "SHA256SUMS.txt",
+      "id": 662434373,
+      "bytes": 348,
+      "sha256": "738eefe76c10d819b24064b78f67005de08ded1e638fda01c669be8617bc497a",
+      "verified": true
+    },
+    {
+      "repo": "Circuit",
+      "name": "windows-runtime.json",
+      "id": 662434400,
+      "bytes": 1800,
+      "sha256": "a0de8aa214b531df0789dcc4820ba3270e55acde727c4e4accc304902d393d2e",
+      "verified": true
+    }
+  ],
+  "checksumsVerified": 4,
+  "pwaZipCrc": "passed",
+  "pages": [
+    {
+      "repo": "Circuit",
+      "file": "index.html",
+      "sha256": "1c450b8672091a0f1c20da9ccf9ef05f98ac8216b7d9e97cfee5ba8f0a2393a7",
+      "matchesTestedPagesArtifact": true,
+      "artifactId": 12348180456,
+      "runId": 39604218950
+    },
+    {
+      "repo": "Circuit",
+      "file": "sw.js",
+      "sha256": "83e199b8e03cd75c3546f0180aaf1da40dbbd7d17b43f5203b0794ffeb091ebd",
+      "matchesTestedPagesArtifact": true,
+      "artifactId": 12348180456,
+      "runId": 39604218950
+    }
+  ],
+  "pagesSource": "52cfbb6bf99570188415a656bd0ac71a46e18a91",
+  "runtimeDiffFromRelease": "Only docs and browser test files; player runtime paths unchanged.",
+  "sameOriginOffline": {
+    "runId": 39604977040,
+    "attempt": 2,
+    "artifactId": 12347683714,
+    "artifactSha256": "af3d9f64b0ecab5a0cf3b856bf044ccac8dfebe132d3eae184fb1f4039ba1555",
+    "status": "passed",
+    "totalCachedFiles": 1248
+  },
+  "humanListening": false,
+  "humanVisualApproval": false
+}

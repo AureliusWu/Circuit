@@ -1,0 +1,17 @@
+{
+  "name": "four-games-pv",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "fetch-assets": "node scripts/fetch-assets.mjs",
+    "studio": "remotion studio src/index.ts --no-open",
+    "render": "remotion render src/index.ts FourGamesPV out/four-games-pv.mp4 --codec=h264 --crf=18 --pixel-format=yuv420p"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.534",
+    "@remotion/media": "4.0.534",
+    "react": "19.1.1",
+    "react-dom": "19.1.1",
+    "remotion": "4.0.534"
+  }
+}

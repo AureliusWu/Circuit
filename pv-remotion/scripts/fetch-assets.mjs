@@ -33,6 +33,15 @@ const assets = [
   ['audio/paper-turn.mp3', 'https://raw.githubusercontent.com/AureliusWu/Circuit/main/public/audio/sfx/paper-turn.mp3'],
   ['audio/intercom-click.mp3', 'https://raw.githubusercontent.com/AureliusWu/Circuit/main/public/audio/sfx/intercom-click.mp3'],
   ['audio/return-bell.mp3', 'https://raw.githubusercontent.com/AureliusWu/Circuit/main/public/audio/sfx/return-bell.mp3'],
+
+  ['voice/rain-reunion.ogg', 'https://raw.githubusercontent.com/AureliusWu/Rain/main/game/audio/voice/heroine_s02_reunion_l008_v1.ogg'],
+  ['voice/rain-letter.ogg', 'https://raw.githubusercontent.com/AureliusWu/Rain/main/game/audio/voice/heroine_s03_letter_l011_v1.ogg'],
+  ['voice/healing-arrival.ogg', 'https://raw.githubusercontent.com/AureliusWu/Healing/main/public/audio/voice/full-20261021/healing-arrival--004.ogg'],
+  ['voice/healing-ask.ogg', 'https://raw.githubusercontent.com/AureliusWu/Healing/main/public/audio/voice/full-20261021/healing-c2-ask--003.ogg'],
+  ['voice/netlove-call.ogg', 'https://raw.githubusercontent.com/AureliusWu/NetLove/main/public/voice/c2-call-004.ogg'],
+  ['voice/netlove-tinghe.ogg', 'https://raw.githubusercontent.com/AureliusWu/NetLove/main/public/voice/c5-tinghe-016.ogg'],
+  ['voice/circuit-ji.mp3', 'https://raw.githubusercontent.com/AureliusWu/Circuit/main/public/audio/voice/c00-ji.mp3'],
+  ['voice/circuit-ticket.mp3', 'https://raw.githubusercontent.com/AureliusWu/Circuit/main/public/audio/voice/h13-ticket.mp3'],
 ];
 
 for (const [relative, url] of assets) {
@@ -40,7 +49,7 @@ for (const [relative, url] of assets) {
   await mkdir(dirname(target), {recursive: true});
   let response;
   for (let attempt = 1; attempt <= 3; attempt++) {
-    response = await fetch(url, {headers: {'User-Agent': 'four-games-pv-render'}});
+    response = await fetch(url, {headers: {'User-Agent': 'four-games-pv-v2-render'}});
     if (response.ok) break;
     if (attempt === 3) throw new Error(`Failed ${response.status}: ${url}`);
     await new Promise((resolve) => setTimeout(resolve, attempt * 1000));

@@ -1,0 +1,92 @@
+{
+  "base_url": "https://aureliuswu.github.io/Circuit/",
+  "version": "1.8.0",
+  "commit": "4860750b5bc7f7b7658b4a6981759095e07b2175",
+  "checked_at": "2026-10-23T14:47:29.715972+00:00",
+  "published_files": [
+    {
+      "url": "https://aureliuswu.github.io/Circuit/index.html",
+      "sha256": "5be85087258c74e1aab9bdb1babf6b28533bc1bf53241029915c498ac920606b",
+      "bytes": 851
+    },
+    {
+      "url": "https://aureliuswu.github.io/Circuit/sw.js",
+      "sha256": "73a9879c135be19559d22dfbc9f2d4707d911ffc1c35350c0621ba042b83ff57",
+      "bytes": 54441
+    }
+  ],
+  "viewports": [
+    {
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "document_url": "https://aureliuswu.github.io/Circuit/",
+      "service_worker": "https://aureliuswu.github.io/Circuit/sw.js",
+      "cached_audio_count": 419,
+      "save_sha256": "87110daa116073e19b0ed4959409ae8ba1897ab82475eddc6a73c3a9bc4092df",
+      "offline_audio": [
+        {
+          "path": "https://aureliuswu.github.io/Circuit/audio/voice/h13-dispatch.mp3",
+          "duration": 4.4,
+          "channels": 1
+        },
+        {
+          "path": "https://aureliuswu.github.io/Circuit/audio/sfx/glass-tap.mp3",
+          "duration": 1.7,
+          "channels": 1
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "document_url": "https://aureliuswu.github.io/Circuit/",
+      "service_worker": "https://aureliuswu.github.io/Circuit/sw.js",
+      "cached_audio_count": 419,
+      "save_sha256": "3d1347a5a9c818af91eb0836d7cfdccc69d0970f60747743d17f6265467f6943",
+      "offline_audio": [
+        {
+          "path": "https://aureliuswu.github.io/Circuit/audio/voice/h13-dispatch.mp3",
+          "duration": 4.4,
+          "channels": 1
+        },
+        {
+          "path": "https://aureliuswu.github.io/Circuit/audio/sfx/glass-tap.mp3",
+          "duration": 1.7,
+          "channels": 1
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "viewport": {
+        "width": 760,
+        "height": 430
+      },
+      "document_url": "https://aureliuswu.github.io/Circuit/",
+      "service_worker": "https://aureliuswu.github.io/Circuit/sw.js",
+      "cached_audio_count": 419,
+      "save_sha256": "5083d8076fe9afa55501f2ad1961b94b6abe75392bc9df6eae417ef1e0430ebc",
+      "offline_audio": [
+        {
+          "path": "https://aureliuswu.github.io/Circuit/audio/voice/h13-dispatch.mp3",
+          "duration": 4.4,
+          "channels": 1
+        },
+        {
+          "path": "https://aureliuswu.github.io/Circuit/audio/sfx/glass-tap.mp3",
+          "duration": 1.7,
+          "channels": 1
+        }
+      ],
+      "status": "passed"
+    }
+  ],
+  "page_errors": [],
+  "status": "passed",
+  "duration_seconds": 109.99
+}

@@ -1,0 +1,122 @@
+{
+  "release": {
+    "id": 421541062,
+    "tag_name": "v1.8.0",
+    "html_url": "https://github.com/AureliusWu/Circuit/releases/tag/v1.8.0",
+    "target_commitish": "4860750b5bc7f7b7658b4a6981759095e07b2175"
+  },
+  "checkedAt": "2026-10-23T14:39:46.272826+00:00",
+  "method": "Anonymous HTTPS download with standard certificate verification; actual full bytes, GitHub asset size and digest, ZIP CRC, and SHA256SUMS entries checked.",
+  "assets": [
+    {
+      "id": 668284531,
+      "name": "circuit-web-1.8.0.zip.sha256",
+      "size": 88,
+      "digest": "sha256:f3e750c428010b9bf25c13f353d4d7f2c6161c1d8b75cd5de539ac2a688dc65e",
+      "url": "https://github.com/AureliusWu/Circuit/releases/download/v1.8.0/circuit-web-1.8.0.zip.sha256",
+      "bytes": 88,
+      "sha256": "f3e750c428010b9bf25c13f353d4d7f2c6161c1d8b75cd5de539ac2a688dc65e",
+      "status": "passed"
+    },
+    {
+      "id": 668284534,
+      "name": "Circuit_1.8.0_x64-setup.exe.sha256",
+      "size": 94,
+      "digest": "sha256:0009647ec9d1d79734dc7119b6f26928b45d4ea57d4702e098f8b32b4fe078cf",
+      "url": "https://github.com/AureliusWu/Circuit/releases/download/v1.8.0/Circuit_1.8.0_x64-setup.exe.sha256",
+      "bytes": 94,
+      "sha256": "0009647ec9d1d79734dc7119b6f26928b45d4ea57d4702e098f8b32b4fe078cf",
+      "status": "passed"
+    },
+    {
+      "id": 668284572,
+      "name": "SHA256SUMS.txt",
+      "size": 544,
+      "digest": "sha256:ed98c9b0e7222397dafdde495e7f3f6f6adbea681453ab02eca7e1642b7ac799",
+      "url": "https://github.com/AureliusWu/Circuit/releases/download/v1.8.0/SHA256SUMS.txt",
+      "bytes": 544,
+      "sha256": "ed98c9b0e7222397dafdde495e7f3f6f6adbea681453ab02eca7e1642b7ac799",
+      "status": "passed"
+    },
+    {
+      "id": 668284541,
+      "name": "release.json",
+      "size": 592,
+      "digest": "sha256:c6fb858ac8bbffc2aa191d3402301fe915a0f56dfda7d12ac75ca933b1317557",
+      "url": "https://github.com/AureliusWu/Circuit/releases/download/v1.8.0/release.json",
+      "bytes": 592,
+      "sha256": "c6fb858ac8bbffc2aa191d3402301fe915a0f56dfda7d12ac75ca933b1317557",
+      "status": "passed"
+    },
+    {
+      "id": 668284566,
+      "name": "windows-runtime.json",
+      "size": 1890,
+      "digest": "sha256:006bb1c6d1d52b5662e3e074c14c1f719b4a3511e8dbf6aabdd164f7e0a01102",
+      "url": "https://github.com/AureliusWu/Circuit/releases/download/v1.8.0/windows-runtime.json",
+      "bytes": 1890,
+      "sha256": "006bb1c6d1d52b5662e3e074c14c1f719b4a3511e8dbf6aabdd164f7e0a01102",
+      "status": "passed"
+    },
+    {
+      "id": 668284540,
+      "name": "circuit-web-1.8.0.zip",
+      "size": 22155964,
+      "digest": "sha256:e0c09fc547f965e18514ddfaa0f65721ab3494aded0db853284304fe83c61209",
+      "url": "https://github.com/AureliusWu/Circuit/releases/download/v1.8.0/circuit-web-1.8.0.zip",
+      "bytes": 22155964,
+      "sha256": "e0c09fc547f965e18514ddfaa0f65721ab3494aded0db853284304fe83c61209",
+      "status": "passed",
+      "zip": {
+        "crc": "passed",
+        "files": 482
+      },
+      "entrypoints": {
+        "index.html": "4d16f4cc99016373503e695e1a4ad4764f413db74d75319ccba4ddd1e50af6bd",
+        "sw.js": "e017943f96843b2ad92d528329db656e974d2129e30d5a62575eaf7b684d62b4"
+      }
+    },
+    {
+      "id": 668284539,
+      "name": "Circuit_1.8.0_x64-setup.exe",
+      "size": 23724194,
+      "digest": "sha256:62c65c1c9cb9503c503146c0625a2155ba8bc01e7b4beb2c6b4974887448c48d",
+      "url": "https://github.com/AureliusWu/Circuit/releases/download/v1.8.0/Circuit_1.8.0_x64-setup.exe",
+      "bytes": 23724194,
+      "sha256": "62c65c1c9cb9503c503146c0625a2155ba8bc01e7b4beb2c6b4974887448c48d",
+      "status": "passed"
+    }
+  ],
+  "checksumEntries": [
+    "Circuit_1.8.0_x64-setup.exe",
+    "Circuit_1.8.0_x64-setup.exe.sha256",
+    "circuit-web-1.8.0.zip",
+    "circuit-web-1.8.0.zip.sha256",
+    "release.json",
+    "windows-runtime.json"
+  ],
+  "status": "passed",
+  "runtimeCommit": "4860750b5bc7f7b7658b4a6981759095e07b2175",
+  "tagCommit": "4860750b5bc7f7b7658b4a6981759095e07b2175",
+  "tagIdentityMethod": "Local fresh git fetch of public main and tags; exact tag SHA compared to frozen tested runtime commit.",
+  "publicEntrypoints": [
+    {
+      "project": "Circuit",
+      "file": "index.html",
+      "sha256": "5be85087258c74e1aab9bdb1babf6b28533bc1bf53241029915c498ac920606b",
+      "status": "passed",
+      "bytes": 851,
+      "expectedArtifact": 12484173529,
+      "rootReleaseWebZipUsesDifferentBasePath": true
+    },
+    {
+      "project": "Circuit",
+      "file": "sw.js",
+      "sha256": "73a9879c135be19559d22dfbc9f2d4707d911ffc1c35350c0621ba042b83ff57",
+      "status": "passed",
+      "bytes": 54441,
+      "expectedArtifact": 12484173529,
+      "rootReleaseWebZipUsesDifferentBasePath": true
+    }
+  ]
+}

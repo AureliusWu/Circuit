@@ -4,20 +4,27 @@
   "project": "Circuit",
   "targetVersion": "1.8.0",
   "baselineCommit": "664dafb92ddfd0ce3e80ec062d195932b35b6e3d",
-  "status": "candidate-local-verified-awaiting-platform",
+  "status": "released-and-verified",
   "gates": {
-    "implementation": "complete",
+    "implementation": "passed",
     "localValidation": "passed",
-    "windowsRuntime": "pending-same-commit-CI",
-    "pwaRuntime": "passed-local-public-pending",
-    "publicRelease": "pending-verified-draft-publication",
-    "publicReadback": "pending",
-    "fourGameCoexistence": "pending-target-versions"
+    "windowsRuntime": "passed",
+    "pwaRuntime": "passed",
+    "publicRelease": "passed",
+    "publicReadback": "passed",
+    "fourGameCoexistence": "passed"
   },
   "humanReview": "pending-user-consolidated",
   "evidence": [
     "docs/production/LOCAL-VALIDATION-v1.8.0.json",
-    "docs/RELEASE_v1.8.0.md"
+    "docs/RELEASE_v1.8.0.md",
+    {
+      "kind": "final-release-closure",
+      "path": "docs/production/PUBLISHED-v1.8.0.json",
+      "runtimeCommit": "4860750b5bc7f7b7658b4a6981759095e07b2175",
+      "platforms": "actual Windows and public PWA",
+      "fourGamesCiRun": 39972929371
+    }
   ],
   "blockers": [],
   "scope": {
@@ -39,5 +46,7 @@
     "existingVersions": "immutable-no-clobber-no-tag-move",
     "privateDrafts": "authenticated paginated collection checked, including tagless drafts",
     "failure": "leave private draft for explicit recovery"
-  }
+  },
+  "runtimeCommit": "4860750b5bc7f7b7658b4a6981759095e07b2175",
+  "updatedAt": "2026-10-23T15:07:34.468305+00:00"
 }

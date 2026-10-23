@@ -1,0 +1,113 @@
+{
+  "schema": 1,
+  "project": "Circuit",
+  "version": "1.8.0",
+  "status": "released-and-verified",
+  "checkedAt": "2026-10-23T15:07:34.468305+00:00",
+  "runtimeCommit": "4860750b5bc7f7b7658b4a6981759095e07b2175",
+  "tagCommit": "4860750b5bc7f7b7658b4a6981759095e07b2175",
+  "release": {
+    "id": 421541062,
+    "tag_name": "v1.8.0",
+    "html_url": "https://github.com/AureliusWu/Circuit/releases/tag/v1.8.0",
+    "target_commitish": "4860750b5bc7f7b7658b4a6981759095e07b2175",
+    "draft": false,
+    "prerelease": false
+  },
+  "build": {
+    "url": "https://github.com/AureliusWu/Circuit/actions/runs/39914954418",
+    "conclusion": "success"
+  },
+  "publication": {
+    "url": "https://github.com/AureliusWu/Circuit/actions/runs/39914954418",
+    "conclusion": "success",
+    "mode": "draft-upload-verify-all-bytes-then-public",
+    "immutable": true
+  },
+  "pwa": {
+    "id": 39914954361,
+    "attempt": 3,
+    "conclusion": "success",
+    "headCommit": "4860750b5bc7f7b7658b4a6981759095e07b2175",
+    "verifiedRuntimeCommit": "4860750b5bc7f7b7658b4a6981759095e07b2175",
+    "verification": "Exact candidate platform workflow and actual public offline verification.",
+    "url": "https://github.com/AureliusWu/Circuit/actions/runs/39914954361",
+    "screens": "Actual public desktop, portrait and landscape offline verification.",
+    "entrypoints": [
+      {
+        "project": "Circuit",
+        "file": "index.html",
+        "sha256": "5be85087258c74e1aab9bdb1babf6b28533bc1bf53241029915c498ac920606b",
+        "status": "passed",
+        "bytes": 851,
+        "expectedArtifact": 12484173529,
+        "rootReleaseWebZipUsesDifferentBasePath": true
+      },
+      {
+        "project": "Circuit",
+        "file": "sw.js",
+        "sha256": "73a9879c135be19559d22dfbc9f2d4707d911ffc1c35350c0621ba042b83ff57",
+        "status": "passed",
+        "bytes": 54441,
+        "expectedArtifact": 12484173529,
+        "rootReleaseWebZipUsesDifferentBasePath": true
+      }
+    ],
+    "artifactId": 12510186177,
+    "artifactSha256": "0e4c18e44a614ddfa67f2c2bc891a0b373a0211e43b1debd481501d0138376d5",
+    "proof": "PWA-LIVE-v1.8.0-20261023.json"
+  },
+  "validation": {
+    "logicTests": 105,
+    "browserPhases": 107,
+    "dialogueBindings": 403,
+    "chapters": 10,
+    "seriesConcluded": false
+  },
+  "publicReadback": {
+    "path": "PUBLIC-READBACK-v1.8.0-20261023.json",
+    "assets": 7,
+    "bytes": 45883366,
+    "allBytesAndChecksumsPassed": true
+  },
+  "fourGameCoexistence": {
+    "status": "passed",
+    "run": "https://github.com/AureliusWu/Circuit/actions/runs/39972929371",
+    "ciReport": "FOUR-GAMES-LIVE-CI-20261023.json",
+    "independentLocalReport": "FOUR-GAMES-LIVE-20261023.json",
+    "versions": {
+      "Rain": "1.6.0",
+      "Healing": "1.4.0",
+      "NetLove": "1.0.0",
+      "Circuit": "1.8.0"
+    },
+    "cachedFiles": 1248,
+    "pageErrors": []
+  },
+  "humanReview": {
+    "status": "pending-user-consolidated",
+    "checks": [
+      "full human listening",
+      "effective reading time",
+      "physical mobile installation",
+      "ordinary Windows / Chinese paths / DPI",
+      "final creative acceptance"
+    ],
+    "machineEvidenceDoesNotClaimHumanAcceptance": true
+  },
+  "history": [
+    {
+      "run": 39914954361,
+      "attempt": 1,
+      "status": "cancelled"
+    },
+    {
+      "run": 39914954361,
+      "attempt": 2,
+      "status": "cancelled-before-browser-test",
+      "detail": "Ten-minute job deadline expired during OS/font package download; no web assertion executed."
+    }
+  ],
+  "nativeInstalledProof": "WINDOWS-v1.8.0-20261023.json",
+  "deliveryScope": "First part six chapters concluded; second part four playable chapters remains ongoing."
+}

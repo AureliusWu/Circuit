@@ -1,4 +1,4 @@
-> 2026-10-23：**v1.8.0 完整发行候选**。阅读中可打开玩家帮助；调查、推理、重试、解锁、备份和离线更新均有说明，十五名人物与 403 条对白说明已同步。发行先上传草稿并回读全部附件字节，验证后才公开。第一部六章已完结，第二部四章仍在连载。[本版说明](docs/RELEASE_v1.8.0.md) · [本轮验收状态](docs/production/RELEASE-READINESS-20261022.json)。本次平台与公开结果以该记录为准。
+> 2026-10-23：**v1.8.0 已正式发布**。标题 / 阅读中玩家帮助和草稿附件完整字节验证已交付；Windows 真实安装 / 帮助 / 保存重开 / 卸载、公开三屏离线、七份下载和四作共存全部通过。第一部六章完结，第二部四章仍在连载。[正式下载](https://github.com/AureliusWu/Circuit/releases/tag/v1.8.0) · [发布凭据](docs/production/PUBLISHED-v1.8.0.json) · [四作闭环](docs/production/FOUR-GAMES-CLOSURE-20261023.md)。
 
 > 2026-10-22：**v1.7.0 全对白与完整角色素材已发布**，403 条人物对白绑定、十五名角色与新增 CG 已进入 Windows 和 PWA。最新主线的 Windows 实际安装/保存重开/卸载、浏览器路线与完整音频离线缓存检查通过。七份公开附件、四条校验和及实际 Pages 产物已独立回读。[正式下载](https://github.com/AureliusWu/Circuit/releases/tag/v1.7.0) · [发布凭据](docs/production/PUBLISHED-v1.7.0-full-media.json) · [本轮回读](docs/production/PUBLIC-READBACK-20261022.json)。
 
@@ -97,7 +97,7 @@ python3 tests/visitors-browser.py http://127.0.0.1:4173
 
 ## 文档
 
-- [1.8.0 说明与候选验收](docs/RELEASE_v1.8.0.md)、[本轮状态](docs/production/RELEASE-READINESS-20261022.json)
+- [1.8.0 说明与正式验收](docs/RELEASE_v1.8.0.md)、[本轮状态](docs/production/RELEASE-READINESS-20261022.json)
 - [1.7.0 发行与验证记录](docs/production/PUBLISHED-v1.7.0-full-media.json)、[《回访》制作记录](docs/RELEASE_v1.2.0.md)
 - [章节内容与存档规范](docs/CHAPTER_AUTHORING.md)
 - [原创素材说明](docs/ASSETS.md)

@@ -1,0 +1,57 @@
+{
+  "version": "1.8.0",
+  "executable": "D:\\a\\_temp\\Circuit-release-install\\circuit.exe",
+  "executable_sha256": "7ee30c165efbd3a88b804b5741881639448d8b4f1fb4e1ab9ae7228094cee0f3",
+  "commit": "4860750b5bc7f7b7658b4a6981759095e07b2175",
+  "checks": [
+    "installed executable renders current version and title",
+    "native start, automatic save, history and keyboard focus",
+    "native title and reading help pause text without changing saves and restore focus",
+    "close, relaunch and restore the same native save",
+    "no JavaScript page errors and normal application shutdown",
+    "both WebView2 process collections exit before profile cleanup",
+    "temporary WebView2 profile is completely removed"
+  ],
+  "status": "passed",
+  "document_url": "http://tauri.localhost/",
+  "webview_shutdown": {
+    "first": {
+      "profile_aliases": [
+        "c:\\users\\runneradmin\\appdata\\local\\temp\\circuit-installed-webview-k6ilnj8j\\profile",
+        "c:\\users\\runner~1\\appdata\\local\\temp\\circuit-installed-webview-k6ilnj8j\\profile"
+      ],
+      "observed_pids": [
+        1740,
+        3728,
+        4724,
+        5132,
+        6112,
+        7212,
+        7752
+      ],
+      "remaining_pids": [],
+      "remaining_processes": [],
+      "elapsed_seconds": 0.344
+    },
+    "reopen": {
+      "profile_aliases": [
+        "c:\\users\\runneradmin\\appdata\\local\\temp\\circuit-installed-webview-k6ilnj8j\\profile",
+        "c:\\users\\runner~1\\appdata\\local\\temp\\circuit-installed-webview-k6ilnj8j\\profile"
+      ],
+      "observed_pids": [
+        3892,
+        3916,
+        6424,
+        7356,
+        8068,
+        9008,
+        9220
+      ],
+      "remaining_pids": [],
+      "remaining_processes": [],
+      "elapsed_seconds": 0.375
+    }
+  },
+  "temporary_profile_removed": true,
+  "page_errors": []
+}

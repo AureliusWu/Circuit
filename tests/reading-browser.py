@@ -174,6 +174,69 @@ def reading_and_keys(browser):
     context.close()
 
 
+def help_pause_and_layout(browser):
+    for width, height in [(1280, 900), (412, 915), (568, 320), (844, 390)]:
+        context, page = new_page(browser, {PREFS: json.dumps({**DEFAULTS, "textSpeed": "slow"})})
+        page.set_viewport_size({"width": width, "height": height})
+        title_help = page.get_by_role("button", name="操作与制作记录", exact=True)
+        title_help.focus()
+        page.keyboard.press("Enter")
+        dialog = page.get_by_role("dialog", name="操作与制作记录")
+        close = page.get_by_role("button", name="关闭操作与制作记录", exact=True)
+        expect(dialog).to_be_visible()
+        expect(close).to_be_focused()
+        for text in ["十五名人物", "403 条人物对白", "第二部仍在连载", "不包含另外三个手动槽位"]:
+            expect(dialog).to_contain_text(text)
+        page.keyboard.press("Tab")
+        expect(close).to_be_focused()
+        page.keyboard.press("Shift+Tab")
+        expect(close).to_be_focused()
+        body = dialog.locator(".notebook-body")
+        body.evaluate("element => element.scrollTop = element.scrollHeight")
+        expect(body.locator(".help-content > p").last).to_be_in_viewport()
+        expect(close).to_be_in_viewport()
+        assert dialog.evaluate("element => element.scrollWidth <= element.clientWidth")
+        close_panel(page)
+        expect(title_help).to_be_focused()
+        page.get_by_role("button", name="开始抢修", exact=True).click()
+        page.wait_for_timeout(120)
+        help_button = page.get_by_role("button", name="帮助", exact=True)
+        expect(help_button).to_be_in_viewport()
+        help_button.focus()
+        page.keyboard.press("Enter")
+        expect(close).to_be_focused()
+        saved = raw_storage(page)
+        text = page.locator(".dialogue-text")
+        paused = text.inner_text()
+        dialog.focus()
+        page.keyboard.press("Space")
+        page.wait_for_timeout(350)
+        assert text.inner_text() == paused
+        assert raw_storage(page) == saved
+        page.keyboard.press("Escape")
+        expect(help_button).to_be_focused()
+        page.wait_for_timeout(130)
+        assert len(text.inner_text()) > len(paused)
+        assert raw_storage(page) == saved
+        context.close()
+        checked(f"help title/reading keyboard entry, trapped focus, exact reveal resume and scrollable content at {width}x{height}")
+
+    context, page = new_page(browser)
+    page.get_by_role("button", name="开始抢修", exact=True).click()
+    page.get_by_role("button", name="自动阅读", exact=True).click()
+    page.get_by_role("button", name="帮助", exact=True).click()
+    before = raw_storage(page)
+    page.wait_for_timeout(2300)
+    assert raw_storage(page) == before
+    page.wait_for_function("window.__audioContexts[0].state === 'suspended'")
+    close_panel(page)
+    expect(page.get_by_role("button", name="帮助", exact=True)).to_be_focused()
+    page.wait_for_function("JSON.parse(localStorage.getItem('circuit-auto-v100')).nodeId === 'call'", timeout=4000)
+    assert auto(page)["history"] == ["dispatch", "call"]
+    context.close()
+    checked("help pauses automatic progression and WebAudio, then resumes exactly one dialogue")
+
+
 def preference_persistence(browser):
     context, page = new_page(browser)
     open_settings(page)
@@ -380,6 +443,7 @@ with sync_playwright() as playwright:
     browser = playwright.chromium.launch(executable_path=os.environ.get("CIRCUIT_CHROMIUM", "/usr/bin/chromium"), headless=True, args=["--no-sandbox"])
     try:
         reading_and_keys(browser)
+        help_pause_and_layout(browser)
         preference_persistence(browser)
         automatic_pause(browser)
         exported = save_transfer(browser)

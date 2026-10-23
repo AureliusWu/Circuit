@@ -118,6 +118,9 @@ jobs:
     name: Publish verified immutable version
     needs: [web, windows]
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    concurrency:
+      group: circuit-release-publication
+      cancel-in-progress: false
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -135,13 +138,12 @@ jobs:
         with:
           name: circuit-windows-runtime
           path: runtime-evidence
-      - name: Publish and verify downloadable bytes
+      - name: Verify all draft bytes before public publication
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
           VERSION=$(node -p "require('./package.json').version")
-          TAG="v$VERSION"
           decision=$(node scripts/release-preflight.mjs)
           if [ "$decision" != publish ]; then
             echo "No publication needed: $decision. Verified artifacts remain available."
@@ -149,7 +151,4 @@ jobs:
           fi
           cp runtime-evidence/windows-runtime.json release-assets/windows-runtime.json
           node --input-type=module -e 'import fs from "node:fs"; const runtime=JSON.parse(fs.readFileSync("release-assets/windows-runtime.json")); if(runtime.status!=="passed"||runtime.commit!==process.env.GITHUB_SHA) throw Error("Native evidence mismatch"); fs.writeFileSync("release-assets/release.json",JSON.stringify({version:runtime.version,commit:process.env.GITHUB_SHA,runId:process.env.GITHUB_RUN_ID,nativeChecks:runtime.checks},null,2)+"\n");'
-          (cd release-assets && sha256sum *.exe *.zip *.json > SHA256SUMS.txt)
-          gh release create "$TAG" release-assets/* --target "$GITHUB_SHA" --title "$(head -n 1 docs/RELEASE_v$VERSION.md | sed 's/^# *//')" --notes-file "docs/RELEASE_v$VERSION.md"
-          gh release download "$TAG" --dir release-readback
-          (cd release-readback && sha256sum --check SHA256SUMS.txt)
+          node scripts/publish-release.mjs release-assets

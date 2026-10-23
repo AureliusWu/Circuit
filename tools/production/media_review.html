@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>素材试听与画面审阅</title>
+<style>
+:root{font:16px/1.6 system-ui,sans-serif;color:#243b41;background:#f4f7f5}*{box-sizing:border-box}body{margin:0}main{max-width:1260px;margin:auto;padding:28px}h1{font-size:28px;margin:0 0 4px}.sub{color:#52676c;font-size:14px;overflow-wrap:anywhere}.bar{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0;align-items:center}button,input,select,textarea{font:inherit;border:1px solid #92a9a8;border-radius:8px;padding:8px 12px;background:white;color:inherit}button{cursor:pointer}button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #006f76;outline-offset:2px}input[type=search]{flex:1;min-width:190px}.layout{display:grid;grid-template-columns:minmax(260px,1fr) minmax(0,1.5fr);gap:20px}.list{max-height:66vh;overflow:auto;border:1px solid #ccd8d5;border-radius:12px;background:white}.row{display:block;text-align:left;width:100%;border:0;border-radius:0;border-bottom:1px solid #e1e9e6;padding:12px 16px}.row[aria-current=true]{background:#e2f1ed;border-left:4px solid #006f76}.row small{display:block;color:#53676d;overflow-wrap:anywhere}.detail{background:white;border:1px solid #ccd8d5;border-radius:12px;padding:20px;min-width:0}.detail h2{font-size:21px;margin:0;overflow-wrap:anywhere}.tag{font-size:13px;color:#80440c;background:#fff3d8;padding:3px 8px;border-radius:6px;display:inline-block;margin:3px 4px 3px 0}.line{white-space:pre-wrap;font-size:20px}.metric{font-size:14px;color:#52676c;overflow-wrap:anywhere}audio{width:100%;margin:12px 0}#art{width:100%;max-height:54vh;object-fit:contain;background:repeating-conic-gradient(#dbe2df 0% 25%,#f8faf9 0% 50%) 50%/24px 24px}textarea{width:100%;min-height:94px;resize:vertical}#message{min-height:26px;color:#8b3d0d}.note{background:#e8f1ed;padding:12px 16px;border-radius:10px;font-size:14px}label{display:inline-flex;gap:7px;align-items:center}#notesLabel{display:block;margin:12px 0 4px}a{color:#006d76}@media(max-width:740px){main{padding:16px}.layout{grid-template-columns:1fr}.list{max-height:30vh}h1{font-size:24px}.detail{padding:15px}}
+</style>
+<main>
+<h1 id="heading">素材试听与画面审阅</h1><div class="sub" id="identity"></div>
+<p class="note">试听或查看后可记录「通过 / 需修改」。所有条目初始待审；自动测量只提供审阅线索。记录独立于游戏存档，浏览器记录不可用时请导出 JSON。台词与图片包含剧情内容。</p>
+<div class="bar">
+<label>素材<select id="kind"><option value="audio">人物对白</option><option value="artwork">画面</option></select></label>
+<label>状态<select id="status"><option value="all">全部</option><option value="pending">待审</option><option value="accepted">通过</option><option value="changes">需修改</option></select></label>
+<label><input id="priority" type="checkbox">仅优先项</label>
+<input id="search" type="search" aria-label="搜索人物、场景、台词或文件" placeholder="搜索人物、场景、台词或文件">
+</div>
+<div class="bar">
+<label>素材来源<select id="source"><option value="local">当前本地仓库</option><option value="online">固定发行提交（联网）</option></select></label>
+<button id="export">导出审阅记录</button><button id="import">导入记录</button><input type="file" id="importFile" accept="application/json,.json" hidden>
+<span id="count" role="status"></span>
+</div><div id="message" role="status" aria-live="polite"></div>
+<div class="layout"><div class="list" id="list" aria-label="素材列表"></div><section class="detail" id="detail" aria-label="当前素材">
+<h2 id="itemTitle"></h2><div class="sub" id="location"></div><div id="tags"></div><p class="line" id="text"></p>
+<audio id="audio" controls preload="none"></audio><img id="art" hidden alt="待审阅画面"><p class="metric" id="metrics"></p><p class="metric" id="asr"></p>
+<p><a id="raw" target="_blank" rel="noopener noreferrer">查看固定提交的原始文件</a></p>
+<label>审阅结论<select id="decision"><option value="pending">待审</option><option value="accepted">通过</option><option value="changes">需修改</option></select></label>
+<label id="notesLabel" for="notes">备注（错读位置、画面问题或保留意见）</label><textarea id="notes" maxlength="10000"></textarea>
+<div class="bar"><button id="previous">上一项</button><button id="next">下一项</button></div>
+</section></div></main>
+<script type="application/json" id="catalog">__MEDIA_REVIEW_DATA__</script>
+<script>
+'use strict';
+const D=JSON.parse(document.getElementById('catalog').textContent);
+const $=id=>document.getElementById(id), all=[...D.audio,...D.artwork], ids=new Set(all.map(x=>x.id));
+const states=new Set(['pending','accepted','changes']);
+const storageKey=`media-review:${D.project}:${D.runtimeCommit}:${D.catalogSha256}`;
+let notes=Object.create(null), current=null, shown=[];
+function validateImport(value){
+ if(!value||value.schema!==1||value.project!==D.project||value.runtimeCommit!==D.runtimeCommit||value.catalogSha256!==D.catalogSha256)throw Error('版本或素材摘要不一致，未导入。');
+ if(!value.notes||typeof value.notes!=='object'||Array.isArray(value.notes))throw Error('审阅记录格式无效。');
+ const result=Object.create(null);
+ for(const [id,n] of Object.entries(value.notes)){
+  if(!ids.has(id)||!n||!states.has(n.status)||typeof n.note!=='string'||n.note.length>10000)throw Error('存在未知素材或无效备注，未导入。');
+  result[id]={status:n.status,note:n.note};
+ }
+ return result;
+}
+function payload(){return {schema:1,project:D.project,runtimeCommit:D.runtimeCommit,catalogSha256:D.catalogSha256,notes};}
+function message(text){$('message').textContent=text;}
+function persist(){try{localStorage.setItem(storageKey,JSON.stringify(payload()));message('审阅记录已保存在本机；可随时导出。');}catch{message('浏览器记录不可用，当前记录仍在此页内，请导出 JSON 保存。');}}
+try{const raw=localStorage.getItem(storageKey);if(raw)notes=validateImport(JSON.parse(raw));}catch{message('未载入本机记录；可从 JSON 重新导入。');}
+function decision(item){return notes[item.id]?.status||'pending';}
+function rawUrl(item){return `https://raw.githubusercontent.com/AureliusWu/${D.project}/${D.runtimeCommit}/`+item.path.split('/').map(encodeURIComponent).join('/');}
+function mediaUrl(item){return $('source').value==='online'?rawUrl(item):D.localPrefix+item.path.split('/').map(encodeURIComponent).join('/');}
+function stop(){const a=$('audio');a.pause();a.removeAttribute('src');a.load();$('art').removeAttribute('src');}
+function show(item){
+ stop(); current=item;
+ $('detail').hidden=!item;
+ if(!item)return;
+ $('itemTitle').textContent=item.speaker||item.path;
+ $('location').textContent=[item.id,item.sceneId,item.nodeId].filter(Boolean).join(' · ');
+ $('text').textContent=item.text||'';
+ $('tags').replaceChildren(...item.flags.map(f=>{const n=document.createElement('span');n.className='tag';n.textContent=D.flagLabels[f]||f;return n;}));
+ const audio=Object.hasOwn(item,'text');$('audio').hidden=!audio;$('art').hidden=audio;
+ if(audio)$('audio').src=mediaUrl(item);else{$('art').src=mediaUrl(item);$('art').alt=item.path;}
+ const s=item.signal;
+ $('metrics').textContent=s?`时长 ${s.durationSeconds}s · 首静音 ${s.leadingSilenceSeconds??'—'}s · 尾静音 ${s.trailingSilenceSeconds??'—'}s · 采样峰值 ${s.samplePeakDbfs??'—'}dBFS · 信号 RMS ${s.rmsDbfs??'—'}dBFS`:`${item.width??'—'} × ${item.height??'—'} · ${item.mode||'—'}`;
+ $('asr').textContent=item.existingAsr?`录制时 ASR：${item.existingAsr.transcript||'—'}${item.existingAsr.exactTonedHomophones?'（已有逐音节同音复核）':''}；本轮未重新识别。`:'';
+ $('raw').href=rawUrl(item);$('decision').value=decision(item);$('notes').value=notes[item.id]?.note||'';
+ for(const button of $('list').children)button.setAttribute('aria-current',String(button.dataset.id===item.id));
+}
+function render(){
+ const q=$('search').value.trim().toLowerCase(),wanted=$('status').value;
+ shown=D[$('kind').value].filter(x=>(!$('priority').checked||x.flags.length)&&(wanted==='all'||decision(x)===wanted)&&(!q||[x.id,x.text,x.speaker,x.path,x.sceneId,x.nodeId].join(' ').toLowerCase().includes(q)));
+ $('count').textContent=`${shown.length} / ${D[$('kind').value].length} 项；已审 ${all.filter(x=>decision(x)!=='pending').length} 项`;
+ $('list').replaceChildren(...shown.map(item=>{
+  const b=document.createElement('button');b.className='row';b.dataset.id=item.id;
+  const title=document.createElement('span');title.textContent=(item.speaker?item.speaker+'：':'')+(item.text||item.path);
+  const sub=document.createElement('small');sub.textContent=({pending:'待审',accepted:'通过',changes:'需修改'})[decision(item)]+' · '+item.id+(item.flags.length?' · 优先审阅':'');
+  b.append(title,sub);b.addEventListener('click',()=>show(item));return b;
+ }));
+ show(shown.find(x=>x.id===current?.id)||shown[0]||null);
+}
+function save(){if(!current)return;notes[current.id]={status:$('decision').value,note:$('notes').value};persist();}
+for(const id of ['kind','status','priority'])$(id).addEventListener('change',render);
+$('search').addEventListener('input',render);
+$('source').addEventListener('change',()=>show(current));
+$('decision').addEventListener('change',()=>{save();render();});$('notes').addEventListener('input',save);
+$('previous').addEventListener('click',()=>{if(shown.length)show(shown[Math.max(0,shown.indexOf(current)-1)]);});
+$('next').addEventListener('click',()=>{if(shown.length)show(shown[Math.min(shown.length-1,shown.indexOf(current)+1)]);});
+$('export').addEventListener('click',()=>{const url=URL.createObjectURL(new Blob([JSON.stringify(payload(),null,2)+'\n'],{type:'application/json'}));const a=document.createElement('a');a.href=url;a.download=`${D.project}-v${D.version}-media-review.json`;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);});
+$('import').addEventListener('click',()=>$('importFile').click());
+$('importFile').addEventListener('change',async event=>{try{const f=event.target.files[0];if(!f)return;if(f.size>2000000)throw Error('记录文件过大，未导入。');const imported=validateImport(JSON.parse(await f.text()));notes=Object.assign(Object.create(null),notes,imported);persist();render();}catch(e){message(e.message);}finally{event.target.value='';}});
+$('audio').addEventListener('error',()=>message('无法读取音频：完整仓库内使用本地模式，或联网后选择固定发行提交。'));
+$('art').addEventListener('error',()=>message('无法读取图片：完整仓库内使用本地模式，或联网后选择固定发行提交。'));
+document.addEventListener('visibilitychange',()=>{if(document.hidden)$('audio').pause();});
+$('heading').textContent=`${D.project} v${D.version} · 素材审阅`;
+$('identity').textContent=`${D.audio.length} 条对白 · ${D.artwork.length} 张画面 · 发行提交 ${D.runtimeCommit}`;
+render();
+</script>
+</html>

@@ -1,3 +1,5 @@
+**发布后素材审阅（2026-10-23）**：发布后素材质检：403 条对白、51 张美术全部完成摘要 / 解码与信号测量，客观错误为 0；78 项保留为人工优先审阅线索。逐句试听、画面查看、独立备注及版本绑定的 JSON 导入 / 导出已通过桌面、手机视口与本地文件检查。 [结果与审阅工具](docs/production/quality-20261023/README.md)。
+
 > 2026-10-23：**v1.8.0 已正式发布**。标题 / 阅读中玩家帮助和草稿附件完整字节验证已交付；Windows 真实安装 / 帮助 / 保存重开 / 卸载、公开三屏离线、七份下载和四作共存全部通过。第一部六章完结，第二部四章仍在连载。[正式下载](https://github.com/AureliusWu/Circuit/releases/tag/v1.8.0) · [发布凭据](docs/production/PUBLISHED-v1.8.0.json) · [四作闭环](docs/production/FOUR-GAMES-CLOSURE-20261023.md)。
 
 > 2026-10-22：**v1.7.0 全对白与完整角色素材已发布**，403 条人物对白绑定、十五名角色与新增 CG 已进入 Windows 和 PWA。最新主线的 Windows 实际安装/保存重开/卸载、浏览器路线与完整音频离线缓存检查通过。七份公开附件、四条校验和及实际 Pages 产物已独立回读。[正式下载](https://github.com/AureliusWu/Circuit/releases/tag/v1.7.0) · [发布凭据](docs/production/PUBLISHED-v1.7.0-full-media.json) · [本轮回读](docs/production/PUBLIC-READBACK-20261022.json)。

@@ -1,20 +1,43 @@
 {
   "schema": 1,
-  "date": "2026-10-22",
+  "date": "2026-10-23",
   "project": "Circuit",
   "targetVersion": "1.8.0",
   "baselineCommit": "664dafb92ddfd0ce3e80ec062d195932b35b6e3d",
-  "status": "planned",
+  "status": "candidate-local-verified-awaiting-platform",
   "gates": {
-    "implementation": "pending",
-    "localValidation": "pending",
-    "windowsRuntime": "pending",
-    "pwaRuntime": "pending",
-    "publicRelease": "pending",
+    "implementation": "complete",
+    "localValidation": "passed",
+    "windowsRuntime": "pending-same-commit-CI",
+    "pwaRuntime": "passed-local-public-pending",
+    "publicRelease": "pending-verified-draft-publication",
     "publicReadback": "pending",
-    "fourGameCoexistence": "pending"
+    "fourGameCoexistence": "pending-target-versions"
   },
   "humanReview": "pending-user-consolidated",
-  "evidence": [],
-  "blockers": []
+  "evidence": [
+    "docs/production/LOCAL-VALIDATION-v1.8.0.json",
+    "docs/RELEASE_v1.8.0.md"
+  ],
+  "blockers": [],
+  "scope": {
+    "firstPart": {
+      "chapters": 6,
+      "status": "concluded"
+    },
+    "secondPart": {
+      "chapters": 4,
+      "status": "ongoing"
+    },
+    "characters": 15,
+    "dialogueBindings": 403
+  },
+  "publication": {
+    "mode": "draft-upload-full-byte-readback-then-public",
+    "assets": 7,
+    "checksums": "SHA256SUMS covers binaries, independent sidecars and both evidence JSON files; manifest itself also byte-compared",
+    "existingVersions": "immutable-no-clobber-no-tag-move",
+    "privateDrafts": "authenticated paginated collection checked, including tagless drafts",
+    "failure": "leave private draft for explicit recovery"
+  }
 }

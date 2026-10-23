@@ -71,6 +71,18 @@ with sync_playwright() as p:
         assert page.evaluate("window.__media.find(m=>m.src.includes('h13-dispatch.mp3')).duration") > 3
         checked('bundled-mp3-real-playback')
         page.evaluate("window.__media.find(m=>m.src.includes('h13-dispatch.mp3')).playbackRate=.55")
+        saved = page.evaluate(f"localStorage.getItem('{AUTO}')")
+        page.get_by_role('button', name='帮助', exact=True).click()
+        page.wait_for_function("window.__media.filter(m=>m.src.includes('/voice/')).every(m=>m.paused)")
+        position = page.evaluate("window.__media.findLast(m=>m.src.includes('h13-dispatch.mp3')).currentTime")
+        page.wait_for_timeout(400)
+        assert abs(page.evaluate("window.__media.findLast(m=>m.src.includes('h13-dispatch.mp3')).currentTime") - position) < .1
+        assert page.evaluate(f"localStorage.getItem('{AUTO}')") == saved
+        page.keyboard.press('Escape')
+        expect(page.get_by_role('button', name='帮助', exact=True)).to_be_focused()
+        page.wait_for_function("window.__media.some(m=>m.src.includes('h13-dispatch.mp3') && !m.paused)")
+        assert page.evaluate("window.__media.findLast(m=>m.src.includes('h13-dispatch.mp3')).currentTime") >= position
+        checked('help-pauses-real-voice-at-current-position-and-restores-focus')
         page.get_by_role('button', name='自动阅读', exact=True).click()
         page.wait_for_timeout(2100)
         assert node(page) == 'dispatch'

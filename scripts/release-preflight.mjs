@@ -22,7 +22,17 @@ export function publicationDecision({ repository, revision, version }, api) {
     return 'published';
   }
   if (tag) throw new Error('Existing tag without a published release; preserve it for explicit recovery');
-  return 'publish';
+  // The tag endpoint can omit private drafts, and a draft need not create its
+  // tag yet. Inspect the authenticated, paginated release collection as well.
+  for (let page = 1; page <= 100; page += 1) {
+    const releases = api(`${root}/releases?per_page=100&page=${page}`);
+    if (!Array.isArray(releases) || releases.some(item => !item || typeof item.tag_name !== 'string' || typeof item.draft !== 'boolean')) {
+      throw new Error('Invalid authenticated release list; preserve existing publications');
+    }
+    if (releases.some(item => item.tag_name === tagName)) throw new Error('Existing publication in authenticated release list; preserve it for explicit recovery');
+    if (releases.length < 100) return 'publish';
+  }
+  throw new Error('Authenticated release list exceeded pagination limit; preserve existing publications');
 }
 
 export function githubApi(endpoint, allowMissing = false, run = spawnSync) {

@@ -1,0 +1,290 @@
+{
+  "schema": 1,
+  "date": "2026-10-23T06:58:30.956157+00:00",
+  "project": "Circuit",
+  "version": "1.8.0",
+  "status": "passed-local",
+  "baselineCommit": "17bac2600913530b701acea1f9267dff2f19a732",
+  "implementationCheckpoints": [
+    "5aa332fb6067adde470c1519426e9baf05491a21",
+    "b53abc275e16179103925fdca1c35c802ffc1efe"
+  ],
+  "sourceSnapshot": {
+    "sha256": "91f0d9ad8d6dd9bf24e035089be3d97fd8e95f6f6e47e448e0e6fecea10d0f4f",
+    "files": 574,
+    "recipe": "SHA-256 of sorted SHA256(file bytes) + two spaces + path + LF lines; tracked src/, public/, scripts/, tests/, .github/, src-tauri/ and root package/build config. Docs/generated outputs excluded."
+  },
+  "preservedFromBaseline": [
+    "src/story",
+    "src/game",
+    "public",
+    "assets_source"
+  ],
+  "scope": {
+    "firstPart": {
+      "chapters": 6,
+      "status": "concluded"
+    },
+    "secondPart": {
+      "chapters": 4,
+      "status": "ongoing"
+    },
+    "characters": 15,
+    "dialogueBindings": 403
+  },
+  "checks": {
+    "npmTest": {
+      "status": "passed",
+      "tests": 105
+    },
+    "productionBuild": {
+      "status": "passed",
+      "precacheEntries": 482
+    },
+    "fontCoverage": {
+      "status": "passed",
+      "bytes": 186248,
+      "fontChanged": false
+    },
+    "metadata": {
+      "status": "passed",
+      "version": "1.8.0",
+      "locations": 6
+    },
+    "webviewProcessTests": {
+      "status": "passed",
+      "tests": 4
+    },
+    "legacySourceAudio": {
+      "status": "passed",
+      "fullDecodes": 158,
+      "voices": 32,
+      "effects": 19
+    },
+    "fullProductionMedia": {
+      "project": "Circuit",
+      "target": 403,
+      "accepted": 403,
+      "images": 14,
+      "decoded": true,
+      "complete": true,
+      "humanListening": false,
+      "release": "not_published",
+      "status": "passed"
+    },
+    "releaseWorkflowYaml": {
+      "status": "passed"
+    },
+    "windowsSmokeSyntax": {
+      "status": "passed",
+      "execution": "pending-Windows-CI"
+    }
+  },
+  "browser": {
+    "release": {
+      "status": "passed",
+      "count": 21,
+      "checks": [
+        "initial-chapter-locks",
+        "complete-chapter:thirteen-households",
+        "complete-chapter:seventh-night",
+        "complete-chapter:backfeed",
+        "complete-chapter:everlight",
+        "complete-chapter:neutral",
+        "complete-chapter:closure",
+        "complete-chapter:return-visit",
+        "complete-chapter:answering",
+        "complete-chapter:visitors",
+        "complete-chapter:tickets",
+        "responsive-hotspots:1280x720",
+        "responsive-hotspots:960x540",
+        "responsive-hotspots:760x430",
+        "responsive-hotspots:390x844",
+        "denied-storage-remains-playable",
+        "pwa-manifest-service-worker",
+        "offline-all-generated-art",
+        "offline-all-voice-and-scene-audio",
+        "offline-campaign-resume-and-replay",
+        "browser-runtime-errors"
+      ],
+      "stdoutSha256": "600f59090739e2a408e6f5f1369f415fc347a574902b3c925704c482e16e170c",
+      "chapterNodes": {
+        "thirteen-households": 44,
+        "seventh-night": 45,
+        "backfeed": 46,
+        "everlight": 39,
+        "neutral": 37,
+        "closure": 45,
+        "return-visit": 39,
+        "answering": 40,
+        "visitors": 39,
+        "tickets": 44
+      }
+    },
+    "reading": {
+      "status": "passed",
+      "count": 24,
+      "checks": [
+        "typewriter starts gradually; WebAudio starts only after a user gesture",
+        "opening a notebook pauses and closing resumes text reveal",
+        "Space reveals text and Enter advances once with atomic visit history",
+        "slow/fast settings change live reveal timing; Enter on a focused action does not double advance",
+        "help title/reading keyboard entry, trapped focus, exact reveal resume and scrollable content at 1280x900",
+        "help title/reading keyboard entry, trapped focus, exact reveal resume and scrollable content at 412x915",
+        "help title/reading keyboard entry, trapped focus, exact reveal resume and scrollable content at 568x320",
+        "help title/reading keyboard entry, trapped focus, exact reveal resume and scrollable content at 844x390",
+        "help pauses automatic progression and WebAudio, then resumes exactly one dialogue",
+        "text speed, delay, audio levels, mute, contrast and reduced motion persist across reload",
+        "reduced motion forces immediate full text despite slow text preference",
+        "instant preference applies immediately to the next narrative node",
+        "auto reading and audio pause for notebook, controlled hidden-page event and title",
+        "auto reading advances single dialogues but stops at investigation without collecting evidence",
+        "auto reading never confirms evidence, makes deductions or restarts failure endings",
+        "save dialog focus wraps around visible controls and excludes the hidden file input",
+        "three manual slots remain independent and JSON export never mutates stored records",
+        "syntax-invalid, impossible-state and oversized imports preserve every prior slot",
+        "reading an older manual slot preserves the newer automatic record exactly",
+        "import preview, export, cancel and Escape preserve progress; explicit confirmation replaces only automatic storage",
+        "v010 manual and completed v011 auto migrate read-only; the next action writes only new storage",
+        "denied localStorage still allows play and keeps in-memory history consistent",
+        "import with unavailable storage preserves the persistence warning",
+        "no uncaught JavaScript exceptions"
+      ],
+      "stdoutSha256": "3d1f513e44492d639ddc9fb04d5415e4a4f212a983c1ff35d8192cdd95edbfb3"
+    },
+    "voice": {
+      "status": "passed",
+      "count": 15,
+      "checks": [
+        "no-title-autoplay",
+        "bundled-mp3-real-playback",
+        "help-pauses-real-voice-at-current-position-and-restores-focus",
+        "auto-waits-for-real-voice-end",
+        "manual-voice-pause-holds-auto",
+        "auto-resumes-after-voice-and-delay",
+        "visited-history-replay-preserves-progress",
+        "hidden-page-pauses-and-resumes-replay",
+        "scene-change-cancels-old-playback",
+        "independent-voice-and-sfx-settings",
+        "title-stops-all-recorded-media",
+        "missing-recording-does-not-block-reading",
+        "new-chapter-art-voices-and-mobile-controls",
+        "two-speaker-echo-plays-in-order-before-auto-advance",
+        "no-runtime-errors"
+      ],
+      "stdoutSha256": "6281f8a73577a6c595d1ee98f8802980c05236e8896e6f00a17c1463d7f26518"
+    },
+    "answering": {
+      "status": "passed",
+      "count": 13,
+      "checks": [
+        "v120-save-unlocks-answering-without-read-write",
+        "uncollected-evidence-has-no-replay-controls",
+        "collected-evidence-replays-identical-master-without-save-write",
+        "evidence-pause-and-resume",
+        "hidden-page-suspends-evidence-and-stop-preserves-progress",
+        "mute-and-voice-preference-disable-evidence-replay",
+        "retry-boxFailure-keeps-old-completion",
+        "retry-thirdFailure-keeps-old-completion",
+        "answering-completes-as-second-followup-with-original-city-loop",
+        "second-round-recordings-unlock-with-their-evidence",
+        "offline-restore-and-evidence-replay",
+        "chinese-font-evidence-and-hotspots-390x844",
+        "chinese-font-evidence-and-hotspots-760x430"
+      ],
+      "stdoutSha256": "eebede14eaa7c645be8557b75e3e9ddd42159b79e671b62d057d896e8167e4fa"
+    },
+    "history-search": {
+      "status": "passed",
+      "count": 9,
+      "checks": [
+        "1440x900: read-log filtering, original voice, pause and unchanged save",
+        "1440x900: acquired-only evidence search and original recording controls",
+        "1440x900: offline reload retains searchable read route",
+        "412x915: read-log filtering, original voice, pause and unchanged save",
+        "412x915: acquired-only evidence search and original recording controls",
+        "412x915: offline reload retains searchable read route",
+        "568x320: read-log filtering, original voice, pause and unchanged save",
+        "568x320: acquired-only evidence search and original recording controls",
+        "568x320: offline reload retains searchable read route"
+      ],
+      "stdoutSha256": "8bfe64f4fa230d976ba7c69d1360b338c8b3325ab5dcafe1244b291949f930c6"
+    },
+    "visitors": {
+      "status": "passed",
+      "count": 10,
+      "checks": [
+        "v130-save-unlocks-visitors-without-reading-write",
+        "one-collected-record-cannot-open-comparison",
+        "search-to-comparison-collected-only-distinct-swaps-no-save-write",
+        "full-visitors-route-archives-five-records-and-nine-chapters",
+        "both-wrong-deductions-retry-without-completion",
+        "comparison-readable-and-operable-1280x720",
+        "comparison-readable-and-operable-760x430",
+        "comparison-readable-and-operable-390x844",
+        "offline-comparison-replays-original-2019-master-without-save-write",
+        "no-javascript-errors"
+      ],
+      "stdoutSha256": "bf52baa237957c5251c2b62bc7bda312714bd2f4cc92b63bfb13b63345fbe03b"
+    },
+    "tickets": {
+      "status": "passed",
+      "count": 9,
+      "checks": [
+        "v1.4 completed save unlocks V04 without read-time mutation",
+        "window CG uses no portrait overlay and fits six viewports",
+        "wrong receiving-seat deduction retries with all records preserved",
+        "collected source plays the original recording without saving",
+        "collected source plays the original recording without saving",
+        "wrong writer deduction retries without future unlock",
+        "V04 completion and five evidence records persist",
+        "complete V04 reopens offline with unchanged position",
+        "new 64-second scene score decodes from the actual offline cache"
+      ],
+      "stdoutSha256": "56729a73a577b07717b36c974ededfab727c6f0300aca783933c24ac29d2ee48"
+    },
+    "subdirectory-pwa": {
+      "status": "passed",
+      "count": 6,
+      "checks": [
+        "1440x900:ready/offline/save",
+        "412x915:ready/offline/save",
+        "568x320:ready/offline/save",
+        "844x390:ready/offline/save",
+        "missing-required-audio:failed/retry/ready",
+        "two-windows:waiting/last-close/activate/offline/save"
+      ],
+      "build": "CIRCUIT_BASE_PATH=/Circuit/ npm run build -- --outDir /tmp/circuit-v180-pwa/dist",
+      "note": "Unmodified tests/pwa-browser.py ran from isolated build directory."
+    }
+  },
+  "browserEnvironment": {
+    "engine": "Chromium 153",
+    "headless": true,
+    "args": [
+      "--no-sandbox",
+      "--no-zygote",
+      "--disable-dev-shm-usage"
+    ],
+    "webSecurity": "enabled",
+    "siteIsolation": "enabled"
+  },
+  "earlierEnvironmentAttempt": {
+    "status": "failed-excluded",
+    "suite": "campaign",
+    "detail": "Earlier browser-package extra flags run timed out on everlight/promise-note click stability; complete minimal-flags rerun passed all 21 phases with no source change."
+  },
+  "packagedWeb": {
+    "status": "passed",
+    "name": "circuit-web-1.8.0.zip",
+    "bytes": 22523917,
+    "sha256": "5410e8ab0982b126970d553119170d9638e4bb3c11212aa15f912d5b29fee3cb"
+  },
+  "notExecutedLocally": [
+    "Windows installer build/install/save/reopen/uninstall",
+    "public 1.8.0 release/download readback",
+    "public Pages exact artifact readback",
+    "four-target-version same-origin coexistence",
+    "consolidated human listening/reading/physical-device review"
+  ]
+}

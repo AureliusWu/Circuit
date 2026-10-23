@@ -35,6 +35,7 @@ function transport(files, overrides = {}) {
       }
       if (endpoint.includes('/releases/tags/')) return overrides.existing ?? null;
       if (endpoint.includes('/git/ref/tags/')) return overrides.existingTag ?? null;
+      if (endpoint.includes('/releases?')) return overrides.existingDraft ? [{ tag_name: 'v1.8.0', draft: true }] : [];
       assert.equal(endpoint, 'repos/AureliusWu/Circuit/releases/321');
       draftReads += 1;
       const copy = structuredClone(draft);
@@ -127,7 +128,7 @@ test('existing public releases are immutable and preexisting drafts or tags requ
     assert.equal(publishRelease(identity, files, remote.api, {}), 'published');
     assert.ok(!remote.calls.includes('create-draft'));
     assert.deepEqual(release, { tag_name: 'v1.8.0', draft: false });
-    for (const fault of [{ existing: { ...release, draft: true } }, { existingTag: tag }]) {
+    for (const fault of [{ existing: { ...release, draft: true } }, { existingTag: tag }, { existingDraft: true }]) {
       const blocked = transport(files, fault);
       assert.throws(() => publishRelease(identity, files, blocked.api, {}), /preserve/);
       assert.ok(!blocked.calls.includes('create-draft'));
@@ -140,6 +141,7 @@ test('local asset identity and independent original checksums must match before 
   for (const breakFixture of [
     directory => writeFileSync(join(directory, 'Circuit_1.8.0_x64-setup.exe'), 'changed'),
     directory => writeFileSync(join(directory, 'windows-runtime.json'), JSON.stringify({ status: 'failed', ...identity })),
+    directory => writeFileSync(join(directory, 'windows-runtime.json'), JSON.stringify({ status: 'passed', version: identity.version, commit: identity.revision })),
     directory => writeFileSync(join(directory, 'release.json'), JSON.stringify({ version: '1.7.0', commit: identity.revision })),
     directory => writeFileSync(join(directory, 'unexpected.json'), '{}'),
     directory => rmSync(join(directory, 'circuit-web-1.8.0.zip')),

@@ -30,6 +30,7 @@ export function prepareAssets(directory, identity) {
   const runtime = JSON.parse(files.find(file => file.name === 'windows-runtime.json').bytes);
   const release = JSON.parse(files.find(file => file.name === 'release.json').bytes);
   if (runtime.status !== 'passed' || runtime.commit !== identity.revision || runtime.version !== identity.version
+    || !Array.isArray(runtime.checks) || !runtime.checks.length || runtime.checks.some(check => typeof check !== 'string')
     || release.commit !== identity.revision || release.version !== identity.version
     || JSON.stringify(runtime.checks) !== JSON.stringify(release.nativeChecks)) throw new Error('Native evidence mismatch');
   const bytes = Buffer.from(files.map(file => `${file.digest}  ${file.name}\n`).join(''));

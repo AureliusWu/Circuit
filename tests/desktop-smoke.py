@@ -294,6 +294,14 @@ def main():
                 expect(page.get_by_role('heading', name='回路', exact=True)).to_be_visible()
                 result['document_url'] = page.url
                 result['checks'].append('installed executable renders current version and title')
+                title_help = page.get_by_role('button', name='操作与制作记录', exact=True)
+                title_help.focus()
+                page.keyboard.press('Enter')
+                help_dialog = page.get_by_role('dialog', name='操作与制作记录', exact=True)
+                expect(help_dialog).to_contain_text('403 条人物对白')
+                expect(page.get_by_role('button', name='关闭操作与制作记录', exact=True)).to_be_focused()
+                page.keyboard.press('Escape')
+                expect(title_help).to_be_focused()
                 page.get_by_role('button', name='开始抢修', exact=True).click()
                 expect(page.locator('.hud')).to_be_visible()
                 page.wait_for_function("localStorage.getItem('circuit-auto-v100') !== null")
@@ -309,6 +317,16 @@ def main():
                 expect(opener).to_be_focused()
                 assert page.evaluate("localStorage.getItem('circuit-auto-v100')") == original
                 result['checks'].append('native start, automatic save, history and keyboard focus')
+                help_opener = page.get_by_role('button', name='帮助', exact=True)
+                help_opener.click()
+                expect(help_dialog).to_be_visible()
+                paused_text = page.locator('.dialogue-text').inner_text()
+                page.wait_for_timeout(400)
+                assert page.locator('.dialogue-text').inner_text() == paused_text
+                assert page.evaluate("localStorage.getItem('circuit-auto-v100')") == original
+                page.keyboard.press('Escape')
+                expect(help_opener).to_be_focused()
+                result['checks'].append('native title and reading help pause text without changing saves and restore focus')
             with launch(playwright, executable, profile, arguments.output.parent, 'reopen') as page:
                 page.on('pageerror', lambda error: errors.append(str(error)))
                 expect(page.get_by_role('button', name='继续抢修', exact=True)).to_be_visible()

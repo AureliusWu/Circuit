@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "project": "Circuit",
-  "batch": "20261025-signoff-eleven-new-bindings-dependencies",
+  "batch": "20261025-signoff-complete-audit-dependencies",
   "count": 414,
   "semanticSha256": "fdb9970f14efe646c101fccb111bf55204cecbd92fd86f15cca94e39d7f9e9cc",
   "attemptOffset": 36,

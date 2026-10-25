@@ -1,10 +1,11 @@
 {
   "schema": 1,
-  "date": "2026-10-23",
+  "date": "2026-10-25",
   "project": "Circuit",
-  "targetVersion": "1.8.0",
-  "baselineCommit": "664dafb92ddfd0ce3e80ec062d195932b35b6e3d",
+  "targetVersion": "1.10.1",
+  "runtimeCommit": "996df5044978d469806096cfe7d4ff6d7ca9ef48",
   "status": "released-and-verified",
+  "acceptanceScope": "engineering-release; final creative and listening review pending",
   "gates": {
     "implementation": "passed",
     "localValidation": "passed",
@@ -14,39 +15,22 @@
     "publicReadback": "passed",
     "fourGameCoexistence": "passed"
   },
-  "humanReview": "pending-user-consolidated",
-  "evidence": [
-    "docs/production/LOCAL-VALIDATION-v1.8.0.json",
-    "docs/RELEASE_v1.8.0.md",
-    {
-      "kind": "final-release-closure",
-      "path": "docs/production/PUBLISHED-v1.8.0.json",
-      "runtimeCommit": "4860750b5bc7f7b7658b4a6981759095e07b2175",
-      "platforms": "actual Windows and public PWA",
-      "fourGamesCiRun": 39972929371
-    }
-  ],
-  "blockers": [],
+  "humanReview": "pending",
   "scope": {
     "firstPart": {
       "chapters": 6,
       "status": "concluded"
     },
     "secondPart": {
-      "chapters": 4,
-      "status": "ongoing"
+      "chapters": 5,
+      "status": "concluded"
     },
-    "characters": 15,
-    "dialogueBindings": 403
+    "nodes": 467,
+    "evidence": 55,
+    "dialogueBindings": 414
   },
-  "publication": {
-    "mode": "draft-upload-full-byte-readback-then-public",
-    "assets": 7,
-    "checksums": "SHA256SUMS covers binaries, independent sidecars and both evidence JSON files; manifest itself also byte-compared",
-    "existingVersions": "immutable-no-clobber-no-tag-move",
-    "privateDrafts": "authenticated paginated collection checked, including tagless drafts",
-    "failure": "leave private draft for explicit recovery"
-  },
-  "runtimeCommit": "4860750b5bc7f7b7658b4a6981759095e07b2175",
-  "updatedAt": "2026-10-23T15:07:34.468305+00:00"
+  "evidence": [
+    "docs/production/VERIFIED-DELIVERY-20261025.json"
+  ],
+  "note": "当前冻结运行版本；素材完整客观测量和13项页面检查已执行。最后一份完整审阅页归档在工作区维护中中断，结果摘要恢复；可用既有audit_media_quality.py针对当前冻结版本重新生成。"
 }

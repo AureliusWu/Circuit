@@ -2,93 +2,96 @@
   "schema": 1,
   "date": "2026-10-25",
   "project": "Circuit",
-  "type": "调查、证据与推理 AVG / 悬疑文字冒险",
-  "version": "1.9.0",
-  "runtimeCommit": "a6d8ad1f8aa862a386ef6b59fa928ba080d99507",
-  "buildRun": 40148774731,
+  "type": "调查 / 证据 / 推理悬疑AVG",
+  "version": "1.10.1",
+  "runtimeCommit": "996df5044978d469806096cfe7d4ff6d7ca9ef48",
+  "buildRun": 40168925886,
   "buildConclusion": "success",
-  "publicPwaRun": 40148774693,
+  "ciRun": 40168926177,
+  "ciConclusion": "success",
+  "publicPwaRun": 40168925916,
   "publicPwaConclusion": "success",
-  "browserSummary": "发布 CI 的十章全战役、24 项阅读检查、15 项语音检查、应声 / 检索 / 来访 / 取号、4 组原曲场景及 6 项子目录离线更新均通过",
-  "nativeSummary": "NSIS 实际安装、v1.9.0 启动、自动保存 / 历史 / 帮助、关闭重开恢复、正常退出和卸载通过；临时 WebView2 进程与 profile 清理通过",
+  "sameOriginRun": 40169055016,
+  "sameOrigin": {
+    "status": "passed",
+    "expectedVersions": {
+      "Circuit": "1.10.1",
+      "NetLove": "1.1.1",
+      "Healing": "1.5.4",
+      "Rain": "1.7.0"
+    },
+    "totalCachedFiles": 1268,
+    "pageErrors": []
+  },
+  "browserSummary": "111单元；22全战役、10终章、24阅读、15语音及其余全套PWA回归通过",
+  "nativeSummary": "实际NSIS安装，v1.9完成档解锁并通关终章，最终档与十一完成证明跨进程恢复；四组WebView2退出及profile清理，页面错误0",
+  "qualitySummary": {
+    "dialogueBindings": 414,
+    "uniqueAudioFiles": 405,
+    "artworkFiles": 52,
+    "objectiveErrorItems": 0,
+    "reviewPriorityItems": 83,
+    "flags": {
+      "asr_difference": 62,
+      "sprite_edge": 21
+    },
+    "humanListening": false
+  },
+  "reviewBrowserChecks": 13,
+  "engineeringReleaseVerified": true,
+  "finalWorkAccepted": false,
+  "humanListeningClaimed": false,
+  "remaining": "P2原音与音乐/音效听感、全文/演出终审；P3普通设备/DPI、时长及谜题反馈。终章缺失已关闭。完整当前审阅页归档在工作区清理中中断，摘要和平台凭据恢复，历史审阅页保持。",
   "publicReadback": {
-    "schema": 1,
-    "checkedAt": 1792890415.2499983,
-    "repo": "Circuit",
-    "version": "v1.9.0",
-    "runtimeCommit": "a6d8ad1f8aa862a386ef6b59fa928ba080d99507",
-    "releaseUrl": "https://github.com/AureliusWu/Circuit/releases/tag/v1.9.0",
-    "publicAssets": [
+    "status": "passed-before-workspace-maintenance",
+    "assetCount": 7,
+    "checksumEntries": 6,
+    "zipCrcPassed": true,
+    "developmentFileScreenPassed": true,
+    "webSha256": "738bf995ffaf425ae9c2ad70ccda68b178cad5b451d2deff4f93a3637e1e0493",
+    "assets": [
       {
-        "name": "circuit-web-1.9.0.zip",
-        "size": 25296052,
-        "sha256": "0b23d5019afe285f723e06bbc1d060e83f196d1833d9dea06659186666238a12",
-        "githubDigestMatches": true,
-        "zipCrcPassed": true,
-        "files": 485,
-        "forbiddenDevelopmentFiles": []
+        "name": "circuit-web-1.10.1.zip",
+        "bytes": 25847323,
+        "githubDigest": "sha256:738bf995ffaf425ae9c2ad70ccda68b178cad5b451d2deff4f93a3637e1e0493",
+        "url": "https://github.com/AureliusWu/Circuit/releases/download/v1.10.1/circuit-web-1.10.1.zip"
       },
       {
-        "name": "circuit-web-1.9.0.zip.sha256",
-        "size": 88,
-        "sha256": "c193923780086b90d6aeacf43d8c0217d177b2ed1bafd92c53760c35a6120b10",
-        "githubDigestMatches": true
+        "name": "circuit-web-1.10.1.zip.sha256",
+        "bytes": 89,
+        "githubDigest": "sha256:98a4888b1a3c754c8224cbe8ed4ada33338a26cab058b05969e28d07713bde74",
+        "url": "https://github.com/AureliusWu/Circuit/releases/download/v1.10.1/circuit-web-1.10.1.zip.sha256"
       },
       {
-        "name": "Circuit_1.9.0_x64-setup.exe",
-        "size": 26893079,
-        "sha256": "3a2126d4bea5bf8307c62222ec320c17d3fd8d89cb3e00be9e6231ee36d719bd",
-        "githubDigestMatches": true
+        "name": "Circuit_1.10.1_x64-setup.exe",
+        "bytes": 27445553,
+        "githubDigest": "sha256:b034f3905bc4929b0d60b7e4bf1ff17f36b07bf42483cf7408976006f9a56bb5",
+        "url": "https://github.com/AureliusWu/Circuit/releases/download/v1.10.1/Circuit_1.10.1_x64-setup.exe"
       },
       {
-        "name": "Circuit_1.9.0_x64-setup.exe.sha256",
-        "size": 94,
-        "sha256": "76256d36f16283af9ff1e45c7f9b56e467c06b5cb02869507947adcc9f9b7ac9",
-        "githubDigestMatches": true
+        "name": "Circuit_1.10.1_x64-setup.exe.sha256",
+        "bytes": 95,
+        "githubDigest": "sha256:00a0f3be9a36873e01d84c20c11f7c0881de97841f745e5c6f059c99935ef290",
+        "url": "https://github.com/AureliusWu/Circuit/releases/download/v1.10.1/Circuit_1.10.1_x64-setup.exe.sha256"
       },
       {
         "name": "release.json",
-        "size": 592,
-        "sha256": "07097225c3fcec386d3e3daf71e9e5de8f2f8d91eed105e195a253ed1fee2145",
-        "githubDigestMatches": true
+        "bytes": 795,
+        "githubDigest": "sha256:f3ffa7e83519e8358246bbbb39001301c5d3f07c584d8b5faae97e3f698b1713",
+        "url": "https://github.com/AureliusWu/Circuit/releases/download/v1.10.1/release.json"
       },
       {
         "name": "SHA256SUMS.txt",
-        "size": 544,
-        "sha256": "51456bee3148dec1be56e8e403c0cc3c521f93f9db6a6afa4a4268a8c2e16307",
-        "githubDigestMatches": true
+        "bytes": 548,
+        "githubDigest": "sha256:0e87d33de5c771b43203fa8832e0dcb1bda7576e0065ee9c21699c306731737d",
+        "url": "https://github.com/AureliusWu/Circuit/releases/download/v1.10.1/SHA256SUMS.txt"
       },
       {
         "name": "windows-runtime.json",
-        "size": 1890,
-        "sha256": "3bb3419d0f610ca4b87f4b46a79641f71dcb8c2bbb0409a65f934b7c212696ac",
-        "githubDigestMatches": true
+        "bytes": 3095,
+        "githubDigest": "sha256:9f83ed0c30f448dfe380682d41bc3ab0fb5151237328741246d7a70cc4988a7b",
+        "url": "https://github.com/AureliusWu/Circuit/releases/download/v1.10.1/windows-runtime.json"
       }
-    ],
-    "checksumEntries": {
-      "circuit-web-1.9.0.zip": true,
-      "Circuit_1.9.0_x64-setup.exe": true,
-      "Circuit_1.9.0_x64-setup.exe.sha256": true,
-      "circuit-web-1.9.0.zip.sha256": true,
-      "release.json": true,
-      "windows-runtime.json": true
-    },
-    "status": "passed"
-  },
-  "sameOrigin": {
-    "status": "passed",
-    "run": 40148998570,
-    "attempt": 2,
-    "expectedVersions": {
-      "Circuit": "1.9.0",
-      "NetLove": "1.1.1",
-      "Healing": "1.5.2",
-      "Rain": "1.7.0"
-    },
-    "totalCachedFiles": 1257,
-    "pageErrors": []
-  },
-  "finalWorkAccepted": false,
-  "humanListeningClaimed": false,
-  "remaining": "P1：第二部完整叙事收束及相应章节内容。P2：57 项录音线索、音乐 / 音效听感和全章演出审读。P3：普通设备 / DPI 与实际时长。本轮没有临时改写结局来冒充原设计已完成。"
+    ]
+  }
 }

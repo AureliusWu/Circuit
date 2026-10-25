@@ -1,11 +1,11 @@
 {
   "schema": 1,
   "project": "Circuit",
-  "sourceCommit": "a0969c34807b3712d35679a2acfda34c14c66eb5",
+  "sourceCommit": "d93d2ebf0591fc1dae5764636cb416666390912c",
   "sourceFiles": [
     {
       "path": "src/story/engine.ts",
-      "sha256": "38d3482823b52cda0ddf46f5b12759645f1565b9a7f640767044edd36bdac500"
+      "sha256": "327d7f1fcffc1cf8c5cd03608c325091ab29c089d8f128fd12ec4d47c0a79dca"
     },
     {
       "path": "src/story/chapters/thirteen-households.ts",
@@ -48,12 +48,20 @@
       "sha256": "3f53998bff253362bc833dc1b66ab272ddb484ec799ff1921175413c3b3a8bd9"
     },
     {
+      "path": "src/story/chapters/signoff.ts",
+      "sha256": "1a2e45b8167d3ef41abc03dbeb34a2be654ede6f7556a6bb993f76cffe9c25dc"
+    },
+    {
+      "path": "src/game/fullMedia.ts",
+      "sha256": "8463efab799016fef051cdc45215f465bb9707c4864c8b4cfc6cfefa0542e86e"
+    },
+    {
       "path": "src/game/characters.ts",
-      "sha256": "71e7337c8c71c658a1e18b383def83895fca43b85193a131513ffde7fe9ab425"
+      "sha256": "a9598b57f1dd167c119a48a5217958310c1afa1e7ee7e51dadf3d124d7369655"
     },
     {
       "path": "docs/production/full-media/dialogue-segments.json",
-      "sha256": "e041ab7636a6ecd3a31775f990991ddbf1f6054494a28161a95071a6f337efe1"
+      "sha256": "fdc61504c9de1a7369c6e2c997bf57482199c322b729857cab93874e935770a5"
     },
     {
       "path": "docs/production/full-media/dialogue-extra.json",
@@ -70,16 +78,20 @@
     {
       "path": "docs/audio/voice-asr.json",
       "sha256": "25d0e31c3decd5262d92349d6571ec67ac58723ea00c40005ddff4d8b9a58334"
+    },
+    {
+      "path": "docs/production/full-media/pronunciation-overrides.json",
+      "sha256": "a98317633b0bd2b854a05c40e6872ca49cf0abad19ad083645dd65e2cb115bbe"
     }
   ],
-  "semanticSha256": "68824bc923500abfaffa5e94195c361feda70c878d95e6218dfb6eaa527e709f",
+  "semanticSha256": "fdb9970f14efe646c101fccb111bf55204cecbd92fd86f15cca94e39d7f9e9cc",
   "scope": {
     "allBranches": true,
     "writtenDialogue": true,
     "narration": false,
     "excludedCount": 37
   },
-  "sceneCount": 10,
+  "sceneCount": 11,
   "model": {
     "id": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
     "revision": "0c0e3051f131929182e2c023b9537f8b1c68adfe",
@@ -9403,6 +9415,267 @@
       "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
       "seed": 55969900,
       "textSha256": "aa3ccfdc423f6d6dbd20d569b75c9e7da58d079920e77930e4e0cb7e971e6b8b",
+      "medium": "spoken"
+    },
+    {
+      "id": "circuit-signoff--drive--q01--01",
+      "sceneId": "signoff",
+      "lineId": "signoff--drive--q01--01",
+      "lineIndex": 0,
+      "speaker": "ji",
+      "text": "这杯没糖，没写师傅专用。",
+      "nodeId": "drive",
+      "start": 17,
+      "end": 29,
+      "quoteIndex": 0,
+      "actorId": "ji",
+      "voice": "Vivian",
+      "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+      "seed": 1909184399,
+      "textSha256": "0c690ac79fd39a143253cb9759a87f923a6c9729c8dc2206ad96105f36637a86",
+      "medium": "spoken"
+    },
+    {
+      "id": "circuit-signoff--borrower--q01--01",
+      "sceneId": "signoff",
+      "lineId": "signoff--borrower--q01--01",
+      "lineIndex": 0,
+      "speaker": "luo",
+      "text": "九月底借的。只搬过一次，下午就还了。你们问三十二号，我真不知道它是这台。",
+      "nodeId": "borrower",
+      "start": 71,
+      "end": 107,
+      "quoteIndex": 0,
+      "actorId": "luo",
+      "voice": "Vivian",
+      "instruct": "二十九岁女性，普通话，声音偏低，夜班值班员谨慎地问话，平静自然，略有迟疑，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+      "seed": 1104160729,
+      "textSha256": "63adbf9c7878195adf22a98343a08b771a417d9da96cedf649933813277bcf37",
+      "medium": "spoken"
+    },
+    {
+      "id": "circuit-signoff--loandesk--q01--01",
+      "sceneId": "signoff",
+      "lineId": "signoff--loanDesk--q01--01",
+      "lineIndex": 0,
+      "speaker": "ji",
+      "text": "借走和还回来都得留。",
+      "nodeId": "loanDesk",
+      "start": 48,
+      "end": 58,
+      "quoteIndex": 0,
+      "actorId": "ji",
+      "voice": "Vivian",
+      "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+      "seed": 1085415835,
+      "textSha256": "2bb8d5daf9790bf70be065d0d4014dec7126ad018ce7f44a0ec5a160d82b01a9",
+      "medium": "spoken"
+    },
+    {
+      "id": "circuit-signoff--returnpaper--q01--01",
+      "sceneId": "signoff",
+      "lineId": "signoff--returnPaper--q01--01",
+      "lineIndex": 0,
+      "speaker": "chen",
+      "text": "我妈那回没办完，不是没回家。",
+      "nodeId": "returnPaper",
+      "start": 38,
+      "end": 52,
+      "quoteIndex": 0,
+      "actorId": "chen",
+      "voice": "Uncle_Fu",
+      "instruct": "六十岁男性，普通话，语速慢，声音低哑，像看门的老人轻声说话，口语平实。 只朗读给定台词，不添加词语或音效。",
+      "seed": 26845990,
+      "textSha256": "4410309343cc3dda54ccafabc8618bbcddc079df36f36050568a01af2f3bbb91",
+      "medium": "spoken"
+    },
+    {
+      "id": "circuit-signoff--correctborrower--q01--01",
+      "sceneId": "signoff",
+      "lineId": "signoff--correctBorrower--q01--01",
+      "lineIndex": 0,
+      "speaker": "luo",
+      "text": "那台东西不用我再带回去了吧？",
+      "nodeId": "correctBorrower",
+      "start": 56,
+      "end": 70,
+      "quoteIndex": 0,
+      "actorId": "luo",
+      "voice": "Vivian",
+      "instruct": "二十九岁女性，普通话，声音偏低，夜班值班员谨慎地问话，平静自然，略有迟疑，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+      "seed": 296026909,
+      "textSha256": "baa9fcb314208353df88cde0a23d17c168b84613c0dbc95ea330fedefa743667",
+      "medium": "spoken"
+    },
+    {
+      "id": "circuit-signoff--origin--q01--01",
+      "sceneId": "signoff",
+      "lineId": "signoff--origin--q01--01",
+      "lineIndex": 0,
+      "speaker": "cheng",
+      "text": "先别替它确认。",
+      "nodeId": "origin",
+      "start": 20,
+      "end": 27,
+      "quoteIndex": 0,
+      "legacy": {
+        "id": "v01-confirm",
+        "character": "cheng",
+        "speaker": "Dylan",
+        "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。",
+        "text": "先别替它确认。",
+        "seed": 120041,
+        "bindings": [
+          {
+            "chapter": "return-visit",
+            "node": "onward"
+          },
+          {
+            "chapter": "return-visit",
+            "node": "end"
+          }
+        ],
+        "requestSha256": "cbbf1dbbdb203f4d06472c1a09066343071e08b1d693d9808cdf2124423b61c5",
+        "duration": 1.28,
+        "generationSeconds": 7.141,
+        "loudnessInput": {
+          "input_i": "-24.65",
+          "input_tp": "-8.42",
+          "input_lra": "0.00",
+          "input_thresh": "-34.65",
+          "output_i": "-19.99",
+          "output_tp": "-3.77",
+          "output_lra": "0.00",
+          "output_thresh": "-29.99",
+          "normalization_type": "linear",
+          "target_offset": "-0.01"
+        },
+        "files": [
+          {
+            "path": "assets_source/audio/v1.2.0/v01-confirm-raw.wav",
+            "bytes": 61484,
+            "sha256": "2519a8035fa7024df3c48c63605da803bd9f892f45237710894dce85a3aaf7f9"
+          },
+          {
+            "path": "assets_source/audio/v1.2.0/v01-confirm.wav",
+            "bytes": 61518,
+            "sha256": "ad5f85cc865c670df68eaf175270d3cc4a61513b241f3046d0dfef62c100fdfd"
+          },
+          {
+            "path": "public/audio/voice/v01-confirm.mp3",
+            "bytes": 16461,
+            "sha256": "32e4a93ffbdecc05c00cf73a6d6bd0ade906d4ae89b6438e3bba3f0ba0572b76"
+          }
+        ],
+        "asr": {
+          "id": "v01-confirm",
+          "mp3Sha256": "32e4a93ffbdecc05c00cf73a6d6bd0ade906d4ae89b6438e3bba3f0ba0572b76",
+          "expected": "先别替它确认。",
+          "transcript": "先别替他确认",
+          "cer": 0.166667,
+          "polarityCountsMatch": true,
+          "status": "passed"
+        },
+        "asrModel": "Systran/faster-whisper-large-v3",
+        "evidencePath": "docs/audio/voice-asr.json",
+        "evidenceSha256": "25d0e31c3decd5262d92349d6571ec67ac58723ea00c40005ddff4d8b9a58334"
+      },
+      "replayOf": "circuit-return-visit--onward--q02--01",
+      "actorId": "cheng",
+      "voice": "Dylan",
+      "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+      "seed": 939512286,
+      "textSha256": "30f09f5361ddd273195f02171897fd451796e0ca60ebc481b25eae3c23793f73",
+      "medium": "spoken"
+    },
+    {
+      "id": "circuit-signoff--window--q01--01",
+      "sceneId": "signoff",
+      "lineId": "signoff--window--q01--01",
+      "lineIndex": 0,
+      "speaker": "chen",
+      "text": "我妈那两件东西，早拿回去了。",
+      "nodeId": "window",
+      "start": 32,
+      "end": 46,
+      "quoteIndex": 0,
+      "actorId": "chen",
+      "voice": "Uncle_Fu",
+      "instruct": "六十岁男性，普通话，语速慢，声音低哑，像看门的老人轻声说话，口语平实。 只朗读给定台词，不添加词语或音效。",
+      "seed": 1184942814,
+      "textSha256": "da84f67e5bc358b80db39c8c9ca92f83e296cbdd8524c1581c6d4e19124f2ffe",
+      "medium": "spoken"
+    },
+    {
+      "id": "circuit-signoff--names--q01--01",
+      "sceneId": "signoff",
+      "lineId": "signoff--names--q01--01",
+      "lineIndex": 0,
+      "speaker": "manager",
+      "text": "程砚。",
+      "nodeId": "names",
+      "start": 49,
+      "end": 52,
+      "quoteIndex": 0,
+      "actorId": "manager",
+      "voice": "Dylan",
+      "instruct": "成年男性管理方工作人员，普通话，平静利落，日常工作交接，清楚自然，不朗诵。",
+      "seed": 412553655,
+      "textSha256": "f7fe01ba52d510daa03a95b94873ed5a62af858033d34b9e53376cb8c55bed53",
+      "medium": "spoken"
+    },
+    {
+      "id": "circuit-signoff--drivehome--q01--01",
+      "sceneId": "signoff",
+      "lineId": "signoff--driveHome--q01--01",
+      "lineIndex": 0,
+      "speaker": "ji",
+      "text": "师傅，下次自己拿。",
+      "nodeId": "driveHome",
+      "start": 32,
+      "end": 41,
+      "quoteIndex": 0,
+      "actorId": "ji",
+      "voice": "Vivian",
+      "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+      "seed": 1798517560,
+      "textSha256": "7a12624db63b3cedbd415d305f339290a2cd66dd75bda0a87082b135585bed7e",
+      "medium": "spoken"
+    },
+    {
+      "id": "circuit-signoff--offduty--q01--01",
+      "sceneId": "signoff",
+      "lineId": "signoff--offDuty--q01--01",
+      "lineIndex": 0,
+      "speaker": "ji",
+      "text": "这回写哪一栏？",
+      "nodeId": "offDuty",
+      "start": 56,
+      "end": 63,
+      "quoteIndex": 0,
+      "actorId": "ji",
+      "voice": "Vivian",
+      "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+      "seed": 645399207,
+      "textSha256": "80eb94c3b6fda5a8ceeedd3ddab208da88d74f6d33c0aa5a6ec92efa750ed734",
+      "medium": "spoken"
+    },
+    {
+      "id": "circuit-signoff--offduty--q02--01",
+      "sceneId": "signoff",
+      "lineId": "signoff--offDuty--q02--01",
+      "lineIndex": 0,
+      "speaker": "cheng",
+      "text": "交班。今天的。",
+      "nodeId": "offDuty",
+      "start": 66,
+      "end": 73,
+      "quoteIndex": 1,
+      "actorId": "cheng",
+      "voice": "Dylan",
+      "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+      "seed": 1309785473,
+      "textSha256": "fa9d7d47a297001aa23ff582db94d8a9ea6438f1c23d4a7c7a9ef11c270df804",
       "medium": "spoken"
     }
   ],

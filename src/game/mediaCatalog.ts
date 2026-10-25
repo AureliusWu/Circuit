@@ -419,6 +419,12 @@ export const SCENE_EFFECTS: Readonly<Record<string, string>> = {
   "closure/meal": "/audio/sfx/cup-set.mp3",
   "closure/end": "/audio/sfx/phone-alert.mp3",
   "return-visit/dispatch": "/audio/sfx/radio-open.mp3",
+  "signoff/dispatch": "/audio/sfx/radio-open.mp3",
+  "signoff/borrower": "/audio/sfx/paper-turn.mp3",
+  "signoff/recordLoan": "/audio/sfx/pen-sign.mp3",
+  "signoff/bell": "/audio/sfx/return-bell.mp3",
+  "signoff/today": "/audio/sfx/pen-sign.mp3",
+  "signoff/window": "/audio/sfx/latch-turn.mp3",
   "return-visit/arrival": "/audio/sfx/intercom-click.mp3",
   "return-visit/intercom": "/audio/sfx/intercom-click.mp3",
   "return-visit/echo": "/audio/sfx/intercom-click.mp3",
@@ -455,6 +461,7 @@ export const VOICE_REPLAYS: readonly { clipId: string; chapter: string; node: st
   { clipId: 'v01-received', chapter: 'answering', node: 'emptyReply' },
   { clipId: 'v01-wait', chapter: 'answering', node: 'doorway' },
   { clipId: 'v01-confirm', chapter: 'tickets', node: 'oldFile' },
+  { clipId: 'v01-confirm', chapter: 'signoff', node: 'origin' },
   { clipId: 'q07-xu', chapter: 'visitors', node: 'oldVoice' },
   { clipId: 'v01-confirm', chapter: 'visitors', node: 'newVoice' }
 ];

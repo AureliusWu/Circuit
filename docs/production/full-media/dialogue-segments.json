@@ -926,5 +926,36 @@
   ],
   "tickets/message": [
     "ji"
+  ],
+  "signoff/drive": [
+    "ji"
+  ],
+  "signoff/borrower": [
+    "luo"
+  ],
+  "signoff/loanDesk": [
+    "ji"
+  ],
+  "signoff/returnPaper": [
+    "chen"
+  ],
+  "signoff/correctBorrower": [
+    "luo"
+  ],
+  "signoff/origin": [
+    "cheng"
+  ],
+  "signoff/window": [
+    "chen"
+  ],
+  "signoff/names": [
+    "manager"
+  ],
+  "signoff/driveHome": [
+    "ji"
+  ],
+  "signoff/offDuty": [
+    "ji",
+    "cheng"
   ]
 }

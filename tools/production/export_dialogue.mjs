@@ -102,6 +102,16 @@ if(project==='NetLove'){
     }
   }
 }else throw Error('Unsupported project '+project);
+// Keep author-reviewed number pronunciation reproducible in future exports.
+// The visible text and recording identity remain unchanged.
+if(project==='Circuit'){
+  const overrides=source('docs/production/full-media/pronunciation-overrides.json');
+  for(const [id,override] of Object.entries(overrides)){
+    const row=rows.find(candidate=>candidate.id===id);
+    if(!row||row.text!==override.text||!override.spokenText)throw Error('Stale pronunciation override: '+id);
+    row.spokenText=override.spokenText;
+  }
+}
 const ids=rows.map(row=>row.id);
 if(new Set(ids).size!==ids.length)throw Error('Duplicate dialogue recording identity');
 const semantic=rows.map(({id,sceneId,lineId,lineIndex,speaker,text,medium,nodeId,quoteIndex,choiceId})=>({id,sceneId,lineId,lineIndex,speaker,text,medium,...(nodeId?{nodeId,quoteIndex}:{}),...(choiceId?{choiceId}:{})}));

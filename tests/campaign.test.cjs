@@ -45,8 +45,8 @@ test('new campaigns start at the first chapter without completion or archive wri
   assert.equal(validateCampaignPayload(payload(session)).status, 'valid');
 });
 
-test('all ten campaign positions accept an ordered completion prefix with evidence proof', () => {
-  assert.equal(CHAPTER_ORDER.length, 10);
+test('all eleven campaign positions accept an ordered completion prefix with evidence proof', () => {
+  assert.equal(CHAPTER_ORDER.length, 11);
   for (let index = 0; index < CHAPTER_ORDER.length; index += 1) {
     assert.equal(validateCampaignPayload(payload(sessionAt(index))).status, 'valid');
   }

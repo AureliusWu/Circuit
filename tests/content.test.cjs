@@ -7,7 +7,7 @@ if (!process.env.CIRCUIT_TEST_BUILD) throw new Error('Run npm test to compile th
 const engine = require(path.join(process.env.CIRCUIT_TEST_BUILD, 'story/engine.js'));
 const campaign = require(path.join(process.env.CIRCUIT_TEST_BUILD, 'game/campaign.js'));
 const characterCatalog = require(path.join(process.env.CIRCUIT_TEST_BUILD, 'game/characters.js'));
-const ORDER = ['thirteen-households', 'seventh-night', 'backfeed', 'everlight', 'neutral', 'closure', 'return-visit', 'answering', 'visitors', 'tickets'];
+const ORDER = ['thirteen-households', 'seventh-night', 'backfeed', 'everlight', 'neutral', 'closure', 'return-visit', 'answering', 'visitors', 'tickets', 'signoff'];
 const graphs = new Map();
 
 function explore(chapterId) {
@@ -41,7 +41,7 @@ function explore(chapterId) {
   return graph;
 }
 
-test('release registers ten chapters in the authored campaign order', () => {
+test('release registers eleven chapters in the authored campaign order', () => {
   assert.deepEqual(engine.CHAPTER_ORDER, ORDER);
   assert.deepEqual(Object.keys(engine.CHAPTERS).sort(), [...ORDER].sort());
   const codes = ORDER.map((id) => engine.getChapter(id).clue.code);
@@ -95,7 +95,7 @@ for (const [index, chapterId] of ORDER.entries()) {
   });
 }
 
-test('campaign can be completed through all ten legal chapter routes with persistent city clues', () => {
+test('campaign can be completed through all eleven legal chapter routes with persistent city clues', () => {
   let session = campaign.createCampaignSession();
   for (const [index, chapterId] of ORDER.entries()) {
     assert.ok(campaign.canStartChapter(session, chapterId));
@@ -131,5 +131,5 @@ test('campaign can be completed through all ten legal chapter routes with persis
     }
   }
   assert.deepEqual(session.completed, ORDER);
-  assert.equal(Object.keys(session.archive).length, 10);
+  assert.equal(Object.keys(session.archive).length, 11);
 });

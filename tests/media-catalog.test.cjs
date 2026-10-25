@@ -26,8 +26,8 @@ test('every voice is an exact authored excerpt, has a valid character and is bou
 
 test('Second-part scenes replay the original masters without altering their generation requests', () => {
   const plan = JSON.parse(readFileSync('docs/audio/voice-plan.json', 'utf8'));
-  assert.equal(VOICE_REPLAYS.length, 8);
-  assert.equal(new Set(VOICE_REPLAYS.map(binding => `${binding.chapter}/${binding.node}`)).size, 8);
+  assert.equal(VOICE_REPLAYS.length, 9);
+  assert.equal(new Set(VOICE_REPLAYS.map(binding => `${binding.chapter}/${binding.node}`)).size, 9);
   for (const binding of VOICE_REPLAYS) {
     const clip = getVoiceClip(binding.clipId);
     assert.ok(clip, binding.clipId);

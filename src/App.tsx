@@ -28,7 +28,7 @@ const PANEL_TITLES: Record<Panel, string> = {
 };
 const BACKGROUNDS: Record<ChapterId, string> = {
   'thirteen-households': 'alley', 'seventh-night': 'stairwell', backfeed: 'demolition',
-  everlight: 'stairwell', neutral: 'substation', closure: 'control-room', 'return-visit': 'resettlement-lobby', answering: 'communications-room', visitors: 'reception-station', tickets: 'receiving-room'
+  everlight: 'stairwell', neutral: 'substation', closure: 'control-room', 'return-visit': 'resettlement-lobby', answering: 'communications-room', visitors: 'reception-station', tickets: 'receiving-room', signoff: 'property-office'
 };
 const SLOTS: CampaignSlot[] = ['auto', 1, 2, 3];
 const sequelTitles = CHAPTER_ORDER.slice(6).map(id => `《${getChapter(id)!.title}》`).join('');

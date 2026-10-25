@@ -8,13 +8,14 @@ import { returnVisit } from './chapters/return-visit';
 import { answering } from './chapters/answering';
 import { visitors } from './chapters/visitors';
 import { tickets } from './chapters/tickets';
+import { signoff } from './chapters/signoff';
 import { withFullMedia } from '../game/fullMedia';
 import { getCharacter } from '../game/characters';
 import type { Chapter, ChapterId, EvidenceId, GameState, StoryAction, StoryNode } from './types';
 
 export const PROLOGUE: ChapterId = 'thirteen-households';
 export const CHAPTER_ORDER: readonly ChapterId[] = Object.freeze([
-  PROLOGUE, 'seventh-night', 'backfeed', 'everlight', 'neutral', 'closure', 'return-visit', 'answering', 'visitors', 'tickets'
+  PROLOGUE, 'seventh-night', 'backfeed', 'everlight', 'neutral', 'closure', 'return-visit', 'answering', 'visitors', 'tickets', 'signoff'
 ]);
 
 /** Finish the next chapter in sequence; replays remain available. */
@@ -35,7 +36,8 @@ const authoredChapters: Record<ChapterId, Chapter> = {
   'return-visit': returnVisit,
   answering,
   visitors,
-  tickets
+  tickets,
+  signoff
 };
 export const CHAPTERS = Object.freeze(Object.fromEntries(
   Object.entries(authoredChapters).map(([id, chapter]) => [id, withFullMedia(chapter)])

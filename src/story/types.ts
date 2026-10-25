@@ -1,6 +1,6 @@
 import type { CharacterExpression, CharacterId, CharacterPresence } from '../game/characters';
 
-export type ChapterId = 'thirteen-households' | 'seventh-night' | 'backfeed' | 'everlight' | 'neutral' | 'closure' | 'return-visit' | 'answering' | 'visitors' | 'tickets';
+export type ChapterId = 'thirteen-households' | 'seventh-night' | 'backfeed' | 'everlight' | 'neutral' | 'closure' | 'return-visit' | 'answering' | 'visitors' | 'tickets' | 'signoff';
 
 /** Node and evidence identifiers belong to their chapter, not to the whole campaign. */
 export type StoryNodeId = string;

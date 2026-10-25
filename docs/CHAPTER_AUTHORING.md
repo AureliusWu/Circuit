@@ -4,13 +4,13 @@
 
 # 章节内容、进度与存档规范
 
-八章内容分别位于 `src/story/chapters/`；`engine.ts` 统一读取章节、筛选动作、执行跳转并验证剧情图，React 不按剧情节点名分支。
+十章内容分别位于 `src/story/chapters/`；`engine.ts` 统一读取章节、筛选动作、执行跳转并验证剧情图，React 不按剧情节点名分支。
 
 ## 章节结构
 
-`Chapter` 包含 `id / order / title / subtitle / synopsis / entryNode`、章节内的 `evidence / nodes / requiredEvidence`，以及城市线路档案的 `clue`（编号、详情与地图坐标）。节点 ID 和证据 ID 是章节内字符串；章节 ID 是八项联合类型。扩展章节需更新类型和 `CHAPTER_ORDER / CHAPTERS` 注册。
+`Chapter` 包含 `id / order / title / subtitle / synopsis / entryNode`、章节内的 `evidence / nodes / requiredEvidence`，以及城市线路档案的 `clue`（编号、详情与地图坐标）。节点 ID 和证据 ID 是章节内字符串；章节 ID 是十项联合类型。扩展章节需更新类型和 `CHAPTER_ORDER / CHAPTERS` 注册。
 
-节点 `kind` 为 `title / dialogue / investigation / evidence / choice / puzzle / ending`。`text / location / time / speaker / progress` 描述叙事；`scene.background` 引用本地场景，`portrait` 使用src/game/characters.ts注册的九个人物ID，`expression`选择该角色实际具有的表情或现场版本。`presence`为scene（现场）、radio（远程通讯卡）、archive（2019旧档照片），默认现场；验证器拒绝未知人物、不可用表情或无人物的展示标记。`scene.hotspots` 关联同节点的动作 ID，坐标为场景百分比；文档、题字和调查目标也由节点声明。谜题提供 `puzzle.prompt / hint`，结局提供 `outcome: failure | complete`。
+节点 `kind` 为 `title / dialogue / investigation / evidence / choice / puzzle / ending`。`text / location / time / speaker / progress` 描述叙事；`scene.background` 引用本地场景，`portrait` 使用src/game/characters.ts注册的十五个人物ID，`expression`选择该角色实际具有的表情或现场版本。`presence`为scene（现场）、radio（远程通讯卡）、archive（2019旧档照片），默认现场；验证器拒绝未知人物、不可用表情或无人物的展示标记。`scene.hotspots` 关联同节点的动作 ID，坐标为场景百分比；文档、题字和调查目标也由节点声明。谜题提供 `puzzle.prompt / hint`，结局提供 `outcome: failure | complete`。
 
 动作通过 `id / label / next` 声明跳转。`collect` 在确认时收集证据，观察本身不收集；`hidesWhenCollected` 隐藏已调查入口，`requiresEvidence` 按具体集合解锁。`resetEvidence` 用于本章重开。节点的 `requiresEvidence / excludesEvidence` 同样约束恢复和跳转状态。标准结局必须要求所有 `requiredEvidence`，序章的两条额外记录不替代三条核心记录。
 
@@ -44,7 +44,7 @@ npm test
 npm run build
 ```
 
-纯逻辑测试通过库存状态穷举检查引用、门槛、热点、可达性、无死路和九章通关；发行内容测试检查节点数量、正文规模、失败结局、完整结局以及本地资产引用。存档测试覆盖顺序证明、四槽隔离、只读迁移、损坏、配额失败和设置范围。
+纯逻辑测试通过库存状态穷举检查引用、门槛、热点、可达性、无死路和十章通关；发行内容测试检查节点数量、正文规模、失败结局、完整结局以及本地资产引用。存档测试覆盖顺序证明、四槽隔离、只读迁移、损坏、配额失败和设置范围。
 
 `tests/release-browser.py` 通过真实界面检查整个战役、菜单、存档、设置、输入、移动布局和生产离线缓存。本地缺少中文字体时，可用CIRCUIT_QA_FONT_DIR指向@fontsource-variable/noto-serif-sc目录，执行相同的严格点击和短屏检查；这些字体不会加入产品。添加新章节时，应保持图与内容检查，并增加真实通关覆盖。
 

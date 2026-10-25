@@ -2,8 +2,8 @@ import type { Chapter, StoryAction, StoryNode } from '../types';
 
 const first = ['v05-loan', 'v05-session', 'v05-return'] as const;
 const all = [...first, 'v05-origin', 'v05-handover'] as const;
-const office = { background: '/art/property-office.webp' };
-const room = { background: '/art/receiving-room.webp' };
+const office = { background: '/art/archive-office.webp' };
+const room = { background: '/art/archive-office.webp' };
 const van = { background: '/art/repair-van.webp' };
 const act = (label: string, next: string, extra: Partial<StoryAction> = {}): StoryAction => ({ id: next, label, next, ...extra });
 const node = (text: string, progress: number, next: string, extra: Partial<StoryNode> = {}): StoryNode => ({
@@ -25,7 +25,7 @@ export const signoff: Chapter = {
   },
   nodes: {
     dispatch: node('我睡醒时，手机压在枕头下面，调阅回复已经来了。\n林岚把下午的协作安排发进当班群：城北保管室反映旧终端断开后指示灯仍亮，产权方在场，先核供电边界。借用附件也已获准开柜。\n季宁在车边等我，手里两杯豆浆，都没插吸管。', 2, 'drive', { scene: van, location: '城区抢修班 · 出车登记', time: '次日 · 13:40', portrait: 'lin', presence: 'radio', speaker: '林岚', excludesEvidence: all }),
-    drive: node('她递来一杯，先让我看盖上的字。\n“这杯没糖，没写师傅专用。”\n我拿走有糖的。她把另一杯拎回去，翻开昨夜那张调阅单，圈住外借附件四个字。\n车开到城北时，雨已经停了。旧台子还在保管室，办事的窗口早搬去了街对面。', 4, 'boundary', { scene: van, portrait: 'ji', speaker: '季宁', excludesEvidence: all }),
+    drive: node('她递来一杯，先让我看盖上的字。\n“甜的在右边，这杯归我。”\n我拿走有糖的。她把另一杯拎回去，翻开昨夜那张调阅单，圈住外借附件四个字。\n车开到城北时，雨已经停了。旧台子还在保管室，办事的窗口早搬去了街对面。', 4, 'boundary', { scene: van, portrait: 'ji', speaker: '季宁', excludesEvidence: all }),
     boundary: node('管理方、物业和通信人员都到了，桌上分开摆着三本登记。陈伯带来的原联装在自己的文件袋里，没有先塞进旧册。\n产权方核出指示灯由内置电池供电；外接供电正常，充电部分另交设备维护。\n我签完获准范围内的复核，才坐到调阅桌旁。没有谁因为那盏灯，又把旧站写成停电。', 7, 'borrower', { portrait: 'manager', speaker: '管理方人员', excludesEvidence: all }),
     borrower: node('外借页在装订缝里，管理方垫了块透明板，终于把折进去的半行露出来。借用单位是新苑物业，代领栏写罗禾。\n她把自己的那联拿出来，手指停在名字上。\n“九月底借的。只搬过一次，下午就还了。你们问三十二号，我真不知道它是这台。”\n旧登记写的品名是临时语音终端。', 10, 'firstHub', { portrait: 'luo', speaker: '罗禾', expression: 'wary', excludesEvidence: all }),
     firstHub: node('罗禾的名字、夜间导出和陈家的旧号，各有原件。季宁把豆浆移去窗台，免得又弄湿一张。\n保管员翻开柜里的附件，通信人员准备好获准查看的副本。\n得先查她借走了什么、机器后来做了什么，再看那张退号联究竟退的是哪件事。', 13, 'compare', { kind: 'investigation', objective: { title: '核对借用、任务与原号', detail: '取得外借原页、原任务记录和陈家的后续领取证明。姓名相同、声音相同，都不能省掉其中一步。' }, actions: [act('核外借与归还原联', 'loan', { hidesWhenCollected: 'v05-loan' }), act('查原导出任务与输入块', 'session', { hidesWhenCollected: 'v05-session' }), act('核二一八号后续去向', 'returnPaper', { hidesWhenCollected: 'v05-return' }), act('核对三份记录', 'compare', { requiresEvidence: first })], scene: { ...office, hotspots: [{ id: 'loan', actionId: 'loan', label: '外借附件', x: 26, y: 48 }, { id: 'session', actionId: 'session', label: '原任务', x: 52, y: 43 }, { id: 'returnPaper', actionId: 'returnPaper', label: '退号原联', x: 75, y: 53 }] } }),

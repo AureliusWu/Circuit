@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "project": "Circuit",
-  "sourceCommit": "d93d2ebf0591fc1dae5764636cb416666390912c",
+  "sourceCommit": "be2042231ead12e3f9d927a8aa8f7be2c22cdc17",
   "sourceFiles": [
     {
       "path": "src/story/engine.ts",
@@ -49,7 +49,7 @@
     },
     {
       "path": "src/story/chapters/signoff.ts",
-      "sha256": "1a2e45b8167d3ef41abc03dbeb34a2be654ede6f7556a6bb993f76cffe9c25dc"
+      "sha256": "fcd3682262e6572271fe0f302eab32055d2b58b3583d570ba95990ce89b5e411"
     },
     {
       "path": "src/game/fullMedia.ts",
@@ -84,7 +84,7 @@
       "sha256": "a98317633b0bd2b854a05c40e6872ca49cf0abad19ad083645dd65e2cb115bbe"
     }
   ],
-  "semanticSha256": "fdb9970f14efe646c101fccb111bf55204cecbd92fd86f15cca94e39d7f9e9cc",
+  "semanticSha256": "c48619cf03745f46b3c112f45d033e377d1c1132265b27872df02dd23370e718",
   "scope": {
     "allBranches": true,
     "writtenDialogue": true,
@@ -9423,16 +9423,16 @@
       "lineId": "signoff--drive--q01--01",
       "lineIndex": 0,
       "speaker": "ji",
-      "text": "这杯没糖，没写师傅专用。",
+      "text": "甜的在右边，这杯归我。",
       "nodeId": "drive",
       "start": 17,
-      "end": 29,
+      "end": 28,
       "quoteIndex": 0,
       "actorId": "ji",
       "voice": "Vivian",
       "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
-      "seed": 1909184399,
-      "textSha256": "0c690ac79fd39a143253cb9759a87f923a6c9729c8dc2206ad96105f36637a86",
+      "seed": 814298354,
+      "textSha256": "7814b272c45c79e79f4c5a8c191e8b65596661e4d1837b0401e0002133f2da56",
       "medium": "spoken"
     },
     {

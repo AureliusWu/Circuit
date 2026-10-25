@@ -71,6 +71,19 @@
       "id": "five-tickets",
       "output": "public/art/cg-five-tickets.webp",
       "sha256": "761537d6bee31260a1bd759c7598607a28088516583023fff45e56babafe8790"
+    },
+    {
+      "kind": "background",
+      "width": 1672,
+      "height": 941,
+      "path": "public/art/archive-office.webp",
+      "bytes": 304132,
+      "sha256": "ab2302b20a797753dec0aaf2f9e662b6198d310370aa2220b1c7bba09e79ef79",
+      "id": "archive-office",
+      "output": "public/art/archive-office.webp",
+      "source": "assets_source/backgrounds/signoff-20261025/archive-office.png",
+      "sourceSha256": "a04f169dd543d9d325106530b2912410c35b0997997cf64b27a6a675333a6d73",
+      "prompt": "docs/prompts/SIGNOFF-20261025.md"
     }
   ],
   "humanVisualApproval": false,

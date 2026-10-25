@@ -1,10 +1,10 @@
 {
   "schema": 1,
   "project": "Circuit",
-  "batch": "20261025-signoff-complete-audit-dependencies",
+  "batch": "20261025-signoff-final-cup-line-retake",
   "count": 414,
-  "semanticSha256": "fdb9970f14efe646c101fccb111bf55204cecbd92fd86f15cca94e39d7f9e9cc",
-  "attemptOffset": 36,
+  "semanticSha256": "c48619cf03745f46b3c112f45d033e377d1c1132265b27872df02dd23370e718",
+  "attemptOffset": 39,
   "reuse": "byte-verified accepted takes only",
   "humanListening": false,
   "sourceArchive": "assets_source/voice/continued-20261020",

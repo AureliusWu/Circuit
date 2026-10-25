@@ -1,0 +1,94 @@
+{
+  "schema": 1,
+  "date": "2026-10-25",
+  "project": "Circuit",
+  "type": "调查、证据与推理 AVG / 悬疑文字冒险",
+  "version": "1.9.0",
+  "runtimeCommit": "a6d8ad1f8aa862a386ef6b59fa928ba080d99507",
+  "buildRun": 40148774731,
+  "buildConclusion": "success",
+  "publicPwaRun": 40148774693,
+  "publicPwaConclusion": "success",
+  "browserSummary": "发布 CI 的十章全战役、24 项阅读检查、15 项语音检查、应声 / 检索 / 来访 / 取号、4 组原曲场景及 6 项子目录离线更新均通过",
+  "nativeSummary": "NSIS 实际安装、v1.9.0 启动、自动保存 / 历史 / 帮助、关闭重开恢复、正常退出和卸载通过；临时 WebView2 进程与 profile 清理通过",
+  "publicReadback": {
+    "schema": 1,
+    "checkedAt": 1792890415.2499983,
+    "repo": "Circuit",
+    "version": "v1.9.0",
+    "runtimeCommit": "a6d8ad1f8aa862a386ef6b59fa928ba080d99507",
+    "releaseUrl": "https://github.com/AureliusWu/Circuit/releases/tag/v1.9.0",
+    "publicAssets": [
+      {
+        "name": "circuit-web-1.9.0.zip",
+        "size": 25296052,
+        "sha256": "0b23d5019afe285f723e06bbc1d060e83f196d1833d9dea06659186666238a12",
+        "githubDigestMatches": true,
+        "zipCrcPassed": true,
+        "files": 485,
+        "forbiddenDevelopmentFiles": []
+      },
+      {
+        "name": "circuit-web-1.9.0.zip.sha256",
+        "size": 88,
+        "sha256": "c193923780086b90d6aeacf43d8c0217d177b2ed1bafd92c53760c35a6120b10",
+        "githubDigestMatches": true
+      },
+      {
+        "name": "Circuit_1.9.0_x64-setup.exe",
+        "size": 26893079,
+        "sha256": "3a2126d4bea5bf8307c62222ec320c17d3fd8d89cb3e00be9e6231ee36d719bd",
+        "githubDigestMatches": true
+      },
+      {
+        "name": "Circuit_1.9.0_x64-setup.exe.sha256",
+        "size": 94,
+        "sha256": "76256d36f16283af9ff1e45c7f9b56e467c06b5cb02869507947adcc9f9b7ac9",
+        "githubDigestMatches": true
+      },
+      {
+        "name": "release.json",
+        "size": 592,
+        "sha256": "07097225c3fcec386d3e3daf71e9e5de8f2f8d91eed105e195a253ed1fee2145",
+        "githubDigestMatches": true
+      },
+      {
+        "name": "SHA256SUMS.txt",
+        "size": 544,
+        "sha256": "51456bee3148dec1be56e8e403c0cc3c521f93f9db6a6afa4a4268a8c2e16307",
+        "githubDigestMatches": true
+      },
+      {
+        "name": "windows-runtime.json",
+        "size": 1890,
+        "sha256": "3bb3419d0f610ca4b87f4b46a79641f71dcb8c2bbb0409a65f934b7c212696ac",
+        "githubDigestMatches": true
+      }
+    ],
+    "checksumEntries": {
+      "circuit-web-1.9.0.zip": true,
+      "Circuit_1.9.0_x64-setup.exe": true,
+      "Circuit_1.9.0_x64-setup.exe.sha256": true,
+      "circuit-web-1.9.0.zip.sha256": true,
+      "release.json": true,
+      "windows-runtime.json": true
+    },
+    "status": "passed"
+  },
+  "sameOrigin": {
+    "status": "passed",
+    "run": 40148998570,
+    "attempt": 2,
+    "expectedVersions": {
+      "Circuit": "1.9.0",
+      "NetLove": "1.1.1",
+      "Healing": "1.5.2",
+      "Rain": "1.7.0"
+    },
+    "totalCachedFiles": 1257,
+    "pageErrors": []
+  },
+  "finalWorkAccepted": false,
+  "humanListeningClaimed": false,
+  "remaining": "P1：第二部完整叙事收束及相应章节内容。P2：57 项录音线索、音乐 / 音效听感和全章演出审读。P3：普通设备 / DPI 与实际时长。本轮没有临时改写结局来冒充原设计已完成。"
+}

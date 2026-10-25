@@ -1,0 +1,14 @@
+{
+  "source": "https://github.com/google/fonts/blob/main/ofl/notosanssc/NotoSansSC%5Bwght%5D.ttf",
+  "sourceSha256": "a3041811a78c361b1de50f953c805e0244951c21c5bd412f7232ef0d899af0da",
+  "output": "public/fonts/circuit-sans.woff2",
+  "outputSha256": "bdc9c345d2f924985f6923c22fd0dcdb86e4102b46b9f5a305ef98ae28e86a7b",
+  "bytes": 186588,
+  "license": "public/licenses/NotoSansSC-OFL.txt",
+  "scope": "400 weight; current player UI and story coverage; original source digest verified; license unchanged",
+  "date": "2026-10-25",
+  "restoredGlyphs": "创纯",
+  "failedRun": 40147451802,
+  "failedCommit": "46e75e97bfa1ca107b7d392d8c924b4a165618d4",
+  "check": "python scripts/subset-font.py --check"
+}

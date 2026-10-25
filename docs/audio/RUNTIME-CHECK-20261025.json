@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-25",
+  "method": "current runtime bytes, complete SoundFile decode, finite samples, peak and loop boundary; no human listening claimed",
+  "tracks": [
+    {
+      "id": "circuit-thirteen",
+      "runtime": "public/audio/bgm/circuit-thirteen.ogg",
+      "sha256": "eff0baed3881c254bf7709d9112d52a230795c690ddb3a10a3ae4bd9c6d56f8a",
+      "frames": 5421184,
+      "sampleRate": 48000,
+      "channels": 2,
+      "seconds": 112.94133333333333,
+      "finite": true,
+      "samplePeakDbfs": -7.9235005378723145,
+      "loopBoundaryDelta": 0.006387077271938324
+    },
+    {
+      "id": "circuit-nightshift",
+      "runtime": "public/audio/bgm/circuit-nightshift.ogg",
+      "sha256": "85b6cf4aaeb7996801ac0659da39c9b40cff9f143886458771951802c9017f83",
+      "frames": 4388544,
+      "sampleRate": 48000,
+      "channels": 2,
+      "seconds": 91.428,
+      "finite": true,
+      "samplePeakDbfs": -7.5004191398620605,
+      "loopBoundaryDelta": 0.003325052559375763
+    }
+  ]
+}

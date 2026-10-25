@@ -1,0 +1,58 @@
+{
+  "status": "passed",
+  "scenarios": [
+    {
+      "track": "circuit-thirteen",
+      "chapter": "thirteen-households",
+      "viewport": [
+        1280,
+        720
+      ],
+      "played": true,
+      "panelPauseResume": true,
+      "inPanelGestureStaysPaused": true,
+      "offlinePlayback": true,
+      "saveBytesPreserved": true
+    },
+    {
+      "track": "circuit-nightshift",
+      "chapter": "backfeed",
+      "viewport": [
+        1280,
+        720
+      ],
+      "played": true,
+      "panelPauseResume": true,
+      "inPanelGestureStaysPaused": true,
+      "offlinePlayback": true,
+      "saveBytesPreserved": true
+    },
+    {
+      "track": "circuit-thirteen",
+      "chapter": "thirteen-households",
+      "viewport": [
+        412,
+        915
+      ],
+      "played": true,
+      "panelPauseResume": true,
+      "inPanelGestureStaysPaused": true,
+      "offlinePlayback": true,
+      "saveBytesPreserved": true
+    },
+    {
+      "track": "circuit-nightshift",
+      "chapter": "backfeed",
+      "viewport": [
+        412,
+        915
+      ],
+      "played": true,
+      "panelPauseResume": true,
+      "inPanelGestureStaysPaused": true,
+      "offlinePlayback": true,
+      "saveBytesPreserved": true
+    }
+  ],
+  "pageErrors": []
+}

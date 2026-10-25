@@ -15,6 +15,7 @@ import {
 import { MAX_HISTORY_ENTRIES, type SaveStorage } from './game/saves';
 import { loadPreferences, savePreferences, type Preferences } from './game/preferences';
 import { CircuitAudio } from './game/audio';
+import { sceneMusicFor } from './game/score';
 import { RecordedAudio, voiceBlocksAuto, type VoiceState } from './game/recordedAudio';
 import { SCENE_EFFECTS, voicesFor } from './game/mediaCatalog';
 import { useReading } from './game/reading';
@@ -102,7 +103,7 @@ function App() {
     return () => document.removeEventListener('visibilitychange', onVisibility);
   }, []);
   useEffect(() => {
-    void audio.current?.configure(preferences, started && pageVisible && !panel, voiceState.status === 'playing', state.chapterId === 'tickets' ? `${import.meta.env.BASE_URL}audio/bgm/ticket-window.ogg` : undefined);
+    void audio.current?.configure(preferences, started && pageVisible && !panel, voiceState.status === 'playing', asset(sceneMusicFor(state.chapterId)));
     recorded.current?.configure(preferences, started && !panel, started && pageVisible, panel === 'history' || panel === 'evidence');
   }, [preferences, started, pageVisible, panel, voiceState.status, state.chapterId]);
   useEffect(() => {
@@ -125,7 +126,7 @@ function App() {
     if (!audio.current) {
       try { audio.current = new CircuitAudio(); } catch { return; }
     }
-    void audio.current.configure(preferences, true, false, state.chapterId === 'tickets' ? `${import.meta.env.BASE_URL}audio/bgm/ticket-window.ogg` : undefined);
+    void audio.current.configure(preferences, true, false, asset(sceneMusicFor(state.chapterId)));
   };
   const commit = useCallback((next: CampaignSession) => {
     const completed = completeChapter(next);

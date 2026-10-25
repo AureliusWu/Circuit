@@ -50,6 +50,7 @@ jobs:
           python tests/history-search-browser.py http://127.0.0.1:4173
           python tests/visitors-browser.py http://127.0.0.1:4173
           python tests/tickets-browser.py http://127.0.0.1:4173
+          python tests/original-music-browser.py http://127.0.0.1:4173
       - name: PWA update, failure retry and subdirectory regression
         run: |
           CIRCUIT_BASE_PATH=/Circuit/ npm run build

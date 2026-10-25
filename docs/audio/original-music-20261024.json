@@ -1,0 +1,122 @@
+{
+  "schema": 1,
+  "project": "Circuit",
+  "version": "1.9.0",
+  "date": "2026-10-24",
+  "stage": "local-runtime-verified",
+  "baselineCommit": "6a0841090443d9fc874b05fb9e79fbdb2cea3fc4",
+  "soundfont": {
+    "version": "2.0.3",
+    "author": "S. Christian Collins",
+    "source": "https://github.com/mrbumpy409/GeneralUser-GS",
+    "commit": "684543d5e5efaef08d02be50dcda8d552478fa60",
+    "soundfontSha256": "9575028c7a1f589f5770fccc8cff2734566af40cd26ed836944e9a5152688cfe"
+  },
+  "soundfontLicense": "public/licenses/GeneralUser-GS-LICENSE.txt",
+  "tracks": [
+    {
+      "id": "circuit-thirteen",
+      "title": "十三号回声",
+      "vocals": false,
+      "bpm": 68,
+      "key": "D minor",
+      "instruments": [
+        "钢片琴",
+        "马林巴",
+        "低弦乐",
+        "低音提琴",
+        "管钟"
+      ],
+      "loopFrames": 5421184,
+      "loopSampleRate": 48000,
+      "loopDurationSeconds": 112.941333,
+      "loopEntireFile": true,
+      "runtime": "public/audio/bgm/circuit-thirteen.ogg",
+      "sha256": "eff0baed3881c254bf7709d9112d52a230795c690ddb3a10a3ae4bd9c6d56f8a",
+      "bindings": [
+        "thirteen-households",
+        "seventh-night"
+      ],
+      "bindingRegistry": "src/game/score.ts",
+      "score": "assets_source/music/original-20261024/scores/circuit-thirteen.json",
+      "midi": "assets_source/music/original-20261024/scores/circuit-thirteen.mid",
+      "quality": {
+        "path": "Circuit/loops/circuit-thirteen_loop.ogg",
+        "bytes": 1735328,
+        "sha256": "eff0baed3881c254bf7709d9112d52a230795c690ddb3a10a3ae4bd9c6d56f8a",
+        "sampleRate": 48000,
+        "channels": 2,
+        "frames": 5421184,
+        "seconds": 112.941333,
+        "finite": true,
+        "samplePeakDbfs": -7.9235,
+        "rmsDbfs": -22.5926,
+        "integratedLufs": -21.0,
+        "truePeakDbtp": -7.92,
+        "loudnessRangeLu": 3.8,
+        "loopBoundaryDelta": 0.006387069821357727,
+        "humanListening": "pending",
+        "originalRenderPath": "loops/07_Circuit_thirteen_loop.ogg"
+      },
+      "humanListening": "pending"
+    },
+    {
+      "id": "circuit-nightshift",
+      "title": "回路未眠",
+      "vocals": false,
+      "bpm": 84,
+      "key": "E minor",
+      "instruments": [
+        "低音钢琴",
+        "拨奏弦乐",
+        "弦乐组",
+        "低音提琴",
+        "马林巴",
+        "低鼓"
+      ],
+      "loopFrames": 4388544,
+      "loopSampleRate": 48000,
+      "loopDurationSeconds": 91.428,
+      "loopEntireFile": true,
+      "runtime": "public/audio/bgm/circuit-nightshift.ogg",
+      "sha256": "85b6cf4aaeb7996801ac0659da39c9b40cff9f143886458771951802c9017f83",
+      "bindings": [
+        "backfeed",
+        "everlight",
+        "neutral",
+        "closure",
+        "return-visit",
+        "answering",
+        "visitors"
+      ],
+      "bindingRegistry": "src/game/score.ts",
+      "score": "assets_source/music/original-20261024/scores/circuit-nightshift.json",
+      "midi": "assets_source/music/original-20261024/scores/circuit-nightshift.mid",
+      "quality": {
+        "path": "Circuit/loops/circuit-nightshift_loop.ogg",
+        "bytes": 1424626,
+        "sha256": "85b6cf4aaeb7996801ac0659da39c9b40cff9f143886458771951802c9017f83",
+        "sampleRate": 48000,
+        "channels": 2,
+        "frames": 4388544,
+        "seconds": 91.428,
+        "finite": true,
+        "samplePeakDbfs": -7.5004,
+        "rmsDbfs": -23.0237,
+        "integratedLufs": -21.02,
+        "truePeakDbtp": -7.49,
+        "loudnessRangeLu": 3.6,
+        "loopBoundaryDelta": 0.003325045108795166,
+        "humanListening": "pending",
+        "originalRenderPath": "loops/08_Circuit_nightshift_loop.ogg"
+      },
+      "humanListening": "pending"
+    }
+  ],
+  "pending": [
+    "actual Windows package validation",
+    "public PWA and release validation",
+    "human listening and physical devices"
+  ],
+  "lastValidatedOn": "2026-10-25"
+}

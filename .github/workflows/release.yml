@@ -49,6 +49,7 @@ jobs:
           python tests/history-search-browser.py http://127.0.0.1:4173
           python tests/visitors-browser.py http://127.0.0.1:4173
           python tests/tickets-browser.py http://127.0.0.1:4173
+          python tests/original-music-browser.py http://127.0.0.1:4173
       - name: Verify subdirectory offline install and safe updates
         run: |
           export CIRCUIT_CHROMIUM="$(python -c 'from playwright.sync_api import sync_playwright; p=sync_playwright().start(); print(p.chromium.executable_path); p.stop()')"

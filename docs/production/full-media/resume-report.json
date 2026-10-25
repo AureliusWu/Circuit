@@ -1,11 +1,11 @@
 {
   "schema": 1,
   "project": "Circuit",
-  "sourceRun": 40163261437,
-  "semanticSha256": "fdb9970f14efe646c101fccb111bf55204cecbd92fd86f15cca94e39d7f9e9cc",
+  "sourceRun": 40166197386,
+  "semanticSha256": "c48619cf03745f46b3c112f45d033e377d1c1132265b27872df02dd23370e718",
   "target": 414,
-  "accepted": 404,
-  "pendingCount": 10,
+  "accepted": 405,
+  "pendingCount": 9,
   "pending": [
     {
       "id": "circuit-return-visit--echo--extra1--01",
@@ -61,52 +61,6 @@
       "text": "先别替它确认。",
       "status": "replay_reference",
       "asr": null,
-      "error": null
-    },
-    {
-      "id": "circuit-signoff--drive--q01--01",
-      "text": "这杯没糖，没写师傅专用。",
-      "status": "needs_review",
-      "asr": {
-        "transcript": "这杯梅糖 梅写师傅专用",
-        "cer": 0.2,
-        "polarityCountsMatch": false,
-        "passed": false,
-        "expectedSpokenText": "这杯没糖，没写师傅专用。",
-        "phoneticReview": {
-          "method": "exact_all_syllables_tones_and_explicit_numeric_values_v2_pypinyin_0.53.0",
-          "expected": "这杯没糖没写师傅专用",
-          "observed": "这杯梅糖梅写师傅专用",
-          "expectedSyllables": [
-            "zhe4",
-            "bei1",
-            "mei2",
-            "tang2",
-            "mei2",
-            "xie3",
-            "shi1",
-            "fu4",
-            "zhuan1",
-            "yong4"
-          ],
-          "observedSyllables": [
-            "zhe4",
-            "bei1",
-            "mei2",
-            "tang2",
-            "mei2",
-            "xie3",
-            "shi1",
-            "fu4",
-            "zhuan1",
-            "yong4"
-          ],
-          "sameLength": true,
-          "polarityCountsMatch": false,
-          "passed": false,
-          "humanListening": false
-        }
-      },
       "error": null
     },
     {

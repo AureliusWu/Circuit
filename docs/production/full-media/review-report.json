@@ -2,58 +2,10 @@
   "schema": 1,
   "project": "Circuit",
   "target": 414,
-  "accepted": 413,
-  "pendingCount": 1,
-  "pending": [
-    {
-      "id": "circuit-signoff--drive--q01--01",
-      "text": "这杯没糖，没写师傅专用。",
-      "status": "needs_review",
-      "asr": {
-        "transcript": "这杯梅糖梅血师傅专用",
-        "cer": 0.3,
-        "polarityCountsMatch": false,
-        "passed": false,
-        "phoneticReview": {
-          "method": "exact_all_syllables_tones_and_explicit_numeric_values_v2_pypinyin_0.53.0",
-          "expected": "这杯没糖没写师傅专用",
-          "observed": "这杯梅糖梅血师傅专用",
-          "expectedSyllables": [
-            "zhe4",
-            "bei1",
-            "mei2",
-            "tang2",
-            "mei2",
-            "xie3",
-            "shi1",
-            "fu4",
-            "zhuan1",
-            "yong4"
-          ],
-          "observedSyllables": [
-            "zhe4",
-            "bei1",
-            "mei2",
-            "tang2",
-            "mei2",
-            "xue4",
-            "shi1",
-            "fu4",
-            "zhuan1",
-            "yong4"
-          ],
-          "sameLength": true,
-          "polarityCountsMatch": false,
-          "passed": false,
-          "humanListening": false
-        },
-        "model": "Systran/faster-whisper-large-v3",
-        "revision": "edaa852ec7e145841d8ffdb056a99866b5f0a478",
-        "audioSha256": "d13920be39bc3a7d69a268524252b5cb07ce7f86510dafa999b863f4debf7224"
-      }
-    }
-  ],
-  "semanticSha256": "fdb9970f14efe646c101fccb111bf55204cecbd92fd86f15cca94e39d7f9e9cc",
+  "accepted": 414,
+  "pendingCount": 0,
+  "pending": [],
+  "semanticSha256": "c48619cf03745f46b3c112f45d033e377d1c1132265b27872df02dd23370e718",
   "archive": "assets_source/voice/continued-20261020",
   "reviewModel": {
     "id": "Systran/faster-whisper-large-v3",

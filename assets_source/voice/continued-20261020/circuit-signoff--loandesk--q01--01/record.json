@@ -1,0 +1,60 @@
+{
+  "id": "circuit-signoff--loandesk--q01--01",
+  "sceneId": "signoff",
+  "lineId": "signoff--loanDesk--q01--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "借走和还回来都得留。",
+  "nodeId": "loanDesk",
+  "start": 48,
+  "end": 58,
+  "quoteIndex": 0,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1085415835,
+  "textSha256": "2bb8d5daf9790bf70be065d0d4014dec7126ad018ce7f44a0ec5a160d82b01a9",
+  "medium": "spoken",
+  "requestSha256": "5143fb2b193a17733b7c94f5e612ebf970637bcbe733d385ef57f2ab68cca29b",
+  "attempt": 36,
+  "status": "accepted",
+  "asr": {
+    "transcript": "借走和还回来都得留",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true,
+    "expectedSpokenText": "借走和还回来都得留。"
+  },
+  "duration": 2.24,
+  "wallSeconds": 120.072,
+  "loudness": {
+    "input_i": "-22.20",
+    "input_tp": "-5.84",
+    "input_lra": "0.00",
+    "input_thresh": "-32.20",
+    "output_i": "-20.00",
+    "output_tp": "-3.64",
+    "output_lra": "0.00",
+    "output_thresh": "-30.00",
+    "normalization_type": "linear",
+    "target_offset": "-0.00"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-signoff--loandesk--q01--01/raw.wav",
+      "bytes": 215120,
+      "sha256": "50a0d26b7eebd8302f94cb6f88104e20d1b3703b8fa67706606a57d5eafe6f47"
+    },
+    "master": {
+      "path": "circuit-signoff--loandesk--q01--01/master.wav",
+      "bytes": 107598,
+      "sha256": "c4f3941e2aea4b95ad456ac08e426ae8fb0f9e7619fb02d75154334c2e215b34"
+    },
+    "runtime": {
+      "path": "circuit-signoff--loandesk--q01--01/runtime.ogg",
+      "bytes": 19537,
+      "sha256": "8b8f9f2c3e3b9c965f9bd3bc7d33930764d685a50a38dfe088348d13b17559f9"
+    }
+  },
+  "recoveredFromRun": 40163261437
+}

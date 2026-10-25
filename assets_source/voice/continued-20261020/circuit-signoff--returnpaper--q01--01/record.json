@@ -1,0 +1,60 @@
+{
+  "id": "circuit-signoff--returnpaper--q01--01",
+  "sceneId": "signoff",
+  "lineId": "signoff--returnPaper--q01--01",
+  "lineIndex": 0,
+  "speaker": "chen",
+  "text": "我妈那回没办完，不是没回家。",
+  "nodeId": "returnPaper",
+  "start": 38,
+  "end": 52,
+  "quoteIndex": 0,
+  "actorId": "chen",
+  "voice": "Uncle_Fu",
+  "instruct": "六十岁男性，普通话，语速慢，声音低哑，像看门的老人轻声说话，口语平实。 只朗读给定台词，不添加词语或音效。",
+  "seed": 26845990,
+  "textSha256": "4410309343cc3dda54ccafabc8618bbcddc079df36f36050568a01af2f3bbb91",
+  "medium": "spoken",
+  "requestSha256": "f2fab2c05de6e1577300e309e888ce0e102b8153963afc6f3a229f68d9fdfe5d",
+  "attempt": 36,
+  "status": "accepted",
+  "asr": {
+    "transcript": "我妈那回没半晚不是没回家",
+    "cer": 0.166667,
+    "polarityCountsMatch": true,
+    "passed": true,
+    "expectedSpokenText": "我妈那回没办完，不是没回家。"
+  },
+  "duration": 2.8,
+  "wallSeconds": 12.515,
+  "loudness": {
+    "input_i": "-20.45",
+    "input_tp": "-3.30",
+    "input_lra": "0.00",
+    "input_thresh": "-30.45",
+    "output_i": "-20.01",
+    "output_tp": "-2.85",
+    "output_lra": "0.00",
+    "output_thresh": "-30.01",
+    "normalization_type": "linear",
+    "target_offset": "0.01"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-signoff--returnpaper--q01--01/raw.wav",
+      "bytes": 268880,
+      "sha256": "5f7798d78d5cca58c46100390377376c97f0584527487682d8d2643209fd298e"
+    },
+    "master": {
+      "path": "circuit-signoff--returnpaper--q01--01/master.wav",
+      "bytes": 134478,
+      "sha256": "4d796e24af6fa3738f680d5aa2ddb0c7350d724f181d9f8e3f6cee3586d4a472"
+    },
+    "runtime": {
+      "path": "circuit-signoff--returnpaper--q01--01/runtime.ogg",
+      "bytes": 24148,
+      "sha256": "7fddd8ad476f9f71b1f74ee8f3fe907817b59045c54974ae94abe89f7e6d1582"
+    }
+  },
+  "recoveredFromRun": 40163261437
+}

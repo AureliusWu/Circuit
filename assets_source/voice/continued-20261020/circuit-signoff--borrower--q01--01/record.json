@@ -1,0 +1,60 @@
+{
+  "id": "circuit-signoff--borrower--q01--01",
+  "sceneId": "signoff",
+  "lineId": "signoff--borrower--q01--01",
+  "lineIndex": 0,
+  "speaker": "luo",
+  "text": "九月底借的。只搬过一次，下午就还了。你们问三十二号，我真不知道它是这台。",
+  "nodeId": "borrower",
+  "start": 71,
+  "end": 107,
+  "quoteIndex": 0,
+  "actorId": "luo",
+  "voice": "Vivian",
+  "instruct": "二十九岁女性，普通话，声音偏低，夜班值班员谨慎地问话，平静自然，略有迟疑，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1104160729,
+  "textSha256": "63adbf9c7878195adf22a98343a08b771a417d9da96cedf649933813277bcf37",
+  "medium": "spoken",
+  "requestSha256": "dc3bcdf420122d6e5d57af00417f4342f3ff970451e80f047e1ca257cab3ebd7",
+  "attempt": 36,
+  "status": "accepted",
+  "asr": {
+    "transcript": "9月底届的,只搬过一次,下午就还了。你们问32号,我真不知道他是这台。",
+    "cer": 0.193548,
+    "polarityCountsMatch": true,
+    "passed": true,
+    "expectedSpokenText": "九月底借的。只搬过一次，下午就还了。你们问三十二号，我真不知道它是这台。"
+  },
+  "duration": 8.72,
+  "wallSeconds": 37.611,
+  "loudness": {
+    "input_i": "-19.35",
+    "input_tp": "-4.08",
+    "input_lra": "2.80",
+    "input_thresh": "-30.07",
+    "output_i": "-19.36",
+    "output_tp": "-4.61",
+    "output_lra": "2.00",
+    "output_thresh": "-30.18",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.64"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-signoff--borrower--q01--01/raw.wav",
+      "bytes": 837200,
+      "sha256": "f5bbfcf086359f566c18811391e1461ded9aa0e53bb17f2eae65b9bd95b72436"
+    },
+    "master": {
+      "path": "circuit-signoff--borrower--q01--01/master.wav",
+      "bytes": 418638,
+      "sha256": "5d320eb05291b7c7e51d0d7c9a2b319536080da8ded986155a163b5ea03cb0da"
+    },
+    "runtime": {
+      "path": "circuit-signoff--borrower--q01--01/runtime.ogg",
+      "bytes": 63505,
+      "sha256": "262ff19f0a36939544cdaf03c72b89273aa9ebde383f4721223fd096f4059310"
+    }
+  },
+  "recoveredFromRun": 40163261437
+}

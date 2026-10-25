@@ -1,0 +1,60 @@
+{
+  "id": "circuit-signoff--drivehome--q01--01",
+  "sceneId": "signoff",
+  "lineId": "signoff--driveHome--q01--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "师傅，下次自己拿。",
+  "nodeId": "driveHome",
+  "start": 32,
+  "end": 41,
+  "quoteIndex": 0,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1798517560,
+  "textSha256": "7a12624db63b3cedbd415d305f339290a2cd66dd75bda0a87082b135585bed7e",
+  "medium": "spoken",
+  "requestSha256": "fb6ef214b305cd28079cd6ce3a2da0beac4d4928fbee5803010aa4343f2a5fd8",
+  "attempt": 36,
+  "status": "accepted",
+  "asr": {
+    "transcript": "师傅 下次自己拿",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true,
+    "expectedSpokenText": "师傅，下次自己拿。"
+  },
+  "duration": 1.76,
+  "wallSeconds": 91.022,
+  "loudness": {
+    "input_i": "-19.55",
+    "input_tp": "-2.18",
+    "input_lra": "0.00",
+    "input_thresh": "-30.22",
+    "output_i": "-20.02",
+    "output_tp": "-2.63",
+    "output_lra": "0.00",
+    "output_thresh": "-30.68",
+    "normalization_type": "linear",
+    "target_offset": "0.02"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-signoff--drivehome--q01--01/raw.wav",
+      "bytes": 169040,
+      "sha256": "203bad9a8aeb9c56c60cf661093546f48d864bd8a5c8847a41e481969a86249f"
+    },
+    "master": {
+      "path": "circuit-signoff--drivehome--q01--01/master.wav",
+      "bytes": 84558,
+      "sha256": "49f9cc46a54203aa601cd53b13b4d23ed5f2c55a6d54fbac91941a8bcc07300f"
+    },
+    "runtime": {
+      "path": "circuit-signoff--drivehome--q01--01/runtime.ogg",
+      "bytes": 16348,
+      "sha256": "0278f5e8f56e0c0ef326f4474b56811afe1e7e86a79c6b0a141e905fef0bfc8d"
+    }
+  },
+  "recoveredFromRun": 40163261437
+}

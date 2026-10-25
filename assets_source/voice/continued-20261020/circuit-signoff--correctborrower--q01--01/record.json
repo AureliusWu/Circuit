@@ -1,0 +1,60 @@
+{
+  "id": "circuit-signoff--correctborrower--q01--01",
+  "sceneId": "signoff",
+  "lineId": "signoff--correctBorrower--q01--01",
+  "lineIndex": 0,
+  "speaker": "luo",
+  "text": "那台东西不用我再带回去了吧？",
+  "nodeId": "correctBorrower",
+  "start": 56,
+  "end": 70,
+  "quoteIndex": 0,
+  "actorId": "luo",
+  "voice": "Vivian",
+  "instruct": "二十九岁女性，普通话，声音偏低，夜班值班员谨慎地问话，平静自然，略有迟疑，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 296026909,
+  "textSha256": "baa9fcb314208353df88cde0a23d17c168b84613c0dbc95ea330fedefa743667",
+  "medium": "spoken",
+  "requestSha256": "7a6c4afceb506f736b63511b22f100a570b74d3848c2e89babda37a9f4e3a575",
+  "attempt": 36,
+  "status": "accepted",
+  "asr": {
+    "transcript": "那台东西 不用我再带回去了吧",
+    "cer": 0.0,
+    "polarityCountsMatch": true,
+    "passed": true,
+    "expectedSpokenText": "那台东西不用我再带回去了吧？"
+  },
+  "duration": 3.68,
+  "wallSeconds": 179.847,
+  "loudness": {
+    "input_i": "-25.68",
+    "input_tp": "-11.26",
+    "input_lra": "3.60",
+    "input_thresh": "-36.29",
+    "output_i": "-19.58",
+    "output_tp": "-6.44",
+    "output_lra": "0.00",
+    "output_thresh": "-30.30",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.42"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-signoff--correctborrower--q01--01/raw.wav",
+      "bytes": 353360,
+      "sha256": "d1f26815c784dfd7437f4ba6366e4e24355cbff43f04f3a2f9c55dc6d7f7a5f6"
+    },
+    "master": {
+      "path": "circuit-signoff--correctborrower--q01--01/master.wav",
+      "bytes": 176718,
+      "sha256": "2c2c464bed03f59fd33077e45855b0b5429442766db72f6612d0389d566d8e09"
+    },
+    "runtime": {
+      "path": "circuit-signoff--correctborrower--q01--01/runtime.ogg",
+      "bytes": 29352,
+      "sha256": "bed4701b3ce907c2321ce0f64e0f83b5350207895912ebea9fbaedb97ef06ec0"
+    }
+  },
+  "recoveredFromRun": 40163261437
+}

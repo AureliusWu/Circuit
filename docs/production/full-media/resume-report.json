@@ -1,11 +1,11 @@
 {
   "schema": 1,
   "project": "Circuit",
-  "sourceRun": 39595208596,
-  "semanticSha256": "68824bc923500abfaffa5e94195c361feda70c878d95e6218dfb6eaa527e709f",
-  "target": 403,
-  "accepted": 394,
-  "pendingCount": 9,
+  "sourceRun": 40163261437,
+  "semanticSha256": "fdb9970f14efe646c101fccb111bf55204cecbd92fd86f15cca94e39d7f9e9cc",
+  "target": 414,
+  "accepted": 404,
+  "pendingCount": 10,
   "pending": [
     {
       "id": "circuit-return-visit--echo--extra1--01",
@@ -57,43 +57,52 @@
       "error": null
     },
     {
-      "id": "circuit-tickets--firsthub--q01--01",
-      "text": "这次别泡成复写联了。",
+      "id": "circuit-tickets--oldfile--q01--01",
+      "text": "先别替它确认。",
+      "status": "replay_reference",
+      "asr": null,
+      "error": null
+    },
+    {
+      "id": "circuit-signoff--drive--q01--01",
+      "text": "这杯没糖，没写师傅专用。",
       "status": "needs_review",
       "asr": {
-        "transcript": "这次别炮成腹瀉连了",
-        "cer": 0.444444,
-        "polarityCountsMatch": true,
+        "transcript": "这杯梅糖 梅写师傅专用",
+        "cer": 0.2,
+        "polarityCountsMatch": false,
         "passed": false,
-        "expectedSpokenText": "这次别泡成复写联了。",
+        "expectedSpokenText": "这杯没糖，没写师傅专用。",
         "phoneticReview": {
           "method": "exact_all_syllables_tones_and_explicit_numeric_values_v2_pypinyin_0.53.0",
-          "expected": "这次别泡成复写联了",
-          "observed": "这次别炮成腹泻连了",
+          "expected": "这杯没糖没写师傅专用",
+          "observed": "这杯梅糖梅写师傅专用",
           "expectedSyllables": [
             "zhe4",
-            "ci4",
-            "bie2",
-            "pao4",
-            "cheng2",
-            "fu4",
+            "bei1",
+            "mei2",
+            "tang2",
+            "mei2",
             "xie3",
-            "lian2",
-            "le5"
+            "shi1",
+            "fu4",
+            "zhuan1",
+            "yong4"
           ],
           "observedSyllables": [
             "zhe4",
-            "ci4",
-            "bie2",
-            "pao4",
-            "cheng2",
+            "bei1",
+            "mei2",
+            "tang2",
+            "mei2",
+            "xie3",
+            "shi1",
             "fu4",
-            "xie4",
-            "lian2",
-            "le5"
+            "zhuan1",
+            "yong4"
           ],
           "sameLength": true,
-          "polarityCountsMatch": true,
+          "polarityCountsMatch": false,
           "passed": false,
           "humanListening": false
         }
@@ -101,7 +110,7 @@
       "error": null
     },
     {
-      "id": "circuit-tickets--oldfile--q01--01",
+      "id": "circuit-signoff--origin--q01--01",
       "text": "先别替它确认。",
       "status": "replay_reference",
       "asr": null,

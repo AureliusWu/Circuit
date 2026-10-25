@@ -1,0 +1,60 @@
+{
+  "id": "circuit-signoff--offduty--q02--01",
+  "sceneId": "signoff",
+  "lineId": "signoff--offDuty--q02--01",
+  "lineIndex": 0,
+  "speaker": "cheng",
+  "text": "交班。今天的。",
+  "nodeId": "offDuty",
+  "start": 66,
+  "end": 73,
+  "quoteIndex": 1,
+  "actorId": "cheng",
+  "voice": "Dylan",
+  "instruct": "成年男性，普通话，声音沉稳自然，像夜班抢修员正常说话，略带疲惫，语速适中，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1309785473,
+  "textSha256": "fa9d7d47a297001aa23ff582db94d8a9ea6438f1c23d4a7c7a9ef11c270df804",
+  "medium": "spoken",
+  "requestSha256": "6a98100fac36a96e804e1e6a41fc11cca26dbe97569cfea04a426671e25fd6e5",
+  "attempt": 38,
+  "status": "accepted",
+  "asr": {
+    "transcript": "交搬今天的",
+    "cer": 0.2,
+    "polarityCountsMatch": true,
+    "passed": true,
+    "expectedSpokenText": "交班。今天的。"
+  },
+  "duration": 1.84,
+  "wallSeconds": 65.499,
+  "loudness": {
+    "input_i": "-27.38",
+    "input_tp": "-8.66",
+    "input_lra": "0.00",
+    "input_thresh": "-38.29",
+    "output_i": "-20.68",
+    "output_tp": "-2.00",
+    "output_lra": "0.00",
+    "output_thresh": "-31.59",
+    "normalization_type": "linear",
+    "target_offset": "0.68"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-signoff--offduty--q02--01/raw.wav",
+      "bytes": 176720,
+      "sha256": "ac578e1cd5495f6d197e05466ceec8f472b9dd6b56b6ce923769a226f07f06e9"
+    },
+    "master": {
+      "path": "circuit-signoff--offduty--q02--01/master.wav",
+      "bytes": 88398,
+      "sha256": "d662b2dcc48f3d924b6db0885d5bbfb1c1a4952187789eef611c1f1c339242bb"
+    },
+    "runtime": {
+      "path": "circuit-signoff--offduty--q02--01/runtime.ogg",
+      "bytes": 16275,
+      "sha256": "b87737bf1ecf62a8e680cece41f139607def0c247754490fc8aed3f9c1b40828"
+    }
+  },
+  "recoveredFromRun": 40163261437
+}

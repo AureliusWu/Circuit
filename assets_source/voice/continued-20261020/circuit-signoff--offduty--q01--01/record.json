@@ -1,0 +1,60 @@
+{
+  "id": "circuit-signoff--offduty--q01--01",
+  "sceneId": "signoff",
+  "lineId": "signoff--offDuty--q01--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "这回写哪一栏？",
+  "nodeId": "offDuty",
+  "start": 56,
+  "end": 63,
+  "quoteIndex": 0,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 645399207,
+  "textSha256": "80eb94c3b6fda5a8ceeedd3ddab208da88d74f6d33c0aa5a6ec92efa750ed734",
+  "medium": "spoken",
+  "requestSha256": "235acaccb70d6398cbd4e5b32f34953dc3da802ea6e1f77647c5990f655fe3f9",
+  "attempt": 36,
+  "status": "accepted",
+  "asr": {
+    "transcript": "这回写哪一篮",
+    "cer": 0.166667,
+    "polarityCountsMatch": true,
+    "passed": true,
+    "expectedSpokenText": "这回写哪一栏？"
+  },
+  "duration": 1.84,
+  "wallSeconds": 8.927,
+  "loudness": {
+    "input_i": "-19.68",
+    "input_tp": "-5.18",
+    "input_lra": "0.00",
+    "input_thresh": "-29.68",
+    "output_i": "-19.99",
+    "output_tp": "-5.50",
+    "output_lra": "0.00",
+    "output_thresh": "-29.99",
+    "normalization_type": "linear",
+    "target_offset": "-0.01"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-signoff--offduty--q01--01/raw.wav",
+      "bytes": 176720,
+      "sha256": "c7a0d8202ac3a456056812005fbd9adb7dc86d3bff6e9dc01e38a9295066d13e"
+    },
+    "master": {
+      "path": "circuit-signoff--offduty--q01--01/master.wav",
+      "bytes": 88398,
+      "sha256": "2d193f8b395bcbbde61fa64c7db02c2158c5b2d70287a544246c971469ff39e7"
+    },
+    "runtime": {
+      "path": "circuit-signoff--offduty--q01--01/runtime.ogg",
+      "bytes": 16346,
+      "sha256": "def012302a53a742dfee582897be9abd3e1f16d7f631106e2517eb9cede64f16"
+    }
+  },
+  "recoveredFromRun": 40163261437
+}

@@ -1,0 +1,60 @@
+{
+  "id": "circuit-signoff--window--q01--01",
+  "sceneId": "signoff",
+  "lineId": "signoff--window--q01--01",
+  "lineIndex": 0,
+  "speaker": "chen",
+  "text": "我妈那两件东西，早拿回去了。",
+  "nodeId": "window",
+  "start": 32,
+  "end": 46,
+  "quoteIndex": 0,
+  "actorId": "chen",
+  "voice": "Uncle_Fu",
+  "instruct": "六十岁男性，普通话，语速慢，声音低哑，像看门的老人轻声说话，口语平实。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1184942814,
+  "textSha256": "da84f67e5bc358b80db39c8c9ca92f83e296cbdd8524c1581c6d4e19124f2ffe",
+  "medium": "spoken",
+  "requestSha256": "7200db5080dcc0aecda59bbe0e8d83d3207f5fb603cafd29cb74b84f6d0c1221",
+  "attempt": 36,
+  "status": "accepted",
+  "asr": {
+    "transcript": "我妈那两件东西走拿回去了",
+    "cer": 0.083333,
+    "polarityCountsMatch": true,
+    "passed": true,
+    "expectedSpokenText": "我妈那两件东西，早拿回去了。"
+  },
+  "duration": 2.88,
+  "wallSeconds": 152.894,
+  "loudness": {
+    "input_i": "-21.48",
+    "input_tp": "-3.30",
+    "input_lra": "0.00",
+    "input_thresh": "-31.48",
+    "output_i": "-20.18",
+    "output_tp": "-2.00",
+    "output_lra": "0.00",
+    "output_thresh": "-30.18",
+    "normalization_type": "linear",
+    "target_offset": "0.18"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-signoff--window--q01--01/raw.wav",
+      "bytes": 276560,
+      "sha256": "26282690f31c9b32cf1453054b2e557d56e7f7848aba1859e9a086baddf127a6"
+    },
+    "master": {
+      "path": "circuit-signoff--window--q01--01/master.wav",
+      "bytes": 138318,
+      "sha256": "7013f85cad198f7dd609ceb5a0348e94fa337be81b95115f1a5b929d0d96193c"
+    },
+    "runtime": {
+      "path": "circuit-signoff--window--q01--01/runtime.ogg",
+      "bytes": 24998,
+      "sha256": "2e62537213e9642cf8aa0386addd5e06f6d43f98a3e1cbef86481ae272adad05"
+    }
+  },
+  "recoveredFromRun": 40163261437
+}

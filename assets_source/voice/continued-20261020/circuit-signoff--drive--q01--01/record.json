@@ -1,0 +1,274 @@
+{
+  "id": "circuit-signoff--drive--q01--01",
+  "sceneId": "signoff",
+  "lineId": "signoff--drive--q01--01",
+  "lineIndex": 0,
+  "speaker": "ji",
+  "text": "这杯没糖，没写师傅专用。",
+  "nodeId": "drive",
+  "start": 17,
+  "end": 29,
+  "quoteIndex": 0,
+  "actorId": "ji",
+  "voice": "Vivian",
+  "instruct": "年轻女性，普通话，声音清楚轻快，像跟师傅说话，口语自然，不要夸张，不要朗诵。 只朗读给定台词，不添加词语或音效。",
+  "seed": 1909184399,
+  "textSha256": "0c690ac79fd39a143253cb9759a87f923a6c9729c8dc2206ad96105f36637a86",
+  "medium": "spoken",
+  "requestSha256": "dac74432d2d4c69eda79197e9cd2868f8c2153202a1a80d62ad288a5239fd88c",
+  "attempt": 38,
+  "status": "needs_review",
+  "asr": {
+    "transcript": "这杯梅糖梅血师傅专用",
+    "cer": 0.3,
+    "polarityCountsMatch": false,
+    "passed": false,
+    "phoneticReview": {
+      "method": "exact_all_syllables_tones_and_explicit_numeric_values_v2_pypinyin_0.53.0",
+      "expected": "这杯没糖没写师傅专用",
+      "observed": "这杯梅糖梅血师傅专用",
+      "expectedSyllables": [
+        "zhe4",
+        "bei1",
+        "mei2",
+        "tang2",
+        "mei2",
+        "xie3",
+        "shi1",
+        "fu4",
+        "zhuan1",
+        "yong4"
+      ],
+      "observedSyllables": [
+        "zhe4",
+        "bei1",
+        "mei2",
+        "tang2",
+        "mei2",
+        "xue4",
+        "shi1",
+        "fu4",
+        "zhuan1",
+        "yong4"
+      ],
+      "sameLength": true,
+      "polarityCountsMatch": false,
+      "passed": false,
+      "humanListening": false
+    },
+    "model": "Systran/faster-whisper-large-v3",
+    "revision": "edaa852ec7e145841d8ffdb056a99866b5f0a478",
+    "audioSha256": "d13920be39bc3a7d69a268524252b5cb07ce7f86510dafa999b863f4debf7224"
+  },
+  "duration": 3.2,
+  "wallSeconds": 219.722,
+  "loudness": {
+    "input_i": "-21.97",
+    "input_tp": "-7.41",
+    "input_lra": "0.20",
+    "input_thresh": "-31.97",
+    "output_i": "-19.98",
+    "output_tp": "-5.49",
+    "output_lra": "0.00",
+    "output_thresh": "-29.98",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.02"
+  },
+  "files": {
+    "raw": {
+      "path": "circuit-signoff--drive--q01--01/raw.wav",
+      "bytes": 307280,
+      "sha256": "1546c20dddd94f9d40a14ac8ed084409de9682b7219dc727220bf4a25486369d"
+    },
+    "master": {
+      "path": "circuit-signoff--drive--q01--01/master.wav",
+      "bytes": 153678,
+      "sha256": "82f6be93943b7459aab7ee501953acce7df0b409f8c9d3cc2c89e951fc5e2f57"
+    },
+    "runtime": {
+      "path": "circuit-signoff--drive--q01--01/runtime.ogg",
+      "bytes": 26346,
+      "sha256": "d13920be39bc3a7d69a268524252b5cb07ce7f86510dafa999b863f4debf7224"
+    }
+  },
+  "recoveredFromRun": 40163261437,
+  "asrReviewHistory": [
+    {
+      "transcript": "这杯梅糖 梅写师傅专用",
+      "cer": 0.2,
+      "polarityCountsMatch": false,
+      "passed": false,
+      "expectedSpokenText": "这杯没糖，没写师傅专用。",
+      "phoneticReview": {
+        "method": "exact_all_syllables_tones_and_explicit_numeric_values_v2_pypinyin_0.53.0",
+        "expected": "这杯没糖没写师傅专用",
+        "observed": "这杯梅糖梅写师傅专用",
+        "expectedSyllables": [
+          "zhe4",
+          "bei1",
+          "mei2",
+          "tang2",
+          "mei2",
+          "xie3",
+          "shi1",
+          "fu4",
+          "zhuan1",
+          "yong4"
+        ],
+        "observedSyllables": [
+          "zhe4",
+          "bei1",
+          "mei2",
+          "tang2",
+          "mei2",
+          "xie3",
+          "shi1",
+          "fu4",
+          "zhuan1",
+          "yong4"
+        ],
+        "sameLength": true,
+        "polarityCountsMatch": false,
+        "passed": false,
+        "humanListening": false
+      }
+    }
+  ],
+  "independentReviews": [
+    {
+      "transcript": "这杯没糖梅写师傅专用",
+      "cer": 0.1,
+      "polarityCountsMatch": false,
+      "passed": false,
+      "phoneticReview": {
+        "method": "exact_all_syllables_tones_and_explicit_numeric_values_v2_pypinyin_0.53.0",
+        "expected": "这杯没糖没写师傅专用",
+        "observed": "这杯没糖梅写师傅专用",
+        "expectedSyllables": [
+          "zhe4",
+          "bei1",
+          "mei2",
+          "tang2",
+          "mei2",
+          "xie3",
+          "shi1",
+          "fu4",
+          "zhuan1",
+          "yong4"
+        ],
+        "observedSyllables": [
+          "zhe4",
+          "bei1",
+          "mei2",
+          "tang2",
+          "mei2",
+          "xie3",
+          "shi1",
+          "fu4",
+          "zhuan1",
+          "yong4"
+        ],
+        "sameLength": true,
+        "polarityCountsMatch": false,
+        "passed": false,
+        "humanListening": false
+      },
+      "acceptance": "independent_exact_words_or_all_syllables_and_tones",
+      "model": "FunAudioLLM/SenseVoiceSmall",
+      "revision": "3847d57b6bdf2dd8875cb1508d2af43d80a16bf7",
+      "rawTranscript": "<|zh|><|NEUTRAL|><|Speech|><|woitn|>这杯没糖梅写师傅专用",
+      "audioSha256": "d13920be39bc3a7d69a268524252b5cb07ce7f86510dafa999b863f4debf7224",
+      "humanListening": false
+    },
+    {
+      "transcript": "这杯梅糖梅血师傅专用",
+      "cer": 0.3,
+      "polarityCountsMatch": false,
+      "passed": false,
+      "phoneticReview": {
+        "method": "exact_all_syllables_tones_and_explicit_numeric_values_v2_pypinyin_0.53.0",
+        "expected": "这杯没糖没写师傅专用",
+        "observed": "这杯梅糖梅血师傅专用",
+        "expectedSyllables": [
+          "zhe4",
+          "bei1",
+          "mei2",
+          "tang2",
+          "mei2",
+          "xie3",
+          "shi1",
+          "fu4",
+          "zhuan1",
+          "yong4"
+        ],
+        "observedSyllables": [
+          "zhe4",
+          "bei1",
+          "mei2",
+          "tang2",
+          "mei2",
+          "xue4",
+          "shi1",
+          "fu4",
+          "zhuan1",
+          "yong4"
+        ],
+        "sameLength": true,
+        "polarityCountsMatch": false,
+        "passed": false,
+        "humanListening": false
+      },
+      "acceptance": "independent_exact_words_or_all_syllables_and_tones",
+      "model": "FunAudioLLM/SenseVoiceSmall",
+      "revision": "3847d57b6bdf2dd8875cb1508d2af43d80a16bf7",
+      "rawTranscript": "<|zh|><|NEUTRAL|><|Speech|><|woitn|>这杯梅糖梅血师傅专用",
+      "audioSha256": "f3f3a8d37e3c5054c36dfbc306d0a74778b0afb8c48f4034fd9205072eb6bda1",
+      "humanListening": false
+    },
+    {
+      "transcript": "准杯没糖梅写师傅专用",
+      "cer": 0.2,
+      "polarityCountsMatch": false,
+      "passed": false,
+      "phoneticReview": {
+        "method": "exact_all_syllables_tones_and_explicit_numeric_values_v2_pypinyin_0.53.0",
+        "expected": "这杯没糖没写师傅专用",
+        "observed": "准杯没糖梅写师傅专用",
+        "expectedSyllables": [
+          "zhe4",
+          "bei1",
+          "mei2",
+          "tang2",
+          "mei2",
+          "xie3",
+          "shi1",
+          "fu4",
+          "zhuan1",
+          "yong4"
+        ],
+        "observedSyllables": [
+          "zhun3",
+          "bei1",
+          "mei2",
+          "tang2",
+          "mei2",
+          "xie3",
+          "shi1",
+          "fu4",
+          "zhuan1",
+          "yong4"
+        ],
+        "sameLength": true,
+        "polarityCountsMatch": false,
+        "passed": false,
+        "humanListening": false
+      },
+      "acceptance": "independent_exact_words_or_all_syllables_and_tones",
+      "model": "FunAudioLLM/SenseVoiceSmall",
+      "revision": "3847d57b6bdf2dd8875cb1508d2af43d80a16bf7",
+      "rawTranscript": "<|zh|><|NEUTRAL|><|Speech|><|woitn|>准杯没糖梅写师傅专用",
+      "audioSha256": "d1131716e1a0be489a6f9313dac7aacaf73613ee4655ff34f9f80690c1311f9d",
+      "humanListening": false
+    }
+  ]
+}

@@ -298,7 +298,7 @@ def main():
                 title_help.focus()
                 page.keyboard.press('Enter')
                 help_dialog = page.get_by_role('dialog', name='操作与制作记录', exact=True)
-                expect(help_dialog).to_contain_text('403 条人物对白')
+                expect(help_dialog).to_contain_text('414 条人物对白')
                 expect(page.get_by_role('button', name='关闭操作与制作记录', exact=True)).to_be_focused()
                 page.keyboard.press('Escape')
                 expect(title_help).to_be_focused()
@@ -335,12 +335,52 @@ def main():
                 expect(page.locator('.hud')).to_be_visible()
                 assert page.evaluate("localStorage.getItem('circuit-auto-v100')") == original
                 result['checks'].append('close, relaunch and restore the same native save')
+            # The real installed WebView must also finish the newly shipped
+            # chapter; a first-scene smoke alone cannot certify its resources.
+            import runpy
+            chapters = runpy.run_path(str(Path(__file__).with_name('release-browser.py')))['fixtures']()
+            final = next(row for row in chapters if row['id'] == 'signoff')
+            prefix = [row['id'] for row in chapters[:10]]
+            old = dict(version=2, chapterId='tickets', nodeId='end', evidence=chapters[9]['requiredEvidence'],
+                       history=['end'], completed=prefix,
+                       archive={row['id']: row['requiredEvidence'] for row in chapters[:10]},
+                       savedAt='2026-10-25T01:00:00.000Z')
+            with launch(playwright, executable, profile, arguments.output.parent, 'finale') as page:
+                page.on('pageerror', lambda error: errors.append(str(error)))
+                page.evaluate('''old=>{
+                  localStorage.setItem('circuit-auto-v100',JSON.stringify(old));
+                  localStorage.setItem('circuit-settings-v100',JSON.stringify({textSpeed:'instant',autoDelay:2,
+                    musicVolume:0,ambienceVolume:0,voiceVolume:0,sfxVolume:0,voiceEnabled:false,
+                    muted:true,highContrast:false,reducedMotion:true}));
+                }''', old)
+                page.reload()
+                old_bytes = page.evaluate("localStorage.getItem('circuit-auto-v100')")
+                page.get_by_role('button', name='章节选择', exact=True).click()
+                expect(page.locator('[data-chapter-id="signoff"]')).to_be_enabled()
+                assert page.evaluate("localStorage.getItem('circuit-auto-v100')") == old_bytes
+                page.locator('[data-chapter-id="signoff"]').click()
+                for step in final['path']:
+                    page.locator('button[data-action-id=' + json.dumps(step['actionId']) + ']').click()
+                    if step['nodeId'] == 'firstHub':
+                        page.wait_for_function("document.querySelector('.stage-background img').naturalWidth===1672")
+                expect(page.locator('.dialogue-text span')).to_contain_text('第二部完结')
+                final_bytes = page.evaluate("localStorage.getItem('circuit-auto-v100')")
+                completed = json.loads(final_bytes)
+                assert completed['completed'] == prefix + ['signoff']
+                assert set(completed['archive']['signoff']) == set(final['requiredEvidence'])
+                result['checks'].append('installed final chapter unlocks from v1.9 save and completes full native route with new artwork')
+            with launch(playwright, executable, profile, arguments.output.parent, 'finale-reopen') as page:
+                page.on('pageerror', lambda error: errors.append(str(error)))
+                assert page.evaluate("localStorage.getItem('circuit-auto-v100')") == final_bytes
+                page.get_by_role('button', name='继续抢修', exact=True).click()
+                expect(page.locator('.dialogue-text span')).to_contain_text('第二部完结')
+                result['checks'].append('installed final ending and all eleven completion proofs survive another process restart')
             assert not errors, errors
             result['checks'].append('no JavaScript page errors and normal application shutdown')
             result['webview_shutdown'] = {
                 attempt: json.loads((arguments.output.parent / f'{attempt}-diagnostic.json').read_text(
-                    encoding='utf-8'))['webview_shutdown'] for attempt in ('first', 'reopen')}
-            result['checks'].append('both WebView2 process collections exit before profile cleanup')
+                    encoding='utf-8'))['webview_shutdown'] for attempt in ('first', 'reopen', 'finale', 'finale-reopen')}
+            result['checks'].append('all four WebView2 process collections exit before profile cleanup')
         assert not Path(temporary).exists(), 'Temporary WebView2 profile was not removed'
         result['temporary_profile_removed'] = True
         result['checks'].append('temporary WebView2 profile is completely removed')

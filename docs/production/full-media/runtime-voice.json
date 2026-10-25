@@ -1,9 +1,9 @@
 {
   "schema": 1,
   "project": "Circuit",
-  "semanticSha256": "68824bc923500abfaffa5e94195c361feda70c878d95e6218dfb6eaa527e709f",
-  "target": 403,
-  "accepted": 403,
+  "semanticSha256": "c48619cf03745f46b3c112f45d033e377d1c1132265b27872df02dd23370e718",
+  "target": 414,
+  "accepted": 414,
   "pending": [],
   "bindings": [
     {
@@ -4435,6 +4435,127 @@
       "sha256": "ee5560cf5a4db2721a8ea8e017606b8b735e8c6ee458c9c86824a046a1264e1b",
       "recordedSha256": "ee5560cf5a4db2721a8ea8e017606b8b735e8c6ee458c9c86824a046a1264e1b",
       "requestSha256": "0680a75018a6f7839f9956a6b4a44d832c89824e1df638e54988e2793c210ee6",
+      "preservedLegacy": false,
+      "replayOf": null,
+      "asrPassed": true
+    },
+    {
+      "id": "circuit-signoff--drive--q01--01",
+      "source": "assets_source/voice/continued-20261020/circuit-signoff--drive--q01--01/runtime.ogg",
+      "runtime": "public/audio/voice/full-20261021/circuit-signoff--drive--q01--01.ogg",
+      "sha256": "dec9c2db2975a33ec578a3b7e520f1d91e1e94e5ac68112848da84d98f7bb14e",
+      "recordedSha256": "dec9c2db2975a33ec578a3b7e520f1d91e1e94e5ac68112848da84d98f7bb14e",
+      "requestSha256": "c8f9091737d550d5149a27abfaeedfb3c5c95168caf8ec63cff0eae70c9f9bfe",
+      "preservedLegacy": false,
+      "replayOf": null,
+      "asrPassed": true
+    },
+    {
+      "id": "circuit-signoff--borrower--q01--01",
+      "source": "assets_source/voice/continued-20261020/circuit-signoff--borrower--q01--01/runtime.ogg",
+      "runtime": "public/audio/voice/full-20261021/circuit-signoff--borrower--q01--01.ogg",
+      "sha256": "262ff19f0a36939544cdaf03c72b89273aa9ebde383f4721223fd096f4059310",
+      "recordedSha256": "262ff19f0a36939544cdaf03c72b89273aa9ebde383f4721223fd096f4059310",
+      "requestSha256": "dc3bcdf420122d6e5d57af00417f4342f3ff970451e80f047e1ca257cab3ebd7",
+      "preservedLegacy": false,
+      "replayOf": null,
+      "asrPassed": true
+    },
+    {
+      "id": "circuit-signoff--loandesk--q01--01",
+      "source": "assets_source/voice/continued-20261020/circuit-signoff--loandesk--q01--01/runtime.ogg",
+      "runtime": "public/audio/voice/full-20261021/circuit-signoff--loandesk--q01--01.ogg",
+      "sha256": "8b8f9f2c3e3b9c965f9bd3bc7d33930764d685a50a38dfe088348d13b17559f9",
+      "recordedSha256": "8b8f9f2c3e3b9c965f9bd3bc7d33930764d685a50a38dfe088348d13b17559f9",
+      "requestSha256": "5143fb2b193a17733b7c94f5e612ebf970637bcbe733d385ef57f2ab68cca29b",
+      "preservedLegacy": false,
+      "replayOf": null,
+      "asrPassed": true
+    },
+    {
+      "id": "circuit-signoff--returnpaper--q01--01",
+      "source": "assets_source/voice/continued-20261020/circuit-signoff--returnpaper--q01--01/runtime.ogg",
+      "runtime": "public/audio/voice/full-20261021/circuit-signoff--returnpaper--q01--01.ogg",
+      "sha256": "7fddd8ad476f9f71b1f74ee8f3fe907817b59045c54974ae94abe89f7e6d1582",
+      "recordedSha256": "7fddd8ad476f9f71b1f74ee8f3fe907817b59045c54974ae94abe89f7e6d1582",
+      "requestSha256": "f2fab2c05de6e1577300e309e888ce0e102b8153963afc6f3a229f68d9fdfe5d",
+      "preservedLegacy": false,
+      "replayOf": null,
+      "asrPassed": true
+    },
+    {
+      "id": "circuit-signoff--correctborrower--q01--01",
+      "source": "assets_source/voice/continued-20261020/circuit-signoff--correctborrower--q01--01/runtime.ogg",
+      "runtime": "public/audio/voice/full-20261021/circuit-signoff--correctborrower--q01--01.ogg",
+      "sha256": "bed4701b3ce907c2321ce0f64e0f83b5350207895912ebea9fbaedb97ef06ec0",
+      "recordedSha256": "bed4701b3ce907c2321ce0f64e0f83b5350207895912ebea9fbaedb97ef06ec0",
+      "requestSha256": "7a6c4afceb506f736b63511b22f100a570b74d3848c2e89babda37a9f4e3a575",
+      "preservedLegacy": false,
+      "replayOf": null,
+      "asrPassed": true
+    },
+    {
+      "id": "circuit-signoff--origin--q01--01",
+      "source": "assets_source/voice/continued-20261020/circuit-return-visit--onward--q02--01/runtime.mp3",
+      "runtime": "public/audio/voice/v01-confirm.mp3",
+      "sha256": "32e4a93ffbdecc05c00cf73a6d6bd0ade906d4ae89b6438e3bba3f0ba0572b76",
+      "recordedSha256": "32e4a93ffbdecc05c00cf73a6d6bd0ade906d4ae89b6438e3bba3f0ba0572b76",
+      "requestSha256": "8ce86dace9a33d270db5fa0e96d030e2ca3bae69a9012e7175e18fe900a3679e",
+      "preservedLegacy": true,
+      "replayOf": "circuit-return-visit--onward--q02--01",
+      "asrPassed": true
+    },
+    {
+      "id": "circuit-signoff--window--q01--01",
+      "source": "assets_source/voice/continued-20261020/circuit-signoff--window--q01--01/runtime.ogg",
+      "runtime": "public/audio/voice/full-20261021/circuit-signoff--window--q01--01.ogg",
+      "sha256": "2e62537213e9642cf8aa0386addd5e06f6d43f98a3e1cbef86481ae272adad05",
+      "recordedSha256": "2e62537213e9642cf8aa0386addd5e06f6d43f98a3e1cbef86481ae272adad05",
+      "requestSha256": "7200db5080dcc0aecda59bbe0e8d83d3207f5fb603cafd29cb74b84f6d0c1221",
+      "preservedLegacy": false,
+      "replayOf": null,
+      "asrPassed": true
+    },
+    {
+      "id": "circuit-signoff--names--q01--01",
+      "source": "assets_source/voice/continued-20261020/circuit-signoff--names--q01--01/runtime.ogg",
+      "runtime": "public/audio/voice/full-20261021/circuit-signoff--names--q01--01.ogg",
+      "sha256": "94c821f1ef9bfe708c229b0fcbb380d0050983e70ac723d238165328470bd1b4",
+      "recordedSha256": "94c821f1ef9bfe708c229b0fcbb380d0050983e70ac723d238165328470bd1b4",
+      "requestSha256": "7e285f531a4130d1e699ceba86fe6bee70ed640d79dbb9b51215fd882afc2357",
+      "preservedLegacy": false,
+      "replayOf": null,
+      "asrPassed": true
+    },
+    {
+      "id": "circuit-signoff--drivehome--q01--01",
+      "source": "assets_source/voice/continued-20261020/circuit-signoff--drivehome--q01--01/runtime.ogg",
+      "runtime": "public/audio/voice/full-20261021/circuit-signoff--drivehome--q01--01.ogg",
+      "sha256": "0278f5e8f56e0c0ef326f4474b56811afe1e7e86a79c6b0a141e905fef0bfc8d",
+      "recordedSha256": "0278f5e8f56e0c0ef326f4474b56811afe1e7e86a79c6b0a141e905fef0bfc8d",
+      "requestSha256": "fb6ef214b305cd28079cd6ce3a2da0beac4d4928fbee5803010aa4343f2a5fd8",
+      "preservedLegacy": false,
+      "replayOf": null,
+      "asrPassed": true
+    },
+    {
+      "id": "circuit-signoff--offduty--q01--01",
+      "source": "assets_source/voice/continued-20261020/circuit-signoff--offduty--q01--01/runtime.ogg",
+      "runtime": "public/audio/voice/full-20261021/circuit-signoff--offduty--q01--01.ogg",
+      "sha256": "def012302a53a742dfee582897be9abd3e1f16d7f631106e2517eb9cede64f16",
+      "recordedSha256": "def012302a53a742dfee582897be9abd3e1f16d7f631106e2517eb9cede64f16",
+      "requestSha256": "235acaccb70d6398cbd4e5b32f34953dc3da802ea6e1f77647c5990f655fe3f9",
+      "preservedLegacy": false,
+      "replayOf": null,
+      "asrPassed": true
+    },
+    {
+      "id": "circuit-signoff--offduty--q02--01",
+      "source": "assets_source/voice/continued-20261020/circuit-signoff--offduty--q02--01/runtime.ogg",
+      "runtime": "public/audio/voice/full-20261021/circuit-signoff--offduty--q02--01.ogg",
+      "sha256": "b87737bf1ecf62a8e680cece41f139607def0c247754490fc8aed3f9c1b40828",
+      "recordedSha256": "b87737bf1ecf62a8e680cece41f139607def0c247754490fc8aed3f9c1b40828",
+      "requestSha256": "6a98100fac36a96e804e1e6a41fc11cca26dbe97569cfea04a426671e25fd6e5",
       "preservedLegacy": false,
       "replayOf": null,
       "asrPassed": true

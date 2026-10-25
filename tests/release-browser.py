@@ -27,7 +27,7 @@ def fixtures():
                    '--module', 'commonjs', '--moduleResolution', 'node', '--resolveJsonModule', '--esModuleInterop', '--target', 'ES2020',
                    '--strict', '--skipLibCheck', '--rootDir', 'src', '--outDir', temporary,
                    'src/story/engine.ts','src/game/mediaCatalog.ts']
-        compiled = subprocess.run(command, capture_output=True, text=True)
+        compiled = subprocess.run(command, capture_output=True, text=True, encoding='utf-8')
         if compiled.returncode:
             raise RuntimeError(compiled.stdout + compiled.stderr)
         script = r'''
@@ -54,7 +54,7 @@ const results=e.CHAPTER_ORDER.map(id=>{
 process.stdout.write(JSON.stringify(results));
 '''
         result = subprocess.run([shutil.which('node') or 'node', '-e', script,
-                                 str(Path(temporary) / 'story/engine.js')], capture_output=True, text=True, check=True)
+                                 str(Path(temporary) / 'story/engine.js')], capture_output=True, text=True, encoding='utf-8', check=True)
         return json.loads(result.stdout)
 
 

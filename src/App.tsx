@@ -15,7 +15,7 @@ import {
 import { MAX_HISTORY_ENTRIES, type SaveStorage } from './game/saves';
 import { loadPreferences, savePreferences, type Preferences } from './game/preferences';
 import { CircuitAudio } from './game/audio';
-import { sceneMusicFor } from './game/score';
+import { sceneMusicFor, sceneAmbienceFor } from './game/score';
 import { RecordedAudio, voiceBlocksAuto, type VoiceState } from './game/recordedAudio';
 import { SCENE_EFFECTS, voicesFor } from './game/mediaCatalog';
 import { useReading } from './game/reading';
@@ -28,7 +28,7 @@ const PANEL_TITLES: Record<Panel, string> = {
 };
 const BACKGROUNDS: Record<ChapterId, string> = {
   'thirteen-households': 'alley', 'seventh-night': 'stairwell', backfeed: 'demolition',
-  everlight: 'stairwell', neutral: 'substation', closure: 'control-room', 'return-visit': 'resettlement-lobby', answering: 'communications-room', visitors: 'reception-station', tickets: 'receiving-room', signoff: 'property-office'
+  everlight: 'stairwell', neutral: 'substation', closure: 'control-room', 'return-visit': 'resettlement-lobby', answering: 'communications-room', visitors: 'reception-station', tickets: 'receiving-room', signoff: 'archive-office'
 };
 const SLOTS: CampaignSlot[] = ['auto', 1, 2, 3];
 const sequelTitles = CHAPTER_ORDER.slice(6).map(id => `《${getChapter(id)!.title}》`).join('');
@@ -95,6 +95,9 @@ function App() {
   const dialogueActions = actions.filter((action) => !hotspotActions.has(action.id));
   const requiredCount = chapter.requiredEvidence.filter((id) => state.evidence.includes(id)).length;
   const nextChapter = CHAPTER_ORDER[chapter.order + 1];
+  const musicSelection = sceneMusicFor(state.chapterId, state.nodeId);
+  const musicPath = musicSelection === null ? null : asset(musicSelection);
+  const ambienceMode = sceneAmbienceFor(state.chapterId, state.nodeId);
   const historyEntries = history.map(id => ({ ...chapter.nodes[id], id, context: `${chapter.nodes[id].location} ${chapter.nodes[id].time}` }));
 
   useEffect(() => {
@@ -103,9 +106,9 @@ function App() {
     return () => document.removeEventListener('visibilitychange', onVisibility);
   }, []);
   useEffect(() => {
-    void audio.current?.configure(preferences, started && pageVisible && !panel, voiceState.status === 'playing', asset(sceneMusicFor(state.chapterId)));
+    void audio.current?.configure(preferences, started && pageVisible && !panel, voiceState.status === 'playing', musicPath, ambienceMode);
     recorded.current?.configure(preferences, started && !panel, started && pageVisible, panel === 'history' || panel === 'evidence');
-  }, [preferences, started, pageVisible, panel, voiceState.status, state.chapterId]);
+  }, [preferences, started, pageVisible, panel, voiceState.status, musicPath, ambienceMode]);
   useEffect(() => {
     if (!started) { recorded.current?.stop(); return; }
     recorded.current?.enter(voicesFor(state.chapterId, state.nodeId), SCENE_EFFECTS[`${state.chapterId}/${state.nodeId}`]);
@@ -126,7 +129,7 @@ function App() {
     if (!audio.current) {
       try { audio.current = new CircuitAudio(); } catch { return; }
     }
-    void audio.current.configure(preferences, true, false, asset(sceneMusicFor(state.chapterId)));
+    void audio.current.configure(preferences, true, false, musicPath, ambienceMode);
   };
   const commit = useCallback((next: CampaignSession) => {
     const completed = completeChapter(next);

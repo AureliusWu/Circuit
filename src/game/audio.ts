@@ -8,6 +8,8 @@ export class CircuitAudio {
   private droneBus: GainNode;
   private sceneLoop: SceneLoop;
   private ambience: GainNode;
+  private humLevel: GainNode;
+  private rainLevel: GainNode;
   private output: GainNode;
   private sources: AudioScheduledSourceNode[] = [];
 
@@ -35,6 +37,7 @@ export class CircuitAudio {
     }
     const hum = this.context.createOscillator();
     const humGain = this.context.createGain();
+    this.humLevel = humGain;
     hum.frequency.value = 50;
     humGain.gain.value = .024;
     hum.connect(humGain).connect(this.ambience);
@@ -51,18 +54,23 @@ export class CircuitAudio {
     const filter = this.context.createBiquadFilter();
     filter.type = 'lowpass';
     filter.frequency.value = 650;
+    this.rainLevel = this.context.createGain();
     rain.buffer = buffer;
     rain.loop = true;
-    rain.connect(filter).connect(this.ambience);
+    rain.connect(filter).connect(this.rainLevel).connect(this.ambience);
     rain.start();
     this.sources.push(rain);
   }
 
-  async configure(preferences: Preferences, running: boolean, speaking = false, sceneMusic?: string) {
+  async configure(preferences: Preferences, running: boolean, speaking = false, sceneMusic?: string | null,
+    ambienceMode: 'rain' | 'room' | 'quiet' = 'rain') {
     if (this.context.state === 'closed') return;
     const now = this.context.currentTime;
-    this.droneBus.gain.setTargetAtTime(sceneMusic ? 0 : 1, now, .3);
-    this.sceneLoop.select(sceneMusic);
+    // null is an authored rest, while undefined retains the procedural fallback.
+    this.droneBus.gain.setTargetAtTime(sceneMusic === undefined ? 1 : 0, now, .3);
+    this.sceneLoop.select(sceneMusic ?? undefined);
+    this.rainLevel.gain.setTargetAtTime(ambienceMode === 'rain' ? 1 : 0, now, .3);
+    this.humLevel.gain.setTargetAtTime(ambienceMode === 'quiet' ? 0 : .024, now, .3);
     this.music.gain.setTargetAtTime(preferences.musicVolume * (speaking ? .35 : 1), now, .12);
     this.ambience.gain.setTargetAtTime(preferences.ambienceVolume * (speaking ? .6 : 1), now, .12);
     this.output.gain.setTargetAtTime(preferences.muted ? 0 : 1, now, .12);

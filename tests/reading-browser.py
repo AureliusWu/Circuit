@@ -185,7 +185,7 @@ def help_pause_and_layout(browser):
         close = page.get_by_role("button", name="关闭操作与制作记录", exact=True)
         expect(dialog).to_be_visible()
         expect(close).to_be_focused()
-        for text in ["十五名人物", "403 条人物对白", "第二部仍在连载", "不包含另外三个手动槽位"]:
+        for text in ["十五名人物", "414 条人物对白", "两部完结", "不包含另外三个手动槽位"]:
             expect(dialog).to_contain_text(text)
         page.keyboard.press("Tab")
         expect(close).to_be_focused()

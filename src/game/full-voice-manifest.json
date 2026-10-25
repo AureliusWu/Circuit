@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "project": "Circuit",
-  "target": 403,
-  "accepted": 403,
+  "target": 414,
+  "accepted": 414,
   "complete": true,
   "clips": [
     {
@@ -5646,6 +5646,160 @@
         }
       ],
       "start": 71
+    },
+    {
+      "id": "circuit-signoff--drive--q01--01",
+      "productionId": "circuit-signoff--drive--q01--01",
+      "character": "ji",
+      "text": "甜的在右边，这杯归我。",
+      "src": "/audio/voice/full-20261021/circuit-signoff--drive--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "signoff",
+          "node": "drive"
+        }
+      ],
+      "start": 17
+    },
+    {
+      "id": "circuit-signoff--borrower--q01--01",
+      "productionId": "circuit-signoff--borrower--q01--01",
+      "character": "luo",
+      "text": "九月底借的。只搬过一次，下午就还了。你们问三十二号，我真不知道它是这台。",
+      "src": "/audio/voice/full-20261021/circuit-signoff--borrower--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "signoff",
+          "node": "borrower"
+        }
+      ],
+      "start": 71
+    },
+    {
+      "id": "circuit-signoff--loandesk--q01--01",
+      "productionId": "circuit-signoff--loandesk--q01--01",
+      "character": "ji",
+      "text": "借走和还回来都得留。",
+      "src": "/audio/voice/full-20261021/circuit-signoff--loandesk--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "signoff",
+          "node": "loanDesk"
+        }
+      ],
+      "start": 48
+    },
+    {
+      "id": "circuit-signoff--returnpaper--q01--01",
+      "productionId": "circuit-signoff--returnpaper--q01--01",
+      "character": "chen",
+      "text": "我妈那回没办完，不是没回家。",
+      "src": "/audio/voice/full-20261021/circuit-signoff--returnpaper--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "signoff",
+          "node": "returnPaper"
+        }
+      ],
+      "start": 38
+    },
+    {
+      "id": "circuit-signoff--correctborrower--q01--01",
+      "productionId": "circuit-signoff--correctborrower--q01--01",
+      "character": "luo",
+      "text": "那台东西不用我再带回去了吧？",
+      "src": "/audio/voice/full-20261021/circuit-signoff--correctborrower--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "signoff",
+          "node": "correctBorrower"
+        }
+      ],
+      "start": 56
+    },
+    {
+      "id": "v01-confirm",
+      "productionId": "circuit-signoff--origin--q01--01",
+      "character": "cheng",
+      "text": "先别替它确认。",
+      "src": "/audio/voice/v01-confirm.mp3",
+      "bindings": [
+        {
+          "chapter": "signoff",
+          "node": "origin"
+        }
+      ],
+      "start": 20
+    },
+    {
+      "id": "circuit-signoff--window--q01--01",
+      "productionId": "circuit-signoff--window--q01--01",
+      "character": "chen",
+      "text": "我妈那两件东西，早拿回去了。",
+      "src": "/audio/voice/full-20261021/circuit-signoff--window--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "signoff",
+          "node": "window"
+        }
+      ],
+      "start": 32
+    },
+    {
+      "id": "circuit-signoff--names--q01--01",
+      "productionId": "circuit-signoff--names--q01--01",
+      "character": "manager",
+      "text": "程砚。",
+      "src": "/audio/voice/full-20261021/circuit-signoff--names--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "signoff",
+          "node": "names"
+        }
+      ],
+      "start": 49
+    },
+    {
+      "id": "circuit-signoff--drivehome--q01--01",
+      "productionId": "circuit-signoff--drivehome--q01--01",
+      "character": "ji",
+      "text": "师傅，下次自己拿。",
+      "src": "/audio/voice/full-20261021/circuit-signoff--drivehome--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "signoff",
+          "node": "driveHome"
+        }
+      ],
+      "start": 32
+    },
+    {
+      "id": "circuit-signoff--offduty--q01--01",
+      "productionId": "circuit-signoff--offduty--q01--01",
+      "character": "ji",
+      "text": "这回写哪一栏？",
+      "src": "/audio/voice/full-20261021/circuit-signoff--offduty--q01--01.ogg",
+      "bindings": [
+        {
+          "chapter": "signoff",
+          "node": "offDuty"
+        }
+      ],
+      "start": 56
+    },
+    {
+      "id": "circuit-signoff--offduty--q02--01",
+      "productionId": "circuit-signoff--offduty--q02--01",
+      "character": "cheng",
+      "text": "交班。今天的。",
+      "src": "/audio/voice/full-20261021/circuit-signoff--offduty--q02--01.ogg",
+      "bindings": [
+        {
+          "chapter": "signoff",
+          "node": "offDuty"
+        }
+      ],
+      "start": 66
     }
   ]
 }

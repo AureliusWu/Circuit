@@ -121,6 +121,23 @@ test('a v1.4 Visitors completion unlocks Tickets without rewriting any old slot'
   assert.deepEqual(storage.writes, []);
 });
 
+test('v1.9 completed Tickets unlocks the final chapter without touching existing slots', () => {
+  const old = completeChapter(sessionAt(9, 'complete'));
+  const raw = JSON.stringify(payload(old));
+  const storage = new MemoryStorage({ [CAMPAIGN_KEYS.auto]: raw, [CAMPAIGN_KEYS[1]]: raw });
+  const restored = loadCampaign(storage, 'auto');
+  assert.equal(restored.status, 'valid');
+  assert.deepEqual(restored.snapshot.completed, CHAPTER_ORDER.slice(0, 10));
+  assert.ok(canStartChapter(restored.snapshot, 'signoff'));
+  assert.equal(canStartChapter(sessionAt(9, 'failure'), 'signoff'), false);
+  const next = startChapter(restored.snapshot, 'signoff');
+  assert.equal(next.state.nodeId, 'dispatch'); assert.deepEqual(next.state.evidence, []);
+  assert.deepEqual(next.archive, old.archive);
+  assert.equal(storage.getItem(CAMPAIGN_KEYS.auto), raw);
+  assert.equal(storage.getItem(CAMPAIGN_KEYS[1]), raw);
+  assert.deepEqual(storage.writes, []);
+});
+
 test('unknown chapters, corrupt state and malformed campaign payloads are rejected', () => {
   const valid = payload();
   for (const value of [null, [], 3, {}, Object.create(valid),

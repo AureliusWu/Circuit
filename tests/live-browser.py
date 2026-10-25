@@ -84,7 +84,7 @@ def run(url, output, expected_build):
                    for path in (root / 'public/audio').rglob('*') if path.suffix in {'.mp3', '.ogg'})
     media = json.loads((root / 'docs/production/full-media/runtime-voice.json').read_text())
     required = {urljoin(url, binding['runtime'].removeprefix('public/')) for binding in media['bindings']}
-    assert media['accepted'] == media['target'] == 403 and not media['pending']
+    assert media['accepted'] == media['target'] == 414 and not media['pending']
     assert required <= set(audio), 'Full dialogue files must all be checked in the real offline cache'
     samples = [urljoin(url, path) for path in ['audio/voice/h13-dispatch.mp3', 'audio/sfx/glass-tap.mp3']]
     assert all(path in audio for path in samples)

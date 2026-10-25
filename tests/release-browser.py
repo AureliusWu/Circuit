@@ -72,6 +72,9 @@ def recording_sources(chapters):
 def run(url, pwa):
     cg_dimensions = {Path(a['output']).name: (a['width'], a['height'])
                      for a in json.loads(Path('docs/production/full-media/recovered-cg.json').read_text())['assets']}
+    cg_dimensions.update({Path(a['output']).name: (a['width'], a['height'])
+                          for a in json.loads(Path('docs/production/full-media/runtime-art.json').read_text())['outputs']
+                          if 'width' in a and 'height' in a})
     began = time.monotonic()
     phase = 'compile-legal-routes'
     completed, errors, console_errors, http_errors = [], [], [], []
@@ -379,7 +382,9 @@ def run(url, pwa):
                     character_directory(page, '人物')
                     completed.append(phase)
                     phase = 'offline-all-voice-and-scene-audio'
-                    audio_paths = sorted('/' + str(path.relative_to('public')).replace(os.sep, '/') for path in Path('public/audio').rglob('*.mp3'))
+                    audio_paths = sorted('/' + str(path.relative_to('public')).replace(os.sep, '/')
+                                         for path in Path('public/audio').rglob('*')
+                                         if path.suffix.lower() in ('.mp3', '.ogg'))
                     decoded = page.evaluate('''async paths => {
                       const context = new OfflineAudioContext(1, 24000, 24000);
                       const results = [];
@@ -392,8 +397,8 @@ def run(url, pwa):
                       }
                       return results;
                     }''', [urljoin(url.rstrip('/') + '/', path.lstrip('/')) for path in audio_paths])
-                    assert len(decoded) == 51, decoded
-                    assert all(row['duration'] > .05 and row['channels'] == 1 for row in decoded), decoded
+                    assert len(decoded) == len(audio_paths) and len(decoded) > 51, decoded
+                    assert all(row['duration'] > .05 and row['channels'] in (1, 2) for row in decoded), decoded
                     summary['offline_audio'] = decoded
                     completed.append(phase)
                     phase = 'offline-campaign-resume-and-replay'

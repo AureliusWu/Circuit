@@ -1,0 +1,60 @@
+{
+  "schema": "vn-workflow-profile-v1",
+  "workflowVersion": "1.0.0",
+  "repository": "AureliusWu/Circuit",
+  "kind": "game",
+  "engine": "React / TypeScript / Tauri 2",
+  "releaseAuthority": "native-project-gates",
+  "sources": [
+    "src/story/chapters/*.ts",
+    "src/story/engine.ts"
+  ],
+  "requiredPaths": [
+    "AGENTS.md",
+    "docs/production/VN-WORKFLOW-R1.md",
+    "docs/production/PROJECT-ACCEPTANCE.md",
+    "docs/CHAPTER_AUTHORING.md",
+    "src/story/types.ts"
+  ],
+  "commands": [
+    {
+      "id": "logic",
+      "argv": [
+        "npm",
+        "run",
+        "test"
+      ]
+    },
+    {
+      "id": "build",
+      "argv": [
+        "npm",
+        "run",
+        "build"
+      ]
+    },
+    {
+      "id": "runtime-media",
+      "argv": [
+        "python3",
+        "tools/production/validate_runtime.py",
+        "--require-complete",
+        "--decode"
+      ]
+    },
+    {
+      "id": "reading-browser",
+      "argv": [
+        "python3",
+        "tests/reading-browser.py",
+        "http://127.0.0.1:4173"
+      ]
+    }
+  ],
+  "workflows": [
+    ".github/workflows/ci.yml",
+    ".github/workflows/release.yml",
+    ".github/workflows/pages.yml"
+  ],
+  "identityNotes": "调查+证据联合状态搜索；允许有意义循环，不能用 DAG 图路径计数替代。原 circuit-* 存档和 Tauri 保持。"
+}

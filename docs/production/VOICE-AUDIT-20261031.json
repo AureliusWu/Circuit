@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "project": "Circuit",
+  "sourceCommit": "d2e0ae5f118568ba00d08b1321261fa5c6652d18",
+  "currentSourceFiles": [
+    {
+      "path": "src/story/engine.ts",
+      "sha256": "327d7f1fcffc1cf8c5cd03608c325091ab29c089d8f128fd12ec4d47c0a79dca"
+    },
+    {
+      "path": "src/story/chapters/thirteen-households.ts",
+      "sha256": "913dfc630e24891746143c8e86df185155fe777cbefa55baa699762420d934cd"
+    },
+    {
+      "path": "src/story/chapters/seventh-night.ts",
+      "sha256": "8b8caf9f86ae3a1df0ae36e775fd26e6e379934bf4601d10738d7f2f79973bd5"
+    },
+    {
+      "path": "src/story/chapters/backfeed.ts",
+      "sha256": "d063bea2146a5fc5463370f112c7e2c16c6a82b9f10ee91ae46b62ca4285cf60"
+    },
+    {
+      "path": "src/story/chapters/everlight.ts",
+      "sha256": "816ff020553de60528a4c8aecfa34e639c10a1dd36f96e461326077af243ce9f"
+    },
+    {
+      "path": "src/story/chapters/neutral.ts",
+      "sha256": "68c54a83e6695b41ee057e1c837c141e5748c893579cd1c431085dc7dfc264dc"
+    },
+    {
+      "path": "src/story/chapters/closure.ts",
+      "sha256": "3ad9839ca4f33e3c286e2a6f5c8d37e64ce7e4fc35fb82bfaf682139d50ef73e"
+    },
+    {
+      "path": "src/story/chapters/return-visit.ts",
+      "sha256": "dcad510e51255cc7594081d2aab755e3e0da261c86ba4cfc63b5bd3c5f99a697"
+    },
+    {
+      "path": "src/story/chapters/answering.ts",
+      "sha256": "a8d35125fa1c262923e3c8b05da63dbd2d95f1d3789cff6b8be1d20f1d992bdf"
+    },
+    {
+      "path": "src/story/chapters/visitors.ts",
+      "sha256": "595da971be187cfa53004526e842c8fc328502c1ef52dfce0ed746daf2e3774c"
+    },
+    {
+      "path": "src/story/chapters/tickets.ts",
+      "sha256": "3f53998bff253362bc833dc1b66ab272ddb484ec799ff1921175413c3b3a8bd9"
+    },
+    {
+      "path": "src/story/chapters/signoff.ts",
+      "sha256": "9d62ade07e781bcc00cfd87ec8a5d1bf9fe4ae2f5cb6d68bce983fd228bb6ae7"
+    },
+    {
+      "path": "src/game/fullMedia.ts",
+      "sha256": "8463efab799016fef051cdc45215f465bb9707c4864c8b4cfc6cfefa0542e86e"
+    },
+    {
+      "path": "src/game/characters.ts",
+      "sha256": "a9598b57f1dd167c119a48a5217958310c1afa1e7ee7e51dadf3d124d7369655"
+    },
+    {
+      "path": "docs/production/full-media/dialogue-segments.json",
+      "sha256": "fdc61504c9de1a7369c6e2c997bf57482199c322b729857cab93874e935770a5"
+    },
+    {
+      "path": "docs/production/full-media/dialogue-extra.json",
+      "sha256": "dbbd8f547f911fd9925e035663f06ac8f972699739e19fb0d5a8426eb78a6061"
+    },
+    {
+      "path": "docs/audio/voice-plan.json",
+      "sha256": "f29eaf8131e51342d4d81fee0014a8e5725f0c8b66a89a1b304233dbb240e0dc"
+    },
+    {
+      "path": "docs/audio/voice-manifest.json",
+      "sha256": "957e1ba1dfba449d49e17cafa11f356aa1c8b5e255a733afaf8ba2436570dcf2"
+    },
+    {
+      "path": "docs/audio/voice-asr.json",
+      "sha256": "25d0e31c3decd5262d92349d6571ec67ac58723ea00c40005ddff4d8b9a58334"
+    },
+    {
+      "path": "docs/production/full-media/pronunciation-overrides.json",
+      "sha256": "a98317633b0bd2b854a05c40e6872ca49cf0abad19ad083645dd65e2cb115bbe"
+    }
+  ],
+  "semanticSha256": "c48619cf03745f46b3c112f45d033e377d1c1132265b27872df02dd23370e718",
+  "retainedPlanSha256": "acf3707dc2691aa13af4c6ede2b122ccd3b56d6a5c753327ecf81d58bf2905f9",
+  "target": 414,
+  "accepted": 414,
+  "decoded": true,
+  "seedAndMerge": "PASS",
+  "technicalStatus": "PASS",
+  "synthesized": 0,
+  "humanListening": false,
+  "runtimeInteraction": "NOT_RUN",
+  "release": "NOT_ASSESSED"
+}

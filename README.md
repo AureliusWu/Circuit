@@ -24,6 +24,10 @@
 
 # 回路 / Circuit
 
+<!-- project-badges:start -->
+[![Version](https://img.shields.io/github/v/tag/AureliusWu/Circuit?sort=semver&style=flat-square&label=version)](https://github.com/AureliusWu/Circuit/tags) [![Build](https://github.com/AureliusWu/Circuit/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/AureliusWu/Circuit/actions/workflows/ci.yml) [![Last commit](https://img.shields.io/github/last-commit/AureliusWu/Circuit?style=flat-square)](https://github.com/AureliusWu/Circuit/commits/main)
+<!-- project-badges:end -->
+
 > 城市配电抢修题材的中式民俗悬疑 AVG · v1.10.1 / 十一章（第一部六章、第二部五章完结）
 
 你是梧城电网城区抢修员程砚，与固定队友、徒弟季宁一同值夜班。十二户停电，终端却多出一个十三号。头七过后，旧通知开始每天提前一分钟；图上拆掉的旧楼里，还有钥匙碰栏杆的声音。一张七年前的工单，将这些事接到同一场救援上。

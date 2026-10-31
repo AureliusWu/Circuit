@@ -11,6 +11,7 @@ from urllib.parse import urljoin
 
 from playwright.sync_api import expect, sync_playwright
 from async_browser import wait_async
+from pwa_activation import wait_activation
 
 AUTO = 'circuit-auto-v100'
 SETTINGS = 'circuit-settings-v100'
@@ -91,7 +92,7 @@ def run(url, output, expected_build):
     output.parent.mkdir(parents=True, exist_ok=True)
     summary = dict(base_url=url, version=version, commit=os.environ.get('GITHUB_SHA'),
                    checked_at=datetime.now(timezone.utc).isoformat(), published_files=[],
-                   viewports=[], page_errors=[], status='running')
+                   viewports=[], page_errors=[], worker_progress={}, network_failures=[], http_errors=[], status='running')
     phase, page = 'launch-browser', None
     try:
         with sync_playwright() as playwright:
@@ -113,6 +114,10 @@ def run(url, output, expected_build):
                         page = context.new_page()
                         page.set_default_timeout(15000)
                         page.on('pageerror', lambda error: summary['page_errors'].append(str(error)))
+                        context.on('requestfailed', lambda request: summary['network_failures'].append(
+                            dict(url=request.url, failure=request.failure)))
+                        context.on('response', lambda response: summary['http_errors'].append(
+                            dict(url=response.url, status=response.status)) if response.status >= 400 else None)
                         # Pages propagation is external to game startup. Give each request a real network timeout.
                         deadline, last_error = time.monotonic() + 90, None
                         while time.monotonic() < deadline:
@@ -132,7 +137,8 @@ def run(url, output, expected_build):
                         assert response and response.ok, 'Deployed document failed'
                         settled_title(page, version)
                         phase = label + ':service-worker-cache'
-                        wait_async(page, 'async()=>(await navigator.serviceWorker.getRegistration())?.active?.state === "activated"', timeout=90000)
+                        installation = wait_activation(page, url, observe=lambda state:
+                            summary['worker_progress'].update({label: state}))
                         # A fresh navigation after completed activation must use this app's worker.
                         # Keep the initial uncontrolled document out of the install/claim race.
                         if not page.evaluate('Boolean(navigator.serviceWorker.controller)'):
@@ -149,6 +155,7 @@ def run(url, output, expected_build):
                           return matches.every(response=>response&&response.ok);
                         }''', arg=audio, timeout=90000, polling=250)
                         row = dict(viewport=dict(width=width, height=height), document_url=page.url,
+                                   installation=installation,
                                    service_worker=page.evaluate('navigator.serviceWorker.controller.scriptURL'),
                                    cached_audio_count=len(audio))
                         phase = label + ':online-gameplay-and-history'

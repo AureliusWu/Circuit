@@ -25,6 +25,8 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm test
+      - name: Test bounded Service Worker activation wait
+        run: python3 -m unittest discover -s tests -p 'test_pwa_activation.py' -v
       - name: Build for the repository URL
         run: npm run build
         env:
@@ -38,7 +40,7 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 20
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

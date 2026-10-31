@@ -1,5 +1,6 @@
 import {mkdir, writeFile} from 'node:fs/promises';
 import {dirname, join} from 'node:path';
+import {fetchAssetBytes} from './download.mjs';
 
 const root = new URL('../public/', import.meta.url);
 
@@ -42,25 +43,9 @@ const assets = [
 const download = async ([relative, url]) => {
   const target = join(root.pathname, relative);
   await mkdir(dirname(target), {recursive: true});
-  let lastError;
-  for (let attempt = 1; attempt <= 3; attempt++) {
-    try {
-      const controller = new AbortController();
-      const timeout = setTimeout(() => controller.abort(), 25000);
-      const response = await fetch(url, {headers: {'User-Agent': 'four-games-pv-v2-render'}, signal: controller.signal});
-      clearTimeout(timeout);
-      if (!response.ok) throw new Error(`HTTP ${response.status}`);
-      const data = Buffer.from(await response.arrayBuffer());
-      await writeFile(target, data);
-      console.log(`${relative} ${data.length} bytes`);
-      return;
-    } catch (error) {
-      lastError = error;
-      console.warn(`attempt ${attempt} failed for ${relative}: ${error}`);
-      if (attempt < 3) await new Promise((resolve) => setTimeout(resolve, 800 * attempt));
-    }
-  }
-  throw new Error(`Failed to download ${relative}: ${lastError}`);
+  const data = await fetchAssetBytes(url);
+  await writeFile(target, data);
+  console.log(`${relative} ${data.length} bytes`);
 };
 
 let cursor = 0;

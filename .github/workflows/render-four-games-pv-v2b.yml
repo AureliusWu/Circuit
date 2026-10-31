@@ -30,7 +30,9 @@ jobs:
         run: npm install --no-audit --no-fund
       - name: Fetch assets and voices concurrently
         working-directory: pv-remotion
-        run: npm run fetch-assets
+        run: |
+          node --test scripts/download.test.mjs
+          npm run fetch-assets
       - name: Render voice-cut PV v2
         working-directory: pv-remotion
         run: npm run render

@@ -56,8 +56,8 @@ const voiceCues: VoiceCue[] = [
   {from: 52, duration: 3.5, src: 'voice/healing-ask.ogg', speaker: '许棠', text: '可以。照片换成长椅，署名照你的圈改。', accent: '#d6b6a8'},
   {from: 65, duration: 3.2, src: 'voice/netlove-call.ogg', speaker: '谢听禾', text: '能一起听吗？发文件过去，听的时候总不在同一秒。', accent: '#d8a7c6'},
   {from: 78, duration: 3.0, src: 'voice/netlove-tinghe.ogg', speaker: '谢听禾', text: '我也想。可是开学以后，我可能真的很忙。', accent: '#d8a7c6'},
-  {from: 89, duration: 3.0, src: 'voice/circuit-ji.mp3', speaker: '季宁', text: '也不能照这圈顺序说哪件事先发生。', accent: '#e0bf73'},
-  {from: 99, duration: 6.2, src: 'voice/circuit-ticket.mp3', speaker: '周师傅', text: '没安排替代，也没让他停下来。后来有人催关单，我就写完成。没核完。', accent: '#e0bf73'},
+  {from: 89, duration: 3.408, src: 'voice/circuit-ji.mp3', speaker: '季宁', text: '也不能照这圈顺序说哪件事先发生。', accent: '#e0bf73'},
+  {from: 99, duration: 7.584, src: 'voice/circuit-ticket.mp3', speaker: '周师傅', text: '没安排替代，也没让他停下来。后来有人催关单，我就写完成。没核完。', accent: '#e0bf73'},
 ];
 
 const fontFamily = '"Noto Sans CJK SC", "Microsoft YaHei", sans-serif';
@@ -145,7 +145,7 @@ const VoiceCard: React.FC<{cue: VoiceCue}> = ({cue}) => {
 
 const VoiceTrack: React.FC = () => {
   const {fps} = useVideoConfig();
-  return <>{voiceCues.map((cue) => <Sequence key={cue.src} from={Math.round(cue.from * fps)} durationInFrames={Math.round(cue.duration * fps)} premountFor={fps}><Audio src={staticFile(cue.src)} volume={1} /><VoiceCard cue={cue} /></Sequence>)}</>;
+  return <>{voiceCues.map((cue) => <Sequence key={cue.src} from={Math.round(cue.from * fps)} durationInFrames={Math.ceil(cue.duration * fps)} premountFor={fps}><Audio src={staticFile(cue.src)} volume={1} /><VoiceCard cue={cue} /></Sequence>)}</>;
 };
 
 const TransitionSfx: React.FC = () => {
